@@ -32,12 +32,20 @@ let server;
 let base = opt('base');
 if (!base) {
   base = 'http://localhost:5173/spanisch-app/';
-  server = spawn('npx', ['vite', '--port', '5173', '--strictPort'], { shell: true, stdio: 'ignore' });
-  for (let i = 0; i < 100; i++) {
+  server = spawn(process.execPath, [join('node_modules', 'vite', 'bin', 'vite.js'), '--port', '5173', '--strictPort'], {
+    stdio: 'ignore',
+  });
+  let up = false;
+  for (let i = 0; i < 100 && !up; i++) {
     try {
-      if ((await fetch(base)).ok) break;
+      up = (await fetch(base)).ok;
     } catch {}
-    await new Promise((r) => setTimeout(r, 300));
+    if (!up) await new Promise((r) => setTimeout(r, 300));
+  }
+  if (!up) {
+    server.kill();
+    console.error(`Dev-Server unter ${base} nicht erreichbar.`);
+    process.exit(1);
   }
 }
 
@@ -48,6 +56,7 @@ const stop = () => {
 };
 
 let count = 0;
+const missing = [];
 const browser = await chromium.launch();
 try {
   for (const size of SIZES) {
@@ -77,14 +86,20 @@ try {
           if (await option.count()) {
             await option.click();
             await shot(`aufgabe-${typ}-ergebnis`);
+          } else {
+            missing.push(`${size.width}-${label}-aufgabe-${typ}-ergebnis`);
           }
         }
         if (typ === 'type') {
           // Falsche Eingabe zeigt den Hinweis.
-          await page.fill('input[type=text]', 'xxx');
-          await page.click('button[type=submit]');
-          await page.waitForSelector('.hint', { timeout: 5000 });
-          await shot('aufgabe-type-hinweis');
+          try {
+            await page.fill('input[type=text]', 'xxx', { timeout: 5000 });
+            await page.click('button[type=submit]', { timeout: 5000 });
+            await page.waitForSelector('.hint', { timeout: 5000 });
+            await shot('aufgabe-type-hinweis');
+          } catch {
+            missing.push(`${size.width}-${label}-aufgabe-type-hinweis`);
+          }
         }
       }
       await context.close();
@@ -95,3 +110,8 @@ try {
   stop();
 }
 console.log(`${count} Bilder in ${out}`);
+if (missing.length) {
+  console.error(`Fehlende Bilder (${missing.length}):`);
+  for (const name of missing) console.error(name);
+  process.exit(1);
+}

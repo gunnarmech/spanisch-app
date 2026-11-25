@@ -33,9 +33,13 @@ function pick(app: AppState, form: TaskForm): { task: Task; item: Item } | null 
   return null;
 }
 
+/** Alle zeige-Werte; Screen und Preview lesen dieselbe Liste. */
+const KNOWN = ['start', 'start-neu', 'einstufung', 'fortschritt', 'einstellungen', 'diagnose', 'quellen', 'rundenende', 'aufgabe'] as const;
+type Zeige = (typeof KNOWN)[number];
+
 // Nur im Dev-Build erreichbar (main.tsx lädt dieses Modul dynamisch hinter import.meta.env.DEV).
 function Screen({ app, params }: { app: AppState; params: URLSearchParams }) {
-  const zeige = params.get('zeige');
+  const zeige = params.get('zeige') as Zeige;
   switch (zeige) {
     case 'start':
       return <Home app={{ ...app, settings: { ...app.settings, placementDone: true } }} onStart={noop} onDiagnose={noop} onSettings={noop} onProgress={noop} onPlacement={noop} />;
@@ -73,15 +77,13 @@ function Screen({ app, params }: { app: AppState; params: URLSearchParams }) {
   }
 }
 
-const KNOWN = ['start', 'start-neu', 'einstufung', 'fortschritt', 'einstellungen', 'diagnose', 'quellen', 'rundenende', 'aufgabe'];
-
 export function Preview({ params }: { params: URLSearchParams }) {
   const [db, setDb] = useState<Awaited<ReturnType<typeof openDb>>>();
   useEffect(() => {
     void openDb('preview').then(setDb);
   }, []);
   const app = useAppState(db);
-  if (!KNOWN.includes(params.get('zeige') ?? '')) return null;
+  if (!(KNOWN as readonly string[]).includes(params.get('zeige') ?? '')) return null;
   if (!app) return <main aria-busy="true" />;
   return (
     <main>
