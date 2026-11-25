@@ -142,6 +142,16 @@ describe('syncNow', () => {
     expect('error' in res && res.error).toContain('Token');
   });
 
+  it('gibt jeder Anfrage ein Zeitlimit mit', async () => {
+    const db = await fresh();
+    await withToken(db);
+    const gh = fakeGithub();
+    await syncNow(db, gh.impl);
+    for (const [, init] of (gh.impl as unknown as { mock: { calls: [unknown, RequestInit][] } }).mock.calls) {
+      expect(init.signal).toBeInstanceOf(AbortSignal);
+    }
+  });
+
   it('meldet Netzfehler auf Deutsch', async () => {
     const db = await fresh();
     await withToken(db);

@@ -45,6 +45,7 @@ export function useAppState(injected?: Db): AppState | null {
   const [state, setState] = useState<Omit<AppState, 'sync' | 'updateSettings' | 'syncError'> | null>(null);
   const [syncError, setSyncError] = useState<string>();
   const running = useRef<Promise<SyncResult> | null>(null);
+  const queued = useRef<Promise<SyncResult> | null>(null);
   const db = useRef<Db | null>(null);
   const settings = useRef<Settings | null>(null);
 
@@ -71,25 +72,38 @@ export function useAppState(injected?: Db): AppState | null {
     });
   }, []);
 
-  const sync = useCallback((): Promise<SyncResult> => {
-    if (running.current) return running.current;
-    const run = (async (): Promise<SyncResult> => {
-      if (!db.current || !settings.current?.gistToken) return { added: 0, pushed: 0 };
-      const res = await syncNow(db.current);
-      if ('error' in res) {
-        setSyncError(res.error);
-      } else {
-        setSyncError(undefined);
-        settings.current = await db.current.getSettings();
-        await reload();
-      }
-      return res;
-    })().finally(() => {
-      running.current = null;
-    });
-    running.current = run;
-    return run;
+  const runSync = useCallback(async (): Promise<SyncResult> => {
+    if (!db.current || !settings.current?.gistToken) return { added: 0, pushed: 0 };
+    const res = await syncNow(db.current);
+    if ('error' in res) {
+      setSyncError(res.error);
+    } else {
+      setSyncError(undefined);
+      settings.current = await db.current.getSettings();
+      await reload();
+    }
+    return res;
   }, [reload]);
+
+  /**
+   * Höchstens ein Lauf zugleich. Kommt währenddessen eine neue Anforderung, wird genau ein
+   * Folgelauf nach dessen Ende vorgemerkt, damit zwischenzeitlich entstandene Ereignisse mitgehen.
+   */
+  const sync = useCallback((): Promise<SyncResult> => {
+    const start = (): Promise<SyncResult> => {
+      const run = runSync().finally(() => {
+        running.current = null;
+      });
+      running.current = run;
+      return run;
+    };
+    if (!running.current) return start();
+    queued.current ??= running.current.then(() => {
+      queued.current = null;
+      return start();
+    });
+    return queued.current;
+  }, [runSync]);
 
   const updateSettings = useCallback(
     async (patch: Partial<Settings>) => {

@@ -6,6 +6,7 @@ const API = 'https://api.github.com';
 const DESCRIPTION = 'spanisch-app sync';
 const FILE = 'spanisch-app-log.json';
 const MAX_PAGES = 10;
+const REQUEST_TIMEOUT_MS = 15000;
 
 export type SyncResult = { added: number; pushed: number } | { error: string };
 
@@ -66,7 +67,7 @@ export async function syncNow(db: Db, fetchImpl: typeof fetch = (...a) => fetch(
   };
   const request = async (url: string, init: RequestInit = {}): Promise<Response> => {
     try {
-      return await fetchImpl(url, { ...init, headers });
+      return await fetchImpl(url, { ...init, headers, signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
     } catch {
       throw new SyncError('Keine Verbindung zu GitHub. Der Abgleich wird später erneut versucht.');
     }

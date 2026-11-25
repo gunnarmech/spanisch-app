@@ -17,14 +17,15 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState('');
 
-  const saveToken = () => {
+  /** Ein anderer Token gehört womöglich zu einem anderen Konto, daher wird das gemerkte Gist verworfen. */
+  const commitToken = async () => {
     const value = token.trim();
-    if (value !== (settings.gistToken ?? '')) void app.updateSettings({ gistToken: value || undefined });
+    if (value !== (settings.gistToken ?? '')) await app.updateSettings({ gistToken: value || undefined, gistId: undefined });
   };
 
   const syncClick = async () => {
     setBusy(true);
-    await app.updateSettings({ gistToken: token.trim() || undefined });
+    await commitToken();
     const res = await app.sync();
     setNote(
       'error' in res
@@ -84,7 +85,7 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
           spellcheck={false}
           value={token}
           onInput={(e) => setToken((e.currentTarget as HTMLInputElement).value)}
-          onBlur={saveToken}
+          onBlur={() => void commitToken()}
         />
         <p class="german">Letzter Abgleich: {when(settings.lastSync)}</p>
         <button type="button" class="secondary" disabled={busy} onClick={() => void syncClick()}>
