@@ -6,7 +6,9 @@ export type Stage = 0 | 1 | 2 | 3 | 4;
 
 export type ReviewEvent =
   | { id: string; cardId: string; ts: number; device: string; kind: 'review'; rating: 1 | 2 | 3 | 4; stage: Stage }
-  | { id: string; cardId: string; ts: number; device: string; kind: 'known' };
+  | { id: string; cardId: string; ts: number; device: string; kind: 'known' }
+  /** Dialog angehört (cardId = Dialog-id). Dialoge sind keine Karten, das Ereignis ändert keinen Lernstand. */
+  | { id: string; cardId: string; ts: number; device: string; kind: 'heard' };
 
 export type CardState = { card: Card; stage: Stage; known: boolean; lastTs: number };
 
@@ -54,7 +56,7 @@ export function replay(
   for (const e of sorted) {
     if (seen.has(e.id)) continue;
     seen.add(e.id);
-    if (!validCardIds.has(e.cardId)) continue;
+    if (e.kind === 'heard' || !validCardIds.has(e.cardId)) continue;
 
     if (e.kind === 'known') {
       states.set(e.cardId, applyKnown(e.ts));
@@ -73,6 +75,16 @@ export function replay(
     states.set(e.cardId, { card: next, stage, known, lastTs: e.ts });
   }
   return states;
+}
+
+/** Spätester Zeitpunkt, an dem ein Dialog angehört wurde, je Dialog-id. Doppelte ids zählen einmal. */
+export function dialogsHeard(events: ReviewEvent[]): Map<string, number> {
+  const heard = new Map<string, number>();
+  for (const e of events) {
+    if (e.kind !== 'heard') continue;
+    heard.set(e.cardId, Math.max(heard.get(e.cardId) ?? 0, e.ts));
+  }
+  return heard;
 }
 
 /** Abrufwahrscheinlichkeit zum Zeitpunkt now (Millisekunden). Neue Karten ohne Wiederholung liefern 0. */

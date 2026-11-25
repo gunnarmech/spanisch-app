@@ -150,6 +150,67 @@ describe('buildRound', () => {
   });
 });
 
+describe('Dialogwahl', () => {
+  const dlg = (id: string, es: string): Item => ({
+    id,
+    kind: 'dialog',
+    title: id,
+    lines: [{ speaker: 'A', es, de: '' }],
+  });
+  const sit: Situation = {
+    id: 's1',
+    order: 1,
+    title: 'S',
+    items: [word('w-hola', 'hola'), dlg('d1', 'hola'), dlg('d2', 'hola hola')],
+  };
+  // Das Wort ist zu NOW fällig, sonst wäre die Runde fertig und enthielte keinen Dialog.
+  const NOW = T0 + 30 * DAY;
+  const states = replay([review(1, 'w-hola', T0)], new Set(['w-hola']));
+  const dialogOf = (heard?: Map<string, number>, now = NOW) =>
+    buildRound({ now, states, situations: [sit], heard }).tasks.filter((t) => t.form === 'dialog').map((t) => t.itemId);
+
+  test('zweiter Dialog nach dem ersten', () => {
+    expect(dialogOf()).toEqual(['d1']);
+    expect(dialogOf(new Map([['d1', NOW]]))).toEqual(['d2']);
+  });
+
+  test('alle kürzlich gehört: kein Dialog', () => {
+    const heard = new Map([
+      ['d1', NOW - 1 * DAY],
+      ['d2', NOW - 2 * DAY],
+    ]);
+    expect(dialogOf(heard)).toEqual([]);
+  });
+
+  test('vor 4 Tagen gehört: am längsten zurückliegender wieder', () => {
+    const heard = new Map([
+      ['d1', NOW - 4 * DAY],
+      ['d2', NOW - 6 * DAY],
+    ]);
+    expect(dialogOf(heard)).toEqual(['d2']);
+    expect(dialogOf(new Map([['d1', NOW - 4 * DAY], ['d2', NOW - 1 * DAY]]))).toEqual(['d1']);
+  });
+
+  test('Wortform aus anderer Situation zählt zu den 80 Prozent', () => {
+    const s0: Situation = { id: 's0', order: 1, title: 'A', items: [word('w-mesa', 'mesa'), word('w-sol', 'sol')] };
+    const s1: Situation = {
+      id: 's1',
+      order: 2,
+      title: 'B',
+      items: [word('w-pan', 'pan'), dlg('d1', 'mesa sol pan')],
+    };
+    const st = replay(
+      ['w-mesa', 'w-sol', 'w-pan'].map((id, i) => review(i, id, T0)),
+      new Set(['w-mesa', 'w-sol', 'w-pan']),
+    );
+    const r = buildRound({ now: T0 + 30 * DAY, states: st, situations: [s0, s1], focusSituationId: 's1' });
+    expect(r.tasks.some((t) => t.form === 'dialog')).toBe(true);
+    const st2 = replay([review(1, 'w-pan', T0)], new Set(['w-pan']));
+    const r2 = buildRound({ now: T0 + 30 * DAY, states: st2, situations: [s0, s1], focusSituationId: 's1' });
+    expect(r2.tasks.some((t) => t.form === 'dialog')).toBe(false);
+  });
+});
+
 describe('currentSituation', () => {
   test('erste nach order mit ungesehenen Items', () => {
     const s1: Situation = { id: 's1', order: 1, title: 'A', items: [word('a', 'a')] };

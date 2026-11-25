@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import { State } from 'ts-fsrs';
-import { newEvent, ratingFor, replay, retrievability, type ReviewEvent, type Stage } from '../../src/engine/state';
+import { dialogsHeard, newEvent, ratingFor, replay, retrievability, type ReviewEvent, type Stage } from '../../src/engine/state';
 
 const DAY = 86_400_000;
 const T0 = Date.UTC(2026, 10, 25, 10, 0, 0);
@@ -129,5 +129,25 @@ describe('newEvent', () => {
     expect(e.device).toBe('dev');
     expect(e.id).toMatch(/^[0-9a-f-]{36}$/);
     expect(newEvent({ cardId: 'a', kind: 'known' }, 'dev').id).not.toBe(e.id);
+  });
+});
+
+describe('heard', () => {
+  const heard = (id: string, cardId: string, ts: number): ReviewEvent => ({ id, cardId, ts, device: 'd', kind: 'heard' });
+
+  test('replay ignoriert heard-Ereignisse', () => {
+    const states = replay([heard('h1', 'a', T0)], valid);
+    expect(states.size).toBe(0);
+  });
+
+  test('dialogsHeard behält den spätesten Zeitpunkt', () => {
+    const m = dialogsHeard([heard('h1', 'd1', T0), heard('h2', 'd1', T0 + DAY), heard('h3', 'd1', T0 - DAY), heard('h4', 'd2', T0)]);
+    expect(m.get('d1')).toBe(T0 + DAY);
+    expect(m.get('d2')).toBe(T0);
+    expect(m.size).toBe(2);
+  });
+
+  test('newEvent nimmt heard an', () => {
+    expect(newEvent({ cardId: 'd1', kind: 'heard' }, 'dev', 5).kind).toBe('heard');
   });
 });

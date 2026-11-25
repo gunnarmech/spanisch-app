@@ -13,6 +13,7 @@ export type Task = {
 };
 
 const DIALOG_SEEN_SHARE = 0.8;
+const DIALOG_REPEAT_MS = 3 * 86_400_000;
 const STAGE_FORMS: TaskForm[] = ['choice', 'listen', 'type', 'speak', 'pressure'];
 
 /** Karten-ids eines Items: Grammatik je Übung, Dialoge sind keine Karten. */
@@ -77,6 +78,8 @@ export function buildRound(opts: {
   focusSituationId?: string;
   maxReviews?: number;
   maxNew?: number;
+  /** Zeitpunkt des letzten Anhörens je Dialog-id (aus dialogsHeard). */
+  heard?: Map<string, number>;
 }): { tasks: Task[]; finished: boolean } {
   const { now, states, situations } = opts;
   const maxReviews = opts.maxReviews ?? 20;
@@ -131,9 +134,16 @@ export function buildRound(opts: {
   const tasks = interleave(reviews, groups);
 
   if (target && !finished) {
-    const dialog = target.items.find(
+    const heard = opts.heard ?? new Map<string, number>();
+    const eligible = target.items.filter(
       (it): it is DialogItem => it.kind === 'dialog' && seenShare(it, situations, states) >= DIALOG_SEEN_SHARE,
     );
+    // Zuerst ein nie gehörter Dialog (Dateireihenfolge), sonst der am längsten zurückliegende, aber erst nach 3 Tagen.
+    let dialog = eligible.find((d) => !heard.has(d.id));
+    if (!dialog) {
+      const oldest = [...eligible].sort((a, b) => heard.get(a.id)! - heard.get(b.id)!)[0];
+      if (oldest && now - heard.get(oldest.id)! >= DIALOG_REPEAT_MS) dialog = oldest;
+    }
     if (dialog) {
       tasks.push({ cardId: dialog.id, itemId: dialog.id, situationId: target.id, form: 'dialog', isNew: false });
     }
