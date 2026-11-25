@@ -51,9 +51,21 @@ describe('Startseite', () => {
     expect(row?.classList.contains('situation--ohne-bild')).toBe(true);
   });
 
+  it('lässt den Eintritt beim Laden der Daten stehen', async () => {
+    vi.resetModules(); // frisches Modul-Flag, als wäre es ein neuer App-Start
+    const { Home: Fresh } = await import('../../src/ui/Home');
+    const page = (app: ReturnType<typeof fakeApp> | null) => (
+      <Fresh app={app} onStart={noop} onDiagnose={noop} onSettings={noop} onProgress={noop} onPlacement={noop} />
+    );
+    const view = render(page(null));
+    expect(view.container.querySelector('section.hero')?.getAttribute('data-enter')).toBe('');
+    view.rerender(page(fakeApp()));
+    expect(view.container.querySelector('section.hero')?.getAttribute('data-enter')).toBe('');
+  });
+
   it('setzt die Prozentzahl in ein num-Element', () => {
     const { container } = render(home());
     const num = container.querySelector('button.situation .num');
-    expect(num?.textContent).toMatch(/^\d+ %$/);
+    expect(num?.textContent).toMatch(/^\d+$/);
   });
 });

@@ -72,7 +72,7 @@ export function Home({ app, onStart, onDiagnose, onSettings, onProgress, onPlace
                     {hasDialog ? (
                       <>
                         <span class="understand">
-                          du verstehst etwa <span class="num">{pct} %</span> der Dialoge
+                          du verstehst etwa <span class="num">{pct}</span> % der Dialoge
                         </span>
                         <span class="meter" aria-hidden="true">
                           <span style={{ width: `${pct}%` }} />

@@ -173,7 +173,7 @@ main[data-view="home"] {
   margin-top: var(--s-1);
   overflow: hidden;
   border-radius: 2px;
-  background: color-mix(in oklab, var(--ink) 10%, transparent);
+  background: color-mix(in oklab, var(--ink) 16%, transparent);
 }
 
 .meter > span {
@@ -258,7 +258,7 @@ html.m-enter .hero[data-enter]:not([data-enter="off"]) > .placement-offer,
 html.m-enter .hero[data-enter]:not([data-enter="off"]) > .start,
 html.m-enter .hero[data-enter]:not([data-enter="off"]) > .hero-photo,
 html.m-enter .hero[data-enter]:not([data-enter="off"]) + .choose {
-  animation: enter-up 700ms var(--ease-enter) both;
+  animation: enter-up 700ms var(--ease-enter) backwards;
 }
 
 html.m-enter .hero[data-enter]:not([data-enter="off"]) > .lead {
