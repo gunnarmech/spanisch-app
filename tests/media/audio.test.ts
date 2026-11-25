@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { audioUrl, loadManifest, play, playSequence, prefetchSituation, type Manifest } from '../../src/media/audio';
+import { audioUrl, loadManifest, play, playSequence, stopAudio, prefetchSituation, prefetchSituations, prefetchTargets, type Manifest } from '../../src/media/audio';
 
 const manifest: Manifest = {
   'w-hola': [
@@ -38,6 +38,31 @@ describe('audioUrl', () => {
   it('liefert null ohne Eintrag', () => {
     expect(audioUrl('01', 'gibt-es-nicht', { speed: 'normal' }, manifest)).toBeNull();
     expect(audioUrl('01', 'w-hola', { speed: 'fast' }, manifest)).toBeNull();
+  });
+});
+
+describe('audioUrl mit Hash', () => {
+  const hashed: Manifest = { 'w-hola': [{ voice: 'cl-f', speed: 'normal', hash: 'abc123' }] };
+
+  it('hängt den Manifest-Hash als Query an', () => {
+    expect(audioUrl('01', 'w-hola', { speed: 'normal' }, hashed)).toBe(`${base}audio/01/w-hola-cl-f-normal.mp3?h=abc123`);
+  });
+
+  it('prefetch nutzt dieselbe URL wie audioUrl', async () => {
+    const put = vi.fn().mockResolvedValue(undefined);
+    const match = vi.fn().mockResolvedValue(undefined);
+    vi.stubGlobal('caches', { open: vi.fn().mockResolvedValue({ put, match }) });
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, status: 200, clone: () => ({}) }));
+    await prefetchSituation('01', hashed);
+    expect(put.mock.calls[0][0]).toBe(audioUrl('01', 'w-hola', { speed: 'normal' }, hashed));
+  });
+
+  it('legt nur vollständige 200-Antworten in den Cache', async () => {
+    const put = vi.fn().mockResolvedValue(undefined);
+    vi.stubGlobal('caches', { open: vi.fn().mockResolvedValue({ put, match: vi.fn().mockResolvedValue(undefined) }) });
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, status: 206, clone: () => ({}) }));
+    await prefetchSituation('01', hashed);
+    expect(put).not.toHaveBeenCalled();
   });
 });
 
@@ -107,7 +132,7 @@ describe('prefetchSituation', () => {
     const put = vi.fn().mockResolvedValue(undefined);
     const open = vi.fn().mockResolvedValue({ put, match: vi.fn().mockResolvedValue(undefined) });
     vi.stubGlobal('caches', { open });
-    const fetchMock = vi.fn().mockResolvedValue({ ok: true, clone: () => ({}) });
+    const fetchMock = vi.fn().mockResolvedValue({ ok: true, status: 200, clone: () => ({}) });
     vi.stubGlobal('fetch', fetchMock);
     await prefetchSituation('01', manifest);
     expect(open).toHaveBeenCalledWith('audio-v1');
@@ -121,5 +146,36 @@ describe('prefetchSituation', () => {
     vi.spyOn(console, 'warn').mockImplementation(() => {});
     await expect(prefetchSituation('01', manifest)).resolves.toBeUndefined();
     expect(put).not.toHaveBeenCalled();
+  });
+});
+
+describe('prefetchTargets', () => {
+  it('nimmt die Situationen der Runde und die nächste, ohne Doppelte', () => {
+    expect(prefetchTargets(['a', 'a', 'b'], ['a', 'b', 'c', 'd'])).toEqual(['a', 'b', 'c']);
+    expect(prefetchTargets(['c'], ['a', 'b', 'c'])).toEqual(['c']);
+    expect(prefetchTargets([], ['a'])).toEqual([]);
+  });
+});
+
+describe('prefetchSituations', () => {
+  it('lädt nichts ohne Netz', async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal('fetch', fetchMock);
+    vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(false);
+    await prefetchSituations(['01']);
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+});
+
+describe('stopAudio', () => {
+  it('beendet eine laufende Folge, ohne den nächsten Ton zu starten', async () => {
+    vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => {});
+    const spy = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
+    const run = playSequence(['a.mp3', 'b.mp3']);
+    await Promise.resolve();
+    await Promise.resolve();
+    stopAudio();
+    await run;
+    expect(spy).toHaveBeenCalledTimes(1);
   });
 });

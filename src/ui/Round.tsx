@@ -3,7 +3,7 @@ import type { Item } from '../content/types';
 import { situationCoverage } from '../engine/coverage';
 import { buildRound, type Task } from '../engine/round';
 import { ratingFor, type Stage } from '../engine/state';
-import { audioUrl, loadManifest, type Manifest } from '../media/audio';
+import { audioUrl, loadManifest, prefetchSituations, prefetchTargets, type Manifest } from '../media/audio';
 import { RoundEnd } from './RoundEnd';
 import { TaskTools } from './TaskTools';
 import { Choice } from './tasks/Choice';
@@ -69,6 +69,15 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     return () => {
       alive = false;
     };
+  }, [plan]);
+
+  // Offline-Audio: Töne dieser und der nächsten Situation im Hintergrund in den Cache legen.
+  useEffect(() => {
+    const ids = prefetchTargets(
+      plan.tasks.map((t) => t.situationId),
+      app.situations.map((s) => s.id),
+    );
+    void prefetchSituations(ids);
   }, [plan]);
 
   useKey((e) => {

@@ -36,8 +36,9 @@ export default defineConfig({
             urlPattern: ({ url }) => url.pathname.includes('/audio/') && url.pathname.endsWith('.mp3'),
             handler: 'CacheFirst',
             options: {
-              cacheName: 'audio-v1',
+              cacheName: 'audio-v1', // gleicher Name wie AUDIO_CACHE in src/media/audio.ts (prefetch)
               rangeRequests: true,
+              expiration: { maxEntries: 6000 },
               cacheableResponse: { statuses: [0, 200] },
             },
           },
