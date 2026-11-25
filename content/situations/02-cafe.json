@@ -539,8 +539,8 @@
       ],
       "examples": [
         {
-          "es": "¿Qué quiere tomar?",
-          "de": "Was möchten Sie trinken?"
+          "es": "Yo tomo un café.",
+          "de": "Ich trinke einen Kaffee."
         }
       ],
       "note": "Bei Getränken ist tomar das übliche Verb. Auch für Mahlzeiten: tomar once.",
@@ -762,20 +762,21 @@
       "freqRank": 488
     },
     {
-      "id": "p-para-comer-aqui",
+      "id": "p-para-servir",
       "kind": "phrase",
-      "es": "para comer aquí",
+      "es": "para servir",
       "de": "zum Hieressen",
       "forms": [
-        "para comer aquí"
+        "para servir",
+        "servir"
       ],
       "examples": [
         {
-          "es": "¿Para comer aquí o para llevar?",
+          "es": "¿Para servir o para llevar?",
           "de": "Zum Hieressen oder zum Mitnehmen?"
         }
       ],
-      "note": "Diese Frage kommt an der Kasse. Antwort: para comer aquí oder para llevar."
+      "note": "So fragt man in chilenischen Cafés und Imbissen an der Kasse. Antwort: para servir oder para llevar. Auch verständlich: para comer aquí."
     },
     {
       "id": "w-o",
@@ -989,6 +990,59 @@
       "freqRank": 171
     },
     {
+      "id": "w-mediano",
+      "kind": "word",
+      "es": "mediano",
+      "de": "mittelgroß",
+      "forms": [
+        "mediano",
+        "mediana"
+      ],
+      "examples": [
+        {
+          "es": "Un café mediano, por favor.",
+          "de": "Einen mittelgroßen Kaffee, bitte."
+        }
+      ],
+      "note": "Größen bestellst du in Chile meist so: chico, mediano, grande."
+    },
+    {
+      "id": "w-chico",
+      "kind": "word",
+      "es": "chico",
+      "de": "klein (Größe)",
+      "forms": [
+        "chico",
+        "chica"
+      ],
+      "examples": [
+        {
+          "es": "Un café chico, por favor.",
+          "de": "Einen kleinen Kaffee, bitte."
+        }
+      ],
+      "note": "Für Größen ist chico der übliche Ausdruck: un café chico. Als Adjektiv ist das unproblematisch. Das Substantiv el chico hat in Chile laut Wörterbuch eine derbe Nebenbedeutung, benutz es nicht als Wort für Junge.",
+      "freqRank": 293
+    },
+    {
+      "id": "w-pequeno",
+      "kind": "word",
+      "es": "pequeño",
+      "de": "klein",
+      "forms": [
+        "pequeño",
+        "pequeña"
+      ],
+      "examples": [
+        {
+          "es": "Un café pequeño, por favor.",
+          "de": "Einen kleinen Kaffee, bitte."
+        }
+      ],
+      "note": "Richtig, aber bei Größen sagt man in Chile meist chico: un café chico, mediano, grande.",
+      "freqRank": 414
+    },
+    {
       "id": "s-quiero-un-cafe",
       "kind": "sentence",
       "es": "Quiero un café con leche.",
@@ -1055,6 +1109,12 @@
       "de": "Wer möchte Wein?"
     },
     {
+      "id": "s-cafe-mediano",
+      "kind": "sentence",
+      "es": "Quiero un café mediano, por favor.",
+      "de": "Ich möchte einen mittelgroßen Kaffee, bitte."
+    },
+    {
       "id": "s-quiero-otro-cafe",
       "kind": "sentence",
       "es": "Quiero otro café.",
@@ -1072,12 +1132,12 @@
         },
         {
           "speaker": "B",
-          "es": "Buenos días. Quiero un café con leche, por favor.",
-          "de": "Guten Morgen. Ich möchte einen Milchkaffee, bitte."
+          "es": "Buenos días. Quiero un café con leche chico, por favor.",
+          "de": "Guten Morgen. Ich möchte einen kleinen Milchkaffee, bitte."
         },
         {
           "speaker": "A",
-          "es": "Con gusto. ¿Para comer aquí o para llevar?",
+          "es": "Con gusto. ¿Para servir o para llevar?",
           "de": "Sehr gern. Zum Hieressen oder zum Mitnehmen?"
         },
         {
@@ -1655,23 +1715,6 @@
       "freqRank": 398
     },
     {
-      "id": "w-pequeno",
-      "kind": "word",
-      "es": "pequeño",
-      "de": "klein",
-      "forms": [
-        "pequeño",
-        "pequeña"
-      ],
-      "examples": [
-        {
-          "es": "Un café pequeño, por favor.",
-          "de": "Einen kleinen Kaffee, bitte."
-        }
-      ],
-      "freqRank": 414
-    },
-    {
       "id": "w-comida",
       "kind": "word",
       "es": "comida",
@@ -1875,7 +1918,7 @@
           "de": "Einen Completo und eine Limo, bitte."
         }
       ],
-      "note": "Das Brötchen mit Wurst, Tomate, Mayonnaise und oft Avocado. Als completo italiano mit Tomate, Avocado und Mayonnaise.",
+      "note": "Das Brötchen mit Wurst, Tomate, Sauerkraut (chucrut) und Mayonnaise. Der completo italiano hat stattdessen Tomate, Avocado und Mayonnaise.",
       "chile": {
         "note": "In Chile ist ein completo ein langes weiches Brötchen mit Wurst, Tomate, Sauerkraut und Mayonnaise, nicht das Wort für vollständig.",
         "source": "Diccionario de americanismos (RAE-ASALE), s. v. completo, https://www.asale.org/damer/completo"
@@ -2260,8 +2303,8 @@
       ],
       "examples": [
         {
-          "es": "Soy alérgico a las nueces.",
-          "de": "Ich bin allergisch gegen Nüsse."
+          "es": "Mi amigo es alérgico a las nueces.",
+          "de": "Mein Freund ist allergisch gegen Nüsse."
         }
       ],
       "note": "Eine Frau sagt alérgica. Dahinter steht a: alérgico a."
@@ -2358,8 +2401,8 @@
       ],
       "examples": [
         {
-          "es": "¿Dónde está el baño?",
-          "de": "Wo ist die Toilette?"
+          "es": "El baño está aquí.",
+          "de": "Die Toilette ist hier."
         }
       ],
       "note": "In Chile sagst du baño. Das ist höflich und üblich.",
@@ -2761,11 +2804,11 @@
       ],
       "examples": [
         {
-          "es": "Dejo la propina en efectivo.",
-          "de": "Ich lasse das Trinkgeld bar da."
+          "es": "¿Dejo la propina aquí?",
+          "de": "Lasse ich das Trinkgeld hier?"
         }
       ],
-      "note": "In Chile sind etwa zehn Prozent üblich. In Restaurants steht auf der Rechnung oft schon eine propina sugerida von 10 %. Sie ist freiwillig."
+      "note": "In Chile sind etwa zehn Prozent üblich. Im Restaurant ist sie meist nicht im Preis enthalten, sondern extra: Die Bedienung nennt die propina sugerida von 10 %, sie ist freiwillig."
     },
     {
       "id": "w-sugerido",
@@ -2778,8 +2821,8 @@
       ],
       "examples": [
         {
-          "es": "La propina sugerida es el diez por ciento.",
-          "de": "Das empfohlene Trinkgeld sind zehn Prozent."
+          "es": "Es la propina sugerida.",
+          "de": "Das ist das empfohlene Trinkgeld."
         }
       ]
     },
@@ -2794,8 +2837,8 @@
       ],
       "examples": [
         {
-          "es": "La propina es voluntaria.",
-          "de": "Das Trinkgeld ist freiwillig."
+          "es": "Sí, es voluntaria.",
+          "de": "Ja, es ist freiwillig."
         }
       ]
     },
@@ -2813,6 +2856,22 @@
           "de": "Zehn Prozent."
         }
       ]
+    },
+    {
+      "id": "w-aparte",
+      "kind": "word",
+      "es": "aparte",
+      "de": "extra, separat",
+      "forms": [
+        "aparte"
+      ],
+      "examples": [
+        {
+          "es": "La propina es aparte.",
+          "de": "Das Trinkgeld kommt extra dazu."
+        }
+      ],
+      "freqRank": 2235
     },
     {
       "id": "w-incluir",
@@ -2872,8 +2931,8 @@
       ],
       "examples": [
         {
-          "es": "¿Débito o crédito?",
-          "de": "Debit oder Kredit?"
+          "es": "Con tarjeta de crédito.",
+          "de": "Mit Kreditkarte."
         }
       ],
       "freqRank": 2136
@@ -2912,24 +2971,6 @@
       ]
     },
     {
-      "id": "w-su",
-      "kind": "word",
-      "es": "su",
-      "de": "Ihr, sein, ihr",
-      "forms": [
-        "su",
-        "sus"
-      ],
-      "examples": [
-        {
-          "es": "Aquí está su café.",
-          "de": "Hier ist Ihr Kaffee."
-        }
-      ],
-      "note": "Su ist Ihr (zu usted), aber auch sein oder ihr.",
-      "freqRank": 28
-    },
-    {
       "id": "w-vuelto",
       "kind": "word",
       "es": "vuelto",
@@ -2939,11 +2980,11 @@
       ],
       "examples": [
         {
-          "es": "Aquí está su vuelto.",
-          "de": "Hier ist Ihr Wechselgeld."
+          "es": "El vuelto, por favor.",
+          "de": "Das Wechselgeld, bitte."
         }
       ],
-      "note": "In Chile und ganz Lateinamerika vuelto für Wechselgeld.",
+      "note": "In ganz Lateinamerika vuelto für Wechselgeld. Su heißt hier Ihr (zu usted), sonst auch sein oder ihr.",
       "chile": {
         "note": "Vuelto bezeichnet in ganz Lateinamerika das Wechselgeld, auch in Chile.",
         "source": "Diccionario de americanismos (RAE-ASALE), s. v. vuelto, https://www.asale.org/damer/vuelto"
@@ -3079,8 +3120,8 @@
         },
         {
           "speaker": "B",
-          "es": "No. La propina sugerida es el diez por ciento. Es voluntaria.",
-          "de": "Nein. Das empfohlene Trinkgeld beträgt zehn Prozent. Es ist freiwillig."
+          "es": "No, es aparte. La propina sugerida es el diez por ciento. Es voluntaria.",
+          "de": "Nein, es kommt extra dazu. Das empfohlene Trinkgeld beträgt zehn Prozent. Es ist freiwillig."
         },
         {
           "speaker": "A",
