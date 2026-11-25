@@ -6638,22 +6638,22 @@
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "7de28985116b2c7e9322cd34e15e5eacb1b0d476"
+      "hash": "7f5f0bcdf5988a5d4c40996989957c7852959ea5"
     },
     {
       "voice": "mx-m",
       "speed": "normal",
-      "hash": "e087619d112d2f2a7ef62a239fc8069b29b9a64f"
+      "hash": "8b4b7f807a0191262a411d04073935d9e852edd4"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "30af2b02b2923c7056bbf52882c8e8397a61e817"
+      "hash": "8d25b67d2bf1bbf188670b4487c09799c7ea1377"
     },
     {
       "voice": "mx-m",
       "speed": "slow",
-      "hash": "d11d5ee458cf4d1509f28026a2ca871b2823e6d9"
+      "hash": "9ad2737280fcd22286702104666c978b07df9ace"
     }
   ],
   "g-voy-a-ex4": [
@@ -6704,22 +6704,22 @@
     {
       "voice": "cl-f",
       "speed": "normal",
-      "hash": "59c663bb742c3d45fb94187cc40385620edeb387"
+      "hash": "199a9794de4c863f5f2c2b968fbb890908211ab8"
     },
     {
       "voice": "co-m",
       "speed": "normal",
-      "hash": "dc24881f7a93e5d80c21fcc6ee9ff6be2e3cb232"
+      "hash": "0e670f72c5e99be1c3dd75a32595d14ab8675a69"
     },
     {
       "voice": "cl-f",
       "speed": "slow",
-      "hash": "722051b9d8d12d13258890774f30aa8c202a735f"
+      "hash": "21c0f5568e3bf050b06f70daffc6c8201cf4101a"
     },
     {
       "voice": "co-m",
       "speed": "slow",
-      "hash": "ae8b9c9efddd9947f750de33822520925f6e6d7f"
+      "hash": "f2868200f5a68624fd948a21385459244a0a24f5"
     }
   ],
   "g-voy-a-3": [

@@ -2291,8 +2291,8 @@
           "de": "Wirst du Obst kaufen?"
         },
         {
-          "es": "Vamos a la feria.",
-          "de": "Wir gehen zum Markt."
+          "es": "Vamos a pagar.",
+          "de": "Wir werden zahlen."
         },
         {
           "es": "Voy al almacén.",
@@ -2305,8 +2305,8 @@
           "es": "Voy a comprar pan."
         },
         {
-          "de": "Wir gehen zum Markt.",
-          "es": "Vamos a la feria."
+          "de": "Wir werden Brot und Obst kaufen.",
+          "es": "Vamos a comprar pan y fruta."
         },
         {
           "de": "Gehst du in den Supermarkt?",
