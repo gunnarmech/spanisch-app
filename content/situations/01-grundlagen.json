@@ -1,0 +1,142 @@
+{
+  "id": "01-grundlagen",
+  "order": 1,
+  "title": "Grundlagen",
+  "items": [
+    {
+      "id": "w-hola",
+      "kind": "word",
+      "es": "hola",
+      "de": "hallo",
+      "forms": ["hola"],
+      "examples": [{ "es": "Hola, buenos días.", "de": "Hallo, guten Morgen." }]
+    },
+    {
+      "id": "w-chao",
+      "kind": "word",
+      "es": "chao",
+      "de": "tschüss",
+      "forms": ["chao"],
+      "examples": [{ "es": "Chao, hasta luego.", "de": "Tschüss, bis später." }],
+      "note": "In Chile sehr gebräuchlich zum Verabschieden."
+    },
+    {
+      "id": "w-gracias",
+      "kind": "word",
+      "es": "gracias",
+      "de": "danke",
+      "forms": ["gracias"],
+      "examples": [{ "es": "Bien, gracias.", "de": "Gut, danke." }]
+    },
+    {
+      "id": "p-por-favor",
+      "kind": "phrase",
+      "es": "por favor",
+      "de": "bitte",
+      "forms": ["por favor"],
+      "examples": [{ "es": "Una mesa, por favor.", "de": "Einen Tisch, bitte." }]
+    },
+    {
+      "id": "w-perdon",
+      "kind": "word",
+      "es": "perdón",
+      "de": "Entschuldigung",
+      "accept": ["perdon"],
+      "forms": ["perdón"],
+      "examples": [{ "es": "Perdón, no entiendo.", "de": "Entschuldigung, ich verstehe nicht." }]
+    },
+    {
+      "id": "p-buenos-dias",
+      "kind": "phrase",
+      "es": "buenos días",
+      "de": "guten Morgen",
+      "forms": ["buenos días"],
+      "examples": [{ "es": "Buenos días, ¿cómo estás?", "de": "Guten Morgen, wie geht es dir?" }]
+    },
+    {
+      "id": "p-mucho-gusto",
+      "kind": "phrase",
+      "es": "mucho gusto",
+      "de": "freut mich",
+      "forms": ["mucho gusto"],
+      "examples": [{ "es": "Mucho gusto, me llamo Ana.", "de": "Freut mich, ich heiße Ana." }]
+    },
+    {
+      "id": "p-como-estas",
+      "kind": "phrase",
+      "es": "¿cómo estás?",
+      "de": "wie geht es dir?",
+      "accept": ["cómo estás", "como estas"],
+      "forms": ["cómo", "estás"],
+      "examples": [{ "es": "Hola, ¿cómo estás?", "de": "Hallo, wie geht es dir?" }],
+      "note": "Unter Freunden und Gleichaltrigen. Formell: ¿cómo está usted?"
+    },
+    {
+      "id": "w-bien",
+      "kind": "word",
+      "es": "bien",
+      "de": "gut",
+      "forms": ["bien"],
+      "examples": [{ "es": "Estoy bien, gracias.", "de": "Mir geht es gut, danke." }]
+    },
+    {
+      "id": "p-no-entiendo",
+      "kind": "phrase",
+      "es": "no entiendo",
+      "de": "ich verstehe nicht",
+      "forms": ["no", "entiendo"],
+      "examples": [{ "es": "Perdón, no entiendo.", "de": "Entschuldigung, ich verstehe nicht." }]
+    },
+    {
+      "id": "s-me-llamo",
+      "kind": "sentence",
+      "es": "Me llamo Ana.",
+      "de": "Ich heiße Ana.",
+      "accept": ["Mi nombre es Ana."]
+    },
+    {
+      "id": "s-como-te-llamas",
+      "kind": "sentence",
+      "es": "¿Cómo te llamas?",
+      "de": "Wie heißt du?"
+    },
+    {
+      "id": "s-no-hablo-mucho",
+      "kind": "sentence",
+      "es": "No hablo mucho español.",
+      "de": "Ich spreche nicht viel Spanisch."
+    },
+    {
+      "id": "d-primer-saludo",
+      "kind": "dialog",
+      "title": "Ein erstes Hallo",
+      "lines": [
+        { "speaker": "A", "es": "Hola, buenos días.", "de": "Hallo, guten Morgen." },
+        { "speaker": "B", "es": "Buenos días. ¿Cómo estás?", "de": "Guten Morgen. Wie geht es dir?" },
+        { "speaker": "A", "es": "Bien, gracias. Mucho gusto.", "de": "Gut, danke. Freut mich." },
+        { "speaker": "B", "es": "Mucho gusto. Chao.", "de": "Freut mich. Tschüss." }
+      ]
+    },
+    {
+      "id": "g-tu-usted",
+      "kind": "grammar",
+      "title": "tú und usted",
+      "explanation": "Unter Freunden und Gleichaltrigen sagst du tú: ¿Cómo estás? Gegenüber Älteren, Fremden und im Amt sagst du usted: ¿Cómo está usted? Die Verbform von usted ist dieselbe wie bei él und ella. In der Mehrzahl gibt es in Lateinamerika nur ustedes, für Freunde wie für Fremde. Ein eigenes Wort für euch wie in Spanien brauchst du nicht.",
+      "examples": [
+        { "es": "¿Cómo estás?", "de": "Wie geht es dir?" },
+        { "es": "¿Cómo está usted?", "de": "Wie geht es Ihnen?" },
+        { "es": "¿Cómo están ustedes?", "de": "Wie geht es euch? Oder: Wie geht es Ihnen (Mehrzahl)?" }
+      ],
+      "exercises": [
+        { "de": "Wie geht es dir?", "es": "¿Cómo estás?", "accept": ["Cómo estás"] },
+        { "de": "Wie geht es Ihnen?", "es": "¿Cómo está usted?", "accept": ["¿Cómo está?"] }
+      ]
+    },
+    {
+      "id": "pair-pero-perro",
+      "kind": "pair",
+      "es": "pero",
+      "options": ["pero", "perro"]
+    }
+  ]
+}
