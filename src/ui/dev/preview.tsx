@@ -65,7 +65,7 @@ function Screen({ app, params }: { app: AppState; params: URLSearchParams }) {
       const found = typ && FORMS.includes(typ) ? pick(app, typ) : null;
       if (!found) return null;
       const Current = component(found.task, found.item);
-      const env = { situations: app.situations, urlFor: () => null };
+      const env = { situations: app.situations, urlFor: () => `${import.meta.env.BASE_URL}audio/01-grundlagen/d-conocerse-1-cl-f-normal.mp3` };
       return (
         <RoundEnvContext.Provider value={env}>
           <Current task={found.task} item={found.item} onDone={noop} />

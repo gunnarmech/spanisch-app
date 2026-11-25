@@ -185,7 +185,7 @@ export function Speak(props: TaskProps) {
             {phase.verdict === 'correct' ? 'Richtig.' : 'Nicht ganz. Richtig ist:'}
           </p>
           {phase.verdict === 'wrong' ? <Missing target={text.es} missing={phase.missing} /> : <p class="spanish solution">{text.es}</p>}
-          <AudioButton url={url} primary autoplay />
+          <AudioButton url={url} spaceKey autoplay />
           <button
             type="button"
             class="btn btn--primary"

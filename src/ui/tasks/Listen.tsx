@@ -23,7 +23,7 @@ export function Listen({ task, item, onAnswered, onDone }: TaskProps) {
         question={
           <>
             <p class="ask">Welches Wort hörst du?</p>
-            <AudioButton url={url} primary autoplay />
+            <AudioButton url={url} spaceKey autoplay />
           </>
         }
         options={options}
@@ -43,7 +43,7 @@ export function Listen({ task, item, onAnswered, onDone }: TaskProps) {
       question={
         <>
           <p class="ask">Was bedeutet das?</p>
-          {url ? <AudioButton url={url} primary autoplay /> : <p class="spanish big">{text.es}</p>}
+          {url ? <AudioButton url={url} spaceKey autoplay /> : <p class="spanish big">{text.es}</p>}
         </>
       }
       options={options}

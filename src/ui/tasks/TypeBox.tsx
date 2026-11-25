@@ -116,7 +116,7 @@ export function TypeBox({ task, prompt, targets, audioKey, context, onAnswered, 
           ) : (
             <p class="spanish solution">{outcome.verdict === 'correct' ? outcome.target : targets[0]}</p>
           )}
-          <AudioButton url={url} primary autoplay />
+          <AudioButton url={url} spaceKey autoplay />
           <button
             type="button"
             class="btn btn--primary"

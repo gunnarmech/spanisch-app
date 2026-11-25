@@ -71,7 +71,7 @@ function Question({ app, entry, manifest, onAnswer, onNext }: QuestionProps) {
       question={
         <>
           <p class="ask">Was bedeutet das?</p>
-          {url ? <AudioButton url={url} primary /> : <p class="spanish">{item.es}</p>}
+          {url ? <AudioButton url={url} spaceKey /> : <p class="spanish">{item.es}</p>}
         </>
       }
       options={options}

@@ -3,8 +3,10 @@
 import { spawn } from 'node:child_process';
 import { mkdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
+const root = fileURLToPath(new URL('..', import.meta.url));
 const args = process.argv.slice(2);
 const opt = (name) => {
   const i = args.indexOf(`--${name}`);
@@ -32,7 +34,8 @@ let server;
 let base = opt('base');
 if (!base) {
   base = 'http://localhost:5173/spanisch-app/';
-  server = spawn(process.execPath, [join('node_modules', 'vite', 'bin', 'vite.js'), '--port', '5173', '--strictPort'], {
+  server = spawn(process.execPath, [join(root, 'node_modules', 'vite', 'bin', 'vite.js'), '--port', '5173', '--strictPort'], {
+    cwd: root,
     stdio: 'ignore',
   });
   let up = false;
@@ -57,8 +60,9 @@ const stop = () => {
 
 let count = 0;
 const missing = [];
-const browser = await chromium.launch();
+let browser;
 try {
+  browser = await chromium.launch();
   for (const size of SIZES) {
     for (const [label, scheme] of SCHEMES) {
       const context = await browser.newContext({ viewport: size, colorScheme: scheme });
@@ -90,6 +94,16 @@ try {
             missing.push(`${size.width}-${label}-aufgabe-${typ}-ergebnis`);
           }
         }
+        if (typ === 'dialog') {
+          try {
+            await page.getByRole('button', { name: 'Text zeigen' }).click({ timeout: 5000 });
+            await shot('aufgabe-dialog-text');
+            await page.getByRole('button', { name: 'Übersetzung einblenden' }).click({ timeout: 5000 });
+            await shot('aufgabe-dialog-uebersetzung');
+          } catch {
+            missing.push(`${size.width}-${label}-aufgabe-dialog-uebersetzung`);
+          }
+        }
         if (typ === 'type') {
           // Falsche Eingabe zeigt den Hinweis.
           try {
@@ -106,7 +120,7 @@ try {
     }
   }
 } finally {
-  await browser.close();
+  await browser?.close();
   stop();
 }
 console.log(`${count} Bilder in ${out}`);

@@ -78,7 +78,7 @@ export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
       <p class="ask">{item.title}</p>
       <p class="spanish big">{l.es}</p>
       <p class="german">{l.de}</p>
-      <AudioButton url={urls[line]} primary autoplay />
+      <AudioButton url={urls[line]} spaceKey autoplay />
       <button
         type="button"
         class="btn btn--primary"

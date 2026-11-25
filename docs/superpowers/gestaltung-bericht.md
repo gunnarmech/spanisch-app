@@ -9,7 +9,7 @@ Letzte Zeile (Runde 3): `GATE: OPEN 10 (rounds used up)`. Die Runden endeten, we
 Runde 1: `GATE: FAIL 21 (round 1 of 3)`. Behoben, weil sie für eine App gelten:
 - `text-contrast`: Absatz im Einstufungsangebot in Tinte statt gedämpft (im Dunkelmodus 6,71:1, verlangt 7:1).
 - `heading-scale`: h3 der Situationen 18 px statt 20 px; h2 "Kurz einstufen?" in der Größe der anderen h2.
-- `motion-layer`: `data-motion` aus `<html>` entfernt (die Kit-Datei `motion.css` wird nicht kopiert); `hero-enter` bleibt grün über `m-enter`.
+- `motion-layer`: `data-motion` aus `<html>` entfernt (die Kit-Datei `motion.css` wird nicht kopiert); `hero-enter` bleibt grün über `m-enter` (die Klasse `m-enter-done` samt Zeitgeber ist entfernt, weder Gate noch Stylesheet lesen sie).
 - `flush`: Startseitenkopf mit Abstand unten.
 
 ## Verzichte (fünf, je "App-Bildschirm, keine Webseite: <Regel> gilt nicht")
@@ -27,9 +27,9 @@ Wortlaut des Gates (Runde 3, 1440 und 390 wie angegeben):
 - `container-edges` [1440], viermal: "the content of section 1 runs 228px from the left and 228px from the right (read from its outermost blocks: no .wrap): the margin is 64-120px at 1440px", ebenso Abschnitt 2, "section 3 runs 600px from the left and 600px from the right" (Fußzeile, 40-rem-Spalte, bewusst) und "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)".
 - `container` [1440, 390]: "no .wrap" (Klasse des Webseiten-Gerüsts).
 
-Einordnung mit Nachweis: Diese Befunde verlangen Webseiten-Gerüst (`.wrap`, `header.nav`, `footer.closing`, ein Abschnitt je Bildschirm). Die tatsächlichen Ränder der App sind gemessen und in Ordnung: bei 1440 beträgt der Rand der Startseite 228 px (die Spec legt eine 64-rem-Spalte fest, das Gate will 64 bis 120 px), bei 390 und 320 beträgt er 20 px.
+Einordnung mit Nachweis: Diese Befunde verlangen Webseiten-Gerüst (`.wrap`, `header.nav`, `footer.closing`, ein Abschnitt je Bildschirm). Die tatsächlichen Ränder der App sind gemessen und in Ordnung: bei 1440 beträgt der Rand der Startseite 228 px (die Spec legt eine 64-rem-Spalte fest, das Gate will 64 bis 120 px), bei 390 und 320 beträgt er 24 px (`--s-5`, seit der Schlusswelle).
 
-Messung bei 320 px über `?zeige=` (Playwright, hell und dunkel, alle 16 Bildschirme und Aufgabentypen): `scrollWidth` gleich `clientWidth` (320) überall, also kein Überlauf. Linker und rechter Rand der Spalte 20 px, mit einer Ausnahme: Sprechen hatte 6 px, weil der Aufnahmerahmen 14 px nach außen ragte. Behoben: der Rahmen ist jetzt ein Outline mit 2 px Abstand und liegt bei 16 px vom Rand; Nachmessung Sprechen bei 320 px: `scrollWidth` 320 gleich `clientWidth` 320; Knopf links und rechts je 20 px vom Rand; Rahmen ruhend (kein Outline) 20 px, bei laufender Aufnahme liegt die Außenkante des Outlines links und rechts je 16 px vom Rand. Alle Inhalte liegen also bei mindestens 20 px, nur der Aufnahmerahmen als Zierde bei 16 px (Vorgabe: mindestens 16 px). Bei der ersten Fassung des Fixes war der Knopf dabei zu schmal geworden; mit `width: 100%` am Block ist er wieder volle Spaltenbreite.
+Messung bei 320 px über `?zeige=` (Playwright, hell und dunkel, alle 16 Bildschirme und Aufgabentypen): `scrollWidth` gleich `clientWidth` (320) überall, also kein Überlauf. Linker und rechter Rand der Spalte 20 px (Stand des ersten Gate-Laufs; seit der Schlusswelle 24 px, siehe unten), mit einer Ausnahme: Sprechen hatte 6 px, weil der Aufnahmerahmen 14 px nach außen ragte. Behoben: der Rahmen ist jetzt ein Outline mit 2 px Abstand und liegt bei 16 px vom Rand; Nachmessung Sprechen bei 320 px: `scrollWidth` 320 gleich `clientWidth` 320; Knopf links und rechts je 20 px vom Rand; Rahmen ruhend (kein Outline) 20 px, bei laufender Aufnahme liegt die Außenkante des Outlines links und rechts je 16 px vom Rand. Alle Inhalte liegen also bei mindestens 20 px, nur der Aufnahmerahmen als Zierde bei 16 px (Vorgabe: mindestens 16 px). Bei der ersten Fassung des Fixes war der Knopf dabei zu schmal geworden; mit `width: 100%` am Block ist er wieder volle Spaltenbreite.
 
 Weitere WARN (nicht blockierend): `copy-headings`, `copy-buttons`, `copy-actions`, `section-gaps`, `skip-link`.
 
@@ -41,9 +41,11 @@ Weitere WARN (nicht blockierend): `copy-headings`, `copy-buttons`, `copy-actions
 - Knöpfe `solid`: gefüllter Primärknopf, Sekundärknopf mit Rand, 48 px.
 - Marke `dots`: Punkte-Zeichen als App-Icon.
 
+Nachmessung nach der Schlusswelle (Seitenrand auf `--s-5` = 24 px, Dialogspalte `minmax(0, 1fr)` mit Zeilenumbruch, Ton-URL in der Vorschau, damit die Tonknöpfe sichtbar sind): bei 320 px über `?zeige=` alle 8 Bildschirme und alle 8 Aufgabentypen, dazu der Dialog mit eingeblendetem Text und eingeblendeter Übersetzung (6 Tonknöpfe) und derselbe Dialog mit Langwörtern (je 38 Zeichen ohne Leerzeichen) in beiden Sprachen: `scrollWidth` 320 gleich `clientWidth` 320 in allen 18 Messungen, Rand links und rechts je 24 px. Der Aufnahmerahmen von Sprechen liegt damit rechnerisch bei 20 px (24 px Rand minus 2 px Abstand minus 2 px Linie); in der Aufnahme nicht neu gemessen.
+
 ## Fotos
 
-Ersatzbilder aus Santiago und Chile von Wikimedia Commons (freie Lizenzen). Urheber, Lizenz und Link je Foto stehen in der App auf der Seite Quellen.
+Ersatzbilder aus Santiago und Chile von Wikimedia Commons (freie Lizenzen). Urheber (Link auf die Commons-Seite), Lizenz (Link auf den Lizenztext) und der Bearbeitungshinweis "zugeschnitten und verkleinert" je Foto stehen in der App auf der Seite Quellen.
 
 ## Screenshots (Abweichung vom Auftrag)
 

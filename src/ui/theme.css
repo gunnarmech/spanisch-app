@@ -1,22 +1,19 @@
 main {
+  min-height: 100dvh;
   max-width: 40rem;
   margin: 0 auto;
-  padding: 2rem 1.25rem;
+  padding: var(--s-6) var(--s-5);
 }
 
 h1 {
   margin: 0 0 var(--s-3);
   font: var(--display-weight) var(--t-h1) / 1.05 var(--font-display);
-  letter-spacing: -0.04em;
+  letter-spacing: -0.035em;
   overflow-wrap: break-word;
 }
 
 p {
   color: var(--muted);
-}
-
-main {
-  min-height: 100dvh;
 }
 
 h2 {
@@ -113,6 +110,12 @@ main[data-view="home"] {
   min-width: 0;
 }
 
+.situation-item {
+  margin: 0;
+  font: inherit;
+  letter-spacing: normal;
+}
+
 /* Zeile als Grid: Foto links, Name, Satz und Balken immer in Spalte 2 */
 .situation {
   display: grid;
@@ -157,30 +160,10 @@ main[data-view="home"] {
 }
 
 .situation .name {
+  display: block;
   margin: 0;
   font: var(--display-weight) var(--t-h3) / 1.25 var(--font-display);
   overflow-wrap: anywhere;
-}
-
-.understand {
-  color: var(--muted);
-  font-size: var(--t-small);
-  line-height: 1.4;
-}
-
-.meter {
-  display: block;
-  height: 4px;
-  margin-top: var(--s-1);
-  overflow: hidden;
-  border-radius: 2px;
-  background: color-mix(in oklab, var(--ink) 16%, transparent);
-}
-
-.meter > span {
-  display: block;
-  height: 100%;
-  background: var(--action);
 }
 
 main[data-view="home"] .foot {
@@ -293,6 +276,27 @@ html.m-enter .hero[data-enter]:not([data-enter="off"]) > .hero-photo {
   background: var(--action);
   transform-origin: left center;
   transition: transform 300ms var(--ease-enter);
+}
+
+.understand {
+  color: var(--muted);
+  font-size: var(--t-small);
+  line-height: 1.4;
+}
+
+.meter {
+  display: block;
+  height: 4px;
+  margin-top: var(--s-1);
+  overflow: hidden;
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--ink) 16%, transparent);
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  background: var(--action);
 }
 
 .task {
@@ -436,6 +440,7 @@ a {
 }
 
 .feedback {
+  --mark: var(--bad);
   display: grid;
   gap: var(--s-3);
   justify-items: start;
@@ -470,9 +475,6 @@ a {
 }
 
 /* Abweichungen in der Lösung: Unterstreichung in der Zustandsfarbe, kein Hintergrund */
-.feedback {
-  --mark: var(--bad);
-}
 
 .feedback:has(.verdict.near) {
   --mark: var(--near);
@@ -546,9 +548,15 @@ a {
 
 /* Dialog: A bündig, B mit 32 px Einzug, Sprecher als Label */
 .dialog li {
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   column-gap: var(--s-4);
   align-items: end;
+}
+
+.dialog .spanish,
+.dialog .german {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .dialog .speaker {
@@ -619,7 +627,7 @@ a {
 
 @media (min-width: 40rem) {
   main {
-    padding-top: 3.5rem;
+    padding-top: var(--s-7);
   }
 
   .actions {

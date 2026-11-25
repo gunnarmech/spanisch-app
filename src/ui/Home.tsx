@@ -58,30 +58,32 @@ export function Home({ app, onStart, onDiagnose, onSettings, onProgress, onPlace
               const photo = photoFor(s.id);
               return (
                 <li key={s.id}>
-                  <button
-                    type="button"
-                    class={`situation row-link${photo ? '' : ' situation--ohne-bild'}`}
-                    onClick={() => onStart(s.id)}
-                  >
-                    {photo && (
-                      <span class="thumb">
-                        <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" />
-                      </span>
-                    )}
-                    <h3 class="name">{s.title}</h3>
-                    {hasDialog ? (
-                      <>
-                        <span class="understand">
-                          du verstehst etwa <span class="num">{pct}</span> % der Dialoge
+                  <h3 class="situation-item">
+                    <button
+                      type="button"
+                      class={`situation row-link${photo ? '' : ' situation--ohne-bild'}`}
+                      onClick={() => onStart(s.id)}
+                    >
+                      {photo && (
+                        <span class="thumb">
+                          <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" />
                         </span>
-                        <span class="meter" aria-hidden="true">
-                          <span style={{ width: `${pct}%` }} />
-                        </span>
-                      </>
-                    ) : (
-                      <span class="understand">noch keine Dialoge</span>
-                    )}
-                  </button>
+                      )}
+                      <span class="name">{s.title}</span>
+                      {hasDialog ? (
+                        <>
+                          <span class="understand">
+                            du verstehst etwa <span class="num">{pct}</span> % der Dialoge
+                          </span>
+                          <span class="meter" aria-hidden="true">
+                            <span style={{ width: `${pct}%` }} />
+                          </span>
+                        </>
+                      ) : (
+                        <span class="understand">noch keine Dialoge</span>
+                      )}
+                    </button>
+                  </h3>
                 </li>
               );
             })}

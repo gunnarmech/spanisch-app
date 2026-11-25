@@ -24,7 +24,7 @@ export function Intro({ task, item, onDone }: TaskProps) {
           {item.options.map((o, i) => (
             <li key={o} class="lineup">
               <span class="spanish">{o}</span>
-              <AudioButton url={env.urlFor(task, `${item.id}-opt${i + 1}`)} primary={i === 0} />
+              <AudioButton url={env.urlFor(task, `${item.id}-opt${i + 1}`)} spaceKey={i === 0} />
             </li>
           ))}
         </ul>
@@ -40,7 +40,7 @@ export function Intro({ task, item, onDone }: TaskProps) {
       <p class="ask">Neu</p>
       <p class="spanish big">{item.es}</p>
       <p class="german">{item.de}</p>
-      <AudioButton url={env.urlFor(task, item.id)} primary autoplay />
+      <AudioButton url={env.urlFor(task, item.id)} spaceKey autoplay />
       {item.kind !== 'sentence' && item.note && <p class="note">{item.note}</p>}
       {item.kind !== 'sentence' && item.chile && <p class="note">In Chile: {item.chile.note}</p>}
       {examples.length > 0 && (
