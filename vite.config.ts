@@ -14,8 +14,8 @@ export default defineConfig({
         lang: 'de',
         display: 'standalone',
         start_url: '/spanisch-app/',
-        background_color: '#1f2a26',
-        theme_color: '#2f5d50',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
         icons: [
           { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icon-512.png', sizes: '512x512', type: 'image/png' },
@@ -23,7 +23,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,json,svg,png}'],
+        globPatterns: ['**/*.{js,css,html,json,svg,png,woff2,webp}'],
         // Audio nicht vorab, sondern beim ersten Abspielen oder per prefetchSituation
         globIgnores: ['audio/**'],
         runtimeCaching: [

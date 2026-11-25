@@ -2,3 +2,7 @@
 node_modules/
 dist/
 __pycache__/
+.taste-skill/search/
+.taste-skill/chrome-*/
+.taste-skill/gate/
+.taste-skill/root/

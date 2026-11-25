@@ -12,6 +12,8 @@
     "check:content": "tsx scripts/check_content.ts"
   },
   "dependencies": {
+    "@fontsource-variable/host-grotesk": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
     "idb": "^8.0.4",
     "preact": "^11.2.0",
     "ts-fsrs": "^6.0.1"
