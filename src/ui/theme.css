@@ -568,7 +568,7 @@ a {
   font-size: var(--t-body);
 }
 
-.dialog .speaker-B {
+.dialog li.speaker-B {
   padding-left: var(--s-6);
 }
 
