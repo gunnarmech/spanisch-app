@@ -10,7 +10,8 @@ function srgbToLinear(c: number): number {
 
 // Hex nach OKLCH (Ottosson), liefert Chroma und Farbton in Grad
 function hexToOklch(hex: string): { c: number; h: number } {
-  const n = parseInt(hex.length === 4 ? hex.replace(/./g, (d, i) => (i ? d + d : '')).slice(1) : hex.slice(1), 16);
+  const full = hex.length === 4 ? '#' + [...hex.slice(1)].map((d) => d + d).join('') : hex;
+  const n = parseInt(full.slice(1), 16);
   const r = srgbToLinear(((n >> 16) & 255) / 255);
   const g = srgbToLinear(((n >> 8) & 255) / 255);
   const b = srgbToLinear((n & 255) / 255);
@@ -22,7 +23,21 @@ function hexToOklch(hex: string): { c: number; h: number } {
   return { c: Math.hypot(a, bb), h: ((Math.atan2(bb, a) * 180) / Math.PI + 360) % 360 };
 }
 
+const fontsCss = readFileSync('src/ui/styles/fonts.css', 'utf8');
+const fontsTs = readFileSync('src/ui/styles/fonts.ts', 'utf8');
+
 describe('Gestaltung: Tokens und Schrift', () => {
+  it('bindet nur Latin-Schriftdateien ein', () => {
+    expect(fontsTs).not.toMatch(/wght\.css/);
+    const files = [...fontsCss.matchAll(/files\/([\w-]+\.woff2)/g)].map((m) => m[1]);
+    expect(files).toEqual(['host-grotesk-latin-wght-normal.woff2', 'jetbrains-mono-latin-wght-normal.woff2']);
+  });
+
+  it('expandiert dreistellige Hexwerte richtig', () => {
+    expect(hexToOklch('#fff')).toEqual(hexToOklch('#ffffff'));
+    expect(hexToOklch('#1a4')).toEqual(hexToOklch('#11aa44'));
+  });
+
   it('enthält die ausgelosten Kernwerte', () => {
     expect(tokens).toContain('--action: #1a4be0');
     expect(tokens).toContain('--ink: #111111');
