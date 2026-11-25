@@ -8,96 +8,889 @@
       "kind": "word",
       "es": "hola",
       "de": "hallo",
-      "forms": ["hola"],
-      "examples": [{ "es": "Hola, buenos días.", "de": "Hallo, guten Morgen." }]
-    },
-    {
-      "id": "w-chao",
-      "kind": "word",
-      "es": "chao",
-      "de": "tschüss",
-      "forms": ["chao"],
-      "examples": [{ "es": "Chao, hasta luego.", "de": "Tschüss, bis später." }],
-      "note": "In Chile sehr gebräuchlich zum Verabschieden."
-    },
-    {
-      "id": "w-gracias",
-      "kind": "word",
-      "es": "gracias",
-      "de": "danke",
-      "forms": ["gracias"],
-      "examples": [{ "es": "Bien, gracias.", "de": "Gut, danke." }]
-    },
-    {
-      "id": "p-por-favor",
-      "kind": "phrase",
-      "es": "por favor",
-      "de": "bitte",
-      "forms": ["por favor"],
-      "examples": [{ "es": "Una mesa, por favor.", "de": "Einen Tisch, bitte." }]
-    },
-    {
-      "id": "w-perdon",
-      "kind": "word",
-      "es": "perdón",
-      "de": "Entschuldigung",
-      "forms": ["perdón"],
-      "examples": [{ "es": "Perdón, no entiendo.", "de": "Entschuldigung, ich verstehe nicht." }]
+      "forms": [
+        "hola"
+      ],
+      "examples": [
+        {
+          "es": "Hola, buenos días.",
+          "de": "Hallo, guten Morgen."
+        }
+      ],
+      "freqRank": 88
     },
     {
       "id": "p-buenos-dias",
       "kind": "phrase",
       "es": "buenos días",
       "de": "guten Morgen",
-      "forms": ["buenos días"],
-      "examples": [{ "es": "Buenos días, ¿cómo estás?", "de": "Guten Morgen, wie geht es dir?" }]
+      "forms": [
+        "buenos días"
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, señora.",
+          "de": "Guten Morgen, Frau."
+        }
+      ],
+      "note": "Gilt bis zum Mittag. Danach sagst du buenas tardes."
     },
     {
-      "id": "p-mucho-gusto",
+      "id": "p-buenas-tardes",
       "kind": "phrase",
-      "es": "mucho gusto",
-      "de": "freut mich",
-      "forms": ["mucho gusto"],
-      "examples": [{ "es": "Mucho gusto, me llamo Ana.", "de": "Freut mich, ich heiße Ana." }]
+      "es": "buenas tardes",
+      "de": "guten Tag (nachmittags)",
+      "forms": [
+        "buenas tardes"
+      ],
+      "examples": [
+        {
+          "es": "Buenas tardes, ¿cómo está?",
+          "de": "Guten Tag, wie geht es Ihnen?"
+        }
+      ]
     },
     {
-      "id": "p-como-estas",
+      "id": "p-buenas-noches",
       "kind": "phrase",
-      "es": "¿cómo estás?",
-      "de": "wie geht es dir?",
-      "accept": ["cómo estás"],
-      "forms": ["cómo", "estás"],
-      "examples": [{ "es": "Hola, ¿cómo estás?", "de": "Hallo, wie geht es dir?" }],
-      "note": "Unter Freunden und Gleichaltrigen. Formell: ¿cómo está usted?"
+      "es": "buenas noches",
+      "de": "guten Abend, gute Nacht",
+      "forms": [
+        "buenas noches"
+      ],
+      "examples": [
+        {
+          "es": "Buenas noches, hasta mañana.",
+          "de": "Gute Nacht, bis morgen."
+        }
+      ],
+      "note": "Als Gruß am Abend und beim Schlafengehen."
+    },
+    {
+      "id": "w-chao",
+      "kind": "word",
+      "es": "chao",
+      "de": "tschüss",
+      "forms": [
+        "chao"
+      ],
+      "examples": [
+        {
+          "es": "Chao, hasta luego.",
+          "de": "Tschüss, bis später."
+        }
+      ],
+      "note": "In Chile sehr gebräuchlich zum Verabschieden."
+    },
+    {
+      "id": "p-hasta-luego",
+      "kind": "phrase",
+      "es": "hasta luego",
+      "de": "bis später",
+      "forms": [
+        "hasta luego"
+      ],
+      "examples": [
+        {
+          "es": "Hasta luego, nos vemos.",
+          "de": "Bis später, wir sehen uns."
+        }
+      ]
+    },
+    {
+      "id": "p-hasta-manana",
+      "kind": "phrase",
+      "es": "hasta mañana",
+      "de": "bis morgen",
+      "forms": [
+        "hasta mañana"
+      ],
+      "examples": [
+        {
+          "es": "Chao, hasta mañana.",
+          "de": "Tschüss, bis morgen."
+        }
+      ]
+    },
+    {
+      "id": "p-nos-vemos",
+      "kind": "phrase",
+      "es": "nos vemos",
+      "de": "bis bald",
+      "forms": [
+        "nos vemos"
+      ],
+      "examples": [],
+      "note": "Wörtlich: wir sehen uns. Sehr üblich unter Bekannten."
+    },
+    {
+      "id": "w-senor",
+      "kind": "word",
+      "es": "señor",
+      "de": "Herr",
+      "forms": [
+        "señor"
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, señor.",
+          "de": "Guten Morgen, mein Herr."
+        }
+      ],
+      "freqRank": 107
+    },
+    {
+      "id": "w-senora",
+      "kind": "word",
+      "es": "señora",
+      "de": "Frau",
+      "forms": [
+        "señora"
+      ],
+      "examples": [
+        {
+          "es": "Buenas tardes, señora.",
+          "de": "Guten Tag, gnädige Frau."
+        }
+      ],
+      "note": "Anrede für erwachsene Frauen, auch ohne Namen.",
+      "freqRank": 300
     },
     {
       "id": "w-bien",
       "kind": "word",
       "es": "bien",
       "de": "gut",
-      "forms": ["bien"],
-      "examples": [{ "es": "Estoy bien, gracias.", "de": "Mir geht es gut, danke." }]
+      "forms": [
+        "bien"
+      ],
+      "examples": [
+        {
+          "es": "Estoy bien, gracias.",
+          "de": "Mir geht es gut, danke."
+        }
+      ],
+      "freqRank": 26
+    },
+    {
+      "id": "p-muy-bien",
+      "kind": "phrase",
+      "es": "muy bien",
+      "de": "sehr gut",
+      "forms": [
+        "muy bien"
+      ],
+      "examples": [
+        {
+          "es": "Muy bien, gracias.",
+          "de": "Sehr gut, danke."
+        }
+      ]
+    },
+    {
+      "id": "p-mas-o-menos",
+      "kind": "phrase",
+      "es": "más o menos",
+      "de": "es geht so",
+      "forms": [
+        "más o menos"
+      ],
+      "examples": [
+        {
+          "es": "Más o menos, ¿y tú?",
+          "de": "Es geht so, und du?"
+        }
+      ]
+    },
+    {
+      "id": "p-como-estas",
+      "kind": "phrase",
+      "es": "¿cómo estás?",
+      "de": "wie geht es dir?",
+      "forms": [
+        "cómo",
+        "estás"
+      ],
+      "examples": [
+        {
+          "es": "Hola, ¿cómo estás?",
+          "de": "Hallo, wie geht es dir?"
+        }
+      ],
+      "note": "Unter Freunden und Gleichaltrigen. Formell: ¿cómo está usted? Unter Chilenen hörst du oft ¿cómo estai?, das ist die lockere Umgangsform. Du sagst ¿cómo estás?"
+    },
+    {
+      "id": "p-como-esta-usted",
+      "kind": "phrase",
+      "es": "¿cómo está usted?",
+      "de": "wie geht es Ihnen?",
+      "forms": [
+        "cómo",
+        "está",
+        "usted"
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, ¿cómo está usted?",
+          "de": "Guten Morgen, wie geht es Ihnen?"
+        }
+      ],
+      "note": "Höflich, bei Älteren und Fremden."
+    },
+    {
+      "id": "p-que-tal",
+      "kind": "phrase",
+      "es": "¿qué tal?",
+      "de": "wie geht's?",
+      "forms": [
+        "qué",
+        "tal"
+      ],
+      "examples": [
+        {
+          "es": "Hola, ¿qué tal?",
+          "de": "Hallo, wie geht's?"
+        }
+      ],
+      "note": "Lockerer als cómo estás."
+    },
+    {
+      "id": "w-y",
+      "kind": "word",
+      "es": "y",
+      "de": "und",
+      "forms": [
+        "y"
+      ],
+      "examples": [
+        {
+          "es": "Bien, ¿y tú?",
+          "de": "Gut, und du?"
+        }
+      ],
+      "freqRank": 7
+    },
+    {
+      "id": "w-tu",
+      "kind": "word",
+      "es": "tú",
+      "de": "du",
+      "forms": [
+        "tú"
+      ],
+      "examples": [
+        {
+          "es": "¿Y tú?",
+          "de": "Und du?"
+        }
+      ],
+      "note": "Mit Akzent: du. Ohne Akzent (tu) heißt es dein.",
+      "freqRank": 56
+    },
+    {
+      "id": "w-usted",
+      "kind": "word",
+      "es": "usted",
+      "de": "Sie (höflich)",
+      "forms": [
+        "usted",
+        "ustedes"
+      ],
+      "examples": [
+        {
+          "es": "¿Y usted?",
+          "de": "Und Sie?"
+        }
+      ],
+      "note": "Die Mehrzahl ist ustedes, für Freunde wie für Fremde. Ein eigenes Wort für euch brauchst du nicht.",
+      "freqRank": 86
+    },
+    {
+      "id": "p-lo-siento",
+      "kind": "phrase",
+      "es": "lo siento",
+      "de": "es tut mir leid",
+      "forms": [
+        "lo siento"
+      ],
+      "examples": [
+        {
+          "es": "Lo siento, no entiendo.",
+          "de": "Es tut mir leid, ich verstehe nicht."
+        }
+      ]
+    },
+    {
+      "id": "w-bienvenido",
+      "kind": "word",
+      "es": "bienvenido",
+      "de": "willkommen",
+      "forms": [
+        "bienvenido",
+        "bienvenida"
+      ],
+      "examples": [
+        {
+          "es": "Bienvenido a Chile.",
+          "de": "Willkommen in Chile."
+        }
+      ],
+      "note": "Zu einer Frau: bienvenida.",
+      "freqRank": 1260
+    },
+    {
+      "id": "d-primer-saludo",
+      "kind": "dialog",
+      "title": "Ein erstes Hallo",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Hola, buenos días.",
+          "de": "Hallo, guten Morgen."
+        },
+        {
+          "speaker": "B",
+          "es": "Buenos días. ¿Cómo estás?",
+          "de": "Guten Morgen. Wie geht es dir?"
+        },
+        {
+          "speaker": "A",
+          "es": "Bien, gracias. Mucho gusto.",
+          "de": "Gut, danke. Freut mich."
+        },
+        {
+          "speaker": "B",
+          "es": "Mucho gusto. Chao.",
+          "de": "Freut mich. Tschüss."
+        }
+      ]
+    },
+    {
+      "id": "w-gracias",
+      "kind": "word",
+      "es": "gracias",
+      "de": "danke",
+      "forms": [
+        "gracias"
+      ],
+      "examples": [
+        {
+          "es": "Bien, gracias.",
+          "de": "Gut, danke."
+        }
+      ],
+      "freqRank": 70
+    },
+    {
+      "id": "p-muchas-gracias",
+      "kind": "phrase",
+      "es": "muchas gracias",
+      "de": "vielen Dank",
+      "forms": [
+        "muchas gracias"
+      ],
+      "examples": [
+        {
+          "es": "Muchas gracias, señor.",
+          "de": "Vielen Dank, mein Herr."
+        }
+      ]
+    },
+    {
+      "id": "p-de-nada",
+      "kind": "phrase",
+      "es": "de nada",
+      "de": "gern geschehen",
+      "forms": [
+        "de nada"
+      ],
+      "examples": [
+        {
+          "es": "Gracias. De nada.",
+          "de": "Danke. Gern geschehen."
+        }
+      ]
+    },
+    {
+      "id": "p-por-favor",
+      "kind": "phrase",
+      "es": "por favor",
+      "de": "bitte",
+      "forms": [
+        "por favor"
+      ],
+      "examples": [
+        {
+          "es": "Una mesa, por favor.",
+          "de": "Einen Tisch, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-perdon",
+      "kind": "word",
+      "es": "perdón",
+      "de": "Entschuldigung",
+      "forms": [
+        "perdón"
+      ],
+      "examples": [
+        {
+          "es": "Perdón, no entiendo.",
+          "de": "Entschuldigung, ich verstehe nicht."
+        }
+      ],
+      "note": "Wenn du jemanden anrempelst oder dich verhört hast.",
+      "freqRank": 586
+    },
+    {
+      "id": "w-disculpe",
+      "kind": "word",
+      "es": "disculpe",
+      "de": "entschuldigen Sie",
+      "forms": [
+        "disculpe"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, ¿habla inglés?",
+          "de": "Entschuldigen Sie, sprechen Sie Englisch?"
+        }
+      ],
+      "note": "Damit sprichst du Fremde an. Unter Freunden: disculpa.",
+      "freqRank": 749
+    },
+    {
+      "id": "p-con-permiso",
+      "kind": "phrase",
+      "es": "con permiso",
+      "de": "darf ich mal vorbei",
+      "forms": [
+        "con permiso"
+      ],
+      "examples": [
+        {
+          "es": "Con permiso, gracias.",
+          "de": "Darf ich mal vorbei, danke."
+        }
+      ],
+      "note": "Beim Drängeln durch eine volle Metro oder einen Laden."
+    },
+    {
+      "id": "p-mucho-gusto",
+      "kind": "phrase",
+      "es": "mucho gusto",
+      "de": "freut mich",
+      "forms": [
+        "mucho gusto"
+      ],
+      "examples": [
+        {
+          "es": "Mucho gusto, me llamo Ana.",
+          "de": "Freut mich, ich heiße Ana."
+        }
+      ]
+    },
+    {
+      "id": "p-el-gusto-es-mio",
+      "kind": "phrase",
+      "es": "el gusto es mío",
+      "de": "die Freude ist ganz meinerseits",
+      "forms": [
+        "el gusto es mío"
+      ],
+      "examples": [
+        {
+          "es": "Mucho gusto. El gusto es mío.",
+          "de": "Freut mich. Die Freude ist meinerseits."
+        }
+      ]
+    },
+    {
+      "id": "w-si",
+      "kind": "word",
+      "es": "sí",
+      "de": "ja",
+      "forms": [
+        "sí"
+      ],
+      "examples": [
+        {
+          "es": "Sí, claro.",
+          "de": "Ja, klar."
+        }
+      ],
+      "freqRank": 24
+    },
+    {
+      "id": "w-no",
+      "kind": "word",
+      "es": "no",
+      "de": "nein, nicht",
+      "forms": [
+        "no"
+      ],
+      "examples": [
+        {
+          "es": "No, gracias.",
+          "de": "Nein, danke."
+        }
+      ],
+      "freqRank": 3
+    },
+    {
+      "id": "p-no-gracias",
+      "kind": "phrase",
+      "es": "no, gracias",
+      "de": "nein, danke",
+      "forms": [
+        "no gracias"
+      ],
+      "examples": [
+        {
+          "es": "No, gracias, estoy bien.",
+          "de": "Nein, danke, mir geht es gut."
+        }
+      ]
+    },
+    {
+      "id": "w-claro",
+      "kind": "word",
+      "es": "claro",
+      "de": "klar, natürlich",
+      "forms": [
+        "claro"
+      ],
+      "examples": [
+        {
+          "es": "Sí, claro.",
+          "de": "Ja, klar."
+        }
+      ],
+      "freqRank": 166
+    },
+    {
+      "id": "w-ya",
+      "kind": "word",
+      "es": "ya",
+      "de": "okay, alles klar",
+      "forms": [
+        "ya"
+      ],
+      "examples": [
+        {
+          "es": "Ya, gracias.",
+          "de": "Alles klar, danke."
+        }
+      ],
+      "note": "In Chile ständig zu hören, als Zustimmung oder Bestätigung. Es bedeutet hier nicht schon.",
+      "freqRank": 40
+    },
+    {
+      "id": "w-tambien",
+      "kind": "word",
+      "es": "también",
+      "de": "auch",
+      "forms": [
+        "también"
+      ],
+      "examples": [
+        {
+          "es": "Yo también.",
+          "de": "Ich auch."
+        }
+      ],
+      "freqRank": 112
+    },
+    {
+      "id": "p-igualmente",
+      "kind": "word",
+      "es": "igualmente",
+      "de": "gleichfalls",
+      "forms": [
+        "igualmente"
+      ],
+      "examples": [
+        {
+          "es": "Buenas noches. Igualmente.",
+          "de": "Gute Nacht. Gleichfalls."
+        }
+      ],
+      "freqRank": 3328
     },
     {
       "id": "p-no-entiendo",
       "kind": "phrase",
       "es": "no entiendo",
       "de": "ich verstehe nicht",
-      "forms": ["no", "entiendo"],
-      "examples": [{ "es": "Perdón, no entiendo.", "de": "Entschuldigung, ich verstehe nicht." }]
+      "forms": [
+        "no",
+        "entiendo"
+      ],
+      "examples": [
+        {
+          "es": "Perdón, no entiendo.",
+          "de": "Entschuldigung, ich verstehe nicht."
+        }
+      ]
     },
     {
-      "id": "s-me-llamo",
-      "kind": "sentence",
-      "es": "Me llamo Ana.",
-      "de": "Ich heiße Ana.",
-      "accept": ["Mi nombre es Ana."]
+      "id": "w-entiendo",
+      "kind": "word",
+      "es": "entiendo",
+      "de": "ich verstehe",
+      "forms": [
+        "entiendo",
+        "entiendes",
+        "entiende"
+      ],
+      "examples": [
+        {
+          "es": "Sí, entiendo.",
+          "de": "Ja, ich verstehe."
+        }
+      ],
+      "freqRank": 318
     },
     {
-      "id": "s-como-te-llamas",
-      "kind": "sentence",
-      "es": "¿Cómo te llamas?",
-      "de": "Wie heißt du?"
+      "id": "p-no-se",
+      "kind": "phrase",
+      "es": "no sé",
+      "de": "ich weiß nicht",
+      "forms": [
+        "no sé"
+      ],
+      "examples": [
+        {
+          "es": "Perdón, no sé.",
+          "de": "Entschuldigung, ich weiß nicht."
+        }
+      ]
+    },
+    {
+      "id": "p-puede-repetir",
+      "kind": "phrase",
+      "es": "¿puede repetir, por favor?",
+      "de": "können Sie das bitte wiederholen?",
+      "accept": [
+        "¿Puede repetirlo, por favor?"
+      ],
+      "forms": [
+        "puede",
+        "repetir",
+        "puedes"
+      ],
+      "examples": [
+        {
+          "es": "¿Puede repetir, por favor?",
+          "de": "Können Sie das bitte wiederholen?"
+        }
+      ],
+      "note": "Höflich mit usted. Unter Freunden: ¿puedes repetir?"
+    },
+    {
+      "id": "p-mas-despacio",
+      "kind": "phrase",
+      "es": "más despacio",
+      "de": "langsamer",
+      "forms": [
+        "más despacio"
+      ],
+      "examples": [
+        {
+          "es": "Más despacio, por favor.",
+          "de": "Langsamer, bitte."
+        }
+      ],
+      "note": "Chilenen sprechen schnell und schlucken Silbenenden. Diese Bitte brauchst du oft."
+    },
+    {
+      "id": "p-como-se-dice",
+      "kind": "phrase",
+      "es": "¿cómo se dice esto en español?",
+      "de": "wie sagt man das auf Spanisch?",
+      "forms": [
+        "cómo",
+        "se",
+        "dice",
+        "esto",
+        "en",
+        "español"
+      ],
+      "examples": [
+        {
+          "es": "¿Cómo se dice esto en español?",
+          "de": "Wie sagt man das auf Spanisch?"
+        }
+      ]
+    },
+    {
+      "id": "p-que-significa",
+      "kind": "phrase",
+      "es": "¿qué significa esto?",
+      "de": "was bedeutet das?",
+      "forms": [
+        "qué",
+        "significa",
+        "esto"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué significa esto?",
+          "de": "Was bedeutet das?"
+        }
+      ]
+    },
+    {
+      "id": "w-espanol",
+      "kind": "word",
+      "es": "español",
+      "de": "Spanisch",
+      "forms": [
+        "español"
+      ],
+      "examples": [
+        {
+          "es": "Hablo un poco de español.",
+          "de": "Ich spreche ein bisschen Spanisch."
+        }
+      ],
+      "freqRank": 3233
+    },
+    {
+      "id": "w-ingles",
+      "kind": "word",
+      "es": "inglés",
+      "de": "Englisch",
+      "forms": [
+        "inglés"
+      ],
+      "examples": [
+        {
+          "es": "¿Habla inglés?",
+          "de": "Sprechen Sie Englisch?"
+        }
+      ],
+      "freqRank": 1432
+    },
+    {
+      "id": "w-aleman",
+      "kind": "word",
+      "es": "alemán",
+      "de": "Deutsch (Sprache)",
+      "forms": [
+        "alemán",
+        "alemana"
+      ],
+      "examples": [
+        {
+          "es": "Hablo alemán.",
+          "de": "Ich spreche Deutsch."
+        }
+      ],
+      "note": "Auch: Deutscher. Eine Deutsche ist alemana.",
+      "freqRank": 2671
+    },
+    {
+      "id": "w-hablar",
+      "kind": "word",
+      "es": "hablar",
+      "de": "sprechen",
+      "forms": [
+        "hablar",
+        "hablo",
+        "hablas",
+        "habla"
+      ],
+      "examples": [
+        {
+          "es": "Hablo un poco de español.",
+          "de": "Ich spreche ein bisschen Spanisch."
+        }
+      ],
+      "note": "hablo ich spreche, hablas du sprichst, habla Sie sprechen.",
+      "freqRank": 154
+    },
+    {
+      "id": "w-poco",
+      "kind": "word",
+      "es": "poco",
+      "de": "wenig",
+      "forms": [
+        "poco"
+      ],
+      "examples": [
+        {
+          "es": "Hablo poco.",
+          "de": "Ich spreche wenig."
+        }
+      ],
+      "note": "Un poco heißt ein bisschen.",
+      "freqRank": 133
+    },
+    {
+      "id": "w-mucho",
+      "kind": "word",
+      "es": "mucho",
+      "de": "viel",
+      "forms": [
+        "mucho",
+        "mucha"
+      ],
+      "examples": [
+        {
+          "es": "No entiendo mucho.",
+          "de": "Ich verstehe nicht viel."
+        }
+      ],
+      "freqRank": 103
+    },
+    {
+      "id": "w-pero",
+      "kind": "word",
+      "es": "pero",
+      "de": "aber",
+      "forms": [
+        "pero"
+      ],
+      "examples": [
+        {
+          "es": "Hablo poco, pero entiendo.",
+          "de": "Ich spreche wenig, aber ich verstehe."
+        }
+      ],
+      "freqRank": 23
+    },
+    {
+      "id": "p-no-hay-problema",
+      "kind": "phrase",
+      "es": "no hay problema",
+      "de": "kein Problem",
+      "forms": [
+        "no hay problema"
+      ],
+      "examples": [
+        {
+          "es": "No hay problema.",
+          "de": "Kein Problem."
+        }
+      ]
+    },
+    {
+      "id": "w-mas",
+      "kind": "word",
+      "es": "más",
+      "de": "mehr",
+      "forms": [
+        "más"
+      ],
+      "examples": [
+        {
+          "es": "Más despacio, por favor.",
+          "de": "Langsamer, bitte."
+        }
+      ],
+      "freqRank": 36
     },
     {
       "id": "s-no-hablo-mucho",
@@ -106,14 +899,576 @@
       "de": "Ich spreche nicht viel Spanisch."
     },
     {
-      "id": "d-primer-saludo",
+      "id": "s-hablo-un-poco",
+      "kind": "sentence",
+      "es": "Hablo un poco de español.",
+      "de": "Ich spreche ein bisschen Spanisch."
+    },
+    {
+      "id": "s-habla-ingles",
+      "kind": "sentence",
+      "es": "¿Habla inglés?",
+      "de": "Sprechen Sie Englisch?",
+      "accept": [
+        "¿Hablas inglés?"
+      ]
+    },
+    {
+      "id": "s-no-hablo-ingles",
+      "kind": "sentence",
+      "es": "No hablo inglés.",
+      "de": "Ich spreche kein Englisch."
+    },
+    {
+      "id": "s-no-entiendo-nada",
+      "kind": "sentence",
+      "es": "No entiendo nada.",
+      "de": "Ich verstehe gar nichts."
+    },
+    {
+      "id": "s-mas-despacio",
+      "kind": "sentence",
+      "es": "Más despacio, por favor.",
+      "de": "Langsamer, bitte."
+    },
+    {
+      "id": "s-puede-repetir",
+      "kind": "sentence",
+      "es": "¿Puede repetir, por favor?",
+      "de": "Können Sie das bitte wiederholen?"
+    },
+    {
+      "id": "s-como-se-dice",
+      "kind": "sentence",
+      "es": "¿Cómo se dice «gracias» en alemán?",
+      "de": "Wie sagt man «gracias» auf Deutsch?"
+    },
+    {
+      "id": "s-no-entendi",
+      "kind": "sentence",
+      "es": "Perdón, no entendí.",
+      "de": "Entschuldigung, ich habe es nicht verstanden."
+    },
+    {
+      "id": "d-no-entiendo",
       "kind": "dialog",
-      "title": "Ein erstes Hallo",
+      "title": "Nichts verstanden",
       "lines": [
-        { "speaker": "A", "es": "Hola, buenos días.", "de": "Hallo, guten Morgen." },
-        { "speaker": "B", "es": "Buenos días. ¿Cómo estás?", "de": "Guten Morgen. Wie geht es dir?" },
-        { "speaker": "A", "es": "Bien, gracias. Mucho gusto.", "de": "Gut, danke. Freut mich." },
-        { "speaker": "B", "es": "Mucho gusto. Chao.", "de": "Freut mich. Tschüss." }
+        {
+          "speaker": "A",
+          "es": "Disculpe, ¿habla inglés?",
+          "de": "Entschuldigen Sie, sprechen Sie Englisch?"
+        },
+        {
+          "speaker": "B",
+          "es": "Un poco. ¿Y usted? ¿Habla español?",
+          "de": "Ein bisschen. Und Sie? Sprechen Sie Spanisch?"
+        },
+        {
+          "speaker": "A",
+          "es": "Hablo un poco, pero no entiendo mucho.",
+          "de": "Ich spreche ein bisschen, aber ich verstehe nicht viel."
+        },
+        {
+          "speaker": "B",
+          "es": "No hay problema. Hablo más despacio.",
+          "de": "Kein Problem. Ich spreche langsamer."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias. ¿Puede repetir, por favor?",
+          "de": "Danke. Können Sie das bitte wiederholen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, claro. Con mucho gusto.",
+          "de": "Ja, klar. Sehr gern."
+        }
+      ]
+    },
+    {
+      "id": "w-llamarse",
+      "kind": "word",
+      "es": "llamarse",
+      "de": "heißen",
+      "forms": [
+        "llamarse",
+        "me",
+        "te",
+        "se",
+        "llamo",
+        "llamas",
+        "llama"
+      ],
+      "examples": [
+        {
+          "es": "Me llamo Ana.",
+          "de": "Ich heiße Ana."
+        }
+      ],
+      "note": "me llamo ich heiße, te llamas du heißt, se llama Sie heißen oder er heißt."
+    },
+    {
+      "id": "w-ser",
+      "kind": "word",
+      "es": "ser",
+      "de": "sein (Herkunft, Name, Beruf)",
+      "forms": [
+        "ser",
+        "soy",
+        "eres",
+        "es",
+        "son",
+        "somos"
+      ],
+      "examples": [
+        {
+          "es": "Soy de Alemania.",
+          "de": "Ich komme aus Deutschland."
+        }
+      ],
+      "note": "soy ich bin, eres du bist, es er ist oder Sie sind.",
+      "freqRank": 63
+    },
+    {
+      "id": "w-estar",
+      "kind": "word",
+      "es": "estar",
+      "de": "sein (Befinden, Ort)",
+      "forms": [
+        "estar",
+        "estoy",
+        "estás",
+        "está",
+        "están"
+      ],
+      "examples": [
+        {
+          "es": "Estoy en Chile.",
+          "de": "Ich bin in Chile."
+        }
+      ],
+      "note": "estoy ich bin, estás du bist, está er ist oder Sie sind.",
+      "freqRank": 131
+    },
+    {
+      "id": "w-tener",
+      "kind": "word",
+      "es": "tener",
+      "de": "haben",
+      "forms": [
+        "tener",
+        "tengo",
+        "tienes",
+        "tiene"
+      ],
+      "examples": [
+        {
+          "es": "Tengo treinta años.",
+          "de": "Ich bin dreißig Jahre alt."
+        }
+      ],
+      "freqRank": 169
+    },
+    {
+      "id": "w-mi",
+      "kind": "word",
+      "es": "mi",
+      "de": "mein, meine",
+      "forms": [
+        "mi",
+        "tu",
+        "su"
+      ],
+      "examples": [
+        {
+          "es": "Mi nombre es Pablo.",
+          "de": "Mein Name ist Pablo."
+        }
+      ],
+      "note": "tu heißt dein, su heißt Ihr, sein oder ihr.",
+      "freqRank": 22
+    },
+    {
+      "id": "w-nombre",
+      "kind": "word",
+      "es": "nombre",
+      "de": "Name",
+      "forms": [
+        "nombre",
+        "nombres"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es su nombre?",
+          "de": "Wie ist Ihr Name?"
+        }
+      ],
+      "freqRank": 216
+    },
+    {
+      "id": "p-me-llamo",
+      "kind": "phrase",
+      "es": "me llamo",
+      "de": "ich heiße",
+      "forms": [
+        "me llamo",
+        "ana",
+        "pablo"
+      ],
+      "examples": [
+        {
+          "es": "Me llamo Pablo.",
+          "de": "Ich heiße Pablo."
+        }
+      ],
+      "note": "Setze deinen Namen ein. Ana und Pablo sind die Namen in den Dialogen."
+    },
+    {
+      "id": "w-yo",
+      "kind": "word",
+      "es": "yo",
+      "de": "ich",
+      "forms": [
+        "yo"
+      ],
+      "examples": [
+        {
+          "es": "Yo soy alemán.",
+          "de": "Ich bin Deutscher."
+        }
+      ],
+      "note": "Meist weggelassen, das Verb zeigt die Person.",
+      "freqRank": 30
+    },
+    {
+      "id": "w-el-pron",
+      "kind": "word",
+      "es": "él",
+      "de": "er",
+      "forms": [
+        "él"
+      ],
+      "examples": [
+        {
+          "es": "Él es Pablo.",
+          "de": "Er ist Pablo."
+        }
+      ],
+      "note": "Mit Akzent: er. Ohne Akzent (el) ist es der Artikel.",
+      "freqRank": 52
+    },
+    {
+      "id": "w-ella",
+      "kind": "word",
+      "es": "ella",
+      "de": "sie (einzelne Frau)",
+      "forms": [
+        "ella"
+      ],
+      "examples": [
+        {
+          "es": "Ella es Ana.",
+          "de": "Sie ist Ana."
+        }
+      ],
+      "freqRank": 66
+    },
+    {
+      "id": "w-alemania",
+      "kind": "word",
+      "es": "Alemania",
+      "de": "Deutschland",
+      "forms": [
+        "alemania"
+      ],
+      "examples": [
+        {
+          "es": "Soy de Alemania.",
+          "de": "Ich bin aus Deutschland."
+        }
+      ],
+      "freqRank": 2603
+    },
+    {
+      "id": "w-chile",
+      "kind": "word",
+      "es": "Chile",
+      "de": "Chile",
+      "forms": [
+        "chile"
+      ],
+      "examples": [
+        {
+          "es": "Estoy en Chile.",
+          "de": "Ich bin in Chile."
+        }
+      ]
+    },
+    {
+      "id": "w-santiago",
+      "kind": "word",
+      "es": "Santiago",
+      "de": "Santiago (Hauptstadt Chiles)",
+      "forms": [
+        "santiago"
+      ],
+      "examples": [
+        {
+          "es": "Soy de Santiago.",
+          "de": "Ich bin aus Santiago."
+        }
+      ]
+    },
+    {
+      "id": "w-de",
+      "kind": "word",
+      "es": "de",
+      "de": "von, aus",
+      "forms": [
+        "de"
+      ],
+      "examples": [
+        {
+          "es": "Soy de Alemania.",
+          "de": "Ich komme aus Deutschland."
+        }
+      ],
+      "freqRank": 1
+    },
+    {
+      "id": "w-en",
+      "kind": "word",
+      "es": "en",
+      "de": "in, auf",
+      "forms": [
+        "en"
+      ],
+      "examples": [
+        {
+          "es": "Estoy en Chile.",
+          "de": "Ich bin in Chile."
+        }
+      ],
+      "note": "Auch für Sprachen: en español auf Spanisch.",
+      "freqRank": 9
+    },
+    {
+      "id": "p-de-vacaciones",
+      "kind": "phrase",
+      "es": "estoy de vacaciones",
+      "de": "ich bin im Urlaub",
+      "forms": [
+        "estoy de vacaciones"
+      ],
+      "examples": [
+        {
+          "es": "Estoy de vacaciones en Chile.",
+          "de": "Ich bin im Urlaub in Chile."
+        }
+      ]
+    },
+    {
+      "id": "p-que-bien",
+      "kind": "phrase",
+      "es": "¡qué bien!",
+      "de": "wie schön, super",
+      "forms": [
+        "qué bien"
+      ],
+      "examples": [
+        {
+          "es": "¡Qué bien! Bienvenido.",
+          "de": "Wie schön! Willkommen."
+        }
+      ]
+    },
+    {
+      "id": "w-anos",
+      "kind": "word",
+      "es": "años",
+      "de": "Jahre",
+      "forms": [
+        "año",
+        "años"
+      ],
+      "examples": [
+        {
+          "es": "Tengo treinta años.",
+          "de": "Ich bin dreißig Jahre alt."
+        }
+      ],
+      "freqRank": 129
+    },
+    {
+      "id": "p-cuantos-anos",
+      "kind": "phrase",
+      "es": "¿cuántos años tienes?",
+      "de": "wie alt bist du?",
+      "forms": [
+        "cuántos",
+        "años",
+        "tienes"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuántos años tienes?",
+          "de": "Wie alt bist du?"
+        }
+      ],
+      "note": "Formell: ¿cuántos años tiene usted?"
+    },
+    {
+      "id": "p-tengo-anos",
+      "kind": "phrase",
+      "es": "tengo treinta años",
+      "de": "ich bin dreißig Jahre alt",
+      "forms": [
+        "tengo",
+        "años"
+      ],
+      "examples": [
+        {
+          "es": "Tengo veinticinco años.",
+          "de": "Ich bin fünfundzwanzig Jahre alt."
+        }
+      ]
+    },
+    {
+      "id": "s-me-llamo",
+      "kind": "sentence",
+      "es": "Me llamo Ana.",
+      "de": "Ich heiße Ana.",
+      "accept": [
+        "Mi nombre es Ana."
+      ]
+    },
+    {
+      "id": "s-como-te-llamas",
+      "kind": "sentence",
+      "es": "¿Cómo te llamas?",
+      "de": "Wie heißt du?",
+      "accept": [
+        "¿Cuál es tu nombre?"
+      ]
+    },
+    {
+      "id": "s-como-se-llama",
+      "kind": "sentence",
+      "es": "¿Cómo se llama usted?",
+      "de": "Wie heißen Sie?"
+    },
+    {
+      "id": "s-soy-de-alemania",
+      "kind": "sentence",
+      "es": "Soy de Alemania.",
+      "de": "Ich komme aus Deutschland."
+    },
+    {
+      "id": "s-soy-aleman",
+      "kind": "sentence",
+      "es": "Soy alemán.",
+      "de": "Ich bin Deutscher."
+    },
+    {
+      "id": "s-de-donde-eres",
+      "kind": "sentence",
+      "es": "¿De dónde eres?",
+      "de": "Woher kommst du?"
+    },
+    {
+      "id": "s-de-donde-es-usted",
+      "kind": "sentence",
+      "es": "¿De dónde es usted?",
+      "de": "Woher kommen Sie?"
+    },
+    {
+      "id": "s-soy-de-hamburgo",
+      "kind": "sentence",
+      "es": "Soy de Hamburgo.",
+      "de": "Ich bin aus Hamburg."
+    },
+    {
+      "id": "s-mucho-gusto-conocerte",
+      "kind": "sentence",
+      "es": "Mucho gusto en conocerte.",
+      "de": "Freut mich, dich kennenzulernen."
+    },
+    {
+      "id": "s-estoy-de-vacaciones",
+      "kind": "sentence",
+      "es": "Estoy de vacaciones en Chile.",
+      "de": "Ich bin im Urlaub in Chile."
+    },
+    {
+      "id": "s-tengo-treinta",
+      "kind": "sentence",
+      "es": "Tengo treinta años.",
+      "de": "Ich bin dreißig Jahre alt."
+    },
+    {
+      "id": "s-hola-que-tal",
+      "kind": "sentence",
+      "es": "Hola, ¿qué tal? Bien, ¿y tú?",
+      "de": "Hallo, wie geht's? Gut, und du?"
+    },
+    {
+      "id": "s-bien-gracias-y-usted",
+      "kind": "sentence",
+      "es": "Bien, gracias. ¿Y usted?",
+      "de": "Gut, danke. Und Sie?"
+    },
+    {
+      "id": "g-ser-herkunft",
+      "kind": "grammar",
+      "title": "ser: Name und Herkunft",
+      "explanation": "Mit ser sagst du, wer du bist und woher du kommst: soy ich bin, eres du bist, es er, sie oder Sie sind. Die Herkunft hängt an de: Soy de Alemania. Den Namen sagst du meist mit llamarse: me llamo, te llamas, se llama. Das Pronomen yo lässt du weg, das Verb zeigt die Person. Nationalität: soy alemán (Mann), soy alemana (Frau).",
+      "examples": [
+        {
+          "es": "Soy de Alemania.",
+          "de": "Ich komme aus Deutschland."
+        },
+        {
+          "es": "¿De dónde eres?",
+          "de": "Woher kommst du?"
+        },
+        {
+          "es": "Ella es de Santiago.",
+          "de": "Sie ist aus Santiago."
+        },
+        {
+          "es": "Me llamo Pablo.",
+          "de": "Ich heiße Pablo."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich bin aus Deutschland.",
+          "es": "Soy de Alemania."
+        },
+        {
+          "de": "Woher kommst du?",
+          "es": "¿De dónde eres?"
+        },
+        {
+          "de": "Er ist aus Chile.",
+          "es": "Él es de Chile."
+        },
+        {
+          "de": "Ich heiße Ana.",
+          "es": "Me llamo Ana.",
+          "accept": [
+            "Soy Ana."
+          ]
+        },
+        {
+          "de": "Wie heißt du?",
+          "es": "¿Cómo te llamas?"
+        },
+        {
+          "de": "Sie ist aus Santiago.",
+          "es": "Ella es de Santiago."
+        }
       ]
     },
     {
@@ -122,20 +1477,1289 @@
       "title": "tú und usted",
       "explanation": "Unter Freunden und Gleichaltrigen sagst du tú: ¿Cómo estás? Gegenüber Älteren, Fremden und im Amt sagst du usted: ¿Cómo está usted? Die Verbform von usted ist dieselbe wie bei él und ella. In der Mehrzahl gibt es in Lateinamerika nur ustedes, für Freunde wie für Fremde. Ein eigenes Wort für euch wie in Spanien brauchst du nicht.",
       "examples": [
-        { "es": "¿Cómo estás?", "de": "Wie geht es dir?" },
-        { "es": "¿Cómo está usted?", "de": "Wie geht es Ihnen?" },
-        { "es": "¿Cómo están ustedes?", "de": "Wie geht es euch? Oder: Wie geht es Ihnen (Mehrzahl)?" }
+        {
+          "es": "¿Cómo estás?",
+          "de": "Wie geht es dir?"
+        },
+        {
+          "es": "¿Cómo está usted?",
+          "de": "Wie geht es Ihnen?"
+        },
+        {
+          "es": "¿Cómo están ustedes?",
+          "de": "Wie geht es euch? Oder: Wie geht es Ihnen (Mehrzahl)?"
+        }
       ],
       "exercises": [
-        { "de": "Wie geht es dir?", "es": "¿Cómo estás?", "accept": ["Cómo estás"] },
-        { "de": "Wie geht es Ihnen?", "es": "¿Cómo está usted?", "accept": ["¿Cómo está?"] }
+        {
+          "de": "Wie geht es dir?",
+          "es": "¿Cómo estás?"
+        },
+        {
+          "de": "Wie geht es Ihnen?",
+          "es": "¿Cómo está usted?",
+          "accept": [
+            "¿Cómo está?"
+          ]
+        },
+        {
+          "de": "Und du?",
+          "es": "¿Y tú?"
+        },
+        {
+          "de": "Und Sie?",
+          "es": "¿Y usted?"
+        },
+        {
+          "de": "Sprechen Sie Englisch?",
+          "es": "¿Habla inglés?"
+        }
+      ]
+    },
+    {
+      "id": "d-presentarse",
+      "kind": "dialog",
+      "title": "Sich vorstellen",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Hola, buenas tardes. ¿Cómo te llamas?",
+          "de": "Hallo, guten Tag. Wie heißt du?"
+        },
+        {
+          "speaker": "B",
+          "es": "Me llamo Ana. ¿Y tú?",
+          "de": "Ich heiße Ana. Und du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Me llamo Pablo. Mucho gusto.",
+          "de": "Ich heiße Pablo. Freut mich."
+        },
+        {
+          "speaker": "B",
+          "es": "El gusto es mío. ¿De dónde eres?",
+          "de": "Die Freude ist meinerseits. Woher kommst du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Soy de Alemania. ¿Y tú?",
+          "de": "Ich komme aus Deutschland. Und du?"
+        },
+        {
+          "speaker": "B",
+          "es": "Soy de Chile, de Santiago.",
+          "de": "Ich bin aus Chile, aus Santiago."
+        }
+      ]
+    },
+    {
+      "id": "w-que",
+      "kind": "word",
+      "es": "qué",
+      "de": "was",
+      "forms": [
+        "qué"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué significa esto?",
+          "de": "Was bedeutet das?"
+        }
+      ],
+      "note": "Fragewörter tragen immer einen Akzent.",
+      "freqRank": 13
+    },
+    {
+      "id": "w-quien",
+      "kind": "word",
+      "es": "quién",
+      "de": "wer",
+      "forms": [
+        "quién",
+        "quiénes"
+      ],
+      "examples": [
+        {
+          "es": "¿Quién es ella?",
+          "de": "Wer ist sie?"
+        }
+      ],
+      "freqRank": 93
+    },
+    {
+      "id": "w-donde",
+      "kind": "word",
+      "es": "dónde",
+      "de": "wo",
+      "forms": [
+        "dónde"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde está Pablo?",
+          "de": "Wo ist Pablo?"
+        }
+      ],
+      "freqRank": 99
+    },
+    {
+      "id": "w-cuando",
+      "kind": "word",
+      "es": "cuándo",
+      "de": "wann",
+      "forms": [
+        "cuándo"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuándo es?",
+          "de": "Wann ist es?"
+        }
+      ],
+      "freqRank": 394
+    },
+    {
+      "id": "w-como",
+      "kind": "word",
+      "es": "cómo",
+      "de": "wie",
+      "forms": [
+        "cómo"
+      ],
+      "examples": [
+        {
+          "es": "¿Cómo te llamas?",
+          "de": "Wie heißt du?"
+        }
+      ],
+      "freqRank": 59
+    },
+    {
+      "id": "w-cuanto",
+      "kind": "word",
+      "es": "cuánto",
+      "de": "wie viel",
+      "forms": [
+        "cuánto",
+        "cuánta",
+        "cuántos",
+        "cuántas"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto es?",
+          "de": "Wie viel macht das?"
+        }
+      ],
+      "note": "Richtet sich nach dem Wort dahinter: cuánto, cuánta, cuántos, cuántas.",
+      "freqRank": 343
+    },
+    {
+      "id": "w-cual",
+      "kind": "word",
+      "es": "cuál",
+      "de": "welcher, welche, welches",
+      "forms": [
+        "cuál",
+        "cuáles"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es su nombre?",
+          "de": "Wie ist Ihr Name?"
+        }
+      ],
+      "freqRank": 312
+    },
+    {
+      "id": "p-por-que",
+      "kind": "phrase",
+      "es": "por qué",
+      "de": "warum",
+      "forms": [
+        "por qué"
+      ],
+      "examples": [
+        {
+          "es": "¿Por qué?",
+          "de": "Warum?"
+        }
+      ],
+      "note": "Getrennt und mit Akzent. Weil heißt porque."
+    },
+    {
+      "id": "w-porque",
+      "kind": "word",
+      "es": "porque",
+      "de": "weil",
+      "forms": [
+        "porque"
+      ],
+      "examples": [
+        {
+          "es": "Porque estoy de vacaciones.",
+          "de": "Weil ich im Urlaub bin."
+        }
+      ],
+      "freqRank": 76
+    },
+    {
+      "id": "s-que-es-esto",
+      "kind": "sentence",
+      "es": "¿Qué es esto?",
+      "de": "Was ist das?"
+    },
+    {
+      "id": "s-quien-es-ella",
+      "kind": "sentence",
+      "es": "¿Quién es ella?",
+      "de": "Wer ist sie?"
+    },
+    {
+      "id": "s-donde-esta-pablo",
+      "kind": "sentence",
+      "es": "¿Dónde está Pablo?",
+      "de": "Wo ist Pablo?"
+    },
+    {
+      "id": "s-cuando-es",
+      "kind": "sentence",
+      "es": "¿Cuándo es?",
+      "de": "Wann ist es?"
+    },
+    {
+      "id": "s-como-estas-hoy",
+      "kind": "sentence",
+      "es": "¿Cómo estás hoy?",
+      "de": "Wie geht es dir heute?"
+    },
+    {
+      "id": "s-por-que-chile",
+      "kind": "sentence",
+      "es": "¿Por qué estás en Chile?",
+      "de": "Warum bist du in Chile?"
+    },
+    {
+      "id": "g-fragewoerter",
+      "kind": "grammar",
+      "title": "Fragewörter",
+      "explanation": "Die wichtigsten Fragewörter: qué was, quién wer, dónde wo, cuándo wann, cómo wie, cuánto wie viel, cuál welcher, por qué warum. Sie tragen immer einen Akzent und stehen am Satzanfang. Eine Frage hat im Spanischen am Anfang ein umgekehrtes Fragezeichen: ¿Dónde está? Die Antwort auf por qué beginnt mit porque, geschrieben ohne Akzent und in einem Wort.",
+      "examples": [
+        {
+          "es": "¿Qué es esto?",
+          "de": "Was ist das?"
+        },
+        {
+          "es": "¿Dónde estás?",
+          "de": "Wo bist du?"
+        },
+        {
+          "es": "¿Cuándo es?",
+          "de": "Wann ist es?"
+        },
+        {
+          "es": "¿Por qué estás aquí?",
+          "de": "Warum bist du hier?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Was ist das?",
+          "es": "¿Qué es esto?"
+        },
+        {
+          "de": "Wer ist sie?",
+          "es": "¿Quién es ella?"
+        },
+        {
+          "de": "Wo ist Pablo?",
+          "es": "¿Dónde está Pablo?"
+        },
+        {
+          "de": "Wann ist es?",
+          "es": "¿Cuándo es?"
+        },
+        {
+          "de": "Wie heißt du?",
+          "es": "¿Cómo te llamas?"
+        },
+        {
+          "de": "Warum?",
+          "es": "¿Por qué?"
+        },
+        {
+          "de": "Wie viel macht das?",
+          "es": "¿Cuánto es?"
+        }
+      ]
+    },
+    {
+      "id": "w-el",
+      "kind": "word",
+      "es": "el",
+      "de": "der (männlich)",
+      "forms": [
+        "el",
+        "los"
+      ],
+      "examples": [
+        {
+          "es": "El señor es de Chile.",
+          "de": "Der Herr ist aus Chile."
+        }
+      ],
+      "freqRank": 6
+    },
+    {
+      "id": "w-la",
+      "kind": "word",
+      "es": "la",
+      "de": "die (weiblich)",
+      "forms": [
+        "la",
+        "las"
+      ],
+      "examples": [
+        {
+          "es": "La señora es de Chile.",
+          "de": "Die Frau ist aus Chile."
+        }
+      ],
+      "freqRank": 5
+    },
+    {
+      "id": "w-un",
+      "kind": "word",
+      "es": "un",
+      "de": "ein (männlich)",
+      "forms": [
+        "un",
+        "unos"
+      ],
+      "examples": [
+        {
+          "es": "Un amigo.",
+          "de": "Ein Freund."
+        }
+      ],
+      "freqRank": 11
+    },
+    {
+      "id": "w-una",
+      "kind": "word",
+      "es": "una",
+      "de": "eine (weiblich)",
+      "forms": [
+        "una",
+        "unas"
+      ],
+      "examples": [
+        {
+          "es": "Una amiga.",
+          "de": "Eine Freundin."
+        }
+      ],
+      "freqRank": 15
+    },
+    {
+      "id": "w-amigo",
+      "kind": "word",
+      "es": "amigo",
+      "de": "Freund",
+      "forms": [
+        "amigo",
+        "amigos"
+      ],
+      "examples": [
+        {
+          "es": "Pablo es mi amigo.",
+          "de": "Pablo ist mein Freund."
+        }
+      ],
+      "freqRank": 192
+    },
+    {
+      "id": "w-amiga",
+      "kind": "word",
+      "es": "amiga",
+      "de": "Freundin",
+      "forms": [
+        "amiga",
+        "amigas"
+      ],
+      "examples": [
+        {
+          "es": "Ana es mi amiga.",
+          "de": "Ana ist meine Freundin."
+        }
+      ],
+      "freqRank": 687
+    },
+    {
+      "id": "w-pais",
+      "kind": "word",
+      "es": "país",
+      "de": "Land",
+      "forms": [
+        "país",
+        "países"
+      ],
+      "examples": [
+        {
+          "es": "Chile es un país largo.",
+          "de": "Chile ist ein langes Land."
+        }
+      ],
+      "freqRank": 583
+    },
+    {
+      "id": "g-artikel-geschlecht",
+      "kind": "grammar",
+      "title": "Artikel und Geschlecht",
+      "explanation": "Jedes Nomen ist männlich oder weiblich. Der bestimmte Artikel ist el (männlich) und la (weiblich), der unbestimmte un und una. Meist sind Nomen auf -o männlich und Nomen auf -a weiblich: el amigo, la amiga. Es gibt Ausnahmen: el día, el país. Lerne das Nomen immer mit dem Artikel. In der Mehrzahl wird -s angehängt: los amigos, las amigas.",
+      "examples": [
+        {
+          "es": "el amigo, la amiga",
+          "de": "der Freund, die Freundin"
+        },
+        {
+          "es": "un nombre, una amiga",
+          "de": "ein Name, eine Freundin"
+        },
+        {
+          "es": "el país",
+          "de": "das Land"
+        },
+        {
+          "es": "los amigos",
+          "de": "die Freunde"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "der Freund",
+          "es": "el amigo"
+        },
+        {
+          "de": "die Freundin",
+          "es": "la amiga"
+        },
+        {
+          "de": "ein Freund",
+          "es": "un amigo"
+        },
+        {
+          "de": "eine Freundin",
+          "es": "una amiga"
+        },
+        {
+          "de": "der Name",
+          "es": "el nombre"
+        },
+        {
+          "de": "das Land",
+          "es": "el país"
+        },
+        {
+          "de": "die Freunde",
+          "es": "los amigos"
+        }
+      ]
+    },
+    {
+      "id": "w-nada",
+      "kind": "word",
+      "es": "nada",
+      "de": "nichts",
+      "forms": [
+        "nada"
+      ],
+      "examples": [
+        {
+          "es": "No entiendo nada.",
+          "de": "Ich verstehe nichts."
+        }
+      ],
+      "freqRank": 58
+    },
+    {
+      "id": "w-nunca",
+      "kind": "word",
+      "es": "nunca",
+      "de": "nie",
+      "forms": [
+        "nunca"
+      ],
+      "examples": [
+        {
+          "es": "Nunca hablo alemán aquí.",
+          "de": "Hier spreche ich nie Deutsch."
+        }
+      ],
+      "freqRank": 98
+    },
+    {
+      "id": "s-no-soy-chileno",
+      "kind": "sentence",
+      "es": "No soy chileno.",
+      "de": "Ich bin kein Chilene."
+    },
+    {
+      "id": "s-no-se-nada",
+      "kind": "sentence",
+      "es": "No sé nada.",
+      "de": "Ich weiß nichts."
+    },
+    {
+      "id": "s-no-gracias-estoy-bien",
+      "kind": "sentence",
+      "es": "No, gracias. Estoy bien.",
+      "de": "Nein, danke. Mir geht es gut."
+    },
+    {
+      "id": "s-yo-tambien-no",
+      "kind": "sentence",
+      "es": "Yo tampoco.",
+      "de": "Ich auch nicht."
+    },
+    {
+      "id": "g-verneinung",
+      "kind": "grammar",
+      "title": "Verneinung",
+      "explanation": "Die Verneinung ist einfach: no steht direkt vor dem Verb. Hablo español heißt ich spreche Spanisch, no hablo español heißt ich spreche kein Spanisch. Kommt ein Wort wie nada (nichts) oder nunca (nie) nach dem Verb, steht trotzdem no davor: No entiendo nada. Das ist keine doppelte Verneinung wie im Deutschen, sondern Pflicht. Ein Fragesatz mit no bleibt ein Fragesatz.",
+      "examples": [
+        {
+          "es": "No hablo alemán.",
+          "de": "Ich spreche kein Deutsch."
+        },
+        {
+          "es": "No entiendo nada.",
+          "de": "Ich verstehe nichts."
+        },
+        {
+          "es": "No sé.",
+          "de": "Ich weiß nicht."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich verstehe nicht.",
+          "es": "No entiendo."
+        },
+        {
+          "de": "Ich weiß nicht.",
+          "es": "No sé."
+        },
+        {
+          "de": "Ich verstehe nichts.",
+          "es": "No entiendo nada."
+        },
+        {
+          "de": "Ich spreche kein Englisch.",
+          "es": "No hablo inglés."
+        },
+        {
+          "de": "Nein, danke.",
+          "es": "No, gracias."
+        },
+        {
+          "de": "Ich bin kein Chilene.",
+          "es": "No soy chileno."
+        }
+      ]
+    },
+    {
+      "id": "n-cero",
+      "kind": "word",
+      "es": "cero",
+      "de": "null (0)",
+      "forms": [
+        "cero"
+      ],
+      "examples": [],
+      "freqRank": 2310
+    },
+    {
+      "id": "n-uno",
+      "kind": "word",
+      "es": "uno",
+      "de": "eins (1)",
+      "forms": [
+        "uno"
+      ],
+      "examples": [],
+      "note": "Vor einem Nomen wird daraus un oder una.",
+      "freqRank": 135
+    },
+    {
+      "id": "n-dos",
+      "kind": "word",
+      "es": "dos",
+      "de": "zwei (2)",
+      "forms": [
+        "dos"
+      ],
+      "examples": [],
+      "freqRank": 96
+    },
+    {
+      "id": "n-tres",
+      "kind": "word",
+      "es": "tres",
+      "de": "drei (3)",
+      "forms": [
+        "tres"
+      ],
+      "examples": [],
+      "freqRank": 202
+    },
+    {
+      "id": "n-cuatro",
+      "kind": "word",
+      "es": "cuatro",
+      "de": "vier (4)",
+      "forms": [
+        "cuatro"
+      ],
+      "examples": [],
+      "freqRank": 411
+    },
+    {
+      "id": "n-cinco",
+      "kind": "word",
+      "es": "cinco",
+      "de": "fünf (5)",
+      "forms": [
+        "cinco"
+      ],
+      "examples": [],
+      "freqRank": 374
+    },
+    {
+      "id": "n-seis",
+      "kind": "word",
+      "es": "seis",
+      "de": "sechs (6)",
+      "forms": [
+        "seis"
+      ],
+      "examples": [],
+      "freqRank": 528
+    },
+    {
+      "id": "n-siete",
+      "kind": "word",
+      "es": "siete",
+      "de": "sieben (7)",
+      "forms": [
+        "siete"
+      ],
+      "examples": [],
+      "freqRank": 844
+    },
+    {
+      "id": "n-ocho",
+      "kind": "word",
+      "es": "ocho",
+      "de": "acht (8)",
+      "forms": [
+        "ocho"
+      ],
+      "examples": [],
+      "freqRank": 928
+    },
+    {
+      "id": "n-nueve",
+      "kind": "word",
+      "es": "nueve",
+      "de": "neun (9)",
+      "forms": [
+        "nueve"
+      ],
+      "examples": [],
+      "freqRank": 1288
+    },
+    {
+      "id": "n-diez",
+      "kind": "word",
+      "es": "diez",
+      "de": "zehn (10)",
+      "forms": [
+        "diez"
+      ],
+      "examples": [],
+      "freqRank": 594
+    },
+    {
+      "id": "n-once",
+      "kind": "word",
+      "es": "once",
+      "de": "elf (11)",
+      "forms": [
+        "once"
+      ],
+      "examples": [],
+      "freqRank": 4019
+    },
+    {
+      "id": "n-doce",
+      "kind": "word",
+      "es": "doce",
+      "de": "zwölf (12)",
+      "forms": [
+        "doce"
+      ],
+      "examples": [],
+      "freqRank": 2827
+    },
+    {
+      "id": "n-trece",
+      "kind": "word",
+      "es": "trece",
+      "de": "dreizehn (13)",
+      "forms": [
+        "trece"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-catorce",
+      "kind": "word",
+      "es": "catorce",
+      "de": "vierzehn (14)",
+      "forms": [
+        "catorce"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-quince",
+      "kind": "word",
+      "es": "quince",
+      "de": "fünfzehn (15)",
+      "forms": [
+        "quince"
+      ],
+      "examples": [],
+      "freqRank": 3660
+    },
+    {
+      "id": "n-dieciseis",
+      "kind": "word",
+      "es": "dieciséis",
+      "de": "sechzehn (16)",
+      "forms": [
+        "dieciséis"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-diecisiete",
+      "kind": "word",
+      "es": "diecisiete",
+      "de": "siebzehn (17)",
+      "forms": [
+        "diecisiete"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-dieciocho",
+      "kind": "word",
+      "es": "dieciocho",
+      "de": "achtzehn (18)",
+      "forms": [
+        "dieciocho"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-diecinueve",
+      "kind": "word",
+      "es": "diecinueve",
+      "de": "neunzehn (19)",
+      "forms": [
+        "diecinueve"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-veinte",
+      "kind": "word",
+      "es": "veinte",
+      "de": "zwanzig (20)",
+      "forms": [
+        "veinte"
+      ],
+      "examples": [],
+      "freqRank": 2499
+    },
+    {
+      "id": "n-veintiuno",
+      "kind": "word",
+      "es": "veintiuno",
+      "de": "einundzwanzig (21)",
+      "forms": [
+        "veintiuno"
+      ],
+      "examples": [],
+      "note": "Ab 21 bis 29 ein Wort: veintidós, veintitrés und so weiter."
+    },
+    {
+      "id": "n-veinticinco",
+      "kind": "word",
+      "es": "veinticinco",
+      "de": "fünfundzwanzig (25)",
+      "forms": [
+        "veinticinco"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-treinta",
+      "kind": "word",
+      "es": "treinta",
+      "de": "dreißig (30)",
+      "forms": [
+        "treinta"
+      ],
+      "examples": [],
+      "note": "Ab 31 mit y: treinta y cinco. Das gilt bis 99.",
+      "freqRank": 3276
+    },
+    {
+      "id": "n-cuarenta",
+      "kind": "word",
+      "es": "cuarenta",
+      "de": "vierzig (40)",
+      "forms": [
+        "cuarenta"
+      ],
+      "examples": [],
+      "freqRank": 4782
+    },
+    {
+      "id": "n-cincuenta",
+      "kind": "word",
+      "es": "cincuenta",
+      "de": "fünfzig (50)",
+      "forms": [
+        "cincuenta"
+      ],
+      "examples": [],
+      "freqRank": 3987
+    },
+    {
+      "id": "n-sesenta",
+      "kind": "word",
+      "es": "sesenta",
+      "de": "sechzig (60)",
+      "forms": [
+        "sesenta"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-setenta",
+      "kind": "word",
+      "es": "setenta",
+      "de": "siebzig (70)",
+      "forms": [
+        "setenta"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-ochenta",
+      "kind": "word",
+      "es": "ochenta",
+      "de": "achtzig (80)",
+      "forms": [
+        "ochenta"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-noventa",
+      "kind": "word",
+      "es": "noventa",
+      "de": "neunzig (90)",
+      "forms": [
+        "noventa"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-cien",
+      "kind": "word",
+      "es": "cien",
+      "de": "hundert (100)",
+      "forms": [
+        "cien",
+        "ciento"
+      ],
+      "examples": [],
+      "note": "Mit weiteren Zahlen heißt es ciento: ciento uno, ciento veinte.",
+      "freqRank": 1899
+    },
+    {
+      "id": "n-doscientos",
+      "kind": "word",
+      "es": "doscientos",
+      "de": "zweihundert (200)",
+      "forms": [
+        "doscientos"
+      ],
+      "examples": [],
+      "note": "Hunderter ändern sich nicht mehr: trescientos, cuatrocientos. Achtung bei quinientos: nicht cinco."
+    },
+    {
+      "id": "n-quinientos",
+      "kind": "word",
+      "es": "quinientos",
+      "de": "fünfhundert (500)",
+      "forms": [
+        "quinientos"
+      ],
+      "examples": [],
+      "note": "Nicht cincocientos. Auch setecientos und novecientos sind unregelmäßig."
+    },
+    {
+      "id": "n-mil",
+      "kind": "word",
+      "es": "mil",
+      "de": "tausend (1000)",
+      "forms": [
+        "mil"
+      ],
+      "examples": [],
+      "note": "Bleibt in der Mehrzahl gleich: dos mil. Umgangssprachlich heißt 1000 Pesos in Chile una luca.",
+      "freqRank": 716
+    },
+    {
+      "id": "p-treinta-y-cinco",
+      "kind": "phrase",
+      "es": "treinta y cinco",
+      "de": "fünfunddreißig (35)",
+      "forms": [
+        "treinta y cinco"
+      ],
+      "examples": [
+        {
+          "es": "Tengo treinta y cinco años.",
+          "de": "Ich bin fünfunddreißig Jahre alt."
+        }
+      ],
+      "note": "Zehner und Einer verbindest du mit y."
+    },
+    {
+      "id": "pair-trece-treinta",
+      "kind": "pair",
+      "es": "trece",
+      "options": [
+        "trece",
+        "treinta"
+      ]
+    },
+    {
+      "id": "pair-seis-siete",
+      "kind": "pair",
+      "es": "seis",
+      "options": [
+        "seis",
+        "siete"
+      ]
+    },
+    {
+      "id": "pair-quince-cincuenta",
+      "kind": "pair",
+      "es": "quince",
+      "options": [
+        "quince",
+        "cincuenta"
+      ]
+    },
+    {
+      "id": "pair-doscientos-dos-mil",
+      "kind": "pair",
+      "es": "doscientos",
+      "options": [
+        "doscientos",
+        "dos mil"
       ]
     },
     {
       "id": "pair-pero-perro",
       "kind": "pair",
       "es": "pero",
-      "options": ["pero", "perro"]
+      "options": [
+        "pero",
+        "perro"
+      ]
+    },
+    {
+      "id": "s-buenas-noches-hasta-manana",
+      "kind": "sentence",
+      "es": "Buenas noches, hasta mañana.",
+      "de": "Gute Nacht, bis morgen."
+    },
+    {
+      "id": "s-nos-vemos-manana",
+      "kind": "sentence",
+      "es": "Nos vemos mañana.",
+      "de": "Wir sehen uns morgen."
+    },
+    {
+      "id": "s-disculpe-como-se-dice",
+      "kind": "sentence",
+      "es": "Disculpe, ¿cómo se dice esto en español?",
+      "de": "Entschuldigen Sie, wie sagt man das auf Spanisch?"
+    },
+    {
+      "id": "s-muchas-gracias",
+      "kind": "sentence",
+      "es": "Muchas gracias. De nada.",
+      "de": "Vielen Dank. Gern geschehen."
+    },
+    {
+      "id": "s-con-permiso",
+      "kind": "sentence",
+      "es": "Con permiso, gracias.",
+      "de": "Darf ich mal vorbei, danke."
+    },
+    {
+      "id": "s-bienvenido-a-chile",
+      "kind": "sentence",
+      "es": "Bienvenido a Chile.",
+      "de": "Willkommen in Chile."
+    },
+    {
+      "id": "w-peso",
+      "kind": "word",
+      "es": "peso",
+      "de": "Peso",
+      "forms": [
+        "peso",
+        "pesos"
+      ],
+      "examples": [
+        {
+          "es": "Son tres mil pesos.",
+          "de": "Das macht dreitausend Pesos."
+        }
+      ],
+      "note": "Die Währung in Chile. Preise sind große Zahlen: ein Kaffee kostet etwa dos mil quinientos pesos.",
+      "freqRank": 1800
+    },
+    {
+      "id": "p-cuanto-cuesta",
+      "kind": "phrase",
+      "es": "¿cuánto cuesta?",
+      "de": "wie viel kostet das?",
+      "forms": [
+        "cuánto",
+        "cuesta",
+        "cuestan"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto cuesta esto?",
+          "de": "Wie viel kostet das?"
+        }
+      ],
+      "note": "Mehrzahl: ¿cuánto cuestan?"
+    },
+    {
+      "id": "p-cuanto-es",
+      "kind": "phrase",
+      "es": "¿cuánto es?",
+      "de": "wie viel macht das?",
+      "forms": [
+        "cuánto",
+        "es"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto es, por favor?",
+          "de": "Wie viel macht das, bitte?"
+        }
+      ],
+      "note": "Fragst du an der Kasse nach dem Gesamtbetrag."
+    },
+    {
+      "id": "w-caro",
+      "kind": "word",
+      "es": "caro",
+      "de": "teuer",
+      "forms": [
+        "caro",
+        "cara",
+        "caros"
+      ],
+      "examples": [
+        {
+          "es": "Es un poco caro.",
+          "de": "Es ist ein bisschen teuer."
+        }
+      ],
+      "freqRank": 3034
+    },
+    {
+      "id": "w-barato",
+      "kind": "word",
+      "es": "barato",
+      "de": "billig, günstig",
+      "forms": [
+        "barato",
+        "barata",
+        "baratos"
+      ],
+      "examples": [
+        {
+          "es": "Es muy barato.",
+          "de": "Es ist sehr günstig."
+        }
+      ],
+      "freqRank": 3627
+    },
+    {
+      "id": "w-esto",
+      "kind": "word",
+      "es": "esto",
+      "de": "das (hier)",
+      "forms": [
+        "esto"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto cuesta esto?",
+          "de": "Wie viel kostet das?"
+        }
+      ],
+      "freqRank": 38
+    },
+    {
+      "id": "s-cuanto-cuesta",
+      "kind": "sentence",
+      "es": "¿Cuánto cuesta esto?",
+      "de": "Wie viel kostet das?"
+    },
+    {
+      "id": "s-cuesta-dos-mil-quinientos",
+      "kind": "sentence",
+      "es": "Cuesta dos mil quinientos pesos.",
+      "de": "Es kostet zweitausendfünfhundert Pesos."
+    },
+    {
+      "id": "s-son-cinco-mil",
+      "kind": "sentence",
+      "es": "Son cinco mil pesos.",
+      "de": "Das macht fünftausend Pesos."
+    },
+    {
+      "id": "s-mil-pesos",
+      "kind": "sentence",
+      "es": "Son mil pesos.",
+      "de": "Das macht tausend Pesos."
+    },
+    {
+      "id": "s-cuanto-es",
+      "kind": "sentence",
+      "es": "¿Cuánto es, por favor?",
+      "de": "Wie viel macht das, bitte?"
+    },
+    {
+      "id": "s-es-caro",
+      "kind": "sentence",
+      "es": "Es un poco caro.",
+      "de": "Es ist ein bisschen teuer."
+    },
+    {
+      "id": "s-cuesta-veinte-mil",
+      "kind": "sentence",
+      "es": "Cuesta veinte mil pesos.",
+      "de": "Es kostet zwanzigtausend Pesos."
+    },
+    {
+      "id": "s-tengo-cien-mil",
+      "kind": "sentence",
+      "es": "Tengo cien mil pesos.",
+      "de": "Ich habe hunderttausend Pesos."
+    },
+    {
+      "id": "d-precio",
+      "kind": "dialog",
+      "title": "Wie viel kostet das?",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. ¿Cuánto cuesta esto?",
+          "de": "Guten Tag. Wie viel kostet das?"
+        },
+        {
+          "speaker": "B",
+          "es": "Cuesta dos mil quinientos pesos.",
+          "de": "Es kostet zweitausendfünfhundert Pesos."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuánto? ¿Puede repetir, por favor?",
+          "de": "Wie viel? Können Sie das bitte wiederholen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Dos mil quinientos. Son dos mil quinientos pesos.",
+          "de": "Zweitausendfünfhundert. Das macht zweitausendfünfhundert Pesos."
+        },
+        {
+          "speaker": "A",
+          "es": "Ya, gracias. Es un poco caro.",
+          "de": "Alles klar, danke. Es ist ein bisschen teuer."
+        },
+        {
+          "speaker": "B",
+          "es": "De nada. Hasta luego.",
+          "de": "Gern geschehen. Bis später."
+        }
+      ]
+    },
+    {
+      "id": "d-conocerse",
+      "kind": "dialog",
+      "title": "Kennenlernen am Abend",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Hola, ¿qué tal?",
+          "de": "Hallo, wie geht's?"
+        },
+        {
+          "speaker": "B",
+          "es": "Bien, ¿y tú? ¿De dónde eres?",
+          "de": "Gut, und du? Woher kommst du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Soy de Alemania. Estoy de vacaciones en Chile.",
+          "de": "Ich bin aus Deutschland. Ich bin im Urlaub in Chile."
+        },
+        {
+          "speaker": "B",
+          "es": "¡Qué bien! ¿Cuántos años tienes?",
+          "de": "Wie schön! Wie alt bist du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Tengo treinta años. ¿Y tú?",
+          "de": "Ich bin dreißig. Und du?"
+        },
+        {
+          "speaker": "B",
+          "es": "Tengo veinticinco. Nos vemos, chao.",
+          "de": "Ich bin fünfundzwanzig. Bis bald, tschüss."
+        }
+      ]
     }
   ]
 }
