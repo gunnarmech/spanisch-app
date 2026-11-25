@@ -1,27 +1,10 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
+import { playSequence, stopAudio } from '../../media/audio';
 import { AudioButton } from './AudioButton';
 import { useRoundEnv } from './env';
 import type { TaskProps } from './types';
 
 type Phase = 'hear' | 'text' | 'lines';
-
-/** Spielt Töne nacheinander mit einem eigenen Element. Gibt eine Abbruchfunktion zurück. */
-function playSequence(urls: string[]): () => void {
-  const audio = new Audio();
-  let i = 0;
-  let stopped = false;
-  const next = () => {
-    if (stopped || i >= urls.length) return;
-    audio.src = urls[i++];
-    audio.play().catch((err) => console.warn('Audio konnte nicht abgespielt werden', err));
-  };
-  audio.addEventListener('ended', next);
-  next();
-  return () => {
-    stopped = true;
-    audio.pause();
-  };
-}
 
 /** Dialog: erst nur Ton, dann Text einblendbar, dann Zeile für Zeile. Kein Rating. */
 export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
@@ -29,15 +12,13 @@ export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
   const [phase, setPhase] = useState<Phase>('hear');
   const [line, setLine] = useState(0);
   const [showDe, setShowDe] = useState(false);
-  const stop = useRef<(() => void) | null>(null);
-  useEffect(() => () => stop.current?.(), []);
+  useEffect(() => () => stopAudio(), []);
   if (item.kind !== 'dialog') return null;
 
   const urls = item.lines.map((_, i) => env.urlFor(task, `${item.id}-${i + 1}`));
   const available = urls.filter((u): u is string => !!u);
   const hearAll = () => {
-    stop.current?.();
-    stop.current = playSequence(available);
+    void playSequence(available);
   };
   const done = () => {
     onAnswered?.({ verdict: 'correct', ms: 0, usedHint: false });
