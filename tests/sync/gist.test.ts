@@ -69,7 +69,9 @@ describe('syncNow', () => {
     const post = gh.calls.find((c) => c.method === 'POST')!;
     const body = JSON.parse(post.body!);
     expect(body).toMatchObject({ public: false, description: 'spanisch-app sync' });
-    expect(JSON.parse(body.files['spanisch-app-log.json'].content)).toMatchObject({ version: 1, events: [{ id: 'a' }] });
+    const name = `spanisch-app-log-${(await db.getSettings()).device}.json`;
+    expect(Object.keys(body.files)).toEqual([name]);
+    expect(JSON.parse(body.files[name].content)).toMatchObject({ version: 1, events: [{ id: 'a' }] });
     expect(post.headers).toMatchObject({
       Authorization: 'Bearer tok',
       Accept: 'application/vnd.github+json',
@@ -98,12 +100,73 @@ describe('syncNow', () => {
     const db = await fresh();
     await withToken(db, { gistId: 'big' });
     const content = JSON.stringify({ version: 1, events: [ev('r', 5)] });
-    const impl = vi.fn(async (input: RequestInfo | URL) => {
-      if (String(input) === 'https://raw.example/log') return new Response(content);
+    const rawInits: (RequestInit | undefined)[] = [];
+    const impl = vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
+      if (String(input) === 'https://raw.example/log') {
+        rawInits.push(init);
+        return new Response(content);
+      }
       const file = { truncated: true, content: '{"vers', raw_url: 'https://raw.example/log' };
       return new Response(JSON.stringify({ id: 'big', files: { 'spanisch-app-log.json': file } }));
     }) as unknown as typeof fetch;
     expect(await syncNow(db, impl)).toEqual({ added: 1, pushed: 0 });
+    // gist.githubusercontent.com lehnt den CORS-Preflight bei eigenen Headern ab.
+    expect(rawInits).toHaveLength(1);
+    expect(rawInits[0]?.headers).toBeUndefined();
+  });
+
+  it('verliert bei gleichzeitigem Schreiben zweier Geräte keine Ereignisse', async () => {
+    const gh = fakeGithub();
+    const a = await fresh();
+    const b = await fresh();
+    await withToken(a);
+    await a.addEvents([ev('a0', 1)]);
+    await syncNow(a, gh.impl);
+    await withToken(b, { gistId: 'g1' });
+    await a.addEvents([ev('a1', 2)]);
+    await b.addEvents([ev('b1', 3)]);
+    await Promise.all([syncNow(a, gh.impl), syncNow(b, gh.impl)]);
+    const all = Object.values(gh.gists[0].files).flatMap((f) => JSON.parse(f.content).events.map((e: ReviewEvent) => e.id));
+    expect(new Set(all)).toEqual(new Set(['a0', 'a1', 'b1']));
+    await syncNow(a, gh.impl);
+    await syncNow(b, gh.impl);
+    expect((await a.allEvents()).map((e) => e.id).sort()).toEqual(['a0', 'a1', 'b1']);
+    expect((await b.allEvents()).map((e) => e.id).sort()).toEqual(['a0', 'a1', 'b1']);
+  });
+
+  it('liest und vereinigt die alte gemeinsame Datei weiter und schreibt sie nicht', async () => {
+    const db = await fresh();
+    await withToken(db, { gistId: 'old' });
+    await db.addEvents([ev('l', 1)]);
+    const legacy = { content: JSON.stringify({ version: 1, events: [ev('r', 5)] }) };
+    const gh = fakeGithub([{ id: 'old', description: 'spanisch-app sync', files: { 'spanisch-app-log.json': legacy } }]);
+    expect(await syncNow(db, gh.impl)).toEqual({ added: 1, pushed: 1 });
+    expect(gh.gists[0].files['spanisch-app-log.json']).toBe(legacy);
+    expect(Object.keys(gh.gists[0].files)).toHaveLength(2);
+  });
+
+  it('speichert die gistId nicht, wenn sich der Token während des Abgleichs geändert hat', async () => {
+    const db = await fresh();
+    await withToken(db);
+    const gh = fakeGithub();
+    const impl = vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
+      const res = await (gh.impl as typeof fetch)(input, init);
+      if (init?.method === 'POST') await withToken(db, { gistToken: 'neu' });
+      return res;
+    }) as unknown as typeof fetch;
+    await syncNow(db, impl);
+    const s = await db.getSettings();
+    expect(s.gistToken).toBe('neu');
+    expect(s.gistId).toBeUndefined();
+  });
+
+  it('verwirft eine gemerkte gistId bei 404 und legt neu an', async () => {
+    const db = await fresh();
+    await withToken(db, { gistId: 'weg' });
+    await db.addEvents([ev('a', 1)]);
+    const gh = fakeGithub();
+    expect(await syncNow(db, gh.impl)).toEqual({ added: 0, pushed: 1 });
+    expect((await db.getSettings()).gistId).toBe('g1');
   });
 
   it('bringt zwei Geräte nach je einem Abgleich zum gleichen replay', async () => {

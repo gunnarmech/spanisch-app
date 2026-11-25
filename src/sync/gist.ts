@@ -4,7 +4,10 @@ import type { Db } from '../store/db';
 
 const API = 'https://api.github.com';
 const DESCRIPTION = 'spanisch-app sync';
-const FILE = 'spanisch-app-log.json';
+/** Gemeinsame Datei aus der Zeit vor den Geräte-Dateien. Wird nur noch gelesen. */
+const LEGACY_FILE = 'spanisch-app-log.json';
+const DEVICE_PREFIX = 'spanisch-app-log-';
+const isLogFile = (name: string) => name === LEGACY_FILE || (name.startsWith(DEVICE_PREFIX) && name.endsWith('.json'));
 const MAX_PAGES = 10;
 const REQUEST_TIMEOUT_MS = 15000;
 
@@ -31,11 +34,11 @@ function failure(status: number): SyncError {
 
 type Remote = { id: string; description?: string; files?: Record<string, { content?: string; truncated?: boolean; raw_url?: string }> };
 
-async function readEvents(file: NonNullable<Remote['files']>[string] | undefined, request: (url: string) => Promise<Response>): Promise<ReviewEvent[]> {
+async function readEvents(file: NonNullable<Remote['files']>[string] | undefined, raw: (url: string) => Promise<Response>): Promise<ReviewEvent[]> {
   if (!file) return [];
   let text = file.content ?? '';
   if (file.truncated && file.raw_url) {
-    const res = await request(file.raw_url);
+    const res = await raw(file.raw_url);
     if (!res.ok) throw failure(res.status);
     text = await res.text();
   }
@@ -72,53 +75,82 @@ export async function syncNow(db: Db, fetchImpl: typeof fetch = (...a) => fetch(
       throw new SyncError('Keine Verbindung zu GitHub. Der Abgleich wird später erneut versucht.');
     }
   };
+  // gist.githubusercontent.com lehnt den CORS-Preflight bei eigenen Headern ab, daher ohne Header.
+  const raw = async (url: string): Promise<Response> => {
+    try {
+      return await fetchImpl(url, { signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
+    } catch {
+      throw new SyncError('Keine Verbindung zu GitHub. Der Abgleich wird später erneut versucht.');
+    }
+  };
   const json = async <T>(res: Response): Promise<T> => {
     if (!res.ok) throw failure(res.status);
     return (await res.json()) as T;
   };
   const body = (events: ReviewEvent[]) => JSON.stringify({ version: 1, events });
 
+  const ownFile = `${DEVICE_PREFIX}${settings.device}.json`;
+
   try {
     let gistId = settings.gistId;
+    let gist: Remote | undefined;
+    if (gistId) {
+      const res = await request(`${API}/gists/${gistId}`);
+      // Gist gelöscht: gemerkte id verwerfen und neu suchen oder anlegen.
+      if (res.status === 404) gistId = undefined;
+      else gist = await json<Remote>(res);
+    }
     if (!gistId) {
       for (let page = 1; page <= MAX_PAGES && !gistId; page++) {
         const list = await json<Remote[]>(await request(`${API}/gists?per_page=100&page=${page}`));
         gistId = list.find((g) => g.description === DESCRIPTION)?.id;
         if (list.length < 100) break;
       }
+      if (gistId) gist = await json<Remote>(await request(`${API}/gists/${gistId}`));
     }
 
     const local = await db.allEvents();
     let added = 0;
     let pushed = 0;
 
-    if (!gistId) {
+    if (!gistId || !gist) {
       const created = await json<Remote>(
         await request(`${API}/gists`, {
           method: 'POST',
-          body: JSON.stringify({ description: DESCRIPTION, public: false, files: { [FILE]: { content: body(local) } } }),
+          body: JSON.stringify({ description: DESCRIPTION, public: false, files: { [ownFile]: { content: body(local) } } }),
         }),
       );
       gistId = created.id;
       pushed = local.length;
     } else {
-      const gist = await json<Remote>(await request(`${API}/gists/${gistId}`));
-      const remote = await readEvents(gist.files?.[FILE], (url) => request(url));
-      const merged = mergeEvents(local, remote);
+      // Jedes Gerät schreibt nur seine eigene Datei und liest alle, damit gleichzeitige Abgleiche nichts verdrängen.
+      let own: ReviewEvent[] = [];
+      let others: ReviewEvent[] = [];
+      for (const [name, file] of Object.entries(gist.files ?? {})) {
+        if (!isLogFile(name)) continue;
+        const events = await readEvents(file, raw);
+        if (name === ownFile) own = events;
+        else others = mergeEvents(others, events);
+      }
+      const merged = mergeEvents(local, mergeEvents(own, others));
       const localIds = new Set(local.map((e) => e.id));
-      const remoteIds = new Set(remote.map((e) => e.id));
+      const ownIds = new Set(own.map((e) => e.id));
+      const otherIds = new Set(others.map((e) => e.id));
       const fresh = merged.filter((e) => !localIds.has(e.id));
-      const missing = merged.filter((e) => !remoteIds.has(e.id));
+      const mine = merged.filter((e) => !otherIds.has(e.id));
+      const missing = mine.filter((e) => !ownIds.has(e.id));
       if (fresh.length > 0) await db.addEvents(fresh);
       if (missing.length > 0) {
-        await json(await request(`${API}/gists/${gistId}`, { method: 'PATCH', body: JSON.stringify({ files: { [FILE]: { content: body(merged) } } }) }));
+        await json(await request(`${API}/gists/${gistId}`, { method: 'PATCH', body: JSON.stringify({ files: { [ownFile]: { content: body(mine) } } }) }));
       }
       added = fresh.length;
       pushed = missing.length;
     }
 
     // Einstellungen frisch lesen, damit Änderungen während des Abgleichs nicht überschrieben werden.
-    await db.saveSettings({ ...(await db.getSettings()), gistId, lastSync: Date.now() });
+    // Wurde der Token währenddessen gewechselt, gehört die gistId nicht mehr zur neuen Konfiguration.
+    const current = await db.getSettings();
+    if (current.gistToken?.trim() === token) await db.saveSettings({ ...current, gistId, lastSync: Date.now() });
     return { added, pushed };
   } catch (err) {
     return { error: err instanceof SyncError ? err.message : 'Der Abgleich ist fehlgeschlagen.' };
