@@ -40,6 +40,9 @@ test('Quellen nennen Lizenzen und listen Fehlermeldungen mit Export als Text', a
   expect((screen.getByRole('link', { name: /FrequencyWords/ }) as HTMLAnchorElement).href).toContain(
     'github.com/hermitdave/FrequencyWords',
   );
+  expect((screen.getByRole('link', { name: /Diccionario de americanismos/ }) as HTMLAnchorElement).href).toContain(
+    'asale.org/damer',
+  );
   await screen.findByText(/Betonung falsch/);
   fireEvent.click(screen.getByRole('button', { name: 'als Text kopieren' }));
   await vi.waitFor(() => expect(writeText).toHaveBeenCalledWith(expect.stringContaining('w-hola')));

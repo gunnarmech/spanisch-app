@@ -3,6 +3,7 @@ import type { ErrorReport } from '../store/db';
 import type { AppState } from './useAppState';
 
 const FREQ_URL = 'https://github.com/hermitdave/FrequencyWords';
+const DAMER_URL = 'https://www.asale.org/damer';
 
 function stamp(ts: number): string {
   return new Date(ts).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' });
@@ -67,8 +68,21 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
               (CC BY-SA 4.0).
             </span>
           </li>
-          <li>Die Abstände der Wiederholungen berechnet ts-fsrs (MIT).</li>
+          <li>
+            <span>
+              Die Abstände der Wiederholungen berechnet <span style={{ whiteSpace: 'nowrap' }}>ts-fsrs</span> (MIT).
+            </span>
+          </li>
           <li>Die Stimmen sind erzeugt mit edge-tts.</li>
+          <li>
+            <span>
+              Die Hinweise zum Sprachgebrauch in Chile stützen sich auf das{' '}
+              <a href={DAMER_URL} target="_blank" rel="noopener noreferrer">
+                Diccionario de americanismos
+              </a>{' '}
+              der Asociación de Academias de la Lengua Española (ASALE).
+            </span>
+          </li>
         </ul>
       </section>
 
