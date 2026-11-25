@@ -23,8 +23,12 @@ export function choiceOptions(
 ): string[] {
   const correct = textOf(item)?.de;
   if (correct === undefined) return [];
-  const pool = (list: Situation[]) =>
-    list.flatMap((s) => s.items.filter((it) => it.id !== item.id).map((it) => textOf(it)?.de));
+  // Wörter und Wendungen bilden eine Art, Sätze eine andere; zuerst die gleiche Art, dann auffüllen.
+  const group = (it: Item) => (it.kind === 'sentence' ? 'sentence' : 'short');
+  const pool = (list: Situation[], sameKind: boolean) =>
+    list.flatMap((s) =>
+      s.items.filter((it) => it.id !== item.id && (group(it) === group(item)) === sameKind).map((it) => textOf(it)?.de),
+    );
   const chosen: string[] = [];
   const take = (candidates: (string | undefined)[]) => {
     for (const c of shuffle(candidates.filter((x): x is string => !!x), rand)) {
@@ -32,7 +36,9 @@ export function choiceOptions(
       if (c !== correct && !chosen.includes(c)) chosen.push(c);
     }
   };
-  take(pool(situations.filter((s) => s.id === situationId)));
-  if (chosen.length < count) take(pool(situations));
+  const own = situations.filter((s) => s.id === situationId);
+  for (const [list, sameKind] of [[own, true], [situations, true], [own, false], [situations, false]] as const) {
+    if (chosen.length < count) take(pool(list, sameKind));
+  }
   return shuffle([correct, ...chosen], rand);
 }

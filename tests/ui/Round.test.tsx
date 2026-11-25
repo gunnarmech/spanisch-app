@@ -4,6 +4,7 @@ import { replay } from '../../src/engine/state';
 import { Home } from '../../src/ui/Home';
 import { Round } from '../../src/ui/Round';
 import { choiceOptions } from '../../src/ui/tasks/distractors';
+import type { Situation } from '../../src/content/types';
 import { fakeApp, situation } from './fixtures';
 
 afterEach(cleanup);
@@ -128,6 +129,32 @@ describe('Antwortoptionen', () => {
   it('füllt bei zu wenigen Items aus allen Situationen auf', () => {
     const opts = choiceOptions(situation.items[0], [situation, other], 's1');
     expect(opts.filter((o) => ['eins', 'zwei', 'drei'].includes(o))).toHaveLength(2);
+  });
+});
+
+describe('Ablenker nach Art', () => {
+  const mk = (items: Situation['items']): Situation => ({ id: 's', order: 1, title: 'S', items });
+  const word = (id: string, de: string) => ({ id, kind: 'word' as const, es: id, de, forms: [id], examples: [] });
+  const sentence = (id: string, de: string) => ({ id, kind: 'sentence' as const, es: id, de });
+
+  it('nimmt für ein Wort zuerst Wörter und Wendungen, keine Sätze, solange genug da sind', () => {
+    const s = mk([word('w1', 'eins'), word('w2', 'zwei'), word('w3', 'drei'), word('w4', 'vier'), sentence('s1', 'Ein ganzer Satz.')]);
+    for (let i = 0; i < 20; i++) {
+      expect(choiceOptions(s.items[0], [s], 's')).not.toContain('Ein ganzer Satz.');
+    }
+  });
+
+  it('nimmt für einen Satz zuerst Sätze', () => {
+    const s = mk([sentence('a', 'Satz eins.'), sentence('b', 'Satz zwei.'), sentence('c', 'Satz drei.'), sentence('d', 'Satz vier.'), word('w1', 'Wort')]);
+    for (let i = 0; i < 20; i++) {
+      expect(choiceOptions(s.items[0], [s], 's')).not.toContain('Wort');
+    }
+  });
+
+  it('füllt aus der anderen Art auf, wenn die eigene nicht reicht', () => {
+    const s = mk([word('w1', 'eins'), word('w2', 'zwei'), sentence('s1', 'Satz.'), sentence('s2', 'Noch ein Satz.')]);
+    const opts = choiceOptions(s.items[0], [s], 's');
+    expect(opts).toHaveLength(4);
   });
 });
 
