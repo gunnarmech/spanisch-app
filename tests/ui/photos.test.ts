@@ -32,6 +32,8 @@ test('jedes Foto hat Urheber, Lizenz und Seite, und alle Dateien liegen in publi
   for (const p of allPhotos) {
     expect(p.author).not.toBe('');
     expect(p.license).not.toBe('');
+    expect(p.licenseUrl).toMatch(/^https:\/\/creativecommons\.org\/licenses\/by(-sa)?\/\d\.\d\/deed\.de$/);
+    expect(p.edit).toContain('zugeschnitten');
     expect(p.page.startsWith('https://commons.wikimedia.org/wiki/File:')).toBe(true);
     expect(existsSync(fileOf(p.src)), p.src).toBe(true);
     for (const part of (p.srcset ?? '').split(',').filter(Boolean)) {

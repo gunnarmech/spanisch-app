@@ -7,11 +7,15 @@ export type Photo = {
   alt: string;
   author: string;
   license: string;
+  licenseUrl: string;
   page: string;
+  /** Bearbeitungshinweis für den Nachweis (CC verlangt, Änderungen zu nennen). */
+  edit: string;
 };
 
 const base = import.meta.env.BASE_URL;
 const url = (file: string) => `${base}photos/${file}`;
+const deed = (path: string) => `https://creativecommons.org/licenses/${path}/deed.de`;
 const commons = (file: string) => `https://commons.wikimedia.org/wiki/File:${file}`;
 
 export const headerPhoto: Photo = {
@@ -22,7 +26,9 @@ export const headerPhoto: Photo = {
   alt: 'Sonnige Straßenecke mit hohen Bäumen, Straßenschildern und einem dunkelroten Haus',
   author: 'Rodrigo Fernández',
   license: 'CC BY-SA 4.0',
+  licenseUrl: deed('by-sa/4.0'),
   page: commons('Calle_Lastarria_con_Padre_Luis_de_Valdivia.jpg'),
+  edit: 'zugeschnitten und verkleinert',
 };
 
 const bySituation: Record<string, Photo> = {
@@ -33,7 +39,9 @@ const bySituation: Record<string, Photo> = {
     alt: 'Platz mit Palmen und Kirchtürmen unter blauem Himmel',
     author: 'Apincheira',
     license: 'CC BY-SA 3.0',
+    licenseUrl: deed('by-sa/3.0'),
     page: commons('Plaza_de_Armas.JPG'),
+    edit: 'zugeschnitten und verkleinert',
   },
   '02-cafe': {
     src: url('cafe.webp'),
@@ -42,7 +50,9 @@ const bySituation: Record<string, Photo> = {
     alt: 'Heller Sonnenschirm über Tischen vor einem rot verputzten Café',
     author: 'Güldem Üstün',
     license: 'CC BY 2.0',
+    licenseUrl: deed('by/2.0'),
     page: commons('Chile_(Santiago)_Colonial_style_Cafe_(33370993193).jpg'),
+    edit: 'zugeschnitten und verkleinert',
   },
   '03-einkaufen': {
     src: url('einkaufen.webp'),
@@ -51,7 +61,9 @@ const bySituation: Record<string, Photo> = {
     alt: 'Tonnen mit Gewürzen und Mehl auf einem Markt, davor handgeschriebene Preisschilder',
     author: 'chileaktiv',
     license: 'CC BY-SA 2.0',
+    licenseUrl: deed('by-sa/2.0'),
     page: commons('Condimentos_en_la_Vega_Central.jpg'),
+    edit: 'zugeschnitten und verkleinert',
   },
 };
 

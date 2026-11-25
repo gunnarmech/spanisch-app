@@ -98,8 +98,13 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
               <span>
                 {p.alt}:{' '}
                 <a class="link" href={p.page} target="_blank" rel="noopener noreferrer">
-                  {p.author}, {p.license}
+                  {p.author}
                 </a>
+                ,{' '}
+                <a class="link" href={p.licenseUrl} target="_blank" rel="noopener noreferrer">
+                  {p.license}
+                </a>
+                , {p.edit}
               </span>
             </li>
           ))}

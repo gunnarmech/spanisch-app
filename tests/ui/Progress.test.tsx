@@ -54,7 +54,10 @@ test('Quellen führen die Fotos mit Urheber, Lizenz und Link auf die Commons-Sei
   render(<Sources app={fakeApp({ db: db as never })} onBack={noop} />);
   expect(screen.getByRole('heading', { name: 'Fotos' })).toBeTruthy();
   for (const p of allPhotos) {
-    const link = screen.getByRole('link', { name: `${p.author}, ${p.license}` }) as HTMLAnchorElement;
+    const link = screen.getByRole('link', { name: p.author }) as HTMLAnchorElement;
     expect(link.href).toBe(p.page);
+    const licenses = screen.getAllByRole('link', { name: p.license }) as HTMLAnchorElement[];
+    expect(licenses.some((a) => a.href === p.licenseUrl)).toBe(true);
+    expect(link.closest('li')!.textContent).toContain('zugeschnitten');
   }
 });
