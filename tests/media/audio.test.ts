@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { audioUrl, loadManifest, play, prefetchSituation, type Manifest } from '../../src/media/audio';
+import { audioUrl, loadManifest, play, playSequence, prefetchSituation, type Manifest } from '../../src/media/audio';
 
 const manifest: Manifest = {
   'w-hola': [
@@ -76,6 +76,29 @@ describe('play', () => {
     const els = spy.mock.contexts as HTMLAudioElement[];
     expect(els[0]).toBe(els[1]);
     expect(els[1].src).toContain('b.mp3');
+  });
+});
+
+describe('playSequence', () => {
+  it('spielt nacheinander auf einem gemeinsamen Element und wartet auf das Ende', async () => {
+    vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => {});
+    const spy = vi.spyOn(HTMLMediaElement.prototype, 'play').mockImplementation(function (this: HTMLMediaElement) {
+      queueMicrotask(() => this.dispatchEvent(new Event('ended')));
+      return Promise.resolve();
+    });
+    await playSequence(['a.mp3', 'b.mp3']);
+    const els = spy.mock.contexts as HTMLAudioElement[];
+    expect(els).toHaveLength(2);
+    expect(els[0]).toBe(els[1]);
+    expect(els[1].src).toContain('b.mp3');
+  });
+
+  it('schluckt Fehler und loggt sie', async () => {
+    vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => {});
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    vi.spyOn(HTMLMediaElement.prototype, 'play').mockRejectedValue(new Error('NotAllowed'));
+    await expect(playSequence(['a.mp3'])).resolves.toBeUndefined();
+    expect(warn).toHaveBeenCalled();
   });
 });
 

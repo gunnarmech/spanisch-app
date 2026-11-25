@@ -106,19 +106,3 @@ export async function recordClip(maxMs = 6000): Promise<Blob | null> {
     release();
   }
 }
-
-/** Spielt Töne nacheinander ab (jeweils bis zum Ende). Fehler werden geloggt, nicht geworfen. */
-export async function playInOrder(urls: string[]): Promise<void> {
-  for (const url of urls) {
-    try {
-      const audio = new Audio(url);
-      await new Promise<void>((resolve) => {
-        audio.onended = () => resolve();
-        audio.onerror = () => resolve();
-        audio.play().catch(() => resolve());
-      });
-    } catch (err) {
-      console.warn('Audio konnte nicht abgespielt werden', url, err);
-    }
-  }
-}

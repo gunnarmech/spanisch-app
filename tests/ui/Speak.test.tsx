@@ -8,11 +8,16 @@ const speech = vi.hoisted(() => ({
   recognize: vi.fn(async (): Promise<string | null> => null),
   recordClip: vi.fn(async (): Promise<Blob | null> => null),
   recordingSupported: vi.fn(() => false),
-  playInOrder: vi.fn(async () => {}),
 }));
 vi.mock('../../src/media/speech', () => speech);
-vi.mock('../../src/media/audio', () => ({ play: vi.fn(async () => {}), audioUrl: vi.fn(() => null) }));
+vi.mock('../../src/media/audio', () => ({
+  play: vi.fn(async () => {}),
+  playSequence: vi.fn(async () => {}),
+  audioUrl: vi.fn(() => null),
+}));
 
+import { play, playSequence } from '../../src/media/audio';
+import { RoundEnvContext } from '../../src/ui/tasks/env';
 import { Speak } from '../../src/ui/tasks/Speak';
 
 const task: Task = { cardId: 'p-bano', itemId: 'p-bano', situationId: 's1', form: 'speak', isNew: false };
@@ -31,6 +36,7 @@ beforeEach(() => {
   speech.recognize.mockResolvedValue(null);
   speech.recordClip.mockResolvedValue(null);
   URL.createObjectURL = vi.fn(() => 'blob:clip');
+  URL.revokeObjectURL = vi.fn();
 });
 afterEach(() => {
   cleanup();
@@ -89,7 +95,7 @@ describe('Speak', () => {
     expect(speech.recognize).not.toHaveBeenCalled();
     fireEvent.click(speakButton());
     const same = await screen.findByRole('button', { name: 'klang gleich' });
-    await waitFor(() => expect(speech.playInOrder).toHaveBeenCalled());
+    expect(playSequence).not.toHaveBeenCalled();
     fireEvent.click(same);
     expect(onAnswered).toHaveBeenCalledTimes(1);
     expect(onAnswered).toHaveBeenCalledWith(expect.objectContaining({ verdict: 'correct' }));
@@ -132,5 +138,44 @@ describe('Speak', () => {
     fireEvent.click(speakButton());
     expect(await screen.findByText('Mikrofon nicht verfügbar')).toBeTruthy();
     expect(screen.getByLabelText('Deine Antwort auf Spanisch')).toBeTruthy();
+  });
+
+  it('spielt Original und Aufnahme erst auf Knopfdruck nacheinander', async () => {
+    speech.recordingSupported.mockReturnValue(true);
+    speech.recordClip.mockResolvedValue(new Blob(['x']));
+    render(
+      <RoundEnvContext.Provider value={{ situations: [], urlFor: () => 'orig.mp3' }}>
+        <Speak task={task} item={item} onAnswered={vi.fn()} onDone={vi.fn()} />
+      </RoundEnvContext.Provider>,
+    );
+    fireEvent.click(speakButton());
+    const both = await screen.findByRole('button', { name: 'beide anhören' });
+    expect(playSequence).not.toHaveBeenCalled();
+    fireEvent.click(both);
+    expect(playSequence).toHaveBeenCalledWith(['orig.mp3', 'blob:clip']);
+    fireEvent.click(screen.getByRole('button', { name: 'Deine Aufnahme anhören' }));
+    expect(play).toHaveBeenCalledWith('blob:clip');
+  });
+
+  it('gibt die Aufnahme-Adresse beim Verlassen frei', async () => {
+    speech.recordingSupported.mockReturnValue(true);
+    speech.recordClip.mockResolvedValue(new Blob(['x']));
+    const { unmount } = render(<Speak task={task} item={item} onAnswered={vi.fn()} onDone={vi.fn()} />);
+    fireEvent.click(speakButton());
+    await screen.findByRole('button', { name: 'klang gleich' });
+    unmount();
+    expect(URL.revokeObjectURL).toHaveBeenCalledWith('blob:clip');
+  });
+
+  it('ruft onDone bei doppeltem Weiter nur einmal', async () => {
+    speech.speechSupported.mockReturnValue(true);
+    speech.recognize.mockResolvedValue('donde esta el baño');
+    const onDone = vi.fn();
+    render(<Speak task={task} item={item} onAnswered={vi.fn()} onDone={onDone} />);
+    fireEvent.click(speakButton());
+    const next = await screen.findByRole('button', { name: 'Weiter' });
+    fireEvent.click(next);
+    fireEvent.click(next);
+    expect(onDone).toHaveBeenCalledTimes(1);
   });
 });

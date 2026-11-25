@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { gradeSpoken, normalize } from '../../engine/grade';
-import { playInOrder, recognize, recordClip, recordingSupported, speechSupported } from '../../media/speech';
+import { play, playSequence } from '../../media/audio';
+import { recognize, recordClip, recordingSupported, speechSupported } from '../../media/speech';
 import { AudioButton } from './AudioButton';
 import { useRoundEnv } from './env';
 import { Type } from './Type';
@@ -42,6 +43,7 @@ export function Speak(props: TaskProps) {
   const text = textOf(item);
   const start = useRef(Date.now());
   const reported = useRef(false);
+  const finished = useRef(false);
   const attempts = useRef(0);
   const [phase, setPhase] = useState<Phase>(() => ({
     name: 'ask',
@@ -52,11 +54,14 @@ export function Speak(props: TaskProps) {
   const url = text ? env.urlFor(task, item.id) : null;
   const clipUrl = phase.name === 'assess' ? phase.clipUrl : null;
 
-  useEffect(() => {
-    if (phase.name !== 'assess') return;
-    void playInOrder([url, phase.clipUrl].filter((u): u is string => !!u));
-    // nur beim Eintritt in die Selbstbewertung abspielen
-  }, [phase.name]);
+  // Die Aufnahme-Adresse beim Verlassen freigeben.
+  const clipRef = useRef<string | null>(null);
+  useEffect(
+    () => () => {
+      if (clipRef.current) URL.revokeObjectURL(clipRef.current);
+    },
+    [],
+  );
 
   if (!text) return null;
   if (unavailable) {
@@ -86,7 +91,9 @@ export function Speak(props: TaskProps) {
       setPhase({ name: 'type' });
       return;
     }
-    setPhase({ name: 'assess', clipUrl: URL.createObjectURL(blob) });
+    const clip = URL.createObjectURL(blob);
+    clipRef.current = clip;
+    setPhase({ name: 'assess', clipUrl: clip });
   };
 
   const speak = async () => {
@@ -151,9 +158,18 @@ export function Speak(props: TaskProps) {
           <p class="spanish solution">{text.es}</p>
           <AudioButton url={url} label="Original anhören" />
           {clipUrl && (
-            <button type="button" class="audio" onClick={() => void playInOrder([clipUrl])}>
-              Deine Aufnahme anhören
-            </button>
+            <>
+              <button type="button" class="audio" onClick={() => void play(clipUrl)}>
+                Deine Aufnahme anhören
+              </button>
+              <button
+                type="button"
+                class="audio"
+                onClick={() => void playSequence([url, clipUrl].filter((u): u is string => !!u))}
+              >
+                beide anhören
+              </button>
+            </>
           )}
           <button type="button" class="primary" onClick={() => assess('correct')}>
             klang gleich
@@ -174,7 +190,11 @@ export function Speak(props: TaskProps) {
             type="button"
             class="primary"
             data-primary
-            onClick={() => onDone({ verdict: phase.verdict, ms: phase.ms, usedHint: phase.usedHint })}
+            onClick={() => {
+              if (finished.current) return;
+              finished.current = true;
+              onDone({ verdict: phase.verdict, ms: phase.ms, usedHint: phase.usedHint });
+            }}
           >
             Weiter
           </button>

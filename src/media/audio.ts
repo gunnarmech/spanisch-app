@@ -48,6 +48,32 @@ export async function play(url: string): Promise<void> {
   }
 }
 
+/**
+ * Spielt Töne nacheinander auf dem gemeinsamen Element und wartet jeweils auf das Ende.
+ * Muss aus einer Nutzergeste heraus aufgerufen werden; das gemeinsame Element bleibt danach entsperrt (iOS).
+ * Fehler werden geloggt, nicht geworfen.
+ */
+export async function playSequence(urls: string[]): Promise<void> {
+  shared ??= new Audio();
+  const el = shared;
+  for (const url of urls) {
+    try {
+      el.pause();
+      el.src = url;
+      el.currentTime = 0;
+      const ended = new Promise<void>((resolve) => {
+        el.addEventListener('ended', () => resolve(), { once: true });
+        el.addEventListener('error', () => resolve(), { once: true });
+      });
+      await el.play();
+      await ended;
+    } catch (err) {
+      console.warn('Audio konnte nicht abgespielt werden', url, err);
+      return;
+    }
+  }
+}
+
 export async function prefetchSituation(situationId: string, manifest: Manifest): Promise<void> {
   if (typeof caches === 'undefined') return;
   const urls = Object.entries(manifest).flatMap(([key, entries]) =>
