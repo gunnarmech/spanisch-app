@@ -205,3 +205,25 @@ describe('Ereignisse beim Antworten', () => {
     expect(kinds.filter((k) => k === 'heard')).toHaveLength(1);
   });
 });
+
+describe('Abgleich beim Beenden', () => {
+  it('Runde beenden gleicht ab, wenn in der Runde etwas aufgezeichnet wurde', async () => {
+    const app = fakeApp();
+    const onExit = vi.fn();
+    render(<Round app={app} onExit={onExit} onAgain={noop} />);
+    await screen.findByText('hola');
+    fireEvent.click(screen.getByRole('button', { name: 'kann ich schon' }));
+    await waitFor(() => expect(app.record).toHaveBeenCalledTimes(1));
+    fireEvent.click(screen.getByRole('button', { name: 'Runde beenden' }));
+    expect(app.sync).toHaveBeenCalledTimes(1);
+    expect(onExit).toHaveBeenCalled();
+  });
+
+  it('Runde beenden ohne Aufzeichnung gleicht nicht ab', async () => {
+    const app = fakeApp();
+    render(<Round app={app} onExit={noop} onAgain={noop} />);
+    await screen.findByText('hola');
+    fireEvent.click(screen.getByRole('button', { name: 'Runde beenden' }));
+    expect(app.sync).not.toHaveBeenCalled();
+  });
+});

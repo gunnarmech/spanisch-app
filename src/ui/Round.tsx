@@ -100,6 +100,12 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
 
   // Pro Aufgabe nur ein Weiterschalten oder "kann ich schon", auch bei doppeltem Tippen.
   const locked = useRef<number | null>(null);
+  const recorded = useRef(false);
+  const leave = () => {
+    // Wurde etwas aufgezeichnet, ist das Beenden ein Abgleichpunkt; die Oberfläche wartet nicht darauf.
+    if (recorded.current) void app.sync();
+    onExit();
+  };
   const take = () => {
     if (locked.current === index) return false;
     locked.current = index;
@@ -109,6 +115,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
   /** Das Ereignis entsteht beim Antworten, nicht erst beim Weiterschalten. */
   const answered = async (task: Task, result: Answer) => {
     if (task.form === 'intro') return;
+    recorded.current = true;
     if (task.form === 'dialog') {
       await app.record({ kind: 'heard', cardId: task.itemId });
       return;
@@ -129,6 +136,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
   const known = async (task: Task) => {
     if (!take()) return;
     skipped.current.add(task.cardId);
+    recorded.current = true;
     await app.record({ kind: 'known', cardId: task.cardId });
     advance(index);
   };
@@ -155,7 +163,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
         onKnown={() => void known(task)}
         onReport={(text) => app.report(task.itemId, text)}
       />
-      <button type="button" class="link leave" onClick={onExit}>
+      <button type="button" class="link leave" onClick={leave}>
         Runde beenden
       </button>
     </RoundEnvContext.Provider>

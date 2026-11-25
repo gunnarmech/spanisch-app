@@ -38,6 +38,8 @@ export function validCardIds(situations: Situation[]): Set<string> {
   return ids;
 }
 
+const SYNC_MIN_GAP_MS = 60_000;
+
 let situationsCache: Situation[] | undefined;
 
 /** Lädt Inhalt, Ereignisprotokoll und Einstellungen, spielt das Protokoll ab. Null, solange geladen wird. */
@@ -46,6 +48,7 @@ export function useAppState(injected?: Db): AppState | null {
   const [syncError, setSyncError] = useState<string>();
   const running = useRef<Promise<SyncResult> | null>(null);
   const queued = useRef<Promise<SyncResult> | null>(null);
+  const lastStart = useRef(0);
   const db = useRef<Db | null>(null);
   const settings = useRef<Settings | null>(null);
 
@@ -91,6 +94,7 @@ export function useAppState(injected?: Db): AppState | null {
    */
   const sync = useCallback((): Promise<SyncResult> => {
     const start = (): Promise<SyncResult> => {
+      lastStart.current = Date.now();
       const run = runSync().finally(() => {
         running.current = null;
       });
@@ -104,6 +108,20 @@ export function useAppState(injected?: Db): AppState | null {
     });
     return queued.current;
   }, [runSync]);
+
+  // Weitere Abgleichpunkte: Rückkehr in die App (höchstens einmal je Minute) und Wiederkehr der Verbindung.
+  useEffect(() => {
+    const onVisible = () => {
+      if (document.visibilityState === 'visible' && Date.now() - lastStart.current >= SYNC_MIN_GAP_MS) void sync();
+    };
+    const onOnline = () => void sync();
+    document.addEventListener('visibilitychange', onVisible);
+    window.addEventListener('online', onOnline);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisible);
+      window.removeEventListener('online', onOnline);
+    };
+  }, [sync]);
 
   const updateSettings = useCallback(
     async (patch: Partial<Settings>) => {
