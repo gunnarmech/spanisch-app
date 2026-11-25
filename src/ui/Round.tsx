@@ -21,7 +21,7 @@ import type { AppState } from './useAppState';
 
 type Props = { app: AppState; focusSituationId?: string; onExit(): void; onAgain(): void };
 
-function component(task: Task, item: Item): (p: TaskProps) => preact.JSX.Element | null {
+export function component(task: Task, item: Item): (p: TaskProps) => preact.JSX.Element | null {
   switch (task.form) {
     case 'intro':
       return Intro;
