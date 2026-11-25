@@ -256,6 +256,10 @@ summary:focus-visible {
   color: var(--muted);
 }
 
+a {
+  color: var(--accent);
+}
+
 .plain {
   margin: 0;
   padding: 0;

@@ -59,11 +59,13 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
           <li>Der Code der App steht unter der MIT-Lizenz.</li>
           <li>Die Inhalte (Wörter, Wendungen, Dialoge, Erklärungen) stehen unter CC BY-SA 4.0.</li>
           <li>
-            Die Häufigkeitsliste stammt aus{' '}
-            <a href={FREQ_URL} target="_blank" rel="noopener noreferrer">
-              FrequencyWords
-            </a>{' '}
-            (CC BY-SA 4.0).
+            <span>
+              Die Häufigkeitsliste stammt aus{' '}
+              <a href={FREQ_URL} target="_blank" rel="noopener noreferrer">
+                FrequencyWords
+              </a>{' '}
+              (CC BY-SA 4.0).
+            </span>
           </li>
           <li>Die Abstände der Wiederholungen berechnet ts-fsrs (MIT).</li>
           <li>Die Stimmen sind erzeugt mit edge-tts.</li>
