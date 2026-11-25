@@ -1,0 +1,2684 @@
+{
+  "id": "03-einkaufen",
+  "order": 3,
+  "title": "Einkaufen und Bezahlen",
+  "items": [
+    {
+      "id": "w-ir",
+      "kind": "word",
+      "es": "ir",
+      "de": "gehen, fahren",
+      "forms": [
+        "ir",
+        "voy",
+        "vas",
+        "va",
+        "vamos",
+        "van"
+      ],
+      "examples": [
+        {
+          "es": "Voy a Santiago hoy.",
+          "de": "Ich fahre heute nach Santiago."
+        }
+      ],
+      "note": "Unregelmäßig: voy, vas, va, vamos, van. Mit a plus Infinitiv sagst du, was du gleich tust (siehe Grammatik).",
+      "freqRank": 128
+    },
+    {
+      "id": "w-hay",
+      "kind": "word",
+      "es": "hay",
+      "de": "es gibt",
+      "forms": [
+        "hay"
+      ],
+      "examples": [
+        {
+          "es": "Hay pan aquí.",
+          "de": "Hier gibt es Brot."
+        }
+      ],
+      "note": "Hay gilt für eine Sache und für mehrere: hay pan, hay dos mesas. Verneint: no hay. Im Laden fragst du ¿hay...? und hörst oft no hay.",
+      "freqRank": 49
+    },
+    {
+      "id": "w-cerca",
+      "kind": "word",
+      "es": "cerca",
+      "de": "nah, in der Nähe",
+      "forms": [
+        "cerca"
+      ],
+      "examples": [
+        {
+          "es": "El baño está cerca.",
+          "de": "Die Toilette ist in der Nähe."
+        }
+      ],
+      "note": "Mit de wird es zu cerca de: cerca de la caja.",
+      "freqRank": 381
+    },
+    {
+      "id": "w-lejos",
+      "kind": "word",
+      "es": "lejos",
+      "de": "weit weg",
+      "forms": [
+        "lejos"
+      ],
+      "examples": [
+        {
+          "es": "Chile está lejos de Alemania.",
+          "de": "Chile ist weit weg von Deutschland."
+        }
+      ],
+      "freqRank": 523
+    },
+    {
+      "id": "w-supermercado",
+      "kind": "word",
+      "es": "supermercado",
+      "de": "Supermarkt",
+      "forms": [
+        "supermercado",
+        "supermercados"
+      ],
+      "examples": [
+        {
+          "es": "Hay un supermercado cerca.",
+          "de": "Es gibt einen Supermarkt in der Nähe."
+        }
+      ],
+      "note": "Große Supermärkte haben viele Kassen und fast immer Kartenzahlung."
+    },
+    {
+      "id": "w-tienda",
+      "kind": "word",
+      "es": "tienda",
+      "de": "Laden, Geschäft",
+      "forms": [
+        "tienda",
+        "tiendas"
+      ],
+      "examples": [
+        {
+          "es": "La tienda es grande.",
+          "de": "Der Laden ist groß."
+        }
+      ],
+      "freqRank": 817
+    },
+    {
+      "id": "w-almacen",
+      "kind": "word",
+      "es": "almacén",
+      "de": "kleiner Laden im Viertel",
+      "forms": [
+        "almacén",
+        "almacenes"
+      ],
+      "examples": [
+        {
+          "es": "Voy al almacén por pan.",
+          "de": "Ich gehe im Almacén Brot holen."
+        }
+      ],
+      "note": "Der almacén ist der kleine Laden an der Ecke mit Brot, Milch, Getränken und Dingen für den Alltag. Oft zahlt man dort bar.",
+      "freqRank": 3399
+    },
+    {
+      "id": "w-kiosco",
+      "kind": "word",
+      "es": "kiosco",
+      "de": "Kiosk",
+      "forms": [
+        "kiosco",
+        "kioscos"
+      ],
+      "examples": [
+        {
+          "es": "En el kiosco hay agua.",
+          "de": "Im Kiosk gibt es Wasser."
+        }
+      ],
+      "note": "Kleiner Laden oder Stand für Getränke, Süßes und Kleinkram."
+    },
+    {
+      "id": "w-feria",
+      "kind": "word",
+      "es": "feria",
+      "de": "Wochenmarkt",
+      "forms": [
+        "feria",
+        "ferias"
+      ],
+      "examples": [
+        {
+          "es": "En la feria hay tomates.",
+          "de": "Auf dem Markt gibt es Tomaten."
+        }
+      ],
+      "note": "Die feria ist der Wochenmarkt unter freiem Himmel mit Obst und Gemüse. Die Preise gelten meist pro Kilo, man darf oft probieren und zahlt häufig bar."
+    },
+    {
+      "id": "w-puesto",
+      "kind": "word",
+      "es": "puesto",
+      "de": "Stand",
+      "forms": [
+        "puesto",
+        "puestos"
+      ],
+      "examples": [
+        {
+          "es": "Hay un puesto aquí.",
+          "de": "Hier gibt es einen Stand."
+        }
+      ],
+      "note": "Der Marktstand auf der feria.",
+      "freqRank": 625
+    },
+    {
+      "id": "w-farmacia",
+      "kind": "word",
+      "es": "farmacia",
+      "de": "Apotheke",
+      "forms": [
+        "farmacia",
+        "farmacias"
+      ],
+      "examples": [
+        {
+          "es": "La farmacia está lejos.",
+          "de": "Die Apotheke ist weit weg."
+        }
+      ],
+      "note": "Hier nur als Laden: Dort bekommst du auch Seife und andere Alltagsdinge. Zur Gesundheit kommt später mehr."
+    },
+    {
+      "id": "w-panaderia",
+      "kind": "word",
+      "es": "panadería",
+      "de": "Bäckerei",
+      "forms": [
+        "panadería",
+        "panaderías"
+      ],
+      "examples": [
+        {
+          "es": "En la panadería hay pan.",
+          "de": "In der Bäckerei gibt es Brot."
+        }
+      ]
+    },
+    {
+      "id": "w-caja",
+      "kind": "word",
+      "es": "caja",
+      "de": "Kasse",
+      "forms": [
+        "caja",
+        "cajas"
+      ],
+      "examples": [
+        {
+          "es": "Pago en la caja.",
+          "de": "Ich zahle an der Kasse."
+        }
+      ],
+      "note": "Caja heißt auch Kiste oder Schachtel. Im Laden ist die Kasse gemeint.",
+      "freqRank": 803
+    },
+    {
+      "id": "w-ahi",
+      "kind": "word",
+      "es": "ahí",
+      "de": "da, dort",
+      "forms": [
+        "ahí"
+      ],
+      "examples": [
+        {
+          "es": "El jugo está ahí.",
+          "de": "Der Saft ist da."
+        }
+      ],
+      "note": "Ahí zeigt auf etwas in deiner Nähe oder in der des anderen, allá auf etwas weiter weg.",
+      "freqRank": 127
+    },
+    {
+      "id": "w-alla",
+      "kind": "word",
+      "es": "allá",
+      "de": "dort drüben",
+      "forms": [
+        "allá"
+      ],
+      "examples": [
+        {
+          "es": "La caja está allá.",
+          "de": "Die Kasse ist dort drüben."
+        }
+      ],
+      "freqRank": 418
+    },
+    {
+      "id": "w-cliente",
+      "kind": "word",
+      "es": "cliente",
+      "de": "Kunde, Kundin",
+      "forms": [
+        "cliente",
+        "clientes"
+      ],
+      "examples": [
+        {
+          "es": "El cliente paga en efectivo.",
+          "de": "Der Kunde zahlt bar."
+        }
+      ],
+      "freqRank": 1110
+    },
+    {
+      "id": "w-vendedor",
+      "kind": "word",
+      "es": "vendedor",
+      "de": "Verkäufer",
+      "forms": [
+        "vendedor",
+        "vendedora",
+        "vendedores",
+        "vendedoras"
+      ],
+      "examples": [
+        {
+          "es": "La vendedora es chilena.",
+          "de": "Die Verkäuferin ist Chilenin."
+        }
+      ],
+      "note": "Weiblich: vendedora.",
+      "freqRank": 4438
+    },
+    {
+      "id": "w-cajero",
+      "kind": "word",
+      "es": "cajero",
+      "de": "Kassierer",
+      "forms": [
+        "cajero",
+        "cajera",
+        "cajeros",
+        "cajeras"
+      ],
+      "examples": [
+        {
+          "es": "La cajera habla español.",
+          "de": "Die Kassiererin spricht Spanisch."
+        }
+      ],
+      "note": "Weiblich: cajera."
+    },
+    {
+      "id": "w-comprar",
+      "kind": "word",
+      "es": "comprar",
+      "de": "kaufen",
+      "forms": [
+        "comprar",
+        "compro",
+        "compras",
+        "compra",
+        "compramos",
+        "compran"
+      ],
+      "examples": [
+        {
+          "es": "Compro pan y queso.",
+          "de": "Ich kaufe Brot und Käse."
+        }
+      ],
+      "freqRank": 818
+    },
+    {
+      "id": "w-necesitar",
+      "kind": "word",
+      "es": "necesitar",
+      "de": "brauchen",
+      "forms": [
+        "necesitar",
+        "necesito",
+        "necesitas",
+        "necesita",
+        "necesitamos",
+        "necesitan"
+      ],
+      "examples": [
+        {
+          "es": "Necesito agua, por favor.",
+          "de": "Ich brauche Wasser, bitte."
+        }
+      ],
+      "note": "¿Necesita...? fragt dich das Personal, wenn es wissen will, was du brauchst.",
+      "freqRank": 1692
+    },
+    {
+      "id": "w-buscar",
+      "kind": "word",
+      "es": "buscar",
+      "de": "suchen",
+      "forms": [
+        "buscar",
+        "busco",
+        "buscas",
+        "busca",
+        "buscamos",
+        "buscan"
+      ],
+      "examples": [
+        {
+          "es": "Busco una farmacia.",
+          "de": "Ich suche eine Apotheke."
+        }
+      ],
+      "freqRank": 635
+    },
+    {
+      "id": "w-vender",
+      "kind": "word",
+      "es": "vender",
+      "de": "verkaufen",
+      "forms": [
+        "vender",
+        "vendo",
+        "vende",
+        "venden"
+      ],
+      "examples": [
+        {
+          "es": "¿Venden pan aquí?",
+          "de": "Verkaufen Sie hier Brot?"
+        }
+      ],
+      "note": "Im Geschäft fragst du mit venden (wörtlich: verkaufen sie), also das Geschäft als Ganzes.",
+      "freqRank": 1522
+    },
+    {
+      "id": "w-ayudar",
+      "kind": "word",
+      "es": "ayudar",
+      "de": "helfen",
+      "forms": [
+        "ayudar",
+        "ayudo",
+        "ayuda",
+        "ayudan"
+      ],
+      "examples": [
+        {
+          "es": "¿Me puede ayudar, por favor?",
+          "de": "Können Sie mir bitte helfen?"
+        }
+      ],
+      "freqRank": 559
+    },
+    {
+      "id": "w-solo",
+      "kind": "word",
+      "es": "solo",
+      "de": "nur",
+      "forms": [
+        "solo"
+      ],
+      "examples": [
+        {
+          "es": "Solo un momento.",
+          "de": "Nur einen Moment."
+        }
+      ],
+      "note": "Solo heißt nur und wird so geschrieben, auch wenn es früher mit Akzent stand.",
+      "freqRank": 89
+    },
+    {
+      "id": "w-mirar",
+      "kind": "word",
+      "es": "mirar",
+      "de": "schauen, ansehen",
+      "forms": [
+        "mirar",
+        "miro",
+        "miras",
+        "mira",
+        "miramos",
+        "miran",
+        "mirando"
+      ],
+      "examples": [
+        {
+          "es": "Miro la carta.",
+          "de": "Ich schaue mir die Karte an."
+        }
+      ],
+      "note": "Solo estoy mirando sagst du, wenn dich Verkäufer ansprechen (estoy mirando: ich schaue gerade).",
+      "freqRank": 1065
+    },
+    {
+      "id": "w-probar",
+      "kind": "word",
+      "es": "probar",
+      "de": "probieren, anprobieren",
+      "forms": [
+        "probar",
+        "pruebo",
+        "pruebas",
+        "prueba",
+        "probamos",
+        "prueban"
+      ],
+      "examples": [
+        {
+          "es": "¿Puedo probar?",
+          "de": "Darf ich probieren?"
+        }
+      ],
+      "note": "Der Stamm wechselt: pruebo, prueba. Auf der feria darfst du oft probieren.",
+      "freqRank": 1295
+    },
+    {
+      "id": "w-aceptar",
+      "kind": "word",
+      "es": "aceptar",
+      "de": "akzeptieren, annehmen",
+      "forms": [
+        "aceptar",
+        "acepto",
+        "aceptas",
+        "acepta",
+        "aceptamos",
+        "aceptan"
+      ],
+      "examples": [
+        {
+          "es": "¿Aceptan tarjeta de crédito?",
+          "de": "Nehmen Sie Kreditkarte an?"
+        }
+      ],
+      "freqRank": 1720
+    },
+    {
+      "id": "w-abrir",
+      "kind": "word",
+      "es": "abrir",
+      "de": "öffnen, aufmachen",
+      "forms": [
+        "abrir",
+        "abro",
+        "abre",
+        "abren"
+      ],
+      "examples": [
+        {
+          "es": "El kiosco abre hoy.",
+          "de": "Der Kiosk hat heute auf."
+        }
+      ],
+      "freqRank": 1261
+    },
+    {
+      "id": "w-cerrar",
+      "kind": "word",
+      "es": "cerrar",
+      "de": "schließen, zumachen",
+      "forms": [
+        "cerrar",
+        "cierro",
+        "cierra",
+        "cierran",
+        "cerramos"
+      ],
+      "examples": [
+        {
+          "es": "La farmacia cierra hoy.",
+          "de": "Die Apotheke schließt heute."
+        }
+      ],
+      "note": "Der Stamm wechselt: cierra, cierran, aber cerramos.",
+      "freqRank": 1798
+    },
+    {
+      "id": "w-hora",
+      "kind": "word",
+      "es": "hora",
+      "de": "Stunde, Uhrzeit",
+      "forms": [
+        "hora",
+        "horas"
+      ],
+      "examples": [
+        {
+          "es": "Es hora de comer.",
+          "de": "Es ist Zeit zu essen."
+        }
+      ],
+      "freqRank": 245
+    },
+    {
+      "id": "w-abierto",
+      "kind": "word",
+      "es": "abierto",
+      "de": "geöffnet",
+      "forms": [
+        "abierto",
+        "abierta",
+        "abiertos",
+        "abiertas"
+      ],
+      "examples": [
+        {
+          "es": "La farmacia está abierta.",
+          "de": "Die Apotheke ist geöffnet."
+        }
+      ],
+      "freqRank": 1714
+    },
+    {
+      "id": "w-cerrado",
+      "kind": "word",
+      "es": "cerrado",
+      "de": "geschlossen",
+      "forms": [
+        "cerrado",
+        "cerrada",
+        "cerrados",
+        "cerradas"
+      ],
+      "examples": [
+        {
+          "es": "El kiosco está cerrado.",
+          "de": "Der Kiosk ist geschlossen."
+        }
+      ],
+      "freqRank": 1914
+    },
+    {
+      "id": "w-manana",
+      "kind": "word",
+      "es": "mañana",
+      "de": "morgen",
+      "forms": [
+        "mañana"
+      ],
+      "examples": [
+        {
+          "es": "Voy al supermercado mañana.",
+          "de": "Ich gehe morgen in den Supermarkt."
+        }
+      ],
+      "note": "Mañana heißt auch Morgen (Tageszeit). Aus dem Satz erkennst du, was gemeint ist.",
+      "freqRank": 173
+    },
+    {
+      "id": "w-ahora",
+      "kind": "word",
+      "es": "ahora",
+      "de": "jetzt",
+      "forms": [
+        "ahora"
+      ],
+      "examples": [
+        {
+          "es": "Pago ahora.",
+          "de": "Ich zahle jetzt."
+        }
+      ],
+      "freqRank": 42
+    },
+    {
+      "id": "w-despues",
+      "kind": "word",
+      "es": "después",
+      "de": "später, danach",
+      "forms": [
+        "después"
+      ],
+      "examples": [
+        {
+          "es": "Pago después.",
+          "de": "Ich zahle später."
+        }
+      ],
+      "freqRank": 161
+    },
+    {
+      "id": "w-gratis",
+      "kind": "word",
+      "es": "gratis",
+      "de": "gratis, kostenlos",
+      "forms": [
+        "gratis"
+      ],
+      "examples": [
+        {
+          "es": "El agua es gratis.",
+          "de": "Das Wasser ist gratis."
+        }
+      ],
+      "freqRank": 1831
+    },
+    {
+      "id": "w-medio",
+      "kind": "word",
+      "es": "medio",
+      "de": "halb",
+      "forms": [
+        "medio",
+        "media"
+      ],
+      "examples": [
+        {
+          "es": "Media taza de té.",
+          "de": "Eine halbe Tasse Tee."
+        }
+      ],
+      "note": "Vor einem männlichen Wort medio, vor einem weiblichen media: media docena.",
+      "freqRank": 516
+    },
+    {
+      "id": "w-menos",
+      "kind": "word",
+      "es": "menos",
+      "de": "weniger",
+      "forms": [
+        "menos"
+      ],
+      "examples": [
+        {
+          "es": "Un poco menos, por favor.",
+          "de": "Ein bisschen weniger, bitte."
+        }
+      ],
+      "freqRank": 190
+    },
+    {
+      "id": "w-ver",
+      "kind": "word",
+      "es": "ver",
+      "de": "sehen",
+      "forms": [
+        "ver",
+        "veo",
+        "ves",
+        "ve",
+        "vemos",
+        "ven"
+      ],
+      "examples": [
+        {
+          "es": "¿Puedo ver?",
+          "de": "Kann ich mal sehen?"
+        }
+      ],
+      "freqRank": 120
+    },
+    {
+      "id": "w-kilo",
+      "kind": "word",
+      "es": "kilo",
+      "de": "Kilo",
+      "forms": [
+        "kilo",
+        "kilos"
+      ],
+      "examples": [
+        {
+          "es": "Un kilo de tomates, por favor.",
+          "de": "Ein Kilo Tomaten, bitte."
+        }
+      ],
+      "note": "Auf der feria wird nach Kilo verkauft und bezahlt."
+    },
+    {
+      "id": "w-gramo",
+      "kind": "word",
+      "es": "gramo",
+      "de": "Gramm",
+      "forms": [
+        "gramo",
+        "gramos"
+      ],
+      "examples": [
+        {
+          "es": "Cien gramos de jamón, por favor.",
+          "de": "Hundert Gramm Schinken, bitte."
+        }
+      ],
+      "note": "An der Theke bestellst du Aufschnitt und Käse in Gramm."
+    },
+    {
+      "id": "w-litro",
+      "kind": "word",
+      "es": "litro",
+      "de": "Liter",
+      "forms": [
+        "litro",
+        "litros"
+      ],
+      "examples": [
+        {
+          "es": "Un litro de leche, por favor.",
+          "de": "Einen Liter Milch, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-paquete",
+      "kind": "word",
+      "es": "paquete",
+      "de": "Packung",
+      "forms": [
+        "paquete",
+        "paquetes"
+      ],
+      "examples": [
+        {
+          "es": "Un paquete de arroz.",
+          "de": "Eine Packung Reis."
+        }
+      ],
+      "freqRank": 2389
+    },
+    {
+      "id": "w-lata",
+      "kind": "word",
+      "es": "lata",
+      "de": "Dose",
+      "forms": [
+        "lata",
+        "latas"
+      ],
+      "examples": [
+        {
+          "es": "Una lata de bebida.",
+          "de": "Eine Dose Limo."
+        }
+      ],
+      "freqRank": 4420
+    },
+    {
+      "id": "w-docena",
+      "kind": "word",
+      "es": "docena",
+      "de": "Dutzend",
+      "forms": [
+        "docena",
+        "docenas"
+      ],
+      "examples": [
+        {
+          "es": "Una docena de huevos.",
+          "de": "Ein Dutzend Eier."
+        }
+      ],
+      "freqRank": 4168
+    },
+    {
+      "id": "w-unidad",
+      "kind": "word",
+      "es": "unidad",
+      "de": "Stück",
+      "forms": [
+        "unidad",
+        "unidades"
+      ],
+      "examples": [
+        {
+          "es": "Mil pesos la unidad.",
+          "de": "Tausend Pesos das Stück."
+        }
+      ],
+      "note": "Ein Preis je Stück: la unidad.",
+      "freqRank": 1629
+    },
+    {
+      "id": "w-bolsa",
+      "kind": "word",
+      "es": "bolsa",
+      "de": "Tüte, Beutel",
+      "forms": [
+        "bolsa",
+        "bolsas"
+      ],
+      "examples": [
+        {
+          "es": "¿Necesita una bolsa?",
+          "de": "Brauchen Sie eine Tüte?"
+        }
+      ],
+      "note": "Plastiktüten gibt es in Chile im Handel kaum noch. Frag nach einer bolsa oder bring eine eigene mit.",
+      "freqRank": 1216
+    },
+    {
+      "id": "w-fresco",
+      "kind": "word",
+      "es": "fresco",
+      "de": "frisch",
+      "forms": [
+        "fresco",
+        "fresca",
+        "frescos",
+        "frescas"
+      ],
+      "examples": [
+        {
+          "es": "El pan está fresco.",
+          "de": "Das Brot ist frisch."
+        }
+      ],
+      "freqRank": 2854
+    },
+    {
+      "id": "w-fruta",
+      "kind": "word",
+      "es": "fruta",
+      "de": "Obst",
+      "forms": [
+        "fruta",
+        "frutas"
+      ],
+      "examples": [
+        {
+          "es": "Quiero un kilo de fruta.",
+          "de": "Ich möchte ein Kilo Obst."
+        }
+      ],
+      "note": "Fruta ist Obst im Ganzen, auch als Einzahl für mehrere Früchte.",
+      "freqRank": 4693
+    },
+    {
+      "id": "w-verdura",
+      "kind": "word",
+      "es": "verdura",
+      "de": "Gemüse",
+      "forms": [
+        "verdura",
+        "verduras"
+      ],
+      "examples": [
+        {
+          "es": "La verdura es fresca.",
+          "de": "Das Gemüse ist frisch."
+        }
+      ]
+    },
+    {
+      "id": "w-manzana",
+      "kind": "word",
+      "es": "manzana",
+      "de": "Apfel",
+      "forms": [
+        "manzana",
+        "manzanas"
+      ],
+      "examples": [
+        {
+          "es": "Una manzana, por favor.",
+          "de": "Einen Apfel, bitte."
+        }
+      ],
+      "freqRank": 3475
+    },
+    {
+      "id": "w-platano",
+      "kind": "word",
+      "es": "plátano",
+      "de": "Banane",
+      "forms": [
+        "plátano",
+        "plátanos"
+      ],
+      "examples": [
+        {
+          "es": "Dos plátanos, por favor.",
+          "de": "Zwei Bananen, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-pera",
+      "kind": "word",
+      "es": "pera",
+      "de": "Birne",
+      "forms": [
+        "pera",
+        "peras"
+      ],
+      "examples": [
+        {
+          "es": "Una pera y una manzana.",
+          "de": "Eine Birne und einen Apfel."
+        }
+      ]
+    },
+    {
+      "id": "w-uva",
+      "kind": "word",
+      "es": "uva",
+      "de": "Traube",
+      "forms": [
+        "uva",
+        "uvas"
+      ],
+      "examples": [
+        {
+          "es": "Medio kilo de uvas.",
+          "de": "Ein halbes Kilo Trauben."
+        }
+      ]
+    },
+    {
+      "id": "w-cereza",
+      "kind": "word",
+      "es": "cereza",
+      "de": "Kirsche",
+      "forms": [
+        "cereza",
+        "cerezas"
+      ],
+      "examples": [
+        {
+          "es": "Un kilo de cerezas.",
+          "de": "Ein Kilo Kirschen."
+        }
+      ]
+    },
+    {
+      "id": "w-frutilla",
+      "kind": "word",
+      "es": "frutilla",
+      "de": "Erdbeere",
+      "forms": [
+        "frutilla",
+        "frutillas"
+      ],
+      "examples": [
+        {
+          "es": "Un kilo de frutillas.",
+          "de": "Ein Kilo Erdbeeren."
+        }
+      ],
+      "note": "In Chile heißt die Erdbeere frutilla, nicht fresa."
+    },
+    {
+      "id": "w-durazno",
+      "kind": "word",
+      "es": "durazno",
+      "de": "Pfirsich",
+      "forms": [
+        "durazno",
+        "duraznos"
+      ],
+      "examples": [
+        {
+          "es": "Un durazno, por favor.",
+          "de": "Einen Pfirsich, bitte."
+        }
+      ],
+      "note": "In Lateinamerika sagt man meist durazno, nicht melocotón."
+    },
+    {
+      "id": "w-zanahoria",
+      "kind": "word",
+      "es": "zanahoria",
+      "de": "Karotte, Möhre",
+      "forms": [
+        "zanahoria",
+        "zanahorias"
+      ],
+      "examples": [
+        {
+          "es": "Un kilo de zanahorias.",
+          "de": "Ein Kilo Möhren."
+        }
+      ]
+    },
+    {
+      "id": "w-lechuga",
+      "kind": "word",
+      "es": "lechuga",
+      "de": "Salat (Kopfsalat)",
+      "forms": [
+        "lechuga",
+        "lechugas"
+      ],
+      "examples": [
+        {
+          "es": "Una lechuga, por favor.",
+          "de": "Einen Kopfsalat, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-aceite",
+      "kind": "word",
+      "es": "aceite",
+      "de": "Öl",
+      "forms": [
+        "aceite"
+      ],
+      "examples": [
+        {
+          "es": "Una botella de aceite.",
+          "de": "Eine Flasche Öl."
+        }
+      ],
+      "freqRank": 3412
+    },
+    {
+      "id": "w-fideos",
+      "kind": "word",
+      "es": "fideos",
+      "de": "Nudeln",
+      "forms": [
+        "fideo",
+        "fideos"
+      ],
+      "examples": [
+        {
+          "es": "Un paquete de fideos.",
+          "de": "Eine Packung Nudeln."
+        }
+      ],
+      "note": "Meist in der Mehrzahl: los fideos."
+    },
+    {
+      "id": "w-mantequilla",
+      "kind": "word",
+      "es": "mantequilla",
+      "de": "Butter",
+      "forms": [
+        "mantequilla"
+      ],
+      "examples": [
+        {
+          "es": "Pan con mantequilla.",
+          "de": "Brot mit Butter."
+        }
+      ],
+      "freqRank": 4136
+    },
+    {
+      "id": "w-atun",
+      "kind": "word",
+      "es": "atún",
+      "de": "Thunfisch",
+      "forms": [
+        "atún"
+      ],
+      "examples": [
+        {
+          "es": "Una lata de atún.",
+          "de": "Eine Dose Thunfisch."
+        }
+      ]
+    },
+    {
+      "id": "w-galleta",
+      "kind": "word",
+      "es": "galleta",
+      "de": "Keks",
+      "forms": [
+        "galleta",
+        "galletas"
+      ],
+      "examples": [
+        {
+          "es": "Un paquete de galletas.",
+          "de": "Eine Packung Kekse."
+        }
+      ]
+    },
+    {
+      "id": "w-chocolate",
+      "kind": "word",
+      "es": "chocolate",
+      "de": "Schokolade",
+      "forms": [
+        "chocolate",
+        "chocolates"
+      ],
+      "examples": [
+        {
+          "es": "Un chocolate, por favor.",
+          "de": "Eine Tafel Schokolade, bitte."
+        }
+      ],
+      "freqRank": 2154
+    },
+    {
+      "id": "w-yogur",
+      "kind": "word",
+      "es": "yogur",
+      "de": "Joghurt",
+      "forms": [
+        "yogur",
+        "yogures"
+      ],
+      "examples": [
+        {
+          "es": "Un yogur, por favor.",
+          "de": "Einen Joghurt, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-jabon",
+      "kind": "word",
+      "es": "jabón",
+      "de": "Seife",
+      "forms": [
+        "jabón",
+        "jabones"
+      ],
+      "examples": [
+        {
+          "es": "Necesito jabón.",
+          "de": "Ich brauche Seife."
+        }
+      ],
+      "note": "Gibt es im Supermarkt und in der farmacia."
+    },
+    {
+      "id": "w-pisco",
+      "kind": "word",
+      "es": "pisco",
+      "de": "Pisco",
+      "forms": [
+        "pisco"
+      ],
+      "examples": [
+        {
+          "es": "Una botella de pisco.",
+          "de": "Eine Flasche Pisco."
+        }
+      ],
+      "note": "Traubenbrand, in Chile und in Peru sehr beliebt. Mit Zitrone und Zucker wird daraus der pisco sour."
+    },
+    {
+      "id": "w-carro",
+      "kind": "word",
+      "es": "carro",
+      "de": "Einkaufswagen",
+      "forms": [
+        "carro",
+        "carros"
+      ],
+      "examples": [
+        {
+          "es": "Necesito un carro.",
+          "de": "Ich brauche einen Einkaufswagen."
+        }
+      ],
+      "note": "Im Supermarkt kannst du auch carro de compras sagen.",
+      "freqRank": 2412
+    },
+    {
+      "id": "w-fila",
+      "kind": "word",
+      "es": "fila",
+      "de": "Schlange (Warteschlange)",
+      "forms": [
+        "fila",
+        "filas"
+      ],
+      "examples": [
+        {
+          "es": "Hay fila en la caja.",
+          "de": "An der Kasse gibt es eine Schlange."
+        }
+      ],
+      "freqRank": 2949
+    },
+    {
+      "id": "w-regalo",
+      "kind": "word",
+      "es": "regalo",
+      "de": "Geschenk",
+      "forms": [
+        "regalo",
+        "regalos"
+      ],
+      "examples": [
+        {
+          "es": "Es para regalo.",
+          "de": "Es ist ein Geschenk."
+        }
+      ],
+      "freqRank": 918
+    },
+    {
+      "id": "w-precio",
+      "kind": "word",
+      "es": "precio",
+      "de": "Preis",
+      "forms": [
+        "precio",
+        "precios"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es el precio?",
+          "de": "Wie hoch ist der Preis?"
+        }
+      ],
+      "freqRank": 1230
+    },
+    {
+      "id": "w-total",
+      "kind": "word",
+      "es": "total",
+      "de": "Gesamtbetrag, insgesamt",
+      "forms": [
+        "total"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es el total?",
+          "de": "Wie hoch ist der Gesamtbetrag?"
+        }
+      ],
+      "freqRank": 1623
+    },
+    {
+      "id": "w-descuento",
+      "kind": "word",
+      "es": "descuento",
+      "de": "Rabatt",
+      "forms": [
+        "descuento",
+        "descuentos"
+      ],
+      "examples": [
+        {
+          "es": "Un descuento de diez por ciento.",
+          "de": "Zehn Prozent Rabatt."
+        }
+      ]
+    },
+    {
+      "id": "w-oferta",
+      "kind": "word",
+      "es": "oferta",
+      "de": "Angebot",
+      "forms": [
+        "oferta",
+        "ofertas"
+      ],
+      "examples": [
+        {
+          "es": "Hay una oferta de queso.",
+          "de": "Es gibt ein Käseangebot."
+        }
+      ],
+      "freqRank": 1746
+    },
+    {
+      "id": "w-luca",
+      "kind": "word",
+      "es": "luca",
+      "de": "Tausender, tausend Pesos (umgangssprachlich)",
+      "forms": [
+        "luca",
+        "lucas"
+      ],
+      "examples": [
+        {
+          "es": "Son cinco lucas.",
+          "de": "Das macht fünftausend Pesos."
+        }
+      ],
+      "note": "Umgangssprachlich für tausend Pesos: cinco lucas sind 5000. Du musst es vor allem verstehen. Selbst sagst du lieber cinco mil."
+    },
+    {
+      "id": "w-billete",
+      "kind": "word",
+      "es": "billete",
+      "de": "Geldschein",
+      "forms": [
+        "billete",
+        "billetes"
+      ],
+      "examples": [
+        {
+          "es": "Un billete de veinte mil pesos.",
+          "de": "Ein Schein über zwanzigtausend Pesos."
+        }
+      ],
+      "note": "Scheine gibt es zu mil, dos mil, cinco mil, diez mil und veinte mil Pesos.",
+      "freqRank": 3981
+    },
+    {
+      "id": "w-moneda",
+      "kind": "word",
+      "es": "moneda",
+      "de": "Münze",
+      "forms": [
+        "moneda",
+        "monedas"
+      ],
+      "examples": [
+        {
+          "es": "Una moneda de quinientos pesos.",
+          "de": "Eine Münze über fünfhundert Pesos."
+        }
+      ],
+      "freqRank": 3717
+    },
+    {
+      "id": "w-cuota",
+      "kind": "word",
+      "es": "cuota",
+      "de": "Rate (bei Kartenzahlung)",
+      "forms": [
+        "cuota",
+        "cuotas"
+      ],
+      "examples": [
+        {
+          "es": "Pago en una cuota.",
+          "de": "Ich zahle in einer Rate."
+        }
+      ],
+      "note": "Bei Kreditkarte fragt das Terminal oft nach den cuotas. Mit einer ausländischen Karte sagst du am besten una cuota oder sin cuotas."
+    },
+    {
+      "id": "n-trescientos",
+      "kind": "word",
+      "es": "trescientos",
+      "de": "dreihundert (300)",
+      "forms": [
+        "trescientos"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-cuatrocientos",
+      "kind": "word",
+      "es": "cuatrocientos",
+      "de": "vierhundert (400)",
+      "forms": [
+        "cuatrocientos"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-seiscientos",
+      "kind": "word",
+      "es": "seiscientos",
+      "de": "sechshundert (600)",
+      "forms": [
+        "seiscientos"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-setecientos",
+      "kind": "word",
+      "es": "setecientos",
+      "de": "siebenhundert (700)",
+      "forms": [
+        "setecientos"
+      ],
+      "examples": [],
+      "note": "Nicht sietecientos."
+    },
+    {
+      "id": "n-ochocientos",
+      "kind": "word",
+      "es": "ochocientos",
+      "de": "achthundert (800)",
+      "forms": [
+        "ochocientos"
+      ],
+      "examples": []
+    },
+    {
+      "id": "n-novecientos",
+      "kind": "word",
+      "es": "novecientos",
+      "de": "neunhundert (900)",
+      "forms": [
+        "novecientos"
+      ],
+      "examples": [],
+      "note": "Nicht nuevecientos."
+    },
+    {
+      "id": "p-diez-mil",
+      "kind": "phrase",
+      "es": "diez mil",
+      "de": "zehntausend (10.000)",
+      "forms": [
+        "diez mil"
+      ],
+      "examples": [
+        {
+          "es": "Cuesta diez mil pesos.",
+          "de": "Es kostet zehntausend Pesos."
+        }
+      ],
+      "note": "Mil bleibt immer gleich: diez mil, veinte mil."
+    },
+    {
+      "id": "p-veinte-mil",
+      "kind": "phrase",
+      "es": "veinte mil",
+      "de": "zwanzigtausend (20.000)",
+      "forms": [
+        "veinte mil"
+      ],
+      "examples": [
+        {
+          "es": "Pago con veinte mil pesos.",
+          "de": "Ich zahle mit zwanzigtausend Pesos."
+        }
+      ]
+    },
+    {
+      "id": "p-mil-quinientos",
+      "kind": "phrase",
+      "es": "mil quinientos",
+      "de": "eintausendfünfhundert (1.500)",
+      "forms": [
+        "mil quinientos"
+      ],
+      "examples": [
+        {
+          "es": "Cuesta mil quinientos pesos.",
+          "de": "Es kostet fünfzehnhundert Pesos."
+        }
+      ],
+      "note": "Vor mil steht kein un: mil quinientos, nicht un mil quinientos."
+    },
+    {
+      "id": "p-cuanto-sale",
+      "kind": "phrase",
+      "es": "¿cuánto sale?",
+      "de": "was kostet das? (wörtlich: was kommt dabei heraus)",
+      "forms": [
+        "cuánto",
+        "sale",
+        "salen"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto sale el kilo?",
+          "de": "Was kostet das Kilo?"
+        }
+      ],
+      "note": "Neben ¿cuánto cuesta? hörst du oft ¿cuánto sale? Beides fragt nach dem Preis. Beim Gesamtbetrag: ¿cuánto es?"
+    },
+    {
+      "id": "p-por-kilo",
+      "kind": "phrase",
+      "es": "por kilo",
+      "de": "pro Kilo",
+      "forms": [
+        "por kilo",
+        "el kilo"
+      ],
+      "examples": [
+        {
+          "es": "Mil quinientos pesos por kilo.",
+          "de": "Fünfzehnhundert Pesos pro Kilo."
+        }
+      ],
+      "note": "Auf der feria steht der Preis meist pro Kilo. Auch möglich: mil quinientos el kilo."
+    },
+    {
+      "id": "p-quiere-boleta",
+      "kind": "phrase",
+      "es": "¿quiere boleta?",
+      "de": "möchten Sie einen Beleg?",
+      "forms": [
+        "quiere",
+        "boleta"
+      ],
+      "examples": [
+        {
+          "es": "Buenas tardes. ¿Quiere boleta?",
+          "de": "Guten Tag. Möchten Sie einen Beleg?"
+        }
+      ],
+      "note": "Das fragt die Kasse (usted). Antworte sí, por favor oder no, gracias."
+    },
+    {
+      "id": "p-con-tarjeta-o-efectivo",
+      "kind": "phrase",
+      "es": "¿con tarjeta o efectivo?",
+      "de": "mit Karte oder bar?",
+      "forms": [
+        "con tarjeta o efectivo"
+      ],
+      "examples": [
+        {
+          "es": "Son tres mil pesos. ¿Con tarjeta o efectivo?",
+          "de": "Das macht dreitausend Pesos. Mit Karte oder bar?"
+        }
+      ]
+    },
+    {
+      "id": "p-en-cuantas-cuotas",
+      "kind": "phrase",
+      "es": "¿en cuántas cuotas?",
+      "de": "in wie vielen Raten?",
+      "forms": [
+        "en cuántas cuotas"
+      ],
+      "examples": [
+        {
+          "es": "¿En cuántas cuotas paga?",
+          "de": "In wie vielen Raten zahlen Sie?"
+        }
+      ],
+      "note": "Kommt bei Kreditkarte. Antworte una cuota oder sin cuotas."
+    },
+    {
+      "id": "p-sin-cuotas",
+      "kind": "phrase",
+      "es": "sin cuotas",
+      "de": "ohne Raten",
+      "forms": [
+        "sin cuotas"
+      ],
+      "examples": [
+        {
+          "es": "Sin cuotas, por favor.",
+          "de": "Ohne Raten, bitte."
+        }
+      ]
+    },
+    {
+      "id": "p-solo-efectivo",
+      "kind": "phrase",
+      "es": "solo efectivo",
+      "de": "nur Bargeld",
+      "forms": [
+        "solo efectivo"
+      ],
+      "examples": [
+        {
+          "es": "Aquí es solo efectivo.",
+          "de": "Hier nur Barzahlung."
+        }
+      ],
+      "note": "Steht manchmal auf Schildern an kleinen Ständen."
+    },
+    {
+      "id": "p-me-llevo",
+      "kind": "phrase",
+      "es": "me llevo",
+      "de": "ich nehme (es)",
+      "forms": [
+        "me llevo"
+      ],
+      "examples": [
+        {
+          "es": "Me llevo dos kilos.",
+          "de": "Ich nehme zwei Kilo."
+        }
+      ],
+      "note": "So sagst du, dass du etwas kaufst. Wörtlich: ich trage es mit mir."
+    },
+    {
+      "id": "p-en-que-le-puedo-ayudar",
+      "kind": "phrase",
+      "es": "¿en qué le puedo ayudar?",
+      "de": "womit kann ich Ihnen helfen?",
+      "forms": [
+        "en qué le puedo ayudar",
+        "le"
+      ],
+      "examples": [
+        {
+          "es": "Buenos días. ¿En qué le puedo ayudar?",
+          "de": "Guten Tag. Womit kann ich Ihnen helfen?"
+        }
+      ],
+      "note": "Die Frage der Verkäufer. Le heißt Ihnen, es ist die usted-Form."
+    },
+    {
+      "id": "p-solo-estoy-mirando",
+      "kind": "phrase",
+      "es": "solo estoy mirando",
+      "de": "ich schaue nur",
+      "forms": [
+        "solo estoy mirando"
+      ],
+      "examples": [
+        {
+          "es": "Solo estoy mirando, gracias.",
+          "de": "Ich schaue nur, danke."
+        }
+      ],
+      "note": "Die höfliche Antwort, wenn dich jemand im Laden anspricht."
+    },
+    {
+      "id": "p-hay-descuento",
+      "kind": "phrase",
+      "es": "¿hay descuento?",
+      "de": "gibt es Rabatt?",
+      "forms": [
+        "hay descuento"
+      ],
+      "examples": [
+        {
+          "es": "¿Hay descuento hoy?",
+          "de": "Gibt es heute Rabatt?"
+        }
+      ]
+    },
+    {
+      "id": "p-mas-barato",
+      "kind": "phrase",
+      "es": "más barato",
+      "de": "billiger",
+      "forms": [
+        "más barato"
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene algo más barato?",
+          "de": "Haben Sie etwas Günstigeres?"
+        }
+      ]
+    },
+    {
+      "id": "p-donde-esta",
+      "kind": "phrase",
+      "es": "¿dónde está...?",
+      "de": "wo ist...?",
+      "forms": [
+        "dónde está",
+        "dónde están"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde está la caja?",
+          "de": "Wo ist die Kasse?"
+        }
+      ],
+      "note": "Mehrzahl: ¿dónde están?"
+    },
+    {
+      "id": "p-no-tengo-vuelto",
+      "kind": "phrase",
+      "es": "no tengo vuelto",
+      "de": "ich habe kein Wechselgeld",
+      "forms": [
+        "no tengo vuelto"
+      ],
+      "examples": [
+        {
+          "es": "Lo siento, no tengo vuelto.",
+          "de": "Tut mir leid, ich habe kein Wechselgeld."
+        }
+      ],
+      "note": "Das hörst du im kiosco, wenn du mit einem großen Schein zahlst. Frag selbst: ¿tiene vuelto?"
+    },
+    {
+      "id": "p-a-que-hora-abren",
+      "kind": "phrase",
+      "es": "¿a qué hora abren?",
+      "de": "um wie viel Uhr öffnen Sie?",
+      "forms": [
+        "a qué hora abren"
+      ],
+      "examples": [
+        {
+          "es": "¿A qué hora abren mañana?",
+          "de": "Um wie viel Uhr öffnen Sie morgen?"
+        }
+      ]
+    },
+    {
+      "id": "p-a-que-hora-cierran",
+      "kind": "phrase",
+      "es": "¿a qué hora cierran?",
+      "de": "um wie viel Uhr schließen Sie?",
+      "forms": [
+        "a qué hora cierran"
+      ],
+      "examples": [
+        {
+          "es": "¿A qué hora cierran hoy?",
+          "de": "Um wie viel Uhr schließen Sie heute?"
+        }
+      ]
+    },
+    {
+      "id": "w-este",
+      "kind": "word",
+      "es": "este",
+      "de": "dieser, diese, dieses (hier)",
+      "forms": [
+        "este",
+        "esta",
+        "estos",
+        "estas"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto cuesta esta bolsa?",
+          "de": "Was kostet diese Tüte?"
+        }
+      ],
+      "note": "Zeigt auf etwas bei dir. Die Form richtet sich nach dem Wort: este kilo, esta bolsa, estos tomates, estas manzanas.",
+      "freqRank": 60
+    },
+    {
+      "id": "w-ese",
+      "kind": "word",
+      "es": "ese",
+      "de": "dieser, diese, dieses (da)",
+      "forms": [
+        "ese",
+        "esa",
+        "esos",
+        "esas"
+      ],
+      "examples": [
+        {
+          "es": "Quiero ese, por favor.",
+          "de": "Ich möchte den da, bitte."
+        }
+      ],
+      "note": "Zeigt auf etwas weiter weg oder beim anderen: ese kilo, esa bolsa, esos tomates, esas manzanas.",
+      "freqRank": 85
+    },
+    {
+      "id": "w-tamano",
+      "kind": "word",
+      "es": "tamaño",
+      "de": "Größe",
+      "forms": [
+        "tamaño",
+        "tamaños"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué tamaño quiere?",
+          "de": "Welche Größe möchten Sie?"
+        }
+      ],
+      "freqRank": 2053
+    },
+    {
+      "id": "w-talla",
+      "kind": "word",
+      "es": "talla",
+      "de": "Kleidergröße",
+      "forms": [
+        "talla",
+        "tallas"
+      ],
+      "examples": [
+        {
+          "es": "Necesito una talla más grande.",
+          "de": "Ich brauche eine Nummer größer."
+        }
+      ],
+      "note": "Talla ist die Größe bei Kleidung. Für Dinge sagst du tamaño."
+    },
+    {
+      "id": "s-donde-supermercado",
+      "kind": "sentence",
+      "es": "¿Dónde está el supermercado?",
+      "de": "Wo ist der Supermarkt?"
+    },
+    {
+      "id": "s-voy-al-supermercado",
+      "kind": "sentence",
+      "es": "Voy al supermercado.",
+      "de": "Ich gehe in den Supermarkt."
+    },
+    {
+      "id": "s-necesito-pan-leche",
+      "kind": "sentence",
+      "es": "Necesito pan y leche.",
+      "de": "Ich brauche Brot und Milch."
+    },
+    {
+      "id": "s-compro-fruta-feria",
+      "kind": "sentence",
+      "es": "Compro fruta en la feria.",
+      "de": "Ich kaufe Obst auf dem Markt."
+    },
+    {
+      "id": "s-hay-farmacia-cerca",
+      "kind": "sentence",
+      "es": "¿Hay una farmacia cerca?",
+      "de": "Gibt es eine Apotheke in der Nähe?"
+    },
+    {
+      "id": "s-hoy-no-hay-bolsas",
+      "kind": "sentence",
+      "es": "Hoy no hay bolsas.",
+      "de": "Heute gibt es keine Tüten."
+    },
+    {
+      "id": "s-busco-jabon",
+      "kind": "sentence",
+      "es": "Busco jabón.",
+      "de": "Ich suche Seife."
+    },
+    {
+      "id": "s-dos-kilos-tomates",
+      "kind": "sentence",
+      "es": "Quiero dos kilos de tomates.",
+      "de": "Ich möchte zwei Kilo Tomaten."
+    },
+    {
+      "id": "s-un-kilo-papas",
+      "kind": "sentence",
+      "es": "Un kilo de papas, por favor.",
+      "de": "Ein Kilo Kartoffeln, bitte."
+    },
+    {
+      "id": "s-medio-kilo-frutillas",
+      "kind": "sentence",
+      "es": "Medio kilo de frutillas, por favor.",
+      "de": "Ein halbes Kilo Erdbeeren, bitte."
+    },
+    {
+      "id": "s-una-docena-huevos",
+      "kind": "sentence",
+      "es": "Quiero una docena de huevos.",
+      "de": "Ich möchte ein Dutzend Eier."
+    },
+    {
+      "id": "s-un-litro-jugo",
+      "kind": "sentence",
+      "es": "Un litro de jugo, por favor.",
+      "de": "Einen Liter Saft, bitte."
+    },
+    {
+      "id": "s-cuanto-sale-pan",
+      "kind": "sentence",
+      "es": "¿Cuánto sale el pan?",
+      "de": "Was kostet das Brot?",
+      "accept": [
+        "¿Cuánto cuesta el pan?"
+      ]
+    },
+    {
+      "id": "s-cuanto-kilo-palta",
+      "kind": "sentence",
+      "es": "¿Cuánto cuesta el kilo de palta?",
+      "de": "Was kostet das Kilo Avocado?",
+      "accept": [
+        "¿Cuánto sale el kilo de palta?"
+      ]
+    },
+    {
+      "id": "s-cuanto-cuestan-manzanas",
+      "kind": "sentence",
+      "es": "¿Cuánto cuestan las manzanas?",
+      "de": "Was kosten die Äpfel?",
+      "accept": [
+        "¿Cuánto salen las manzanas?"
+      ]
+    },
+    {
+      "id": "s-manzanas-frescas",
+      "kind": "sentence",
+      "es": "Las manzanas están frescas.",
+      "de": "Die Äpfel sind frisch."
+    },
+    {
+      "id": "s-es-muy-caro",
+      "kind": "sentence",
+      "es": "Es muy caro.",
+      "de": "Das ist sehr teuer.",
+      "accept": [
+        "Está muy caro."
+      ]
+    },
+    {
+      "id": "s-algo-mas-barato",
+      "kind": "sentence",
+      "es": "Quiero algo más barato.",
+      "de": "Ich möchte etwas Günstigeres."
+    },
+    {
+      "id": "s-hoy-hay-descuento",
+      "kind": "sentence",
+      "es": "Hoy hay descuento en la fruta.",
+      "de": "Heute gibt es Rabatt auf Obst."
+    },
+    {
+      "id": "s-me-llevo-este",
+      "kind": "sentence",
+      "es": "Me llevo este.",
+      "de": "Ich nehme den hier."
+    },
+    {
+      "id": "s-quiero-esta-bolsa",
+      "kind": "sentence",
+      "es": "Quiero esta bolsa.",
+      "de": "Ich möchte diese Tüte."
+    },
+    {
+      "id": "s-cuanto-ese-jabon",
+      "kind": "sentence",
+      "es": "¿Cuánto cuesta ese jabón?",
+      "de": "Was kostet die Seife da?"
+    },
+    {
+      "id": "s-me-da-esos-tomates",
+      "kind": "sentence",
+      "es": "¿Me da esos tomates, por favor?",
+      "de": "Geben Sie mir bitte diese Tomaten?"
+    },
+    {
+      "id": "s-nada-mas",
+      "kind": "sentence",
+      "es": "Nada más, gracias.",
+      "de": "Sonst nichts, danke."
+    },
+    {
+      "id": "s-quiero-pagar-tarjeta",
+      "kind": "sentence",
+      "es": "Quiero pagar con tarjeta.",
+      "de": "Ich möchte mit Karte zahlen."
+    },
+    {
+      "id": "s-pago-en-efectivo",
+      "kind": "sentence",
+      "es": "Pago en efectivo, por favor.",
+      "de": "Ich zahle bar, bitte."
+    },
+    {
+      "id": "s-aceptan-debito",
+      "kind": "sentence",
+      "es": "¿Aceptan tarjeta de débito?",
+      "de": "Nehmen Sie Debitkarte an?"
+    },
+    {
+      "id": "s-una-cuota",
+      "kind": "sentence",
+      "es": "Una cuota, por favor.",
+      "de": "Eine Rate, bitte."
+    },
+    {
+      "id": "s-si-quiero-boleta",
+      "kind": "sentence",
+      "es": "Sí, quiero boleta.",
+      "de": "Ja, ich möchte einen Beleg."
+    },
+    {
+      "id": "s-no-necesito-boleta",
+      "kind": "sentence",
+      "es": "No, gracias, no necesito boleta.",
+      "de": "Nein, danke, ich brauche keinen Beleg."
+    },
+    {
+      "id": "s-necesito-una-bolsa",
+      "kind": "sentence",
+      "es": "Necesito una bolsa, por favor.",
+      "de": "Ich brauche eine Tüte, bitte."
+    },
+    {
+      "id": "s-no-necesito-bolsa",
+      "kind": "sentence",
+      "es": "No necesito bolsa, tengo una.",
+      "de": "Ich brauche keine Tüte, ich habe eine."
+    },
+    {
+      "id": "s-solo-un-billete",
+      "kind": "sentence",
+      "es": "Tengo solo un billete de veinte mil.",
+      "de": "Ich habe nur einen Zwanzigtausender."
+    },
+    {
+      "id": "s-aqui-esta-el-vuelto",
+      "kind": "sentence",
+      "es": "Aquí está el vuelto.",
+      "de": "Hier ist das Wechselgeld."
+    },
+    {
+      "id": "s-bebida-mil-quinientos",
+      "kind": "sentence",
+      "es": "Una bebida cuesta mil quinientos pesos.",
+      "de": "Eine Limo kostet fünfzehnhundert Pesos."
+    },
+    {
+      "id": "s-son-nueve-mil-total",
+      "kind": "sentence",
+      "es": "Son nueve mil pesos en total.",
+      "de": "Das macht insgesamt neuntausend Pesos."
+    },
+    {
+      "id": "s-cuanto-es-en-total",
+      "kind": "sentence",
+      "es": "¿Cuánto es en total?",
+      "de": "Was macht das insgesamt?"
+    },
+    {
+      "id": "s-a-que-hora-cierra-super",
+      "kind": "sentence",
+      "es": "¿A qué hora cierra el supermercado?",
+      "de": "Um wie viel Uhr schließt der Supermarkt?"
+    },
+    {
+      "id": "s-farmacia-abierta-hoy",
+      "kind": "sentence",
+      "es": "La farmacia está abierta hoy.",
+      "de": "Die Apotheke ist heute geöffnet."
+    },
+    {
+      "id": "s-voy-a-pagar-efectivo",
+      "kind": "sentence",
+      "es": "Voy a pagar en efectivo.",
+      "de": "Ich werde bar zahlen."
+    },
+    {
+      "id": "s-voy-a-comprar-leche",
+      "kind": "sentence",
+      "es": "Voy a comprar leche.",
+      "de": "Ich werde Milch kaufen."
+    },
+    {
+      "id": "s-vas-a-llevar-bolsa",
+      "kind": "sentence",
+      "es": "¿Vas a llevar bolsa?",
+      "de": "Nimmst du eine Tüte mit?"
+    },
+    {
+      "id": "s-manana-vamos-almacen",
+      "kind": "sentence",
+      "es": "Mañana vamos al almacén.",
+      "de": "Morgen gehen wir in den Almacén."
+    },
+    {
+      "id": "s-ustedes-van-super",
+      "kind": "sentence",
+      "es": "¿Ustedes van al supermercado?",
+      "de": "Fahren Sie in den Supermarkt?"
+    },
+    {
+      "id": "s-hay-mucha-fila",
+      "kind": "sentence",
+      "es": "Hay mucha fila.",
+      "de": "Es ist viel los an der Kasse (es gibt eine lange Schlange)."
+    },
+    {
+      "id": "s-puedo-probar-uva",
+      "kind": "sentence",
+      "es": "¿Puedo probar una uva?",
+      "de": "Darf ich eine Traube probieren?"
+    },
+    {
+      "id": "s-pescado-fresco",
+      "kind": "sentence",
+      "es": "¿Está fresco el pescado?",
+      "de": "Ist der Fisch frisch?"
+    },
+    {
+      "id": "s-no-hay-mas-pan",
+      "kind": "sentence",
+      "es": "Lo siento, no hay más pan.",
+      "de": "Tut mir leid, es gibt kein Brot mehr."
+    },
+    {
+      "id": "s-repetir-precio",
+      "kind": "sentence",
+      "es": "¿Puede repetir el precio, por favor?",
+      "de": "Können Sie den Preis bitte wiederholen?"
+    },
+    {
+      "id": "s-talla-muy-chica",
+      "kind": "sentence",
+      "es": "Esta talla es muy chica.",
+      "de": "Diese Größe ist zu klein."
+    },
+    {
+      "id": "s-es-para-un-amigo",
+      "kind": "sentence",
+      "es": "Es para un amigo.",
+      "de": "Es ist für einen Freund."
+    },
+    {
+      "id": "g-tener-hay",
+      "kind": "grammar",
+      "title": "tener und hay",
+      "explanation": "Tener heißt haben: tengo, tienes, tiene, tienen. Zum Personal sagst du tiene, zu Freunden tienes. Hay heißt es gibt und bleibt immer gleich, ob eine oder mehrere Sachen folgen: hay pan, hay dos cajas. Verneint: no hay. Mit tener sprichst du über Besitz (Tengo efectivo), mit hay über Vorhandenes im Laden (¿Hay pan?).",
+      "examples": [
+        {
+          "es": "Tengo una bolsa.",
+          "de": "Ich habe eine Tüte."
+        },
+        {
+          "es": "¿Tiene vuelto?",
+          "de": "Haben Sie Wechselgeld?"
+        },
+        {
+          "es": "Hay pan fresco.",
+          "de": "Es gibt frisches Brot."
+        },
+        {
+          "es": "No hay bolsas.",
+          "de": "Es gibt keine Tüten."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich habe eine Tüte.",
+          "es": "Tengo una bolsa."
+        },
+        {
+          "de": "Haben Sie Wechselgeld?",
+          "es": "¿Tiene vuelto?"
+        },
+        {
+          "de": "Hast du Bargeld?",
+          "es": "¿Tienes efectivo?"
+        },
+        {
+          "de": "Gibt es hier eine Apotheke?",
+          "es": "¿Hay una farmacia aquí?"
+        },
+        {
+          "de": "Es gibt kein Brot.",
+          "es": "No hay pan."
+        },
+        {
+          "de": "Es gibt zwei Kassen.",
+          "es": "Hay dos cajas."
+        }
+      ]
+    },
+    {
+      "id": "g-este-ese",
+      "kind": "grammar",
+      "title": "este und ese",
+      "explanation": "Este zeigt auf etwas bei dir, ese auf etwas weiter weg oder beim anderen. Das Wort passt zum Geschlecht und zur Zahl: este kilo, esta bolsa, estos tomates, estas manzanas; ese kilo, esa bolsa, esos tomates, esas manzanas. Ohne Hauptwort nimmst du die männliche Form (Quiero este) oder esto und eso für etwas Unbenanntes.",
+      "examples": [
+        {
+          "es": "Quiero este.",
+          "de": "Ich möchte den hier."
+        },
+        {
+          "es": "Me llevo esta bolsa.",
+          "de": "Ich nehme diese Tüte."
+        },
+        {
+          "es": "¿Cuánto cuesta ese?",
+          "de": "Was kostet der da?"
+        },
+        {
+          "es": "Esos tomates están frescos.",
+          "de": "Diese Tomaten da sind frisch."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich nehme diese Tüte.",
+          "es": "Me llevo esta bolsa."
+        },
+        {
+          "de": "Dieses Kilo ist teuer.",
+          "es": "Este kilo es caro."
+        },
+        {
+          "de": "Diese Äpfel sind frisch.",
+          "es": "Estas manzanas están frescas."
+        },
+        {
+          "de": "Was kostet der da?",
+          "es": "¿Cuánto cuesta ese?"
+        },
+        {
+          "de": "Ich möchte jene Tomaten.",
+          "es": "Quiero esos tomates."
+        }
+      ]
+    },
+    {
+      "id": "g-zahlen-ueber-100",
+      "kind": "grammar",
+      "title": "Zahlen über 100 in Preisen",
+      "explanation": "Hunderter: cien (genau 100), sonst ciento: ciento veinte. Dann trescientos, cuatrocientos, seiscientos, ochocientos; unregelmäßig sind quinientos, setecientos, novecientos. Tausend ist mil und bleibt gleich: dos mil, diez mil. 1500 sagst du mil quinientos, 12.500 doce mil quinientos. Zwischen Hunderter und Rest steht kein y. In Chile liest man Preise so, immer gefolgt von pesos.",
+      "examples": [
+        {
+          "es": "Son trescientos pesos.",
+          "de": "Das macht dreihundert Pesos."
+        },
+        {
+          "es": "Cuesta ochocientos pesos.",
+          "de": "Es kostet achthundert Pesos."
+        },
+        {
+          "es": "Son doce mil quinientos pesos.",
+          "de": "Das macht zwölftausendfünfhundert Pesos."
+        },
+        {
+          "es": "Cuesta cuatro mil pesos.",
+          "de": "Es kostet viertausend Pesos."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Das macht 300 Pesos.",
+          "es": "Son trescientos pesos."
+        },
+        {
+          "de": "Das macht 700 Pesos.",
+          "es": "Son setecientos pesos."
+        },
+        {
+          "de": "Das macht 1.500 Pesos.",
+          "es": "Son mil quinientos pesos."
+        },
+        {
+          "de": "Das macht 4.500 Pesos.",
+          "es": "Son cuatro mil quinientos pesos."
+        },
+        {
+          "de": "Das macht 12.000 Pesos.",
+          "es": "Son doce mil pesos."
+        },
+        {
+          "de": "Das macht 20.000 Pesos.",
+          "es": "Son veinte mil pesos."
+        }
+      ]
+    },
+    {
+      "id": "g-voy-a",
+      "kind": "grammar",
+      "title": "voy a: die nahe Zukunft",
+      "explanation": "Ir ist unregelmäßig: voy, vas, va, vamos, van. Mit a plus Ort heißt es gehen: Voy a la feria. A plus el wird al: voy al almacén. Mit a plus Infinitiv sagst du, was du gleich tust: Voy a pagar. ¿Vas a comprar fruta? Vamos a pagar. So redest du im Alltag über die nächste Zeit, ohne eine eigene Zukunftsform.",
+      "examples": [
+        {
+          "es": "Voy a pagar.",
+          "de": "Ich werde zahlen."
+        },
+        {
+          "es": "¿Vas a comprar fruta?",
+          "de": "Wirst du Obst kaufen?"
+        },
+        {
+          "es": "Vamos a la feria.",
+          "de": "Wir gehen zum Markt."
+        },
+        {
+          "es": "Voy al almacén.",
+          "de": "Ich gehe zum Almacén."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich werde Brot kaufen.",
+          "es": "Voy a comprar pan."
+        },
+        {
+          "de": "Wir gehen zum Markt.",
+          "es": "Vamos a la feria."
+        },
+        {
+          "de": "Gehst du in den Supermarkt?",
+          "es": "¿Vas al supermercado?"
+        },
+        {
+          "de": "Ich werde mit Karte zahlen.",
+          "es": "Voy a pagar con tarjeta."
+        },
+        {
+          "de": "Sie (Mehrzahl) werden Obst kaufen.",
+          "es": "Van a comprar fruta."
+        },
+        {
+          "de": "Morgen gehe ich in den Almacén.",
+          "es": "Mañana voy al almacén.",
+          "accept": [
+            "Voy al almacén mañana."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d-supermercado-caja",
+      "kind": "dialog",
+      "title": "An der Kasse im Supermercado",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. Son nueve mil quinientos pesos. ¿Necesita bolsa?",
+          "de": "Guten Tag. Das macht neuntausendfünfhundert Pesos. Brauchen Sie eine Tüte?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, una bolsa, por favor.",
+          "de": "Ja, eine Tüte, bitte."
+        },
+        {
+          "speaker": "A",
+          "es": "Listo. ¿Con tarjeta o efectivo?",
+          "de": "In Ordnung. Mit Karte oder bar?"
+        },
+        {
+          "speaker": "B",
+          "es": "Con tarjeta. ¿Aceptan débito?",
+          "de": "Mit Karte. Nehmen Sie Debit an?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, claro. ¿Débito o crédito?",
+          "de": "Ja, klar. Debit oder Kredit?"
+        },
+        {
+          "speaker": "B",
+          "es": "Crédito, por favor.",
+          "de": "Kredit, bitte."
+        },
+        {
+          "speaker": "A",
+          "es": "¿En cuántas cuotas?",
+          "de": "In wie vielen Raten?"
+        },
+        {
+          "speaker": "B",
+          "es": "Una cuota.",
+          "de": "Eine Rate."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Quiere boleta?",
+          "de": "Möchten Sie einen Beleg?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, por favor. Gracias.",
+          "de": "Ja, bitte. Danke."
+        }
+      ]
+    },
+    {
+      "id": "d-almacen",
+      "kind": "dialog",
+      "title": "Im Almacén an der Ecke",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenos días. ¿En qué le puedo ayudar?",
+          "de": "Guten Tag. Womit kann ich Ihnen helfen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Buenos días. ¿Hay pan?",
+          "de": "Guten Tag. Gibt es Brot?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, hay pan fresco. ¿Cuántos quiere?",
+          "de": "Ja, es gibt frisches Brot. Wie viele möchten Sie?"
+        },
+        {
+          "speaker": "B",
+          "es": "Un kilo, por favor. Y un litro de leche.",
+          "de": "Ein Kilo, bitte. Und einen Liter Milch."
+        },
+        {
+          "speaker": "A",
+          "es": "Aquí tiene. ¿Algo más?",
+          "de": "Bitte sehr. Sonst noch etwas?"
+        },
+        {
+          "speaker": "B",
+          "es": "No, eso es todo. ¿Cuánto sale?",
+          "de": "Nein, das ist alles. Was macht das?"
+        },
+        {
+          "speaker": "A",
+          "es": "Son tres mil doscientos pesos.",
+          "de": "Das macht dreitausendzweihundert Pesos."
+        },
+        {
+          "speaker": "B",
+          "es": "Aquí tiene. Gracias. Hasta luego.",
+          "de": "Bitte sehr. Danke. Bis später."
+        }
+      ]
+    },
+    {
+      "id": "d-feria",
+      "kind": "dialog",
+      "title": "Auf der feria",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenos días. ¿Qué necesita?",
+          "de": "Guten Tag. Was brauchen Sie?"
+        },
+        {
+          "speaker": "B",
+          "es": "Busco tomates. ¿Cuánto sale el kilo?",
+          "de": "Ich suche Tomaten. Was kostet das Kilo?"
+        },
+        {
+          "speaker": "A",
+          "es": "Mil quinientos pesos el kilo. Están muy frescos.",
+          "de": "Fünfzehnhundert Pesos das Kilo. Sie sind ganz frisch."
+        },
+        {
+          "speaker": "B",
+          "es": "Quiero un kilo. ¿Puedo probar una uva?",
+          "de": "Ich möchte ein Kilo. Darf ich eine Traube probieren?"
+        },
+        {
+          "speaker": "A",
+          "es": "Claro. Están muy ricas.",
+          "de": "Klar. Sie sind sehr lecker."
+        },
+        {
+          "speaker": "B",
+          "es": "Muy ricas. Me llevo medio kilo. ¿Cuánto es en total?",
+          "de": "Sehr lecker. Ich nehme ein halbes Kilo. Was macht das insgesamt?"
+        },
+        {
+          "speaker": "A",
+          "es": "Son cuatro mil pesos.",
+          "de": "Das macht viertausend Pesos."
+        },
+        {
+          "speaker": "B",
+          "es": "Tengo un billete de veinte mil. ¿Tiene vuelto?",
+          "de": "Ich habe einen Zwanzigtausender. Haben Sie Wechselgeld?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, claro. Aquí tiene su vuelto.",
+          "de": "Ja, klar. Hier ist Ihr Wechselgeld."
+        },
+        {
+          "speaker": "B",
+          "es": "Gracias. Chao.",
+          "de": "Danke. Tschüss."
+        }
+      ]
+    },
+    {
+      "id": "d-kiosco",
+      "kind": "dialog",
+      "title": "Im Kiosco mit einem großen Schein",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Hola. ¿Qué desea?",
+          "de": "Hallo. Was darf es sein?"
+        },
+        {
+          "speaker": "B",
+          "es": "Una botella de agua y un paquete de galletas, por favor.",
+          "de": "Eine Flasche Wasser und eine Packung Kekse, bitte."
+        },
+        {
+          "speaker": "A",
+          "es": "Son dos mil quinientos pesos.",
+          "de": "Das macht zweitausendfünfhundert Pesos."
+        },
+        {
+          "speaker": "B",
+          "es": "Solo tengo un billete de veinte mil.",
+          "de": "Ich habe nur einen Zwanzigtausender."
+        },
+        {
+          "speaker": "A",
+          "es": "Lo siento, no tengo vuelto.",
+          "de": "Tut mir leid, ich habe kein Wechselgeld."
+        },
+        {
+          "speaker": "B",
+          "es": "Ya. ¿Aceptan tarjeta?",
+          "de": "Alles klar. Nehmen Sie Karte an?"
+        },
+        {
+          "speaker": "A",
+          "es": "Solo efectivo.",
+          "de": "Nur bar."
+        },
+        {
+          "speaker": "B",
+          "es": "Ya, tengo monedas. Aquí tiene.",
+          "de": "Alles klar, ich habe Münzen. Bitte sehr."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias. Chao.",
+          "de": "Danke. Tschüss."
+        }
+      ]
+    },
+    {
+      "id": "d-farmacia-tienda",
+      "kind": "dialog",
+      "title": "In der farmacia",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. ¿En qué le puedo ayudar?",
+          "de": "Guten Tag. Womit kann ich Ihnen helfen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Solo estoy mirando, gracias. ¿Hay jabón?",
+          "de": "Ich schaue nur, danke. Gibt es Seife?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, está allá, cerca de la caja.",
+          "de": "Ja, sie ist dort drüben, nahe der Kasse."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Cuánto sale este jabón?",
+          "de": "Was kostet diese Seife?"
+        },
+        {
+          "speaker": "A",
+          "es": "Dos mil quinientos pesos. Hoy hay descuento de diez por ciento.",
+          "de": "Zweitausendfünfhundert Pesos. Heute gibt es zehn Prozent Rabatt."
+        },
+        {
+          "speaker": "B",
+          "es": "Muy bien. Me llevo dos.",
+          "de": "Sehr gut. Ich nehme zwei."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Algo más?",
+          "de": "Sonst noch etwas?"
+        },
+        {
+          "speaker": "B",
+          "es": "No, eso es todo.",
+          "de": "Nein, das ist alles."
+        }
+      ]
+    },
+    {
+      "id": "d-cuotas",
+      "kind": "dialog",
+      "title": "Mit Kreditkarte in der tienda",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. Son treinta mil quinientos pesos.",
+          "de": "Guten Tag. Das macht dreißigtausendfünfhundert Pesos."
+        },
+        {
+          "speaker": "B",
+          "es": "Pago con tarjeta de crédito.",
+          "de": "Ich zahle mit Kreditkarte."
+        },
+        {
+          "speaker": "A",
+          "es": "¿En cuántas cuotas?",
+          "de": "In wie vielen Raten?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sin cuotas, por favor.",
+          "de": "Ohne Raten, bitte."
+        },
+        {
+          "speaker": "A",
+          "es": "Listo. ¿Quiere boleta?",
+          "de": "In Ordnung. Möchten Sie einen Beleg?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, por favor. ¿A qué hora cierran hoy?",
+          "de": "Ja, bitte. Um wie viel Uhr schließen Sie heute?"
+        },
+        {
+          "speaker": "A",
+          "es": "Cerramos a las ocho.",
+          "de": "Wir schließen um acht."
+        },
+        {
+          "speaker": "B",
+          "es": "Gracias. Hasta luego.",
+          "de": "Danke. Bis später."
+        }
+      ]
+    },
+    {
+      "id": "pair-setecientos-setenta",
+      "kind": "pair",
+      "es": "setecientos",
+      "options": [
+        "setecientos",
+        "setenta"
+      ]
+    },
+    {
+      "id": "pair-tres-trece-mil-quinientos",
+      "kind": "pair",
+      "es": "tres mil quinientos",
+      "options": [
+        "tres mil quinientos",
+        "trece mil quinientos"
+      ]
+    },
+    {
+      "id": "pair-seis-mil-sesenta-mil",
+      "kind": "pair",
+      "es": "seis mil",
+      "options": [
+        "seis mil",
+        "sesenta mil"
+      ]
+    }
+  ]
+}
