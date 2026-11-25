@@ -96,7 +96,7 @@ Audio wird vorab beim Bau erzeugt und als Dateien ausgeliefert, nicht zur Laufze
 
 Jedes Item bekommt mindestens zwei Stimmen, davon mindestens eine chilenische; Dialoge werden mit verschiedenen Stimmen je Sprecher erzeugt. Tempo: normale Geschwindigkeit plus eine langsame Fassung (etwa 75 %) für neue Items; für Hörtraining auf höheren Stufen eine schnelle Fassung (etwa 115 %), um chilenisches Tempo anzunähern. Wenn eine Stimme ausfällt oder nicht verfügbar ist, nimmt der Bau eine andere aus derselben Liste.
 
-Grenze, die Gunnar kennen soll: Synthetische Stimmen bilden chilenische Umgangssprache (aspiriertes s, Verschleifungen) nur teilweise ab. Für die Chile-Ebene können zusätzlich frei lizenzierte echte Aufnahmen (zum Beispiel aus Tatoeba mit passender Lizenz oder Wikimedia Commons) eingebunden werden, wenn sich welche finden; das ist Kür, nicht Pflicht.
+Grenze, die Gunnar kennen soll: Synthetische Stimmen bilden chilenische Umgangssprache (aspiriertes s, Verschleifungen) nur teilweise ab. Für die Chile-Ebene werden deshalb echte, frei lizenzierte Aufnahmen gesucht und eingebunden (siehe "Entscheidungen nach dem Builder Check").
 
 Die Nutzungsbedingungen des Dienstes hinter `edge-tts` sind für Privatgebrauch ausreichend geduldet, aber nicht ausdrücklich erlaubt. Für eine rein private App nimmt Claude das in Kauf; die erzeugten Dateien liegen allerdings in einem öffentlichen Repository (siehe Hosting). Siehe offene Punkte.
 
@@ -120,7 +120,7 @@ Nach einer Runde: kurze Rückmeldung (was neu ist, wie viel Verständnis dazugek
 
 ### Gedächtnismodell
 
-Wiederholungsplanung mit FSRS (Q5 bis Q8), umgesetzt mit der Bibliothek `ts-fsrs` (Lizenz vor Einsatz prüfen; bei unpassender Lizenz eine eigene schlanke FSRS-Umsetzung nach veröffentlichter Formel). Ziel-Behaltensquote 0,9 als Voreinstellung, in den Einstellungen änderbar. Bewertung wird aus der Aufgabe abgeleitet, nicht vom Nutzer erfragt: falsch = Again, richtig mit Hilfe oder sehr langsam = Hard, richtig = Good, richtig und schnell auf schwerer Stufe = Easy. Die genauen Schwellen legt der Builder fest.
+Wiederholungsplanung mit FSRS (Q5 bis Q8), umgesetzt mit der Bibliothek `ts-fsrs` (MIT, Version 6.x, am 25.11.2026 geprüft). Ziel-Behaltensquote 0,9 als Voreinstellung, in den Einstellungen änderbar. Bewertung wird aus der Aufgabe abgeleitet, nicht vom Nutzer erfragt: falsch = Again, richtig mit Hilfe oder sehr langsam = Hard, richtig = Good, richtig und schnell auf schwerer Stufe = Easy. Die genauen Schwellen legt der Builder fest.
 
 Ein Item kann mehrere Karten haben (zum Beispiel Hören→Bedeutung und Deutsch→Spanisch). Der Builder entscheidet, ob Karten getrennt geplant werden oder als ein Item mit Stufe.
 
@@ -173,6 +173,12 @@ Sofort nach jeder Antwort: richtig oder falsch, die richtige Form mit Ton, bei T
 - Zeitrahmen: Die ersten drei Situationen sollen bald nutzbar sein, der volle Inhalt bis spätestens Ende Januar 2027, damit noch Lernzeit bis März bleibt.
 - iOS-Eigenheiten, die der Builder beachten muss: Audio erst nach Nutzerinteraktion abspielbar; Speicher einer PWA kann von iOS bei Platzmangel oder nach langer Nichtnutzung geleert werden (deshalb Abgleich und Export wichtig); Spracherkennung im Home-Bildschirm-Modus unsicher.
 
+## Entscheidungen nach dem Builder Check (Claudes Festlegung)
+
+- **Chilenisches Hörtraining**: Die Suche nach echten, frei lizenzierten chilenischen Aufnahmen ist Pflicht und keine Kür mehr. Erste Anlaufstelle ist Mozilla Common Voice Spanisch (CC0, Sprecher mit Akzentangabe wie "Chileno"), danach Tatoeba-Audio mit passender Lizenz und Wikimedia Commons. Die Aufnahmen und ihre Lizenznachweise werden getrennt abgelegt. Für Satzbausteine ohne echte Aufnahme gelten die es-CL-Stimmen in normaler und schneller Fassung. Die Aussprache wird **nicht** über falsch geschriebenen Eingabetext ("ehtá") nachgebaut, weil das falsche Muster einüben könnte. Findet sich zu wenig echtes Material, schrumpft die s-Übung auf das, was belegt ist; der Rest der Chile-Ebene (Wortschatz, Tempo) bleibt.
+- **Prüfung der Inhalte**: Gunnar kann als Anfänger keine Fehler erkennen, und eine Person mit Spanisch steht nicht zur Verfügung. Deshalb prüft jede Inhaltsdatei eine eigene Review-Runde durch ein Modell, mit einer festen Prüfliste: Peninsularismen wie vosotros, coger, ordenador, zumo, móvil, vale; natürlicher Gebrauch in Chile; Übersetzung korrekt. Chilenismen bekommen eine kurze Begründung oder Quelle im Datensatz. Gunnar kann Fehler, die ihm später in Chile auffallen, über einen Knopf "Fehler melden" an der Aufgabe festhalten; der Hinweis wird mit dem Lernstand gespeichert.
+- **iPhone-Test früh**: Gleich nach dem ersten lauffähigen Stand gibt es einen technischen Durchstich, den Gunnar auf dem iPhone ein paar Minuten testet: Audio nach Tippen, Mikrofon und Spracherkennung im Home-Bildschirm-Modus, Offline. Erst danach werden das Audioformat festgelegt und die Audiodateien in Masse erzeugt. Bis zum Test baut der Plan den Ausfallweg (Aufnahme und Selbstbewertung) als gleichwertigen Weg. Audio wird je Situation gecacht und kann nachgeladen werden, damit der iOS-Speicher nicht an einer Gesamtmenge scheitert.
+
 ## Dem Builder überlassen
 
 - Genaue Datenstruktur, Dateiaufteilung, Komponentenschnitt.
@@ -186,4 +192,4 @@ Sofort nach jeder Antwort: richtig oder falsch, die richtige Form mit Ton, bei T
 
 - **Öffentliches Repository**: Wegen GitHub Pages im Gratiskonto sind Inhalte und Audio öffentlich. Claudes Annahme: unkritisch, weil keine persönlichen Daten darin stehen. Alternative ohne öffentliches Repository wäre Cloudflare Pages oder Netlify aus einem privaten Repository; Builder darf wechseln, wenn Pages nicht passt.
 - **edge-tts Nutzungsbedingungen**: siehe Audio. Claudes Annahme: für ein privates Lernprojekt vertretbar.
-- **Lizenzen**: CC BY-SA der Häufigkeitsliste gilt für daraus abgeleitete Listen; das Repository bekommt für Inhalte CC BY-SA 4.0, für Code MIT. `ts-fsrs` Lizenz prüfen.
+- **Lizenzen**: CC BY-SA der Häufigkeitsliste gilt für daraus abgeleitete Listen; das Repository bekommt für Inhalte CC BY-SA 4.0, für Code MIT. `ts-fsrs` ist MIT. Alle sechs Stimmen sind über `edge-tts` am 25.11.2026 verfügbar (geprüft).
