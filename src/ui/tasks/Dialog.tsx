@@ -35,7 +35,12 @@ export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
             Dialog anhören
           </button>
         )}
-        <button type="button" class="btn btn--secondary" data-primary onClick={() => setPhase('text')}>
+        <button
+          type="button"
+          class={available.length > 0 ? 'btn btn--secondary' : 'btn btn--primary'}
+          data-primary
+          onClick={() => setPhase('text')}
+        >
           Text zeigen
         </button>
       </div>

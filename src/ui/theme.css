@@ -409,6 +409,11 @@ a {
   font-size: var(--t-small);
 }
 
+.option.right .key,
+.option.wrong .key {
+  color: var(--ink);
+}
+
 .option.right {
   border-color: var(--good);
   background: color-mix(in oklab, var(--good) 10%, var(--surface));
