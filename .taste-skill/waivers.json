@@ -1,0 +1,7 @@
+[
+  {"check": "nav", "target": "(the first screen)", "reason": "App-Bildschirm, keine Webseite: nav gilt nicht"},
+  {"check": "moment-none", "target": "(the page)", "reason": "App-Bildschirm, keine Webseite: moment-none gilt nicht"},
+  {"check": "one-section", "target": "div#app > main > div.choose > h2.section", "reason": "App-Bildschirm, keine Webseite: one-section gilt nicht"},
+  {"check": "section-height", "target": "div#app > main > footer.foot", "reason": "App-Bildschirm, keine Webseite: section-height gilt nicht"},
+  {"check": "hero-screen", "target": "div#app > main > section.hero", "reason": "App-Bildschirm, keine Webseite: hero-screen gilt nicht"}
+]
