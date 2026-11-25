@@ -28,6 +28,9 @@ Bei jedem Push auf `main` testet, baut und veröffentlicht der Workflow `.github
 
 ## Lizenz und Quellen
 
-Der Code steht unter der MIT-Lizenz (`LICENSE`), die Inhalte unter CC BY-SA 4.0 (`content/LICENSE`). Die Quellen der Inhalte stehen auf der Quellenseite in der App; sie wird hier ergänzt, sobald Inhalte vorliegen.
+Der Code steht unter der MIT-Lizenz (`LICENSE`), die Inhalte unter CC BY-SA 4.0 (`content/LICENSE`). Dieselben Quellen stehen auf der Quellenseite in der App (Einstellungen, Quellen):
 
-Die Sprachausgabe stammt aus Microsoft Edge TTS (Stimmen es-CL, es-MX, es-CO), erzeugt mit `scripts/tts.py`. Die Abstände der Wiederholungen berechnet die Bibliothek ts-fsrs (MIT).
+- Häufigkeitsliste: [FrequencyWords](https://github.com/hermitdave/FrequencyWords) von hermitdave (CC BY-SA 4.0), die ersten 5000 Zeilen der spanischen Liste, siehe `content/frequency/README.md`.
+- Abstände der Wiederholungen: [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs) (MIT).
+- Stimmen: erzeugt mit [edge-tts](https://github.com/rany2/edge-tts) (Microsoft Edge TTS, Stimmen es-CL, es-MX, es-CO), Skript `scripts/tts.py`.
+- Hinweise zum Sprachgebrauch in Chile: je Eintrag in den Situationsdateien mit Quelle belegt, aus dem [Diccionario de americanismos](https://www.asale.org/damer) (RAE-ASALE).
