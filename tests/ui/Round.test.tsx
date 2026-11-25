@@ -91,7 +91,7 @@ describe('Runde', () => {
 
 describe('Startseite', () => {
   it('zeigt das Verständnis je Situation und nie eine Zahl fälliger Karten', () => {
-    render(<Home app={fakeApp()} onStart={noop} onDiagnose={noop} />);
+    render(<Home app={fakeApp()} onStart={noop} onDiagnose={noop} onSettings={noop} />);
     expect(screen.getByRole('button', { name: 'Heute lernen' })).toBeTruthy();
     expect(screen.getByText(/du verstehst etwa 0 % der Dialoge/)).toBeTruthy();
     expect(screen.queryByText(/fällig/)).toBeNull();
@@ -99,7 +99,7 @@ describe('Startseite', () => {
 
   it('startet eine Runde für die gewählte Situation', () => {
     const onStart = vi.fn();
-    render(<Home app={fakeApp()} onStart={onStart} onDiagnose={noop} />);
+    render(<Home app={fakeApp()} onStart={onStart} onDiagnose={noop} onSettings={noop} />);
     fireEvent.click(screen.getByRole('button', { name: /Grundlagen/ }));
     expect(onStart).toHaveBeenCalledWith('s1');
   });

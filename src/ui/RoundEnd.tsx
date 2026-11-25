@@ -1,3 +1,4 @@
+import { useEffect } from 'preact/hooks';
 import { situationCoverage } from '../engine/coverage';
 import type { Task } from '../engine/round';
 import type { Item, Situation } from '../content/types';
@@ -21,6 +22,11 @@ function label(item: Item): { main: string; sub?: string } {
 const percent = (x: number) => `${Math.round(x * 100)} %`;
 
 export function RoundEnd({ app, tasks, startCoverage, onExit, onAgain }: Props) {
+  // Ende der Runde ist ein Abgleichpunkt; die Oberfläche wartet nicht darauf.
+  useEffect(() => {
+    void app.sync();
+  }, []);
+
   const find = (id: string): { item: Item; situation: Situation } | undefined => {
     for (const s of app.situations) {
       const item = s.items.find((it) => it.id === id);

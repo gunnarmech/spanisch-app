@@ -5,7 +5,7 @@ const INVALID = 'Keine gültige Sicherung';
 
 const isObj = (x: unknown): x is Record<string, unknown> => typeof x === 'object' && x !== null;
 
-function validEvent(x: unknown): x is ReviewEvent {
+export function validEvent(x: unknown): x is ReviewEvent {
   return (
     isObj(x) &&
     typeof x.id === 'string' && x.id !== '' &&

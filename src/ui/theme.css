@@ -527,3 +527,63 @@ summary:focus-visible {
   grid-column: 2;
   grid-row: 1 / span 2;
 }
+
+/* Einstellungen */
+
+.settings {
+  margin: 0 0 2rem;
+}
+
+.settings label {
+  display: block;
+  margin: 0.75rem 0 0.35rem;
+  font-weight: 600;
+}
+
+.settings input[type='password'] {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.settings input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.settings .quiet {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.settings .actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.settings .filebutton {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.settings .filebutton input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.settings .filebutton:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.foot .link {
+  margin: 0 0.6rem;
+}

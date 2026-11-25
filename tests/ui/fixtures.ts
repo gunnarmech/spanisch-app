@@ -28,6 +28,8 @@ export function fakeApp(over: Partial<AppState> = {}): AppState & { record: Retu
     settings: { device: 'test', retention: 0.9, voiceSpeedNew: 'slow' },
     record: vi.fn(async () => {}),
     reload: vi.fn(async () => {}),
+    sync: vi.fn(async () => ({ added: 0, pushed: 0 })),
+    updateSettings: vi.fn(async () => {}),
     report: vi.fn(async () => {}),
     ...over,
   } as AppState & { record: ReturnType<typeof vi.fn> };
