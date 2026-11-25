@@ -94,7 +94,9 @@ describe('Startseite', () => {
   it('zeigt das Verständnis je Situation und nie eine Zahl fälliger Karten', () => {
     render(<Home app={fakeApp()} onStart={noop} onDiagnose={noop} onSettings={noop} />);
     expect(screen.getByRole('button', { name: 'Heute lernen' })).toBeTruthy();
-    expect(screen.getByText(/du verstehst etwa 0 % der Dialoge/)).toBeTruthy();
+    expect(
+      screen.getByText((_, el) => el?.classList.contains('understand') === true && el.textContent === 'du verstehst etwa 0 % der Dialoge'),
+    ).toBeTruthy();
     expect(screen.queryByText(/fällig/)).toBeNull();
   });
 

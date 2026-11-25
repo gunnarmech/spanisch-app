@@ -85,8 +85,9 @@ export function Preview({ params }: { params: URLSearchParams }) {
   const app = useAppState(db);
   if (!(KNOWN as readonly string[]).includes(params.get('zeige') ?? '')) return null;
   if (!app) return <main aria-busy="true" />;
+  const zeige = params.get('zeige') ?? '';
   return (
-    <main>
+    <main data-view={zeige.startsWith('start') ? 'home' : zeige}>
       <Screen app={app} params={params} />
     </main>
   );

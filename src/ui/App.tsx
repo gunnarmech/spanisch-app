@@ -23,7 +23,7 @@ export function App({ db }: { db?: Db }) {
   const [view, setView] = useState<View>({ name: 'home' });
 
   return (
-    <main>
+    <main data-view={view.name}>
       {view.name === 'settings' && app ? (
         <Settings
           app={app}
