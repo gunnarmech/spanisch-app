@@ -34,7 +34,14 @@ async function toneTest(): Promise<string> {
   }
 }
 
-type Row = { label: string; text: string; run?: () => Promise<string> };
+/** Zustand als Farbe zum Wort: gelungen, gescheitert oder neutral (noch offen, Messwert, erkannter Text). */
+export function tone(text: string): 'good' | 'bad' | '' {
+  if (/^(ja|ok|läuft)$|^ok,/.test(text)) return 'good';
+  if (/^(nein|nicht verfügbar|keine Erkennung|kein Ton gefunden)$|Error$|^Fehler$/.test(text)) return 'bad';
+  return '';
+}
+
+type Row = { label: string; text: string; run?: () => Promise<string>; neutral?: boolean };
 
 export function Diagnose({ onBack }: { onBack(): void }) {
   const [storage, setStorage] = useState('wird geprüft');
@@ -51,7 +58,7 @@ export function Diagnose({ onBack }: { onBack(): void }) {
 
   const rows: Row[] = [
     { label: 'Spracherkennung', text: speechSupported() ? 'ja' : 'nein' },
-    { label: 'Anzeige als App', text: standalone() ? 'ja' : 'nein' },
+    { label: 'Anzeige als App', text: standalone() ? 'ja' : 'nein', neutral: true },
     { label: 'Ton-Test', text: 'noch nicht geprüft', run: toneTest },
     {
       label: 'Mikrofon-Test',
@@ -80,6 +87,9 @@ export function Diagnose({ onBack }: { onBack(): void }) {
 
   return (
     <>
+      <button type="button" class="link back" onClick={onBack}>
+        Zurück
+      </button>
       <header class="masthead">
         <h1>Diagnose</h1>
         <p>Zeigt, was dieses Gerät kann. Ein Screenshot reicht.</p>
@@ -87,8 +97,8 @@ export function Diagnose({ onBack }: { onBack(): void }) {
       <ul class="diagnose">
         {rows.map((row) => (
           <li key={row.label}>
-            <span class="label">{row.label}</span>
-            <span class="result">{results[row.label] ?? row.text}</span>
+            <span class="name">{row.label}</span>
+            <span class={`result ${row.neutral ? '' : tone(results[row.label] ?? row.text)}`.trim()}>{results[row.label] ?? row.text}</span>
             {row.run && (
               <button type="button" class="btn btn--secondary" disabled={busy !== null} onClick={() => start(row)}>
                 Starten
@@ -97,9 +107,6 @@ export function Diagnose({ onBack }: { onBack(): void }) {
           </li>
         ))}
       </ul>
-      <button type="button" class="link" onClick={onBack}>
-        Zurück
-      </button>
     </>
   );
 }

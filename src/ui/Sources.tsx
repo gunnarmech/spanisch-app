@@ -51,11 +51,14 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
 
   return (
     <>
+      <button type="button" class="link back" onClick={onBack}>
+        Zurück
+      </button>
       <header class="masthead">
         <h1>Quellen</h1>
       </header>
 
-      <section class="settings">
+      <section class="block">
         <h2>Lizenzen</h2>
         <ul class="plain">
           <li>Der Code der App steht unter der MIT-Lizenz.</li>
@@ -87,7 +90,7 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
         </ul>
       </section>
 
-      <section class="settings">
+      <section class="block">
         <h2>Fotos</h2>
         <ul class="plain">
           {allPhotos.map((p) => (
@@ -103,7 +106,7 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
         </ul>
       </section>
 
-      <section class="settings">
+      <section class="block">
         <h2>Fehlermeldungen</h2>
         {reports === null ? null : reports.length === 0 ? (
           <p class="german">Noch keine Meldungen.</p>
@@ -128,11 +131,6 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
         )}
       </section>
 
-      <footer class="foot">
-        <button type="button" class="link" onClick={onBack}>
-          Zurück
-        </button>
-      </footer>
     </>
   );
 }

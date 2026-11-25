@@ -9,21 +9,26 @@ export function Progress({ app, onBack }: { app: AppState; onBack(): void }) {
     .filter((it) => (it.kind === 'word' || it.kind === 'phrase') && isSure(app.states.get(it.id), now)).length;
   return (
     <>
+      <button type="button" class="link back" onClick={onBack}>
+        Zurück
+      </button>
       <header class="masthead">
         <h1>Fortschritt</h1>
         <p>Gesamt, sicher bekannte Wörter und Wendungen: {sureWords}</p>
       </header>
-      <ul class="situations">
+      <ul class="rows">
         {app.situations.map((s) => {
           const hasDialog = s.items.some((it) => it.kind === 'dialog');
           const pct = Math.round(situationCoverage(s, app.states, now, app.situations) * 100);
           return (
             <li key={s.id}>
-              <div class="situation">
+              <div class="row">
                 <span class="name">{s.title}</span>
                 {hasDialog ? (
                   <>
-                    <span class="understand">du verstehst etwa {pct} % der Dialoge</span>
+                    <span class="understand">
+                      du verstehst etwa <span class="num">{pct}</span> % der Dialoge
+                    </span>
                     <span class="meter" aria-hidden="true">
                       <span style={{ width: `${pct}%` }} />
                     </span>
@@ -36,11 +41,6 @@ export function Progress({ app, onBack }: { app: AppState; onBack(): void }) {
           );
         })}
       </ul>
-      <footer class="foot">
-        <button type="button" class="link" onClick={onBack}>
-          Zurück
-        </button>
-      </footer>
     </>
   );
 }

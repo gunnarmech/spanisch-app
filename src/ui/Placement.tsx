@@ -117,10 +117,20 @@ export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }
     <>
       <header class="masthead">
         <h1>Kurze Einstufung</h1>
-        <p>
-          Frage {index + 1} von {entries.length}
+        <p class="label">
+          Frage <span class="num">{index + 1}</span> von <span class="num">{entries.length}</span>
         </p>
       </header>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Fortschritt der Einstufung"
+        aria-valuemin={0}
+        aria-valuemax={entries.length}
+        aria-valuenow={index}
+      >
+        <div style={{ transform: `scaleX(${index / entries.length})` }} />
+      </div>
       <Question
         key={index}
         app={app}
@@ -131,11 +141,9 @@ export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }
         }}
         onNext={() => setIndex(index + 1)}
       />
-      <footer class="foot">
-        <button type="button" class="link" onClick={() => void finish()}>
-          Beenden
-        </button>
-      </footer>
+      <button type="button" class="link leave" onClick={() => void finish()}>
+        Beenden
+      </button>
     </>
   );
 }

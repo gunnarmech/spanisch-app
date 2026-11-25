@@ -5,9 +5,10 @@ main {
 }
 
 h1 {
-  margin: 0 0 0.5rem;
-  font-size: 1.75rem;
-  font-weight: 500;
+  margin: 0 0 var(--s-3);
+  font: var(--display-weight) var(--t-h1) / 1.05 var(--font-display);
+  letter-spacing: -0.04em;
+  overflow-wrap: break-word;
 }
 
 p {
@@ -19,10 +20,8 @@ main {
 }
 
 h2 {
-  margin: 0 0 0.75rem;
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 500;
+  margin: 0 0 var(--s-3);
+  font: var(--display-weight) var(--t-h2) / 1.2 var(--font-display);
 }
 
 button {
@@ -646,29 +645,87 @@ a {
   }
 }
 
-/* Diagnose */
+/* Kopf der Nebenbildschirme: Zurück als Textlink oben links, dann h1 */
 
-.foot {
-  margin-top: 2.5rem;
-  text-align: center;
+.back {
+  margin: 0 0 var(--s-5);
 }
 
+.masthead {
+  margin: 0 0 var(--s-6);
+}
+
+.masthead h1 {
+  margin: 0 0 var(--s-2);
+}
+
+.masthead p {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--t-lead);
+  line-height: 1.4;
+}
+
+.masthead p.label {
+  font-size: var(--t-label);
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-5);
+  margin-top: var(--s-7);
+}
+
+/* Fortschritt: Zeilen mit Haarlinien */
+
+.rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rows li {
+  border-top: 1px solid var(--line);
+}
+
+.rows li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.row {
+  display: grid;
+  gap: var(--s-1);
+  padding: var(--s-4) 0;
+}
+
+.row .name {
+  font: var(--display-weight) var(--t-lead) / 1.25 var(--font-display);
+  overflow-wrap: anywhere;
+}
+
+/* Diagnose: Name, Ergebnis als Wort in Zustandsfarbe, Knopf rechts */
+
 .diagnose {
-  margin: 0 0 1.5rem;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .diagnose li {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0.15rem 1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--s-1) var(--s-4);
   align-items: center;
-  padding: 0.75rem 0;
+  padding: var(--s-3) 0;
+  border-top: 1px solid var(--line);
+}
+
+.diagnose li:last-child {
   border-bottom: 1px solid var(--line);
 }
 
-.diagnose .label {
+.diagnose .name {
   font-weight: 500;
 }
 
@@ -678,78 +735,90 @@ a {
   overflow-wrap: anywhere;
 }
 
-.diagnose button {
+.diagnose .result.good,
+.diagnose .result.bad {
+  font-weight: 500;
+}
+
+.diagnose .result.good {
+  color: var(--good);
+}
+
+.diagnose .result.bad {
+  color: var(--bad);
+}
+
+.diagnose .btn {
   grid-column: 2;
   grid-row: 1 / span 2;
 }
 
-/* Einstellungen */
+/* Einstellungen und Quellen: Blöcke mit Haarlinienlisten */
 
-.settings {
-  margin: 0 0 2rem;
+.block {
+  display: grid;
+  gap: var(--s-3);
+  justify-items: start;
+  margin: 0 0 var(--s-7);
 }
 
-.settings label {
+.block > * {
+  margin: 0;
+}
+
+.block h2 {
+  font-size: var(--t-lead);
+}
+
+.block label.label {
   display: block;
-  margin: 0.75rem 0 0.35rem;
-  font-weight: 500;
+  margin-top: var(--s-2);
 }
 
-.settings input[type='range'] {
+.block input[type='range'] {
   width: 100%;
+  height: var(--tap);
   accent-color: var(--action);
 }
 
-.settings .quiet {
-  margin: 0.5rem 0 0;
+.block .quiet {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: var(--t-small);
 }
 
-.settings .actions {
+.block .actions {
   display: flex;
-  gap: 0.75rem;
+  flex-wrap: wrap;
+  gap: var(--s-3);
 }
 
-.settings .filebutton {
-  display: inline-flex;
-  margin: 0;
-  cursor: pointer;
+.block .plain li {
+  padding: var(--s-3) 0;
+  border-top: 1px solid var(--line);
 }
 
-.settings .filebutton input {
+.block .plain li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.filebutton {
+  position: relative;
+}
+
+.filebutton input {
   position: absolute;
   width: 1px;
   height: 1px;
   opacity: 0;
 }
 
-.settings .filebutton:focus-within {
+.filebutton:focus-within {
   outline: 2px solid var(--action);
   outline-offset: 2px;
 }
 
-.foot .link {
-  margin: 0 0.6rem;
-}
-main[data-view="home"] .foot .link {
-  margin: 0;
-}
-
-/* Fortschritt, Quellen, Einstufung */
-
-.plain {
-  margin: 0 0 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-.plain li {
-  margin: 0 0 0.5rem;
-}
-
-.placement-offer {
-  margin: 0 0 2rem;
-  padding: 0 0 1.5rem;
-  border-bottom: 1px solid var(--line);
+/* Links im Fließtext einer Liste bleiben in der Zeile */
+.block .plain .link {
+  display: inline;
+  min-height: 0;
 }

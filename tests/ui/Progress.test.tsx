@@ -17,7 +17,7 @@ test('zeigt Verständnis in Prozent je Situation und die Zahl sicher bekannter W
   const states = replay([newEvent({ kind: 'known', cardId: 'w-hola' }, 'd', now)], new Set(['w-hola', 'w-adios']));
   render(<Progress app={fakeApp({ states })} onBack={noop} />);
   expect(screen.getByText('Grundlagen')).toBeTruthy();
-  expect(screen.getByText(/100 %/)).toBeTruthy();
+  expect(document.querySelector('.understand')?.textContent).toBe('du verstehst etwa 100 % der Dialoge');
   expect(screen.getByText(/sicher bekannte Wörter und Wendungen: 1/)).toBeTruthy();
   expect(document.body.textContent).not.toMatch(/fällig/i);
   expect(document.body.textContent).not.toMatch(/[—–]/);

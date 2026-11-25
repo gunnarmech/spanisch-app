@@ -61,11 +61,14 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
 
   return (
     <>
+      <button type="button" class="link back" onClick={onBack}>
+        Zurück
+      </button>
       <header class="masthead">
         <h1>Einstellungen</h1>
       </header>
 
-      <section class="settings">
+      <section class="block">
         <h2>Abgleich zwischen Geräten</h2>
         <p class="german">
           Mit einem GitHub-Token mit nur dem Recht "gist" legt die App ein privates Gist an und gleicht deinen Lernstand darüber ab.{' '}
@@ -73,7 +76,7 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
             Token anlegen
           </a>
         </p>
-        <label for="gist-token">GitHub-Token</label>
+        <label class="label" for="gist-token">GitHub-Token</label>
         <input
           class="field"
           id="gist-token"
@@ -92,7 +95,7 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
         {note && <p class="quiet" role="status">{note}</p>}
       </section>
 
-      <section class="settings">
+      <section class="block">
         <h2>Sicherung</h2>
         <div class="actions">
           <button type="button" class="btn btn--secondary" onClick={() => void download()}>
@@ -105,9 +108,11 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
         </div>
       </section>
 
-      <section class="settings">
+      <section class="block">
         <h2>Lernen</h2>
-        <label for="retention">Ziel-Behaltensquote: {Math.round(retention * 100)} %</label>
+        <label class="label" for="retention">
+          Ziel-Behaltensquote: <span class="num">{Math.round(retention * 100)}</span> %
+        </label>
         <input
           id="retention"
           type="range"
@@ -130,9 +135,6 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
             Quellen
           </button>
         )}
-        <button type="button" class="link" onClick={onBack}>
-          Zurück
-        </button>
       </footer>
     </>
   );
