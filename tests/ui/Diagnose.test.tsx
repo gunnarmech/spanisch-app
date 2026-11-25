@@ -109,6 +109,24 @@ describe('Diagnose', () => {
     await waitFor(() => expect(row('Erkennungs-Test').textContent).toContain('keine Erkennung'));
   });
 
+  it('färbt nach Ergebnis, nicht nach Text: erkanntes "nein" bleibt neutral', async () => {
+    speech.recognize.mockResolvedValue('nein');
+    render(<Diagnose onBack={() => {}} />);
+    const result = (label: string) => row(label).querySelector('.result') as HTMLElement;
+    fireEvent.click(within('Erkennungs-Test'));
+    await waitFor(() => expect(result('Erkennungs-Test').textContent).toBe('nein'));
+    expect(result('Erkennungs-Test').className).not.toContain('bad');
+    expect(result('Erkennungs-Test').className).not.toContain('good');
+
+    speech.recognize.mockResolvedValue(null);
+    fireEvent.click(within('Erkennungs-Test'));
+    await waitFor(() => expect(result('Erkennungs-Test').className).toContain('bad'));
+
+    fireEvent.click(within('Ton-Test'));
+    await waitFor(() => expect(result('Ton-Test').className).toContain('good'));
+    expect(result('Spracherkennung').className).toContain('good');
+  });
+
   it('Zurück ruft onBack', () => {
     const onBack = vi.fn();
     render(<Diagnose onBack={onBack} />);

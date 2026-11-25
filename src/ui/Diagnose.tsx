@@ -19,33 +19,29 @@ async function storageText(): Promise<string> {
   }
 }
 
+export type Tone = 'good' | 'bad' | '';
+export type Result = { text: string; tone: Tone };
+
 /** Spielt den ersten verfügbaren Ton der Grundlagen und meldet "läuft" oder den Namen des Fehlers. */
-async function toneTest(): Promise<string> {
+async function toneTest(): Promise<Result> {
   try {
     const manifest = await loadManifest('01-grundlagen');
     const key = Object.keys(manifest).find((k) => manifest[k].length > 0);
-    if (!key) return 'kein Ton gefunden';
+    if (!key) return { text: 'kein Ton gefunden', tone: 'bad' };
     const url = audioUrl('01-grundlagen', key, { speed: manifest[key][0].speed }, manifest);
-    if (!url) return 'kein Ton gefunden';
+    if (!url) return { text: 'kein Ton gefunden', tone: 'bad' };
     await new Audio(url).play();
-    return 'läuft';
+    return { text: 'läuft', tone: 'good' };
   } catch (err) {
-    return (err as { name?: string })?.name || 'Fehler';
+    return { text: (err as { name?: string })?.name || 'Fehler', tone: 'bad' };
   }
 }
 
-/** Zustand als Farbe zum Wort: gelungen, gescheitert oder neutral (noch offen, Messwert, erkannter Text). */
-export function tone(text: string): 'good' | 'bad' | '' {
-  if (/^(ja|ok|läuft)$|^ok,/.test(text)) return 'good';
-  if (/^(nein|nicht verfügbar|keine Erkennung|kein Ton gefunden)$|Error$|^Fehler$/.test(text)) return 'bad';
-  return '';
-}
-
-type Row = { label: string; text: string; run?: () => Promise<string>; neutral?: boolean };
+type Row = { label: string; text: string; tone?: Tone; run?: () => Promise<Result> };
 
 export function Diagnose({ onBack }: { onBack(): void }) {
   const [storage, setStorage] = useState('wird geprüft');
-  const [results, setResults] = useState<Record<string, string>>({});
+  const [results, setResults] = useState<Record<string, Result>>({});
   const [busy, setBusy] = useState<string | null>(null);
 
   useEffect(() => {
@@ -57,21 +53,24 @@ export function Diagnose({ onBack }: { onBack(): void }) {
   }, []);
 
   const rows: Row[] = [
-    { label: 'Spracherkennung', text: speechSupported() ? 'ja' : 'nein' },
-    { label: 'Anzeige als App', text: standalone() ? 'ja' : 'nein', neutral: true },
+    { label: 'Spracherkennung', text: speechSupported() ? 'ja' : 'nein', tone: speechSupported() ? 'good' : 'bad' },
+    { label: 'Anzeige als App', text: standalone() ? 'ja' : 'nein' },
     { label: 'Ton-Test', text: 'noch nicht geprüft', run: toneTest },
     {
       label: 'Mikrofon-Test',
       text: 'noch nicht geprüft',
       run: async () => {
         const clip = await recordClip(2000);
-        return clip ? `ok, ${Math.round(clip.size / 1024)} KB` : 'nicht verfügbar';
+        return clip ? { text: `ok, ${Math.round(clip.size / 1024)} KB`, tone: 'good' } : { text: 'nicht verfügbar', tone: 'bad' };
       },
     },
     {
       label: 'Erkennungs-Test',
       text: 'noch nicht geprüft',
-      run: async () => (await recognize()) ?? 'keine Erkennung',
+      run: async () => {
+        const heard = await recognize();
+        return heard ? { text: heard, tone: '' } : { text: 'keine Erkennung', tone: 'bad' };
+      },
     },
     { label: 'Speicher', text: storage },
   ];
@@ -79,9 +78,9 @@ export function Diagnose({ onBack }: { onBack(): void }) {
   const start = async (row: Row) => {
     if (!row.run || busy) return;
     setBusy(row.label);
-    setResults((r) => ({ ...r, [row.label]: 'läuft gerade' }));
-    const text = await row.run();
-    setResults((r) => ({ ...r, [row.label]: text }));
+    setResults((r) => ({ ...r, [row.label]: { text: 'läuft gerade', tone: '' } }));
+    const result = await row.run();
+    setResults((r) => ({ ...r, [row.label]: result }));
     setBusy(null);
   };
 
@@ -95,17 +94,20 @@ export function Diagnose({ onBack }: { onBack(): void }) {
         <p>Zeigt, was dieses Gerät kann. Ein Screenshot reicht.</p>
       </header>
       <ul class="diagnose">
-        {rows.map((row) => (
-          <li key={row.label}>
-            <span class="name">{row.label}</span>
-            <span class={`result ${row.neutral ? '' : tone(results[row.label] ?? row.text)}`.trim()}>{results[row.label] ?? row.text}</span>
-            {row.run && (
-              <button type="button" class="btn btn--secondary" disabled={busy !== null} onClick={() => start(row)}>
-                Starten
-              </button>
-            )}
-          </li>
-        ))}
+        {rows.map((row) => {
+          const shown = results[row.label] ?? { text: row.text, tone: row.tone ?? '' };
+          return (
+            <li key={row.label}>
+              <span class="name">{row.label}</span>
+              <span class={`result ${shown.tone}`.trim()}>{shown.text}</span>
+              {row.run && (
+                <button type="button" class="btn btn--secondary" disabled={busy !== null} onClick={() => start(row)}>
+                  Starten
+                </button>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </>
   );
