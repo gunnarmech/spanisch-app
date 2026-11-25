@@ -6,6 +6,7 @@
   --ink: #111111;
   --muted: #6b6b6b;
   --line: color-mix(in oklab, var(--ink) 12%, transparent);
+  --line-strong: color-mix(in oklab, var(--ink) 50%, transparent);
   --action: #1a4be0;
   --action-ink: #ffffff;
   --good: #1f7a4d;
