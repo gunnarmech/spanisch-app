@@ -49,11 +49,26 @@ def test_dialog_speakers_and_speeds():
     assert len({j.voice for j in b}) == 1 and b[0].voice in ("mx-m", "co-m")
 
 
-def test_dialog_b_voice_alternates_between_dialogs():
+def test_dialog_b_voice_uses_both_voices_across_dialogs():
     def dlg(i):
         return {"id": f"d-{i}", "kind": "dialog", "title": "t", "lines": [{"speaker": "B", "es": "Hola", "de": "x"}]}
-    jobs = tts.plan(sit(dlg(1), dlg(2)))
-    assert jobs_for("d-1-1", jobs)[0].voice != jobs_for("d-2-1", jobs)[0].voice
+    jobs = tts.plan(sit(*[dlg(i) for i in range(12)]))
+    assert {j.voice for j in jobs} == {"mx-m", "co-m"}
+
+
+def test_voices_are_stable_when_items_are_inserted_before():
+    d = {"id": "d-1", "kind": "dialog", "title": "t", "lines": [{"speaker": "B", "es": "Hola", "de": "x"}]}
+    items = [word("w-a"), word("w-b"), d]
+    before = tts.plan(sit(*items))
+    after = tts.plan(sit(word("w-neu"), word("w-neu2"), *items))
+    for key in ("w-b", "w-b-ex1", "d-1-1"):
+        assert jobs_for(key, after) == jobs_for(key, before)
+
+
+def test_hash_includes_rate(monkeypatch):
+    h = tts.text_hash("a", "cl-f", "slow")
+    monkeypatch.setitem(tts.RATES, "slow", "-30%")
+    assert tts.text_hash("a", "cl-f", "slow") != h
 
 
 def test_pair_and_grammar():

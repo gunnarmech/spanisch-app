@@ -1,717 +1,717 @@
 {
   "w-hola": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "7bfbdf3f3af6291dff951cd49f57a195b7a59216"
+      "hash": "e6e250732db8781ddf3c6f9122c80e1f3cf3f614"
     },
     {
-      "voice": "mx-f",
+      "voice": "co-m",
       "speed": "normal",
-      "hash": "06350f8532db5b3d6003a70fb015b27ed8d26a05"
+      "hash": "d7e75a6491500eb63a3336016b43a13699ee7037"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "d73cede5b12aa670bee1fe1dbedac5083eb8be91"
+      "hash": "5fbd2e5e4dc9f587fcd23e0ea227e6cffc182e60"
     },
     {
-      "voice": "mx-f",
+      "voice": "co-m",
       "speed": "slow",
-      "hash": "fd55f7e0f51cd27e84ba3ad25f522ecdcba6aa0e"
+      "hash": "0bfbeddfeb46c3db5f3354989413674d1a7b8790"
     }
   ],
   "w-hola-ex1": [
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "normal",
-      "hash": "864275d5b594811f0cc0a2a14338587ecab91d48"
+      "hash": "5e0788e1e1a632fc94239ff6ceecc2ced690134a"
     },
     {
-      "voice": "co-m",
+      "voice": "co-f",
       "speed": "normal",
-      "hash": "8d55c9509d80ed124e4a25724c3bafeeca5f2098"
+      "hash": "a82a5eb6972a4d45287115c225c5263b93a35efb"
     },
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "slow",
-      "hash": "ec7a08a94a0c80247e2e137f6338a8f8579fdde0"
+      "hash": "2009dcbd3f17f5f16249cd10af5a99514fbf4a6a"
     },
     {
-      "voice": "co-m",
+      "voice": "co-f",
       "speed": "slow",
-      "hash": "6340dd6a2dbe7b725a1d26242ddfd8486d3f07bb"
+      "hash": "7ffbf2e0f9c5a4c725f84fa93910841fba46e1ae"
     }
   ],
   "w-chao": [
     {
       "voice": "cl-f",
       "speed": "normal",
-      "hash": "9e8e05ea58450bbede41cc6ca7852014b32568f0"
+      "hash": "426c215ce70e5782cc1d708df5ea6bf6d3e69073"
     },
     {
-      "voice": "mx-m",
+      "voice": "mx-f",
       "speed": "normal",
-      "hash": "539c9b904110161627a574e6437c830b1c3e543d"
+      "hash": "3b57cdef8c2a5c147dd59521aefeb9fd52005a6d"
     },
     {
       "voice": "cl-f",
       "speed": "slow",
-      "hash": "f2d929a8f47f0d9fbf19c6071f7bbfd614abbd28"
+      "hash": "04f8100e378b37f16c8e7ca094b84a2d55477ef4"
     },
     {
-      "voice": "mx-m",
+      "voice": "mx-f",
       "speed": "slow",
-      "hash": "bdba8c9b604e1bfe33f7f608cad8abe7bd8b0755"
+      "hash": "54466e3e40df53934cb04cd8b14aef0538fe0058"
     }
   ],
   "w-chao-ex1": [
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "normal",
-      "hash": "0a64324218776c14304954bf57b35b8ea8964ffd"
+      "hash": "f9ae4b3d2825a487efe0da81b3f947d860f309ed"
     },
     {
-      "voice": "co-f",
+      "voice": "co-m",
       "speed": "normal",
-      "hash": "fafd4770f3693dab152fa68648b1864084f40711"
+      "hash": "03ebb99bc70d9f50fd00f279b1ff22d246e4d318"
     },
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "slow",
-      "hash": "73d37ba482a3281595005e5726580b2614636534"
+      "hash": "fae10b10ffcfa3c533ddd55bbdfac0d80aad73b1"
     },
     {
-      "voice": "co-f",
+      "voice": "co-m",
       "speed": "slow",
-      "hash": "a5ed05f0775bac52cce400476de1d776408e765e"
+      "hash": "8627208235e5fa81a95a54b373b877482128243e"
     }
   ],
   "w-gracias": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "27ddcd4c9b9c930f7b39bc65d35ee85103c9d186"
+      "hash": "d30c410f076e617b6e70b77ca93b0c3cdc76b177"
     },
     {
-      "voice": "mx-f",
+      "voice": "co-f",
       "speed": "normal",
-      "hash": "a82495c11844ae88a03ef173af4962ce97500cb5"
+      "hash": "f976db77202081fc2a328bc55190c4922579bd56"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "b854f8be4717613f7a821e50454586ebab5d0b34"
+      "hash": "32b1626df36c334b6dd2378ed699607fda6aa3ec"
     },
     {
-      "voice": "mx-f",
+      "voice": "co-f",
       "speed": "slow",
-      "hash": "b8a9a46a5660d150384759152309a439e373385e"
+      "hash": "462c13d5a5a07a6c9e23e639f9da7634f4d148db"
     }
   ],
   "w-gracias-ex1": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "9111faa544ffe78b6cf8c18b84438deb83a339df"
+      "hash": "4759ad61fe274814914af58e6ecaf27aececfd95"
     },
     {
-      "voice": "co-m",
+      "voice": "co-f",
       "speed": "normal",
-      "hash": "0cd77d71ba5eebdace07c2e92a0913ae58e5da4c"
+      "hash": "f4bea484f05d0ecd8ed7950c454ca83e661a7b35"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "f9a57c5f8a63358d6f0a8af5a816f3b46d8cf609"
+      "hash": "65aa98c2b79f075aae212dfd853a4fdc7303f633"
     },
     {
-      "voice": "co-m",
+      "voice": "co-f",
       "speed": "slow",
-      "hash": "ac668849010a29598763d34266b19c0dfd92af71"
+      "hash": "64588de8ce3190a03c41e18785f3fc96a3d1c042"
     }
   ],
   "p-por-favor": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "746ff7ade1bd32991a5b7270d84c9912a57699a6"
+      "hash": "9e69cbec98a06125ee71db1af2dc34e408a0dece"
     },
     {
-      "voice": "mx-m",
+      "voice": "co-m",
       "speed": "normal",
-      "hash": "444653ad015ecd94b25d7e5ac7769e0ad54767bf"
+      "hash": "431dd4432f02f4019a34d6ef514eec10d3cca165"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "dd2155d2fa434edd622d1cb12c05257637612913"
+      "hash": "ebc07a18948ac49542d6c0d37ebfc12afe526538"
     },
     {
-      "voice": "mx-m",
+      "voice": "co-m",
       "speed": "slow",
-      "hash": "9c02b2e6d9442b947d867868ddb64e31335b6414"
+      "hash": "458df29a4aa37d7d13f44649d3380b7273107cfc"
     }
   ],
   "p-por-favor-ex1": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "ecbc2ada9f3680e60222acb53a507878b5114b65"
+      "hash": "9ed1866b5b8b4fa9c71c937eae20fc63f3378584"
     },
     {
       "voice": "co-f",
       "speed": "normal",
-      "hash": "3c2354dd07cb935218a1814fba9f9a621d31ad31"
+      "hash": "4dd081f242275f84763ee055105f70aba6196c0a"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "d8da4b41c78e045b7a768d7b4e5766abba73cccb"
+      "hash": "86417f9571e73ffe9a5b7fff180395cf2a4dd62d"
     },
     {
       "voice": "co-f",
       "speed": "slow",
-      "hash": "5b3633237e29ca8f420a053e1a54d9bc0ddadaa6"
+      "hash": "7d2a83606324569d967bdec3718581b9cd4641e2"
     }
   ],
   "w-perdon": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "5a4c2d8a3fb31ede1626127b3cc4848de5a74e4a"
+      "hash": "f6dcaba5930f37b94fadd00a927660aac7ef4cf8"
     },
     {
-      "voice": "mx-f",
+      "voice": "co-f",
       "speed": "normal",
-      "hash": "4ae01520387cda8136d06d0c979617deb57be465"
+      "hash": "019b60936766542f529e11e4eb572d641b39531a"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "f2e88a43172c359077a435d30a7689ff378fbb82"
+      "hash": "b7cf7ae8fa010879f1e3dd19f13167d4a9417716"
     },
     {
-      "voice": "mx-f",
+      "voice": "co-f",
       "speed": "slow",
-      "hash": "ecc0d0695938c35e43e86333196c4a2cf38e6c96"
+      "hash": "86b43785b8bb86bea8f25dd7c12edc8be344547c"
     }
   ],
   "w-perdon-ex1": [
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "normal",
-      "hash": "e454de14e2cee6188da693ea44765be6dc840842"
+      "hash": "6357ce884b6abadc3de68011e93a0bd66ef4131f"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-f",
       "speed": "normal",
-      "hash": "00487c499ca9f8e164081990326551f9bfa88190"
+      "hash": "f57d73f1518a4718112d92351758804bb5fac410"
     },
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "slow",
-      "hash": "5bfc9b92e08867257f1842597c0ff0dc73ad3089"
+      "hash": "65910bb211fdfe8c15ad21111b42d861f65007a3"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-f",
       "speed": "slow",
-      "hash": "e8b3debf6a1292f348dfff84e92e96eb3c4a49de"
+      "hash": "105f86508296569d2eddf79aee784fa2f623a17c"
     }
   ],
   "p-buenos-dias": [
     {
       "voice": "cl-f",
       "speed": "normal",
-      "hash": "bf8c1bb40da9d2c7bf92cdc4ab08dbe044f69902"
+      "hash": "f7ccb420d6941d77cf49512505d52cfe407ae1c7"
     },
     {
-      "voice": "mx-m",
+      "voice": "mx-f",
       "speed": "normal",
-      "hash": "af9e795b59cca38286e256941237e8f7e2710fc2"
+      "hash": "239f6f5f777a159560c39aabdc6c30f26017c945"
     },
     {
       "voice": "cl-f",
       "speed": "slow",
-      "hash": "5b84df28f1536a83fc4ae92c405217d74253ec4b"
+      "hash": "41d47ffec280d6376e66a1fd839b84e61056ed40"
     },
     {
-      "voice": "mx-m",
+      "voice": "mx-f",
       "speed": "slow",
-      "hash": "3f850cbf71bc5515af169239259feea3ddd02644"
+      "hash": "4142f65c367f0d1c6348f3e5920a94024df6922b"
     }
   ],
   "p-buenos-dias-ex1": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "0a9b32f018ce0fd7611bdf5d66affa070f5d3e5b"
+      "hash": "33cb6c05127479fe3eeb124093bac6a623d8761a"
     },
     {
       "voice": "co-f",
       "speed": "normal",
-      "hash": "1ef910b161b6d586ad6f7ba60e8adc13fb8669b9"
+      "hash": "66238cc4e088d497bf13b972e1195006330b8e24"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "40a4a5ace48c15b06cb221505a10c312d6afb8ff"
+      "hash": "82aee17b4a33f2dfe093bc00bb4a5d5f03e75cd1"
     },
     {
       "voice": "co-f",
       "speed": "slow",
-      "hash": "45381c0a73a5b6fbaa68518ac4bc927764df24ee"
+      "hash": "c214aec8369731ce24effb89a154af2e3eed8292"
     }
   ],
   "p-mucho-gusto": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "ba25863c53e4baf8d0294b9ebbeabf12cbd66c89"
+      "hash": "c03d9d9abe22d1473b57573ce14319819f15c52e"
     },
     {
       "voice": "mx-f",
       "speed": "normal",
-      "hash": "72509dffd2b561b3f4a7991172f74f1019f2f045"
+      "hash": "a22632e58e5a840815d612790f3c47501b0a2f2b"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "2912f9ef2ccd91fd3bd51c18ae67d0cb1d96e837"
+      "hash": "a572050654f75953e97aa017e71422ee85b1abed"
     },
     {
       "voice": "mx-f",
       "speed": "slow",
-      "hash": "ca702ed789973a75ccf9ad9dcc93c36504ef06d2"
+      "hash": "487d56fd7e27b7e29d1ae38b2cc98b61a338c72b"
     }
   ],
   "p-mucho-gusto-ex1": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "2f537b18f5bab952f9aab030b4c7dc8a5e99da06"
+      "hash": "0df67d0739046d203c869bc26c2c5f070470261f"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-m",
       "speed": "normal",
-      "hash": "8fe5595d82338d4a1212de441d7886af61a67bf2"
+      "hash": "a794678d2dca8e687ec79842d4e33f7c404cfadc"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "755c2e2f866588e075af1fc2ef5e77d22710ccae"
+      "hash": "33f8dbbca4c129ec002bd1dd7dd4eafe8c48aa01"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-m",
       "speed": "slow",
-      "hash": "71e40dd6ec6ac641133921c3407316868fa6050e"
+      "hash": "2e720dadd07014afa705492b5fcc96586f8b8d15"
     }
   ],
   "p-como-estas": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "6fab63e8135bf9c6c36ddee11b5b7c880dffd37b"
+      "hash": "266d78c0e56195f0e8cd6f10bddb3921b33da4ed"
     },
     {
       "voice": "mx-m",
       "speed": "normal",
-      "hash": "a9708e2959da899d52d6501c563848d9859032eb"
+      "hash": "317b0ad93cf8140984b1ff39de575aa1e800be11"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "03e823bb2b73d3273d5db32521ddbff893082c0f"
+      "hash": "9494e6605bc045c70c9b0d2f3090a40d6648fb25"
     },
     {
       "voice": "mx-m",
       "speed": "slow",
-      "hash": "4168d8c367926d8883abadb92ea525d745015c5d"
+      "hash": "9529d6abbdb34fd836c5ad53b14c08f77bfb217a"
     }
   ],
   "p-como-estas-ex1": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "ca58605c514d9feb4c8a0ebd8d35f943b1346167"
+      "hash": "25facb88c650f180ca6f5dd3a5989b9c2a965e0c"
     },
     {
-      "voice": "co-f",
+      "voice": "co-m",
       "speed": "normal",
-      "hash": "4e20a1ef46f9bc59443b826c7562aa46d668afea"
+      "hash": "c912d02e189ef5aed31c393b4db7198c1aa24ec2"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "34bfeb12d91f3957200bbfe3c0a8a05a402bb9e3"
+      "hash": "2aa18daba0835ba9906ac5b1db296bb0f83cad5b"
     },
     {
-      "voice": "co-f",
+      "voice": "co-m",
       "speed": "slow",
-      "hash": "d7d0e842da0e009eee0e8615e176a224d33fa927"
+      "hash": "87d0696fabfefff6ef57aaf810e3a9abbcb1584a"
     }
   ],
   "w-bien": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "898a50fa2c9504085a5eedaa6dc0cca31624e89f"
+      "hash": "fd23c0e50f1aca780234f61d551322268c310d28"
     },
     {
-      "voice": "mx-f",
+      "voice": "co-f",
       "speed": "normal",
-      "hash": "2273c2179bd1e5b0a559c275525b49d77f8cfd19"
+      "hash": "43f7c21a1c3cc263a4bba8e08a3f5fcdea7cfda4"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "8f899ba7fa16c2b0d72986b42f7affd9ddfae2fe"
+      "hash": "7b3cddad4065ffa96129a8f5b18b96065d642d0f"
     },
     {
-      "voice": "mx-f",
+      "voice": "co-f",
       "speed": "slow",
-      "hash": "d2533025238a62b83b5ae41727c170c01335c76b"
+      "hash": "26dd5121abfa5904855d650dd35c7ae2c033e5f1"
     }
   ],
   "w-bien-ex1": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "5b7d9d2b5a096f58e9d5098368486114124c7e24"
+      "hash": "af14c63c698bccd22d291c1199373b2ea2a092ec"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-m",
       "speed": "normal",
-      "hash": "0559ed1ff7f57ba690baf34cce121d6a327402da"
+      "hash": "694f967b8544cc5234ecd8621f43bdd874a0e77a"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "1a66415e0d637b5b0693f00196854ff4a416962c"
+      "hash": "cf01eb448da76cfdf233db61df01d1d4703f29a6"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-m",
       "speed": "slow",
-      "hash": "dc9e24d90094b726b0b3d1adb3a1979fb43fd282"
+      "hash": "7ecf6f41938aefbe1f7650442d52a65f2d117e03"
     }
   ],
   "p-no-entiendo": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "f590b1ba889d68975ce143c7baf7d64eb9a753e2"
+      "hash": "75853659dd3ceeb63b65ca03af29764bcb0042ac"
     },
     {
-      "voice": "mx-m",
+      "voice": "co-f",
       "speed": "normal",
-      "hash": "9bbe11d23e2578ae7e14b8235dad26f77fd7efd9"
+      "hash": "9e82fc7d7735fb6570461f8bac5f71b7a197eb0f"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "04bcb11893d44f83d83e7deea60246bcc0cd2e38"
+      "hash": "eb3d16427b690d5cd257e4b271dbc19a95b591ec"
     },
     {
-      "voice": "mx-m",
+      "voice": "co-f",
       "speed": "slow",
-      "hash": "f225d42618d1272693234f759166e7e401a78061"
+      "hash": "70962c79a2516f6718c11d63540f69b2af4c712b"
     }
   ],
   "p-no-entiendo-ex1": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "e454de14e2cee6188da693ea44765be6dc840842"
+      "hash": "01d9a931d72a1b080a1e644dabdf879b1f6e90ee"
     },
     {
-      "voice": "co-f",
+      "voice": "mx-m",
       "speed": "normal",
-      "hash": "fb58171fcdbafd16c21ae7c2ca53b6a1a614cc0a"
+      "hash": "92e8a61558776081f90356a5f650449f3152c651"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "5bfc9b92e08867257f1842597c0ff0dc73ad3089"
+      "hash": "77ff646e296e767c6cfecbfcda261abe3e94b92e"
     },
     {
-      "voice": "co-f",
+      "voice": "mx-m",
       "speed": "slow",
-      "hash": "72434b6d6fe681b45957f7188ab510b1e51317c8"
+      "hash": "091afa130edb9d522ca548c4db326db20d375f90"
     }
   ],
   "s-me-llamo": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "dbcd7825ed3218a61aa6fc2575e2d47102ae0abe"
+      "hash": "c99b2d6d24ac90301668aafe2bc1390ce0ec8c79"
     },
     {
       "voice": "mx-f",
       "speed": "normal",
-      "hash": "681a406e29f218c822fb92a24f732e6489404978"
+      "hash": "9359a6460e9194b379b0eb5cb679d8a4fc912139"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "0e138fc6f8207de70b215db85eddc4ddbf25b3a6"
+      "hash": "a8ca879cd96f5dfc621e936edea43222b628f4cf"
     },
     {
       "voice": "mx-f",
       "speed": "slow",
-      "hash": "a8f4d36d49a1f3f5e2a7c2d917fe2274b83a6d73"
+      "hash": "52f8b5394940826205ecaee8160a541f18a0317b"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "fast",
-      "hash": "75df8d15fe77277f367018c03f3b0ad9c1dc41af"
+      "hash": "390aa89b13d385aaaacdae698ca12a9b24fe2629"
     }
   ],
   "s-como-te-llamas": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "d5afd0604011d0704af9c8324b3949e46a441eb4"
+      "hash": "f2b3807db27cef4b7a3e882f2bfc5f0be0902ddd"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-f",
       "speed": "normal",
-      "hash": "d3599851fa1f990a6a1ecc1dc625981610071965"
+      "hash": "5ea1dec40e2c45cab0d898b507c1d264d220d435"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "6d595d72e08f7e1508519ae93e216c73689dd8b1"
+      "hash": "212d74985b767ac1b32cd727420826e07842f4bd"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-f",
       "speed": "slow",
-      "hash": "dfddfe3c646367edf0fd98508902fd6ca6111773"
+      "hash": "ddd98d2e1fe407f16e3ef0b0c7199256aa1acdf4"
     },
     {
       "voice": "cl-m",
       "speed": "fast",
-      "hash": "290384730447e4b516be3652d685e6cd1a3be063"
+      "hash": "4e43a4d281774b9fc8c8a78975a1207212df5689"
     }
   ],
   "s-no-hablo-mucho": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "29e568d68900670981b4f7893b36c238f4b6b2c8"
+      "hash": "41c6e4caa124398b6a7bd3afcc107b64050e9dc8"
     },
     {
-      "voice": "mx-m",
+      "voice": "mx-f",
       "speed": "normal",
-      "hash": "6c886970950ce3334b0f302cf9338db130d4a90c"
+      "hash": "f3b4ce2674bb5eb8996d5e233d8a21cfe68c0265"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "8e51d7dfa0898769c28712ec125a3e34a7fa27a1"
+      "hash": "924a809c1844533769d386923d9928c64527a2d5"
     },
     {
-      "voice": "mx-m",
+      "voice": "mx-f",
       "speed": "slow",
-      "hash": "8466a29506dd80e689cc9ce2835b16f93543e345"
+      "hash": "6700f24af3e818665b449778c82b3c9310b813a7"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "fast",
-      "hash": "a8fe027b756b420f83a2bbc8c225006c8c3b00e3"
+      "hash": "e3e4b57d481187e1ceae029417096ccd672ed95a"
     }
   ],
   "d-primer-saludo-1": [
     {
       "voice": "cl-f",
       "speed": "normal",
-      "hash": "4ead9a3d3d1ab63b6a7831c1f861493aac7a5ddf"
+      "hash": "5e0788e1e1a632fc94239ff6ceecc2ced690134a"
     },
     {
       "voice": "cl-f",
       "speed": "fast",
-      "hash": "60f267a656b609527efbf58a48e7b3ef6fbdd76a"
+      "hash": "f65241abe97cf69e19e20caf2f6159fda001eac4"
     }
   ],
   "d-primer-saludo-2": [
     {
       "voice": "mx-m",
       "speed": "normal",
-      "hash": "a34cb763a3c43a1630559a71d4d152fecee0a70b"
+      "hash": "c51352395d0451558646bc59e322f95f37356b70"
     },
     {
       "voice": "mx-m",
       "speed": "fast",
-      "hash": "15ea9d84dba47f7fd4675c10d7f015b08690bb72"
+      "hash": "db5be302a6e03c167d04c27ddfa8b5a72f6854ca"
     }
   ],
   "d-primer-saludo-3": [
     {
       "voice": "cl-f",
       "speed": "normal",
-      "hash": "2e2d65549fa991aab69544a1d2a2703f3558d5a5"
+      "hash": "27b3786a2e4246dade590386f4850690ddc7f28a"
     },
     {
       "voice": "cl-f",
       "speed": "fast",
-      "hash": "08d411ff730f94ad41536c1825db225a7e6af639"
+      "hash": "6f5f49e2faa03b566819adc9a74f47386c469ef0"
     }
   ],
   "d-primer-saludo-4": [
     {
       "voice": "mx-m",
       "speed": "normal",
-      "hash": "d6c4c43f5eea429ba1d81397b8d68d607d234411"
+      "hash": "6e44a7d177224fd4af6e246a1f7b045d467b5a1c"
     },
     {
       "voice": "mx-m",
       "speed": "fast",
-      "hash": "2579bc4f00c8b15452f3c14eb88ba3fc2cb10c81"
+      "hash": "aeb2487e6ddfa2aad1f403a56c42bb01d2ef60f0"
     }
   ],
   "g-tu-usted-ex1": [
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "normal",
-      "hash": "78ba52899c3a399e2c7c0639a7e37606c5ab7696"
+      "hash": "f26c9b891ba37b545dfaccac77e7fd431869d7ec"
     },
     {
       "voice": "co-f",
       "speed": "normal",
-      "hash": "797be039a27c5efc98ee5ade595f1f86d6be125c"
+      "hash": "61430691a4cc0d6330dfa2b520b4ca59b3ef876c"
     },
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "slow",
-      "hash": "b328a98f8ea9b124c73bf24bf38b849806cb3a10"
+      "hash": "1552658f324bbec08a08dbe395965cda4ab32a39"
     },
     {
       "voice": "co-f",
       "speed": "slow",
-      "hash": "29743402b63f567c84cd6f35191c75da3791db8d"
+      "hash": "41cb3e94db1484ca62b34435c1230e5caca713e1"
     }
   ],
   "g-tu-usted-ex2": [
     {
       "voice": "cl-f",
       "speed": "normal",
-      "hash": "ea896dc087caa2639131cc581d67d0baeca30d15"
+      "hash": "d6eab9ccfd789c999af644c9f095cbdd819c22c9"
     },
     {
       "voice": "mx-f",
       "speed": "normal",
-      "hash": "03408cb49e35e14f40ac83f7a79141b2c6ff9999"
+      "hash": "551a2b06fcd0ff5d34393c41ee390118c8146115"
     },
     {
       "voice": "cl-f",
       "speed": "slow",
-      "hash": "685505cac11341fc91ccfbc1e9f48a562b9699cf"
+      "hash": "3b8c4612e1de5d148be07b9cce6404e4cc2f434c"
     },
     {
       "voice": "mx-f",
       "speed": "slow",
-      "hash": "95998fc1f8b05cf910b34147b0aa3ef637351dff"
+      "hash": "948aeb9ea45b3418efb547a86dbc3d8fe1836c10"
     }
   ],
   "g-tu-usted-ex3": [
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "normal",
-      "hash": "41231c3533527bb3cb3dbab423ee26f95dc0aba8"
+      "hash": "5b0f8eb9d4ee4463140045fb08167260981214c9"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-f",
       "speed": "normal",
-      "hash": "d13b7c78c4ac10699c4e312ea3431bc7df793ee7"
+      "hash": "eb0383435fb478665418f0035228d0f8c12c2a8c"
     },
     {
-      "voice": "cl-m",
+      "voice": "cl-f",
       "speed": "slow",
-      "hash": "3c164af1b44e57813cabfb9f71002565aa81ef8f"
+      "hash": "0e99b5ef1d65988227436a5d4841f986b63dc286"
     },
     {
-      "voice": "co-m",
+      "voice": "mx-f",
       "speed": "slow",
-      "hash": "1ceb38bda8ed0106df7e04e3412b22e8ada366ce"
+      "hash": "ef703592eb03a9488aaf99a295acf0e258fee6ea"
     }
   ],
   "g-tu-usted-1": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "2b5ce8a6d5d4748f637df157dacccc5c18bc6c39"
+      "hash": "a6d8e837f24d433ab22a8adc9c9fed6d8d1396f9"
     },
     {
       "voice": "mx-m",
       "speed": "normal",
-      "hash": "c15032bf4c143ddf0a40b6221b31f35b4b141c01"
+      "hash": "748d40590f5b87793acd1b7d9b4ff034d16e9422"
     },
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "slow",
-      "hash": "511816cfe0a2bcaaf8f8a328896e4352e59e65ed"
+      "hash": "d7211c9af1934b16f9a6b67243c22024c8d20028"
     },
     {
       "voice": "mx-m",
       "speed": "slow",
-      "hash": "992fc7acaf24277364683a8b6471a0d1e0ebf785"
+      "hash": "2b9d0d2a35de9874e620c3bc14f20292914d23d0"
     }
   ],
   "g-tu-usted-2": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "bb425090b1fd06766076a2df24b65dcae0c8ab36"
+      "hash": "e0bb93a89a3f71c5fdf70d8ebb954cb46c9d827a"
     },
     {
-      "voice": "co-f",
+      "voice": "co-m",
       "speed": "normal",
-      "hash": "ee461768bc55cfec871f9f02911da5c580a08d9a"
+      "hash": "82537fb139b6abe590af6bcb3bdfe94bb8776e46"
     },
     {
       "voice": "cl-m",
       "speed": "slow",
-      "hash": "0ba30a0358f383387cbf27415dc305ffab205189"
+      "hash": "b9ddfebcae25cfcc639baa52da0b1756f70a3a70"
     },
     {
-      "voice": "co-f",
+      "voice": "co-m",
       "speed": "slow",
-      "hash": "1265d39964813eeea1178ab1faaf099ada9980a0"
+      "hash": "d18b8f20771ed9956c56517d1e9071b299a93f81"
     }
   ],
   "pair-pero-perro": [
     {
-      "voice": "cl-f",
+      "voice": "cl-m",
       "speed": "normal",
-      "hash": "0c199452724b9a1b41e072d54731eb8cac3c7d41"
+      "hash": "448cea7034da2365275d33f792378f97c786dd3b"
     },
     {
-      "voice": "mx-f",
+      "voice": "mx-m",
       "speed": "normal",
-      "hash": "2ed29e47b1c32964f5192e4c4478fdcdabd966d1"
+      "hash": "01b526a3d632afed5aa4c6dc127380cf06e070d3"
     }
   ],
   "pair-pero-perro-opt1": [
     {
       "voice": "cl-m",
       "speed": "normal",
-      "hash": "12b193c6a30a3466f5851026bad3b66400e69caa"
+      "hash": "448cea7034da2365275d33f792378f97c786dd3b"
     },
     {
       "voice": "co-m",
       "speed": "normal",
-      "hash": "3abe82185e6b87cbb176f6cf26b6a204d369a99c"
+      "hash": "bf01ed979ba820561f205991fc2619540a4ee105"
     }
   ],
   "pair-pero-perro-opt2": [
     {
       "voice": "cl-f",
       "speed": "normal",
-      "hash": "3c4c76f5a9aa24dda0fe85f39c3cc6ea8aca325a"
+      "hash": "6288d2323996de81d0b229fb477eef5b8b09b732"
     },
     {
-      "voice": "mx-m",
+      "voice": "co-f",
       "speed": "normal",
-      "hash": "d8582d33fe263bc22157e19d906c03910bbff977"
+      "hash": "f2748692f602fbae64656392868e65033ad2a8e4"
     }
   ]
 }

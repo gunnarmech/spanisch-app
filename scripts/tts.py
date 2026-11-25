@@ -29,7 +29,7 @@ VOICES = {
 VOICE_ORDER = list(VOICES)
 RATES = {"slow": "-25%", "normal": "+0%", "fast": "+15%"}
 
-# Reihum gewaehlt: Chile wechselt die Stimme, die zweite Stimme kommt aus mx und co.
+# Je Schluessel per Hash gewaehlt: eine cl-Stimme, die zweite aus mx und co.
 CL_CYCLE = ["cl-f", "cl-m"]
 OTHER_CYCLE = ["mx-f", "co-m", "mx-m", "co-f"]
 DIALOG_B_CYCLE = ["mx-m", "co-m"]
@@ -54,21 +54,17 @@ class Job:
 
 
 def text_hash(text: str, voice: str, speed: str) -> str:
-    return hashlib.sha1((text + voice + speed).encode("utf-8")).hexdigest()
+    return hashlib.sha1((text + voice + speed + RATES[speed]).encode("utf-8")).hexdigest()
 
 
-class _Rotation:
-    def __init__(self):
-        self.n = 0
-
-    def next_pair(self):
-        pair = (CL_CYCLE[self.n % len(CL_CYCLE)], OTHER_CYCLE[self.n % len(OTHER_CYCLE)])
-        self.n += 1
-        return pair
+def _stable_index(key: str, n: int) -> int:
+    """Stabile Wahl pro Schluessel, unabhaengig von der Reihenfolge im Inhalt."""
+    return int(hashlib.sha1(key.encode("utf-8")).hexdigest(), 16) % n
 
 
-def _two_voices(key, text, speeds, rot, fast_chile=False):
-    cl, other = rot.next_pair()
+def _two_voices(key, text, speeds, fast_chile=False):
+    cl = CL_CYCLE[_stable_index(key + ":cl", len(CL_CYCLE))]
+    other = OTHER_CYCLE[_stable_index(key + ":other", len(OTHER_CYCLE))]
     jobs = []
     for speed in speeds:
         jobs.append(Job(key, text, cl, speed))
@@ -80,33 +76,30 @@ def _two_voices(key, text, speeds, rot, fast_chile=False):
 
 def plan(situation: dict) -> list[Job]:
     """Reine Planung ohne Netz: welche Dateien zu welchem Text gehoeren."""
-    rot = _Rotation()
     jobs: list[Job] = []
-    dialog_count = 0
     for item in situation["items"]:
         kind, iid = item["kind"], item["id"]
         if kind in ("word", "phrase"):
-            jobs += _two_voices(iid, item["es"], ("normal", "slow"), rot)
+            jobs += _two_voices(iid, item["es"], ("normal", "slow"))
             for n, ex in enumerate(item.get("examples", []), 1):
-                jobs += _two_voices(f"{iid}-ex{n}", ex["es"], ("normal", "slow"), rot)
+                jobs += _two_voices(f"{iid}-ex{n}", ex["es"], ("normal", "slow"))
         elif kind == "sentence":
-            jobs += _two_voices(iid, item["es"], ("normal", "slow"), rot, fast_chile=True)
+            jobs += _two_voices(iid, item["es"], ("normal", "slow"), fast_chile=True)
         elif kind == "dialog":
-            b_voice = DIALOG_B_CYCLE[dialog_count % len(DIALOG_B_CYCLE)]
-            dialog_count += 1
+            b_voice = DIALOG_B_CYCLE[_stable_index(iid, len(DIALOG_B_CYCLE))]
             for n, line in enumerate(item["lines"], 1):
                 voice = "cl-f" if line["speaker"] == "A" else b_voice
                 for speed in ("normal", "fast"):
                     jobs.append(Job(f"{iid}-{n}", line["es"], voice, speed))
         elif kind == "grammar":
             for n, ex in enumerate(item.get("examples", []), 1):
-                jobs += _two_voices(f"{iid}-ex{n}", ex["es"], ("normal", "slow"), rot)
+                jobs += _two_voices(f"{iid}-ex{n}", ex["es"], ("normal", "slow"))
             for n, ex in enumerate(item.get("exercises", []), 1):
-                jobs += _two_voices(f"{iid}-{n}", ex["es"], ("normal", "slow"), rot)
+                jobs += _two_voices(f"{iid}-{n}", ex["es"], ("normal", "slow"))
         elif kind == "pair":
-            jobs += _two_voices(iid, item["es"], ("normal",), rot)
+            jobs += _two_voices(iid, item["es"], ("normal",))
             for n, opt in enumerate(item["options"], 1):
-                jobs += _two_voices(f"{iid}-opt{n}", opt, ("normal",), rot)
+                jobs += _two_voices(f"{iid}-opt{n}", opt, ("normal",))
     return jobs
 
 
