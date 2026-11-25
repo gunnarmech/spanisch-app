@@ -54,4 +54,12 @@ describe('situationCoverage', () => {
   test('Situation ohne Dialog liefert 0', () => {
     expect(situationCoverage({ ...situation, items: [situation.items[0]] }, new Map(), T0)).toBe(0);
   });
+
+  test('Wort aus anderer Situation zählt, wenn all übergeben wird', () => {
+    const earlier: Situation = { id: 'e', order: 0, title: 'E', items: [situation.items[0]] };
+    const later: Situation = { ...situation, id: 'l', items: [situation.items[1], situation.items[2]] };
+    const states = replay([known('1', 'w-hola'), known('2', 'w-mesa')], new Set(['w-hola', 'w-mesa']));
+    expect(situationCoverage(later, states, T0 + 1000)).toBe(0.5);
+    expect(situationCoverage(later, states, T0 + 1000, [earlier, later])).toBe(1);
+  });
 });
