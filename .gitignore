@@ -7,3 +7,5 @@ __pycache__/
 .taste-skill/gate/
 .taste-skill/root/
 docs/screenshots/gestaltung-vorher/
+.taste-skill/*.json
+!.taste-skill/waivers.json
