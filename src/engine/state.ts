@@ -12,6 +12,18 @@ export type ReviewEvent =
 
 export type CardState = { card: Card; stage: Stage; known: boolean; lastTs: number };
 
+const MAX_TS = 8.64e15;
+
+/** Prüft ein Ereignis vollständig (auch Wertebereiche), damit kaputte Daten das Abspielen nie zum Werfen bringen. */
+export function validEvent(x: unknown): x is ReviewEvent {
+  if (typeof x !== 'object' || x === null) return false;
+  const e = x as Record<string, unknown>;
+  if (typeof e.id !== 'string' || e.id === '' || typeof e.cardId !== 'string' || e.cardId === '') return false;
+  if (typeof e.ts !== 'number' || !Number.isFinite(e.ts) || Math.abs(e.ts) > MAX_TS) return false;
+  if (e.kind === 'known' || e.kind === 'heard') return true;
+  return e.kind === 'review' && Number.isInteger(e.rating) && (e.rating as number) >= 1 && (e.rating as number) <= 4 && Number.isInteger(e.stage) && (e.stage as number) >= 0 && (e.stage as number) <= 4;
+}
+
 const DAY_MS = 86_400_000;
 const KNOWN_DAYS = 60;
 const DEFAULT_RETENTION = 0.9;
@@ -41,7 +53,7 @@ function applyKnown(ts: number): CardState {
 
 /**
  * Spielt das Ereignisprotokoll ab. Sortiert nach ts, dann id; doppelte ids zählen einmal;
- * Ereignisse zu unbekannten Karten werden ignoriert. Das Ergebnis hängt nicht von der Eingabereihenfolge ab.
+ * Ereignisse zu unbekannten Karten und ungültige Ereignisse werden ignoriert. Das Ergebnis hängt nicht von der Eingabereihenfolge ab.
  */
 export function replay(
   events: ReviewEvent[],
@@ -49,7 +61,8 @@ export function replay(
   retention?: number,
 ): Map<string, CardState> {
   const f = scheduler(retention ?? DEFAULT_RETENTION);
-  const sorted = [...events].sort((a, b) => a.ts - b.ts || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  // Ungültige Einträge (z. B. aus schon beschädigten Protokollen) werden übersprungen, statt zu werfen.
+  const sorted = events.filter(validEvent).sort((a, b) => a.ts - b.ts || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const seen = new Set<string>();
   const states = new Map<string, CardState>();
 

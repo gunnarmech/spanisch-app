@@ -225,6 +225,15 @@ describe('syncNow', () => {
     expect('error' in res && res.error).toContain('Verbindung');
   });
 
+  it('lehnt eine Bewertung ohne gültiges rating im Gist ab und ändert nichts', async () => {
+    const db = await fresh();
+    await withToken(db);
+    const bad = JSON.stringify({ version: 1, events: [{ id: 'x', cardId: 'c', ts: 1, device: 'd', kind: 'review', stage: 1 }] });
+    const gh = fakeGithub([{ id: 'mine', description: 'spanisch-app sync', files: { 'spanisch-app-log.json': { content: bad } } }]);
+    expect('error' in (await syncNow(db, gh.impl))).toBe(true);
+    expect(await db.allEvents()).toHaveLength(0);
+  });
+
   it('überschreibt ein Gist mit ungültigem Inhalt nicht', async () => {
     const db = await fresh();
     await withToken(db);

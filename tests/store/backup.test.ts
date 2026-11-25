@@ -42,6 +42,15 @@ describe('backup', () => {
     expect(await db.allReports()).toHaveLength(1);
   });
 
+  it('lehnt Bewertungen mit ungültigem rating, stage oder ts ab', async () => {
+    const db = await fresh();
+    const r = { id: 'x', cardId: 'c', ts: 1, device: 'd', kind: 'review', rating: 3, stage: 1 };
+    for (const bad of [{ ...r, rating: undefined }, { ...r, rating: 5 }, { ...r, rating: 2.5 }, { ...r, stage: 9 }, { ...r, stage: undefined }, { ...r, ts: 1e300 }]) {
+      await expect(importBackup(db, blob({ version: 1, events: [bad], reports: [] }))).rejects.toThrow('Keine gültige Sicherung');
+    }
+    expect(await db.allEvents()).toHaveLength(0);
+  });
+
   it('wirft bei Unsinn', async () => {
     const db = await fresh();
     for (const bad of ['kein json', { version: 2, events: [], reports: [] }, { version: 1, events: [{ cardId: 'x', ts: 1 }], reports: [] }, { version: 1, events: [{ id: 'x', cardId: 'c', kind: 'known', ts: 'x' }], reports: [] }]) {

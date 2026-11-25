@@ -59,6 +59,18 @@ describe('replay', () => {
     expect(replay([y, x], valid)).toEqual(replay([x, y], valid));
   });
 
+  test('überspringt ungültige Ereignisse, statt zu werfen', () => {
+    const bad = [
+      { id: 'b1', cardId: 'a', ts: T0, device: 'd', kind: 'review', rating: 9, stage: 1 },
+      { id: 'b2', cardId: 'a', ts: T0, device: 'd', kind: 'review', rating: 3, stage: 7 },
+      { id: 'b3', cardId: 'a', ts: T0, device: 'd', kind: 'review', stage: 1 },
+      { id: 'b4', cardId: 'a', ts: NaN, device: 'd', kind: 'review', rating: 3, stage: 1 },
+      { id: 'b5', cardId: 'a', ts: 1e300, device: 'd', kind: 'known' },
+    ] as unknown as ReviewEvent[];
+    const good = review('g', 'a', T0 + 1, 3);
+    expect(replay([...bad, good], valid)).toEqual(replay([good], valid));
+  });
+
   test('unbekannte cardId wird ignoriert', () => {
     const m = replay([review('1', 'zzz', T0, 3)], valid);
     expect(m.has('zzz')).toBe(false);

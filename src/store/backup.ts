@@ -1,19 +1,11 @@
-import type { ReviewEvent } from '../engine/state';
+import { validEvent, type ReviewEvent } from '../engine/state';
 import type { Db, ErrorReport } from './db';
 
 const INVALID = 'Keine gültige Sicherung';
 
 const isObj = (x: unknown): x is Record<string, unknown> => typeof x === 'object' && x !== null;
 
-export function validEvent(x: unknown): x is ReviewEvent {
-  return (
-    isObj(x) &&
-    typeof x.id === 'string' && x.id !== '' &&
-    typeof x.cardId === 'string' && x.cardId !== '' &&
-    typeof x.ts === 'number' && Number.isFinite(x.ts) &&
-    (x.kind === 'review' || x.kind === 'known' || x.kind === 'heard')
-  );
-}
+export { validEvent };
 
 function validReport(x: unknown): x is ErrorReport {
   return (
