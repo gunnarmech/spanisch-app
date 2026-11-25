@@ -4,7 +4,7 @@ Stand 26.11.2026, Zweig `gestaltung`.
 
 ## Gate
 
-Letzte Zeile: `GATE: FAIL 10 (round 2 of 3)`. Zwei Runden gelaufen, `gate.mjs --done` nicht aufgerufen (bleibt beim Hauptthread mit Gunnars Satz).
+Letzte Zeile (Runde 3): `GATE: OPEN 10 (rounds used up)`. Die Runden endeten, weil die drei erlaubten Runden verbraucht sind; das Gate meldet "Stop fixing". Runde 2 stand bei `GATE: FAIL 10 (round 2 of 3)`, Runde 3 brachte dieselben zehn Befunde. Es lief `gate.mjs --done` nicht aufgerufen (bleibt beim Hauptthread mit Gunnars Satz).
 
 Runde 1: `GATE: FAIL 21 (round 1 of 3)`. Behoben, weil sie für eine App gelten:
 - `text-contrast`: Absatz im Einstufungsangebot in Tinte statt gedämpft (im Dunkelmodus 6,71:1, verlangt 7:1).
@@ -18,15 +18,24 @@ Runde 1: `GATE: FAIL 21 (round 1 of 3)`. Behoben, weil sie für eine App gelten:
 
 ## Offene FAILs (Webseiten-Regeln, bewusst nicht behoben, kein Verzicht mehr frei)
 
-- `hero-fill`, `hero-screen` (Situationsabschnitt), `one-heading` (2x): Die Startseite ist ein App-Bildschirm mit Kopf und Liste auf einem Schirm, kein Abschnitt je Bildschirm.
-- `cta`: Der Abschnitt vor der Fußzeile endet ohne Knopf, weil dort die Situationsliste steht, deren Zeilen selbst Knöpfe sind.
-- `container-edges` (4x) und `container`: Das Gate verlangt `.wrap`, `header.nav`, `footer.closing` und 64 bis 120 px Rand; die App hat eine 64-rem-Spalte mit 228 px Rand und `div#app`.
+Wortlaut des Gates (Runde 3, 1440 und 390 wie angegeben):
+
+- `hero-fill` [1440, 390]: "the next section shows on the first screen: it starts at 505px on a 900px screen (the hero ends at 459px)". Die Startseite zeigt Kopf und Situationsliste auf einem Schirm, das ist gewollt.
+- `hero-screen` (Situationsliste) [1440]: "393px of the next section shows on the first screen (from 507px on a 900px screen): nothing below the hero shows at load (SR-1)". Gleiche Ursache.
+- `one-heading` [1440], zweimal: "the hero holds an h2 (1): its heading is the h1, and an h2 opens the next section (SR-5)" und "headings of two sections show whole on one screen". Das Einstufungsangebot hat eine eigene Überschrift im Kopf.
+- `cta` [1440, 390]: "the last section before the footer ends with no button". Der Abschnitt endet mit der Situationsliste, deren Zeilen selbst Knöpfe sind.
+- `container-edges` [1440], viermal: "the content of section 1 runs 228px from the left and 228px from the right (read from its outermost blocks: no .wrap): the margin is 64-120px at 1440px", ebenso Abschnitt 2, "section 3 runs 600px from the left and 600px from the right" (Fußzeile, 40-rem-Spalte, bewusst) und "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)".
+- `container` [1440, 390]: "no .wrap" (Klasse des Webseiten-Gerüsts).
+
+Einordnung mit Nachweis: Diese Befunde verlangen Webseiten-Gerüst (`.wrap`, `header.nav`, `footer.closing`, ein Abschnitt je Bildschirm). Die tatsächlichen Ränder der App sind gemessen und in Ordnung: bei 1440 beträgt der Rand der Startseite 228 px (die Spec legt eine 64-rem-Spalte fest, das Gate will 64 bis 120 px), bei 390 und 320 beträgt er 20 px.
+
+Messung bei 320 px über `?zeige=` (Playwright, hell und dunkel, alle 16 Bildschirme und Aufgabentypen): `scrollWidth` gleich `clientWidth` (320) überall, also kein Überlauf. Linker und rechter Rand der Spalte 20 px, mit einer Ausnahme: Sprechen hatte 6 px, weil der Aufnahmerahmen 14 px nach außen ragte. Behoben: der Rahmen ist jetzt ein Outline mit 2 px Abstand und liegt bei 16 px vom Rand; danach liegen alle Inhalte bei mindestens 20 px.
 
 Weitere WARN (nicht blockierend): `copy-headings`, `copy-buttons`, `copy-actions`, `section-gaps`, `skip-link`.
 
 ## Die Auslosung
 
-- Palette `white-link-blue`: weißes Blatt, blaue Tinte für das, was man tun soll (Heft und Kugelschreiber). Dunkelmodus invers, Aktion `#8aa4ff`.
+- Palette `white-link-blue`: weißes Blatt, blaue Tinte für das, was man tun soll (Heft und Kugelschreiber). Dunkelmodus invers, Aktion `#8aa8ff` (so in `tokens.css`).
 - Schrift `host`: Host Grotesk plus JetBrains Mono für Ziffern, selbst gehostet.
 - Radius `round`: 10 / 16 / 24 px.
 - Knöpfe `solid`: gefüllter Primärknopf, Sekundärknopf mit Rand, 48 px.
@@ -45,3 +54,7 @@ Die Screenshots liegen bewusst nicht im Repo, sondern in `C:\Users\gunna\AppData
 - Startseiten-Screenshots entstehen teils mitten im Eintritt (leicht ausgeblichen); der Eintritt selbst wurde über `hero-enter` im Gate geprüft.
 - Live-Prüfung nach Deploy steht aus.
 - Gate-Prüfung der per `?zeige=` geöffneten Bildschirme: nicht geprüft, das Gate sah nur die Startseite.
+
+## Hinweis zu den Verzichten
+
+Die Ziele der Verzichte in `waivers.json` sind konkrete DOM-Selektoren (zum Beispiel `div#app > main > footer.foot`). Ändert sich das DOM, greifen sie nicht mehr und die Befunde erscheinen wieder.

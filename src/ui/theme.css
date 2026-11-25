@@ -158,7 +158,7 @@ main[data-view="home"] {
 
 .situation .name {
   margin: 0;
-  font: var(--display-weight) 18px / 1.25 var(--font-display);
+  font: var(--display-weight) var(--t-h3) / 1.25 var(--font-display);
   overflow-wrap: anywhere;
 }
 
@@ -511,16 +511,12 @@ a {
 .speaking {
   display: grid;
   gap: var(--s-3);
-  /* Rand und Innenabstand ragen nach außen, damit die Knöpfe bündig bleiben */
-  width: calc(100% + (var(--s-3) + 2px) * 2);
-  margin: calc(var(--s-3) * -1 - 2px);
-  padding: var(--s-3);
-  border: 2px solid transparent;
   border-radius: var(--r-md);
 }
 
 .speaking.recording {
-  border-color: var(--action);
+  outline: 2px solid var(--action);
+  outline-offset: 2px;
 }
 
 .speaking.recording .hint {
