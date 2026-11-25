@@ -1,9 +1,9 @@
 import { situationCoverage } from '../engine/coverage';
 import type { AppState } from './useAppState';
 
-type Props = { app: AppState | null; onStart(focusSituationId?: string): void };
+type Props = { app: AppState | null; onStart(focusSituationId?: string): void; onDiagnose(): void };
 
-export function Home({ app, onStart }: Props) {
+export function Home({ app, onStart, onDiagnose }: Props) {
   const now = Date.now();
   return (
     <>
@@ -43,6 +43,11 @@ export function Home({ app, onStart }: Props) {
           </ul>
         </>
       )}
+      <footer class="foot">
+        <button type="button" class="link" onClick={onDiagnose}>
+          Diagnose
+        </button>
+      </footer>
     </>
   );
 }

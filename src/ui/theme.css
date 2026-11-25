@@ -490,3 +490,40 @@ summary:focus-visible {
     transition: none;
   }
 }
+
+/* Diagnose */
+
+.foot {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.diagnose {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.diagnose li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.15rem 1rem;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.diagnose .label {
+  font-weight: 600;
+}
+
+.diagnose .result {
+  grid-column: 1;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.diagnose button {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
