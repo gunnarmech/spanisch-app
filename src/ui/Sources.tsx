@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 import type { ErrorReport } from '../store/db';
+import { allPhotos } from './photos';
 import type { AppState } from './useAppState';
 
 const FREQ_URL = 'https://github.com/hermitdave/FrequencyWords';
@@ -83,6 +84,22 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
               der Asociación de Academias de la Lengua Española (ASALE).
             </span>
           </li>
+        </ul>
+      </section>
+
+      <section class="settings">
+        <h2>Fotos</h2>
+        <ul class="plain">
+          {allPhotos.map((p) => (
+            <li key={p.page}>
+              <span>
+                {p.alt}:{' '}
+                <a class="link" href={p.page} target="_blank" rel="noopener noreferrer">
+                  {p.author}, {p.license}
+                </a>
+              </span>
+            </li>
+          ))}
         </ul>
       </section>
 
