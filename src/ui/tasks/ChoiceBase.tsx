@@ -41,8 +41,8 @@ export function ChoiceBase({ question, options, correct, revealed, onAnswered, o
           const state = picked === null ? '' : o === correct ? 'right' : o === picked ? 'wrong' : 'rest';
           return (
             <li key={o}>
-              <button type="button" class={`option ${state}`} aria-disabled={picked !== null} onClick={() => pick(o)}>
-                <span class="key">{i + 1}</span>
+              <button type="button" class={`option surface ${state}`} aria-disabled={picked !== null} onClick={() => pick(o)}>
+                <span class="key num">{i + 1}</span>
                 <span>{o}</span>
               </button>
             </li>

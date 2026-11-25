@@ -49,6 +49,7 @@ export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
         <ul class="plain dialog">
           {item.lines.map((l, i) => (
             <li key={i} class={`speaker-${l.speaker}`}>
+              <span class="label speaker">{l.speaker}</span>
               <span class="spanish">{l.es}</span>
               {showDe && <span class="german">{l.de}</span>}
               <AudioButton url={urls[i]} />

@@ -163,7 +163,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
   return (
     <RoundEnvContext.Provider value={env}>
       <div class="progress" role="progressbar" aria-label="Fortschritt der Runde" aria-valuemin={0} aria-valuemax={100} aria-valuenow={percent}>
-        <div style={{ width: `${percent}%` }} />
+        <div style={{ transform: `scaleX(${percent / 100})` }} />
       </div>
       <Current key={index} task={task} item={item} onAnswered={(r) => void answered(task, r)} onDone={next} />
       <TaskTools

@@ -17,7 +17,7 @@ export function Choice({ task, item, onAnswered, onDone }: TaskProps) {
       question={
         <>
           <p class="ask">Was bedeutet das?</p>
-          <p class="spanish">{text.es}</p>
+          <p class="spanish big">{text.es}</p>
           <AudioButton url={url} primary />
         </>
       }

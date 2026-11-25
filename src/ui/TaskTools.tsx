@@ -39,7 +39,7 @@ export function TaskTools({ canKnow, onKnown, onReport }: Props) {
       </div>
       {open && (
         <form class="report" onSubmit={send}>
-          <label>
+          <label class="label">
             Was stimmt nicht?
             <textarea class="field" ref={text} rows={3} autoFocus />
           </label>

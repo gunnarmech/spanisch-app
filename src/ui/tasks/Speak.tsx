@@ -138,7 +138,7 @@ export function Speak(props: TaskProps) {
       <p class="ask">Sag das auf Spanisch.</p>
       <p class="german big">{text.de}</p>
       {(phase.name === 'ask' || phase.name === 'busy' || phase.name === 'retry') && (
-        <div class="speaking">
+        <div class={phase.name === 'busy' ? 'speaking recording' : 'speaking'}>
           {phase.name === 'retry' && (
             <>
               <p class="hint" role="status">
@@ -174,7 +174,7 @@ export function Speak(props: TaskProps) {
           <button type="button" class="btn btn--primary" onClick={() => assess('correct')}>
             klang gleich
           </button>
-          <button type="button" onClick={() => assess('wrong')}>
+          <button type="button" class="btn btn--secondary" onClick={() => assess('wrong')}>
             eher nicht
           </button>
         </div>

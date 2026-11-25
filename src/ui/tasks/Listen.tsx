@@ -43,7 +43,7 @@ export function Listen({ task, item, onAnswered, onDone }: TaskProps) {
       question={
         <>
           <p class="ask">Was bedeutet das?</p>
-          {url ? <AudioButton url={url} primary autoplay /> : <p class="spanish">{text.es}</p>}
+          {url ? <AudioButton url={url} primary autoplay /> : <p class="spanish big">{text.es}</p>}
         </>
       }
       options={options}
