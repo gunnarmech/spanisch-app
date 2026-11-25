@@ -22,7 +22,27 @@ export default defineConfig({
           { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml' },
         ],
       },
-      workbox: { globPatterns: ['**/*.{js,css,html,json,svg,png}'] },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,json,svg,png}'],
+        // Audio nicht vorab, sondern beim ersten Abspielen oder per prefetchSituation
+        globIgnores: ['audio/**'],
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.includes('/audio/') && url.pathname.endsWith('manifest.json'),
+            handler: 'StaleWhileRevalidate',
+            options: { cacheName: 'audio-manifest-v1' },
+          },
+          {
+            urlPattern: ({ url }) => url.pathname.includes('/audio/') && url.pathname.endsWith('.mp3'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'audio-v1',
+              rangeRequests: true,
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+        ],
+      },
     }),
   ],
   test: {
