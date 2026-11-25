@@ -8,6 +8,8 @@ export type Settings = {
   gistId?: string;
   voiceSpeedNew: 'slow' | 'normal';
   lastSync?: number;
+  /** Einstufung beim ersten Start angeboten und beendet oder übersprungen. */
+  placementDone?: boolean;
 };
 
 export type ErrorReport = { id: string; itemId: string; ts: number; text: string };

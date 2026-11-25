@@ -1,9 +1,17 @@
 import { situationCoverage } from '../engine/coverage';
+import { PlacementOffer } from './Placement';
 import type { AppState } from './useAppState';
 
-type Props = { app: AppState | null; onStart(focusSituationId?: string): void; onDiagnose(): void; onSettings(): void };
+type Props = {
+  app: AppState | null;
+  onStart(focusSituationId?: string): void;
+  onDiagnose(): void;
+  onSettings(): void;
+  onProgress?(): void;
+  onPlacement?(): void;
+};
 
-export function Home({ app, onStart, onDiagnose, onSettings }: Props) {
+export function Home({ app, onStart, onDiagnose, onSettings, onProgress, onPlacement }: Props) {
   const now = Date.now();
   return (
     <>
@@ -11,6 +19,7 @@ export function Home({ app, onStart, onDiagnose, onSettings }: Props) {
         <h1>Spanisch für Chile</h1>
         <p>Ein paar Minuten am Tag.</p>
       </header>
+      {app && onPlacement && <PlacementOffer app={app} onStart={onPlacement} />}
       {app && (
         <>
           <button type="button" class="primary start" onClick={() => onStart()}>
@@ -47,6 +56,11 @@ export function Home({ app, onStart, onDiagnose, onSettings }: Props) {
         <button type="button" class="link" onClick={onDiagnose}>
           Diagnose
         </button>
+        {app && onProgress && (
+          <button type="button" class="link" onClick={onProgress}>
+            Fortschritt
+          </button>
+        )}
         {app && (
           <button type="button" class="link" onClick={onSettings}>
             Einstellungen

@@ -4,7 +4,7 @@ import type { Situation, WordItem } from '../content/types';
 
 const KNOWN_THRESHOLD = 0.8;
 
-function isSure(s: CardState | undefined, now: number): boolean {
+export function isSure(s: CardState | undefined, now: number): boolean {
   return !!s && (s.known || retrievability(s, now) > KNOWN_THRESHOLD);
 }
 

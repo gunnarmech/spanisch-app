@@ -587,3 +587,21 @@ summary:focus-visible {
 .foot .link {
   margin: 0 0.6rem;
 }
+
+/* Fortschritt, Quellen, Einstufung */
+
+.plain {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.plain li {
+  margin: 0 0 0.5rem;
+}
+
+.placement-offer {
+  margin: 0 0 2rem;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
