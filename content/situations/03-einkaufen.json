@@ -22,7 +22,7 @@
           "de": "Ich fahre heute nach Santiago."
         }
       ],
-      "note": "Unregelmäßig: voy, vas, va, vamos, van. Mit a plus Infinitiv sagst du, was du gleich tust (siehe Grammatik).",
+      "note": "Unregelmäßig: voy, vas, va, vamos, van. Mit a plus Infinitiv sagst du, was du gleich tust (siehe Grammatik). Ustedes van steht in Lateinamerika für ihr und für Sie (Mehrzahl).",
       "freqRank": 128
     },
     {
@@ -121,7 +121,7 @@
       "examples": [
         {
           "es": "Voy al almacén por pan.",
-          "de": "Ich gehe im Almacén Brot holen."
+          "de": "Ich gehe zum Almacén, Brot holen."
         }
       ],
       "note": "Der almacén ist der kleine Laden an der Ecke mit Brot, Milch, Getränken und Dingen für den Alltag. Oft zahlt man dort bar.",
@@ -1023,7 +1023,7 @@
           "de": "Einen Pfirsich, bitte."
         }
       ],
-      "note": "In Lateinamerika sagt man meist durazno, nicht melocotón."
+      "note": "In Chile durazno, nicht melocotón."
     },
     {
       "id": "w-zanahoria",
@@ -1322,23 +1322,6 @@
       "freqRank": 1746
     },
     {
-      "id": "w-luca",
-      "kind": "word",
-      "es": "luca",
-      "de": "Tausender, tausend Pesos (umgangssprachlich)",
-      "forms": [
-        "luca",
-        "lucas"
-      ],
-      "examples": [
-        {
-          "es": "Son cinco lucas.",
-          "de": "Das macht fünftausend Pesos."
-        }
-      ],
-      "note": "Umgangssprachlich für tausend Pesos: cinco lucas sind 5000. Du musst es vor allem verstehen. Selbst sagst du lieber cinco mil."
-    },
-    {
       "id": "w-billete",
       "kind": "word",
       "es": "billete",
@@ -1353,7 +1336,7 @@
           "de": "Ein Schein über zwanzigtausend Pesos."
         }
       ],
-      "note": "Scheine gibt es zu mil, dos mil, cinco mil, diez mil und veinte mil Pesos.",
+      "note": "Scheine gibt es zu mil, dos mil, cinco mil, diez mil und veinte mil Pesos. Umgangssprachlich heißt 1.000 Pesos luca (cinco lucas = 5.000), das wirst du hören. Selbst sagst du lieber cinco mil.",
       "freqRank": 3981
     },
     {
@@ -2103,13 +2086,13 @@
       "id": "s-ustedes-van-super",
       "kind": "sentence",
       "es": "¿Ustedes van al supermercado?",
-      "de": "Fahren Sie in den Supermarkt?"
+      "de": "Geht ihr in den Supermarkt?"
     },
     {
       "id": "s-hay-mucha-fila",
       "kind": "sentence",
       "es": "Hay mucha fila.",
-      "de": "Es ist viel los an der Kasse (es gibt eine lange Schlange)."
+      "de": "Es gibt eine lange Schlange."
     },
     {
       "id": "s-puedo-probar-uva",
@@ -2201,7 +2184,7 @@
       "id": "g-este-ese",
       "kind": "grammar",
       "title": "este und ese",
-      "explanation": "Este zeigt auf etwas bei dir, ese auf etwas weiter weg oder beim anderen. Das Wort passt zum Geschlecht und zur Zahl: este kilo, esta bolsa, estos tomates, estas manzanas; ese kilo, esa bolsa, esos tomates, esas manzanas. Ohne Hauptwort nimmst du die männliche Form (Quiero este) oder esto und eso für etwas Unbenanntes.",
+      "explanation": "Este zeigt auf etwas bei dir, ese auf etwas weiter weg oder beim anderen. Das Wort passt zum Geschlecht und zur Zahl: este kilo, esta bolsa, estos tomates, estas manzanas; ese kilo, esa bolsa, esos tomates, esas manzanas. Ohne Hauptwort passt sich das Wort an die gemeinte Sache an: Quiero esta, Quiero esos. Für etwas Unbenanntes gibt es esto und eso.",
       "examples": [
         {
           "es": "Quiero este.",
@@ -2238,7 +2221,7 @@
           "es": "¿Cuánto cuesta ese?"
         },
         {
-          "de": "Ich möchte jene Tomaten.",
+          "de": "Ich möchte diese Tomaten da.",
           "es": "Quiero esos tomates."
         }
       ]
@@ -2247,7 +2230,7 @@
       "id": "g-zahlen-ueber-100",
       "kind": "grammar",
       "title": "Zahlen über 100 in Preisen",
-      "explanation": "Hunderter: cien (genau 100), sonst ciento: ciento veinte. Dann trescientos, cuatrocientos, seiscientos, ochocientos; unregelmäßig sind quinientos, setecientos, novecientos. Tausend ist mil und bleibt gleich: dos mil, diez mil. 1500 sagst du mil quinientos, 12.500 doce mil quinientos. Zwischen Hunderter und Rest steht kein y. In Chile liest man Preise so, immer gefolgt von pesos.",
+      "explanation": "Hunderter: cien (genau 100), sonst ciento: ciento veinte. Dann trescientos, cuatrocientos, seiscientos, ochocientos; unregelmäßig sind quinientos, setecientos, novecientos. Tausend ist mil und bleibt gleich: dos mil, diez mil. 1500 sagst du mil quinientos, 12.500 doce mil quinientos. Zwischen Hunderter und Rest steht kein y. Oft folgt pesos, im Alltag lässt man es auch weg: son tres mil quinientos.",
       "examples": [
         {
           "es": "Son trescientos pesos.",
@@ -2297,7 +2280,7 @@
       "id": "g-voy-a",
       "kind": "grammar",
       "title": "voy a: die nahe Zukunft",
-      "explanation": "Ir ist unregelmäßig: voy, vas, va, vamos, van. Mit a plus Ort heißt es gehen: Voy a la feria. A plus el wird al: voy al almacén. Mit a plus Infinitiv sagst du, was du gleich tust: Voy a pagar. ¿Vas a comprar fruta? Vamos a pagar. So redest du im Alltag über die nächste Zeit, ohne eine eigene Zukunftsform.",
+      "explanation": "Ir ist unregelmäßig: voy, vas, va, vamos, van. Mit a plus Ort heißt es gehen: Voy a la feria. A plus el wird al: voy al almacén. Mit a plus Infinitiv sagst du, was du gleich tust: Voy a pagar. ¿Vas a comprar fruta? Vamos a pagar. So redest du im Alltag über die nächste Zeit, die Alltagsform neben dem Futur.",
       "examples": [
         {
           "es": "Voy a pagar.",
@@ -2571,8 +2554,8 @@
         },
         {
           "speaker": "B",
-          "es": "Solo estoy mirando, gracias. ¿Hay jabón?",
-          "de": "Ich schaue nur, danke. Gibt es Seife?"
+          "es": "Busco jabón. ¿Hay aquí?",
+          "de": "Ich suche Seife. Gibt es hier welche?"
         },
         {
           "speaker": "A",

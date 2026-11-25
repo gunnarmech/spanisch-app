@@ -3299,50 +3299,6 @@
       "hash": "0678935f017542f706326a4bc82464cbf0171d2f"
     }
   ],
-  "w-luca": [
-    {
-      "voice": "cl-f",
-      "speed": "normal",
-      "hash": "0a36ee630e8d2dd9d24b4f88d077ac18126618ae"
-    },
-    {
-      "voice": "mx-m",
-      "speed": "normal",
-      "hash": "898a2d224509131a0964e911f3ce895786b404e9"
-    },
-    {
-      "voice": "cl-f",
-      "speed": "slow",
-      "hash": "3a2214935f44a7fd3ebd74b26f77efa2ebad655c"
-    },
-    {
-      "voice": "mx-m",
-      "speed": "slow",
-      "hash": "b091cd887fdca25008ff7103933d7bfccbea1441"
-    }
-  ],
-  "w-luca-ex1": [
-    {
-      "voice": "cl-m",
-      "speed": "normal",
-      "hash": "b3d198d7ce574e191cf8629e5c3225dd7d1211a3"
-    },
-    {
-      "voice": "co-m",
-      "speed": "normal",
-      "hash": "4f8d235790a740fc4c4685ef836022d58403d5ca"
-    },
-    {
-      "voice": "cl-m",
-      "speed": "slow",
-      "hash": "a0abcf6d8f77f34ab3b4aef65e43750f3e2a8d6c"
-    },
-    {
-      "voice": "co-m",
-      "speed": "slow",
-      "hash": "932e4fb58a72fcecaab49239e545948130f6cf52"
-    }
-  ],
   "w-billete": [
     {
       "voice": "cl-m",
@@ -7314,12 +7270,12 @@
     {
       "voice": "co-m",
       "speed": "normal",
-      "hash": "bc478076fb8b46fde0b6f6a8967814e741862215"
+      "hash": "56a873372acfe8fd0b2f6602017281dbbae87c52"
     },
     {
       "voice": "co-m",
       "speed": "fast",
-      "hash": "54208681e0d833f1f48e6ee98a3326d22f05cc72"
+      "hash": "3979bfd3f263323c235e764bd34a96c203dab07b"
     }
   ],
   "d-farmacia-tienda-3": [
