@@ -4,7 +4,7 @@ Stand 26.11.2026, Zweig `gestaltung`.
 
 ## Gate
 
-Letzte Zeile (Runde 3): `GATE: OPEN 10 (rounds used up)`. Die Runden endeten, weil die drei erlaubten Runden verbraucht sind; das Gate meldet "Stop fixing". Runde 2 stand bei `GATE: FAIL 10 (round 2 of 3)`, Runde 3 brachte dieselben zehn Befunde. Es lief `gate.mjs --done` nicht aufgerufen (bleibt beim Hauptthread mit Gunnars Satz).
+Letzte Zeile (Runde 3): `GATE: OPEN 10 (rounds used up)`. Die Runden endeten, weil die drei erlaubten Runden verbraucht sind; das Gate meldet "Stop fixing". Runde 2 stand bei `GATE: FAIL 10 (round 2 of 3)`, Runde 3 brachte dieselben zehn Befunde. `gate.mjs --done` wurde nicht aufgerufen (das bleibt beim Hauptthread mit Gunnars Satz).
 
 Runde 1: `GATE: FAIL 21 (round 1 of 3)`. Behoben, weil sie für eine App gelten:
 - `text-contrast`: Absatz im Einstufungsangebot in Tinte statt gedämpft (im Dunkelmodus 6,71:1, verlangt 7:1).
@@ -29,7 +29,7 @@ Wortlaut des Gates (Runde 3, 1440 und 390 wie angegeben):
 
 Einordnung mit Nachweis: Diese Befunde verlangen Webseiten-Gerüst (`.wrap`, `header.nav`, `footer.closing`, ein Abschnitt je Bildschirm). Die tatsächlichen Ränder der App sind gemessen und in Ordnung: bei 1440 beträgt der Rand der Startseite 228 px (die Spec legt eine 64-rem-Spalte fest, das Gate will 64 bis 120 px), bei 390 und 320 beträgt er 20 px.
 
-Messung bei 320 px über `?zeige=` (Playwright, hell und dunkel, alle 16 Bildschirme und Aufgabentypen): `scrollWidth` gleich `clientWidth` (320) überall, also kein Überlauf. Linker und rechter Rand der Spalte 20 px, mit einer Ausnahme: Sprechen hatte 6 px, weil der Aufnahmerahmen 14 px nach außen ragte. Behoben: der Rahmen ist jetzt ein Outline mit 2 px Abstand und liegt bei 16 px vom Rand; danach liegen alle Inhalte bei mindestens 20 px.
+Messung bei 320 px über `?zeige=` (Playwright, hell und dunkel, alle 16 Bildschirme und Aufgabentypen): `scrollWidth` gleich `clientWidth` (320) überall, also kein Überlauf. Linker und rechter Rand der Spalte 20 px, mit einer Ausnahme: Sprechen hatte 6 px, weil der Aufnahmerahmen 14 px nach außen ragte. Behoben: der Rahmen ist jetzt ein Outline mit 2 px Abstand und liegt bei 16 px vom Rand; Nachmessung Sprechen bei 320 px: `scrollWidth` 320 gleich `clientWidth` 320; Knopf links und rechts je 20 px vom Rand; Rahmen ruhend (kein Outline) 20 px, bei laufender Aufnahme liegt die Außenkante des Outlines links und rechts je 16 px vom Rand. Alle Inhalte liegen also bei mindestens 20 px, nur der Aufnahmerahmen als Zierde bei 16 px (Vorgabe: mindestens 16 px). Bei der ersten Fassung des Fixes war der Knopf dabei zu schmal geworden; mit `width: 100%` am Block ist er wieder volle Spaltenbreite.
 
 Weitere WARN (nicht blockierend): `copy-headings`, `copy-buttons`, `copy-actions`, `section-gaps`, `skip-link`.
 

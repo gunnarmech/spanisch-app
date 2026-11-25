@@ -511,6 +511,7 @@ a {
 .speaking {
   display: grid;
   gap: var(--s-3);
+  width: 100%;
   border-radius: var(--r-md);
 }
 
