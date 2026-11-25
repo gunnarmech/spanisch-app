@@ -90,6 +90,7 @@ export function TypeBox({ task, prompt, targets, audioKey, context, onAnswered, 
             </p>
           )}
           <input
+            class="field"
             type="text"
             lang="es"
             value={value}
@@ -101,7 +102,7 @@ export function TypeBox({ task, prompt, targets, audioKey, context, onAnswered, 
             autoComplete="off"
             aria-label="Deine Antwort auf Spanisch"
           />
-          <button type="submit" class="primary">
+          <button type="submit" class="btn btn--primary">
             Prüfen
           </button>
         </form>
@@ -118,7 +119,7 @@ export function TypeBox({ task, prompt, targets, audioKey, context, onAnswered, 
           <AudioButton url={url} primary autoplay />
           <button
             type="button"
-            class="primary"
+            class="btn btn--primary"
             data-primary
             onClick={() => onDone({ verdict: outcome.verdict, ms: outcome.ms, usedHint: outcome.usedHint })}
           >

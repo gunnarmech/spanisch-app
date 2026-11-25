@@ -40,7 +40,7 @@ export function PlacementOffer({ app, onStart }: { app: AppState; onStart(): voi
         Mit etwa 40 kurzen Fragen merkt sich die App, was du schon kannst, und fragt es später nicht mehr als Neues ab.
       </p>
       <div class="actions">
-        <button type="button" class="secondary" onClick={onStart}>
+        <button type="button" class="btn btn--secondary" onClick={onStart}>
           kurz einstufen
         </button>
         <button type="button" class="link" onClick={() => void app.updateSettings({ placementDone: true })}>

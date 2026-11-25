@@ -71,11 +71,11 @@ export function RoundEnd({ app, tasks, startCoverage, onExit, onAgain }: Props) 
       )}
       <div class="actions">
         {tasks.length > 0 && (
-          <button type="button" class="primary" data-primary onClick={onAgain}>
+          <button type="button" class="btn btn--primary" data-primary onClick={onAgain}>
             noch eine Runde
           </button>
         )}
-        <button type="button" class={tasks.length > 0 ? 'secondary' : 'primary'} onClick={onExit}>
+        <button type="button" class={tasks.length > 0 ? 'btn btn--secondary' : 'btn btn--primary'} onClick={onExit}>
           fertig
         </button>
       </div>

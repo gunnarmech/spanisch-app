@@ -22,7 +22,7 @@ export function Home({ app, onStart, onDiagnose, onSettings, onProgress, onPlace
       {app && onPlacement && <PlacementOffer app={app} onStart={onPlacement} />}
       {app && (
         <>
-          <button type="button" class="primary start" onClick={() => onStart()}>
+          <button type="button" class="btn btn--primary start" onClick={() => onStart()}>
             Heute lernen
           </button>
           <h2 class="section">Oder eine Situation wählen</h2>

@@ -90,7 +90,7 @@ export function Diagnose({ onBack }: { onBack(): void }) {
             <span class="label">{row.label}</span>
             <span class="result">{results[row.label] ?? row.text}</span>
             {row.run && (
-              <button type="button" class="secondary" disabled={busy !== null} onClick={() => start(row)}>
+              <button type="button" class="btn btn--secondary" disabled={busy !== null} onClick={() => start(row)}>
                 Starten
               </button>
             )}

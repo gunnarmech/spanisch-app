@@ -8,7 +8,7 @@ export function Intro({ task, item, onDone }: TaskProps) {
   const go = (
     <button
       type="button"
-      class="primary"
+      class="btn btn--primary"
       data-primary
       onClick={() => onDone({ verdict: 'correct', ms: 0, usedHint: false })}
     >

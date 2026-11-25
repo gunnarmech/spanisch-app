@@ -147,7 +147,7 @@ export function Speak(props: TaskProps) {
               <Missing target={text.es} missing={phase.missing} />
             </>
           )}
-          <button type="button" class="primary" data-primary disabled={phase.name === 'busy'} onClick={() => void speak()}>
+          <button type="button" class="btn btn--primary" data-primary disabled={phase.name === 'busy'} onClick={() => void speak()}>
             sprechen
           </button>
           {phase.name === 'busy' && <p class="hint" role="status">Ich höre zu.</p>}
@@ -159,19 +159,19 @@ export function Speak(props: TaskProps) {
           <AudioButton url={url} label="Original anhören" />
           {clipUrl && (
             <>
-              <button type="button" class="audio" onClick={() => void play(clipUrl)}>
+              <button type="button" class="btn btn--secondary" onClick={() => void play(clipUrl)}>
                 Deine Aufnahme anhören
               </button>
               <button
                 type="button"
-                class="audio"
+                class="btn btn--secondary"
                 onClick={() => void playSequence([url, clipUrl].filter((u): u is string => !!u))}
               >
                 beide anhören
               </button>
             </>
           )}
-          <button type="button" class="primary" onClick={() => assess('correct')}>
+          <button type="button" class="btn btn--primary" onClick={() => assess('correct')}>
             klang gleich
           </button>
           <button type="button" onClick={() => assess('wrong')}>
@@ -188,7 +188,7 @@ export function Speak(props: TaskProps) {
           <AudioButton url={url} primary autoplay />
           <button
             type="button"
-            class="primary"
+            class="btn btn--primary"
             data-primary
             onClick={() => {
               if (finished.current) return;

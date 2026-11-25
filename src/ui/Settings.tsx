@@ -75,6 +75,7 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
         </p>
         <label for="gist-token">GitHub-Token</label>
         <input
+          class="field"
           id="gist-token"
           type="password"
           autocomplete="off"
@@ -84,7 +85,7 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
           onBlur={() => void commitToken()}
         />
         <p class="german">Letzter Abgleich: {when(settings.lastSync)}</p>
-        <button type="button" class="secondary" disabled={busy} onClick={() => void syncClick()}>
+        <button type="button" class="btn btn--secondary" disabled={busy} onClick={() => void syncClick()}>
           jetzt abgleichen
         </button>
         {app.syncError && <p class="quiet">{app.syncError}</p>}
@@ -94,10 +95,10 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
       <section class="settings">
         <h2>Sicherung</h2>
         <div class="actions">
-          <button type="button" class="secondary" onClick={() => void download()}>
+          <button type="button" class="btn btn--secondary" onClick={() => void download()}>
             Export
           </button>
-          <label class="secondary filebutton">
+          <label class="btn btn--secondary filebutton">
             Import
             <input type="file" accept="application/json,.json" onChange={(e) => void upload(e)} />
           </label>

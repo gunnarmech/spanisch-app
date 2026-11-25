@@ -55,7 +55,7 @@ export function ChoiceBase({ question, options, correct, revealed, onAnswered, o
           {revealed}
           <button
             type="button"
-            class="primary"
+            class="btn btn--primary"
             data-primary
             onClick={() => onDone({ verdict: ok ? 'correct' : 'wrong', ms: ms.current, usedHint: false })}
           >

@@ -31,11 +31,11 @@ export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
         <p class="ask">{item.title}</p>
         <p class="german">Hör zu, ohne mitzulesen.</p>
         {available.length > 0 && (
-          <button type="button" class="primary" onClick={hearAll}>
+          <button type="button" class="btn btn--primary" onClick={hearAll}>
             Dialog anhören
           </button>
         )}
-        <button type="button" class="secondary" data-primary onClick={() => setPhase('text')}>
+        <button type="button" class="btn btn--secondary" data-primary onClick={() => setPhase('text')}>
           Text zeigen
         </button>
       </div>
@@ -58,7 +58,7 @@ export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
         <button type="button" class="link" onClick={() => setShowDe(!showDe)}>
           {showDe ? 'Übersetzung ausblenden' : 'Übersetzung einblenden'}
         </button>
-        <button type="button" class="primary" data-primary onClick={() => setPhase('lines')}>
+        <button type="button" class="btn btn--primary" data-primary onClick={() => setPhase('lines')}>
           Zeile für Zeile
         </button>
       </div>
@@ -75,7 +75,7 @@ export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
       <AudioButton url={urls[line]} primary autoplay />
       <button
         type="button"
-        class="primary"
+        class="btn btn--primary"
         data-primary
         onClick={() => (last ? done() : setLine(line + 1))}
       >

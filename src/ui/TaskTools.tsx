@@ -41,10 +41,10 @@ export function TaskTools({ canKnow, onKnown, onReport }: Props) {
         <form class="report" onSubmit={send}>
           <label>
             Was stimmt nicht?
-            <textarea ref={text} rows={3} autoFocus />
+            <textarea class="field" ref={text} rows={3} autoFocus />
           </label>
           <div class="tool-row">
-            <button type="submit" class="secondary">
+            <button type="submit" class="btn btn--secondary">
               Melden
             </button>
             <button type="button" class="link" onClick={() => setOpen(false)}>

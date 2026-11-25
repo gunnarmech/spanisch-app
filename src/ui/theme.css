@@ -7,7 +7,7 @@ main {
 h1 {
   margin: 0 0 0.5rem;
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 p {
@@ -22,21 +22,13 @@ h2 {
   margin: 0 0 0.75rem;
   font-family: var(--font-display);
   font-size: 1.35rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 button {
   font: inherit;
   color: inherit;
   cursor: pointer;
-}
-
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible,
-summary:focus-visible {
-  outline: 2px solid var(--action);
-  outline-offset: 2px;
 }
 
 /* Startseite */
@@ -57,8 +49,6 @@ summary:focus-visible {
 
 .start {
   width: 100%;
-  padding: 1.35rem 1rem;
-  font-size: 1.25rem;
 }
 
 .section {
@@ -98,7 +88,7 @@ summary:focus-visible {
 .situation .name {
   font-family: var(--font-display);
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .understand {
@@ -116,42 +106,6 @@ summary:focus-visible {
   display: block;
   height: 100%;
   background: var(--action);
-}
-
-/* Knöpfe */
-
-.primary,
-.secondary {
-  padding: 0.8rem 1.4rem;
-  border-radius: 3px;
-  border: 1px solid var(--action);
-  font-weight: 600;
-}
-
-.primary {
-  background: var(--action);
-  color: var(--bg);
-}
-
-.secondary {
-  background: none;
-  color: var(--action);
-}
-
-.link,
-.audio {
-  padding: 0.35rem 0;
-  border: 0;
-  background: none;
-  color: var(--muted);
-  font-size: 0.9rem;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.audio {
-  color: var(--action);
-  font-weight: 600;
 }
 
 /* Runde */
@@ -174,8 +128,8 @@ summary:focus-visible {
   justify-items: start;
 }
 
-.task > .primary,
-.feedback > .primary {
+.task > .btn--primary,
+.feedback > .btn--primary {
   width: 100%;
 }
 
@@ -238,7 +192,7 @@ a {
   font-size: 1.2rem;
 }
 
-.plain li > .audio {
+.plain li > .btn {
   justify-self: start;
 }
 
@@ -286,7 +240,7 @@ a {
 
 .option.right {
   border-left-color: var(--good);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .option.wrong {
@@ -307,7 +261,7 @@ a {
 
 .verdict {
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .verdict.good {
@@ -325,7 +279,7 @@ a {
 .solution mark {
   background: none;
   color: var(--ink);
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
@@ -337,16 +291,8 @@ a {
   width: 100%;
 }
 
-.typing input,
-.report textarea {
-  width: 100%;
-  padding: 0.8rem 0.75rem;
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  background: var(--surface);
-  color: var(--ink);
-  font: inherit;
-  font-size: 1.15rem;
+.typing .field {
+  font-size: var(--t-lead);
 }
 
 .hint {
@@ -419,10 +365,6 @@ a {
   font-size: 0.9rem;
 }
 
-.report textarea {
-  font-size: 1rem;
-}
-
 .leave {
   margin-top: 0.5rem;
 }
@@ -484,7 +426,7 @@ a {
 }
 
 .diagnose .label {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .diagnose .result {
@@ -507,17 +449,7 @@ a {
 .settings label {
   display: block;
   margin: 0.75rem 0 0.35rem;
-  font-weight: 600;
-}
-
-.settings input[type='password'] {
-  width: 100%;
-  padding: 0.6rem 0.7rem;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--surface);
-  color: var(--ink);
-  font: inherit;
+  font-weight: 500;
 }
 
 .settings input[type='range'] {
@@ -537,7 +469,7 @@ a {
 }
 
 .settings .filebutton {
-  display: inline-block;
+  display: inline-flex;
   margin: 0;
   cursor: pointer;
 }

@@ -99,7 +99,7 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
                 </li>
               ))}
             </ul>
-            <button type="button" class="secondary" onClick={() => void copy()}>
+            <button type="button" class="btn btn--secondary" onClick={() => void copy()}>
               als Text kopieren
             </button>
             {note && (
