@@ -14,6 +14,7 @@ import { Intro } from './tasks/Intro';
 import { isTyping, useKey } from './tasks/keys';
 import { Listen } from './tasks/Listen';
 import { Pressure } from './tasks/Pressure';
+import { Speak } from './tasks/Speak';
 import { Type } from './tasks/Type';
 import type { Answer, TaskProps } from './tasks/types';
 import type { AppState } from './useAppState';
@@ -34,8 +35,10 @@ function component(task: Task, item: Item): (p: TaskProps) => preact.JSX.Element
       return Listen;
     case 'choice':
       return item.kind === 'pair' ? Listen : Choice;
+    case 'speak':
+      return item.kind === 'pair' ? Listen : Speak;
     default:
-      // type und vorläufig speak; Hörpaare werden immer gehört, nie getippt
+      // Hörpaare werden immer gehört, nie getippt
       return item.kind === 'pair' ? Listen : Type;
   }
 }
