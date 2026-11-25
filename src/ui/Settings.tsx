@@ -1,5 +1,6 @@
 import { useState } from 'preact/hooks';
 import { exportBackup, importBackup } from '../store/backup';
+import { saveBackupFile } from '../store/exportFile';
 import type { AppState } from './useAppState';
 
 const TOKEN_URL = 'https://github.com/settings/tokens/new?scopes=gist&description=spanisch-app';
@@ -41,12 +42,7 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
 
   const download = async () => {
     const blob = await exportBackup(app.db);
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `spanisch-app-sicherung-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    await saveBackupFile(blob, `spanisch-app-sicherung-${new Date().toISOString().slice(0, 10)}.json`);
   };
 
   const upload = async (e: Event) => {
