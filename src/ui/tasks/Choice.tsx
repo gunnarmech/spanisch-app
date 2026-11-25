@@ -6,7 +6,7 @@ import { useRoundEnv } from './env';
 import { textOf, type TaskProps } from './types';
 
 /** Stufe 0: spanische Form mit Ton sehen, die deutsche Bedeutung wählen. */
-export function Choice({ task, item, onDone }: TaskProps) {
+export function Choice({ task, item, onAnswered, onDone }: TaskProps) {
   const env = useRoundEnv();
   const text = textOf(item);
   const [options] = useState(() => choiceOptions(item, env.situations, task.situationId));
@@ -23,6 +23,7 @@ export function Choice({ task, item, onDone }: TaskProps) {
       }
       options={options}
       correct={text.de}
+      onAnswered={onAnswered}
       onDone={onDone}
     />
   );

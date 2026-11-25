@@ -6,7 +6,15 @@ export type TaskResult =
   | { verdict: GradeResult['verdict']; ms: number; usedHint: boolean }
   | { known: true };
 
-export type TaskProps = { task: Task; item: Item; onDone(result: TaskResult): void };
+export type Answer = Exclude<TaskResult, { known: true }>;
+
+/** onAnswered meldet die Bewertung sofort beim Antworten (dort entsteht das Ereignis), onDone schaltet nur weiter. */
+export type TaskProps = {
+  task: Task;
+  item: Item;
+  onAnswered?(result: Answer): void;
+  onDone(result: TaskResult): void;
+};
 
 /** Spanisch, Deutsch und akzeptierte Varianten für Wort, Wendung und Satz. */
 export function textOf(item: Item): { es: string; de: string; accept: string[] } | null {

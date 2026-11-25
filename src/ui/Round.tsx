@@ -15,7 +15,7 @@ import { isTyping, useKey } from './tasks/keys';
 import { Listen } from './tasks/Listen';
 import { Pressure } from './tasks/Pressure';
 import { Type } from './tasks/Type';
-import type { TaskProps, TaskResult } from './tasks/types';
+import type { Answer, TaskProps } from './tasks/types';
 import type { AppState } from './useAppState';
 
 type Props = { app: AppState; focusSituationId?: string; onExit(): void; onAgain(): void };
@@ -95,21 +95,38 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     setIndex(next);
   };
 
-  const finish = async (task: Task, result: TaskResult) => {
-    if ('known' in result) {
-      skipped.current.add(task.cardId);
-      await app.record({ kind: 'known', cardId: task.cardId });
-    } else if (task.form === 'dialog') {
+  // Pro Aufgabe nur ein Weiterschalten oder "kann ich schon", auch bei doppeltem Tippen.
+  const locked = useRef<number | null>(null);
+  const take = () => {
+    if (locked.current === index) return false;
+    locked.current = index;
+    return true;
+  };
+
+  /** Das Ereignis entsteht beim Antworten, nicht erst beim Weiterschalten. */
+  const answered = async (task: Task, result: Answer) => {
+    if (task.form === 'intro') return;
+    if (task.form === 'dialog') {
       await app.record({ kind: 'heard', cardId: task.itemId });
-    } else if (task.form !== 'intro') {
-      const stage: Stage = app.states.get(task.cardId)?.stage ?? 0;
-      await app.record({
-        kind: 'review',
-        cardId: task.cardId,
-        rating: ratingFor(result.verdict, result.ms, stage, result.usedHint),
-        stage,
-      });
+      return;
     }
+    const stage: Stage = app.states.get(task.cardId)?.stage ?? 0;
+    await app.record({
+      kind: 'review',
+      cardId: task.cardId,
+      rating: ratingFor(result.verdict, result.ms, stage, result.usedHint),
+      stage,
+    });
+  };
+
+  const next = () => {
+    if (take()) advance(index);
+  };
+
+  const known = async (task: Task) => {
+    if (!take()) return;
+    skipped.current.add(task.cardId);
+    await app.record({ kind: 'known', cardId: task.cardId });
     advance(index);
   };
 
@@ -128,11 +145,11 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
       <div class="progress" role="progressbar" aria-label="Fortschritt der Runde" aria-valuemin={0} aria-valuemax={100} aria-valuenow={percent}>
         <div style={{ width: `${percent}%` }} />
       </div>
-      <Current key={index} task={task} item={item} onDone={(r) => void finish(task, r)} />
+      <Current key={index} task={task} item={item} onAnswered={(r) => void answered(task, r)} onDone={next} />
       <TaskTools
         key={`tools-${index}`}
         canKnow={task.form !== 'dialog'}
-        onKnown={() => void finish(task, { known: true })}
+        onKnown={() => void known(task)}
         onReport={(text) => app.report(task.itemId, text)}
       />
       <button type="button" class="link leave" onClick={onExit}>

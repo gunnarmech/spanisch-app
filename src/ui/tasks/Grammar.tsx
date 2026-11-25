@@ -4,7 +4,7 @@ import { TypeBox } from './TypeBox';
 import type { TaskProps } from './types';
 
 /** Grammatik-Häppchen: Erklärung (bei neuen offen, sonst einklappbar) und eine Übung zum Eintippen. */
-export function Grammar({ task, item, onDone }: TaskProps) {
+export function Grammar({ task, item, onAnswered, onDone }: TaskProps) {
   const env = useRoundEnv();
   if (item.kind !== 'grammar') return null;
   const n = Number(task.cardId.split('#')[1] ?? 0);
@@ -43,6 +43,7 @@ export function Grammar({ task, item, onDone }: TaskProps) {
           )}
         </section>
       }
+      onAnswered={onAnswered}
       onDone={onDone}
     />
   );

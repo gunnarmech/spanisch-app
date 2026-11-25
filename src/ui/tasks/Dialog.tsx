@@ -24,7 +24,7 @@ function playSequence(urls: string[]): () => void {
 }
 
 /** Dialog: erst nur Ton, dann Text einblendbar, dann Zeile für Zeile. Kein Rating. */
-export function Dialog({ task, item, onDone }: TaskProps) {
+export function Dialog({ task, item, onAnswered, onDone }: TaskProps) {
   const env = useRoundEnv();
   const [phase, setPhase] = useState<Phase>('hear');
   const [line, setLine] = useState(0);
@@ -39,7 +39,10 @@ export function Dialog({ task, item, onDone }: TaskProps) {
     stop.current?.();
     stop.current = playSequence(available);
   };
-  const done = () => onDone({ verdict: 'correct', ms: 0, usedHint: false });
+  const done = () => {
+    onAnswered?.({ verdict: 'correct', ms: 0, usedHint: false });
+    onDone({ verdict: 'correct', ms: 0, usedHint: false });
+  };
 
   if (phase === 'hear') {
     return (

@@ -4,7 +4,7 @@ import { gradeTyped, normalize, type GradeResult } from '../../engine/grade';
 import type { Task } from '../../engine/round';
 import { AudioButton } from './AudioButton';
 import { useRoundEnv } from './env';
-import type { TaskResult } from './types';
+import type { Answer, TaskResult } from './types';
 
 type Props = {
   task: Task;
@@ -14,6 +14,7 @@ type Props = {
   targets: string[];
   audioKey: string;
   context?: ComponentChildren;
+  onAnswered?(result: Answer): void;
   onDone(result: TaskResult): void;
 };
 
@@ -53,7 +54,7 @@ const MESSAGE: Record<GradeResult['verdict'], string> = {
 };
 
 /** Eintippen mit Rückmeldung. Bei falscher Eingabe erst ein Hinweis und ein zweiter Versuch, dann die Lösung. */
-export function TypeBox({ task, prompt, targets, audioKey, context, onDone }: Props) {
+export function TypeBox({ task, prompt, targets, audioKey, context, onAnswered, onDone }: Props) {
   const env = useRoundEnv();
   const start = useRef(Date.now());
   const [value, setValue] = useState('');
@@ -73,6 +74,7 @@ export function TypeBox({ task, prompt, targets, audioKey, context, onDone }: Pr
       return;
     }
     setOutcome({ verdict: r.verdict, marks: r.marks, usedHint: hint !== null, ms, target });
+    onAnswered?.({ verdict: r.verdict, ms, usedHint: hint !== null });
   };
 
   return (

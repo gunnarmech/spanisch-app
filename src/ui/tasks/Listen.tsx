@@ -10,7 +10,7 @@ function shuffled<T>(xs: T[]): T[] {
 }
 
 /** Hören ohne Text. Wörter und Sätze: Bedeutung wählen. Hörpaare: das gehörte Wort wählen. */
-export function Listen({ task, item, onDone }: TaskProps) {
+export function Listen({ task, item, onAnswered, onDone }: TaskProps) {
   const env = useRoundEnv();
   const [options] = useState(() =>
     item.kind === 'pair' ? shuffled(item.options) : choiceOptions(item, env.situations, task.situationId),
@@ -28,7 +28,8 @@ export function Listen({ task, item, onDone }: TaskProps) {
         }
         options={options}
         correct={item.es}
-        onDone={onDone}
+        onAnswered={onAnswered}
+      onDone={onDone}
       />
     );
   }
@@ -53,6 +54,7 @@ export function Listen({ task, item, onDone }: TaskProps) {
           {pressure && <AudioButton url={url} label="Nochmal anhören" />}
         </>
       }
+      onAnswered={onAnswered}
       onDone={onDone}
     />
   );

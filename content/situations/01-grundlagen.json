@@ -41,7 +41,6 @@
       "kind": "word",
       "es": "perdón",
       "de": "Entschuldigung",
-      "accept": ["perdon"],
       "forms": ["perdón"],
       "examples": [{ "es": "Perdón, no entiendo.", "de": "Entschuldigung, ich verstehe nicht." }]
     },
@@ -66,7 +65,7 @@
       "kind": "phrase",
       "es": "¿cómo estás?",
       "de": "wie geht es dir?",
-      "accept": ["cómo estás", "como estas"],
+      "accept": ["cómo estás"],
       "forms": ["cómo", "estás"],
       "examples": [{ "es": "Hola, ¿cómo estás?", "de": "Hallo, wie geht es dir?" }],
       "note": "Unter Freunden und Gleichaltrigen. Formell: ¿cómo está usted?"

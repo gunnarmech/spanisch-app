@@ -1,5 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/preact';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import { replay } from '../../src/engine/state';
 import { Home } from '../../src/ui/Home';
 import { Round } from '../../src/ui/Round';
 import { choiceOptions } from '../../src/ui/tasks/distractors';
@@ -127,5 +128,80 @@ describe('Antwortoptionen', () => {
   it('füllt bei zu wenigen Items aus allen Situationen auf', () => {
     const opts = choiceOptions(situation.items[0], [situation, other], 's1');
     expect(opts.filter((o) => ['eins', 'zwei', 'drei'].includes(o))).toHaveLength(2);
+  });
+});
+
+describe('Ereignisse beim Antworten', () => {
+  it('schreibt die Bewertung schon bei der Antwort, vor Weiter', async () => {
+    const app = fakeApp();
+    render(<Round app={app} onExit={noop} onAgain={noop} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
+    await screen.findByText('Was bedeutet das?');
+    fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+    await waitFor(() => expect(app.record).toHaveBeenCalledTimes(1));
+    expect(app.record).toHaveBeenCalledWith({ kind: 'review', cardId: 'w-hola', rating: 3, stage: 0 });
+  });
+
+  it('schreibt beim Beenden der Runde auf dem Rückmeldebildschirm nichts verloren', async () => {
+    const app = fakeApp();
+    const onExit = vi.fn();
+    render(<Round app={app} onExit={onExit} onAgain={noop} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
+    await screen.findByText('Was bedeutet das?');
+    fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Runde beenden' }));
+    expect(app.record).toHaveBeenCalledTimes(1);
+    expect(onExit).toHaveBeenCalled();
+  });
+
+  it('doppeltes Tippen auf Weiter schaltet nur einmal weiter und schreibt nur ein Ereignis', async () => {
+    const app = fakeApp();
+    render(<Round app={app} onExit={noop} onAgain={noop} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
+    await screen.findByText('Was bedeutet das?');
+    fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+    const next = screen.getByRole('button', { name: 'Weiter' });
+    fireEvent.click(next);
+    fireEvent.click(next);
+    expect(await screen.findByText('adiós')).toBeTruthy();
+    expect(screen.getByText('Neu')).toBeTruthy();
+    expect(app.record).toHaveBeenCalledTimes(1);
+  });
+
+  it('doppeltes Tippen auf kann ich schon schreibt genau ein Ereignis', async () => {
+    const app = fakeApp({
+      record: vi.fn(() => new Promise<void>((r) => setTimeout(r, 20))),
+    });
+    render(<Round app={app} onExit={noop} onAgain={noop} />);
+    await screen.findByText('hola');
+    const known = screen.getByRole('button', { name: 'kann ich schon' });
+    fireEvent.click(known);
+    fireEvent.click(known);
+    expect(await screen.findByText('adiós')).toBeTruthy();
+    expect(app.record).toHaveBeenCalledTimes(1);
+    expect(screen.getByText('Neu')).toBeTruthy();
+  });
+
+  it('eine Dialogaufgabe schreibt heard und kein review', async () => {
+    const validIds = new Set(['w-hola', 'w-adios']);
+    const states = replay(
+      [{ id: 'e1', cardId: 'w-hola', ts: Date.now() - 30 * 86_400_000, device: 'x', kind: 'review', rating: 3, stage: 0 }],
+      validIds,
+    );
+    const app = fakeApp({ states });
+    render(<Round app={app} onExit={noop} onAgain={noop} />);
+    for (let i = 0; i < 3; i++) {
+      if (screen.queryByRole('button', { name: 'Text zeigen' })) break;
+      fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+      await waitFor(() => expect(app.record).toHaveBeenCalledTimes(i + 1));
+      await new Promise((r) => setTimeout(r, 0));
+    }
+    fireEvent.click(await screen.findByRole('button', { name: 'Text zeigen' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Zeile für Zeile' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Fertig' }));
+    await waitFor(() => expect(app.record).toHaveBeenCalledWith({ kind: 'heard', cardId: 'd-1' }));
+    const kinds = app.record.mock.calls.map((c) => (c[0] as { kind: string }).kind);
+    expect(kinds).not.toContain('review');
+    expect(kinds.filter((k) => k === 'heard')).toHaveLength(1);
   });
 });

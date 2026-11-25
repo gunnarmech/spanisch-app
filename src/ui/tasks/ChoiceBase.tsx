@@ -1,7 +1,7 @@
 import type { ComponentChildren } from 'preact';
 import { useRef, useState } from 'preact/hooks';
 import { isTyping, useKey } from './keys';
-import type { TaskResult } from './types';
+import type { Answer, TaskResult } from './types';
 
 type Props = {
   question: ComponentChildren;
@@ -9,11 +9,12 @@ type Props = {
   correct: string;
   /** Wird nach der Antwort gezeigt, zum Beispiel die spanische Form. */
   revealed?: ComponentChildren;
+  onAnswered?(result: Answer): void;
   onDone(result: TaskResult): void;
 };
 
 /** Auswahl aus Antworten per Klick oder Ziffertaste. Falsch gibt es hier ohne zweiten Versuch. */
-export function ChoiceBase({ question, options, correct, revealed, onDone }: Props) {
+export function ChoiceBase({ question, options, correct, revealed, onAnswered, onDone }: Props) {
   const start = useRef(Date.now());
   const ms = useRef(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -23,6 +24,7 @@ export function ChoiceBase({ question, options, correct, revealed, onDone }: Pro
     ms.current = Date.now() - start.current;
     (document.activeElement as HTMLElement | null)?.blur();
     setPicked(o);
+    onAnswered?.({ verdict: o === correct ? 'correct' : 'wrong', ms: ms.current, usedHint: false });
   };
   useKey((e) => {
     if (isTyping(e) || e.repeat) return;
