@@ -1,0 +1,3153 @@
+{
+  "id": "02-cafe",
+  "order": 2,
+  "title": "Café und Restaurant",
+  "items": [
+    {
+      "id": "w-cafe",
+      "kind": "word",
+      "es": "café",
+      "de": "Kaffee",
+      "forms": [
+        "café",
+        "cafés"
+      ],
+      "examples": [
+        {
+          "es": "Un café, por favor.",
+          "de": "Einen Kaffee, bitte."
+        }
+      ],
+      "note": "In einfachen Lokalen ist ein café oft Pulverkaffee. Frisch gebrühten bekommst du in einer cafetería.",
+      "freqRank": 617
+    },
+    {
+      "id": "w-leche",
+      "kind": "word",
+      "es": "leche",
+      "de": "Milch",
+      "forms": [
+        "leche"
+      ],
+      "examples": [
+        {
+          "es": "Un café con leche, por favor.",
+          "de": "Einen Milchkaffee, bitte."
+        }
+      ],
+      "freqRank": 1495
+    },
+    {
+      "id": "p-cafe-con-leche",
+      "kind": "phrase",
+      "es": "café con leche",
+      "de": "Milchkaffee",
+      "forms": [
+        "café con leche"
+      ],
+      "examples": [
+        {
+          "es": "Un café con leche, por favor.",
+          "de": "Einen Milchkaffee, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-te",
+      "kind": "word",
+      "es": "té",
+      "de": "Tee",
+      "forms": [
+        "té",
+        "tés"
+      ],
+      "examples": [
+        {
+          "es": "Un té, por favor.",
+          "de": "Einen Tee, bitte."
+        }
+      ],
+      "note": "Mit Akzent: Tee. Ohne Akzent (te) heißt es dich.",
+      "freqRank": 1127
+    },
+    {
+      "id": "w-agua",
+      "kind": "word",
+      "es": "agua",
+      "de": "Wasser",
+      "forms": [
+        "agua",
+        "aguas"
+      ],
+      "examples": [
+        {
+          "es": "Agua, por favor.",
+          "de": "Wasser, bitte."
+        }
+      ],
+      "note": "Weiblich, aber mit el: el agua.",
+      "freqRank": 358
+    },
+    {
+      "id": "w-limon",
+      "kind": "word",
+      "es": "limón",
+      "de": "Zitrone",
+      "forms": [
+        "limón",
+        "limones"
+      ],
+      "examples": [
+        {
+          "es": "Agua con limón, por favor.",
+          "de": "Wasser mit Zitrone, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-sin",
+      "kind": "word",
+      "es": "sin",
+      "de": "ohne",
+      "forms": [
+        "sin"
+      ],
+      "examples": [
+        {
+          "es": "Un té sin limón.",
+          "de": "Einen Tee ohne Zitrone."
+        }
+      ],
+      "freqRank": 115
+    },
+    {
+      "id": "p-con-gas",
+      "kind": "phrase",
+      "es": "con gas",
+      "de": "mit Kohlensäure",
+      "forms": [
+        "con gas",
+        "gas"
+      ],
+      "examples": [
+        {
+          "es": "Agua con gas, por favor.",
+          "de": "Wasser mit Kohlensäure, bitte."
+        }
+      ]
+    },
+    {
+      "id": "p-sin-gas",
+      "kind": "phrase",
+      "es": "sin gas",
+      "de": "ohne Kohlensäure",
+      "forms": [
+        "sin gas"
+      ],
+      "examples": [
+        {
+          "es": "Agua sin gas, por favor.",
+          "de": "Wasser ohne Kohlensäure, bitte."
+        }
+      ],
+      "note": "Stilles Wasser bestellst du so: agua sin gas."
+    },
+    {
+      "id": "w-azucar",
+      "kind": "word",
+      "es": "azúcar",
+      "de": "Zucker",
+      "forms": [
+        "azúcar"
+      ],
+      "examples": [
+        {
+          "es": "Un café con azúcar.",
+          "de": "Einen Kaffee mit Zucker."
+        }
+      ],
+      "freqRank": 2630
+    },
+    {
+      "id": "w-sal",
+      "kind": "word",
+      "es": "sal",
+      "de": "Salz",
+      "forms": [
+        "sal"
+      ],
+      "examples": [
+        {
+          "es": "Un poco de sal, por favor.",
+          "de": "Ein bisschen Salz, bitte."
+        }
+      ],
+      "freqRank": 881
+    },
+    {
+      "id": "w-hielo",
+      "kind": "word",
+      "es": "hielo",
+      "de": "Eis (Eiswürfel)",
+      "forms": [
+        "hielo"
+      ],
+      "examples": [
+        {
+          "es": "Agua con hielo, por favor.",
+          "de": "Wasser mit Eis, bitte."
+        }
+      ],
+      "freqRank": 1553
+    },
+    {
+      "id": "w-naranja",
+      "kind": "word",
+      "es": "naranja",
+      "de": "Orange",
+      "forms": [
+        "naranja",
+        "naranjas"
+      ],
+      "examples": [
+        {
+          "es": "Una naranja, por favor.",
+          "de": "Eine Orange, bitte."
+        }
+      ],
+      "freqRank": 4068
+    },
+    {
+      "id": "w-jugo",
+      "kind": "word",
+      "es": "jugo",
+      "de": "Saft",
+      "forms": [
+        "jugo",
+        "jugos"
+      ],
+      "examples": [
+        {
+          "es": "Un jugo de naranja, por favor.",
+          "de": "Einen Orangensaft, bitte."
+        }
+      ],
+      "note": "In ganz Lateinamerika jugo, nie zumo.",
+      "freqRank": 4248
+    },
+    {
+      "id": "w-natural",
+      "kind": "word",
+      "es": "natural",
+      "de": "frisch gepresst, natürlich",
+      "forms": [
+        "natural",
+        "naturales"
+      ],
+      "examples": [
+        {
+          "es": "Un jugo natural, por favor.",
+          "de": "Einen frisch gepressten Saft, bitte."
+        }
+      ],
+      "note": "Jugo natural ist frisch gepresster Saft, im Gegensatz zu Saft aus dem Karton oder aus Pulver.",
+      "freqRank": 1830
+    },
+    {
+      "id": "w-bebida",
+      "kind": "word",
+      "es": "bebida",
+      "de": "Getränk, Limonade",
+      "forms": [
+        "bebida",
+        "bebidas"
+      ],
+      "examples": [
+        {
+          "es": "Una bebida, por favor.",
+          "de": "Eine Limo, bitte."
+        }
+      ],
+      "note": "In Chile ist bebida oft ein Erfrischungsgetränk wie Cola oder Fanta.",
+      "chile": {
+        "note": "In Chile bezeichnet bebida vor allem Limonade und Cola.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. bebida, https://www.asale.org/damer/bebida"
+      },
+      "freqRank": 2169
+    },
+    {
+      "id": "w-cerveza",
+      "kind": "word",
+      "es": "cerveza",
+      "de": "Bier",
+      "forms": [
+        "cerveza",
+        "cervezas"
+      ],
+      "examples": [
+        {
+          "es": "Una cerveza, por favor.",
+          "de": "Ein Bier, bitte."
+        }
+      ],
+      "freqRank": 1075
+    },
+    {
+      "id": "w-copa",
+      "kind": "word",
+      "es": "copa",
+      "de": "Glas (mit Stiel)",
+      "forms": [
+        "copa",
+        "copas"
+      ],
+      "examples": [
+        {
+          "es": "Una copa, por favor.",
+          "de": "Ein Glas, bitte."
+        }
+      ],
+      "freqRank": 1464
+    },
+    {
+      "id": "w-vino",
+      "kind": "word",
+      "es": "vino",
+      "de": "Wein",
+      "forms": [
+        "vino",
+        "vinos"
+      ],
+      "examples": [
+        {
+          "es": "Una copa de vino, por favor.",
+          "de": "Ein Glas Wein, bitte."
+        }
+      ],
+      "freqRank": 489
+    },
+    {
+      "id": "w-vaso",
+      "kind": "word",
+      "es": "vaso",
+      "de": "Glas (Trinkglas)",
+      "forms": [
+        "vaso",
+        "vasos"
+      ],
+      "examples": [
+        {
+          "es": "Un vaso de jugo, por favor.",
+          "de": "Ein Glas Saft, bitte."
+        }
+      ],
+      "freqRank": 2522
+    },
+    {
+      "id": "w-taza",
+      "kind": "word",
+      "es": "taza",
+      "de": "Tasse",
+      "forms": [
+        "taza",
+        "tazas"
+      ],
+      "examples": [
+        {
+          "es": "Una taza de té, por favor.",
+          "de": "Eine Tasse Tee, bitte."
+        }
+      ],
+      "freqRank": 2443
+    },
+    {
+      "id": "w-botella",
+      "kind": "word",
+      "es": "botella",
+      "de": "Flasche",
+      "forms": [
+        "botella",
+        "botellas"
+      ],
+      "examples": [
+        {
+          "es": "Una botella de agua, por favor.",
+          "de": "Eine Flasche Wasser, bitte."
+        }
+      ],
+      "freqRank": 1657
+    },
+    {
+      "id": "w-querer",
+      "kind": "word",
+      "es": "querer",
+      "de": "wollen, mögen",
+      "forms": [
+        "querer",
+        "quiero",
+        "quieres",
+        "quiere",
+        "quieren",
+        "queremos"
+      ],
+      "examples": [
+        {
+          "es": "Quiero un café, por favor.",
+          "de": "Ich möchte einen Kaffee, bitte."
+        },
+        {
+          "es": "¿Quieres un té?",
+          "de": "Möchtest du einen Tee?"
+        }
+      ],
+      "note": "Quiero ist beim Bestellen in Chile normal und nicht unhöflich, wenn por favor dabei ist. ¿Quieres...? sagst du Freunden, ¿quiere...? Fremden.",
+      "freqRank": 1557
+    },
+    {
+      "id": "w-poder",
+      "kind": "word",
+      "es": "poder",
+      "de": "können, dürfen",
+      "forms": [
+        "poder",
+        "puedo",
+        "puedes",
+        "puede",
+        "pueden",
+        "podemos"
+      ],
+      "examples": [
+        {
+          "es": "¿Puede hablar más despacio, por favor?",
+          "de": "Können Sie bitte langsamer sprechen?"
+        },
+        {
+          "es": "¿Puedo hablar con usted?",
+          "de": "Kann ich mit Ihnen sprechen?"
+        }
+      ],
+      "note": "Der Stamm wechselt: puedo, puedes, puede, pueden. Bei podemos bleibt das o.",
+      "freqRank": 362
+    },
+    {
+      "id": "p-me-gustaria",
+      "kind": "phrase",
+      "es": "me gustaría",
+      "de": "ich möchte, ich hätte gern",
+      "forms": [
+        "me gustaría",
+        "gustaría"
+      ],
+      "examples": [
+        {
+          "es": "Me gustaría un té, por favor.",
+          "de": "Ich hätte gern einen Tee, bitte."
+        }
+      ],
+      "note": "Weicher als quiero. Beim Bestellen sind beide richtig."
+    },
+    {
+      "id": "w-dar",
+      "kind": "word",
+      "es": "dar",
+      "de": "geben",
+      "forms": [
+        "dar",
+        "doy",
+        "das",
+        "da",
+        "dan",
+        "damos"
+      ],
+      "examples": [
+        {
+          "es": "¿Me da un té, por favor?",
+          "de": "Geben Sie mir bitte einen Tee?"
+        }
+      ],
+      "note": "Unregelmäßig nur in der ich-Form: doy.",
+      "freqRank": 453
+    },
+    {
+      "id": "p-me-da",
+      "kind": "phrase",
+      "es": "¿me da...?",
+      "de": "geben Sie mir ...?",
+      "forms": [
+        "me da"
+      ],
+      "examples": [
+        {
+          "es": "¿Me da una cerveza?",
+          "de": "Geben Sie mir ein Bier?"
+        }
+      ],
+      "note": "Die übliche höfliche Frage an der Theke. Dahinter steht, was du möchtest, am Ende por favor."
+    },
+    {
+      "id": "w-pedir",
+      "kind": "word",
+      "es": "pedir",
+      "de": "bestellen, bitten um",
+      "forms": [
+        "pedir",
+        "pido",
+        "pides",
+        "pide",
+        "piden",
+        "pedimos"
+      ],
+      "examples": [
+        {
+          "es": "Pido un jugo y un café.",
+          "de": "Ich bestelle einen Saft und einen Kaffee."
+        }
+      ],
+      "note": "Der Stamm wechselt: pido, pides, pide, piden.",
+      "freqRank": 1146
+    },
+    {
+      "id": "p-que-desea",
+      "kind": "phrase",
+      "es": "¿qué desea?",
+      "de": "was darf es sein?",
+      "forms": [
+        "qué",
+        "desea",
+        "desean"
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, ¿qué desea?",
+          "de": "Guten Morgen, was darf es sein?"
+        }
+      ],
+      "note": "Das fragt dich die Bedienung (usted). Bei mehreren Gästen: ¿qué desean?"
+    },
+    {
+      "id": "w-tomar",
+      "kind": "word",
+      "es": "tomar",
+      "de": "trinken, nehmen",
+      "forms": [
+        "tomar",
+        "tomo",
+        "tomas",
+        "toma",
+        "toman",
+        "tomamos"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué quiere tomar?",
+          "de": "Was möchten Sie trinken?"
+        }
+      ],
+      "note": "Bei Getränken ist tomar das übliche Verb. Auch für Mahlzeiten: tomar once.",
+      "freqRank": 387
+    },
+    {
+      "id": "w-traer",
+      "kind": "word",
+      "es": "traer",
+      "de": "bringen",
+      "forms": [
+        "traer",
+        "trae",
+        "traen",
+        "traigo"
+      ],
+      "examples": [
+        {
+          "es": "¿Me trae un té, por favor?",
+          "de": "Bringen Sie mir bitte einen Tee?"
+        }
+      ],
+      "freqRank": 1297
+    },
+    {
+      "id": "w-carta",
+      "kind": "word",
+      "es": "carta",
+      "de": "Speisekarte",
+      "forms": [
+        "carta",
+        "cartas"
+      ],
+      "examples": [
+        {
+          "es": "¿Me trae la carta, por favor?",
+          "de": "Bringen Sie mir bitte die Karte?"
+        }
+      ],
+      "note": "Die Speisekarte heißt carta. Menú ist eher ein festes Menü.",
+      "freqRank": 832
+    },
+    {
+      "id": "p-aqui-tiene",
+      "kind": "phrase",
+      "es": "aquí tiene",
+      "de": "bitte sehr (beim Reichen)",
+      "forms": [
+        "aquí tiene"
+      ],
+      "examples": [
+        {
+          "es": "Aquí tiene la carta.",
+          "de": "Bitte sehr, hier ist die Karte."
+        }
+      ],
+      "note": "Sagt man beim Überreichen. Du selbst sagst es beim Bezahlen."
+    },
+    {
+      "id": "w-momento",
+      "kind": "word",
+      "es": "momento",
+      "de": "Moment",
+      "forms": [
+        "momento"
+      ],
+      "examples": [
+        {
+          "es": "Un momento, por favor.",
+          "de": "Einen Moment, bitte."
+        }
+      ],
+      "freqRank": 167
+    },
+    {
+      "id": "p-con-gusto",
+      "kind": "phrase",
+      "es": "con gusto",
+      "de": "gern, sehr gern",
+      "forms": [
+        "con gusto"
+      ],
+      "examples": [
+        {
+          "es": "¿Me trae un jugo? Con gusto.",
+          "de": "Bringen Sie mir einen Saft? Sehr gern."
+        }
+      ],
+      "note": "Die freundliche Antwort der Bedienung auf deine Bitte."
+    },
+    {
+      "id": "w-listo",
+      "kind": "word",
+      "es": "listo",
+      "de": "fertig, alles klar",
+      "forms": [
+        "listo",
+        "lista"
+      ],
+      "examples": [
+        {
+          "es": "¡Listo, gracias!",
+          "de": "Alles klar, danke!"
+        }
+      ],
+      "note": "In Chile sagt man listo zur Bestätigung, wenn etwas fertig ist oder klar geht.",
+      "freqRank": 446
+    },
+    {
+      "id": "w-pagar",
+      "kind": "word",
+      "es": "pagar",
+      "de": "bezahlen",
+      "forms": [
+        "pagar",
+        "pago",
+        "pagas",
+        "paga",
+        "pagan",
+        "pagamos"
+      ],
+      "examples": [
+        {
+          "es": "Pago yo, gracias.",
+          "de": "Ich zahle, danke."
+        }
+      ],
+      "freqRank": 775
+    },
+    {
+      "id": "w-llevar",
+      "kind": "word",
+      "es": "llevar",
+      "de": "mitnehmen, tragen; enthalten",
+      "forms": [
+        "llevar",
+        "llevo",
+        "llevas",
+        "lleva",
+        "llevan"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué lleva esto?",
+          "de": "Was ist da drin?"
+        }
+      ],
+      "note": "Bei Speisen heißt lleva auch: enthält. ¿Lleva maní? fragt, ob Erdnüsse drin sind.",
+      "freqRank": 602
+    },
+    {
+      "id": "w-mesa",
+      "kind": "word",
+      "es": "mesa",
+      "de": "Tisch",
+      "forms": [
+        "mesa",
+        "mesas"
+      ],
+      "examples": [
+        {
+          "es": "Una mesa, por favor.",
+          "de": "Einen Tisch, bitte."
+        }
+      ],
+      "freqRank": 828
+    },
+    {
+      "id": "w-para",
+      "kind": "word",
+      "es": "para",
+      "de": "für, um zu",
+      "forms": [
+        "para"
+      ],
+      "examples": [
+        {
+          "es": "Una mesa para dos.",
+          "de": "Ein Tisch für zwei."
+        }
+      ],
+      "freqRank": 20
+    },
+    {
+      "id": "p-para-llevar",
+      "kind": "phrase",
+      "es": "para llevar",
+      "de": "zum Mitnehmen",
+      "forms": [
+        "para llevar"
+      ],
+      "examples": [
+        {
+          "es": "Un café para llevar, por favor.",
+          "de": "Einen Kaffee zum Mitnehmen, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-comer",
+      "kind": "word",
+      "es": "comer",
+      "de": "essen",
+      "forms": [
+        "comer",
+        "como",
+        "comes",
+        "come",
+        "comen",
+        "comemos"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué quieres comer?",
+          "de": "Was möchtest du essen?"
+        }
+      ],
+      "note": "Ohne Akzent heißt como: ich esse. Mit Akzent (cómo) bedeutet es wie.",
+      "freqRank": 488
+    },
+    {
+      "id": "p-para-comer-aqui",
+      "kind": "phrase",
+      "es": "para comer aquí",
+      "de": "zum Hieressen",
+      "forms": [
+        "para comer aquí"
+      ],
+      "examples": [
+        {
+          "es": "¿Para comer aquí o para llevar?",
+          "de": "Zum Hieressen oder zum Mitnehmen?"
+        }
+      ],
+      "note": "Diese Frage kommt an der Kasse. Antwort: para comer aquí oder para llevar."
+    },
+    {
+      "id": "w-o",
+      "kind": "word",
+      "es": "o",
+      "de": "oder",
+      "forms": [
+        "o",
+        "u"
+      ],
+      "examples": [
+        {
+          "es": "¿Café o té?",
+          "de": "Kaffee oder Tee?"
+        }
+      ],
+      "note": "Vor einem Wort mit o am Anfang wird daraus u.",
+      "freqRank": 61
+    },
+    {
+      "id": "w-algo",
+      "kind": "word",
+      "es": "algo",
+      "de": "etwas",
+      "forms": [
+        "algo"
+      ],
+      "examples": [
+        {
+          "es": "¿Quiere algo más?",
+          "de": "Möchten Sie noch etwas?"
+        }
+      ],
+      "freqRank": 48
+    },
+    {
+      "id": "p-algo-mas",
+      "kind": "phrase",
+      "es": "¿algo más?",
+      "de": "sonst noch etwas?",
+      "forms": [
+        "algo más"
+      ],
+      "examples": [
+        {
+          "es": "¿Algo más? No, gracias.",
+          "de": "Sonst noch etwas? Nein, danke."
+        }
+      ]
+    },
+    {
+      "id": "p-eso-es-todo",
+      "kind": "phrase",
+      "es": "eso es todo",
+      "de": "das ist alles",
+      "forms": [
+        "eso es todo",
+        "eso",
+        "todo"
+      ],
+      "examples": [
+        {
+          "es": "Eso es todo, gracias.",
+          "de": "Das ist alles, danke."
+        }
+      ]
+    },
+    {
+      "id": "w-afuera",
+      "kind": "word",
+      "es": "afuera",
+      "de": "draußen",
+      "forms": [
+        "afuera"
+      ],
+      "examples": [
+        {
+          "es": "Afuera, por favor.",
+          "de": "Draußen, bitte."
+        }
+      ],
+      "freqRank": 620
+    },
+    {
+      "id": "w-adentro",
+      "kind": "word",
+      "es": "adentro",
+      "de": "drinnen",
+      "forms": [
+        "adentro"
+      ],
+      "examples": [
+        {
+          "es": "¿Adentro o afuera?",
+          "de": "Drinnen oder draußen?"
+        }
+      ],
+      "freqRank": 1027
+    },
+    {
+      "id": "w-restaurante",
+      "kind": "word",
+      "es": "restaurante",
+      "de": "Restaurant",
+      "forms": [
+        "restaurante",
+        "restaurantes"
+      ],
+      "examples": [
+        {
+          "es": "El restaurante está aquí.",
+          "de": "Das Restaurant ist hier."
+        }
+      ],
+      "freqRank": 1488
+    },
+    {
+      "id": "w-cafeteria",
+      "kind": "word",
+      "es": "cafetería",
+      "de": "Café (das Lokal)",
+      "forms": [
+        "cafetería",
+        "cafeterías"
+      ],
+      "examples": [
+        {
+          "es": "La cafetería está en Santiago.",
+          "de": "Das Café ist in Santiago."
+        }
+      ],
+      "note": "Das Lokal heißt cafetería, das Getränk café.",
+      "freqRank": 4574
+    },
+    {
+      "id": "w-garzon",
+      "kind": "word",
+      "es": "garzón",
+      "de": "Kellner",
+      "forms": [
+        "garzón",
+        "garzona",
+        "garzones"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, garzón.",
+          "de": "Entschuldigung, Herr Ober."
+        }
+      ],
+      "note": "In Chile heißt der Kellner garzón, die Kellnerin garzona. Man ruft ihn mit disculpe. In Mexiko hörst du mesero, in Spanien camarero.",
+      "chile": {
+        "note": "In Chile heißt der Kellner garzón (vom französischen garçon).",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. garzón, https://www.asale.org/damer/garzón"
+      }
+    },
+    {
+      "id": "w-recomendar",
+      "kind": "word",
+      "es": "recomendar",
+      "de": "empfehlen",
+      "forms": [
+        "recomendar",
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomiendan"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué me recomienda?",
+          "de": "Was empfehlen Sie mir?"
+        }
+      ],
+      "note": "Der Stamm wechselt: recomiendo, recomienda."
+    },
+    {
+      "id": "p-que-me-recomienda",
+      "kind": "phrase",
+      "es": "¿qué me recomienda?",
+      "de": "was empfehlen Sie mir?",
+      "forms": [
+        "qué me recomienda"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, ¿qué me recomienda?",
+          "de": "Entschuldigung, was empfehlen Sie mir?"
+        }
+      ],
+      "note": "Die beste Frage, wenn du die Karte nicht verstehst. Unter Freunden: ¿qué me recomiendas?"
+    },
+    {
+      "id": "w-otro",
+      "kind": "word",
+      "es": "otro",
+      "de": "ein anderer, noch ein",
+      "forms": [
+        "otro",
+        "otra",
+        "otros",
+        "otras"
+      ],
+      "examples": [
+        {
+          "es": "Otro café, por favor.",
+          "de": "Noch einen Kaffee, bitte."
+        }
+      ],
+      "note": "Steht ohne un: otro café, nicht un otro café.",
+      "freqRank": 171
+    },
+    {
+      "id": "s-quiero-un-cafe",
+      "kind": "sentence",
+      "es": "Quiero un café con leche.",
+      "de": "Ich möchte einen Milchkaffee."
+    },
+    {
+      "id": "s-quiero-agua-sin-gas",
+      "kind": "sentence",
+      "es": "Quiero agua sin gas, por favor.",
+      "de": "Ich möchte Wasser ohne Kohlensäure, bitte."
+    },
+    {
+      "id": "s-quieres-un-jugo",
+      "kind": "sentence",
+      "es": "¿Quieres un jugo de naranja?",
+      "de": "Möchtest du einen Orangensaft?"
+    },
+    {
+      "id": "s-me-gustaria-un-te",
+      "kind": "sentence",
+      "es": "Me gustaría un té con limón.",
+      "de": "Ich hätte gern einen Tee mit Zitrone."
+    },
+    {
+      "id": "s-me-da-una-cerveza",
+      "kind": "sentence",
+      "es": "¿Me da una cerveza, por favor?",
+      "de": "Geben Sie mir bitte ein Bier?"
+    },
+    {
+      "id": "s-un-cafe-para-llevar",
+      "kind": "sentence",
+      "es": "Un café para llevar, gracias.",
+      "de": "Einen Kaffee zum Mitnehmen, danke."
+    },
+    {
+      "id": "s-que-quiere-tomar",
+      "kind": "sentence",
+      "es": "¿Qué quiere tomar?",
+      "de": "Was möchten Sie trinken?"
+    },
+    {
+      "id": "s-me-trae-hielo",
+      "kind": "sentence",
+      "es": "¿Me trae agua con hielo?",
+      "de": "Bringen Sie mir Wasser mit Eis?"
+    },
+    {
+      "id": "s-te-sin-azucar",
+      "kind": "sentence",
+      "es": "Un té sin azúcar, por favor.",
+      "de": "Einen Tee ohne Zucker, bitte."
+    },
+    {
+      "id": "s-una-mesa-para-dos",
+      "kind": "sentence",
+      "es": "Una mesa para dos, por favor.",
+      "de": "Einen Tisch für zwei, bitte."
+    },
+    {
+      "id": "s-quien-quiere-vino",
+      "kind": "sentence",
+      "es": "¿Quién quiere vino?",
+      "de": "Wer möchte Wein?"
+    },
+    {
+      "id": "s-quiero-otro-cafe",
+      "kind": "sentence",
+      "es": "Quiero otro café.",
+      "de": "Ich möchte noch einen Kaffee."
+    },
+    {
+      "id": "d-un-cafe",
+      "kind": "dialog",
+      "title": "Ein Kaffee zum Mitnehmen",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenos días. ¿Qué desea?",
+          "de": "Guten Morgen. Was darf es sein?"
+        },
+        {
+          "speaker": "B",
+          "es": "Buenos días. Quiero un café con leche, por favor.",
+          "de": "Guten Morgen. Ich möchte einen Milchkaffee, bitte."
+        },
+        {
+          "speaker": "A",
+          "es": "Con gusto. ¿Para comer aquí o para llevar?",
+          "de": "Sehr gern. Zum Hieressen oder zum Mitnehmen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Para llevar, por favor. ¿Cuánto es?",
+          "de": "Zum Mitnehmen, bitte. Was macht das?"
+        },
+        {
+          "speaker": "A",
+          "es": "Son dos mil quinientos pesos.",
+          "de": "Das macht zweitausendfünfhundert Pesos."
+        },
+        {
+          "speaker": "B",
+          "es": "Aquí tiene. Gracias.",
+          "de": "Bitte sehr. Danke."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias a usted. Chao.",
+          "de": "Ich danke Ihnen. Tschüss."
+        }
+      ]
+    },
+    {
+      "id": "g-querer-poder",
+      "kind": "grammar",
+      "title": "querer und poder",
+      "explanation": "Beide Verben wechseln im Stamm: querer wird quiero, quieres, quiere, quieren; poder wird puedo, puedes, puede, pueden. Bei nosotros bleibt der Stamm: queremos, podemos. Ein zweites Verb folgt im Infinitiv: Quiero comer. ¿Puedo pagar? Zu Bedienungen und Fremden sagst du usted (¿puede traer...?), unter Freunden tú (¿quieres...?).",
+      "examples": [
+        {
+          "es": "Quiero un café.",
+          "de": "Ich möchte einen Kaffee."
+        },
+        {
+          "es": "¿Quieres un té?",
+          "de": "Möchtest du einen Tee?"
+        },
+        {
+          "es": "¿Puede traer la carta?",
+          "de": "Können Sie die Karte bringen?"
+        },
+        {
+          "es": "¿Podemos hablar?",
+          "de": "Können wir sprechen?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich möchte einen Tee.",
+          "es": "Quiero un té."
+        },
+        {
+          "de": "Möchtest du ein Bier?",
+          "es": "¿Quieres una cerveza?"
+        },
+        {
+          "de": "Kann ich bezahlen?",
+          "es": "¿Puedo pagar?"
+        },
+        {
+          "de": "Können Sie die Karte bringen?",
+          "es": "¿Puede traer la carta?",
+          "accept": [
+            "¿Me puede traer la carta?"
+          ]
+        },
+        {
+          "de": "Wir möchten zwei Kaffee.",
+          "es": "Queremos dos cafés."
+        },
+        {
+          "de": "Wir können hier zahlen.",
+          "es": "Podemos pagar aquí."
+        }
+      ]
+    },
+    {
+      "id": "g-hoeflich-bestellen",
+      "kind": "grammar",
+      "title": "höflich bestellen",
+      "explanation": "Drei Wege führen zum Kaffee. Quiero un café ist direkt, mit por favor aber völlig in Ordnung. Me gustaría un café klingt weicher. ¿Me da un café? ist die Frage an der Theke. Der Bedienung gegenüber bleibst du bei usted: ¿Me trae la carta? Der Ton kommt durch por favor, nicht durch eine lange Formel.",
+      "examples": [
+        {
+          "es": "Me gustaría un café.",
+          "de": "Ich hätte gern einen Kaffee."
+        },
+        {
+          "es": "¿Me da un jugo, por favor?",
+          "de": "Geben Sie mir bitte einen Saft?"
+        },
+        {
+          "es": "¿Me trae la carta, por favor?",
+          "de": "Bringen Sie mir bitte die Karte?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich hätte gern einen Tee, bitte.",
+          "es": "Me gustaría un té, por favor."
+        },
+        {
+          "de": "Geben Sie mir bitte einen Saft?",
+          "es": "¿Me da un jugo, por favor?"
+        },
+        {
+          "de": "Bringen Sie mir bitte die Karte?",
+          "es": "¿Me trae la carta, por favor?",
+          "accept": [
+            "¿Me puede traer la carta, por favor?"
+          ]
+        },
+        {
+          "de": "Ich hätte gern ein Bier.",
+          "es": "Me gustaría una cerveza."
+        }
+      ]
+    },
+    {
+      "id": "w-pan",
+      "kind": "word",
+      "es": "pan",
+      "de": "Brot",
+      "forms": [
+        "pan"
+      ],
+      "examples": [
+        {
+          "es": "Un poco de pan, por favor.",
+          "de": "Ein bisschen Brot, bitte."
+        }
+      ],
+      "freqRank": 1549
+    },
+    {
+      "id": "w-queso",
+      "kind": "word",
+      "es": "queso",
+      "de": "Käse",
+      "forms": [
+        "queso"
+      ],
+      "examples": [
+        {
+          "es": "Pan con queso.",
+          "de": "Brot mit Käse."
+        }
+      ],
+      "freqRank": 2030
+    },
+    {
+      "id": "w-jamon",
+      "kind": "word",
+      "es": "jamón",
+      "de": "Schinken",
+      "forms": [
+        "jamón"
+      ],
+      "examples": [
+        {
+          "es": "Jamón y queso.",
+          "de": "Schinken und Käse."
+        }
+      ]
+    },
+    {
+      "id": "w-huevo",
+      "kind": "word",
+      "es": "huevo",
+      "de": "Ei",
+      "forms": [
+        "huevo",
+        "huevos"
+      ],
+      "examples": [
+        {
+          "es": "Dos huevos, por favor.",
+          "de": "Zwei Eier, bitte."
+        }
+      ],
+      "freqRank": 3193
+    },
+    {
+      "id": "w-carne",
+      "kind": "word",
+      "es": "carne",
+      "de": "Fleisch",
+      "forms": [
+        "carne"
+      ],
+      "examples": [
+        {
+          "es": "No como carne.",
+          "de": "Ich esse kein Fleisch."
+        }
+      ],
+      "freqRank": 1032
+    },
+    {
+      "id": "w-arroz",
+      "kind": "word",
+      "es": "arroz",
+      "de": "Reis",
+      "forms": [
+        "arroz"
+      ],
+      "examples": [
+        {
+          "es": "Arroz, por favor.",
+          "de": "Reis, bitte."
+        }
+      ],
+      "freqRank": 3494
+    },
+    {
+      "id": "w-pollo",
+      "kind": "word",
+      "es": "pollo",
+      "de": "Hähnchen",
+      "forms": [
+        "pollo"
+      ],
+      "examples": [
+        {
+          "es": "Pollo con arroz, por favor.",
+          "de": "Hähnchen mit Reis, bitte."
+        }
+      ],
+      "freqRank": 1858
+    },
+    {
+      "id": "w-pescado",
+      "kind": "word",
+      "es": "pescado",
+      "de": "Fisch (als Speise)",
+      "forms": [
+        "pescado"
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene pescado?",
+          "de": "Haben Sie Fisch?"
+        }
+      ],
+      "freqRank": 2464
+    },
+    {
+      "id": "w-ensalada",
+      "kind": "word",
+      "es": "ensalada",
+      "de": "Salat",
+      "forms": [
+        "ensalada",
+        "ensaladas"
+      ],
+      "examples": [
+        {
+          "es": "Una ensalada con queso.",
+          "de": "Ein Salat mit Käse."
+        }
+      ],
+      "freqRank": 4192
+    },
+    {
+      "id": "w-tomate",
+      "kind": "word",
+      "es": "tomate",
+      "de": "Tomate",
+      "forms": [
+        "tomate",
+        "tomates"
+      ],
+      "examples": [
+        {
+          "es": "Una ensalada de tomate.",
+          "de": "Ein Tomatensalat."
+        }
+      ]
+    },
+    {
+      "id": "w-cebolla",
+      "kind": "word",
+      "es": "cebolla",
+      "de": "Zwiebel",
+      "forms": [
+        "cebolla"
+      ],
+      "examples": [
+        {
+          "es": "Tomate y cebolla.",
+          "de": "Tomate und Zwiebel."
+        }
+      ]
+    },
+    {
+      "id": "w-cilantro",
+      "kind": "word",
+      "es": "cilantro",
+      "de": "Koriander",
+      "forms": [
+        "cilantro"
+      ],
+      "examples": [
+        {
+          "es": "Cebolla y cilantro.",
+          "de": "Zwiebel und Koriander."
+        }
+      ]
+    },
+    {
+      "id": "w-mayonesa",
+      "kind": "word",
+      "es": "mayonesa",
+      "de": "Mayonnaise",
+      "forms": [
+        "mayonesa"
+      ],
+      "examples": [
+        {
+          "es": "Tomate y mayonesa.",
+          "de": "Tomate und Mayonnaise."
+        }
+      ]
+    },
+    {
+      "id": "w-salsa",
+      "kind": "word",
+      "es": "salsa",
+      "de": "Soße",
+      "forms": [
+        "salsa",
+        "salsas"
+      ],
+      "examples": [
+        {
+          "es": "Una salsa, por favor.",
+          "de": "Eine Soße, bitte."
+        }
+      ],
+      "freqRank": 2831
+    },
+    {
+      "id": "w-sopa",
+      "kind": "word",
+      "es": "sopa",
+      "de": "Suppe",
+      "forms": [
+        "sopa",
+        "sopas"
+      ],
+      "examples": [
+        {
+          "es": "Una sopa de tomate.",
+          "de": "Eine Tomatensuppe."
+        }
+      ],
+      "freqRank": 2648
+    },
+    {
+      "id": "w-papa",
+      "kind": "word",
+      "es": "papa",
+      "de": "Kartoffel",
+      "forms": [
+        "papa",
+        "papas"
+      ],
+      "examples": [
+        {
+          "es": "Pollo con papas.",
+          "de": "Hähnchen mit Kartoffeln."
+        }
+      ],
+      "note": "In ganz Lateinamerika papa, nie patata.",
+      "freqRank": 1594
+    },
+    {
+      "id": "p-papas-fritas",
+      "kind": "phrase",
+      "es": "papas fritas",
+      "de": "Pommes frites",
+      "forms": [
+        "papas fritas",
+        "frita",
+        "fritas"
+      ],
+      "examples": [
+        {
+          "es": "Pollo con papas fritas.",
+          "de": "Hähnchen mit Pommes."
+        }
+      ]
+    },
+    {
+      "id": "w-torta",
+      "kind": "word",
+      "es": "torta",
+      "de": "Torte, Kuchen",
+      "forms": [
+        "torta",
+        "tortas"
+      ],
+      "examples": [
+        {
+          "es": "Una torta, por favor.",
+          "de": "Ein Stück Torte, bitte."
+        }
+      ],
+      "note": "In Chile begegnet dir auch das deutsche Wort kuchen, vor allem im Süden."
+    },
+    {
+      "id": "w-palta",
+      "kind": "word",
+      "es": "palta",
+      "de": "Avocado",
+      "forms": [
+        "palta",
+        "paltas"
+      ],
+      "examples": [
+        {
+          "es": "Pan con palta, por favor.",
+          "de": "Brot mit Avocado, bitte."
+        }
+      ],
+      "note": "In Chile heißt die Avocado palta, nicht aguacate.",
+      "chile": {
+        "note": "In Chile, Peru und Argentinien sagt man palta statt aguacate.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. palta, https://www.asale.org/damer/palta"
+      }
+    },
+    {
+      "id": "w-rico",
+      "kind": "word",
+      "es": "rico",
+      "de": "lecker",
+      "forms": [
+        "rico",
+        "rica",
+        "ricos",
+        "ricas"
+      ],
+      "examples": [
+        {
+          "es": "La sopa está muy rica.",
+          "de": "Die Suppe schmeckt sehr gut."
+        }
+      ],
+      "note": "Rico heißt lecker, wenn es um Essen geht, und richtet sich nach dem Wort: la sopa rica, el café rico.",
+      "freqRank": 1396
+    },
+    {
+      "id": "w-bueno",
+      "kind": "word",
+      "es": "bueno",
+      "de": "gut",
+      "forms": [
+        "bueno",
+        "buena",
+        "buenos",
+        "buenas",
+        "buen"
+      ],
+      "examples": [
+        {
+          "es": "El café está bueno.",
+          "de": "Der Kaffee ist gut."
+        }
+      ],
+      "note": "Vor einem männlichen Hauptwort verkürzt: buen provecho.",
+      "freqRank": 50
+    },
+    {
+      "id": "w-caliente",
+      "kind": "word",
+      "es": "caliente",
+      "de": "heiß, warm",
+      "forms": [
+        "caliente",
+        "calientes"
+      ],
+      "examples": [
+        {
+          "es": "El café está caliente.",
+          "de": "Der Kaffee ist heiß."
+        }
+      ],
+      "freqRank": 1098
+    },
+    {
+      "id": "w-frio",
+      "kind": "word",
+      "es": "frío",
+      "de": "kalt",
+      "forms": [
+        "frío",
+        "fría",
+        "fríos",
+        "frías"
+      ],
+      "examples": [
+        {
+          "es": "La sopa está fría.",
+          "de": "Die Suppe ist kalt."
+        }
+      ],
+      "freqRank": 1044
+    },
+    {
+      "id": "w-dulce",
+      "kind": "word",
+      "es": "dulce",
+      "de": "süß",
+      "forms": [
+        "dulce",
+        "dulces"
+      ],
+      "examples": [
+        {
+          "es": "El jugo está dulce.",
+          "de": "Der Saft ist süß."
+        }
+      ],
+      "freqRank": 920
+    },
+    {
+      "id": "w-salado",
+      "kind": "word",
+      "es": "salado",
+      "de": "salzig",
+      "forms": [
+        "salado",
+        "salada",
+        "salados",
+        "saladas"
+      ],
+      "examples": [
+        {
+          "es": "La sopa está salada.",
+          "de": "Die Suppe ist salzig."
+        }
+      ]
+    },
+    {
+      "id": "w-picante",
+      "kind": "word",
+      "es": "picante",
+      "de": "scharf",
+      "forms": [
+        "picante",
+        "picantes"
+      ],
+      "examples": [
+        {
+          "es": "La salsa está picante.",
+          "de": "Die Soße ist scharf."
+        }
+      ]
+    },
+    {
+      "id": "w-grande",
+      "kind": "word",
+      "es": "grande",
+      "de": "groß",
+      "forms": [
+        "grande",
+        "grandes"
+      ],
+      "examples": [
+        {
+          "es": "Un café grande, por favor.",
+          "de": "Einen großen Kaffee, bitte."
+        }
+      ],
+      "freqRank": 398
+    },
+    {
+      "id": "w-pequeno",
+      "kind": "word",
+      "es": "pequeño",
+      "de": "klein",
+      "forms": [
+        "pequeño",
+        "pequeña"
+      ],
+      "examples": [
+        {
+          "es": "Un café pequeño, por favor.",
+          "de": "Einen kleinen Kaffee, bitte."
+        }
+      ],
+      "freqRank": 414
+    },
+    {
+      "id": "w-comida",
+      "kind": "word",
+      "es": "comida",
+      "de": "Essen, Mahlzeit",
+      "forms": [
+        "comida",
+        "comidas"
+      ],
+      "examples": [
+        {
+          "es": "La comida es muy rica.",
+          "de": "Das Essen ist sehr lecker."
+        }
+      ],
+      "freqRank": 483
+    },
+    {
+      "id": "w-desayuno",
+      "kind": "word",
+      "es": "desayuno",
+      "de": "Frühstück",
+      "forms": [
+        "desayuno"
+      ],
+      "examples": [
+        {
+          "es": "Un desayuno con café y pan.",
+          "de": "Ein Frühstück mit Kaffee und Brot."
+        }
+      ],
+      "freqRank": 1953
+    },
+    {
+      "id": "w-almuerzo",
+      "kind": "word",
+      "es": "almuerzo",
+      "de": "Mittagessen",
+      "forms": [
+        "almuerzo",
+        "almuerzos"
+      ],
+      "examples": [
+        {
+          "es": "El almuerzo es a la una.",
+          "de": "Das Mittagessen ist um eins."
+        }
+      ],
+      "note": "Mittags essen viele Chilenen warm und ausgiebig.",
+      "freqRank": 1898
+    },
+    {
+      "id": "w-cena",
+      "kind": "word",
+      "es": "cena",
+      "de": "Abendessen",
+      "forms": [
+        "cena"
+      ],
+      "examples": [
+        {
+          "es": "La cena es a las nueve.",
+          "de": "Das Abendessen ist um neun."
+        }
+      ],
+      "note": "In Chile gibt es oft once statt einer warmen cena.",
+      "freqRank": 797
+    },
+    {
+      "id": "w-once-comida",
+      "kind": "word",
+      "es": "la once",
+      "de": "die Once (Imbiss am späten Nachmittag)",
+      "forms": [
+        "once"
+      ],
+      "examples": [
+        {
+          "es": "Tomamos once a las seis.",
+          "de": "Wir essen um sechs Once."
+        }
+      ],
+      "note": "Wörtlich elf, hier aber eine Mahlzeit: Tee oder Kaffee mit Brot, Käse, Avocado oder Kuchen am späten Nachmittag. Sie ersetzt oft das Abendessen. Man sagt tomar once.",
+      "chile": {
+        "note": "In Chile ist once die Mahlzeit am Nachmittag oder Abend, nicht die Zahl elf.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. once, https://www.asale.org/damer/once"
+      }
+    },
+    {
+      "id": "w-plato",
+      "kind": "word",
+      "es": "plato",
+      "de": "Teller, Gericht",
+      "forms": [
+        "plato",
+        "platos"
+      ],
+      "examples": [
+        {
+          "es": "Un plato de arroz.",
+          "de": "Ein Teller Reis."
+        }
+      ],
+      "freqRank": 2257
+    },
+    {
+      "id": "p-plato-de-fondo",
+      "kind": "phrase",
+      "es": "plato de fondo",
+      "de": "Hauptgericht",
+      "forms": [
+        "plato de fondo",
+        "fondo"
+      ],
+      "examples": [
+        {
+          "es": "De plato de fondo quiero pollo.",
+          "de": "Als Hauptgericht möchte ich Hähnchen."
+        }
+      ],
+      "note": "So heißt der Hauptgang auf chilenischen Karten."
+    },
+    {
+      "id": "w-entrada",
+      "kind": "word",
+      "es": "entrada",
+      "de": "Vorspeise",
+      "forms": [
+        "entrada",
+        "entradas"
+      ],
+      "examples": [
+        {
+          "es": "De entrada una sopa.",
+          "de": "Als Vorspeise eine Suppe."
+        }
+      ],
+      "freqRank": 1316
+    },
+    {
+      "id": "w-postre",
+      "kind": "word",
+      "es": "postre",
+      "de": "Nachtisch",
+      "forms": [
+        "postre",
+        "postres"
+      ],
+      "examples": [
+        {
+          "es": "Un postre, por favor.",
+          "de": "Einen Nachtisch, bitte."
+        }
+      ],
+      "freqRank": 4492
+    },
+    {
+      "id": "w-menu",
+      "kind": "word",
+      "es": "menú",
+      "de": "Menü",
+      "forms": [
+        "menú",
+        "menús"
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene menú?",
+          "de": "Haben Sie ein Menü?"
+        }
+      ]
+    },
+    {
+      "id": "p-menu-del-dia",
+      "kind": "phrase",
+      "es": "menú del día",
+      "de": "Tagesmenü",
+      "forms": [
+        "menú del día",
+        "del"
+      ],
+      "examples": [
+        {
+          "es": "El menú del día es muy rico.",
+          "de": "Das Tagesmenü ist sehr lecker."
+        }
+      ],
+      "note": "Mittags ein Menü zu festem Preis, meist günstiger als nach der Karte."
+    },
+    {
+      "id": "w-completo",
+      "kind": "word",
+      "es": "completo",
+      "de": "Hotdog nach chilenischer Art",
+      "forms": [
+        "completo",
+        "completos"
+      ],
+      "examples": [
+        {
+          "es": "Un completo y una bebida, por favor.",
+          "de": "Einen Completo und eine Limo, bitte."
+        }
+      ],
+      "note": "Das Brötchen mit Wurst, Tomate, Mayonnaise und oft Avocado. Als completo italiano mit Tomate, Avocado und Mayonnaise.",
+      "chile": {
+        "note": "In Chile ist ein completo ein langes weiches Brötchen mit Wurst, Tomate, Sauerkraut und Mayonnaise, nicht das Wort für vollständig.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. completo, https://www.asale.org/damer/completo"
+      }
+    },
+    {
+      "id": "w-empanada",
+      "kind": "word",
+      "es": "empanada",
+      "de": "Empanada (gefüllte Teigtasche)",
+      "forms": [
+        "empanada",
+        "empanadas"
+      ],
+      "examples": [
+        {
+          "es": "Dos empanadas, por favor.",
+          "de": "Zwei Empanadas, bitte."
+        }
+      ]
+    },
+    {
+      "id": "p-empanada-de-pino",
+      "kind": "phrase",
+      "es": "empanada de pino",
+      "de": "Empanada mit Hackfleischfüllung",
+      "forms": [
+        "empanada de pino",
+        "pino"
+      ],
+      "examples": [
+        {
+          "es": "Una empanada de pino y un jugo.",
+          "de": "Eine Empanada de pino und ein Saft."
+        }
+      ],
+      "note": "Die Klassiker sind de pino (Hackfleisch mit Zwiebeln) und de queso (Käse). Die de pino wird im Ofen gebacken und enthält oft Ei, Olive und Rosine.",
+      "chile": {
+        "note": "Der Begriff pino bezeichnet in Chile die Füllung aus Zwiebeln und Fleisch.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. pino, https://www.asale.org/damer/pino"
+      }
+    },
+    {
+      "id": "w-sopaipilla",
+      "kind": "word",
+      "es": "sopaipilla",
+      "de": "Sopaipilla (frittiertes Teiggebäck)",
+      "forms": [
+        "sopaipilla",
+        "sopaipillas"
+      ],
+      "examples": [
+        {
+          "es": "Una sopaipilla, por favor.",
+          "de": "Eine Sopaipilla, bitte."
+        }
+      ],
+      "note": "Frittierte runde Teigscheibe aus Kürbis und Mehl, an der Straße mit pebre oder Senf. An Regentagen gibt es sopaipillas pasadas in süßer Soße.",
+      "chile": {
+        "note": "Sopaipilla ist in Chile verbreitet; sopaipilla pasada ist die Variante in süßer Chancaca-Soße.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. sopaipilla, https://www.asale.org/damer/sopaipilla"
+      }
+    },
+    {
+      "id": "w-pebre",
+      "kind": "word",
+      "es": "pebre",
+      "de": "Pebre (kalte Tomatensoße)",
+      "forms": [
+        "pebre"
+      ],
+      "examples": [
+        {
+          "es": "El pebre lleva tomate y cebolla.",
+          "de": "Der Pebre enthält Tomate und Zwiebel."
+        }
+      ],
+      "note": "Steht oft in einer Schale auf dem Tisch, zu Brot und Fleisch. Meist ein bisschen scharf.",
+      "chile": {
+        "note": "In Chile ist pebre eine kalte Soße aus Tomate, Zwiebel, Chili und Koriander mit Öl und Zitrone.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. pebre, https://www.asale.org/damer/pebre"
+      }
+    },
+    {
+      "id": "p-buen-provecho",
+      "kind": "phrase",
+      "es": "buen provecho",
+      "de": "guten Appetit",
+      "forms": [
+        "buen provecho",
+        "provecho"
+      ],
+      "examples": [
+        {
+          "es": "Aquí tiene. Buen provecho.",
+          "de": "Bitte sehr. Guten Appetit."
+        }
+      ],
+      "note": "Das sagt die Bedienung, wenn sie das Essen bringt. Du antwortest gracias."
+    },
+    {
+      "id": "w-salud",
+      "kind": "word",
+      "es": "salud",
+      "de": "Prost, Gesundheit",
+      "forms": [
+        "salud"
+      ],
+      "examples": [
+        {
+          "es": "¡Salud!",
+          "de": "Prost!"
+        }
+      ],
+      "freqRank": 983
+    },
+    {
+      "id": "p-tengo-hambre",
+      "kind": "phrase",
+      "es": "tengo hambre",
+      "de": "ich habe Hunger",
+      "forms": [
+        "tengo hambre",
+        "hambre"
+      ],
+      "examples": [
+        {
+          "es": "Tengo hambre. ¿Y tú?",
+          "de": "Ich habe Hunger. Und du?"
+        }
+      ],
+      "note": "Wörtlich: ich habe Hunger, mit tener, nicht mit estar."
+    },
+    {
+      "id": "p-tengo-sed",
+      "kind": "phrase",
+      "es": "tengo sed",
+      "de": "ich habe Durst",
+      "forms": [
+        "tengo sed",
+        "sed"
+      ],
+      "examples": [
+        {
+          "es": "Tengo sed. Quiero agua.",
+          "de": "Ich habe Durst. Ich möchte Wasser."
+        }
+      ]
+    },
+    {
+      "id": "s-un-completo-y-una-bebida",
+      "kind": "sentence",
+      "es": "Quiero un completo y una bebida.",
+      "de": "Ich möchte einen Completo und eine Limo."
+    },
+    {
+      "id": "s-dos-empanadas",
+      "kind": "sentence",
+      "es": "Dos empanadas de pino y un jugo, por favor.",
+      "de": "Zwei Empanadas de pino und einen Saft, bitte."
+    },
+    {
+      "id": "s-sopaipilla-pebre",
+      "kind": "sentence",
+      "es": "Una sopaipilla con pebre, por favor.",
+      "de": "Eine Sopaipilla mit Pebre, bitte."
+    },
+    {
+      "id": "s-que-lleva-el-completo",
+      "kind": "sentence",
+      "es": "¿Qué lleva el completo?",
+      "de": "Was ist auf dem Completo drauf?"
+    },
+    {
+      "id": "s-el-pebre-lleva",
+      "kind": "sentence",
+      "es": "El pebre lleva tomate, cebolla y cilantro.",
+      "de": "Der Pebre enthält Tomate, Zwiebel und Koriander."
+    },
+    {
+      "id": "s-hay-pebre",
+      "kind": "sentence",
+      "es": "¿Hay pebre, por favor?",
+      "de": "Gibt es Pebre, bitte?"
+    },
+    {
+      "id": "s-tomamos-once",
+      "kind": "sentence",
+      "es": "Hoy tomamos once con mi amiga.",
+      "de": "Heute essen wir Once mit meiner Freundin."
+    },
+    {
+      "id": "s-almuerzo-una",
+      "kind": "sentence",
+      "es": "El almuerzo es a las dos.",
+      "de": "Das Mittagessen ist um zwei."
+    },
+    {
+      "id": "s-cuanto-cuesta-el-menu",
+      "kind": "sentence",
+      "es": "¿Cuánto cuesta el menú del día?",
+      "de": "Wie viel kostet das Tagesmenü?"
+    },
+    {
+      "id": "s-que-hay-de-postre",
+      "kind": "sentence",
+      "es": "¿Qué hay de postre?",
+      "de": "Was gibt es zum Nachtisch?"
+    },
+    {
+      "id": "s-pan-con-palta",
+      "kind": "sentence",
+      "es": "Quiero pan con palta.",
+      "de": "Ich möchte Brot mit Avocado."
+    },
+    {
+      "id": "s-pollo-con-papas",
+      "kind": "sentence",
+      "es": "De plato de fondo quiero pollo con papas fritas.",
+      "de": "Als Hauptgericht möchte ich Hähnchen mit Pommes."
+    },
+    {
+      "id": "s-que-me-recomienda-de-postre",
+      "kind": "sentence",
+      "es": "¿Qué me recomienda de postre?",
+      "de": "Was empfehlen Sie mir als Nachtisch?"
+    },
+    {
+      "id": "d-menu-del-dia",
+      "kind": "dialog",
+      "title": "Das Menü des Tages",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. Una mesa para dos, por favor.",
+          "de": "Guten Tag. Einen Tisch für zwei, bitte."
+        },
+        {
+          "speaker": "B",
+          "es": "Claro. Aquí tiene la carta.",
+          "de": "Klar. Bitte sehr, hier ist die Karte."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias. ¿Qué me recomienda?",
+          "de": "Danke. Was empfehlen Sie mir?"
+        },
+        {
+          "speaker": "B",
+          "es": "El menú del día es muy rico. Lleva sopa, pollo con arroz y postre.",
+          "de": "Das Tagesmenü ist sehr lecker. Es enthält Suppe, Hähnchen mit Reis und Nachtisch."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuánto cuesta?",
+          "de": "Was kostet es?"
+        },
+        {
+          "speaker": "B",
+          "es": "Cuesta siete mil quinientos pesos.",
+          "de": "Es kostet siebentausendfünfhundert Pesos."
+        },
+        {
+          "speaker": "A",
+          "es": "Muy bien. Quiero el menú del día.",
+          "de": "Sehr gut. Ich möchte das Tagesmenü."
+        },
+        {
+          "speaker": "B",
+          "es": "Listo. ¿Qué quiere tomar?",
+          "de": "Alles klar. Was möchten Sie trinken?"
+        },
+        {
+          "speaker": "A",
+          "es": "Un jugo natural de naranja, por favor.",
+          "de": "Einen frisch gepressten Orangensaft, bitte."
+        }
+      ]
+    },
+    {
+      "id": "d-once",
+      "kind": "dialog",
+      "title": "Once mit einer Freundin",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Hola, ¿tomamos once hoy?",
+          "de": "Hallo, essen wir heute Once?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, claro. Tengo hambre.",
+          "de": "Ja, klar. Ich habe Hunger."
+        },
+        {
+          "speaker": "A",
+          "es": "Yo también. ¿Qué quieres?",
+          "de": "Ich auch. Was möchtest du?"
+        },
+        {
+          "speaker": "B",
+          "es": "Quiero un té y una sopaipilla con pebre. ¿Y tú?",
+          "de": "Ich möchte einen Tee und eine Sopaipilla mit Pebre. Und du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Yo quiero un café con leche y pan con palta.",
+          "de": "Ich möchte einen Milchkaffee und Brot mit Avocado."
+        },
+        {
+          "speaker": "B",
+          "es": "Muy bien. Yo pido y tú pagas.",
+          "de": "Sehr gut. Ich bestelle und du bezahlst."
+        },
+        {
+          "speaker": "A",
+          "es": "Está bien. Pago yo.",
+          "de": "In Ordnung. Ich zahle."
+        }
+      ]
+    },
+    {
+      "id": "w-mani",
+      "kind": "word",
+      "es": "maní",
+      "de": "Erdnuss",
+      "forms": [
+        "maní"
+      ],
+      "examples": [
+        {
+          "es": "¿Lleva maní?",
+          "de": "Sind Erdnüsse drin?"
+        }
+      ],
+      "note": "Erdnuss heißt in Chile maní, nicht cacahuete.",
+      "chile": {
+        "note": "In Chile und weiten Teilen Lateinamerikas sagt man maní für Erdnuss.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. maní, https://www.asale.org/damer/maní"
+      }
+    },
+    {
+      "id": "w-nueces",
+      "kind": "word",
+      "es": "nueces",
+      "de": "Nüsse",
+      "forms": [
+        "nueces",
+        "nuez"
+      ],
+      "examples": [
+        {
+          "es": "¿Lleva nueces?",
+          "de": "Sind Nüsse drin?"
+        }
+      ]
+    },
+    {
+      "id": "w-alergia",
+      "kind": "word",
+      "es": "alergia",
+      "de": "Allergie",
+      "forms": [
+        "alergia",
+        "alergias"
+      ],
+      "examples": [
+        {
+          "es": "Tengo una alergia.",
+          "de": "Ich habe eine Allergie."
+        }
+      ]
+    },
+    {
+      "id": "w-alergico",
+      "kind": "word",
+      "es": "alérgico",
+      "de": "allergisch",
+      "forms": [
+        "alérgico",
+        "alérgica"
+      ],
+      "examples": [
+        {
+          "es": "Soy alérgico a las nueces.",
+          "de": "Ich bin allergisch gegen Nüsse."
+        }
+      ],
+      "note": "Eine Frau sagt alérgica. Dahinter steht a: alérgico a."
+    },
+    {
+      "id": "w-al",
+      "kind": "word",
+      "es": "al",
+      "de": "zum, zur, im (a + el)",
+      "forms": [
+        "al"
+      ],
+      "examples": [
+        {
+          "es": "Soy alérgico al maní.",
+          "de": "Ich bin allergisch gegen Erdnüsse."
+        }
+      ],
+      "note": "Aus a + el wird al: alérgico al maní. Vor la, las, los bleibt a: a las nueces.",
+      "freqRank": 35
+    },
+    {
+      "id": "w-gluten",
+      "kind": "word",
+      "es": "gluten",
+      "de": "Gluten",
+      "forms": [
+        "gluten"
+      ],
+      "examples": [
+        {
+          "es": "Sin gluten, por favor.",
+          "de": "Ohne Gluten, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-lactosa",
+      "kind": "word",
+      "es": "lactosa",
+      "de": "Laktose",
+      "forms": [
+        "lactosa"
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene leche sin lactosa?",
+          "de": "Haben Sie Milch ohne Laktose?"
+        }
+      ]
+    },
+    {
+      "id": "w-vegetariano",
+      "kind": "word",
+      "es": "vegetariano",
+      "de": "Vegetarier, vegetarisch",
+      "forms": [
+        "vegetariano",
+        "vegetariana"
+      ],
+      "examples": [
+        {
+          "es": "Soy vegetariano.",
+          "de": "Ich bin Vegetarier."
+        }
+      ],
+      "note": "Eine Frau sagt vegetariana."
+    },
+    {
+      "id": "p-tiene-algo-sin-carne",
+      "kind": "phrase",
+      "es": "¿tiene algo sin carne?",
+      "de": "haben Sie etwas ohne Fleisch?",
+      "forms": [
+        "tiene algo sin carne",
+        "tienen"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, ¿tiene algo sin carne?",
+          "de": "Entschuldigung, haben Sie etwas ohne Fleisch?"
+        }
+      ],
+      "note": "Für das ganze Lokal oder mehrere Bedienungen sagst du auch ¿tienen...?"
+    },
+    {
+      "id": "w-bano",
+      "kind": "word",
+      "es": "baño",
+      "de": "Toilette, Bad",
+      "forms": [
+        "baño",
+        "baños"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde está el baño?",
+          "de": "Wo ist die Toilette?"
+        }
+      ],
+      "note": "In Chile sagst du baño. Das ist höflich und üblich.",
+      "freqRank": 715
+    },
+    {
+      "id": "s-tiene-algo-sin-gluten",
+      "kind": "sentence",
+      "es": "¿Tiene algo sin gluten?",
+      "de": "Haben Sie etwas ohne Gluten?"
+    },
+    {
+      "id": "s-soy-vegetariano",
+      "kind": "sentence",
+      "es": "Soy vegetariano. No como carne.",
+      "de": "Ich bin Vegetarier. Ich esse kein Fleisch."
+    },
+    {
+      "id": "s-soy-alergico-nueces",
+      "kind": "sentence",
+      "es": "Soy alérgico a las nueces.",
+      "de": "Ich bin allergisch gegen Nüsse."
+    },
+    {
+      "id": "s-soy-alergica-mani",
+      "kind": "sentence",
+      "es": "Soy alérgica al maní.",
+      "de": "Ich bin allergisch gegen Erdnüsse."
+    },
+    {
+      "id": "s-esto-lleva-mani",
+      "kind": "sentence",
+      "es": "¿Esto lleva maní?",
+      "de": "Sind da Erdnüsse drin?"
+    },
+    {
+      "id": "s-lleva-pollo",
+      "kind": "sentence",
+      "es": "¿La sopa lleva pollo?",
+      "de": "Ist Hähnchen in der Suppe?"
+    },
+    {
+      "id": "s-tienen-jugo-natural",
+      "kind": "sentence",
+      "es": "¿Tienen jugo natural?",
+      "de": "Haben Sie frisch gepressten Saft?"
+    },
+    {
+      "id": "s-leche-sin-lactosa",
+      "kind": "sentence",
+      "es": "Un café con leche sin lactosa, por favor.",
+      "de": "Einen Milchkaffee mit laktosefreier Milch, bitte."
+    },
+    {
+      "id": "s-donde-esta-el-bano",
+      "kind": "sentence",
+      "es": "¿Dónde está el baño?",
+      "de": "Wo ist die Toilette?"
+    },
+    {
+      "id": "s-es-picante",
+      "kind": "sentence",
+      "es": "¿Es muy picante?",
+      "de": "Ist es sehr scharf?"
+    },
+    {
+      "id": "d-alergia",
+      "kind": "dialog",
+      "title": "Bei einer Allergie",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, soy alérgico al maní.",
+          "de": "Entschuldigung, ich bin allergisch gegen Erdnüsse."
+        },
+        {
+          "speaker": "B",
+          "es": "No hay problema. ¿Qué quiere comer?",
+          "de": "Kein Problem. Was möchten Sie essen?"
+        },
+        {
+          "speaker": "A",
+          "es": "¿La empanada de pino lleva maní?",
+          "de": "Sind in der Empanada de pino Erdnüsse?"
+        },
+        {
+          "speaker": "B",
+          "es": "No, no lleva maní. Lleva carne, cebolla y huevo.",
+          "de": "Nein, da sind keine Erdnüsse drin. Sie enthält Fleisch, Zwiebel und Ei."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Y el pebre lleva maní?",
+          "de": "Und enthält der Pebre Erdnüsse?"
+        },
+        {
+          "speaker": "B",
+          "es": "No. Lleva tomate, cebolla y cilantro. Es un poco picante.",
+          "de": "Nein. Er enthält Tomate, Zwiebel und Koriander. Er ist ein bisschen scharf."
+        },
+        {
+          "speaker": "A",
+          "es": "Muy bien. Quiero una empanada de pino y pebre, por favor.",
+          "de": "Sehr gut. Ich möchte eine Empanada de pino und Pebre, bitte."
+        },
+        {
+          "speaker": "B",
+          "es": "Con gusto.",
+          "de": "Sehr gern."
+        }
+      ]
+    },
+    {
+      "id": "d-sin-carne",
+      "kind": "dialog",
+      "title": "Etwas ohne Fleisch",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, soy vegetariano. ¿Tiene algo sin carne?",
+          "de": "Entschuldigung, ich bin Vegetarier. Haben Sie etwas ohne Fleisch?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, hay una ensalada con queso y una sopa de tomate.",
+          "de": "Ja, es gibt einen Salat mit Käse und eine Tomatensuppe."
+        },
+        {
+          "speaker": "A",
+          "es": "¿La sopa lleva pollo?",
+          "de": "Ist Hähnchen in der Suppe?"
+        },
+        {
+          "speaker": "B",
+          "es": "No, no lleva pollo. Lleva tomate y cebolla, nada más.",
+          "de": "Nein, kein Hähnchen. Nur Tomate und Zwiebel."
+        },
+        {
+          "speaker": "A",
+          "es": "Quiero la sopa y un poco de pan, por favor.",
+          "de": "Ich möchte die Suppe und ein bisschen Brot, bitte."
+        },
+        {
+          "speaker": "B",
+          "es": "Con gusto. ¿Qué quiere tomar?",
+          "de": "Sehr gern. Was möchten Sie trinken?"
+        },
+        {
+          "speaker": "A",
+          "es": "Agua sin gas, por favor.",
+          "de": "Wasser ohne Kohlensäure, bitte."
+        }
+      ]
+    },
+    {
+      "id": "g-estar-zustand",
+      "kind": "grammar",
+      "title": "estar für Zustände",
+      "explanation": "Wie etwas gerade ist, sagst du mit estar: El café está caliente. La sopa está fría. Está muy rico heißt: es schmeckt gut. Die Form richtet sich nach dem, worüber du sprichst: está für eine Sache, están für mehrere (Las papas están ricas), estoy für mich (Estoy bien). Frage nach dem Zustand: ¿Cómo está la comida?",
+      "examples": [
+        {
+          "es": "El café está caliente.",
+          "de": "Der Kaffee ist heiß."
+        },
+        {
+          "es": "La sopa está fría.",
+          "de": "Die Suppe ist kalt."
+        },
+        {
+          "es": "Las papas están ricas.",
+          "de": "Die Kartoffeln sind lecker."
+        },
+        {
+          "es": "¿Cómo está la comida?",
+          "de": "Wie ist das Essen?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Der Kaffee ist heiß.",
+          "es": "El café está caliente."
+        },
+        {
+          "de": "Die Suppe ist kalt.",
+          "es": "La sopa está fría."
+        },
+        {
+          "de": "Das schmeckt sehr gut.",
+          "es": "Está muy rico.",
+          "accept": [
+            "Está muy bueno."
+          ]
+        },
+        {
+          "de": "Der Saft ist ein bisschen süß.",
+          "es": "El jugo está un poco dulce."
+        },
+        {
+          "de": "Wie ist das Essen?",
+          "es": "¿Cómo está la comida?"
+        },
+        {
+          "de": "Die Suppe ist salzig.",
+          "es": "La sopa está salada."
+        }
+      ]
+    },
+    {
+      "id": "p-un-poco-de",
+      "kind": "phrase",
+      "es": "un poco de",
+      "de": "ein bisschen (von)",
+      "forms": [
+        "un poco de",
+        "poco"
+      ],
+      "examples": [
+        {
+          "es": "Un poco de azúcar, por favor.",
+          "de": "Ein bisschen Zucker, bitte."
+        }
+      ]
+    },
+    {
+      "id": "g-mengen",
+      "kind": "grammar",
+      "title": "Mengen: un poco de, más, otro",
+      "explanation": "Un poco de heißt ein bisschen von etwas: un poco de sal. Más heißt mehr: más pan, un poco más. Otro heißt noch ein und steht ohne un: otro café, otra cerveza. Behälter und Maße hängen mit de an: una taza de té, un vaso de agua, una botella de vino, una copa de vino.",
+      "examples": [
+        {
+          "es": "Un poco de sal, por favor.",
+          "de": "Ein bisschen Salz, bitte."
+        },
+        {
+          "es": "Más pan, por favor.",
+          "de": "Mehr Brot, bitte."
+        },
+        {
+          "es": "Otro café, por favor.",
+          "de": "Noch einen Kaffee, bitte."
+        },
+        {
+          "es": "Una taza de té.",
+          "de": "Eine Tasse Tee."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ein bisschen Zucker, bitte.",
+          "es": "Un poco de azúcar, por favor."
+        },
+        {
+          "de": "Noch einen Kaffee, bitte.",
+          "es": "Otro café, por favor."
+        },
+        {
+          "de": "Ein Glas Wasser.",
+          "es": "Un vaso de agua."
+        },
+        {
+          "de": "Eine Tasse Tee.",
+          "es": "Una taza de té."
+        },
+        {
+          "de": "Noch ein bisschen Brot.",
+          "es": "Un poco más de pan."
+        },
+        {
+          "de": "Eine Flasche Wein.",
+          "es": "Una botella de vino."
+        }
+      ]
+    },
+    {
+      "id": "s-un-poco-de-azucar",
+      "kind": "sentence",
+      "es": "Quiero un poco de azúcar.",
+      "de": "Ich möchte ein bisschen Zucker."
+    },
+    {
+      "id": "s-mas-pan",
+      "kind": "sentence",
+      "es": "¿Me trae más pan, por favor?",
+      "de": "Bringen Sie mir bitte mehr Brot?"
+    },
+    {
+      "id": "s-esta-muy-rico",
+      "kind": "sentence",
+      "es": "Está muy rico, gracias.",
+      "de": "Es schmeckt sehr gut, danke."
+    },
+    {
+      "id": "s-la-sopa-esta-fria",
+      "kind": "sentence",
+      "es": "La sopa está un poco fría.",
+      "de": "Die Suppe ist ein bisschen kalt."
+    },
+    {
+      "id": "s-las-papas-estan-saladas",
+      "kind": "sentence",
+      "es": "Las papas fritas están muy saladas.",
+      "de": "Die Pommes sind sehr salzig."
+    },
+    {
+      "id": "w-cuenta",
+      "kind": "word",
+      "es": "cuenta",
+      "de": "Rechnung",
+      "forms": [
+        "cuenta",
+        "cuentas"
+      ],
+      "examples": [
+        {
+          "es": "¿Me trae la cuenta?",
+          "de": "Bringen Sie mir die Rechnung?"
+        }
+      ],
+      "freqRank": 262
+    },
+    {
+      "id": "p-la-cuenta-por-favor",
+      "kind": "phrase",
+      "es": "la cuenta, por favor",
+      "de": "die Rechnung, bitte",
+      "forms": [
+        "la cuenta"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, la cuenta, por favor.",
+          "de": "Entschuldigung, die Rechnung bitte."
+        }
+      ],
+      "note": "Auf ¿algo más? antwortest du eso es todo und bittest dann um la cuenta."
+    },
+    {
+      "id": "w-dejar",
+      "kind": "word",
+      "es": "dejar",
+      "de": "lassen, hinterlassen",
+      "forms": [
+        "dejar",
+        "dejo",
+        "dejas",
+        "deja",
+        "dejan"
+      ],
+      "examples": [
+        {
+          "es": "Dejo mil pesos aquí.",
+          "de": "Ich lasse tausend Pesos hier."
+        }
+      ],
+      "freqRank": 347
+    },
+    {
+      "id": "w-efectivo",
+      "kind": "word",
+      "es": "efectivo",
+      "de": "Bargeld",
+      "forms": [
+        "efectivo"
+      ],
+      "examples": [
+        {
+          "es": "Pago en efectivo.",
+          "de": "Ich zahle bar."
+        }
+      ],
+      "note": "En efectivo heißt bar.",
+      "freqRank": 2203
+    },
+    {
+      "id": "w-tarjeta",
+      "kind": "word",
+      "es": "tarjeta",
+      "de": "Karte",
+      "forms": [
+        "tarjeta",
+        "tarjetas"
+      ],
+      "examples": [
+        {
+          "es": "¿Pago con tarjeta?",
+          "de": "Zahle ich mit Karte?"
+        }
+      ],
+      "freqRank": 1336
+    },
+    {
+      "id": "w-propina",
+      "kind": "word",
+      "es": "propina",
+      "de": "Trinkgeld",
+      "forms": [
+        "propina",
+        "propinas"
+      ],
+      "examples": [
+        {
+          "es": "Dejo la propina en efectivo.",
+          "de": "Ich lasse das Trinkgeld bar da."
+        }
+      ],
+      "note": "In Chile sind etwa zehn Prozent üblich. In Restaurants steht auf der Rechnung oft schon eine propina sugerida von 10 %. Sie ist freiwillig."
+    },
+    {
+      "id": "w-sugerido",
+      "kind": "word",
+      "es": "sugerido",
+      "de": "vorgeschlagen, empfohlen",
+      "forms": [
+        "sugerido",
+        "sugerida"
+      ],
+      "examples": [
+        {
+          "es": "La propina sugerida es el diez por ciento.",
+          "de": "Das empfohlene Trinkgeld sind zehn Prozent."
+        }
+      ]
+    },
+    {
+      "id": "w-voluntario",
+      "kind": "word",
+      "es": "voluntario",
+      "de": "freiwillig",
+      "forms": [
+        "voluntario",
+        "voluntaria"
+      ],
+      "examples": [
+        {
+          "es": "La propina es voluntaria.",
+          "de": "Das Trinkgeld ist freiwillig."
+        }
+      ]
+    },
+    {
+      "id": "p-por-ciento",
+      "kind": "phrase",
+      "es": "por ciento",
+      "de": "Prozent",
+      "forms": [
+        "por ciento"
+      ],
+      "examples": [
+        {
+          "es": "Diez por ciento.",
+          "de": "Zehn Prozent."
+        }
+      ]
+    },
+    {
+      "id": "w-incluir",
+      "kind": "word",
+      "es": "incluir",
+      "de": "einschließen, enthalten",
+      "forms": [
+        "incluir",
+        "incluye",
+        "incluyen"
+      ],
+      "examples": [
+        {
+          "es": "El menú incluye postre.",
+          "de": "Das Menü enthält einen Nachtisch."
+        }
+      ]
+    },
+    {
+      "id": "p-incluye-la-propina",
+      "kind": "phrase",
+      "es": "¿incluye la propina?",
+      "de": "ist das Trinkgeld inbegriffen?",
+      "forms": [
+        "incluye la propina"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, ¿incluye la propina?",
+          "de": "Entschuldigung, ist das Trinkgeld inbegriffen?"
+        }
+      ]
+    },
+    {
+      "id": "w-debito",
+      "kind": "word",
+      "es": "débito",
+      "de": "Debitkarte",
+      "forms": [
+        "débito"
+      ],
+      "examples": [
+        {
+          "es": "Con tarjeta de débito.",
+          "de": "Mit Debitkarte."
+        }
+      ],
+      "note": "Am Kartenlesegerät fragt man dich oft: ¿débito o crédito? Redcompra heißt in Chile das Debitsystem."
+    },
+    {
+      "id": "w-credito",
+      "kind": "word",
+      "es": "crédito",
+      "de": "Kreditkarte",
+      "forms": [
+        "crédito"
+      ],
+      "examples": [
+        {
+          "es": "¿Débito o crédito?",
+          "de": "Debit oder Kredit?"
+        }
+      ],
+      "freqRank": 2136
+    },
+    {
+      "id": "w-juntos",
+      "kind": "word",
+      "es": "juntos",
+      "de": "zusammen",
+      "forms": [
+        "juntos",
+        "juntas"
+      ],
+      "examples": [
+        {
+          "es": "Pagamos juntos.",
+          "de": "Wir bezahlen zusammen."
+        }
+      ],
+      "freqRank": 330
+    },
+    {
+      "id": "w-separado",
+      "kind": "word",
+      "es": "separado",
+      "de": "getrennt",
+      "forms": [
+        "separado",
+        "separados"
+      ],
+      "examples": [
+        {
+          "es": "¿Pagamos separado?",
+          "de": "Zahlen wir getrennt?"
+        }
+      ]
+    },
+    {
+      "id": "w-su",
+      "kind": "word",
+      "es": "su",
+      "de": "Ihr, sein, ihr",
+      "forms": [
+        "su",
+        "sus"
+      ],
+      "examples": [
+        {
+          "es": "Aquí está su café.",
+          "de": "Hier ist Ihr Kaffee."
+        }
+      ],
+      "note": "Su ist Ihr (zu usted), aber auch sein oder ihr.",
+      "freqRank": 28
+    },
+    {
+      "id": "w-vuelto",
+      "kind": "word",
+      "es": "vuelto",
+      "de": "Wechselgeld",
+      "forms": [
+        "vuelto"
+      ],
+      "examples": [
+        {
+          "es": "Aquí está su vuelto.",
+          "de": "Hier ist Ihr Wechselgeld."
+        }
+      ],
+      "note": "In Chile und ganz Lateinamerika vuelto für Wechselgeld.",
+      "chile": {
+        "note": "Vuelto bezeichnet in ganz Lateinamerika das Wechselgeld, auch in Chile.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. vuelto, https://www.asale.org/damer/vuelto"
+      },
+      "freqRank": 732
+    },
+    {
+      "id": "w-boleta",
+      "kind": "word",
+      "es": "boleta",
+      "de": "Beleg, Kassenbon",
+      "forms": [
+        "boleta",
+        "boletas"
+      ],
+      "examples": [
+        {
+          "es": "¿Me da la boleta, por favor?",
+          "de": "Geben Sie mir bitte den Beleg?"
+        }
+      ],
+      "note": "In Chile heißt der Beleg boleta."
+    },
+    {
+      "id": "s-el-menu-incluye",
+      "kind": "sentence",
+      "es": "El menú del día incluye postre.",
+      "de": "Das Tagesmenü enthält einen Nachtisch."
+    },
+    {
+      "id": "s-la-cuenta-por-favor",
+      "kind": "sentence",
+      "es": "Disculpe, ¿me trae la cuenta, por favor?",
+      "de": "Entschuldigung, bringen Sie mir bitte die Rechnung?"
+    },
+    {
+      "id": "s-incluye-la-propina",
+      "kind": "sentence",
+      "es": "¿La cuenta incluye la propina?",
+      "de": "Ist in der Rechnung das Trinkgeld enthalten?"
+    },
+    {
+      "id": "s-la-propina-es-el-diez",
+      "kind": "sentence",
+      "es": "La propina sugerida es el diez por ciento.",
+      "de": "Das empfohlene Trinkgeld beträgt zehn Prozent."
+    },
+    {
+      "id": "s-la-propina-es-voluntaria",
+      "kind": "sentence",
+      "es": "La propina es voluntaria.",
+      "de": "Das Trinkgeld ist freiwillig."
+    },
+    {
+      "id": "s-dejo-la-propina",
+      "kind": "sentence",
+      "es": "Dejo la propina en efectivo.",
+      "de": "Ich lasse das Trinkgeld bar da."
+    },
+    {
+      "id": "s-puedo-pagar-con-tarjeta",
+      "kind": "sentence",
+      "es": "¿Puedo pagar con tarjeta?",
+      "de": "Kann ich mit Karte bezahlen?"
+    },
+    {
+      "id": "s-efectivo-o-tarjeta",
+      "kind": "sentence",
+      "es": "¿Efectivo o tarjeta?",
+      "de": "Bar oder Karte?"
+    },
+    {
+      "id": "s-debito-o-credito",
+      "kind": "sentence",
+      "es": "¿Débito o crédito?",
+      "de": "Debit oder Kredit?"
+    },
+    {
+      "id": "s-pagamos-juntos",
+      "kind": "sentence",
+      "es": "Pagamos juntos, por favor.",
+      "de": "Wir bezahlen zusammen, bitte."
+    },
+    {
+      "id": "s-podemos-pagar-separado",
+      "kind": "sentence",
+      "es": "¿Podemos pagar separado?",
+      "de": "Können wir getrennt zahlen?"
+    },
+    {
+      "id": "s-la-cuenta-es-de",
+      "kind": "sentence",
+      "es": "La cuenta es de doce mil quinientos pesos.",
+      "de": "Die Rechnung beläuft sich auf zwölftausendfünfhundert Pesos."
+    },
+    {
+      "id": "s-aqui-esta-su-vuelto",
+      "kind": "sentence",
+      "es": "Aquí está su vuelto.",
+      "de": "Hier ist Ihr Wechselgeld."
+    },
+    {
+      "id": "s-puede-traer-la-cuenta",
+      "kind": "sentence",
+      "es": "¿Puede traer la cuenta?",
+      "de": "Können Sie die Rechnung bringen?"
+    },
+    {
+      "id": "s-ya-traigo-la-cuenta",
+      "kind": "sentence",
+      "es": "Un momento, ya traigo la cuenta.",
+      "de": "Einen Moment, ich bringe gleich die Rechnung."
+    },
+    {
+      "id": "d-la-cuenta",
+      "kind": "dialog",
+      "title": "Die Rechnung und das Trinkgeld",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, ¿me trae la cuenta, por favor?",
+          "de": "Entschuldigung, bringen Sie mir bitte die Rechnung?"
+        },
+        {
+          "speaker": "B",
+          "es": "Un momento. Aquí tiene. Son doce mil quinientos pesos.",
+          "de": "Einen Moment. Bitte sehr. Das macht zwölftausendfünfhundert Pesos."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Incluye la propina?",
+          "de": "Ist das Trinkgeld inbegriffen?"
+        },
+        {
+          "speaker": "B",
+          "es": "No. La propina sugerida es el diez por ciento. Es voluntaria.",
+          "de": "Nein. Das empfohlene Trinkgeld beträgt zehn Prozent. Es ist freiwillig."
+        },
+        {
+          "speaker": "A",
+          "es": "Muy bien. ¿Puedo pagar con tarjeta?",
+          "de": "Sehr gut. Kann ich mit Karte bezahlen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Claro. ¿Débito o crédito?",
+          "de": "Klar. Debit oder Kredit?"
+        },
+        {
+          "speaker": "A",
+          "es": "Débito. Dejo la propina en efectivo.",
+          "de": "Debit. Ich lasse das Trinkgeld bar da."
+        },
+        {
+          "speaker": "B",
+          "es": "Listo. Muchas gracias. Chao.",
+          "de": "Alles klar. Vielen Dank. Tschüss."
+        }
+      ]
+    },
+    {
+      "id": "pair-cuenta-cuesta",
+      "kind": "pair",
+      "es": "cuenta",
+      "options": [
+        "cuenta",
+        "cuesta"
+      ]
+    },
+    {
+      "id": "pair-cerveza-cereza",
+      "kind": "pair",
+      "es": "cerveza",
+      "options": [
+        "cerveza",
+        "cereza"
+      ]
+    },
+    {
+      "id": "pair-pollo-polvo",
+      "kind": "pair",
+      "es": "pollo",
+      "options": [
+        "pollo",
+        "polvo"
+      ]
+    },
+    {
+      "id": "pair-taza-casa",
+      "kind": "pair",
+      "es": "taza",
+      "options": [
+        "taza",
+        "casa"
+      ]
+    },
+    {
+      "id": "pair-sed-ser",
+      "kind": "pair",
+      "es": "sed",
+      "options": [
+        "sed",
+        "ser"
+      ]
+    }
+  ]
+}
