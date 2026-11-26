@@ -823,6 +823,19 @@ a {
   font-size: var(--t-small);
 }
 
+.block .confirm {
+  display: grid;
+  gap: var(--s-3);
+  width: 100%;
+  padding: var(--s-4);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-md);
+}
+
+.block .confirm > p {
+  margin: 0;
+}
+
 .block .actions {
   display: flex;
   flex-wrap: wrap;

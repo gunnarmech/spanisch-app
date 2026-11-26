@@ -81,6 +81,14 @@ try {
       for (const zeige of SCREENS) {
         await open(`zeige=${zeige}`);
         await shot(zeige);
+        if (zeige === 'einstellungen') {
+          try {
+            await page.getByRole('button', { name: 'Fortschritt zurücksetzen' }).click({ timeout: 5000 });
+            await shot('einstellungen-bestaetigung');
+          } catch {
+            missing.push(`${size.width}-${label}-einstellungen-bestaetigung`);
+          }
+        }
       }
       for (const typ of TYPES) {
         await open(`zeige=aufgabe&typ=${typ}`);

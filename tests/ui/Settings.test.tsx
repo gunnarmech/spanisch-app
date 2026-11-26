@@ -164,3 +164,33 @@ test('Einstufung ist über die Einstellungen erreichbar', async () => {
   fireEvent.click(screen.getByRole('button', { name: 'Einstufung machen' }));
   expect(screen.getByRole('heading', { name: 'Einstufung' })).toBeTruthy();
 });
+
+test('Zurücksetzen erst nach Bestätigung, genau ein reset, dann zurück', async () => {
+  const app = fakeApp();
+  const onBack = vi.fn();
+  render(<Settings app={app} onBack={onBack} onDiagnose={noop} />);
+  expect(screen.getByRole('heading', { name: 'Neu anfangen' })).toBeTruthy();
+  fireEvent.click(screen.getByRole('button', { name: 'Fortschritt zurücksetzen' }));
+  expect(app.record).not.toHaveBeenCalled();
+  expect(screen.getByText('Wirklich alles zurücksetzen? Das lässt sich nicht rückgängig machen.')).toBeTruthy();
+  expect(document.activeElement).toBe(screen.getByRole('button', { name: 'Abbrechen' }));
+  const yes = screen.getByRole('button', { name: 'Ja, alles zurücksetzen' });
+  fireEvent.click(yes);
+  fireEvent.click(yes);
+  await waitFor(() => expect(onBack).toHaveBeenCalled());
+  expect(app.record).toHaveBeenCalledTimes(1);
+  expect(app.record).toHaveBeenCalledWith({ kind: 'reset', cardId: '*' });
+  expect(app.sync).toHaveBeenCalled();
+});
+
+test('Abbrechen zeichnet nichts auf und schließt die Bestätigung', () => {
+  const app = fakeApp();
+  const onBack = vi.fn();
+  render(<Settings app={app} onBack={onBack} onDiagnose={noop} />);
+  fireEvent.click(screen.getByRole('button', { name: 'Fortschritt zurücksetzen' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Abbrechen' }));
+  expect(screen.queryByText(/Wirklich alles zurücksetzen/)).toBeNull();
+  expect(screen.getByRole('button', { name: 'Fortschritt zurücksetzen' })).toBeTruthy();
+  expect(app.record).not.toHaveBeenCalled();
+  expect(onBack).not.toHaveBeenCalled();
+});

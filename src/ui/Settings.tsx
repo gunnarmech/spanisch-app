@@ -1,4 +1,5 @@
-import { useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
+import { RESET_CARD } from '../engine/state';
 import { exportBackup, importBackup } from '../store/backup';
 import { saveBackupFile } from '../store/exportFile';
 import { placementItems } from './Placement';
@@ -18,6 +19,21 @@ export function Settings({ app, onBack, onDiagnose, onSources, onPlacement }: Pr
   const [retention, setRetention] = useState(settings.retention);
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState('');
+  const [confirming, setConfirming] = useState(false);
+  const resetting = useRef(false);
+  const cancelRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (confirming) cancelRef.current?.focus();
+  }, [confirming]);
+
+  const resetAll = async () => {
+    if (resetting.current) return;
+    resetting.current = true;
+    await app.record({ kind: 'reset', cardId: RESET_CARD });
+    void app.sync();
+    onBack();
+  };
 
   /** Ein anderer Token gehört womöglich zu einem anderen Konto, daher wird das gemerkte Gist verworfen. */
   const commitToken = async () => {
@@ -131,6 +147,30 @@ export function Settings({ app, onBack, onDiagnose, onSources, onPlacement }: Pr
           </button>
         ) : (
           <p class="quiet">Es gibt gerade nichts einzustufen.</p>
+        )}
+      </section>
+
+      <section class="block">
+        <h2>Neu anfangen</h2>
+        <p class="german">
+          Dein Lernstand beginnt auf allen Geräten, die abgleichen, wieder von vorn. Einstellungen und Token bleiben. Vorher kannst du oben eine Sicherung als Datei speichern.
+        </p>
+        {confirming ? (
+          <div class="confirm" role="group" aria-label="Zurücksetzen bestätigen">
+            <p>Wirklich alles zurücksetzen? Das lässt sich nicht rückgängig machen.</p>
+            <div class="actions">
+              <button type="button" class="btn btn--secondary" onClick={() => void resetAll()}>
+                Ja, alles zurücksetzen
+              </button>
+              <button type="button" class="btn btn--secondary" ref={cancelRef} onClick={() => setConfirming(false)}>
+                Abbrechen
+              </button>
+            </div>
+          </div>
+        ) : (
+          <button type="button" class="btn btn--secondary" onClick={() => setConfirming(true)}>
+            Fortschritt zurücksetzen
+          </button>
         )}
       </section>
 
