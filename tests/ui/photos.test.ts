@@ -28,11 +28,11 @@ test('Café liefert ein Foto, eine unbekannte Situation null', () => {
 
 test('jedes Foto hat Urheber, Lizenz und Seite, und alle Dateien liegen in public/photos', () => {
   expect(allPhotos).toContain(headerPhoto);
-  expect(allPhotos.length).toBe(6);
+  expect(allPhotos.length).toBe(7);
   for (const p of allPhotos) {
     expect(p.author).not.toBe('');
     expect(p.license).not.toBe('');
-    expect(p.licenseUrl).toMatch(/^https:\/\/creativecommons\.org\/licenses\/by(-sa)?\/\d\.\d\/deed\.de$/);
+    expect(p.licenseUrl).toMatch(/^https:\/\/creativecommons\.org\/(licenses\/by(-sa)?\/\d\.\d|publicdomain\/zero\/1\.0)\/deed\.de$/);
     expect(p.edit).toContain('zugeschnitten');
     expect(p.page.startsWith('https://commons.wikimedia.org/wiki/File:')).toBe(true);
     expect(existsSync(fileOf(p.src)), p.src).toBe(true);

@@ -87,6 +87,17 @@ const bySituation: Record<string, Photo> = {
     page: commons('Lascar_Cerro_Santa_Luc%C3%ADa_(Santa_Luc%C3%ADa_Hill)_(4576822725).jpg'),
     edit: 'zugeschnitten und verkleinert',
   },
+  '06-unterkunft': {
+    src: url('unterkunft.webp'),
+    width: 160,
+    height: 160,
+    alt: 'Weiße Hausfassade mit Balkon, dem Schriftzug HOSTAL und einem Fenster mit Vorhang',
+    author: 'Mx. Granger',
+    license: 'CC0 1.0',
+    licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/deed.de',
+    page: commons('Hostal_Santa_Luc%C3%ADa,_Santiago.jpg'),
+    edit: 'zugeschnitten und verkleinert',
+  },
 };
 
 /** Foto der Situation, oder null, wenn es keins gibt (dann zeigt die Zeile kein Bild). */

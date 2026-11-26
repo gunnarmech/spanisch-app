@@ -1,0 +1,7951 @@
+{
+  "w-hostal": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "8c212045d752398a4c8e2e4c17435c6543e9cc1d"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "8997a12965c93370efd1275d18eed0ed7a4a70f2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "19d0e6d102a6ef347112660be1f58c12f8873f96"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "f3809967e5389209235f8f278b0e334e893bec5f"
+    }
+  ],
+  "w-hostal-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "dedf8fe6c0def68f06bd41c9a8c7c0b768001892"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "d3049d51ec702714fed57fa334b208d68a55fa11"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "6ea699f402e2a7766ae9ce445c5e8f80221a5e01"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "c98c9d6a862dbe344897a5802a8d0a7f854a89e4"
+    }
+  ],
+  "w-hotel": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "9b127931092c7b968f288c96cf8d5f22573739f5"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "87cab1aeee04eafd6c236ba54df452f2bdd42937"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5a8673f3082de2883be3f023a1748a337110cdaf"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "3c4eefd3707b94164a389c8464e5451f918a8029"
+    }
+  ],
+  "w-hotel-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "61ddb7bab7e8ed921f920f6ccef51f223a06b75b"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "7c6798466c9aba9c205be5c1ba1c8f7114337be8"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b9dac8d0910d51bc929c9551a489a46f1fe7feb1"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "3675bb807adb8f2240284b7716cda5eed33d7d2b"
+    }
+  ],
+  "w-airbnb": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4cbde39571b1c315860d1404710d4f2408326404"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "c679d339cc754c81f0e1ae66f87ff88822e28ad1"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b74ca169abd19607eaf30815d96adf86cb5cb1f5"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "c8f128a353c57698166a3a53a4bd2bc07d804541"
+    }
+  ],
+  "w-airbnb-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "25ead23058eebc2e5a9cab4bca97248d80d1a575"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "51440f8c272eca67a72948a5e3eda721efea756a"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c63c8dc2fa682fdb1ed2ada0a469b635f96fa756"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "3dfdefb4fa5796903ccf159062874279ec8b57e9"
+    }
+  ],
+  "w-departamento": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "34fc9ba1b54473098cc900a136b64e3010a1e16c"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "fbcf68c6afcf51c628f65b297cbd78357b38b79f"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "60db9310e26022ae3d9823e7a4bd85bc1e166d8e"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "4d5925962e1f88cdbb1947d9c9b6c6962a6954b0"
+    }
+  ],
+  "w-departamento-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d70d9f9923dad645538865c61d9dd3e6666ebe10"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "adf58e79de2d8eb4509a640bcad856531ff73762"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "2083a068e643033be0c3cd8935f7862eea8eb3ca"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "312eec697ab25ca1fa5e37ba5f4e3ac7401d210a"
+    }
+  ],
+  "w-habitacion": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "9206b9c94e742a6eccf23f0a04859dfa665d31f4"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "65a7af688cccba1e6d15f4b382ed6fabb9807c0f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4b267be413a3b8c76130033a5a01b1c63dcbe5e5"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "da74b9f6b759326abe214853a1e254863a8c3fb4"
+    }
+  ],
+  "w-habitacion-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "678fdfe1c884c5877a444568df3eef97d3deb6e1"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "ddeea61b91d3f865ad98fe3ff30a8d76b5ffc254"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "884cf77b5f33b5d6d251814dcc18109a2dd8a542"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "0067e36c763bbe71f1770f3134613a3c006b54aa"
+    }
+  ],
+  "w-pieza": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "4741896a84516422a87209e639e74f85218ae927"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "dcef7001989782eb5e00ced3687267f1b2f5498e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "a08fc37da0f81af2d2835449f4936e98c0eae293"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "a1ba628275e6e7e9ab4d4d3d894c79d1481d4af7"
+    }
+  ],
+  "w-pieza-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "cef68b5b058e519ace9c8fa1fc4797cf4813a133"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "862f631c840d841cf95221658e2572b4cb8d4269"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "fbcb08883079d781ae407c45c3487d97f8af7d1d"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "c1d3c1a85bfb745d30220d4b905f6c3ef7df60b2"
+    }
+  ],
+  "w-reserva": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "8c7d39bc049402f77f30db2dc0782078270eadec"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "7121a8e7fbe995337e47c5578b8e32b56a6721b8"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "e0955bb4a6138604cc5f6a65374f3a0664d80263"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "414644d46eefcfc26e95e64e1a028b18432015a2"
+    }
+  ],
+  "w-reserva-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ed66c6726fd94bc32fc49aa3ef67f122f9ab80b7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "110069f996c39e5c0b30668f918c92df660ff1c1"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "85aeb4d8c40c173aa004d9d8c0a976ec02a9fd3c"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "50f1cfa9ed7dc1de08faf34203bf4da4565e6409"
+    }
+  ],
+  "w-reservar": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "cd148767874af1a39515e1bc13b684837e161316"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "3f584f15b6b14878d1402bfd98dfb66590a4d0d2"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "14d8692bb4f1e0e29d530aa7f857db14e55511f4"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "4675f31aac6c2192f42236ca9229e613da233ea2"
+    }
+  ],
+  "w-reservar-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1fcfbf0c808d4b1114be1d885e30217641a10d55"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "3142ccfafc0e40346d67f604e84055f2b45fbad7"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "65f55d4d1d7017c84609b4ad0f76ca5e19fd5bfc"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "93dfa872e5b6726249318ad03dcbb35e698dc036"
+    }
+  ],
+  "p-check-in": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "c496c7a99e50ca9e7cf1585b0ee2f0051929ab8b"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "479a6f872d5f608db83b0f89d93dec3cead40988"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "c57b64434837f69a3d0ebc22fefdb396ee22d2bc"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "6f6b5a9a80f24485eea5d51b5562fbe98e4fa57f"
+    }
+  ],
+  "p-check-in-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "e1c852c7c6ff54f80127c32975076366959723d9"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "786ac94d5fb9669503b5bbc71159dce824df56cd"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "cc68e09931c28b4999a5179fbff5207e4b042065"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "66ddaf0ca5899f4c19b97b71c94afef718318150"
+    }
+  ],
+  "p-check-out": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1a2c84445c737949a11ad112969b934b49396564"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "cd9d4d4361ef1010145ed4b7b78d8519335b6517"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5ca7b86e72e5ebd62d826b37f15624e3acd26279"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "1e5a7a319ed8076bd97d7b876d43a75781aa0dee"
+    }
+  ],
+  "p-check-out-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "80b67ca77e77a3883e5cc8c30d4fae791e769a20"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "1e7444b45aa2702c0080c0c59ec94359f5d486d2"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "5c47f2114889181da8f6c67d4217360d5bc3b9ba"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "71ac0b831879d17d83bb0eaeba0ad5ed938d29b0"
+    }
+  ],
+  "w-llave": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "dfd3e7d6656c2182e96680f5d5189e42f3749493"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "8426e8336210e2dab69d5ca2562f2df7ad41612c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "d7e4784aef21b86193a26a9f494faf0b16b5a8a3"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "4a596e3cad33107019f8398ba54cdc6536d11c05"
+    }
+  ],
+  "w-llave-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b9e419b9ca0c376ec1c3d940dac2f58ce7cd879d"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "3a474122dba23453598e1b29f4cf86086210f6fc"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "62817e6bad898778273e1d241a9267eec56d4009"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "00b773cd43d314d8e1877c987b57f1c0cb2369bc"
+    }
+  ],
+  "w-ducha": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "1db7fa035e19d63259ba446abd2516e8ea6627dd"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "d0596f21eed1208651aa845f70ee3d991894f3ea"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "dd749c47c7eb276a8b48022d22f65ac797404a9d"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "eb025d303d135cbbc79d087989b0763a367aff18"
+    }
+  ],
+  "w-ducha-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "535a4cdd83ce29acdeb716acefbd9123be4e68e4"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "710e9993455f72906d8f54d4861e371ff3326f03"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4b795594df4afe83eb0ae811bb87f471eccccbc2"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "8ba0303c0d65f3d41f85271e591eb96e93b237ea"
+    }
+  ],
+  "p-agua-caliente": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6589900cb1876182fb03b4d3a147769737000948"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "2033698a892ade2ada2820ee3fd9cbbe5cc59620"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "bcacda5e09144d10f386d3d4c89a836778b8f3c6"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "b38b37c407f1b51650be2247a91161b6cee752f0"
+    }
+  ],
+  "p-agua-caliente-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6958712fa5b8532cf03518067b3c5b8647e5bd75"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "60fa24f192d15d3da05c27742649c4a34d7c19db"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "85cd362ab64bb9f3cb520c417322e9ca7373aded"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "9668dfc7f95397e09eb687e3264f271be0bd22d2"
+    }
+  ],
+  "w-toalla": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "561697fa89c8dc5ebf7c535627fab76784ff7994"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "b8cd52c922bcf61248a616f5657a787adc0e93cc"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "94888ecc00516b079a264784463b715ac2651a22"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "0fc1327a08389bb8d23d474f437f240d2c532746"
+    }
+  ],
+  "w-toalla-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0ad5848fc58c8ea3505a98e35c8faea7d2baf753"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "89541c65a4d8f4bbd8e1f9d33f7044bbbd310dd0"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5e48c327c80ac7fc9d3968c43c8418ae85cb3795"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "195709787f58895dcb34e7cc92eb0c868a5c2140"
+    }
+  ],
+  "w-sabana": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "d7f541f8784d0b15261e2c725d91f23fa583fc44"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "3e3e600c6280bf51300f52874bfac82371aab0d3"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "0b6975296a9a0228ace2b343ed76b956efc0daa5"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "d46ca0e0d046c94c7fff091d1eb88ac9cff0963d"
+    }
+  ],
+  "w-sabana-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "91935c63d0fb2b3c473ee1ab18257f6501d346f1"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "299bdc96f430cdf1a8e1f8063656b2b7d634c603"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "1c7e6359281ae18d31aae16ca891598b8577a1bb"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "91c5de2b49444c2df0683793bd145e1f8ded4f44"
+    }
+  ],
+  "w-almohada": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "8d44f1d079a94b8177662455b139aaab10050f42"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "58ec6402583cdd8be2c74dfcbfa364e83e53f9db"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "44bc73e3a33c3389cbc9b23c424be7c809a22b0e"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "134b675a7988356cd48145810140a3fd4b9f51a1"
+    }
+  ],
+  "w-almohada-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0a49a3e8b6726351e326f5db374fe7e0eeea9224"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "f8264e4b36b6cdcb5d77c3e5ead06694846fe2fd"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "cabcd1915e31e32d386b746a1f14bf57f9047cce"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "7ac8b98afa11e452f5907a725bdf0308a31d828c"
+    }
+  ],
+  "w-frazada": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6a511ab8d12acf203da026d30225275c0e9e73dd"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "8477d5c1be54fa3f288e4db85a610b439e03681b"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "087e8bd2d3c3aad803787829ca474f9e6ab5ae57"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "9fe19c44490aee5a66647640564f3b4f5ad43803"
+    }
+  ],
+  "w-frazada-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "3b00ab40754df471619047a0cb08149d40f3cc5e"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "6da7c96bbc219ff3235146b0494cb6bbdd87e968"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "07b0006e93a52c3bebd7fee40356310cf2de1bee"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "e59212e9dabe62f6b41fca316a5a550bdcb45652"
+    }
+  ],
+  "p-papel-higienico": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "cf46e015c8227307651dfd85fe6c9f70c59527ad"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "1f434dd703385d7c9c34a9c01e5e50dc738e2c94"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "2fcab2db965c019ce64c9dffc786f7701c2bae89"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "54236c81b100bc82bfa5daef1a7a214df513c865"
+    }
+  ],
+  "p-papel-higienico-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "2e50dc2f6d432254967d3eac3249bc9dedc76c16"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "07daee691aa27262cb7583706a7a8338442efd8c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8041a84d7fedd5d38cfe99b2a66d1c8da4cc3f15"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "ccb0fec780c22ae52579093a04c3243d89c0cb10"
+    }
+  ],
+  "w-wifi": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "abc1d6accbd950db16380efd99ec8f36e5080481"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "820d8cb079d96932f551a21fd4c860e478f4c6e3"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "84a56197da627f2a0b5a855a4ab0c26d66dca26d"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "db656246844e93208748d749983b1375dcb74ba6"
+    }
+  ],
+  "w-wifi-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "bea79a452545beeeb53cd072c9b633487c1c394d"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "82f589a68b1bfa6906cea13be0a8f5662cf42ccb"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "0ae01d3bdae3847f68352709e6d3a6669b573216"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "e7a34d25cf91e8c8e5997c6c7d6518a0db82a27c"
+    }
+  ],
+  "w-clave": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "58ab0efbabc1f878c55dffa922d4d79809209798"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "2b928c703343211bd834015a5785415bc5b17bd4"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b4e14321952517c99b6da328cd0a7f387192bbe9"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "f3df6b35c6cd0c429e8758855642d8c61e9be3a3"
+    }
+  ],
+  "w-clave-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "da14fa10875e405963afeb29f62d3d50c13a6ee1"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "98339eab022fb2e0c4070a784e03c5896ab32637"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "7f765950e00832c3e50bb846be0d5996b62962d6"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "9f64e029494e376c64c9858e2ef4e29f71108c37"
+    }
+  ],
+  "w-contrasena": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a8e2d09e5ed14ec78dcd1d4e9f8bc0253c79652d"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "cfe956d239657ce5e51a5725d6dc1ee333155c8d"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "1e29387d5cb41914e58faf6cdab48f34921e4fee"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "d545b29d15765e93a2a6b635ad4a0a5e46609662"
+    }
+  ],
+  "w-contrasena-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "da6c2a7847d73d5bd74acb725a0ae7d99a635823"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "5852178721ce5198d15e3fa50548460f3ff6a079"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4aa25caf288b41177aecbf5ce67f64c2b5e3280d"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "d9f71c32ea67703bdc2e54271a2b6a2a98efad39"
+    }
+  ],
+  "w-recepcion": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "39607dddfc9db240d6813762c4f416295a7aced5"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "7570b91114125159f2ed15abcb2d123de44d02bc"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "cf9a79c18ca56286fb911275fc08ef49237b23d7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "265d40cfce2741c3882a7478d715db4dc20a350a"
+    }
+  ],
+  "w-recepcion-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ee942d6be19ff96fde7f68fb9d3103d829bfd6ce"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "538e14cce146e206ca3d0d4d9bd8e4f4988b0492"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "718b8f323fb41b04bc38ec2bb2ac4b9fd8055fc9"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "b4eb7f748eb2fc2a103080583b41151dc72831ff"
+    }
+  ],
+  "w-encargado": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "bf7773d725d2d8fe40c0543473978c1a5fdf8a18"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "ab7545b845ccd9f68f39e5b1a1fd95e769b9e2fe"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "2c61dfed8fb010d189be5667cf436e3296040054"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "f7875d2910633f08fc381c748e5e78b1c41f4945"
+    }
+  ],
+  "w-encargado-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "9de3a58a5141d475613794cf316b0f4e6623da3f"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "0062620d14a2dd4268fcab10982d574f629e5dd3"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "f4858191ff98aeea31c1527c2960fec780f0caa7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "a91f62ec30eecafb73aaded721558e3209357971"
+    }
+  ],
+  "w-anfitrion": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "b730b01162c4dfa3b7d3a3785c0b3cf91c8321e5"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "b4b0aaa9b86875d18d1f4f60e75e9b554de36593"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "ea9d859b60f12685c7d519a3c09ed943f7a57081"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "5417488726345bcc26cf81219a4d7ef895ded2e0"
+    }
+  ],
+  "w-anfitrion-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "261c250aab0525ca82c2925444aa20e25236e5b5"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "bc99a2c609371cc23eff8af7b8e726f1d029d5c8"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "0516cb5dee0de57fbf78c60ed6ea6c412937da29"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "cae7a8033e4bee926072df1578778c473564c907"
+    }
+  ],
+  "w-conserje": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "890d1d21e693630c866ac54ccb372b364178fe53"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "2e83f5cc5421d08cd08ff7cff4cd157c1e4a66e9"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8730ad3bc12c29c9e9a61726c307690e50c9e2e8"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "dc505a4f4704ed492dda8c77b2750b25317c7703"
+    }
+  ],
+  "w-conserje-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "bc5849692bc3afb02fc3d0284e717be50d520ee8"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "ed69e707895a2797588663ce7713e4fdf3698c46"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "f652236afadc110502056b8f442a5f9124e6b6a8"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "b5ae7904fb8e1508615566203c4ef831bd4a0cfb"
+    }
+  ],
+  "w-pasaporte": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "1c9d881f5f1aaf035151fc4abd47e2f1e5fe58b2"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "94d7ae261e6f0a21a6891d4bf58a3af6058dc20f"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "fe33d81b6facc282201d5b04721ecd23c59b67c0"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "7fcd43c65fdaf30080e47973063e282626056711"
+    }
+  ],
+  "w-pasaporte-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6f4830d1307bc724b483a7637f973812c4c9423f"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "1b10893792392f191b2f0846d1290acd0ea4cbcc"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "cc603d37783b298f30e0856600db6fb62fbbd20c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "9eef001b93d3b206ffdbdac7736109b68d0838a1"
+    }
+  ],
+  "w-persona": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1c91df6abd11ef561fac64292bce405880a7f506"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "522f71e81bc70e92d0f87e7410a4b567333f8c77"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "88426df587f93bf9e9401e0abdcb6c7087f85eb3"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "6fc1c3cb47e62e51b30dc28cc764220c0e7d32bc"
+    }
+  ],
+  "w-persona-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "754af62e0b69f7e8dbe69d3bc62a554d7a6a8a05"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "e702f3513918a1e6275b20542020d7efe87f9323"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "857fb24ac8e6f3607cec9b3a9a6857002a4772c0"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "a614dbff1a6d4ea6cb30f3fc33cff5bd03520b96"
+    }
+  ],
+  "p-por-noche": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "7df00e177b9ab745b2d07ce682e040c8d223c408"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "d3171eb5d5d81a16cd69416b2362dfb75a9dc0e6"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "702df65f9fca30df95f9d01aaf41dfea70a49401"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "36f89841a1a9ba7f998b1443db0a08304fd310eb"
+    }
+  ],
+  "p-por-noche-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1f95930c2303b19012ee32cf0fe6a5b3a9bcfa81"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "18485b326f9fb0e3c707c842c994679995f148cc"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "90493630d983cea960f524b5c4ac51b018d0fea6"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "cab9c6139ad6d6c1ad5403908200ccc825b58e31"
+    }
+  ],
+  "p-cuantas-personas": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "36dc881242297af164f4fb27d4b1be86cdce29d4"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "10c1ee33ce64d33d820ccf02b43cdf9d123bb29a"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "6124e5a91d1aed16bb60bcc11e6b0ab150547c69"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "b11ac79156f33b9839afbf725c79605ae1f136ef"
+    }
+  ],
+  "p-cuantas-personas-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "7de04fbb22802176602d799b5943c6ec8268fca2"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "95fa1f8409d2e8d45423ab3fb5fc3f5a9011009c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "2c334e7284176d7ed28a087034e232d6cd80e2cd"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "3c729d0e37a3e5ebe7c370cb9523cac0f174d31b"
+    }
+  ],
+  "p-por-cuantas-noches": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ffb18d3370a254fd630c1cb2a688ddc95c13d96b"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "73552e2f5f1a25746e44894be0f31c72b3b3962a"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "f4defd6183d45daa95ed4ebf34afc44ded168cad"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "238e9ef3109a8647ae1f97a5acc31db03b0c1c37"
+    }
+  ],
+  "p-por-cuantas-noches-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "b0b1f296cd66beacbf5b6d6899b94a739c33e487"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "28a20cb6a9aa1736c27534d239e24d372b9ad2b6"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "76f053e57792a66f610a111e63fb2abc62fc51cb"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "768be30f71c9c064aeda419210fc339d52d12392"
+    }
+  ],
+  "w-fecha": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b949e9c01427065c26c451c54c842283ff900079"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "69a3830757679cc0b88363fd952479b29a6363cb"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "b9f1d523e976dc33737b162c1f24ce17d9ae231a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "59b708db31c9a978aa9fb86521da18538fddb553"
+    }
+  ],
+  "w-fecha-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a4c6022d0055b2722974f5f67514875835a9a7af"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "81f8c1cec64d2ab8a668ddd5c1047082a60d277c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "4746af089ec5e42cc296923ee241d14135a00bed"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "3488e61e39eb8396ab55f4b67d49ff2aaf74100c"
+    }
+  ],
+  "p-pieza-individual": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "3e5874b4e47eb3dbe55da5fef8a32ffecd09de2b"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "c55a832cf5c24b76123ef70d98c7dd88e8bb02bd"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "ec33d47e984d0fe26acecd7c53ca9278c0a0644b"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "172560f03d247d3a2b554a3590b58c64a0b64095"
+    }
+  ],
+  "p-pieza-individual-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "102d32a4e5343df74334b7b652b91664fe3ad331"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "765a823cfda1a37b5324e356e8133c5e7f0d6ef4"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "21598195d1f6a74df8b44560864e70dd87489b00"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "3f52da34b830ac022c28c20354e71593df4771aa"
+    }
+  ],
+  "p-pieza-doble": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6a1830d2d1e8ee6d629ce8eb7673ce509d09876b"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "b34e031f4a4c9b40daf0c3f5da3c6b4cdec2c5f1"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "f95b51f87746ca0228606fb167d1e63a78c9f044"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "8b48439bd107cffc290390c8e8eb369e1e51e354"
+    }
+  ],
+  "p-pieza-doble-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "edaa0b91640bf7d555f6937e733e706d2881d6fb"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "e17f437c77407847abb6e4fcf5015d5267f3842c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c8ceda65906a9f70821635495c58545c78deb6ef"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "23536c2c5c26a5f9b59d3f45361135fb80647504"
+    }
+  ],
+  "p-cama-matrimonial": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4ed42d39d6d74f62cfc9bb6d619c003858666f93"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "1582ff38170433286fe456c043a022626d436f31"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "dcebd75a346ad0789ae0e661d2cfe8aef1127094"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "9d60ef6a6778ca5601e1e067b10cd76bcd88d228"
+    }
+  ],
+  "p-cama-matrimonial-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "f53773ab54be3215c3c47984ac247a4ad2370ff5"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "edafa718d5fd5c736397a5da9c5f1d54ff7a1e18"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "70b5d15bf989d75075e3fc29f1a4fe2a5ba2cea0"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "6c6c94f9427dbaf5f95e134f2c7a884cf4ee98ef"
+    }
+  ],
+  "w-litera": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "cbf6ffff18552f9e1e4069ac8761e752b09b449e"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "f267f7d20beedf7486b89a827dcbddd50b64482e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "896dafc5548206e8b8c4ad6d888f01dbf6cce743"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "cd705ac4edfd7418617878801f0db3cc9a41e874"
+    }
+  ],
+  "w-litera-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "88f23cd2529e42ee06cb8777729227a8ef289241"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "592cc26df165fc0e74f68e8a503eaaadd2fb29c5"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "6f9fc261945f6c25c3b29893131b2a31e9f867dc"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "6730f99480aa0387175cbe958e9ac417c3bb42ec"
+    }
+  ],
+  "p-dormitorio-compartido": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "797055cbc8db6fa507fa573d2a13e8b761860bee"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "d47ebb1b4309cf689255bb8a63397bec7cb44f38"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "11b9ec7b389bb4464a3e3c8e2c1280373017f637"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "d5aaa79242120b740d05c49c9c3a1266342f2996"
+    }
+  ],
+  "p-dormitorio-compartido-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "5228b1130bb6190787a0ae5fb7ca8369cd27e2a1"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "c6f9d6f6c6f328412ed18b736599834eb15dc229"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "11027a15eef51600532493a660cd0618ca34258d"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "77ed860feff4c18e5967456bb1dcd1b3234f8d3c"
+    }
+  ],
+  "p-bano-privado": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ee5c3aaa3ee479ebb465f93747425c9d87e05232"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "529e822f1c3f6c4fda086873c8dfe5e1a6cde11c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "4e15b7a1c730ad2f9c83f376c567b9e44f9c1ffc"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "5fba06e5230d0fef5a3b9b34a2481a3c124ea040"
+    }
+  ],
+  "p-bano-privado-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "cef68b5b058e519ace9c8fa1fc4797cf4813a133"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "862f631c840d841cf95221658e2572b4cb8d4269"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "fbcb08883079d781ae407c45c3487d97f8af7d1d"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "c1d3c1a85bfb745d30220d4b905f6c3ef7df60b2"
+    }
+  ],
+  "p-bano-compartido": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "97bb51543ad849c8d9cb3c45d55e878ac99ca15c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "9e6c4fdc17bf95ccebab50e8c9238d77eafffe77"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "356d4d219c2a830159d496d731b17974fce6dccb"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "1857d6381a002af8bd3aaa77035c993ad9c9bd41"
+    }
+  ],
+  "p-bano-compartido-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "66478fb2522807c38b32a3cc7791fefbc437430e"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "25c560763903f38def150934ad80175e4c3b38af"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b454a0ccfd50aff9afd4c5ca654f30d8c6fe991d"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "c51facb8e885555d304f5e6353bd7f880adf5264"
+    }
+  ],
+  "p-desayuno-incluido": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "9ccab78b4dfb160be23fdb7261017112f555db20"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "120ec67ef3880cbdf98d2486c0e4f1bbcdf692a0"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "ae939764c6c8bd62ed76764a6924967dcd547ead"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "9b1f8b71662a7e8e906676706c54a16691ed17b4"
+    }
+  ],
+  "p-desayuno-incluido-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "97744f13551afba0680bf1121fa6642c08f32bb2"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "2358bcae5f5802ed0bf3cc08f2eade284b75a876"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "7b5be96fef59ff232cef66ad835630bb94971b18"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "d042a53d019dfb4acc9ba6d6b195d54e357abeca"
+    }
+  ],
+  "w-limpio": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "a013988de4c1512a8941857e715766d48df504f4"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "e774959fa76a14a2d1e69568c60f34fba0eac5b2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "1e6193c7248a12b73a1cd136427c44fa1ed1c08f"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "4c5cb48379a7ceffbb352876a7a380c5b38e9a01"
+    }
+  ],
+  "w-limpio-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "f6795cd938157996a29864952ab614b29e22f8c5"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "20a74202b1ead3df0a430a4622691f1d602e5844"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "95e1f7a7aa68d94bbb9fcee02cda45d05e659293"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "e79f97567bb66c6575f337d0b71205b082d4dd46"
+    }
+  ],
+  "w-sucio": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a534743eaeaa478e7010eead7c372265cd758ed9"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "bbe6858558ef3a5617ef983a1b296ffa568ddd5b"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "46f1a25ead2c19f2ef8bd64a8a1a55878fdb84da"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "a52515430745f35167cab7de1ca0960d27148ea5"
+    }
+  ],
+  "w-sucio-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a26b79a07024e01a5a2ae5cd9f102e34c1e458e2"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "0f0b1d14abd1da77119c94854da7bbeddf513f1c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "d2a74499b69e777f5010c18f8d1d3c8b83625bb9"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "85bec88d1b5ac457158cb16755fafda132199ae4"
+    }
+  ],
+  "w-roto": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "62ab2be2f54babc4dbdc567d7e4807c856f710ef"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "f03f6fa0acc6d8eca0bc06e42cbbf5bfecc05a76"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "a713cd2a6cec6939b02ea454b770dc1d78853c1a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "54b4efadff96e51909d8573f72334d499e312593"
+    }
+  ],
+  "w-roto-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "eb4ceac9642ce24ff0cd9f18b95db8a0615a9d6a"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "dad302791f40b943ca91d34597c232705e8862da"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "59cf7f091a3d4cdcf92834295383872577ef3818"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "214f9139b2363df0a229b2f822047b7270a44561"
+    }
+  ],
+  "w-ventana": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4e8d7e6a96c5f0af75a333c145bb928fae1d571b"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "ff4c6a9e50f1b23a7dbed5ae1f6b250c31285700"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8d81202e2e6cb368f355f2f563c46c6eda70b4dc"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "e1e736d3ef0cbd463d74fb4cec76d2adfd667926"
+    }
+  ],
+  "w-ventana-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4b63645e16503697603b6928d82cb7dac847302e"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "0b9ea3ecd5103dd281721d36756f30aa58720183"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "def24677d9641bd5c92a2233fe92d0c96cae351c"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "512a165e521a5c6949bd951b9d7902146342894a"
+    }
+  ],
+  "w-luz": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "29a8d1948f29e6e34f42d525831a307071904c8c"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "a0fcf1c5baf7fed475076b393276ec0d8e8b860f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c4afbb8324d7974d0a056efc0f1a7cb2c2a71201"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "3f6d2f80a5bd568ff1bf60c052dc3a4b9229a605"
+    }
+  ],
+  "w-luz-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f6adf518fa3dadb117e4b0c146c45b1f0ac245b1"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "aaed9f3ee1bfe966cf7e77e7b166cea5c26a6e19"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "011ad177a06cc3bca6a15b6a752c5bae281167f6"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "619a210160a9f6828168c5dec232141ac706467b"
+    }
+  ],
+  "w-prender": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "7d498203a98e109defbea85e8d86cb7309774e69"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "1a29efc1182ae70e373388a241395acada08b413"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4f196a10e661e2d66957d4a9f512115dddb75119"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "ddeca66b4793a57850ac2eab5d42ebf4383bfb9f"
+    }
+  ],
+  "w-prender-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "8cb5bfb17c8788514ae93de7e06c0bdd81ec528c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "a6fa235d4c1cc27b50cb7e09680ed70bc47ac3ce"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "7fc154ed208f899f704f1cffd0373a1605234d3d"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "2a7058c0e33eddf1923155986fff25740d52208f"
+    }
+  ],
+  "w-apagar": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b7c4a93b4f3bcf654581f26b43adcf785fb0a9a1"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "21fd3ecb593086fa227b16494f0eb9d8342dd028"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "24403dbfda67bd87a5594fa30ee2a3e95c482941"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "3a42fbd278395bc4a3c613c8f601a27b2645dc41"
+    }
+  ],
+  "w-apagar-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a450719e3b7c153ff137a2b0020cc50de35d4897"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "bfcd3f3abecb6abfc09468748fd3e388b837561e"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "47d5c623869c6de3b10f7613b7129504811aa0cd"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "70ce7b0c6d1917786fef8ccbaaf4b0730f2dfbda"
+    }
+  ],
+  "w-calefaccion": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "2dbb41e03638934548738bc17d73ca33900f391b"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "e58a853ed9db18fcb3bb3b530e9d0926ef096c8b"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3b3f892a36dec0905deca262e28c29869066c1be"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "f7dba63bfcfcea0fc5b13a4cf7625d7e7b8262df"
+    }
+  ],
+  "w-calefaccion-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "e52cda7949d4c0448b597653352686e0add6ec6e"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "8019e19a02abb76f7fc8adcf407e2d7389c7d659"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "1403b5c0f5da52b98cbf529f3859ade27ea3bb6d"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "8ecc110bb1d6a4e21db597b1dc1dfdaf2a07e330"
+    }
+  ],
+  "p-aire-acondicionado": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "633cb61137875d294cbbef7854089e729ccd00b5"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "0731fdbec82b59bd72570780c7044f375b54ce82"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "f4380aef1108fdb640a44b994d6f881a302ecbfd"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "3cc837d59dad1bd8514130537cffa43de02d0e2a"
+    }
+  ],
+  "p-aire-acondicionado-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "dd09f7d284e12be7078e5b07e9fb85c8b45aa970"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "38e2c633afe5844ff7ed9cea2bdb0512ab9bf8df"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "62b6e1c70cbf3786f93a41c2cdb6e5d6688c9f9c"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "ab3cebb963ab96dd9e05f28b54a2d355f8044030"
+    }
+  ],
+  "w-calor": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ba1a1a0d51d9a40097cc361567de7a80206eed0f"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "0070e80e7fe06d251de1da15230a1dabe52532a9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d6e742bebbc439aacec4d22c1657e16f57ec6b78"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "7c2cfb89fa2f5336bb6eaffb3ae3489a241d4757"
+    }
+  ],
+  "w-calor-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0e967dc6adfcf8b13895f2ff775b10ead0ddc47a"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "c4ca0381e7a6dddcccb5e0ca2782098f5f7aa40e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "f8e082d28773a78ee7177f486598d71adf85497a"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "b4a8c2681a8db0ccca625a710820bf763f8039ef"
+    }
+  ],
+  "w-enchufe": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d95452dae7b4f7f6872a8f0248d99f77090c16bf"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "72e76ed8b270f68972235e2d4377fdb7d808c04c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d4d8f12fb13feccfb2d1a6bc1e77c092e720e978"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "1ffeee823acc00222e4300bdb1a64d9c0b9774cf"
+    }
+  ],
+  "w-enchufe-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ded8531607c2e07f7af8e12c46c2b1c79f204463"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "5134b132f693939b2ac23e5dbe15ec4f5be650c9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "ca2152bd15d8fb538077f080e350d102d8613a46"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "316144d898948a9bd00ba0752267f49cad0a4b1e"
+    }
+  ],
+  "w-cargador": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "73a947efd6885a2875c36192ba4a0ee3219a162a"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "e73405d1f14aa5d21f5b89f1d22308d610a770aa"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "2acd2a07055d1fe1bcff64903e6f29a649a9822e"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "2dd87e5058719f8ba317ef991a96702e5aa48a16"
+    }
+  ],
+  "w-cargador-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "26874cacf1e545d520bc36a6c4313e09691ad105"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "582c5e63dea75a7a7658be136814d2a2d1a0c89c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "1b3d08f0fcc729e529a899f53b5530019b8edbdb"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "d8db6cdf97fab293b5ed2dacb05b9a73b73297c6"
+    }
+  ],
+  "w-cocina": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "1657bda3f657b13f11c2aaea7ca22251b9e79820"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "a1be5cf2c7ba18fcb05a97aadf49bea734eb1f25"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "f280c35545ac54477058b13489784832f3ed1357"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "a99d1c7a1f7fb92751b1794d3837c2531f463cff"
+    }
+  ],
+  "w-cocina-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "7c2cfd48477f7020d87d4d3a37342a49c7f682b6"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "3ec20ed93ddaa24469af423182f4e4de78ec2b91"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "53c09a66f7f3d0eb08fd50add89da89814f68598"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "cc11845d81bd15edd6c43493e5f8b09eaa01dd03"
+    }
+  ],
+  "w-refrigerador": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a2128bd5eff9e3fc7cc32960ca2897ecd80c0a86"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "8ae17e53c30a245ff2aca7ee887a515e5553d63e"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "d349ee52c1fc459b885733c960edf54f811a01ce"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "7a7f2b48978dc2f10c4471545e710fa1714edc00"
+    }
+  ],
+  "w-refrigerador-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "30d9e93b06e30f20de156185d7a5d054f8526d22"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "b2e2ad711f162cbc3e12dd541caf7525fa544d5f"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "535dc48b2c63014b950812289458f596a2f91bb2"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "dfa87af7bd744f445f264f6cd775d9f511f95bd2"
+    }
+  ],
+  "w-lavanderia": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6edccf75d930c9aa0591a04cfd14b222ab07836a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "02539eaa455bbd5ddb58e074330f08f472888447"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "922de6e629083b95f30e76e3cbfa4874cb14c790"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "dc25d0707ffa9bebc1563074cb36b489390f9cf3"
+    }
+  ],
+  "w-lavanderia-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a7bb4d39fb75116eec0f7583666a96133b4651e9"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "03a30fb467b0751951f430967ae26e03c4079ea4"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "921c8ed62986c699b0f241ed357442bc62bfb5eb"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "6e09e71ac147cfd9acf7d8a36ce81d65dbd981b2"
+    }
+  ],
+  "w-ropa": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a108a36d97e745bf91d4fab55d5be94e2afa2316"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "9be9e4583b11f2ced11972370a437bc17bcd24e0"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "40798b451c986e4b9d18aa0c161fbb70d97bb139"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "7953916217e788b8b82e2a0a7f4d39562b08fa62"
+    }
+  ],
+  "w-ropa-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "0312b64f9bdde2371d26c4fbe1b471e219fe9457"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "fea45039825e56932008444f2a469263a31664e4"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "a2b1ed59df69ade61a1691f3cda6478f79db7a7c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "57bfa052da6e85356bc2843fcce2477b398557e1"
+    }
+  ],
+  "w-lavar": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ba965afe8629bb68b8ea0f00b2f1580c93e006ed"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "1f2b62e309cd9d3afcc43444b341fcb19734ce30"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "a111bdca98805951f500cdbba65abd2677ddff5d"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "ea06394a44e920305eb447db9bcc7a4f1bdf2130"
+    }
+  ],
+  "w-lavar-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "dece7f1e162ad94829a48ff73cdff6a8ed3dd2e1"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "b7ced2ddbde87f8990c90b0f225462bcc29d665c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "144c4cd1901717fdb22cd04e74d5a2f5550257ae"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "05de13afc837c7cfe78cdcee9d5da047280e47f9"
+    }
+  ],
+  "w-piso": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "26e09442ab7f49fcb1d7971a806e1fb4a2dc08e4"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "1cfa4d8384006999c2d657009e35b6fb21a7ed38"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "7dac864999059b7d395fd788505ece5e70e785eb"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "e67a981035d193143618f24700bb4ce70bf7c95f"
+    }
+  ],
+  "w-piso-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "78085963c521e484162c21fdfd1240e386e5731d"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "a5e2853b1c29ec2d892b7f086e32f85e5c70c76f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "39f89d7881715fc2a0a3be8bf239dacd6f919a5b"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "cb8ba6bea8d55ea8f2225719f0c1f6cbb4d7bfe8"
+    }
+  ],
+  "w-codigo": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "2942d3e227f320e20073a2644ac2114e2314fce2"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "9889689c1a0509b7b983a89e7a2ed4ea334263fa"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "24e901fedb35bd3979a35096fdf3031290b05d84"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "ba931e5c239d3ec03964668b86a1983de937fac5"
+    }
+  ],
+  "w-codigo-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "540cb9209c39352223c04156881482998506d5aa"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "83941e9687fcf1c94443c6bf2cd042a63dafcb22"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5a786821b9a70b02a2845a378c022279ac74490e"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "0e3265906cdeed450d4cb59eaf9c456cb3fd6a5c"
+    }
+  ],
+  "w-vista": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "fa0352a7086730540301c7de0519669d1357c6f7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "d1d36d312cca29f85a80ac2d70ae09476aef6040"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "77ee7919d66ab0292f3e5be11595b3fe021175ee"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "70765f74b2a43ccf3161559f9ecec96a74d5d00d"
+    }
+  ],
+  "w-vista-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "dbecdcc375a48017255b3f11d317c605f3c088d8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "1b4984f26bc866800ab1875d4c353fb43624ddd3"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5f7beba1a6da966a9a68d073b29ebdfd5c918bcd"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "92fe47c49b4e76b13e3525b707f501b0733fd3ca"
+    }
+  ],
+  "w-ruido": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "bd4cce55a383fe5b68f998e860bba42b04af43ac"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "41fa931299818cdbde8a0ec347e1128a4fb03132"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "adcbaef832e7884810731cbd2c4b65ce14e942f4"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "3687d7719fd658312e5f115dae64b97ac122532d"
+    }
+  ],
+  "w-ruido-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "5f39b666edb3ade15150c259d24cbf643b1a4ccb"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "672f8271101f5180b9728307f136d3943a1f3df5"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "02fe3a805dfb4ec3a198e39fb500e327197d7d36"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "234fa7e08ef50d28281ffed720832e7bb8c66738"
+    }
+  ],
+  "w-ruidoso": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4a8950a1b1ae31cc3e071292463c0aae8fb39ef7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "147e9ba63057a6b83759a51226400dd67e6bf5ae"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8aba8c48860ca7e048e5ebaa0a2ac1d043cfa449"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "04319fe603c77693c421c3140e8d667a64927914"
+    }
+  ],
+  "w-ruidoso-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b5d3b6809736fe775d093eb2b606a8c2c9131ee2"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "5552a2ab3598e85937840e218c03b2f98b2dd627"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "28c0fe463f932ed1bd76bfc9d867521f4f8da421"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "7132050369c20793e7bc943e8a74e7a2aecf4eb1"
+    }
+  ],
+  "w-problema": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "25e973321c5ef12acedff24db31c81a90407a4a8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "4a01b19e53a6c7c85bbaf9efd69fd044e108e9a9"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "1f58bbdc667b9b474a0210ca87e1ebc1cd8cc596"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "d5bff9db1f0ae34e31f00ee5f86ba638e3d9c407"
+    }
+  ],
+  "w-problema-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "928d1422f714b2107a862bb46c150e55d78b4a69"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "d04bebfa60f75457994c13545a526ca76738bfdc"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "9fd0394d2ae28a6c98bcc41efd9def2664350298"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "e2c85e1c1cbaf335866520da13a5b5340ab0a07b"
+    }
+  ],
+  "w-funcionar": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "1ed1275568cab92852d7f02f3619c34098397282"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "1c6fce683dd719d18466af1884b2094f7b481ba9"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "2482477b2c3d27b72e22b765f7a2c249d0f28c37"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "db32447fde19f70200bc10174d40f62418346601"
+    }
+  ],
+  "w-funcionar-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "7c9441bc23695b737c498f29817ac3d2a0888f25"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "be19f5c1c591ec3c44a63025d4aa75bf47a5bc26"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "0677b04df5db8f2ea8f322b2a30a4b8c8ddf0832"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "237d3ccf8af374bae3f6f1600c3a6fa05c9a37ae"
+    }
+  ],
+  "p-no-funciona": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "e55b73af0c6cb04300cbfe22c50a3857e9795d4c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "37ccafb50ec610f5736798c320c23243650bcd91"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "efa0f65e9c5b028d9d3e6bd6d14365ee74b5b08c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "1209044c660db847c8c323920dd95b7aab825213"
+    }
+  ],
+  "p-no-funciona-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "581eb8995a9d71e71547ff549f8c622ca0491ce8"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "2ce78a87250ec6c55c5e01ad503dbc04494e3a05"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d2d67ce10afe18392935af4308054ab6e4b948c0"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "d39cd014b3f7f0949ba3100f5c5fe9e6fe6b4871"
+    }
+  ],
+  "w-arreglar": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "284b67bba35d773ba84a9d54f47b1c364908b9e7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "77453f2a4959862a3d009e850f841b1d68efdc04"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "47cd1ff205327e1b3512589d38b22f055325c3ee"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "000af2a14cbc8c1afa1afa9f7e1629881ea062d1"
+    }
+  ],
+  "w-arreglar-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a8f22acaac5bec26928311e60bf4f13178517f04"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "fbe9706be72c34640546fe54ff05d68bf5e3b1ca"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3697cab0740003ffc2273f62ae7f71fc037d6b10"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "5ea5c00f4d6acad7fcdcfc4718bc24ba37c0a5cd"
+    }
+  ],
+  "w-faltar": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "783d92d1dfe38282b43dfcd195ca31761fc51fa7"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "401046781613505041e91a7f0c08299b3ba7fa61"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "e3d875f7b8034323f536615aa5893bee6b9a8a81"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "e66bffc31731e94bf63ff58906967daccaaa7c57"
+    }
+  ],
+  "w-faltar-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "bd6c8aa872ff0217ab874b2f405495ddde4d584c"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "1d83be40dc45e86ff4a3dc6e1ce8e289ca355e69"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c3a0f3f7f7c12c5822029fa74c9ca93d9ed0c660"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "9663cbd56acc96a7fcc34c4ac72a278979feb1a9"
+    }
+  ],
+  "w-hacer": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "31fd2484c93b57b7c6f136a2726bfc65d4c148e4"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "45424f906ebd24c5f86cc37291de5090210defbc"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "ea687011b8300617ba6a46bccab4a72fecc9e929"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "9bceec7c3318bc720e6f31b5b376bba62dd58811"
+    }
+  ],
+  "w-hacer-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "751c2e74a54a9c7eb5b6a9d04acb90f55fa5e921"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "9d1c6259fd0fb839d511800cd27358ee7757836e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "3dcd1be06e796cb7dd650a769c8efcea34184ff8"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "2eeb6347806c89eb0cb3f70b98785a83b53c95ee"
+    }
+  ],
+  "p-hace-frio": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "01beaa0f58f24ceb7c7faf6b20fbe8c150730a0e"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "65767c2317e3d193bcadf4d78b9fd855c02ce033"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b26aa3dcf7ff2ad276375ecef01739a4c161495f"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "3f7350e688339fd1945c33e2d38a61e444b225c3"
+    }
+  ],
+  "p-hace-frio-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "41a4dc28e26ca8758837267bdc899023cd48ffbb"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "d473e5e4ddad96a2c51b6a4b42605c0897426b6c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "1b624c1b6398f2934dfbe35b66422e19d7970389"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "9272a99802e86d19d9b06dcfd101148cd89d9afe"
+    }
+  ],
+  "p-hace-calor": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ad4d10fb97c4a75f7e81092b54ac2fc9c623ef2e"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "2b1bdbfd0da23d187ec760d18b9b68f953714f9a"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "55d3d69a28314be337f0947e58f37e07115a387c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "ea9e6c2fc74970f430b2754df2365d5aa0481e27"
+    }
+  ],
+  "p-hace-calor-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "c8820756fa3d3f3e510679a414b68bb82583f4fe"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "a9eac69c6e63338ffd06aedcabce968930c97793"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "c349c98f5620de2014020d2006be21afa7cff1b7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "b6659eceac6ab9eb2bd6f19cba8af9791b2ae000"
+    }
+  ],
+  "w-dormir": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "73f0789d25004cee78aa045df7cf3f91bc7989c7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "99f8cede6e872584795024d600ff8fa81c9cd810"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "f4394986e7f05eaf0cc08a526d20851518376642"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "74362d82c999327a863421ac94088486a9749337"
+    }
+  ],
+  "w-dormir-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ecb95811c3d900bb39ab1e93573d1ba61a9d904c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "a6fa12230235d744227f61066997b1d7b4794c4e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "05f931d79dd7f3ef7d8ce61d4ec6f4c9f0aa27e9"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "666321d2208d49a0e814f8700c68804fed40cf51"
+    }
+  ],
+  "w-quedarse": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "d155fd730d79b268573a99b70e85d0bdd0913994"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "0b7654aa7b891f5308aa1a232d7f5f4a54fed452"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "2c87d3f1d6fbe53f1e354c1977643216853a82ef"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "7b05a36fde50e9dbdc501131026f01887dd9caa0"
+    }
+  ],
+  "w-quedarse-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "712bfb74bf1225d51594d477b11f18a098cdd85f"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "57085b598be0f308bfca106867458ebd080cbece"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "18ceb90d5c29d26c35b2185351df686bbe5304bd"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "0aa86b9936d6bbe25634193a85722585c0e6a107"
+    }
+  ],
+  "w-guardar": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ebc0a01898c4b306f4ff50b05bc4c780383e62ec"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "3f6c9aeb200648901b908d4b7a19e30acd6b1ac3"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "646ea4b4b90a46768b4e77b544e63686d98eb883"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "09d939538d93922facc1c37cb1d7e372b3657ced"
+    }
+  ],
+  "w-guardar-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "9629fe8e19dcad6327e0aa1dc6730f1472d7f52c"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "1e118845ffe61a8a83f2c0f80e490a2555886547"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b87315de9d4136ed17fb7388f1c5dc94d6b9ae5f"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "d7d11c83b775ccbd9c7236fe9061c528ef5bdf58"
+    }
+  ],
+  "p-guardar-el-equipaje": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4934b539b1cfe82d75dbe3284cecf828a75caebd"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "9b44954c74e99e729ec2d5014819622daa9303cf"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "0882ee020876d7e181381af52b9aefd0f417384d"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "b02da19b81b9b740c95dc0a89dbda115d52409f4"
+    }
+  ],
+  "p-guardar-el-equipaje-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6ef70c0fb88329be3b8e61e4626d1eebbc60c23b"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "2b745ce2a31aa4e22b044f25c8e630ce2269183f"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "4637a5da441168d74dec6c0c28302e758da5b32b"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "36a7e7130f330487e0791162466a779931f13742"
+    }
+  ],
+  "w-bodega": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "98db72a85c88b02f11e5e93e025049214c9fdb8d"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "947b1732ec94417f40526d1907fe527de18a6dcd"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "971fe24a0d7f655387a4d3bad9e48741ac5827f0"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "e908c1e9ebd701e88f959970b5cbcc700cbac382"
+    }
+  ],
+  "w-bodega-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "411eca1d78bbe58694470c350a840fa897b91572"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "8999c0decf05c53a1cea03e9ff40229423ed6919"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "d8fef8fbbf78f1a7c30c5a6c33973230a419c00c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "6fa516a9ee55fe24e5da20d428ed1cc63c06bb40"
+    }
+  ],
+  "p-a-nombre-de": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "2baa1fb47f01ee3e03e8617c7ba65626efc3b913"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "dbdc44e44fe599e1c4ffa76d5ab72628c5de638b"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "12deb704d2aea1f250136a12de2715f613d0a58f"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "9d900e5b58606514be0557491ea7dead1b526459"
+    }
+  ],
+  "p-a-nombre-de-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "135664f3d679d90c25ee4df7d776261ef2f61eeb"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "27ad1cf618e5c9481f60189be789ffd91503bb98"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "9b0544540dfe921b78a53a89c116b7c6c3496357"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "115e99972952393f8b86ff32bddce1c407337889"
+    }
+  ],
+  "p-tengo-una-reserva": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "7d6d2a062795413b7c3e3646c751707dc9440e72"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "8d36133ce7439d7e65dc62ef242b0d08f72ba69f"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "d2dbed2e043232b2abf43c7a154286a5b5c7963e"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "6d46473151f813509d43350869482e6126d57054"
+    }
+  ],
+  "p-tengo-una-reserva-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "c82e431d18a5d3cbd1a914e53bf60f949aab77ee"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "14ca68a3372c5b58029909a3d1e2b2afc375775c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "7cec54f1685b6c4b54183516939f8d1a3fdf8fc7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "c534dc7eec8e64d7fac39813437928a372494a39"
+    }
+  ],
+  "w-tenemos": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "84da586e2c4c5b825d00bd9da56c3e0d2cdc67f6"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "6de013c3c87b0f5331ae8d6386a4a1145e2f9749"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "80fa45e418529c0017bf9f2c3f08e0e512747fbf"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "4d5b9b69820f77da8a450025fea3c8747bc60ffb"
+    }
+  ],
+  "w-tenemos-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "eed43c5044a0e1671e3a17bdcc2b45f976e69ecd"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "73433925e53cb3b78f0ba073c9ef6ae477fb2f7a"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "1ec76e3cfd7b9a1e4fea3bb0429ab3194c6689c6"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "fe639b0a84af1c25c89fab51fd6a9731d6b70d9e"
+    }
+  ],
+  "w-quisiera": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "440d0c0a7e8b25f563167b471fde6cd64b00222f"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "6c15aebc921814f9efdd5473e762a1d7b1d543bb"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d560896a1b0bc37d4a52a4efc3a2c5943e988cea"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "d498d14e22522103da5ef36c2a6e29135da5e883"
+    }
+  ],
+  "w-quisiera-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0d229abc69200e00295dac23977a48fcda7d0ee8"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "876d751fb36881fb8890952149fc601cb91e5d31"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "e5c00a05ecd976b2505e63f46d12bc40b1295bb2"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "beb14c86d0dc1083bd43e7f7612e3302360b48bf"
+    }
+  ],
+  "p-se-puede": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "be3be20d569cd21e0e40c8555548e0d9bd18e421"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "0d7fcfc89cb14525c2deb6c61d13a7f252ba3242"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "20b5dd53e327355c975a0f7ebaa20ee6aa4ac609"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "d1bf725fa97b82f89d29a6181480e89818b97dec"
+    }
+  ],
+  "p-se-puede-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4c6faf94f700a452704fd9ac0ca175365b638bd7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "20738942443ca44768fa15bae8778b2e2c15d108"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "25104e540455b66acaa82f7b0aeec0afa8432f4a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "90fb54ce583df64ccb670a7651e26783f91f65b2"
+    }
+  ],
+  "w-mis-tus-sus": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4f7e8e1881380a579bd0613447fa135e0371ffc5"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "8ce592d63398cc86baf78964149d6833a4068c11"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "c71c1eb5aabf1172fcd9b871862923f7d8f3a508"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "23572ae53d566e4ad81418cd5b5d7730e125c363"
+    }
+  ],
+  "w-mis-tus-sus-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "90910c9af2d07967f07d3d9858a649e8e91d06ba"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "64cb63a4af9c1e783932a882f9a76335e6f49442"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "881dab5d240cfd7bda9a71e7623a1a5972dd4923"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "bc7e854a29b6a87da880cc567e6b5aa7c70fc89e"
+    }
+  ],
+  "w-nuestro": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "e4920aba92e840e1359856826bb801d930dc8397"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "9ae627411678b57b69430e171d1f568b2bd7fad5"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "b5f6b4d153bc22d707ce918755004698f5f2732c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "55a5269c457dbc48c78ee3d9dbe5b7d7b4bc96a6"
+    }
+  ],
+  "w-nuestro-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "e2cf9bab02625e7ffb95b1f2c3ec7e8129a3ec6c"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "4f7f25dac038d4f364af8e37db1dbe15d6785304"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "14456e7f2647869d505e684ba3bf20c30f746690"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "e77cdd92dc0090f3c194e03e7228bc33cae07ce9"
+    }
+  ],
+  "w-todavia": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "728ba11b37cbce46acb2635c4239728d56830544"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "11c09c4b5d048df7e877b8bc1056e1f827d0108a"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "bbcf8fcd36f6519ca68a4ed9e8a5084a83ea0a51"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "a62d005e5198125f807c9006feae107974ffa5e6"
+    }
+  ],
+  "w-todavia-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f43ce5d0a9e3a3e1eb6ffebed3db78b942ac5b49"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "c5d84098d08e3ea79bc8eda5b6f7e4bd38b569aa"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "ef4d96a4ce10ab0415a0c311f43138d5c8cb8dbd"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "f90aa1b10c2c38678c9b05138591a4eff86ec619"
+    }
+  ],
+  "p-espere-un-momento": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d3e6396a043294e221d933cb9913a26da58ab41c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "7eb8730a2651953c9167633fd9d7c0943a56ac63"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "8a85627634d7c52d893398251fb36fd58479823a"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "ccb6fe5ffd349b20bb4fd008b17cf73706a03816"
+    }
+  ],
+  "p-espere-un-momento-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "bb026510d267c67019e4c2e745cfc53745aef3a5"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "854863b3489821d01a183124a349e50ae2f41a59"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "1184ff312b19e798bf5a32e5fe4e0e780a648465"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "73adc97b67c09fc0e1b92e6b85ca22288e04ba0b"
+    }
+  ],
+  "w-firmar": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "fc79b3a39c2214cff2afde7c23225a2c091ef0aa"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "34fb23e0de4f10a6ceea927e0eab9eca2e3ce4e1"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "2ca320d0d359b7f8078542e02e5180a54a599bbc"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "19588377183d2f628417a5322c66aab18390cbd4"
+    }
+  ],
+  "w-firmar-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "59eb6779c60cdcf64c82f2df56d2213f736d7f16"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "6fdf473e42a8256e9522fc03ce0813713bbdf847"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "59e56158d1dfd878d6bcf35d1f9ec9e73b6b23f3"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "c497776f04e0547884b75270e66cca254fc7387d"
+    }
+  ],
+  "w-apellido": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d733f5af54e1ff89c832525d39dc11e6aa995933"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "0ba4e4af6ed6e5a9432fb2a2c777d4ee28f13597"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "25e750e095c81ad30a86e2fac1646456feac28e8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "f5da655e81a44a369c60f2d3c3c5572852fbb313"
+    }
+  ],
+  "w-apellido-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a00f8100c24486ee07479aeb0d3e40bcc4049ca7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "3e856eccaf02b389c1f1c7989aa3ce230eebe6f2"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "6b71b3438f208bf1edce9a5effe450c331102427"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "400cc746c94dee13578d4c9a8a0272aac003f084"
+    }
+  ],
+  "w-limpieza": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "bec25e96e08600b06735fbbee5db96d1d8860f38"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "9e2770d26d97735d8ef111710b6558ecd137430e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "7625231c42b0f5fa4047434d84cce2cc74d4c57d"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "9c2c3ed95453f05f609cd0848731a08b9503e36b"
+    }
+  ],
+  "w-limpieza-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "9da9140b6aaf842705f01b91b3e465a00215e3e0"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "84a94fd5506ba09e8d2b6e2cda6874bbd77541f7"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "42c305e1a726e6175c3502a2b08638d4f56f623a"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "33664c70a91f842a39e05ca8aef81cdbdabd30f2"
+    }
+  ],
+  "p-cambiar-de-pieza": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "21811136adf3f7b7086a3cd0bd2696b4ffa6e228"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "8c186ee45698ca31f78071e5c20d42a1faad134c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "0bad2fd8a4c4c420be9f50bf1849ed24500ce2fe"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "b924b5fdab7dd8d5375350b416e8e85b92258523"
+    }
+  ],
+  "p-cambiar-de-pieza-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1c4f62d4b0ad51158a64b1cdeb1d861cbe3c7905"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "3c2c732b5153eb3c6e75e45cd42faaf7533db12c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4a2cd20129a99a78ef4ab16efaa09fdfe687d0f5"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "883f6ff948de0a2d862035b314c723d0b864cfaa"
+    }
+  ],
+  "p-hasta-que-hora": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1497bfb25849e6788d6055efd6189182f7054a2f"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "14338e15356f931bfffcd3a6daa67f5148d7b52c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "fd6c98b7436f4441bab4bd2a7534a79c62359518"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "8c064b91232accc86d6fe0e5d3624185b8d32db8"
+    }
+  ],
+  "p-hasta-que-hora-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "623c4af98d3903eb671e46fcabb5afa67ec8b5d1"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "1f6f795d8c56d6fbbd7b477524408384455f4454"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b9fbdbb6fda790cb952e971e57a6acc1bc5ee886"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "974c632ebf3cfa835cce35d854f3bbeeba359f39"
+    }
+  ],
+  "p-llego-tarde": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ef734456d95e84e3a16301cb10721cc72a8e9e82"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "687e3e4bad35f4c75e42896626f9cacd9bbd7421"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "1953ed78e3f85d504148a2130dff9cf1a5a6bc13"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "ceeb3c0eb769c0af0c8786cfd046224df7446718"
+    }
+  ],
+  "p-llego-tarde-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "26508579b5748e7e163ad225c182b8e39799a732"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "8d166c91169d7393a6cf648bdc58bd5cc1161d90"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b55795e84665888fcc2814b94bdce605886ea8cf"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "9bb57a31db19699eb51f3d0ca4120d69fd4e746f"
+    }
+  ],
+  "p-cerrar-con-llave": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "211cb43401118eacd43a76625dbe8ce67e6434cc"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "5eb1bddeae58f47cf594d97bd75a76afb6929882"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "acdf1abbb5e926211aefad5b57a60ee318a51b65"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "7081905a465d685fe16346e4812c3d72767cfe88"
+    }
+  ],
+  "p-cerrar-con-llave-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6a944301e403fd6c358e8864bdede32dfba3ea2f"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "b1bc6cc3f04e37c042d248dbe11b7e3fef220364"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "6e39c15263b277d865399fd9c429b28b725308d3"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "65a0bcb4a025b6ce39f6cd4efbd7df9f45b7afae"
+    }
+  ],
+  "w-huesped": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "c10b1d87e8f6c305d704588e86f7e6134928a07d"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "b3729317e31ff3ba099c05f25fa45eb52ec0a42c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4c1376412ef324ed63718c02fd6be68275567e32"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "f0caf87efca95d715c6bdeff8bcca5bec2cd0c54"
+    }
+  ],
+  "w-huesped-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "294008bf2d6e2b0a312d38053ca394e1602b1054"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "05525320865519127c0ed733dfdbece48bc0669c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "d39162e5f9f8d03b119e5cc973c147aa44ae1307"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "f694ba66b2524b585486a539d52cc6a26026dcb0"
+    }
+  ],
+  "w-colchon": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "76a49ebef20d6d16c824cb12ead94fa41b478f80"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "48ad5d4a7476f026597a9f7913f0b76f8cd3aa75"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3e50bf536ba65259ad346c33e68b4e5701a66c72"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "799e7f84eb1d3df05fdbe143b34edf36db35aea1"
+    }
+  ],
+  "w-colchon-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a7805fb414a5704a62158baa48fc01bad431944a"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "d5a0b4e40edb856c4c234c9b2be25b61c95c2e62"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3da60f5c1076b1f4ec701c95dce07c228aa65243"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "c52e1aed3bc6eba36c4f7fbe3f45ab4460a4910a"
+    }
+  ],
+  "w-champu": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "185f0a752773e58d103e93e286f800a40222656f"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "8312199501fc8faa3126ecb0783f97d451656d60"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "7102b7cdcb621b5e9afd996a2b8e01279820b4af"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "e29ed7f7efa665c4e23fdc9a2851c6156ad81256"
+    }
+  ],
+  "w-champu-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "9da6f885396cc9f56bbd05fa708bb0efbff569ca"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "29699da0b23d01e2ef0f3c8ab788f91fcf45cc1b"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "35b32d7725421511f9f788796a60afa1a838c3b0"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "b4e854efbbaa575ba6275df4461793b8c0a81134"
+    }
+  ],
+  "w-comedor": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "c9ab87c8527565ac2cc18959dab5ffcf8673a0a8"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "764175ce9a4d681e49c119a5a43bb2083059abcc"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "748a4b0ad3f8157516359cb24e61113575aeb591"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "ef4ef120a9a96ebfa1eb50bde9ec644f35bcc767"
+    }
+  ],
+  "w-comedor-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "30e567843c1b3ecbc5844525df53343992c54873"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "cb7b5f5b15af730fd0b5d43864d1cb747ab3ad7f"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "9f9c664a0865dff7c39875cdd6233603da0edae0"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "1f46f62f0879541171c8e78f545a20b4f87eb187"
+    }
+  ],
+  "w-terraza": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "7a027f031e6098d19656f40f3a0b6b7510facfde"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "c39c31476ab74f91c2459721c3c755888b01717a"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4cd2d5bb089782cb5b72b5c01885b86a726ef8c6"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "4167f306d3c597370663b32acae83564b3e4c608"
+    }
+  ],
+  "w-terraza-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ffc6152838b64753ef83876a9c69062fae3b6764"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "1bf72651ab06758bf6d3d83907c70a6e9c861bc9"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "2e3d44936d02bf8be25dd186a4cad15bb6c10cf8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "2f74fabeec36f8b0b67dde29d33c060c1093d3b7"
+    }
+  ],
+  "w-patio": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "06762d94fcd37c7af9e5a91924b70c61915df535"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "60e3a6c182df57b7306495a695a7a8cd45721357"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "4996df270392ac1d04cb4db7d9b8405f8a431cc4"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "7674e7f7c3dd455a85a10c21e3c6ffeeeda6ce48"
+    }
+  ],
+  "w-patio-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "98c9031fe6483e5cf2c32e3107b5b1540513c7b1"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "de4867a488abea905fd9db4cdf9504086c2f7e41"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "aa8192658cf99deecaf238164cfada231eda5bbd"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "8f0f7229b22e5bb14a0f102575f3dfaf13921f95"
+    }
+  ],
+  "w-silencio": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d3192d0ff9487d71bf4a9657cfdc9ea91d86da6b"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "28529c1d6a1f76855d79e06738e5d0534de2103e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "23c7bde80aaf5d6fc5f3d64f66beb931b7167cf4"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "5279bcbfe0de0a5849a0dea498d8031417406839"
+    }
+  ],
+  "w-silencio-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "a3605de7e96274b969e863361d702729af3140bc"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "06940be8fc957f51cd9184366fecbe86175f97c6"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "ffcc4a94e277bc3903553008fc44d5a1ff874d8f"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "c258d39f599fafe06fa866e8f019aa79c0dfa398"
+    }
+  ],
+  "w-llamar": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d0236c7252588c3825b550326bd77f328242a66a"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "c72b2bc54eedd16ffe148ddf9f2f01633ceff474"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "aa4a1133e888dc0851dd76f84b3550dd1a41b9f9"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "2f4dd0bc03a4e3ee00899f0bdf111dba7617c514"
+    }
+  ],
+  "w-llamar-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b71f2791cb8f702bab679395f023d2d373c2faca"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "da7a636311a9aa77cbeb74154ae0971216302ed5"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "2bd5889d556e0d9a2f06b483d76bfed4fad7b336"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "e0b0ce7664da196a3409440b57d7d5470cace150"
+    }
+  ],
+  "p-me-voy": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "4c06c6b6e7624045d5b1883b749be9753e5fddaf"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "5c3937e453900c3fff1e34698b656c717a775307"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "178f4e92007432cfc2caf397dafc056893b918d5"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "0f471cbcfd9603800abf60203814ac7c0b5bfc1b"
+    }
+  ],
+  "p-me-voy-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "2ba34df592ce6cb1ac7302a88a13e196c381e6e7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "9b5c2e093ce728457f439ea29fd3b21d4a61cd10"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "33c466a578dd28d75ff361f6cefeea86570f5607"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "ad34e4be00bb60f6c1cb4f69db80c8df161c731f"
+    }
+  ],
+  "p-esta-noche": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "547e2984cf307d64a9a664d6b6c6a34752cf3808"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "16c7cb5c90475210227ccb929b01ee1413f58ea2"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8da3bb6840b3a87993f1b248639c786754877b52"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "c97accba39f975b0b2b9ff104c1077b5fa005afb"
+    }
+  ],
+  "p-esta-noche-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "30fb358c44bc5636e2f8832c81a26843364fb140"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "c5c8e41f6b0baf79f13a4be993b0354f60afb9ac"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3c4c2d66329f83b71b369c94b31692865c96fa0e"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "373cb79a79e783ba6f07575eeb7c7a20c7cd8913"
+    }
+  ],
+  "p-una-noche-mas": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "dc5c99a6379feeb8707f8cb9cd225130225bb37b"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "ad12d87c83acfbb2d0336ca8d0244ec84d0686fd"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "998e6c1bbccb183c74beacf5eb39abd5be4e7704"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "fc546df4b7f37191969392d530155a081dce34ca"
+    }
+  ],
+  "p-una-noche-mas-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "82213c2668abdc000dcc8f86d2cc583f8f63ce4e"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "7845287bd27cf691063d49fce0729137ab67de5e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "44b551dff7c772c2d995f5b9276e5ef2f930386b"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "e373d5ac15accc1f3caeff647b5ea49d8648dbf3"
+    }
+  ],
+  "w-comodo": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "3ceb6162ee75f25741f893e20db3e78fcec6b717"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "05d4c2b9f1d4b5a7c20ee2ba6fc7a7620e647da9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "ac718154c9abef78b92506da1276f2255b383c33"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "34d8fe7060ac495d6f3cbde5cc5a248d7f296bc7"
+    }
+  ],
+  "w-comodo-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "84875b166b0671a9ac52bb3c3cb87753a266da32"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "9623221c18598f70e7613f3f1a4d09863aeb7760"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c5bac487c4f73d01306789fbf853bd30b0fdf615"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "df3836e64966596daeaedf2647635c6daf4dac75"
+    }
+  ],
+  "s-tengo-una-reserva": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ab851b84cbd91a96ae5e7ac37084937b376bfb61"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "110069f996c39e5c0b30668f918c92df660ff1c1"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "188be6e2ea5a0ffd538507a7cce5e16ea4aa8f9d"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "50f1cfa9ed7dc1de08faf34203bf4da4565e6409"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "e37813cdb8ec27ba8aaa8f95ef42a3439c99d65d"
+    }
+  ],
+  "s-la-reserva-esta-a-nombre-de-pablo": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "135664f3d679d90c25ee4df7d776261ef2f61eeb"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "65c66570908624aee5779b18c4e7487f032a9441"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "9b0544540dfe921b78a53a89c116b7c6c3496357"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "a67c484a55f621ca2ee7d2e7dea43066fd49b51a"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "d7e7988666d4904bd0477a7e36f47fd25050e437"
+    }
+  ],
+  "s-tiene-una-pieza-libre": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b93fd1b81614cb10db8cc55a3512044d0267c4ae"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "8be3e765e76ab8181292258db023439241627a6f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c2410e1517cde62bdb3e25dd54efbddc66679aa5"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "ac7dbb976e6e63ccf43e0f17c47ab33346b02468"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "983be2fdb9de06e68e890fc2b73b59fd98a7039b"
+    }
+  ],
+  "s-quisiera-una-pieza-para-dos-noches": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "e2d89b7e2c6633cea6d56b8d9ba3c544ad9dcbfa"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "c67fbe5e789c2b9b851baaf4e49a60136cfbdc7a"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "679e557446b7127836132c2a9285ee205a7c9c35"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "295c7aec831618119df703359903b55cc31061ee"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "dc858c888abc3d82730aea78b182b2d1edcd56bb"
+    }
+  ],
+  "s-quiero-reservar-una-pieza-individual": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "32a78ba855ef5346608e4d5fa44a9ef6e730cd38"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "4cb7035e9ab1c2304c0dab963098ce2503b926d2"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "d486d575062fad3aadddd5f327ec7157bb59bd0b"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "b664ff2ee1af8d465edf3114955a99893fa645cb"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "c4bab94f885a97e6a1fc0986e1af265901a9d357"
+    }
+  ],
+  "s-somos-dos-personas": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "a765051ff97a7a374d794059b38f0c754e7d6d45"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "e31bbd9cb6033df02d35010ebcf17336141ef897"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "296528d9acaa457bc844e85bb3f026ecbe1d3948"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "c8a379a611d39c3ab1d08eaaabf0092b165e838e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "66c6bc44cda1768dc63d23403277bce8c100f057"
+    }
+  ],
+  "s-cuanto-cuesta-por-noche": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "0b2afb8eb7b846a8df18d7075f3d9e813125f0d9"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "217057fd50f91e8c729cc673cf49c4915b097a32"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "e5c0b353ffa0eb01d16137f734d194a0ee47ab40"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "1e8d3cd6b82400dd498706c5396174da3c157a24"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "0bd01903a4bdb07b45f7e47763f8eb968dab348e"
+    }
+  ],
+  "s-esta-incluido-el-desayuno": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "725d74a0e2368f32cba15fc63f9a0d6efeda9539"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "2358bcae5f5802ed0bf3cc08f2eade284b75a876"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "17a38c6845b5d79e6b45f5e06613d29bc2cb70e7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "d042a53d019dfb4acc9ba6d6b195d54e357abeca"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "fd9a2693e69c4581ec1465f6d430b59c1ee2b643"
+    }
+  ],
+  "s-a-que-hora-es-el-checkin": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "86c50191700f232ea4e8a2887b8367a3ba1d51a5"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "cf4c3452d4bd598cf02bc6ac626076018a0590af"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "aee017bdf5252697e66e1ee3cc11f339fc54c17c"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "bb611c74ad908b8a50de0f013f13153196e7f82f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "e968af9a14daeb3126a974aa051118e7daf142a3"
+    }
+  ],
+  "s-a-que-hora-es-el-checkout": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "4a61a5b239f9aecba725eaae2654877f501912c5"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "e59dcc274996c6d4aeb99d4242c92b59b4b963ef"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "bc7eae067d5b454ef52ef5fe27ef0c178e353279"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "9575c90457e12be0a31e64d97008bfee4e0566a2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "70d51f627f754762b0c373d7222cdba9d37cf564"
+    }
+  ],
+  "s-me-quedo-tres-noches": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "712bfb74bf1225d51594d477b11f18a098cdd85f"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "57085b598be0f308bfca106867458ebd080cbece"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "18ceb90d5c29d26c35b2185351df686bbe5304bd"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "0aa86b9936d6bbe25634193a85722585c0e6a107"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "bb39470e7ec202d7cf375db5d8ddb36d4c6f538b"
+    }
+  ],
+  "s-llego-tarde-esta-noche": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "26508579b5748e7e163ad225c182b8e39799a732"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "27dbf5c98287c04cd2624b67446c3100d8823e00"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b55795e84665888fcc2814b94bdce605886ea8cf"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "a7f951b5a2868bc950baccb068f2eef45e3bc651"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "46fc3e03484f98caf9c3076251b5699f06d90d3a"
+    }
+  ],
+  "s-puedo-hacer-el-checkin-ahora": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "a9d250608cab88332f0a1367d8da4a9a21734969"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "9ef47577a2c9c5d57ffbc98a372f2aab06a327c6"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5d2ba291d935dc134d5871916eb4fa8e70f9ab8a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "a611c7c83d11c6471d4e8405181dd7c4da08de89"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "eb40fe3ecb172292253efaf75c012fa89adb503b"
+    }
+  ],
+  "s-aqui-tiene-mi-pasaporte": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "8e54122834025502cb20af94207488fcdb1291ee"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "44a9769765af8847ee677a16941743dea258a41c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "6ba5e5c597222ddecc5fe11b31ac230cecb3778b"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "13165c47fb64f68c729778c7a73381f558299087"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "01abebb8ba76fad32c0b49e55f1cded9e483c281"
+    }
+  ],
+  "s-firme-aqui-por-favor": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "59eb6779c60cdcf64c82f2df56d2213f736d7f16"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "3a3fa394eee3ed1a101e1019d80972f25b06e782"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "59e56158d1dfd878d6bcf35d1f9ec9e73b6b23f3"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "f2d45d661e6c8d893f2d8a820325cf0b73df0fd1"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "6a07a0b4601f915900959add9dca27fc6426e54f"
+    }
+  ],
+  "s-espere-un-momento-por-favor": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f6e2025617bb55495bd76a13d11b5ff401fb056a"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "b780129a252a22d2c4f49d019ff0c3de146963eb"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5181a71434c917baad0c6eba3fecad22caecca46"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "e96cacc1803bea4db07d4ed7b501c1cd40bac71f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "a4067f96e242016591b64e6e96a7fd778db45486"
+    }
+  ],
+  "s-su-pasaporte-por-favor": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "45133c3bdc108c2cf3826a4dc710b1c86bb4ec32"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "859f5aebe3b3fcd88f1e324cb62695393e8395b2"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "521c0b0b9ee99d533e2579e5b0d03cd062c860f4"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "94626b80733c344b14b0af61c0d6ec7f4d1be34e"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "f0e582f1c9a0aa5627a98bf922dcf2ae6750a314"
+    }
+  ],
+  "s-me-puede-dar-la-llave-de-la-pieza": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "85190445aeac3cc7e30d2041de78ceeafa5390b1"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "b7bad4d8492c8c8d06d5ba6f92dff7a0958a8122"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "923c23aa16f60a6caf4972214a370c148a86c12e"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "e311e49fd83b12fd7085afcbfed7d6af9eedfdda"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "a68c98dc1189639e1b8a9237d55859f599aaae06"
+    }
+  ],
+  "s-la-pieza-esta-en-el-tercer-piso": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "c2b24c2a3a0dd877c6a046ba94354d4912af4002"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "874db7daac2cdc5bb343c9793fa37c2a8940945c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "9e272f00bfd39820dd9e933b8a06ed2984d0d172"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "1ca381c39578a13fc68503229f309a7ad1ab3e62"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "b9095570008c21016fc4bca562efe0006833b438"
+    }
+  ],
+  "s-mi-pieza-es-la-doscientos-cinco": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "bc6aa89695c570b002f05dc8ba3306c15b9676f6"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "8f5d22a674547208346f647ffb0b2de84a16b7ed"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "14a3abc173db21302943d9e370d701a897077b44"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "466ec856d8ef8130bdf4e72bd83a26c6529d66b1"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "ec604344002cd0ca65d30d0d8fa7fa8a2d455e37"
+    }
+  ],
+  "s-su-pieza-esta-lista": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6563707b1e61b43e5fc186148ee0295e4f241840"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "c5e1f8e1fade4ffe56cf6b6570fcd4043e180b19"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "7c109676597a7d3baa1831605b36051e3f7bded2"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "355129f245736d09f5a19b66a31f82d89279d931"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "7d6a0d910fc5be24d8e0a78b280c3a20fc2dad84"
+    }
+  ],
+  "s-su-pieza-todavia-no-esta-lista": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f26009be99f96358fd4e1c90f2443e9b37ad1e39"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "ad116da5f362b9f4011e6b9c2468278c633cad58"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "7aef88498b50fa3bb559af89ab2d8b9aee0ab8df"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "be0d031e0751af5bbd374583be9a28c6e313f053"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "ead7c004692924149795c1c4a53045061ff4f381"
+    }
+  ],
+  "s-nuestra-pieza-esta-en-el-segundo-piso": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "c5ae0a0831c69c74a6e08f756a980f6a3478e64a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "4f7f25dac038d4f364af8e37db1dbe15d6785304"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "fcea24360bdf5c6d10831a2a954d683e49cf3a27"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "e77cdd92dc0090f3c194e03e7228bc33cae07ce9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "55d93ed052e9159c86b9012d0a00eee82ad5edd6"
+    }
+  ],
+  "s-hay-ascensor": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "c163041af0912934f30a3807e30467e7ad47ba7b"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "d359fadc839fb46193fe5411f08e60138e395777"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "ef05f350c3017bb7936af58e093641d7746ea46f"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "20550872c2ffca31b9c110d1df3615f616889aa8"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "e067dea782caf24eed5fb25ee740eaf00604c238"
+    }
+  ],
+  "s-el-desayuno-es-de-ocho-a-diez": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "febdb8713346736b245f47b6b849ac5d2f7c78aa"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "6642d5aab16e90645b0b3a42dd48ea597f25182f"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "e96665d0f96574495821be79addf75f1e31f1704"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "f1baf4e120bff2d2f0326a3f87cb5a45c964a0db"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "e653d50e0165f72d9adf7bb59d1711cde61ba570"
+    }
+  ],
+  "s-hasta-que-hora-es-el-desayuno": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "e42762f6ce6c9c48db79c2b6e1217b62c68020c8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "0b221b0a7a5306b141b9b64886800aaba3f14346"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "37e7be71f75adf1737e67584aaccec3b3b4eae0e"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "40d60ab59ec026fe518f68b4a47009a0786c6876"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "a2a5fc6f47d611997fd4f624d2f9b5c7cca6a931"
+    }
+  ],
+  "s-cual-es-la-clave-del-wifi": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "da14fa10875e405963afeb29f62d3d50c13a6ee1"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "98339eab022fb2e0c4070a784e03c5896ab32637"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "7f765950e00832c3e50bb846be0d5996b62962d6"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "9f64e029494e376c64c9858e2ef4e29f71108c37"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "be272840fadaad4a9d802e2ed1d639ad3a2f6325"
+    }
+  ],
+  "s-el-wifi-no-funciona": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "581eb8995a9d71e71547ff549f8c622ca0491ce8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "6e5da669b79efe11a52db586a2716ce5b742adf4"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d2d67ce10afe18392935af4308054ab6e4b948c0"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "9125ea5875e1e63d87cc1c74da1e8138daf14600"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "1b86a3ff540d05d092fec7c5051b4290a1f86ef3"
+    }
+  ],
+  "s-la-ducha-no-funciona": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0c04b71ba0bd435dae1a617e27d71c434c959c3f"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "181c036f9cc830fd3b8d46d1653d3d888813c12f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d58a1cd3e6918cc57c0e08542a990984370548dc"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "9ddcfb919a1eff8338bde51a1c9f5ed7b829dd59"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "1e566ccc1ca3b909dcb04fd9a779cb5cf530dce5"
+    }
+  ],
+  "s-no-hay-agua-caliente-en-la-ducha": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "e5b04cf4ec79d04a0882a7f22052853c3ba27690"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "60fa24f192d15d3da05c27742649c4a34d7c19db"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "9fd8ae94439ccb04c02004cce5658a64b211098c"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "9668dfc7f95397e09eb687e3264f271be0bd22d2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "4180cbefb45bf80c9a11d6b8174b1ee6f33a6438"
+    }
+  ],
+  "s-falta-una-toalla": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "333f55de42150d4f30861a59168889057fcf1417"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "b970778bc389705e26e10dc6416840be2db2819a"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "aa27d0e249075d6fa1f4cf55acb870ad8cf86df6"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "f6163cdb79a18ae2af15ffa08f545bc075d82624"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "40643d360d80f2198890023e382abc5509b5fe3c"
+    }
+  ],
+  "s-necesito-otra-almohada": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0a49a3e8b6726351e326f5db374fe7e0eeea9224"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "d060ed8062fb896670df68320a1e51d58adfbefa"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "cabcd1915e31e32d386b746a1f14bf57f9047cce"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "8c3af489e971b833d5a9a532c6fb076cf18e6dc3"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "f6141f8178888e36f0b16a874905b453f178fc2c"
+    }
+  ],
+  "s-me-puede-dar-otra-frazada": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "4a92943f448f2487f6d4c25606006dafd3cb1614"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "8652142047ff0065bba5809278bcf494cbb26e61"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "a93af26ac2a5a3d85bb11ee38639062aed3d5fce"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "6b983b4baca4c545176b74e31339b436a07219d4"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "5c1c98ea5bf89d6dd60891e44312d824208e6cd5"
+    }
+  ],
+  "s-hace-frio-en-la-pieza": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0f237983a7d888462acc7ca3fabc266a2fcf5319"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "874af589d36bd5dd7ba6a8bf3219d37fd5ef8bb4"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "9240105ed365217fcf95fbb6fae06b712f52666a"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "4e4196583239b1949da2b1caaa80843d13b8877f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "4d6d56ddebfe3014c50732a0a7db72867c511248"
+    }
+  ],
+  "s-hace-calor-y-no-funciona-el-aire-acondicionado": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "8360eb736c5c7d846a3ceec8b456118db202c22f"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "5706c081f3b261698f149f91659d51015c9fe9bf"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "7ccd31f2ed3e7e254342425651d178821ac00278"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "054f96796914a9e636292e7ace4872912081d31e"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "15a058ee87f9bda31009552e06dfaabfd56c7bde"
+    }
+  ],
+  "s-la-luz-del-bano-no-funciona": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f6adf518fa3dadb117e4b0c146c45b1f0ac245b1"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "3949c61ffb5b5c641d0292189313aa12778c3e60"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "011ad177a06cc3bca6a15b6a752c5bae281167f6"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "798fe0bdeca12dea89345125f2a8d82d9680c934"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "5e141d8dfc2c58d75f0d8b6af1a691b02c25afc6"
+    }
+  ],
+  "s-se-puede-abrir-la-ventana": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "4e2a8dea968a548917f33fcf01701be3d3645bf2"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "837adbf5ab4533d7659a6e57a89738a7c9450e67"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "f35a898a375795053f3223f573e3bc5c20a21a80"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "bf231385015590b64bb1c5ff7218eb46cf1999a5"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "7a38128b49bffdfa990dd8a467de4b73004536d5"
+    }
+  ],
+  "s-se-puede-pagar-con-tarjeta": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d1996b52186fa21d9bf0f5d2a74843fb7048d13c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "d13c1748cd1f1bed417b6e00479fd3b7e7ed29ec"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "7daa2dd192da5891e8451dae14419cc2edbfd100"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "20eb67ddf8c297ad6307147b6c171f8354f7a47d"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "a93a56e672dd1b53d989ee5c3b762ac0a2fb2e96"
+    }
+  ],
+  "s-se-puede-dejar-el-equipaje-aqui": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "2301e86660a225cc13dd1a614c9a656147f2e245"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "8a74cb4913fed805072aacb4c84b99246a780593"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "417e622212a0583e65a2151affca84044879c08d"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "50ce3e527ddb319df886b6d36ff759b2cd7e28da"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "258226f4e08db4bce55d130666852ccb70a69555"
+    }
+  ],
+  "s-pueden-guardar-mi-equipaje-hasta-las-seis": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "3cff9c61bdc69eb917aabd78d1e39a6dae2a174a"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "3d95d36f09c91d7593f94b2c4c59c8b0625cd52c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "50dd395dc2934a604be2107980a8660f8cae0335"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "e5604b8469a9fed74202641e49cc06f62e4ce023"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "a6ac95c8991cf23a1305d82cc34f81d39dfaaa91"
+    }
+  ],
+  "s-hay-mucho-ruido-en-la-calle": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "b62f21f6579b5b4465a318c0e05260ca625eadd7"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "672f8271101f5180b9728307f136d3943a1f3df5"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "4f52c7107c81679b9e30b5393dc14d83097dda2a"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "234fa7e08ef50d28281ffed720832e7bb8c66738"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "6c8e6c9135d56399ea0f8ae531cde520e9f47061"
+    }
+  ],
+  "s-puedo-cambiar-de-pieza": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1c4f62d4b0ad51158a64b1cdeb1d861cbe3c7905"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "6ef302453de2a3b87402621da86a3407b7be4d38"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4a2cd20129a99a78ef4ab16efaa09fdfe687d0f5"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "81e63c9a6d013baee84c7d00a7f78789f7f55ae9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "d975caa641cfe18cdd802cd5e67cf85a44e4e731"
+    }
+  ],
+  "s-la-pieza-esta-sucia": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "14ef5b969a1af26b3e628e83aa6377ce4e3b2390"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "fc8cd55a33fc20f858cd2006b96211d71f5cae84"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "8020a71d130196076d972ab7e63ba33d1b89b0a8"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "4d976f7645de907fa10be17d6a45cba4ad80d777"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "ad7c7b73d1ee7f5a0341a43cffc586266b2b3063"
+    }
+  ],
+  "s-pueden-arreglar-la-ducha": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "a8f22acaac5bec26928311e60bf4f13178517f04"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "fbe9706be72c34640546fe54ff05d68bf5e3b1ca"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3697cab0740003ffc2273f62ae7f71fc037d6b10"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "5ea5c00f4d6acad7fcdcfc4718bc24ba37c0a5cd"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "2b914f735b94271685cdaa6796144b211d0f336e"
+    }
+  ],
+  "s-dejo-la-llave-en-la-recepcion": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "2550febb1d0a136ac6ac553dc695af0dd7a73317"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "7e061883dbbe8615dd9869b60492a17ffdfdc152"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "5fd9b6b6c7839c7d36ef315429c81036dcb5550e"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "44b87e9bede5a85070a1c2267ca22dfcb004c120"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "23f5b8d334464924526dc05e7926221e77b7244d"
+    }
+  ],
+  "s-no-encuentro-mi-llave": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "e9085c99d8432c8ca1c254fdedb001f76429525f"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "18120d10142f785860592559947a065550f69158"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "89718b16ac7eac2e8d65df880bb5f0cfe0b13eea"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "1c342d8b585d1cd9cd2f96c71355bc2b649d0d8a"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "d83b0a2d3ff8f7398d4145f6767e9bbad3b58fe2"
+    }
+  ],
+  "s-donde-esta-la-lavanderia": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ac1c5b1a3a98e574ab5c6dd40f48c76881f7e9f3"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "d715249a3e9448cc4f6b680ad2b37ca15edd7ffb"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "40faf01f66fdb960b642ee3f3e5870c2fbc3143d"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "22334842d211287a01e9cb28f4634c6ad8a916a7"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "4fcd1bd2d672dd173a8761c16c958d8269b62e9a"
+    }
+  ],
+  "s-hay-cocina": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "30de64e11a705d8dda4e3304a692f6c1b7ac78c8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "52ecf500c810ef98b59ee1183f15e325030f0945"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "6f31735823d411636215a8eac259dc5f8b09ebd4"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "7dcc5be5b10ce03f7f5660868b8d2ad254de2ae5"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "8b9888bd4f1942901909da17f9b435ccc5db8cf9"
+    }
+  ],
+  "s-donde-esta-el-enchufe": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ded8531607c2e07f7af8e12c46c2b1c79f204463"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "ba2fa280f8c58793e188c308244d0e569b96e7e4"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "ca2152bd15d8fb538077f080e350d102d8613a46"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "bb65c9010127a3f993d48217492ecb28966a4f4b"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "03159b46e2ec50f23c794dbf9ba3ecc795dfb05a"
+    }
+  ],
+  "s-necesito-un-cargador": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "b431beeb0d35438dd77f34957ec85b0cabdbf695"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "582c5e63dea75a7a7658be136814d2a2d1a0c89c"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "0aae6d02e9f389f356d6f1276135317edfd8c374"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "d8db6cdf97fab293b5ed2dacb05b9a73b73297c6"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "3d466e31fa68012535cd36afa7c3c68f0dd6dddd"
+    }
+  ],
+  "s-hacemos-el-checkout-manana": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "da598817be56898ece091c641c1637be975c47fc"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "73d416b96de89c3ab461113ab76e696550d9801d"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "e5537e200a8a21229d15ec363a78040cc726e24c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "8ea5adbf6368355229b5516239616ea71c1efcc6"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "f854c62abda03c45818b51545969f2a9b9376406"
+    }
+  ],
+  "s-me-voy-manana-temprano": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "2ba34df592ce6cb1ac7302a88a13e196c381e6e7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "a18bd91b36a3e401724b5e2c53f67460bcd19220"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "33c466a578dd28d75ff361f6cefeea86570f5607"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "e1d90bfe14058732e246c5ce263cccde0c4d479a"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "f365c951aa6f698d44026c87123bab6a3faba592"
+    }
+  ],
+  "s-la-salida-es-a-las-once": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "3ff0fd8c8bed569d8e1063a0027bc03b676f6cdf"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "c4e212985cfe838c5a3b4dedc4ac86a0cba8f257"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "c280568a4fe79c40865765116fa32bc0229add12"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "4d4bd8d8946f2f6e7476b44283f9077aaf038869"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "d847a59cc7f21dc4978540e2a8698ef126a30e8d"
+    }
+  ],
+  "s-duermo-muy-bien-aqui": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ecb95811c3d900bb39ab1e93573d1ba61a9d904c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "a9599cc1a7880510fc10bbcb079c99028e1de6e3"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "05f931d79dd7f3ef7d8ce61d4ec6f4c9f0aa27e9"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "cb26d58963a63bf0efd224838ad8dd3d361d776e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "40ecb8e8665fdf206c8763b14b44bc3251bbbec6"
+    }
+  ],
+  "s-puedo-quedarme-una-noche-mas": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "82213c2668abdc000dcc8f86d2cc583f8f63ce4e"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "7845287bd27cf691063d49fce0729137ab67de5e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "44b551dff7c772c2d995f5b9276e5ef2f930386b"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "e373d5ac15accc1f3caeff647b5ea49d8648dbf3"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "39c323c781c99b7069852a8bd8e7173589f244db"
+    }
+  ],
+  "s-puede-llamar-a-un-taxi": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "6004a554fa98c11b5711c4403b43e379577269e3"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "c66c7202fa9782e7c85ff6babc3795442dd6b028"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "9237f540cd3ea0340ba3e32e005129baca798b45"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "d90b8794739360f4c642b154b0b7295bb762c625"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "289a30db01f4e0668c30bc41c2df9629fc08d66d"
+    }
+  ],
+  "s-mis-maletas-estan-en-la-bodega": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "818cb19145ea82417fb62cab5f24eb71f1811229"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "be7d62f3495df8a30bdec5cbff96b95d2f41691c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "410f575406405ff78743ed46056e0296e9a59f01"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "ed888b9a39b21b3902ef339ad8c9eaa16a6e5ed5"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "fb9503b7eee4d00884ed044251253690746cc797"
+    }
+  ],
+  "d-check-in-reserva-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "6ed8d4115a994866475ca5085858c7075da2b99b"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "a5a32b31a35d82822fcf5f673f5934aa36687e28"
+    }
+  ],
+  "d-check-in-reserva-2": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "b102327f2db3d5c2dcd2ac6d62f65db473693c04"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "abe93709939276f79a89e665a6a86319073c0a9d"
+    }
+  ],
+  "d-check-in-reserva-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1a555bb394fd8addeeccd0ddba97682c042401f6"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "43df966c5ba767cd6fcb6f7e57f5e2641ae0e750"
+    }
+  ],
+  "d-check-in-reserva-4": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "ab76dff87cee0b1782761664db7eceaeb86ebe6d"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "446142501725f21d63325570ccf68c9e11728c57"
+    }
+  ],
+  "d-check-in-reserva-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "3072531bafaa7c9f840076dc63f00b362926cdaf"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "75067d33dccfdae480f522009d9001c813eb1aa8"
+    }
+  ],
+  "d-check-in-reserva-6": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "9352dbb30125b03b588bdca5d9c50d5e90f08d84"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "aae74798452eaa87be8a18f3da4859572a687702"
+    }
+  ],
+  "d-check-in-reserva-7": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "6df238879402f15d30647002bd95951303c1046b"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "4e10049f60d32aaff794e2cf6742b2f0328e6f3a"
+    }
+  ],
+  "d-check-in-reserva-8": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "843f423cc8e78ae0c179219e47833a218152b282"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "aa476d1e3c206cf1b3012162d91b721ed8f708e2"
+    }
+  ],
+  "d-check-in-reserva-9": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f4c63ab1de3ce372379c59fc4bf36ef5f7249178"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "8a20d0a284efa90574ac7f238145addebea5997f"
+    }
+  ],
+  "d-pieza-libre-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "a4ac0388a857a2f009e53480c8c8dfba795b28d6"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "a57549d5ec9db884198d18a25426ba6c3a52bff4"
+    }
+  ],
+  "d-pieza-libre-2": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "103c7215b9876262b49951cf5fee3ac2331e9348"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "664bc79e2888e6a817dee789c8d25f4f01414150"
+    }
+  ],
+  "d-pieza-libre-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "64091e8470fa28401cd410c05d112c478e2dd7c3"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "ceba4c3b1d7b8fe6073aacee768cb973fb93cb8e"
+    }
+  ],
+  "d-pieza-libre-4": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "93e9b518629bd1cf12f51d885a9cd0f7d6a18afc"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "236d6abb7a2b1b2db8305b448f281587e444d4c9"
+    }
+  ],
+  "d-pieza-libre-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1f95930c2303b19012ee32cf0fe6a5b3a9bcfa81"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "0f5dc6140e3d9cca06075c65e434b85ace4f061b"
+    }
+  ],
+  "d-pieza-libre-6": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "895ad877024632c8149477c96e6cf0ec786c6eb9"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "4ac30a0fb76d6c419d274d88b16bc7e8315c5937"
+    }
+  ],
+  "d-pieza-libre-7": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "97744f13551afba0680bf1121fa6642c08f32bb2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "ab66afd5d52dee2d697120fcc05391f5807b92a4"
+    }
+  ],
+  "d-pieza-libre-8": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "a2b105bf791244a72e98bbbff1a647fefd8d7d39"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "11b0cdc406503a455524e2c7c4624e9cdaf62b7b"
+    }
+  ],
+  "d-pieza-libre-9": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "796916cdb6d89d72453d6aeeafd8c1541e09b2d9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "0845c110172e6b5c409ec6eb5f80bf50cdda25e2"
+    }
+  ],
+  "d-pieza-libre-10": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "d10a5d47e35a9aeecae5e216d98c330e9b14dc98"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "fdae4267a0255b189edbbdd5fb5c02a944a32fcf"
+    }
+  ],
+  "d-sin-agua-caliente-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1f2d78e54fd0d451c5319abd3a83d5047ddc8141"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "6e869688f25b00abdc7b509321849bfc599ca773"
+    }
+  ],
+  "d-sin-agua-caliente-2": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "199ec86ada4d4ac05b993214fadbd1e6ae603c68"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "a2a30c16aa57297321114cf5b77ed30557803a2a"
+    }
+  ],
+  "d-sin-agua-caliente-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "6828b0ea5b9df39a102169bfcfb125a4e8d5c000"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "6495ef08014cf2fd9fadb1021c3228e70e4da1fe"
+    }
+  ],
+  "d-sin-agua-caliente-4": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "38999da71fbad1187831332e014f10bc2127a14d"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "84a2c8dbc5241496170fe2e1418bf16d4e5d559d"
+    }
+  ],
+  "d-sin-agua-caliente-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "e64f313aa2e451abcd0b5d9604371d1c2d5e695c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "f587ec3ade3fd192ef836f719eb6ce210d913091"
+    }
+  ],
+  "d-sin-agua-caliente-6": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "f9a9d328b5a6e198c5358ea0dee404d0df37d141"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "f065e40b45723302e7e60f4dd15ff7c61913c2be"
+    }
+  ],
+  "d-sin-agua-caliente-7": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "02379bc6aa3a2bff8112adcdc5d93a9a318b14b7"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "7f31133dc63125c3380a091dc36810f9b175085a"
+    }
+  ],
+  "d-sin-agua-caliente-8": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "85c43faeb449701dbd3b8fadabb0201731a92d7b"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "d8e2d3c25fe2161689a1cc87ca07bded179a718e"
+    }
+  ],
+  "d-sin-agua-caliente-9": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "45eb6f16c2dfbb7c071819242def7943b903639b"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "d12733130ac3194801fa6618f5effa02564cff23"
+    }
+  ],
+  "d-airbnb-conserje-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b13c5a86271e47e434a8764207b2ee430f5664ca"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "088c81329b947ec33ff0b70f242be6ded49ab223"
+    }
+  ],
+  "d-airbnb-conserje-2": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "d3db5bcd3d52dbbec59092d3811a76f7d058d131"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "a1253c4f207559795cbb82905836115494df9687"
+    }
+  ],
+  "d-airbnb-conserje-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "572e0dd2763d876ac5859e47f92c998efa4abc1d"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "e4b310b342c4b3e24860d73a48eb5edf906c873e"
+    }
+  ],
+  "d-airbnb-conserje-4": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "0b065d05a220bfea054ef1e73b7f81ca97d50c62"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "7de0222019277666df640b8b29a35f963c61c5f1"
+    }
+  ],
+  "d-airbnb-conserje-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "5b2562098088227e51037a68230ac7f1755370f2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "8c6bb77eb6c4aef06d9fcdfc2e59fb9fb0922f4f"
+    }
+  ],
+  "d-airbnb-conserje-6": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "2aa1c8fea982578e808faaab6ca6e5c1a5a75ae1"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "57557dfefcabb3976546a9acbbcc9923fd8c61c5"
+    }
+  ],
+  "d-airbnb-conserje-7": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "da14fa10875e405963afeb29f62d3d50c13a6ee1"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "be272840fadaad4a9d802e2ed1d639ad3a2f6325"
+    }
+  ],
+  "d-airbnb-conserje-8": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "b7282c1eb3230b5a8589b0f253f48136898ab1c8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "af86d1aa26b097a731ba1ebca960a5b4a3d24140"
+    }
+  ],
+  "d-airbnb-conserje-9": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "2eab2789d34abb9da355f1c7f7a6a3b8d89f895e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "8df381c440acedb460e35cfebe276214dd179694"
+    }
+  ],
+  "d-airbnb-conserje-10": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "6ad82a0040652e9a9b691d95d82192c6ee7d6a7f"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "8686c8d8337e6eb89783f4ef793ff93268181ab8"
+    }
+  ],
+  "d-guardar-equipaje-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "164c3f77ab25949dceff87f6bbc6060b3aa91dd5"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "ecf15ff662be7182ceb5208748c24f0e64dc5b87"
+    }
+  ],
+  "d-guardar-equipaje-2": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "df355444b4e3b1db83264c685dfdc25e913cee06"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "6f7f41f57b5bef53fae322e8004e9ec22651b226"
+    }
+  ],
+  "d-guardar-equipaje-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "245701b620147313afefdfb3fa74edb128552273"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "17c8a6f70e84bdad18a6e428f805dba1a9399d46"
+    }
+  ],
+  "d-guardar-equipaje-4": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "1ebadee1596cd751eeab4d8aba88620748084972"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "86268f47b20b02b133c9d24107e03d937d030a27"
+    }
+  ],
+  "d-guardar-equipaje-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "c61aea22ee815688348ab6ff94dc67b7b2d82fd8"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "573f58927657e682f94401e0f60025cc7068efc3"
+    }
+  ],
+  "d-guardar-equipaje-6": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "7c0f704783f4bb2c350f513b2b13702a22285b25"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "3411d0324fdbe9910729c7c5bd6bdbd66436ccc5"
+    }
+  ],
+  "d-guardar-equipaje-7": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "eee6a4619d955d472ff74207121451b28446b3d9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "a16788a37a77ab7c4b0d0ca0a0ec48b1f1f5a8bb"
+    }
+  ],
+  "d-guardar-equipaje-8": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "5259f6b294533cf34a1db1b7478c8ee2cebbdac8"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "02f8cf889ff2cbb57498dee544b2bf28f2e3824c"
+    }
+  ],
+  "d-guardar-equipaje-9": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "69f0646fcbffb110cc86e3c270397537cf2e8aae"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "4961aea7c8e6e5b23e461646e6801cf2990fc6cd"
+    }
+  ],
+  "d-frio-ruido-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0f1e77711e7aa969f2c6e9d51e0ba91ff5a772e4"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "8a3c1260ea25507d0eb103cdeb6b94f55121e236"
+    }
+  ],
+  "d-frio-ruido-2": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "4d7ca9612e2a86a6b6ce440b225a3b07b6252902"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "c695d2720af3a0370fa4b8b89156e714ad8ebc71"
+    }
+  ],
+  "d-frio-ruido-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0b138e98eeec005784601fd559094ce5b3fa9517"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "3214eacfeca87be8b24a776573d91191fbafad29"
+    }
+  ],
+  "d-frio-ruido-4": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "0295dc925ef432b079a710bce70084d235f2629c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "7507e66ea4bdfbef678ff3d97029f2153569cb1c"
+    }
+  ],
+  "d-frio-ruido-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "bdcc7468973b94a5b0079e980179e99668fd85d4"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "7753b508b19cd84fc536a9d1241e0e8ecb3c4f2c"
+    }
+  ],
+  "d-frio-ruido-6": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "5755d13285f0fe5e99e46fe32c26e5fdebb4fea6"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "860e178de9e3f970f15687d4c0802ebf88ca2cf6"
+    }
+  ],
+  "d-frio-ruido-7": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "6ddd11095c1353ac2ae08c20a685bafac36aff9c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "aefd03a9ca8f133e7a6ba659628a28a542ded3c2"
+    }
+  ],
+  "d-frio-ruido-8": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "19521afb8e24373c346bcc8ecbb71ac98194a11a"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "cf13ec3cc61b73ebc3e37b5021f2abb6490a5a20"
+    }
+  ],
+  "d-frio-ruido-9": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "9c3f9dac7051ea995fffa857f9694b798fe5cf69"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "77439e794e1b16be007f8d3b3cfe87741ff3671c"
+    }
+  ],
+  "g-possessiva-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1f7f2f3c6cca7af9dd306f7332e9e7a6eb14f68d"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "8f5d22a674547208346f647ffb0b2de84a16b7ed"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c32d346c7ae20eabadce96872ac31e6f912deea2"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "466ec856d8ef8130bdf4e72bd83a26c6529d66b1"
+    }
+  ],
+  "g-possessiva-ex2": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "49ea9df5c01e84c9ac24ddd7dcbc311cba6a18a2"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "4b6c385ad0132c997d08d7bd3aec8f8f35e31489"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "13d564c618478339c9893eb785185b6ef755ed23"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "402bc6c370f27e40fcade05b8b9c521443d8edde"
+    }
+  ],
+  "g-possessiva-ex3": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "b9f71b1b2cc7a20910f13918357a0ab11fb10051"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "f24eb357b3897a168d56db6d4d01f0b57d5fc963"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b0ce9aae5ca8a25db61dc41b8d97ff2e2f3434fb"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "a196995b01838160bc08df224ee7fbfb645e9dad"
+    }
+  ],
+  "g-possessiva-ex4": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "c5ae0a0831c69c74a6e08f756a980f6a3478e64a"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "8d6eca0e3b04a21f67f063422d8ba18818ac76d9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "fcea24360bdf5c6d10831a2a954d683e49cf3a27"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "d8a7b956690f2e49a0433597d13dd78230aacd52"
+    }
+  ],
+  "g-possessiva-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b560ff28e71a1731a4fe58a67d9336b1efb3ebef"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "9b61f808d97c19b84874d833982026ffec83d8a6"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "77c58fc42ed8a63a9f7ef7a9a13ff0bcc46a985f"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "9de4c72b052dae2c6eb7dd8b7898cd1adf2f5d42"
+    }
+  ],
+  "g-possessiva-2": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "514bdb6ef97699459706efaa1f5b7aac69047033"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "2479e33cefeafbad00256b14838fe50ee10e24c8"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "82e7e8612ab2b1a363ad88575ffa9660231d0b09"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "ef956b7a3419dfbcd3d7cad3e48e0fa8576d6c63"
+    }
+  ],
+  "g-possessiva-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "ac740155ac66797d3289da148201859a54a4a9fe"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "026233dce4c4999b5f538569d3dd6189b90e653f"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "42a0300e85a19ba65c3b75e93fe4fcf89fe172e2"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "f319f35cb1a7e9c3c1dcb90c9f47cc76d96d05a7"
+    }
+  ],
+  "g-possessiva-4": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "e6588a896c6af3f27b1b5f6f0877efcb7132ecb2"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "7e066bffb5eeb1d7e4288851579ceaed52e70303"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "c46c1750680cc4e13b4b6cd564b0cb6c1b356ce5"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "b81636e5c08b1a084f78790cbd44dd6a694f9881"
+    }
+  ],
+  "g-possessiva-5": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "218ac2d3207e9421ac9b70976dabd2a285e6724c"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "d63ffd5963a36c26c8ffe4927848a7f5880dcb76"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "b76f6ae44d120d09636c52713eb987699bbfc8f7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "127427704a86c9215642756cebf026e07ac79ce4"
+    }
+  ],
+  "g-possessiva-6": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "dc28b4c625f036e67e0ecdeefc71e9c3d3efbcab"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "e30a0a1ddf1fea9fd9da03d61a6fb28e7bcbf259"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5624eff3f1d0979089a72d147689d3224e0209f7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "671af22c814422f24fef9710ff3f8fc11a9c6444"
+    }
+  ],
+  "g-funcionar-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ea6379407f7231e73d2fcb228c71cc8a2192e832"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "2ce78a87250ec6c55c5e01ad503dbc04494e3a05"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3a6e1e890a6becc49db83cd8d072911d95bcd588"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "d39cd014b3f7f0949ba3100f5c5fe9e6fe6b4871"
+    }
+  ],
+  "g-funcionar-ex2": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4dbd2e371fc3ba09a500ec9308382f4707cf801a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "c737eada174211d12c641cdc122ca41519e8c224"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8f6f383da5f36fac8b712b645c61107203963fd5"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "0aedb29151e91356c3c9df89ce0a891491e51d5f"
+    }
+  ],
+  "g-funcionar-ex3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "6828b0ea5b9df39a102169bfcfb125a4e8d5c000"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "88be39efc587601cafcb3f5eb9f25bcfe006ae01"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "b1350d08ce5c6dc5b76e46ea2c4ef4deee9206ad"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "2c0ca4e3b225052d3f3ef1f772a4e20f101d089b"
+    }
+  ],
+  "g-funcionar-ex4": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "333f55de42150d4f30861a59168889057fcf1417"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "1d83be40dc45e86ff4a3dc6e1ce8e289ca355e69"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "aa27d0e249075d6fa1f4cf55acb870ad8cf86df6"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "9663cbd56acc96a7fcc34c4ac72a278979feb1a9"
+    }
+  ],
+  "g-funcionar-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0c04b71ba0bd435dae1a617e27d71c434c959c3f"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "edb841410331b1aeb18abc9a421e5ea9323b3a62"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d58a1cd3e6918cc57c0e08542a990984370548dc"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "d16bf137239cfd32d9c1ffa0bb1822fdc95b70fc"
+    }
+  ],
+  "g-funcionar-2": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4dbd2e371fc3ba09a500ec9308382f4707cf801a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "c737eada174211d12c641cdc122ca41519e8c224"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8f6f383da5f36fac8b712b645c61107203963fd5"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "0aedb29151e91356c3c9df89ce0a891491e51d5f"
+    }
+  ],
+  "g-funcionar-3": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "ea6379407f7231e73d2fcb228c71cc8a2192e832"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "6e5da669b79efe11a52db586a2716ce5b742adf4"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3a6e1e890a6becc49db83cd8d072911d95bcd588"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "9125ea5875e1e63d87cc1c74da1e8138daf14600"
+    }
+  ],
+  "g-funcionar-4": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "6828b0ea5b9df39a102169bfcfb125a4e8d5c000"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "88be39efc587601cafcb3f5eb9f25bcfe006ae01"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "b1350d08ce5c6dc5b76e46ea2c4ef4deee9206ad"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "2c0ca4e3b225052d3f3ef1f772a4e20f101d089b"
+    }
+  ],
+  "g-funcionar-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "bd6c8aa872ff0217ab874b2f405495ddde4d584c"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "cbb6d4b3c8b730567e18da85f1cf172800b0bec2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c3a0f3f7f7c12c5822029fa74c9ca93d9ed0c660"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "f1b9cda2cfda5d50182b8dd837987a68696aa5b5"
+    }
+  ],
+  "g-funcionar-6": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "e52cda7949d4c0448b597653352686e0add6ec6e"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "8019e19a02abb76f7fc8adcf407e2d7389c7d659"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "1403b5c0f5da52b98cbf529f3859ade27ea3bb6d"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "8ecc110bb1d6a4e21db597b1dc1dfdaf2a07e330"
+    }
+  ],
+  "g-hacer-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "751c2e74a54a9c7eb5b6a9d04acb90f55fa5e921"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "a428d4d8ba6a84535eed410f80f42a1ed3086703"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "3dcd1be06e796cb7dd650a769c8efcea34184ff8"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "ac83976990902c45fd4b3d435919d832b852dfc9"
+    }
+  ],
+  "g-hacer-ex2": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "da598817be56898ece091c641c1637be975c47fc"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "19dcfa56ed858a12d28e748b5854e9862dcee770"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "e5537e200a8a21229d15ec363a78040cc726e24c"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "a02dd8351bb41480acff7ed2b9354e4d5a67f3f4"
+    }
+  ],
+  "g-hacer-ex3": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "41a4dc28e26ca8758837267bdc899023cd48ffbb"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "29063d01a4e5ad99b06307f7319c237c51bf2786"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "1b624c1b6398f2934dfbe35b66422e19d7970389"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "0048c85e1845fcbf76375aeaebdb49fadc28efcd"
+    }
+  ],
+  "g-hacer-ex4": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0e967dc6adfcf8b13895f2ff775b10ead0ddc47a"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "c4ca0381e7a6dddcccb5e0ca2782098f5f7aa40e"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "f8e082d28773a78ee7177f486598d71adf85497a"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "b4a8c2681a8db0ccca625a710820bf763f8039ef"
+    }
+  ],
+  "g-hacer-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "9ff3242e4dc49e50f0dd365b9aff54ad3248a74c"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "8b8e2decbad11159dc4906f08e8b711e7b279420"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "63dd15979624b672f3fa287213a5d7995179ef3f"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "8aa5475abf448198f921d72aae4f16d62128850d"
+    }
+  ],
+  "g-hacer-2": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "98283e37a232fab82b052441e84741befca6a270"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "73d416b96de89c3ab461113ab76e696550d9801d"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "740db681566b158887368f818fcbd790f32911fb"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "8ea5adbf6368355229b5516239616ea71c1efcc6"
+    }
+  ],
+  "g-hacer-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0f237983a7d888462acc7ca3fabc266a2fcf5319"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "874af589d36bd5dd7ba6a8bf3219d37fd5ef8bb4"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "9240105ed365217fcf95fbb6fae06b712f52666a"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "4e4196583239b1949da2b1caaa80843d13b8877f"
+    }
+  ],
+  "g-hacer-4": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "c8820756fa3d3f3e510679a414b68bb82583f4fe"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "cbd56153ea653589d0c6d152df7bae969ac26410"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "c349c98f5620de2014020d2006be21afa7cff1b7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "dccdf0531c6590d58718b5cac9962b490cce74c6"
+    }
+  ],
+  "g-hacer-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "afa42c6909fc230dda1521793aaf0231994c5bca"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "b41de412c95f0e0ff5ec689786473eeae87eb14b"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "e75dff8787154e46a0e1ac912f2d6f18a9764575"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "65d6c1bc6eee7edacae0fbae4cf29d64210c8eac"
+    }
+  ],
+  "g-se-puede-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d1996b52186fa21d9bf0f5d2a74843fb7048d13c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "d13c1748cd1f1bed417b6e00479fd3b7e7ed29ec"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "7daa2dd192da5891e8451dae14419cc2edbfd100"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "20eb67ddf8c297ad6307147b6c171f8354f7a47d"
+    }
+  ],
+  "g-se-puede-ex2": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "be21657545d44e5ff518c0858394adb3d952e249"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "1e9efa213dfa3694bd8efe7a20b83fc0f276bd1a"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "3b6e688f433013bc9f3fed2aaa4267c9a54a6bd2"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "4e615263bc2591506ba5f2e1d02d0ee291f8f26e"
+    }
+  ],
+  "g-se-puede-ex3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "24302564c9fb01b4f6acd0fbc0fe24323560859a"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "19d1fe53d93f899122f7f5c695e6cca047edfe40"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "092c25fa8dd7893dea89d920dcb1c8870641f95b"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "a19e3d740d0b13e618434cb9cabb6de2ccd82ae7"
+    }
+  ],
+  "g-se-puede-ex4": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "9b697a77b9ce9d7defd6a8e4d196a4d814ac4322"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "dae99f0d978bdd4ee7a0f4838010cd66e1c9b074"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8c8e567b503285c164e1ad2c9c41bf4ff0fedb90"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "a4d05af3857fbc2cdbb2ba31750eb214ad91e56b"
+    }
+  ],
+  "g-se-puede-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d1996b52186fa21d9bf0f5d2a74843fb7048d13c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "d13c1748cd1f1bed417b6e00479fd3b7e7ed29ec"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "7daa2dd192da5891e8451dae14419cc2edbfd100"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "20eb67ddf8c297ad6307147b6c171f8354f7a47d"
+    }
+  ],
+  "g-se-puede-2": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "4e2a8dea968a548917f33fcf01701be3d3645bf2"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "2101d36699c7971b5a5f19070982abdfd65744d2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "f35a898a375795053f3223f573e3bc5c20a21a80"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "38a4b4fe8e4c120248cccdf9288b7fb0c2576686"
+    }
+  ],
+  "g-se-puede-3": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "daa10e2695f28d8e7a839b1ea9b7ff3f4fb0fcf7"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "a0038df169fa0de77a0685b56d15e5b088b45734"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "4e41ab1866c9e9cc7ffe5092c8efa3a571625c39"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "e814a526df919a62d0d22835d6d7cde784f81b22"
+    }
+  ],
+  "g-se-puede-4": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "9b697a77b9ce9d7defd6a8e4d196a4d814ac4322"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "47de3cc43a2c4b7bdf70fe5a1261a9deb4e6f349"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8c8e567b503285c164e1ad2c9c41bf4ff0fedb90"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "7cbaeb61984d1f0da7bb772593dd2de72b05d3fe"
+    }
+  ],
+  "g-se-puede-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "1c4f62d4b0ad51158a64b1cdeb1d861cbe3c7905"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "f7f8fbed3066cc210edd3d03d149ad806308b231"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4a2cd20129a99a78ef4ab16efaa09fdfe687d0f5"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "57003415d635623b9c32ac5778cbaa84ef5009cb"
+    }
+  ],
+  "g-empfang-usted-ex1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "8f0f038d6fc7152698f5ca62860a7f8ddab20a72"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "82d6f47c0a0e33a7340c78d97ecaba46b72a024e"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "8df3b6fca01500d7e3acbe4fe9ab444c0eae9dca"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "e463ad35721227aa7e7fee300402171e8173d710"
+    }
+  ],
+  "g-empfang-usted-ex2": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "86a720d9baa9742b63180bb881bfa689cf55609d"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "0493673d9393e94bd378be04fae0d8765a822057"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "e12dbece7534af53b8b324b4d47c112ef58745ec"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "cedc5fe40128390500754cb1a5b200e1e78bcff6"
+    }
+  ],
+  "g-empfang-usted-ex3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "59eb6779c60cdcf64c82f2df56d2213f736d7f16"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "6fdf473e42a8256e9522fc03ce0813713bbdf847"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "59e56158d1dfd878d6bcf35d1f9ec9e73b6b23f3"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "c497776f04e0547884b75270e66cca254fc7387d"
+    }
+  ],
+  "g-empfang-usted-ex4": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f6e2025617bb55495bd76a13d11b5ff401fb056a"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "1dccace0237ceb346a2ace491d970bb6235f9cf7"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "5181a71434c917baad0c6eba3fecad22caecca46"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "bc380f53ea146422e533d63d997d065215cb1a4a"
+    }
+  ],
+  "g-empfang-usted-1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "b93fd1b81614cb10db8cc55a3512044d0267c4ae"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "4e4d20347f0f9565aabf486c61d5bfb22e1185b1"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "c2410e1517cde62bdb3e25dd54efbddc66679aa5"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "slow",
+      "hash": "90f81b5d15092bb77ae846ea5721bfcece50dbcd"
+    }
+  ],
+  "g-empfang-usted-2": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "459b92c287db47aa27aedbdd7c6d2442c7dd9cee"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "dcf47773ba7129fca670e9eae708b926cd587497"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "4de479f339cf94596bd57b80ec380cd2223a512d"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "877d8099786086aeb244091f8c6ca7a85de8c55f"
+    }
+  ],
+  "g-empfang-usted-3": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "8eba998c96c9b7714bd0ff1ad671a5d71735a929"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "d195fea234a3518c9274d858e8ad65d962848652"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "537529127ce304f87eb097163da5061047d4c4d9"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "e1dbe4846b59c58c93ea03631fb1da4ca32f51db"
+    }
+  ],
+  "g-empfang-usted-4": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "49ea9df5c01e84c9ac24ddd7dcbc311cba6a18a2"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "bd1105672ca641af6a06b654e1caa0286ee9bf00"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "13d564c618478339c9893eb785185b6ef755ed23"
+    },
+    {
+      "voice": "co-f",
+      "speed": "slow",
+      "hash": "47004e8be27b7e282e9d2ca582ab51410b784c64"
+    }
+  ],
+  "g-empfang-usted-5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "d83c44014476d88b7648c6dc312bcf483b5af930"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "68104c07061beafbb310f517d52f9addb7579625"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "4dad5fc7a77ea4d131209bf87439e117d65d1a2f"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "18d5d7c1094397fe054d60b8d7b0d24df768c90f"
+    }
+  ],
+  "pair-llave-clave": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "dfd3e7d6656c2182e96680f5d5189e42f3749493"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "79ce52bdb73f8b2554db30a40796541fe719b60b"
+    }
+  ],
+  "pair-llave-clave-opt1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "23e26ebce7000a7cc92fb58f6835b4517ddc8641"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "7c4ce52db06beae31e378efe636bf9cf8e1737e7"
+    }
+  ],
+  "pair-llave-clave-opt2": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "035bb5aa0deae40d57bfed8545760347831368dc"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "19674193d61062c8bec337004a3437267a6cbb14"
+    }
+  ],
+  "pair-ducha-mucha": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0335bac851feeb7da10822346c2dd96ea5a34274"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "5b48656e22c2baedb7b7f21913155931b8c45a99"
+    }
+  ],
+  "pair-ducha-mucha-opt1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0335bac851feeb7da10822346c2dd96ea5a34274"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "fc51bc8d60879581866d7726743575507cf14759"
+    }
+  ],
+  "pair-ducha-mucha-opt2": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "97f5da100e491a178d4ee0f93e6d08f536f82aad"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "22f115fcd3a6d908f40bcdc45200f55f710a52b8"
+    }
+  ],
+  "pair-piso-peso": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "26e09442ab7f49fcb1d7971a806e1fb4a2dc08e4"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "1cfa4d8384006999c2d657009e35b6fb21a7ed38"
+    }
+  ],
+  "pair-piso-peso-opt1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "26e09442ab7f49fcb1d7971a806e1fb4a2dc08e4"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "5ea8811e3cc644bb9155d0747f94b59c1de685ad"
+    }
+  ],
+  "pair-piso-peso-opt2": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "7d71733832ac15b3d84a1ef0031441d9b76f2c40"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "c5bffac2d26b3795844326565596d2a0f686cda0"
+    }
+  ],
+  "pair-bano-ano": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "00994cee8c8be987b95dc98bd86c5d83ffb9ee5b"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "aeeb75fb2e83fd6a8733a77f2e0a975f719dbfe9"
+    }
+  ],
+  "pair-bano-ano-opt1": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "00994cee8c8be987b95dc98bd86c5d83ffb9ee5b"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "f4e8c2152bd19d202a709a7c41378d26e1d57da6"
+    }
+  ],
+  "pair-bano-ano-opt2": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "0588965e9bbf4c5ffa2990dcb1ce24029406e420"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "af1afa4e391587c7f10a9431a108076dd23c8111"
+    }
+  ],
+  "pair-hostal-hostil": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "9cff537ec3509a1bb2aabce6778d9189195f0f10"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "6bb20c3941c62b604360be8b420e3e126bb16f3c"
+    }
+  ],
+  "pair-hostal-hostil-opt1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "8c212045d752398a4c8e2e4c17435c6543e9cc1d"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "fca71971489b83903cc1cc58783adc2f482c5888"
+    }
+  ],
+  "pair-hostal-hostil-opt2": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f1fbb0666b927c8fe9fa236f96f46d2d85e8f264"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "1f0cddd252c844f5f865d36e8b6482d840f8111c"
+    }
+  ],
+  "pair-cama-cara": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "92a4d54f2e9664cd42cf61f45022e4fb1e311795"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "d4b2608433303660c34a09c85d09bc15b414c3bc"
+    }
+  ],
+  "pair-cama-cara-opt1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "2f19cc13ebf8efd63e51860b53c9bc94770edd45"
+    },
+    {
+      "voice": "co-f",
+      "speed": "normal",
+      "hash": "18ec5784cd5840f078f1c9fd7a132acbf97f68a1"
+    }
+  ],
+  "pair-cama-cara-opt2": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "0e7cdf6b9be3badc60a7c5d346f208990ed2034f"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "0c21a8d3bd0a67ef896a66153d75868e08421e67"
+    }
+  ]
+}

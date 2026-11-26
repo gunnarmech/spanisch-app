@@ -1,0 +1,2888 @@
+{
+  "id": "06-unterkunft",
+  "order": 6,
+  "title": "Unterkunft",
+  "items": [
+    {
+      "id": "w-hostal",
+      "kind": "word",
+      "es": "hostal",
+      "de": "Hostal, einfache Pension",
+      "forms": [
+        "hostal",
+        "hostales"
+      ],
+      "examples": [
+        {
+          "es": "El hostal está en Lastarria.",
+          "de": "Das Hostal ist in Lastarria."
+        }
+      ],
+      "note": "Ein hostal ist eine einfache Pension oder ein Hostel. Das Wort steht oft groß auf der Fassade."
+    },
+    {
+      "id": "w-hotel",
+      "kind": "word",
+      "es": "hotel",
+      "de": "Hotel",
+      "forms": [
+        "hotel",
+        "hoteles"
+      ],
+      "examples": [
+        {
+          "es": "El hotel es grande.",
+          "de": "Das Hotel ist groß."
+        }
+      ],
+      "freqRank": 764
+    },
+    {
+      "id": "w-airbnb",
+      "kind": "word",
+      "es": "Airbnb",
+      "de": "Airbnb (Privatunterkunft)",
+      "forms": [
+        "airbnb"
+      ],
+      "examples": [
+        {
+          "es": "Tengo un Airbnb en Bellavista.",
+          "de": "Ich habe ein Airbnb in Bellavista."
+        }
+      ],
+      "note": "Man sagt einfach Airbnb. Dazu gehört meist ein ganzes departamento oder eine einzelne pieza."
+    },
+    {
+      "id": "w-departamento",
+      "kind": "word",
+      "es": "departamento",
+      "de": "Wohnung",
+      "forms": [
+        "departamento",
+        "departamentos"
+      ],
+      "examples": [
+        {
+          "es": "El departamento está en el tercer piso.",
+          "de": "Die Wohnung ist im dritten Stock."
+        }
+      ],
+      "note": "Eine Wohnung in einem Mehrfamilienhaus heißt departamento. Ein piso ist dagegen das Stockwerk.",
+      "freqRank": 1034
+    },
+    {
+      "id": "w-habitacion",
+      "kind": "word",
+      "es": "habitación",
+      "de": "Zimmer",
+      "forms": [
+        "habitación",
+        "habitaciones"
+      ],
+      "examples": [
+        {
+          "es": "La habitación es grande.",
+          "de": "Das Zimmer ist groß."
+        }
+      ],
+      "note": "Im Hotel steht habitación auf Schildern und Buchungsseiten. Im Alltag sagt man oft pieza: beides heißt Zimmer.",
+      "freqRank": 496
+    },
+    {
+      "id": "w-pieza",
+      "kind": "word",
+      "es": "pieza",
+      "de": "Zimmer",
+      "forms": [
+        "pieza",
+        "piezas"
+      ],
+      "examples": [
+        {
+          "es": "La pieza tiene baño privado.",
+          "de": "Das Zimmer hat ein eigenes Bad."
+        }
+      ],
+      "note": "Pieza und habitación meinen dasselbe. Du kannst im Hostal nach einer pieza fragen.",
+      "chile": {
+        "note": "In Chile heißt ein Zimmer im Haus oft pieza, genauso wie habitación.",
+        "source": "Wiktionario, s. v. pieza (Bedeutung 6, Verbreitung u. a. Chile), https://es.wiktionary.org/wiki/pieza"
+      },
+      "freqRank": 2317
+    },
+    {
+      "id": "w-reserva",
+      "kind": "word",
+      "es": "reserva",
+      "de": "Reservierung",
+      "forms": [
+        "reserva",
+        "reservas"
+      ],
+      "examples": [
+        {
+          "es": "Tengo una reserva.",
+          "de": "Ich habe eine Reservierung."
+        }
+      ],
+      "freqRank": 3405
+    },
+    {
+      "id": "w-reservar",
+      "kind": "word",
+      "es": "reservar",
+      "de": "reservieren",
+      "forms": [
+        "reservar",
+        "reservo",
+        "reservamos"
+      ],
+      "examples": [
+        {
+          "es": "Quiero reservar una pieza.",
+          "de": "Ich möchte ein Zimmer reservieren."
+        }
+      ]
+    },
+    {
+      "id": "p-check-in",
+      "kind": "phrase",
+      "es": "check-in",
+      "de": "Check-in, Einchecken",
+      "forms": [
+        "check-in"
+      ],
+      "examples": [
+        {
+          "es": "El check-in es a las tres.",
+          "de": "Der Check-in ist um drei Uhr."
+        }
+      ],
+      "note": "Check-in und check-out sind englische Wörter, die im Hostal ganz normal sind. Gleichbedeutend sind llegada und salida."
+    },
+    {
+      "id": "p-check-out",
+      "kind": "phrase",
+      "es": "check-out",
+      "de": "Check-out, Auschecken",
+      "forms": [
+        "check-out"
+      ],
+      "examples": [
+        {
+          "es": "El check-out es a las once.",
+          "de": "Der Check-out ist um elf Uhr."
+        }
+      ]
+    },
+    {
+      "id": "w-llave",
+      "kind": "word",
+      "es": "llave",
+      "de": "Schlüssel, Wasserhahn",
+      "forms": [
+        "llave",
+        "llaves"
+      ],
+      "examples": [
+        {
+          "es": "Necesito la llave de la pieza.",
+          "de": "Ich brauche den Schlüssel für das Zimmer."
+        }
+      ],
+      "note": "Mit llave kann auch der Wasserhahn gemeint sein: la llave del agua.",
+      "chile": {
+        "note": "In Chile heißt llave auch der Wasserhahn (grifo), nicht nur der Schlüssel.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. llave, https://www.asale.org/damer/llave"
+      },
+      "freqRank": 1131
+    },
+    {
+      "id": "w-ducha",
+      "kind": "word",
+      "es": "ducha",
+      "de": "Dusche",
+      "forms": [
+        "ducha",
+        "duchas"
+      ],
+      "examples": [
+        {
+          "es": "La ducha está en el baño.",
+          "de": "Die Dusche ist im Bad."
+        }
+      ],
+      "freqRank": 2822
+    },
+    {
+      "id": "p-agua-caliente",
+      "kind": "phrase",
+      "es": "agua caliente",
+      "de": "warmes Wasser",
+      "forms": [
+        "agua caliente"
+      ],
+      "examples": [
+        {
+          "es": "No hay agua caliente en la ducha.",
+          "de": "In der Dusche gibt es kein warmes Wasser."
+        }
+      ],
+      "note": "Kaltes Wasser heißt agua fría."
+    },
+    {
+      "id": "w-toalla",
+      "kind": "word",
+      "es": "toalla",
+      "de": "Handtuch",
+      "forms": [
+        "toalla",
+        "toallas"
+      ],
+      "examples": [
+        {
+          "es": "Necesito una toalla.",
+          "de": "Ich brauche ein Handtuch."
+        }
+      ]
+    },
+    {
+      "id": "w-sabana",
+      "kind": "word",
+      "es": "sábana",
+      "de": "Bettlaken",
+      "forms": [
+        "sábana",
+        "sábanas"
+      ],
+      "examples": [
+        {
+          "es": "Las sábanas están limpias.",
+          "de": "Die Laken sind sauber."
+        }
+      ]
+    },
+    {
+      "id": "w-almohada",
+      "kind": "word",
+      "es": "almohada",
+      "de": "Kopfkissen",
+      "forms": [
+        "almohada",
+        "almohadas"
+      ],
+      "examples": [
+        {
+          "es": "Necesito otra almohada.",
+          "de": "Ich brauche noch ein Kopfkissen."
+        }
+      ]
+    },
+    {
+      "id": "w-frazada",
+      "kind": "word",
+      "es": "frazada",
+      "de": "Decke",
+      "forms": [
+        "frazada",
+        "frazadas"
+      ],
+      "examples": [
+        {
+          "es": "¿Me puede dar otra frazada?",
+          "de": "Können Sie mir noch eine Decke geben?"
+        }
+      ],
+      "note": "Die frazada ist die warme Decke auf dem Bett. Wenn dir nachts kalt ist, fragst du danach."
+    },
+    {
+      "id": "p-papel-higienico",
+      "kind": "phrase",
+      "es": "papel higiénico",
+      "de": "Toilettenpapier",
+      "forms": [
+        "papel higiénico",
+        "papel",
+        "higiénico"
+      ],
+      "examples": [
+        {
+          "es": "No hay papel higiénico.",
+          "de": "Es gibt kein Toilettenpapier."
+        }
+      ]
+    },
+    {
+      "id": "w-wifi",
+      "kind": "word",
+      "es": "wifi",
+      "de": "WLAN",
+      "forms": [
+        "wifi"
+      ],
+      "examples": [
+        {
+          "es": "¿Hay wifi en la pieza?",
+          "de": "Gibt es WLAN im Zimmer?"
+        }
+      ],
+      "note": "Man schreibt es auch wi-fi. Netzname und Passwort stehen oft an der Rezeption auf einem Zettel."
+    },
+    {
+      "id": "w-clave",
+      "kind": "word",
+      "es": "clave",
+      "de": "Passwort, Code",
+      "forms": [
+        "clave",
+        "claves"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es la clave del wifi?",
+          "de": "Wie lautet das WLAN-Passwort?"
+        }
+      ],
+      "note": "Beim WLAN fragst du nach der clave del wifi. Contraseña ist das gleiche Wort für Passwort.",
+      "freqRank": 2343
+    },
+    {
+      "id": "w-contrasena",
+      "kind": "word",
+      "es": "contraseña",
+      "de": "Passwort",
+      "forms": [
+        "contraseña",
+        "contraseñas"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es la contraseña?",
+          "de": "Wie lautet das Passwort?"
+        }
+      ]
+    },
+    {
+      "id": "w-recepcion",
+      "kind": "word",
+      "es": "recepción",
+      "de": "Rezeption, Empfang",
+      "forms": [
+        "recepción"
+      ],
+      "examples": [
+        {
+          "es": "La recepción está abierta.",
+          "de": "Die Rezeption ist geöffnet."
+        }
+      ],
+      "note": "Das Personal an der recepción spricht dich mit usted an, zum Beispiel: ¿En qué le puedo ayudar?",
+      "freqRank": 4156
+    },
+    {
+      "id": "w-encargado",
+      "kind": "word",
+      "es": "encargado",
+      "de": "Verantwortlicher, Herbergsleiter",
+      "forms": [
+        "encargado",
+        "encargada"
+      ],
+      "examples": [
+        {
+          "es": "El encargado está en la recepción.",
+          "de": "Der Verantwortliche ist an der Rezeption."
+        }
+      ],
+      "note": "Wer im Hostal oder im Haus zuständig ist, ist der encargado. Eine Frau ist die encargada.",
+      "freqRank": 4255
+    },
+    {
+      "id": "w-anfitrion",
+      "kind": "word",
+      "es": "anfitrión",
+      "de": "Gastgeber",
+      "forms": [
+        "anfitrión",
+        "anfitriona"
+      ],
+      "examples": [
+        {
+          "es": "Mi anfitriona se llama Ana.",
+          "de": "Meine Gastgeberin heißt Ana."
+        }
+      ],
+      "note": "Bei einem Airbnb ist der anfitrión der Vermieter. Die Frau heißt anfitriona."
+    },
+    {
+      "id": "w-conserje",
+      "kind": "word",
+      "es": "conserje",
+      "de": "Portier, Hausmeister",
+      "forms": [
+        "conserje",
+        "conserjes"
+      ],
+      "examples": [
+        {
+          "es": "El conserje está en la entrada.",
+          "de": "Der Portier ist am Eingang."
+        }
+      ],
+      "note": "In vielen Wohnhäusern sitzt am Eingang ein conserje. Er kann dir Schlüssel geben und Fragen zum Haus beantworten."
+    },
+    {
+      "id": "w-pasaporte",
+      "kind": "word",
+      "es": "pasaporte",
+      "de": "Reisepass",
+      "forms": [
+        "pasaporte",
+        "pasaportes"
+      ],
+      "examples": [
+        {
+          "es": "Aquí tiene mi pasaporte.",
+          "de": "Hier ist mein Reisepass."
+        }
+      ],
+      "note": "Beim Check-in will das Personal meist deinen pasaporte sehen.",
+      "freqRank": 4119
+    },
+    {
+      "id": "w-persona",
+      "kind": "word",
+      "es": "persona",
+      "de": "Person",
+      "forms": [
+        "persona",
+        "personas"
+      ],
+      "examples": [
+        {
+          "es": "Es una pieza para dos personas.",
+          "de": "Es ist ein Zimmer für zwei Personen."
+        }
+      ],
+      "freqRank": 310
+    },
+    {
+      "id": "p-por-noche",
+      "kind": "phrase",
+      "es": "por noche",
+      "de": "pro Nacht",
+      "forms": [
+        "por noche"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto cuesta por noche?",
+          "de": "Wie viel kostet es pro Nacht?"
+        }
+      ]
+    },
+    {
+      "id": "p-cuantas-personas",
+      "kind": "phrase",
+      "es": "cuántas personas",
+      "de": "wie viele Personen",
+      "forms": [
+        "cuántas personas"
+      ],
+      "examples": [
+        {
+          "es": "¿Para cuántas personas?",
+          "de": "Für wie viele Personen?"
+        }
+      ]
+    },
+    {
+      "id": "p-por-cuantas-noches",
+      "kind": "phrase",
+      "es": "por cuántas noches",
+      "de": "für wie viele Nächte",
+      "forms": [
+        "por cuántas noches",
+        "cuántas noches"
+      ],
+      "examples": [
+        {
+          "es": "¿Por cuántas noches?",
+          "de": "Für wie viele Nächte?"
+        }
+      ]
+    },
+    {
+      "id": "w-fecha",
+      "kind": "word",
+      "es": "fecha",
+      "de": "Datum",
+      "forms": [
+        "fecha",
+        "fechas"
+      ],
+      "examples": [
+        {
+          "es": "¿Para qué fecha?",
+          "de": "Für welches Datum?"
+        }
+      ],
+      "freqRank": 2275
+    },
+    {
+      "id": "p-pieza-individual",
+      "kind": "phrase",
+      "es": "pieza individual",
+      "de": "Einzelzimmer",
+      "forms": [
+        "pieza individual",
+        "individual"
+      ],
+      "examples": [
+        {
+          "es": "Quiero una pieza individual.",
+          "de": "Ich möchte ein Einzelzimmer."
+        }
+      ]
+    },
+    {
+      "id": "p-pieza-doble",
+      "kind": "phrase",
+      "es": "pieza doble",
+      "de": "Doppelzimmer",
+      "forms": [
+        "pieza doble"
+      ],
+      "examples": [
+        {
+          "es": "Tenemos una pieza doble.",
+          "de": "Wir haben ein Doppelzimmer."
+        }
+      ],
+      "note": "Eine pieza doble hat Platz für zwei Personen. Das Wort doble kennst du auch vom Abbiegen: Doble a la derecha."
+    },
+    {
+      "id": "p-cama-matrimonial",
+      "kind": "phrase",
+      "es": "cama matrimonial",
+      "de": "Doppelbett",
+      "forms": [
+        "cama matrimonial",
+        "matrimonial"
+      ],
+      "examples": [
+        {
+          "es": "La pieza tiene una cama matrimonial.",
+          "de": "Das Zimmer hat ein Doppelbett."
+        }
+      ],
+      "note": "Matrimonial heißt eigentlich ehelich. So nennt man das große Doppelbett, auch für Paare ohne Trauschein."
+    },
+    {
+      "id": "w-litera",
+      "kind": "word",
+      "es": "litera",
+      "de": "Etagenbett",
+      "forms": [
+        "litera",
+        "literas"
+      ],
+      "examples": [
+        {
+          "es": "Hay literas en el dormitorio.",
+          "de": "Im Schlafsaal gibt es Etagenbetten."
+        }
+      ]
+    },
+    {
+      "id": "p-dormitorio-compartido",
+      "kind": "phrase",
+      "es": "dormitorio compartido",
+      "de": "Mehrbettzimmer, Schlafsaal",
+      "forms": [
+        "dormitorio compartido",
+        "dormitorio",
+        "compartido"
+      ],
+      "examples": [
+        {
+          "es": "Prefiero un dormitorio compartido.",
+          "de": "Ich nehme lieber einen Schlafsaal."
+        }
+      ],
+      "note": "Das günstige Bett im Schlafsaal eines Hostals. Du teilst dir das Zimmer mit anderen Gästen."
+    },
+    {
+      "id": "p-bano-privado",
+      "kind": "phrase",
+      "es": "baño privado",
+      "de": "eigenes Bad",
+      "forms": [
+        "baño privado",
+        "privado",
+        "privada"
+      ],
+      "examples": [
+        {
+          "es": "La pieza tiene baño privado.",
+          "de": "Das Zimmer hat ein eigenes Bad."
+        }
+      ]
+    },
+    {
+      "id": "p-bano-compartido",
+      "kind": "phrase",
+      "es": "baño compartido",
+      "de": "Gemeinschaftsbad",
+      "forms": [
+        "baño compartido"
+      ],
+      "examples": [
+        {
+          "es": "El baño es compartido.",
+          "de": "Das Bad teilt man mit anderen Gästen."
+        }
+      ]
+    },
+    {
+      "id": "p-desayuno-incluido",
+      "kind": "phrase",
+      "es": "desayuno incluido",
+      "de": "Frühstück inklusive",
+      "forms": [
+        "desayuno incluido",
+        "incluido",
+        "incluida"
+      ],
+      "examples": [
+        {
+          "es": "¿Está incluido el desayuno?",
+          "de": "Ist das Frühstück inklusive?"
+        }
+      ]
+    },
+    {
+      "id": "w-limpio",
+      "kind": "word",
+      "es": "limpio",
+      "de": "sauber",
+      "forms": [
+        "limpio",
+        "limpia",
+        "limpios",
+        "limpias"
+      ],
+      "examples": [
+        {
+          "es": "La pieza está limpia.",
+          "de": "Das Zimmer ist sauber."
+        }
+      ],
+      "freqRank": 1872
+    },
+    {
+      "id": "w-sucio",
+      "kind": "word",
+      "es": "sucio",
+      "de": "schmutzig",
+      "forms": [
+        "sucio",
+        "sucia",
+        "sucios",
+        "sucias"
+      ],
+      "examples": [
+        {
+          "es": "La toalla está sucia.",
+          "de": "Das Handtuch ist schmutzig."
+        }
+      ],
+      "freqRank": 2164
+    },
+    {
+      "id": "w-roto",
+      "kind": "word",
+      "es": "roto",
+      "de": "kaputt",
+      "forms": [
+        "roto",
+        "rota",
+        "rotos",
+        "rotas"
+      ],
+      "examples": [
+        {
+          "es": "La ventana está rota.",
+          "de": "Das Fenster ist kaputt."
+        }
+      ],
+      "freqRank": 1648
+    },
+    {
+      "id": "w-ventana",
+      "kind": "word",
+      "es": "ventana",
+      "de": "Fenster",
+      "forms": [
+        "ventana",
+        "ventanas"
+      ],
+      "examples": [
+        {
+          "es": "Abro la ventana.",
+          "de": "Ich öffne das Fenster."
+        }
+      ],
+      "freqRank": 1140
+    },
+    {
+      "id": "w-luz",
+      "kind": "word",
+      "es": "luz",
+      "de": "Licht",
+      "forms": [
+        "luz",
+        "luces"
+      ],
+      "examples": [
+        {
+          "es": "La luz del baño no funciona.",
+          "de": "Das Licht im Bad geht nicht."
+        }
+      ],
+      "freqRank": 551
+    },
+    {
+      "id": "w-prender",
+      "kind": "word",
+      "es": "prender",
+      "de": "anmachen, einschalten",
+      "forms": [
+        "prender",
+        "prendo",
+        "prende",
+        "prenden",
+        "prendemos"
+      ],
+      "examples": [
+        {
+          "es": "¿Cómo prendo la luz?",
+          "de": "Wie mache ich das Licht an?"
+        }
+      ],
+      "note": "Prender heißt anmachen, zum Beispiel Licht oder Heizung. Das Gegenteil ist apagar."
+    },
+    {
+      "id": "w-apagar",
+      "kind": "word",
+      "es": "apagar",
+      "de": "ausmachen, ausschalten",
+      "forms": [
+        "apagar",
+        "apago",
+        "apaga",
+        "apagan",
+        "apagamos"
+      ],
+      "examples": [
+        {
+          "es": "Apago la luz.",
+          "de": "Ich mache das Licht aus."
+        }
+      ],
+      "freqRank": 4917
+    },
+    {
+      "id": "w-calefaccion",
+      "kind": "word",
+      "es": "calefacción",
+      "de": "Heizung",
+      "forms": [
+        "calefacción"
+      ],
+      "examples": [
+        {
+          "es": "La calefacción no funciona.",
+          "de": "Die Heizung funktioniert nicht."
+        }
+      ]
+    },
+    {
+      "id": "p-aire-acondicionado",
+      "kind": "phrase",
+      "es": "aire acondicionado",
+      "de": "Klimaanlage",
+      "forms": [
+        "aire acondicionado",
+        "aire",
+        "acondicionado"
+      ],
+      "examples": [
+        {
+          "es": "Hay aire acondicionado en la pieza.",
+          "de": "Es gibt eine Klimaanlage im Zimmer."
+        }
+      ]
+    },
+    {
+      "id": "w-calor",
+      "kind": "word",
+      "es": "calor",
+      "de": "Hitze, Wärme",
+      "forms": [
+        "calor"
+      ],
+      "examples": [
+        {
+          "es": "Hace calor aquí.",
+          "de": "Es ist heiß hier."
+        }
+      ],
+      "note": "Tengo calor heißt: Mir ist warm. Tengo frío heißt: Mir ist kalt.",
+      "freqRank": 1369
+    },
+    {
+      "id": "w-enchufe",
+      "kind": "word",
+      "es": "enchufe",
+      "de": "Steckdose",
+      "forms": [
+        "enchufe",
+        "enchufes"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde está el enchufe?",
+          "de": "Wo ist die Steckdose?"
+        }
+      ]
+    },
+    {
+      "id": "w-cargador",
+      "kind": "word",
+      "es": "cargador",
+      "de": "Ladegerät",
+      "forms": [
+        "cargador",
+        "cargadores"
+      ],
+      "examples": [
+        {
+          "es": "Necesito un cargador.",
+          "de": "Ich brauche ein Ladegerät."
+        }
+      ]
+    },
+    {
+      "id": "w-cocina",
+      "kind": "word",
+      "es": "cocina",
+      "de": "Küche",
+      "forms": [
+        "cocina",
+        "cocinas"
+      ],
+      "examples": [
+        {
+          "es": "¿Hay una cocina?",
+          "de": "Gibt es eine Küche?"
+        }
+      ],
+      "freqRank": 1017
+    },
+    {
+      "id": "w-refrigerador",
+      "kind": "word",
+      "es": "refrigerador",
+      "de": "Kühlschrank",
+      "forms": [
+        "refrigerador",
+        "refrigeradores"
+      ],
+      "examples": [
+        {
+          "es": "El refrigerador está en la cocina.",
+          "de": "Der Kühlschrank ist in der Küche."
+        }
+      ]
+    },
+    {
+      "id": "w-lavanderia",
+      "kind": "word",
+      "es": "lavandería",
+      "de": "Wäscherei, Waschsalon",
+      "forms": [
+        "lavandería",
+        "lavanderías"
+      ],
+      "examples": [
+        {
+          "es": "¿Hay una lavandería cerca?",
+          "de": "Gibt es hier in der Nähe eine Wäscherei?"
+        }
+      ]
+    },
+    {
+      "id": "w-ropa",
+      "kind": "word",
+      "es": "ropa",
+      "de": "Kleidung, Wäsche",
+      "forms": [
+        "ropa"
+      ],
+      "examples": [
+        {
+          "es": "Lavo mi ropa.",
+          "de": "Ich wasche meine Wäsche."
+        }
+      ],
+      "freqRank": 652
+    },
+    {
+      "id": "w-lavar",
+      "kind": "word",
+      "es": "lavar",
+      "de": "waschen",
+      "forms": [
+        "lavar",
+        "lavo",
+        "lava",
+        "lavan",
+        "lavamos"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde puedo lavar mi ropa?",
+          "de": "Wo kann ich meine Wäsche waschen?"
+        }
+      ],
+      "freqRank": 4560
+    },
+    {
+      "id": "w-piso",
+      "kind": "word",
+      "es": "piso",
+      "de": "Stockwerk, Etage",
+      "forms": [
+        "piso",
+        "pisos"
+      ],
+      "examples": [
+        {
+          "es": "La pieza está en el segundo piso.",
+          "de": "Das Zimmer ist im zweiten Stock."
+        }
+      ],
+      "note": "Das Stockwerk zählst du mit Ordnungszahlen: el segundo piso, el tercer piso. Das ist nicht die Wohnung, die heißt departamento.",
+      "freqRank": 1007
+    },
+    {
+      "id": "w-codigo",
+      "kind": "word",
+      "es": "código",
+      "de": "Code",
+      "forms": [
+        "código",
+        "códigos"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es el código de la puerta?",
+          "de": "Wie lautet der Code der Tür?"
+        }
+      ],
+      "freqRank": 1543
+    },
+    {
+      "id": "w-vista",
+      "kind": "word",
+      "es": "vista",
+      "de": "Aussicht",
+      "forms": [
+        "vista"
+      ],
+      "examples": [
+        {
+          "es": "La pieza tiene vista al cerro.",
+          "de": "Das Zimmer hat Aussicht auf den Hügel."
+        }
+      ],
+      "freqRank": 810
+    },
+    {
+      "id": "w-ruido",
+      "kind": "word",
+      "es": "ruido",
+      "de": "Lärm, Geräusch",
+      "forms": [
+        "ruido",
+        "ruidos"
+      ],
+      "examples": [
+        {
+          "es": "Hay mucho ruido en la calle.",
+          "de": "Auf der Straße ist viel Lärm."
+        }
+      ],
+      "freqRank": 1527
+    },
+    {
+      "id": "w-ruidoso",
+      "kind": "word",
+      "es": "ruidoso",
+      "de": "laut",
+      "forms": [
+        "ruidoso",
+        "ruidosa"
+      ],
+      "examples": [
+        {
+          "es": "La pieza es ruidosa.",
+          "de": "Das Zimmer ist laut."
+        }
+      ]
+    },
+    {
+      "id": "w-problema",
+      "kind": "word",
+      "es": "problema",
+      "de": "Problem",
+      "forms": [
+        "problema",
+        "problemas"
+      ],
+      "examples": [
+        {
+          "es": "Hay un problema con la ducha.",
+          "de": "Es gibt ein Problem mit der Dusche."
+        }
+      ],
+      "freqRank": 244
+    },
+    {
+      "id": "w-funcionar",
+      "kind": "word",
+      "es": "funcionar",
+      "de": "funktionieren",
+      "forms": [
+        "funcionar",
+        "funciona",
+        "funcionan",
+        "funcionamos"
+      ],
+      "examples": [
+        {
+          "es": "La ducha funciona bien.",
+          "de": "Die Dusche funktioniert gut."
+        }
+      ],
+      "note": "Funciona gilt für eine Sache, funcionan für mehrere: La luz funciona, las luces funcionan.",
+      "freqRank": 1989
+    },
+    {
+      "id": "p-no-funciona",
+      "kind": "phrase",
+      "es": "no funciona",
+      "de": "funktioniert nicht",
+      "forms": [
+        "no funciona",
+        "no funcionan"
+      ],
+      "examples": [
+        {
+          "es": "El wifi no funciona.",
+          "de": "Das WLAN funktioniert nicht."
+        }
+      ],
+      "note": "Mit no funciona meldest du, dass etwas kaputt ist. Das ist höflich genug: Du musst nichts weiter erklären."
+    },
+    {
+      "id": "w-arreglar",
+      "kind": "word",
+      "es": "arreglar",
+      "de": "reparieren, in Ordnung bringen",
+      "forms": [
+        "arreglar",
+        "arreglo",
+        "arregla",
+        "arreglan",
+        "arreglamos"
+      ],
+      "examples": [
+        {
+          "es": "¿Pueden arreglar la ducha?",
+          "de": "Können Sie die Dusche reparieren?"
+        }
+      ],
+      "freqRank": 1583
+    },
+    {
+      "id": "w-faltar",
+      "kind": "word",
+      "es": "faltar",
+      "de": "fehlen",
+      "forms": [
+        "faltar",
+        "falta",
+        "faltan"
+      ],
+      "examples": [
+        {
+          "es": "Falta una toalla.",
+          "de": "Es fehlt ein Handtuch."
+        }
+      ],
+      "note": "Falta heißt: Es fehlt. Bei mehreren Dingen steht faltan: Faltan dos toallas."
+    },
+    {
+      "id": "w-hacer",
+      "kind": "word",
+      "es": "hacer",
+      "de": "machen, tun",
+      "forms": [
+        "hacer",
+        "hago",
+        "haces",
+        "hace",
+        "hacemos",
+        "hacen"
+      ],
+      "examples": [
+        {
+          "es": "Hago el check-in a las tres.",
+          "de": "Ich mache um drei Uhr den Check-in."
+        }
+      ],
+      "note": "Hacer ist nur bei hago unregelmäßig. Im Hostal brauchst du es für hacer el check-in und hacer la reserva. Außerdem heißt hace frío: Es ist kalt.",
+      "freqRank": 68
+    },
+    {
+      "id": "p-hace-frio",
+      "kind": "phrase",
+      "es": "hace frío",
+      "de": "es ist kalt",
+      "forms": [
+        "hace frío"
+      ],
+      "examples": [
+        {
+          "es": "Hace frío en la pieza.",
+          "de": "Es ist kalt im Zimmer."
+        }
+      ]
+    },
+    {
+      "id": "p-hace-calor",
+      "kind": "phrase",
+      "es": "hace calor",
+      "de": "es ist heiß",
+      "forms": [
+        "hace calor"
+      ],
+      "examples": [
+        {
+          "es": "Hace calor aquí.",
+          "de": "Es ist heiß hier."
+        }
+      ]
+    },
+    {
+      "id": "w-dormir",
+      "kind": "word",
+      "es": "dormir",
+      "de": "schlafen",
+      "forms": [
+        "dormir",
+        "duermo",
+        "duermes",
+        "duerme",
+        "dormimos",
+        "duermen"
+      ],
+      "examples": [
+        {
+          "es": "Duermo muy bien aquí.",
+          "de": "Ich schlafe hier sehr gut."
+        }
+      ],
+      "freqRank": 557
+    },
+    {
+      "id": "w-quedarse",
+      "kind": "word",
+      "es": "quedarse",
+      "de": "bleiben, übernachten",
+      "forms": [
+        "quedarse",
+        "me quedo",
+        "te quedas",
+        "se queda",
+        "nos quedamos",
+        "se quedan",
+        "quedo",
+        "quedas",
+        "quedarme"
+      ],
+      "examples": [
+        {
+          "es": "Me quedo tres noches.",
+          "de": "Ich bleibe drei Nächte."
+        }
+      ],
+      "note": "Wie lange du bleibst, sagst du mit me quedo: Me quedo dos noches. Nos quedamos heißt: Wir bleiben.",
+      "freqRank": 1448
+    },
+    {
+      "id": "w-guardar",
+      "kind": "word",
+      "es": "guardar",
+      "de": "aufbewahren",
+      "forms": [
+        "guardar",
+        "guardo",
+        "guarda",
+        "guardan",
+        "guardamos"
+      ],
+      "examples": [
+        {
+          "es": "¿Pueden guardar mi equipaje?",
+          "de": "Können Sie mein Gepäck aufbewahren?"
+        }
+      ],
+      "freqRank": 3092
+    },
+    {
+      "id": "p-guardar-el-equipaje",
+      "kind": "phrase",
+      "es": "guardar el equipaje",
+      "de": "das Gepäck aufbewahren",
+      "forms": [
+        "guardar el equipaje"
+      ],
+      "examples": [
+        {
+          "es": "¿Puedo guardar el equipaje hasta las seis?",
+          "de": "Kann ich das Gepäck bis sechs Uhr aufbewahren lassen?"
+        }
+      ]
+    },
+    {
+      "id": "w-bodega",
+      "kind": "word",
+      "es": "bodega",
+      "de": "Abstellraum, Lager",
+      "forms": [
+        "bodega",
+        "bodegas"
+      ],
+      "examples": [
+        {
+          "es": "Puede dejar la maleta en la bodega.",
+          "de": "Sie können den Koffer im Abstellraum lassen."
+        }
+      ],
+      "note": "Bodega ist hier nicht der Weinkeller, sondern der Abstellraum. Dort bleibt dein Gepäck nach dem Check-out."
+    },
+    {
+      "id": "p-a-nombre-de",
+      "kind": "phrase",
+      "es": "a nombre de",
+      "de": "auf den Namen",
+      "forms": [
+        "a nombre de"
+      ],
+      "examples": [
+        {
+          "es": "La reserva está a nombre de Pablo.",
+          "de": "Die Reservierung läuft auf den Namen Pablo."
+        }
+      ]
+    },
+    {
+      "id": "p-tengo-una-reserva",
+      "kind": "phrase",
+      "es": "tengo una reserva",
+      "de": "ich habe eine Reservierung",
+      "forms": [
+        "tengo una reserva"
+      ],
+      "examples": [
+        {
+          "es": "Buenas tardes, tengo una reserva.",
+          "de": "Guten Tag, ich habe eine Reservierung."
+        }
+      ]
+    },
+    {
+      "id": "w-tenemos",
+      "kind": "word",
+      "es": "tenemos",
+      "de": "wir haben",
+      "forms": [
+        "tenemos"
+      ],
+      "examples": [
+        {
+          "es": "Tenemos una pieza libre.",
+          "de": "Wir haben ein freies Zimmer."
+        }
+      ],
+      "note": "Am Empfang sagt das Personal oft tenemos: Tenemos una pieza libre. Das ist die Wir-Form von tener.",
+      "freqRank": 116
+    },
+    {
+      "id": "w-quisiera",
+      "kind": "word",
+      "es": "quisiera",
+      "de": "ich möchte (höflich)",
+      "forms": [
+        "quisiera"
+      ],
+      "examples": [
+        {
+          "es": "Quisiera una pieza para dos noches.",
+          "de": "Ich hätte gern ein Zimmer für zwei Nächte."
+        }
+      ],
+      "note": "Quisiera ist höflicher als quiero. Beim Reservieren am Empfang passt es gut.",
+      "freqRank": 858
+    },
+    {
+      "id": "p-se-puede",
+      "kind": "phrase",
+      "es": "se puede",
+      "de": "man kann, darf man",
+      "forms": [
+        "se puede",
+        "se pueden"
+      ],
+      "examples": [
+        {
+          "es": "¿Se puede pagar con tarjeta?",
+          "de": "Kann man mit Karte zahlen?"
+        }
+      ],
+      "note": "Mit ¿Se puede...? fragst du, ob etwas erlaubt oder möglich ist, ohne jemanden direkt anzusprechen."
+    },
+    {
+      "id": "w-mis-tus-sus",
+      "kind": "word",
+      "es": "mis, tus, sus",
+      "de": "meine, deine, seine, ihre, Ihre",
+      "forms": [
+        "mis",
+        "tus",
+        "sus"
+      ],
+      "examples": [
+        {
+          "es": "Mis maletas están aquí.",
+          "de": "Meine Koffer sind hier."
+        }
+      ],
+      "note": "Das ist die Mehrzahl von mi, tu und su: mis llaves, tus maletas, sus pasaportes."
+    },
+    {
+      "id": "w-nuestro",
+      "kind": "word",
+      "es": "nuestro",
+      "de": "unser",
+      "forms": [
+        "nuestro",
+        "nuestra",
+        "nuestros",
+        "nuestras"
+      ],
+      "examples": [
+        {
+          "es": "Nuestra pieza está en el segundo piso.",
+          "de": "Unser Zimmer ist im zweiten Stock."
+        }
+      ],
+      "note": "Nuestro richtet sich nach dem Hauptwort: nuestra pieza, nuestros pasaportes.",
+      "freqRank": 194
+    },
+    {
+      "id": "w-todavia",
+      "kind": "word",
+      "es": "todavía",
+      "de": "noch, immer noch",
+      "forms": [
+        "todavía"
+      ],
+      "examples": [
+        {
+          "es": "Todavía no está lista.",
+          "de": "Sie ist noch nicht fertig."
+        }
+      ],
+      "note": "Todavía no heißt noch nicht. Ya heißt schon, zum Beispiel: Ya está lista.",
+      "freqRank": 264
+    },
+    {
+      "id": "p-espere-un-momento",
+      "kind": "phrase",
+      "es": "espere un momento",
+      "de": "warten Sie einen Moment",
+      "forms": [
+        "espere un momento",
+        "espere"
+      ],
+      "examples": [
+        {
+          "es": "Espere un momento, por favor.",
+          "de": "Warten Sie einen Moment, bitte."
+        }
+      ],
+      "note": "Espere ist die usted-Form, die Höflichkeitsform, von esperar. So bittet dich das Personal, kurz zu warten."
+    },
+    {
+      "id": "w-firmar",
+      "kind": "word",
+      "es": "firmar",
+      "de": "unterschreiben",
+      "forms": [
+        "firmar",
+        "firmo",
+        "firma",
+        "firme"
+      ],
+      "examples": [
+        {
+          "es": "Firme aquí, por favor.",
+          "de": "Unterschreiben Sie hier, bitte."
+        }
+      ],
+      "note": "Firme ist die usted-Form, die Höflichkeitsform. Beim Check-in sagt das Personal: Firme aquí.",
+      "freqRank": 2816
+    },
+    {
+      "id": "w-apellido",
+      "kind": "word",
+      "es": "apellido",
+      "de": "Nachname",
+      "forms": [
+        "apellido",
+        "apellidos"
+      ],
+      "examples": [
+        {
+          "es": "Mi apellido es Becker.",
+          "de": "Mein Nachname ist Becker."
+        }
+      ],
+      "freqRank": 3430
+    },
+    {
+      "id": "w-limpieza",
+      "kind": "word",
+      "es": "limpieza",
+      "de": "Reinigung",
+      "forms": [
+        "limpieza"
+      ],
+      "examples": [
+        {
+          "es": "La limpieza es todos los días.",
+          "de": "Das Zimmer wird jeden Tag gereinigt."
+        }
+      ],
+      "freqRank": 3561
+    },
+    {
+      "id": "p-cambiar-de-pieza",
+      "kind": "phrase",
+      "es": "cambiar de pieza",
+      "de": "das Zimmer wechseln",
+      "forms": [
+        "cambiar de pieza"
+      ],
+      "examples": [
+        {
+          "es": "¿Puedo cambiar de pieza?",
+          "de": "Kann ich das Zimmer wechseln?"
+        }
+      ]
+    },
+    {
+      "id": "p-hasta-que-hora",
+      "kind": "phrase",
+      "es": "hasta qué hora",
+      "de": "bis wann, bis wie viel Uhr",
+      "forms": [
+        "hasta qué hora"
+      ],
+      "examples": [
+        {
+          "es": "¿Hasta qué hora es el desayuno?",
+          "de": "Bis wann gibt es Frühstück?"
+        }
+      ]
+    },
+    {
+      "id": "p-llego-tarde",
+      "kind": "phrase",
+      "es": "llego tarde",
+      "de": "ich komme spät an",
+      "forms": [
+        "llego tarde"
+      ],
+      "examples": [
+        {
+          "es": "Llego tarde esta noche.",
+          "de": "Ich komme heute Nacht spät an."
+        }
+      ]
+    },
+    {
+      "id": "p-cerrar-con-llave",
+      "kind": "phrase",
+      "es": "cerrar con llave",
+      "de": "abschließen",
+      "forms": [
+        "cerrar con llave"
+      ],
+      "examples": [
+        {
+          "es": "Cierro la puerta con llave.",
+          "de": "Ich schließe die Tür ab."
+        }
+      ]
+    },
+    {
+      "id": "w-huesped",
+      "kind": "word",
+      "es": "huésped",
+      "de": "Gast (der Unterkunft)",
+      "forms": [
+        "huésped",
+        "huéspedes"
+      ],
+      "examples": [
+        {
+          "es": "Hay seis huéspedes en el hostal.",
+          "de": "Im Hostal wohnen sechs Gäste."
+        }
+      ],
+      "note": "Huésped ist der Gast, der in der Unterkunft übernachtet. Der Gast im Restaurant heißt cliente."
+    },
+    {
+      "id": "w-colchon",
+      "kind": "word",
+      "es": "colchón",
+      "de": "Matratze",
+      "forms": [
+        "colchón",
+        "colchones"
+      ],
+      "examples": [
+        {
+          "es": "El colchón es cómodo.",
+          "de": "Die Matratze ist bequem."
+        }
+      ]
+    },
+    {
+      "id": "w-champu",
+      "kind": "word",
+      "es": "champú",
+      "de": "Shampoo",
+      "forms": [
+        "champú",
+        "shampoo"
+      ],
+      "examples": [
+        {
+          "es": "No hay champú en el baño.",
+          "de": "Im Bad gibt es kein Shampoo."
+        }
+      ]
+    },
+    {
+      "id": "w-comedor",
+      "kind": "word",
+      "es": "comedor",
+      "de": "Speisesaal, Frühstücksraum",
+      "forms": [
+        "comedor",
+        "comedores"
+      ],
+      "examples": [
+        {
+          "es": "El desayuno es en el comedor.",
+          "de": "Das Frühstück gibt es im Speisesaal."
+        }
+      ]
+    },
+    {
+      "id": "w-terraza",
+      "kind": "word",
+      "es": "terraza",
+      "de": "Terrasse",
+      "forms": [
+        "terraza",
+        "terrazas"
+      ],
+      "examples": [
+        {
+          "es": "La terraza está en el último piso.",
+          "de": "Die Terrasse ist im obersten Stock."
+        }
+      ]
+    },
+    {
+      "id": "w-patio",
+      "kind": "word",
+      "es": "patio",
+      "de": "Innenhof",
+      "forms": [
+        "patio",
+        "patios"
+      ],
+      "examples": [
+        {
+          "es": "El hostal tiene un patio.",
+          "de": "Das Hostal hat einen Innenhof."
+        }
+      ],
+      "freqRank": 2963
+    },
+    {
+      "id": "w-silencio",
+      "kind": "word",
+      "es": "silencio",
+      "de": "Ruhe, Stille",
+      "forms": [
+        "silencio"
+      ],
+      "examples": [
+        {
+          "es": "Quiero silencio en la noche.",
+          "de": "Ich möchte nachts Ruhe."
+        }
+      ],
+      "freqRank": 904
+    },
+    {
+      "id": "w-llamar",
+      "kind": "word",
+      "es": "llamar",
+      "de": "anrufen, rufen",
+      "forms": [
+        "llamar",
+        "llamo",
+        "llama",
+        "llaman",
+        "llamamos"
+      ],
+      "examples": [
+        {
+          "es": "¿Puede llamar a un taxi?",
+          "de": "Können Sie ein Taxi rufen?"
+        }
+      ],
+      "note": "Llamar a un taxi heißt ein Taxi rufen. Bei Personen steht auch a: llamar a la recepción.",
+      "freqRank": 581
+    },
+    {
+      "id": "p-me-voy",
+      "kind": "phrase",
+      "es": "me voy",
+      "de": "ich reise ab, ich gehe",
+      "forms": [
+        "me voy",
+        "nos vamos"
+      ],
+      "examples": [
+        {
+          "es": "Me voy mañana temprano.",
+          "de": "Ich reise morgen früh ab."
+        }
+      ]
+    },
+    {
+      "id": "p-esta-noche",
+      "kind": "phrase",
+      "es": "esta noche",
+      "de": "heute Abend, heute Nacht",
+      "forms": [
+        "esta noche"
+      ],
+      "examples": [
+        {
+          "es": "Esta noche llego tarde.",
+          "de": "Heute Nacht komme ich spät an."
+        }
+      ]
+    },
+    {
+      "id": "p-una-noche-mas",
+      "kind": "phrase",
+      "es": "una noche más",
+      "de": "noch eine Nacht",
+      "forms": [
+        "una noche más"
+      ],
+      "examples": [
+        {
+          "es": "¿Puedo quedarme una noche más?",
+          "de": "Kann ich noch eine Nacht bleiben?"
+        }
+      ]
+    },
+    {
+      "id": "w-comodo",
+      "kind": "word",
+      "es": "cómodo",
+      "de": "bequem",
+      "forms": [
+        "cómodo",
+        "cómoda"
+      ],
+      "examples": [
+        {
+          "es": "La cama es muy cómoda.",
+          "de": "Das Bett ist sehr bequem."
+        }
+      ],
+      "freqRank": 2807
+    },
+    {
+      "id": "s-tengo-una-reserva",
+      "kind": "sentence",
+      "es": "Tengo una reserva.",
+      "de": "Ich habe eine Reservierung."
+    },
+    {
+      "id": "s-la-reserva-esta-a-nombre-de-pablo",
+      "kind": "sentence",
+      "es": "La reserva está a nombre de Pablo.",
+      "de": "Die Reservierung läuft auf den Namen Pablo.",
+      "accept": [
+        "Tengo una reserva a nombre de Pablo."
+      ]
+    },
+    {
+      "id": "s-tiene-una-pieza-libre",
+      "kind": "sentence",
+      "es": "¿Tiene una pieza libre?",
+      "de": "Haben Sie ein freies Zimmer?",
+      "accept": [
+        "¿Tiene una habitación libre?",
+        "¿Tienen una pieza libre?"
+      ]
+    },
+    {
+      "id": "s-quisiera-una-pieza-para-dos-noches",
+      "kind": "sentence",
+      "es": "Quisiera una pieza para dos noches.",
+      "de": "Ich hätte gern ein Zimmer für zwei Nächte.",
+      "accept": [
+        "Quisiera una habitación para dos noches.",
+        "Quiero una pieza para dos noches."
+      ]
+    },
+    {
+      "id": "s-quiero-reservar-una-pieza-individual",
+      "kind": "sentence",
+      "es": "Quiero reservar una pieza individual.",
+      "de": "Ich möchte ein Einzelzimmer reservieren.",
+      "accept": [
+        "Quiero reservar una habitación individual.",
+        "Quisiera reservar una pieza individual."
+      ]
+    },
+    {
+      "id": "s-somos-dos-personas",
+      "kind": "sentence",
+      "es": "Somos dos personas.",
+      "de": "Wir sind zwei Personen.",
+      "accept": [
+        "Somos dos."
+      ]
+    },
+    {
+      "id": "s-cuanto-cuesta-por-noche",
+      "kind": "sentence",
+      "es": "¿Cuánto cuesta por noche?",
+      "de": "Wie viel kostet es pro Nacht?",
+      "accept": [
+        "¿Cuánto es por noche?"
+      ]
+    },
+    {
+      "id": "s-esta-incluido-el-desayuno",
+      "kind": "sentence",
+      "es": "¿Está incluido el desayuno?",
+      "de": "Ist das Frühstück inklusive?",
+      "accept": [
+        "¿Incluye el desayuno?",
+        "¿El desayuno está incluido?"
+      ]
+    },
+    {
+      "id": "s-a-que-hora-es-el-checkin",
+      "kind": "sentence",
+      "es": "¿A qué hora es el check-in?",
+      "de": "Um wie viel Uhr ist der Check-in?",
+      "accept": [
+        "¿A qué hora es la llegada?"
+      ]
+    },
+    {
+      "id": "s-a-que-hora-es-el-checkout",
+      "kind": "sentence",
+      "es": "¿A qué hora es el check-out?",
+      "de": "Um wie viel Uhr ist der Check-out?",
+      "accept": [
+        "¿A qué hora es la salida?"
+      ]
+    },
+    {
+      "id": "s-me-quedo-tres-noches",
+      "kind": "sentence",
+      "es": "Me quedo tres noches.",
+      "de": "Ich bleibe drei Nächte.",
+      "accept": [
+        "Me quedo por tres noches."
+      ]
+    },
+    {
+      "id": "s-llego-tarde-esta-noche",
+      "kind": "sentence",
+      "es": "Llego tarde esta noche.",
+      "de": "Ich komme heute Nacht spät an."
+    },
+    {
+      "id": "s-puedo-hacer-el-checkin-ahora",
+      "kind": "sentence",
+      "es": "¿Puedo hacer el check-in ahora?",
+      "de": "Kann ich jetzt einchecken?"
+    },
+    {
+      "id": "s-aqui-tiene-mi-pasaporte",
+      "kind": "sentence",
+      "es": "Aquí tiene mi pasaporte.",
+      "de": "Hier ist mein Reisepass.",
+      "accept": [
+        "Aquí está mi pasaporte."
+      ]
+    },
+    {
+      "id": "s-firme-aqui-por-favor",
+      "kind": "sentence",
+      "es": "Firme aquí, por favor.",
+      "de": "Unterschreiben Sie hier, bitte."
+    },
+    {
+      "id": "s-espere-un-momento-por-favor",
+      "kind": "sentence",
+      "es": "Espere un momento, por favor.",
+      "de": "Warten Sie einen Moment, bitte."
+    },
+    {
+      "id": "s-su-pasaporte-por-favor",
+      "kind": "sentence",
+      "es": "Su pasaporte, por favor.",
+      "de": "Ihren Reisepass, bitte."
+    },
+    {
+      "id": "s-me-puede-dar-la-llave-de-la-pieza",
+      "kind": "sentence",
+      "es": "¿Me puede dar la llave de la pieza?",
+      "de": "Können Sie mir den Zimmerschlüssel geben?",
+      "accept": [
+        "¿Me da la llave de la pieza?",
+        "¿Me puede dar la llave de la habitación?"
+      ]
+    },
+    {
+      "id": "s-la-pieza-esta-en-el-tercer-piso",
+      "kind": "sentence",
+      "es": "La pieza está en el tercer piso.",
+      "de": "Das Zimmer ist im dritten Stock.",
+      "accept": [
+        "La habitación está en el tercer piso."
+      ]
+    },
+    {
+      "id": "s-mi-pieza-es-la-doscientos-cinco",
+      "kind": "sentence",
+      "es": "Mi pieza es la doscientos cinco.",
+      "de": "Mein Zimmer ist die 205.",
+      "accept": [
+        "Mi habitación es la doscientos cinco."
+      ]
+    },
+    {
+      "id": "s-su-pieza-esta-lista",
+      "kind": "sentence",
+      "es": "Su pieza está lista.",
+      "de": "Ihr Zimmer ist fertig.",
+      "accept": [
+        "Su habitación está lista."
+      ]
+    },
+    {
+      "id": "s-su-pieza-todavia-no-esta-lista",
+      "kind": "sentence",
+      "es": "Su pieza todavía no está lista.",
+      "de": "Ihr Zimmer ist noch nicht fertig.",
+      "accept": [
+        "Su habitación todavía no está lista."
+      ]
+    },
+    {
+      "id": "s-nuestra-pieza-esta-en-el-segundo-piso",
+      "kind": "sentence",
+      "es": "Nuestra pieza está en el segundo piso.",
+      "de": "Unser Zimmer ist im zweiten Stock.",
+      "accept": [
+        "Nuestra habitación está en el segundo piso."
+      ]
+    },
+    {
+      "id": "s-hay-ascensor",
+      "kind": "sentence",
+      "es": "¿Hay ascensor?",
+      "de": "Gibt es einen Aufzug?",
+      "accept": [
+        "¿Tiene ascensor?"
+      ]
+    },
+    {
+      "id": "s-el-desayuno-es-de-ocho-a-diez",
+      "kind": "sentence",
+      "es": "El desayuno es de ocho a diez.",
+      "de": "Das Frühstück ist von acht bis zehn.",
+      "accept": [
+        "El desayuno es desde las ocho hasta las diez."
+      ]
+    },
+    {
+      "id": "s-hasta-que-hora-es-el-desayuno",
+      "kind": "sentence",
+      "es": "¿Hasta qué hora es el desayuno?",
+      "de": "Bis wann gibt es Frühstück?"
+    },
+    {
+      "id": "s-cual-es-la-clave-del-wifi",
+      "kind": "sentence",
+      "es": "¿Cuál es la clave del wifi?",
+      "de": "Wie lautet das WLAN-Passwort?",
+      "accept": [
+        "¿Cuál es la contraseña del wifi?"
+      ]
+    },
+    {
+      "id": "s-el-wifi-no-funciona",
+      "kind": "sentence",
+      "es": "El wifi no funciona.",
+      "de": "Das WLAN funktioniert nicht.",
+      "accept": [
+        "No funciona el wifi."
+      ]
+    },
+    {
+      "id": "s-la-ducha-no-funciona",
+      "kind": "sentence",
+      "es": "La ducha no funciona.",
+      "de": "Die Dusche funktioniert nicht.",
+      "accept": [
+        "No funciona la ducha."
+      ]
+    },
+    {
+      "id": "s-no-hay-agua-caliente-en-la-ducha",
+      "kind": "sentence",
+      "es": "No hay agua caliente en la ducha.",
+      "de": "In der Dusche gibt es kein warmes Wasser.",
+      "accept": [
+        "No sale agua caliente en la ducha."
+      ]
+    },
+    {
+      "id": "s-falta-una-toalla",
+      "kind": "sentence",
+      "es": "Falta una toalla.",
+      "de": "Es fehlt ein Handtuch.",
+      "accept": [
+        "No hay toalla."
+      ]
+    },
+    {
+      "id": "s-necesito-otra-almohada",
+      "kind": "sentence",
+      "es": "Necesito otra almohada.",
+      "de": "Ich brauche noch ein Kopfkissen."
+    },
+    {
+      "id": "s-me-puede-dar-otra-frazada",
+      "kind": "sentence",
+      "es": "¿Me puede dar otra frazada? Tengo frío.",
+      "de": "Können Sie mir noch eine Decke geben? Mir ist kalt."
+    },
+    {
+      "id": "s-hace-frio-en-la-pieza",
+      "kind": "sentence",
+      "es": "Hace frío en la pieza.",
+      "de": "Es ist kalt im Zimmer.",
+      "accept": [
+        "Hace frío en la habitación."
+      ]
+    },
+    {
+      "id": "s-hace-calor-y-no-funciona-el-aire-acondicionado",
+      "kind": "sentence",
+      "es": "Hace calor y no funciona el aire acondicionado.",
+      "de": "Es ist heiß und die Klimaanlage funktioniert nicht.",
+      "accept": [
+        "Hace calor y el aire acondicionado no funciona."
+      ]
+    },
+    {
+      "id": "s-la-luz-del-bano-no-funciona",
+      "kind": "sentence",
+      "es": "La luz del baño no funciona.",
+      "de": "Das Licht im Bad geht nicht.",
+      "accept": [
+        "No funciona la luz del baño."
+      ]
+    },
+    {
+      "id": "s-se-puede-abrir-la-ventana",
+      "kind": "sentence",
+      "es": "¿Se puede abrir la ventana?",
+      "de": "Kann man das Fenster öffnen?",
+      "accept": [
+        "¿Puedo abrir la ventana?"
+      ]
+    },
+    {
+      "id": "s-se-puede-pagar-con-tarjeta",
+      "kind": "sentence",
+      "es": "¿Se puede pagar con tarjeta?",
+      "de": "Kann man mit Karte zahlen?",
+      "accept": [
+        "¿Puedo pagar con tarjeta?"
+      ]
+    },
+    {
+      "id": "s-se-puede-dejar-el-equipaje-aqui",
+      "kind": "sentence",
+      "es": "¿Se puede dejar el equipaje aquí?",
+      "de": "Kann man das Gepäck hier lassen?",
+      "accept": [
+        "¿Puedo dejar el equipaje aquí?"
+      ]
+    },
+    {
+      "id": "s-pueden-guardar-mi-equipaje-hasta-las-seis",
+      "kind": "sentence",
+      "es": "¿Pueden guardar mi equipaje hasta las seis?",
+      "de": "Können Sie mein Gepäck bis sechs Uhr aufbewahren?",
+      "accept": [
+        "¿Me pueden guardar el equipaje hasta las seis?"
+      ]
+    },
+    {
+      "id": "s-hay-mucho-ruido-en-la-calle",
+      "kind": "sentence",
+      "es": "Hay mucho ruido en la calle.",
+      "de": "Auf der Straße ist viel Lärm.",
+      "accept": [
+        "Hay mucho ruido afuera."
+      ]
+    },
+    {
+      "id": "s-puedo-cambiar-de-pieza",
+      "kind": "sentence",
+      "es": "¿Puedo cambiar de pieza?",
+      "de": "Kann ich das Zimmer wechseln?",
+      "accept": [
+        "¿Puedo cambiar de habitación?"
+      ]
+    },
+    {
+      "id": "s-la-pieza-esta-sucia",
+      "kind": "sentence",
+      "es": "La pieza está sucia.",
+      "de": "Das Zimmer ist schmutzig.",
+      "accept": [
+        "La habitación está sucia."
+      ]
+    },
+    {
+      "id": "s-pueden-arreglar-la-ducha",
+      "kind": "sentence",
+      "es": "¿Pueden arreglar la ducha?",
+      "de": "Können Sie die Dusche reparieren?",
+      "accept": [
+        "¿Me pueden arreglar la ducha?"
+      ]
+    },
+    {
+      "id": "s-dejo-la-llave-en-la-recepcion",
+      "kind": "sentence",
+      "es": "Dejo la llave en la recepción.",
+      "de": "Ich lasse den Schlüssel an der Rezeption.",
+      "accept": [
+        "Dejo la llave en recepción."
+      ]
+    },
+    {
+      "id": "s-no-encuentro-mi-llave",
+      "kind": "sentence",
+      "es": "No encuentro mi llave.",
+      "de": "Ich finde meinen Schlüssel nicht."
+    },
+    {
+      "id": "s-donde-esta-la-lavanderia",
+      "kind": "sentence",
+      "es": "¿Dónde está la lavandería?",
+      "de": "Wo ist die Wäscherei?",
+      "accept": [
+        "¿Dónde queda la lavandería?"
+      ]
+    },
+    {
+      "id": "s-hay-cocina",
+      "kind": "sentence",
+      "es": "¿Hay cocina?",
+      "de": "Gibt es eine Küche?",
+      "accept": [
+        "¿Hay una cocina?"
+      ]
+    },
+    {
+      "id": "s-donde-esta-el-enchufe",
+      "kind": "sentence",
+      "es": "¿Dónde está el enchufe?",
+      "de": "Wo ist die Steckdose?",
+      "accept": [
+        "¿Dónde hay un enchufe?"
+      ]
+    },
+    {
+      "id": "s-necesito-un-cargador",
+      "kind": "sentence",
+      "es": "Necesito un cargador.",
+      "de": "Ich brauche ein Ladegerät."
+    },
+    {
+      "id": "s-hacemos-el-checkout-manana",
+      "kind": "sentence",
+      "es": "Hacemos el check-out mañana.",
+      "de": "Wir checken morgen aus."
+    },
+    {
+      "id": "s-me-voy-manana-temprano",
+      "kind": "sentence",
+      "es": "Me voy mañana temprano.",
+      "de": "Ich reise morgen früh ab.",
+      "accept": [
+        "Salgo mañana temprano."
+      ]
+    },
+    {
+      "id": "s-la-salida-es-a-las-once",
+      "kind": "sentence",
+      "es": "La salida es a las once.",
+      "de": "Der Check-out ist um elf Uhr.",
+      "accept": [
+        "El check-out es a las once."
+      ]
+    },
+    {
+      "id": "s-duermo-muy-bien-aqui",
+      "kind": "sentence",
+      "es": "Duermo muy bien aquí.",
+      "de": "Ich schlafe hier sehr gut."
+    },
+    {
+      "id": "s-puedo-quedarme-una-noche-mas",
+      "kind": "sentence",
+      "es": "¿Puedo quedarme una noche más?",
+      "de": "Kann ich noch eine Nacht bleiben?",
+      "accept": [
+        "¿Me puedo quedar una noche más?"
+      ]
+    },
+    {
+      "id": "s-puede-llamar-a-un-taxi",
+      "kind": "sentence",
+      "es": "¿Puede llamar a un taxi?",
+      "de": "Können Sie ein Taxi rufen?",
+      "accept": [
+        "¿Me puede llamar un taxi?"
+      ]
+    },
+    {
+      "id": "s-mis-maletas-estan-en-la-bodega",
+      "kind": "sentence",
+      "es": "Mis maletas están en la bodega.",
+      "de": "Meine Koffer sind im Abstellraum."
+    },
+    {
+      "id": "d-check-in-reserva",
+      "kind": "dialog",
+      "title": "Check-in mit Reservierung",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. Tengo una reserva a nombre de Pablo.",
+          "de": "Guten Tag. Ich habe eine Reservierung auf den Namen Pablo."
+        },
+        {
+          "speaker": "B",
+          "es": "Buenas tardes. Espere un momento, por favor. Sí, tiene una pieza para dos noches.",
+          "de": "Guten Tag. Warten Sie einen Moment, bitte. Ja, Sie haben ein Zimmer für zwei Nächte."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto. ¿A qué hora es el check-out?",
+          "de": "Perfekt. Um wie viel Uhr ist der Check-out?"
+        },
+        {
+          "speaker": "B",
+          "es": "A las once. ¿Me muestra su pasaporte, por favor?",
+          "de": "Um elf. Können Sie mir Ihren Reisepass zeigen, bitte?"
+        },
+        {
+          "speaker": "A",
+          "es": "Aquí tiene.",
+          "de": "Hier ist er."
+        },
+        {
+          "speaker": "B",
+          "es": "Gracias. Firme aquí, por favor.",
+          "de": "Danke. Unterschreiben Sie hier, bitte."
+        },
+        {
+          "speaker": "A",
+          "es": "Listo. ¿Cuál es la clave del wifi?",
+          "de": "Fertig. Wie lautet das WLAN-Passwort?"
+        },
+        {
+          "speaker": "B",
+          "es": "La clave está en el letrero, aquí al lado.",
+          "de": "Das Passwort steht auf dem Schild, hier daneben."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto, muchas gracias.",
+          "de": "Perfekt, vielen Dank."
+        }
+      ]
+    },
+    {
+      "id": "d-pieza-libre",
+      "kind": "dialog",
+      "title": "Ein Zimmer für zwei",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas noches. ¿Tiene una pieza libre?",
+          "de": "Guten Abend. Haben Sie ein freies Zimmer?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí. ¿Para cuántas personas?",
+          "de": "Ja. Für wie viele Personen?"
+        },
+        {
+          "speaker": "A",
+          "es": "Somos dos. Quisiera una cama matrimonial.",
+          "de": "Wir sind zwei. Ich hätte gern ein Doppelbett."
+        },
+        {
+          "speaker": "B",
+          "es": "Tenemos una pieza con cama matrimonial y baño privado, en el segundo piso.",
+          "de": "Wir haben ein Zimmer mit Doppelbett und eigenem Bad, im zweiten Stock."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuánto cuesta por noche?",
+          "de": "Wie viel kostet es pro Nacht?"
+        },
+        {
+          "speaker": "B",
+          "es": "Son cuarenta mil pesos por noche.",
+          "de": "Es sind vierzigtausend Pesos pro Nacht."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Está incluido el desayuno?",
+          "de": "Ist das Frühstück inklusive?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, el desayuno está incluido. Es de ocho a diez.",
+          "de": "Ja, das Frühstück ist inklusive. Es gibt es von acht bis zehn."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto. Nos quedamos tres noches. ¿Se puede pagar con tarjeta?",
+          "de": "Perfekt. Wir bleiben drei Nächte. Kann man mit Karte zahlen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, se puede pagar con tarjeta o en efectivo.",
+          "de": "Ja, man kann mit Karte oder bar zahlen."
+        }
+      ]
+    },
+    {
+      "id": "d-sin-agua-caliente",
+      "kind": "dialog",
+      "title": "Kein warmes Wasser",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, hay un problema con la ducha.",
+          "de": "Entschuldigung, es gibt ein Problem mit der Dusche."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Qué problema hay?",
+          "de": "Was für ein Problem gibt es?"
+        },
+        {
+          "speaker": "A",
+          "es": "No hay agua caliente.",
+          "de": "Es gibt kein warmes Wasser."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Cuál es su pieza?",
+          "de": "Welches ist Ihr Zimmer?"
+        },
+        {
+          "speaker": "A",
+          "es": "La doscientos cinco, en el segundo piso.",
+          "de": "Die 205, im zweiten Stock."
+        },
+        {
+          "speaker": "B",
+          "es": "Lo siento. Tenemos otra pieza libre en el primer piso. ¿Puede cambiar de pieza?",
+          "de": "Das tut mir leid. Wir haben ein anderes freies Zimmer im ersten Stock. Können Sie das Zimmer wechseln?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, perfecto. ¿Hay agua caliente allá?",
+          "de": "Ja, perfekt. Gibt es dort warmes Wasser?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, la ducha funciona bien.",
+          "de": "Ja, die Dusche funktioniert gut."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias.",
+          "de": "Vielen Dank."
+        }
+      ]
+    },
+    {
+      "id": "d-airbnb-conserje",
+      "kind": "dialog",
+      "title": "Ankunft im Airbnb",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas noches. Tengo una reserva en el departamento de Ana.",
+          "de": "Guten Abend. Ich habe eine Reservierung für die Wohnung von Ana."
+        },
+        {
+          "speaker": "B",
+          "es": "Buenas noches, bienvenido. Yo soy el conserje.",
+          "de": "Guten Abend, willkommen. Ich bin der Portier."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Dónde está la llave?",
+          "de": "Wo ist der Schlüssel?"
+        },
+        {
+          "speaker": "B",
+          "es": "Aquí tiene. Es el departamento trescientos cuatro, en el tercer piso.",
+          "de": "Hier ist er. Es ist die Wohnung 304, im dritten Stock."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Hay ascensor?",
+          "de": "Gibt es einen Aufzug?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, está al lado de la escalera.",
+          "de": "Ja, er ist neben der Treppe."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuál es la clave del wifi?",
+          "de": "Wie lautet das WLAN-Passwort?"
+        },
+        {
+          "speaker": "B",
+          "es": "La clave está en la mesa de la cocina.",
+          "de": "Das Passwort liegt auf dem Küchentisch."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto. Muchas gracias.",
+          "de": "Perfekt. Vielen Dank."
+        },
+        {
+          "speaker": "B",
+          "es": "De nada. Buenas noches.",
+          "de": "Gern geschehen. Gute Nacht."
+        }
+      ]
+    },
+    {
+      "id": "d-guardar-equipaje",
+      "kind": "dialog",
+      "title": "Gepäck nach dem Check-out",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. Hoy hago el check-out, pero mi avión sale en la noche. ¿Pueden guardar mi equipaje?",
+          "de": "Guten Tag. Heute checke ich aus, aber mein Flug geht am Abend. Können Sie mein Gepäck aufbewahren?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, claro. Puede dejar la maleta en la bodega.",
+          "de": "Ja, klar. Sie können den Koffer im Abstellraum lassen."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Hasta qué hora?",
+          "de": "Bis wann?"
+        },
+        {
+          "speaker": "B",
+          "es": "Hasta las ocho de la noche.",
+          "de": "Bis acht Uhr abends."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto. Aquí tiene la llave de la pieza.",
+          "de": "Perfekt. Hier ist der Zimmerschlüssel."
+        },
+        {
+          "speaker": "B",
+          "es": "Gracias. ¿Todo bien con la pieza?",
+          "de": "Danke. Alles gut mit dem Zimmer?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, muy bien. Duermo muy bien aquí.",
+          "de": "Ja, sehr gut. Ich schlafe hier sehr gut."
+        },
+        {
+          "speaker": "B",
+          "es": "Qué bueno. ¿Necesita un taxi?",
+          "de": "Das freut mich. Brauchen Sie ein Taxi?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, a las siete de la tarde, por favor.",
+          "de": "Ja, um sieben Uhr am Abend, bitte."
+        }
+      ]
+    },
+    {
+      "id": "d-frio-ruido",
+      "kind": "dialog",
+      "title": "Kalt und laut",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, hace mucho frío en la pieza.",
+          "de": "Entschuldigung, es ist sehr kalt im Zimmer."
+        },
+        {
+          "speaker": "B",
+          "es": "¿La calefacción no funciona?",
+          "de": "Funktioniert die Heizung nicht?"
+        },
+        {
+          "speaker": "A",
+          "es": "No, no funciona. ¿Me puede dar otra frazada?",
+          "de": "Nein, sie funktioniert nicht. Können Sie mir noch eine Decke geben?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, claro. ¿Qué pieza es?",
+          "de": "Ja, klar. Welches Zimmer ist es?"
+        },
+        {
+          "speaker": "A",
+          "es": "La trescientos doce, en el tercer piso.",
+          "de": "Die 312, im dritten Stock."
+        },
+        {
+          "speaker": "B",
+          "es": "Perfecto. Le llevo la frazada en cinco minutos.",
+          "de": "Perfekt. Ich bringe Ihnen die Decke in fünf Minuten."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias. También hay mucho ruido en la calle.",
+          "de": "Danke. Außerdem ist viel Lärm auf der Straße."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Quiere cambiar de pieza? Tenemos una pieza más tranquila en el segundo piso.",
+          "de": "Möchten Sie das Zimmer wechseln? Wir haben ein ruhigeres Zimmer im zweiten Stock."
+        },
+        {
+          "speaker": "A",
+          "es": "No, gracias. Solo necesito la frazada.",
+          "de": "Nein, danke. Ich brauche nur die Decke."
+        }
+      ]
+    },
+    {
+      "id": "g-possessiva",
+      "kind": "grammar",
+      "title": "Mein, dein, sein, unser",
+      "explanation": "Das Besitzwort steht vor dem Hauptwort: mi llave, tu pasaporte, su pieza. Bei mehreren Dingen kommt ein s: mis llaves, tus maletas, sus toallas. Su heißt sein, ihr und Ihr. Das Personal sagt su pieza, su pasaporte, wenn es dich mit usted anspricht. Nuestro heißt unser und richtet sich nach dem Hauptwort: nuestra pieza, nuestros pasaportes, nuestras maletas.",
+      "examples": [
+        {
+          "es": "Mi pieza es la doscientos cinco.",
+          "de": "Mein Zimmer ist die 205."
+        },
+        {
+          "es": "Aquí tiene su pasaporte.",
+          "de": "Hier ist Ihr Reisepass."
+        },
+        {
+          "es": "¿Dónde están tus maletas?",
+          "de": "Wo sind deine Koffer?"
+        },
+        {
+          "es": "Nuestra pieza está en el segundo piso.",
+          "de": "Unser Zimmer ist im zweiten Stock."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Mein Zimmer ist im dritten Stock.",
+          "es": "Mi pieza está en el tercer piso.",
+          "accept": [
+            "Mi habitación está en el tercer piso."
+          ]
+        },
+        {
+          "de": "Hier ist Ihr Schlüssel.",
+          "es": "Aquí tiene su llave.",
+          "accept": [
+            "Aquí está su llave."
+          ]
+        },
+        {
+          "de": "Wo sind deine Koffer?",
+          "es": "¿Dónde están tus maletas?"
+        },
+        {
+          "de": "Unser Zimmer ist sauber.",
+          "es": "Nuestra pieza está limpia.",
+          "accept": [
+            "Nuestra habitación está limpia."
+          ]
+        },
+        {
+          "de": "Unsere Pässe sind an der Rezeption.",
+          "es": "Nuestros pasaportes están en la recepción."
+        },
+        {
+          "de": "Meine Handtücher sind schmutzig.",
+          "es": "Mis toallas están sucias."
+        }
+      ]
+    },
+    {
+      "id": "g-funcionar",
+      "kind": "grammar",
+      "title": "funcionar und no funciona",
+      "explanation": "Funcionar heißt funktionieren. Bei einer Sache sagst du funciona, bei mehreren funcionan: La ducha no funciona. Las luces no funcionan. So meldest du kurz, was kaputt ist. Fehlt etwas ganz, sagst du no hay: No hay agua caliente. Fehlt nur ein Stück, sagst du falta: Falta una toalla.",
+      "examples": [
+        {
+          "es": "El wifi no funciona.",
+          "de": "Das WLAN funktioniert nicht."
+        },
+        {
+          "es": "Las luces no funcionan.",
+          "de": "Die Lichter funktionieren nicht."
+        },
+        {
+          "es": "No hay agua caliente.",
+          "de": "Es gibt kein warmes Wasser."
+        },
+        {
+          "es": "Falta una toalla.",
+          "de": "Es fehlt ein Handtuch."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Die Dusche funktioniert nicht.",
+          "es": "La ducha no funciona.",
+          "accept": [
+            "No funciona la ducha."
+          ]
+        },
+        {
+          "de": "Die Lichter funktionieren nicht.",
+          "es": "Las luces no funcionan."
+        },
+        {
+          "de": "Das WLAN funktioniert nicht.",
+          "es": "El wifi no funciona.",
+          "accept": [
+            "No funciona el wifi."
+          ]
+        },
+        {
+          "de": "Es gibt kein warmes Wasser.",
+          "es": "No hay agua caliente."
+        },
+        {
+          "de": "Es fehlt ein Handtuch.",
+          "es": "Falta una toalla."
+        },
+        {
+          "de": "Die Heizung funktioniert nicht.",
+          "es": "La calefacción no funciona.",
+          "accept": [
+            "No funciona la calefacción."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g-hacer",
+      "kind": "grammar",
+      "title": "hacer im Präsens",
+      "explanation": "Hacer heißt machen. Im Präsens: yo hago, tú haces, usted hace, nosotros hacemos, ustedes hacen. Nur hago ist unregelmäßig. Du brauchst es für hacer el check-in und hacer la reserva. Mit hace beschreibst du auch das Wetter im Zimmer: Hace frío, hace calor. Hier heißt hace nicht macht, sondern es ist.",
+      "examples": [
+        {
+          "es": "Hago el check-in a las tres.",
+          "de": "Ich mache um drei Uhr den Check-in."
+        },
+        {
+          "es": "Hacemos el check-out mañana.",
+          "de": "Wir checken morgen aus."
+        },
+        {
+          "es": "Hace frío en la pieza.",
+          "de": "Es ist kalt im Zimmer."
+        },
+        {
+          "es": "Hace calor aquí.",
+          "de": "Es ist heiß hier."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich mache den Check-in.",
+          "es": "Hago el check-in."
+        },
+        {
+          "de": "Wir checken morgen aus.",
+          "es": "Hacemos el check-out mañana."
+        },
+        {
+          "de": "Es ist kalt im Zimmer.",
+          "es": "Hace frío en la pieza.",
+          "accept": [
+            "Hace frío en la habitación."
+          ]
+        },
+        {
+          "de": "Es ist heiß hier.",
+          "es": "Hace calor aquí."
+        },
+        {
+          "de": "Du machst die Reservierung.",
+          "es": "Haces la reserva."
+        }
+      ]
+    },
+    {
+      "id": "g-se-puede",
+      "kind": "grammar",
+      "title": "¿Se puede...? und ¿Puedo...?",
+      "explanation": "Mit ¿Se puede...? fragst du, ob etwas erlaubt oder möglich ist, ohne jemanden direkt anzusprechen: ¿Se puede pagar con tarjeta? ¿Se puede abrir la ventana? Danach steht die Grundform. Mit Person fragst du ¿Puedo...? (Darf ich?) oder ¿Me puede...? (Können Sie mir?). Bei mehreren Dingen steht se pueden.",
+      "examples": [
+        {
+          "es": "¿Se puede pagar con tarjeta?",
+          "de": "Kann man mit Karte zahlen?"
+        },
+        {
+          "es": "¿Se puede abrir la ventana?",
+          "de": "Kann man das Fenster öffnen?"
+        },
+        {
+          "es": "¿Puedo dejar el equipaje aquí?",
+          "de": "Kann ich das Gepäck hier lassen?"
+        },
+        {
+          "es": "¿Me puede dar la llave?",
+          "de": "Können Sie mir den Schlüssel geben?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Kann man mit Karte zahlen?",
+          "es": "¿Se puede pagar con tarjeta?",
+          "accept": [
+            "¿Puedo pagar con tarjeta?"
+          ]
+        },
+        {
+          "de": "Kann man das Fenster öffnen?",
+          "es": "¿Se puede abrir la ventana?",
+          "accept": [
+            "¿Puedo abrir la ventana?"
+          ]
+        },
+        {
+          "de": "Darf ich das Gepäck hier lassen?",
+          "es": "¿Puedo dejar el equipaje aquí?",
+          "accept": [
+            "¿Se puede dejar el equipaje aquí?"
+          ]
+        },
+        {
+          "de": "Können Sie mir den Schlüssel geben?",
+          "es": "¿Me puede dar la llave?"
+        },
+        {
+          "de": "Kann ich das Zimmer wechseln?",
+          "es": "¿Puedo cambiar de pieza?",
+          "accept": [
+            "¿Puedo cambiar de habitación?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g-empfang-usted",
+      "kind": "grammar",
+      "title": "Am Empfang mit usted",
+      "explanation": "Das Personal spricht dich mit usted an: ¿Me muestra su pasaporte? Firme aquí. Espere un momento. Firme und espere sind Aufforderungen in der Höflichkeitsform von firmar und esperar. Du fragst selbst auch mit usted: ¿Tiene una pieza libre? ¿Me puede dar la llave? Tiene und puede sind die usted-Formen von tener und poder, also Haben Sie und Können Sie.",
+      "examples": [
+        {
+          "es": "¿Tiene una pieza libre?",
+          "de": "Haben Sie ein freies Zimmer?"
+        },
+        {
+          "es": "¿Me muestra su pasaporte?",
+          "de": "Zeigen Sie mir Ihren Reisepass?"
+        },
+        {
+          "es": "Firme aquí, por favor.",
+          "de": "Unterschreiben Sie hier, bitte."
+        },
+        {
+          "es": "Espere un momento, por favor.",
+          "de": "Warten Sie einen Moment, bitte."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Haben Sie ein freies Zimmer?",
+          "es": "¿Tiene una pieza libre?",
+          "accept": [
+            "¿Tiene una habitación libre?"
+          ]
+        },
+        {
+          "de": "Unterschreiben Sie hier.",
+          "es": "Firme aquí.",
+          "accept": [
+            "Firme aquí, por favor."
+          ]
+        },
+        {
+          "de": "Warten Sie einen Moment.",
+          "es": "Espere un momento.",
+          "accept": [
+            "Espere un momento, por favor."
+          ]
+        },
+        {
+          "de": "Hier ist Ihr Reisepass.",
+          "es": "Aquí tiene su pasaporte.",
+          "accept": [
+            "Aquí está su pasaporte."
+          ]
+        },
+        {
+          "de": "Können Sie mir ein Handtuch geben?",
+          "es": "¿Me puede dar una toalla?"
+        }
+      ]
+    },
+    {
+      "id": "pair-llave-clave",
+      "kind": "pair",
+      "es": "llave",
+      "options": [
+        "llave",
+        "clave"
+      ]
+    },
+    {
+      "id": "pair-ducha-mucha",
+      "kind": "pair",
+      "es": "ducha",
+      "options": [
+        "ducha",
+        "mucha"
+      ]
+    },
+    {
+      "id": "pair-piso-peso",
+      "kind": "pair",
+      "es": "piso",
+      "options": [
+        "piso",
+        "peso"
+      ]
+    },
+    {
+      "id": "pair-bano-ano",
+      "kind": "pair",
+      "es": "baño",
+      "options": [
+        "baño",
+        "año"
+      ]
+    },
+    {
+      "id": "pair-hostal-hostil",
+      "kind": "pair",
+      "es": "hostal",
+      "options": [
+        "hostal",
+        "hostil"
+      ]
+    },
+    {
+      "id": "pair-cama-cara",
+      "kind": "pair",
+      "es": "cama",
+      "options": [
+        "cama",
+        "cara"
+      ]
+    }
+  ]
+}
