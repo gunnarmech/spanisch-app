@@ -109,6 +109,17 @@ const bySituation: Record<string, Photo> = {
     page: commons('Cerro_San_Cristobal_Santiago,_Chile.jpg'),
     edit: 'zugeschnitten und verkleinert',
   },
+  '08-notfall': {
+    src: url('notfall.webp'),
+    width: 160,
+    height: 160,
+    alt: 'Modernes Krankenhausgebäude mit Glasturm und dem Schriftzug URGENCIA über dem Eingang unter blauem Himmel',
+    author: 'Carlos Figueroa Rojas',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: deed('by-sa/4.0'),
+    page: commons('Hospital_de_Urgencia_Asistencia_P%C3%BAblica,_Santiago_20230325.jpg'),
+    edit: 'zugeschnitten und verkleinert',
+  },
 };
 
 /** Foto der Situation, oder null, wenn es keins gibt (dann zeigt die Zeile kein Bild). */

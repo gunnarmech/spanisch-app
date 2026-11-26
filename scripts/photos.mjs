@@ -55,6 +55,11 @@ const JOBS = [
     crop: { left: 0.25, top: 0.1, width: 0.6, height: 0.8 },
     outputs: [{ name: 'smalltalk.webp', width: 160, height: 160, maxKb: 25 }],
   },
+  {
+    file: 'Hospital de Urgencia Asistencia Pública, Santiago 20230325.jpg',
+    crop: { left: 0.27, top: 0.1, width: 0.56, height: 0.84 },
+    outputs: [{ name: 'notfall.webp', width: 160, height: 160, maxKb: 25 }],
+  },
 ];
 
 async function download(file) {

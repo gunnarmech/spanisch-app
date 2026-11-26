@@ -1,0 +1,2998 @@
+{
+  "id": "08-notfall",
+  "order": 8,
+  "title": "Notfall und Gesundheit",
+  "items": [
+    {
+      "id": "p-ayudeme",
+      "kind": "phrase",
+      "es": "¡ayúdeme!",
+      "de": "helfen Sie mir!",
+      "forms": [
+        "ayúdeme",
+        "ayúdame"
+      ],
+      "examples": [
+        {
+          "es": "¡Ayúdeme, por favor!",
+          "de": "Helfen Sie mir bitte!"
+        }
+      ],
+      "note": "Ayúdeme ist die Befehlsform mit usted, so sprichst du Fremde an. Unter Freunden heißt es ayúdame."
+    },
+    {
+      "id": "p-me-puede-ayudar",
+      "kind": "phrase",
+      "es": "¿me puede ayudar?",
+      "de": "können Sie mir helfen?",
+      "accept": [
+        "¿Puede ayudarme?"
+      ],
+      "forms": [
+        "me puede ayudar",
+        "me puedes ayudar",
+        "puede ayudar",
+        "puedes ayudar"
+      ],
+      "examples": [
+        {
+          "es": "¿Me puede ayudar, por favor?",
+          "de": "Können Sie mir bitte helfen?"
+        }
+      ],
+      "note": "Mit tú fragst du: ¿Me puedes ayudar? Bei Fremden, Ärzten und Polizisten nimmst du usted."
+    },
+    {
+      "id": "p-necesito-ayuda",
+      "kind": "phrase",
+      "es": "necesito ayuda",
+      "de": "ich brauche Hilfe",
+      "forms": [
+        "necesito ayuda",
+        "necesita ayuda"
+      ],
+      "examples": [
+        {
+          "es": "Necesito ayuda, por favor.",
+          "de": "Ich brauche Hilfe, bitte."
+        }
+      ],
+      "note": "Das ist der einfachste Satz, wenn etwas passiert ist. Mit usted fragst du: ¿Necesita ayuda?"
+    },
+    {
+      "id": "p-necesito-un-medico",
+      "kind": "phrase",
+      "es": "necesito un médico",
+      "de": "ich brauche einen Arzt",
+      "accept": [
+        "necesito un doctor"
+      ],
+      "forms": [
+        "necesito un médico",
+        "necesito una médica"
+      ],
+      "examples": [
+        {
+          "es": "Necesito un médico.",
+          "de": "Ich brauche einen Arzt."
+        }
+      ],
+      "note": "Für eine Ärztin sagst du: necesito una médica."
+    },
+    {
+      "id": "w-emergencia",
+      "kind": "word",
+      "es": "emergencia",
+      "de": "Notfall",
+      "forms": [
+        "emergencia",
+        "emergencias"
+      ],
+      "examples": [
+        {
+          "es": "Es una emergencia.",
+          "de": "Es ist ein Notfall."
+        }
+      ],
+      "note": "Emergencia ist ein Notfall, bei dem es schnell gehen muss. Am Telefon sagst du: Es una emergencia.",
+      "freqRank": 1637
+    },
+    {
+      "id": "w-urgencia",
+      "kind": "word",
+      "es": "urgencia",
+      "de": "Notaufnahme, Dringlichkeit",
+      "forms": [
+        "urgencia",
+        "urgencias"
+      ],
+      "examples": [
+        {
+          "es": "Necesito ir a la urgencia.",
+          "de": "Ich muss in die Notaufnahme."
+        }
+      ],
+      "note": "Urgencia ist die Abteilung im Krankenhaus oder in der Klinik, in die man ohne Termin kommt."
+    },
+    {
+      "id": "p-es-urgente",
+      "kind": "phrase",
+      "es": "es urgente",
+      "de": "es ist dringend",
+      "forms": [
+        "es urgente",
+        "urgente"
+      ],
+      "examples": [
+        {
+          "es": "Es urgente, por favor.",
+          "de": "Es ist dringend, bitte."
+        }
+      ],
+      "note": "Urgente gilt für Männer und Frauen gleich."
+    },
+    {
+      "id": "w-ambulancia",
+      "kind": "word",
+      "es": "ambulancia",
+      "de": "Krankenwagen",
+      "forms": [
+        "ambulancia",
+        "ambulancias"
+      ],
+      "examples": [
+        {
+          "es": "Necesito una ambulancia.",
+          "de": "Ich brauche einen Krankenwagen."
+        }
+      ],
+      "note": "Eine Ambulancia ruft man über den SAMU.",
+      "freqRank": 2580
+    },
+    {
+      "id": "w-samu",
+      "kind": "word",
+      "es": "SAMU",
+      "de": "Rettungsdienst (Notarzt und Krankenwagen)",
+      "forms": [
+        "samu"
+      ],
+      "examples": [
+        {
+          "es": "Llame al SAMU.",
+          "de": "Rufen Sie den Rettungsdienst."
+        }
+      ],
+      "note": "SAMU steht für Servicio de Atención Médica de Urgencia. Man ruft ihn mit der 131.",
+      "chile": {
+        "note": "Der SAMU ist der öffentliche Rettungsdienst. Er ist über die 131 an 365 Tagen rund um die Uhr erreichbar, der Anruf ist kostenlos, auch vom Handy ohne Guthaben.",
+        "source": "SAMU Metropolitano, Preguntas frecuentes, https://www.samu.cl/preguntas-frecuentes/"
+      }
+    },
+    {
+      "id": "p-numero-131",
+      "kind": "phrase",
+      "es": "el uno tres uno",
+      "de": "die 131 (Ambulanz, SAMU)",
+      "accept": [
+        "el 131",
+        "131"
+      ],
+      "forms": [
+        "131",
+        "uno tres uno",
+        "el uno tres uno"
+      ],
+      "examples": [
+        {
+          "es": "Llame al uno tres uno.",
+          "de": "Rufen Sie die 131 an."
+        }
+      ],
+      "note": "Die Notrufnummern in Chile haben drei Ziffern. Du kannst sie Ziffer für Ziffer sagen: uno, tres, uno.",
+      "chile": {
+        "note": "Die 131 ist die Notrufnummer des Rettungsdienstes SAMU. Sie ist aus dem ganzen Land erreichbar.",
+        "source": "SAMU Metropolitano, Preguntas frecuentes, https://www.samu.cl/preguntas-frecuentes/"
+      }
+    },
+    {
+      "id": "p-numero-132",
+      "kind": "phrase",
+      "es": "el uno tres dos",
+      "de": "die 132 (Feuerwehr)",
+      "accept": [
+        "el 132",
+        "132"
+      ],
+      "forms": [
+        "132",
+        "uno tres dos",
+        "el uno tres dos"
+      ],
+      "examples": [
+        {
+          "es": "Los bomberos son el uno tres dos.",
+          "de": "Die Feuerwehr ist die 132."
+        }
+      ],
+      "note": "Mit der 132 rufst du die Feuerwehr, zum Beispiel bei einem Brand.",
+      "chile": {
+        "note": "Bei Notfällen ruft man bei der Feuerwehr die 132 an.",
+        "source": "Cuerpo de Bomberos de Santiago, Contacto, https://www.cbs.cl/contacto"
+      }
+    },
+    {
+      "id": "p-numero-133",
+      "kind": "phrase",
+      "es": "el uno tres tres",
+      "de": "die 133 (Carabineros, Polizei)",
+      "accept": [
+        "el 133",
+        "133"
+      ],
+      "forms": [
+        "133",
+        "uno tres tres",
+        "el uno tres tres"
+      ],
+      "examples": [
+        {
+          "es": "Llame al uno tres tres.",
+          "de": "Rufen Sie die 133 an."
+        }
+      ],
+      "note": "Die 133 ist die Nummer der Polizei.",
+      "chile": {
+        "note": "Bei einem Notfall auf der Straße (Diebstahl, Überfall, Unfall) ruft man die 133 an. Sie gilt als wichtigste Nummer für schnelle Hilfe im ganzen Land.",
+        "source": "Sernatur, Chile Travel, Safety precautions, https://chile.travel/en/good-to-know/safety-precautions/"
+      }
+    },
+    {
+      "id": "p-numero-134",
+      "kind": "phrase",
+      "es": "el uno tres cuatro",
+      "de": "die 134 (PDI)",
+      "accept": [
+        "el 134",
+        "134"
+      ],
+      "forms": [
+        "134",
+        "uno tres cuatro",
+        "el uno tres cuatro"
+      ],
+      "examples": [
+        {
+          "es": "La PDI es el uno tres cuatro.",
+          "de": "Die PDI ist die 134."
+        }
+      ],
+      "note": "Die PDI (Policía de Investigaciones) ist eine zweite Polizei neben den Carabineros. Im Notfall auf der Straße rufst du die 133.",
+      "chile": {
+        "note": "Die 134 gehört zur Policía de Investigaciones (PDI), zuständig zum Beispiel für Betrug und Ausländerangelegenheiten.",
+        "source": "Sernatur, Chile Travel, Safety precautions, https://chile.travel/en/good-to-know/safety-precautions/"
+      }
+    },
+    {
+      "id": "w-carabineros",
+      "kind": "word",
+      "es": "Carabineros",
+      "de": "Carabineros (die uniformierte Polizei Chiles)",
+      "forms": [
+        "carabineros",
+        "carabinero",
+        "carabinera"
+      ],
+      "examples": [
+        {
+          "es": "Llame a Carabineros.",
+          "de": "Rufen Sie die Carabineros."
+        }
+      ],
+      "note": "Ein einzelner Polizist heißt el carabinero, eine Polizistin la carabinera.",
+      "chile": {
+        "note": "Die uniformierte Nationalpolizei heißt Carabineros de Chile.",
+        "source": "Sernatur, Chile Travel, Safety precautions, https://chile.travel/en/good-to-know/safety-precautions/"
+      }
+    },
+    {
+      "id": "w-bomberos",
+      "kind": "word",
+      "es": "bomberos",
+      "de": "Feuerwehr",
+      "forms": [
+        "bomberos",
+        "bombero",
+        "bomberas"
+      ],
+      "examples": [
+        {
+          "es": "Llame a los bomberos.",
+          "de": "Rufen Sie die Feuerwehr."
+        }
+      ],
+      "note": "Los bomberos steht fast immer im Plural. Ein einzelner Feuerwehrmann heißt el bombero."
+    },
+    {
+      "id": "w-policia",
+      "kind": "word",
+      "es": "policía",
+      "de": "Polizei",
+      "forms": [
+        "policía",
+        "policías"
+      ],
+      "examples": [
+        {
+          "es": "Llame a la policía.",
+          "de": "Rufen Sie die Polizei."
+        }
+      ],
+      "note": "La policía ist die Polizei, el policía ein Polizist. In Chile ist die uniformierte Polizei Carabineros.",
+      "freqRank": 256
+    },
+    {
+      "id": "w-comisaria",
+      "kind": "word",
+      "es": "comisaría",
+      "de": "Polizeiwache",
+      "forms": [
+        "comisaría",
+        "comisarías"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde queda la comisaría?",
+          "de": "Wo ist die Polizeiwache?"
+        }
+      ],
+      "note": "In der Comisaría meldest du einen Diebstahl oder einen Verlust."
+    },
+    {
+      "id": "w-denuncia",
+      "kind": "word",
+      "es": "denuncia",
+      "de": "Anzeige, Meldung bei der Polizei",
+      "forms": [
+        "denuncia",
+        "denuncias"
+      ],
+      "examples": [
+        {
+          "es": "Necesito la denuncia para el seguro.",
+          "de": "Ich brauche die Anzeige für die Versicherung."
+        }
+      ]
+    },
+    {
+      "id": "p-hacer-una-denuncia",
+      "kind": "phrase",
+      "es": "hacer una denuncia",
+      "de": "eine Anzeige machen",
+      "forms": [
+        "hacer una denuncia",
+        "quiero hacer una denuncia",
+        "hago una denuncia"
+      ],
+      "examples": [
+        {
+          "es": "Quiero hacer una denuncia.",
+          "de": "Ich möchte eine Anzeige machen."
+        }
+      ],
+      "note": "Das sagst du auf der Polizeiwache, wenn dir etwas gestohlen wurde."
+    },
+    {
+      "id": "w-robo",
+      "kind": "word",
+      "es": "robo",
+      "de": "Diebstahl, Raub",
+      "forms": [
+        "robo",
+        "robos"
+      ],
+      "examples": [
+        {
+          "es": "Quiero hacer una denuncia por un robo.",
+          "de": "Ich möchte einen Diebstahl anzeigen."
+        }
+      ],
+      "note": "Robo ist der Diebstahl. Das Verb robar heißt stehlen.",
+      "freqRank": 1644
+    },
+    {
+      "id": "p-me-robaron",
+      "kind": "phrase",
+      "es": "me robaron",
+      "de": "man hat mir gestohlen",
+      "forms": [
+        "me robaron",
+        "robaron"
+      ],
+      "examples": [
+        {
+          "es": "Me robaron la mochila.",
+          "de": "Man hat mir den Rucksack gestohlen."
+        }
+      ],
+      "note": "Das ist eine Vergangenheitsform, die du hier nur als feste Wendung lernst. Wörtlich heißt sie: sie haben mir gestohlen. Gemeint ist: Man hat mir etwas gestohlen."
+    },
+    {
+      "id": "p-perdi",
+      "kind": "phrase",
+      "es": "perdí",
+      "de": "ich habe verloren",
+      "forms": [
+        "perdí"
+      ],
+      "examples": [
+        {
+          "es": "Perdí mi pasaporte.",
+          "de": "Ich habe meinen Pass verloren."
+        }
+      ],
+      "note": "Auch das ist Vergangenheit und wird hier nur als feste Wendung gelernt. Der Akzent steht auf dem í. Danach sagst du, was weg ist: Perdí mi billetera."
+    },
+    {
+      "id": "p-me-cai",
+      "kind": "phrase",
+      "es": "me caí",
+      "de": "ich bin gefallen",
+      "forms": [
+        "me caí"
+      ],
+      "examples": [
+        {
+          "es": "Me caí en la escalera.",
+          "de": "Ich bin auf der Treppe gefallen."
+        }
+      ],
+      "note": "Auch das lernst du als feste Wendung. Danach sagst du, was dir weh tut: Me caí. Me duele la pierna."
+    },
+    {
+      "id": "w-billetera",
+      "kind": "word",
+      "es": "billetera",
+      "de": "Geldbörse",
+      "forms": [
+        "billetera",
+        "billeteras"
+      ],
+      "examples": [
+        {
+          "es": "Perdí mi billetera.",
+          "de": "Ich habe meine Geldbörse verloren."
+        }
+      ]
+    },
+    {
+      "id": "w-dinero",
+      "kind": "word",
+      "es": "dinero",
+      "de": "Geld",
+      "forms": [
+        "dinero"
+      ],
+      "examples": [
+        {
+          "es": "Me robaron el dinero.",
+          "de": "Man hat mir das Geld gestohlen."
+        }
+      ],
+      "freqRank": 164
+    },
+    {
+      "id": "w-documentos",
+      "kind": "word",
+      "es": "documentos",
+      "de": "Papiere, Dokumente",
+      "forms": [
+        "documento",
+        "documentos"
+      ],
+      "examples": [
+        {
+          "es": "Tengo mis documentos en el hostal.",
+          "de": "Meine Papiere sind im Hostal."
+        }
+      ],
+      "freqRank": 4761
+    },
+    {
+      "id": "w-embajada",
+      "kind": "word",
+      "es": "embajada",
+      "de": "Botschaft",
+      "forms": [
+        "embajada",
+        "embajadas"
+      ],
+      "examples": [
+        {
+          "es": "Quiero llamar a la embajada.",
+          "de": "Ich möchte die Botschaft anrufen."
+        }
+      ],
+      "chile": {
+        "note": "Nach einem Diebstahl oder bei einem verlorenen Pass rät die chilenische Tourismusbehörde, nach der Polizei auch die Botschaft des eigenen Landes zu informieren.",
+        "source": "Sernatur, Chile Travel, Safety precautions, https://chile.travel/en/good-to-know/safety-precautions/"
+      }
+    },
+    {
+      "id": "p-embajada-de-alemania",
+      "kind": "phrase",
+      "es": "la Embajada de Alemania",
+      "de": "die Deutsche Botschaft",
+      "forms": [
+        "embajada de alemania"
+      ],
+      "examples": [
+        {
+          "es": "Llamo a la Embajada de Alemania.",
+          "de": "Ich rufe die Deutsche Botschaft an."
+        }
+      ],
+      "note": "Wörtlich heißt es: die Botschaft von Deutschland."
+    },
+    {
+      "id": "w-seguro",
+      "kind": "word",
+      "es": "seguro",
+      "de": "Versicherung, sicher",
+      "forms": [
+        "seguro",
+        "seguros"
+      ],
+      "examples": [
+        {
+          "es": "Tengo un seguro en Alemania.",
+          "de": "Ich habe eine Versicherung in Deutschland."
+        }
+      ],
+      "note": "Seguro heißt auch sicher: Estoy seguro, ich bin sicher.",
+      "freqRank": 180
+    },
+    {
+      "id": "p-seguro-de-viaje",
+      "kind": "phrase",
+      "es": "seguro de viaje",
+      "de": "Reiseversicherung",
+      "forms": [
+        "seguro de viaje",
+        "seguro médico"
+      ],
+      "examples": [
+        {
+          "es": "Tengo seguro de viaje.",
+          "de": "Ich habe eine Reiseversicherung."
+        }
+      ],
+      "note": "Eine Krankenversicherung heißt seguro médico."
+    },
+    {
+      "id": "w-hospital",
+      "kind": "word",
+      "es": "hospital",
+      "de": "Krankenhaus",
+      "forms": [
+        "hospital",
+        "hospitales"
+      ],
+      "examples": [
+        {
+          "es": "El hospital queda cerca.",
+          "de": "Das Krankenhaus ist in der Nähe."
+        }
+      ],
+      "freqRank": 596
+    },
+    {
+      "id": "w-clinica",
+      "kind": "word",
+      "es": "clínica",
+      "de": "Klinik",
+      "forms": [
+        "clínica",
+        "clínicas"
+      ],
+      "examples": [
+        {
+          "es": "Voy a la clínica.",
+          "de": "Ich gehe in die Klinik."
+        }
+      ],
+      "note": "Clínica und hospital sind beides Orte, an denen Ärzte behandeln.",
+      "freqRank": 3107
+    },
+    {
+      "id": "w-posta",
+      "kind": "word",
+      "es": "posta",
+      "de": "kleine Gesundheitsstation",
+      "forms": [
+        "posta",
+        "postas"
+      ],
+      "examples": [
+        {
+          "es": "La posta está cerca.",
+          "de": "Die Gesundheitsstation ist in der Nähe."
+        }
+      ],
+      "note": "Die Posta Central ist die große Notaufnahme im Zentrum von Santiago.",
+      "chile": {
+        "note": "In Chile heißt eine Einrichtung der medizinischen Grundversorgung posta.",
+        "source": "Wiktionario, s. v. posta (Bedeutung 4, Ámbito: Chile), https://es.wiktionary.org/wiki/posta"
+      }
+    },
+    {
+      "id": "w-doctor",
+      "kind": "word",
+      "es": "doctor",
+      "de": "Arzt, Ärztin (als Anrede)",
+      "forms": [
+        "doctor",
+        "doctora",
+        "doctores"
+      ],
+      "examples": [
+        {
+          "es": "Buenos días, doctora.",
+          "de": "Guten Morgen, Frau Doktor."
+        }
+      ],
+      "note": "Doctor und doctora sind die übliche Anrede für Ärzte, auch ohne Namen.",
+      "freqRank": 403
+    },
+    {
+      "id": "w-enfermo",
+      "kind": "word",
+      "es": "enfermo",
+      "de": "krank",
+      "accept": [
+        "estoy enferma"
+      ],
+      "forms": [
+        "enfermo",
+        "enferma",
+        "enfermos",
+        "enfermas"
+      ],
+      "examples": [
+        {
+          "es": "Estoy enfermo.",
+          "de": "Ich bin krank."
+        }
+      ],
+      "note": "Krank sein heißt estar enfermo, es ist ein Zustand.",
+      "freqRank": 1184
+    },
+    {
+      "id": "w-enfermera",
+      "kind": "word",
+      "es": "enfermera",
+      "de": "Krankenschwester, Pfleger",
+      "forms": [
+        "enfermera",
+        "enfermero",
+        "enfermeras",
+        "enfermeros"
+      ],
+      "examples": [
+        {
+          "es": "La enfermera es muy amable.",
+          "de": "Die Krankenschwester ist sehr freundlich."
+        }
+      ],
+      "note": "Enfermera ist die Frau, enfermero der Mann.",
+      "freqRank": 1916
+    },
+    {
+      "id": "w-cita",
+      "kind": "word",
+      "es": "cita",
+      "de": "Termin, Verabredung",
+      "forms": [
+        "cita",
+        "citas"
+      ],
+      "examples": [
+        {
+          "es": "Tengo una cita con el médico.",
+          "de": "Ich habe einen Termin beim Arzt."
+        }
+      ],
+      "note": "Cita heißt auch Verabredung.",
+      "freqRank": 751
+    },
+    {
+      "id": "w-dentista",
+      "kind": "word",
+      "es": "dentista",
+      "de": "Zahnarzt, Zahnärztin",
+      "forms": [
+        "dentista",
+        "dentistas"
+      ],
+      "examples": [
+        {
+          "es": "Necesito un dentista.",
+          "de": "Ich brauche einen Zahnarzt."
+        }
+      ],
+      "note": "Dentista gilt für Männer und Frauen."
+    },
+    {
+      "id": "w-dolor",
+      "kind": "word",
+      "es": "dolor",
+      "de": "Schmerz",
+      "forms": [
+        "dolor",
+        "dolores"
+      ],
+      "examples": [
+        {
+          "es": "Tengo un dolor fuerte.",
+          "de": "Ich habe starke Schmerzen."
+        }
+      ],
+      "note": "Dolor ist das Hauptwort, doler das Verb: Me duele la cabeza.",
+      "freqRank": 733
+    },
+    {
+      "id": "w-doler",
+      "kind": "word",
+      "es": "doler",
+      "de": "wehtun",
+      "forms": [
+        "doler",
+        "duele",
+        "duelen"
+      ],
+      "examples": [
+        {
+          "es": "Me duele la espalda.",
+          "de": "Mein Rücken tut weh."
+        }
+      ],
+      "note": "Doler funktioniert wie gustar: Der Körperteil tut dir weh. Deshalb steht duele bei einem Körperteil und duelen bei mehreren."
+    },
+    {
+      "id": "p-me-duele",
+      "kind": "phrase",
+      "es": "me duele",
+      "de": "mir tut weh",
+      "forms": [
+        "me duele",
+        "te duele",
+        "le duele",
+        "me duelen",
+        "te duelen",
+        "le duelen"
+      ],
+      "examples": [
+        {
+          "es": "Me duele la cabeza.",
+          "de": "Mir tut der Kopf weh."
+        }
+      ],
+      "note": "Vor dem Körperteil steht der Artikel, nicht mi: me duele la cabeza, me duelen los pies."
+    },
+    {
+      "id": "p-donde-le-duele",
+      "kind": "phrase",
+      "es": "¿dónde le duele?",
+      "de": "wo tut es Ihnen weh?",
+      "forms": [
+        "dónde le duele",
+        "dónde te duele"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde le duele?",
+          "de": "Wo tut es Ihnen weh?"
+        }
+      ],
+      "note": "Das fragt dich ein Arzt. Mit tú heißt es: ¿Dónde te duele?"
+    },
+    {
+      "id": "p-dolor-de",
+      "kind": "phrase",
+      "es": "dolor de",
+      "de": "...schmerzen",
+      "forms": [
+        "dolor de cabeza",
+        "dolor de estómago",
+        "dolor de garganta",
+        "dolor de espalda",
+        "dolor de muelas",
+        "dolor de oído"
+      ],
+      "examples": [
+        {
+          "es": "Tengo dolor de cabeza.",
+          "de": "Ich habe Kopfschmerzen."
+        }
+      ],
+      "note": "Nach dolor de steht kein Artikel: dolor de cabeza, dolor de estómago."
+    },
+    {
+      "id": "w-cabeza",
+      "kind": "word",
+      "es": "cabeza",
+      "de": "Kopf",
+      "forms": [
+        "cabeza",
+        "cabezas"
+      ],
+      "examples": [
+        {
+          "es": "Me duele la cabeza.",
+          "de": "Mir tut der Kopf weh."
+        }
+      ],
+      "freqRank": 274
+    },
+    {
+      "id": "w-estomago",
+      "kind": "word",
+      "es": "estómago",
+      "de": "Magen, Bauch",
+      "forms": [
+        "estómago"
+      ],
+      "examples": [
+        {
+          "es": "Me duele el estómago.",
+          "de": "Mir tut der Bauch weh."
+        }
+      ],
+      "note": "Estómago heißt Magen und wird auch für den Bauch benutzt.",
+      "freqRank": 2318
+    },
+    {
+      "id": "w-garganta",
+      "kind": "word",
+      "es": "garganta",
+      "de": "Hals, Rachen",
+      "forms": [
+        "garganta"
+      ],
+      "examples": [
+        {
+          "es": "Me duele la garganta.",
+          "de": "Mir tut der Hals weh."
+        }
+      ],
+      "freqRank": 2887
+    },
+    {
+      "id": "w-espalda",
+      "kind": "word",
+      "es": "espalda",
+      "de": "Rücken",
+      "forms": [
+        "espalda"
+      ],
+      "examples": [
+        {
+          "es": "Me duele mucho la espalda.",
+          "de": "Mir tut der Rücken sehr weh."
+        }
+      ],
+      "freqRank": 1136
+    },
+    {
+      "id": "w-pierna",
+      "kind": "word",
+      "es": "pierna",
+      "de": "Bein",
+      "forms": [
+        "pierna",
+        "piernas"
+      ],
+      "examples": [
+        {
+          "es": "Me duele la pierna.",
+          "de": "Mir tut das Bein weh."
+        }
+      ],
+      "freqRank": 1676
+    },
+    {
+      "id": "w-brazo",
+      "kind": "word",
+      "es": "brazo",
+      "de": "Arm",
+      "forms": [
+        "brazo",
+        "brazos"
+      ],
+      "examples": [
+        {
+          "es": "Me duele el brazo.",
+          "de": "Mir tut der Arm weh."
+        }
+      ],
+      "freqRank": 1378
+    },
+    {
+      "id": "w-ojo",
+      "kind": "word",
+      "es": "ojo",
+      "de": "Auge",
+      "forms": [
+        "ojo",
+        "ojos"
+      ],
+      "examples": [
+        {
+          "es": "Me duelen los ojos.",
+          "de": "Mir tun die Augen weh."
+        }
+      ],
+      "note": "Der Plural los ojos steht für beide Augen.",
+      "freqRank": 1240
+    },
+    {
+      "id": "w-oido",
+      "kind": "word",
+      "es": "oído",
+      "de": "Ohr (innen), Gehör",
+      "forms": [
+        "oído",
+        "oídos"
+      ],
+      "examples": [
+        {
+          "es": "Me duele el oído.",
+          "de": "Mir tut das Ohr weh."
+        }
+      ],
+      "note": "Für Ohrenschmerzen sagst du oído. Das äußere Ohr heißt oreja.",
+      "freqRank": 543
+    },
+    {
+      "id": "w-muela",
+      "kind": "word",
+      "es": "muela",
+      "de": "Backenzahn, Zahn",
+      "forms": [
+        "muela",
+        "muelas"
+      ],
+      "examples": [
+        {
+          "es": "Me duele una muela.",
+          "de": "Mir tut ein Zahn weh."
+        }
+      ],
+      "note": "Bei Zahnschmerzen sagt man oft muela: dolor de muelas."
+    },
+    {
+      "id": "w-rodilla",
+      "kind": "word",
+      "es": "rodilla",
+      "de": "Knie",
+      "forms": [
+        "rodilla",
+        "rodillas"
+      ],
+      "examples": [
+        {
+          "es": "Me duele la rodilla.",
+          "de": "Mir tut das Knie weh."
+        }
+      ]
+    },
+    {
+      "id": "w-tobillo",
+      "kind": "word",
+      "es": "tobillo",
+      "de": "Knöchel",
+      "forms": [
+        "tobillo",
+        "tobillos"
+      ],
+      "examples": [
+        {
+          "es": "Me duele el tobillo.",
+          "de": "Mir tut der Knöchel weh."
+        }
+      ]
+    },
+    {
+      "id": "w-pie",
+      "kind": "word",
+      "es": "pie",
+      "de": "Fuß",
+      "forms": [
+        "pie",
+        "pies"
+      ],
+      "examples": [
+        {
+          "es": "Me duelen los pies.",
+          "de": "Mir tun die Füße weh."
+        }
+      ],
+      "note": "Der Plural heißt los pies.",
+      "freqRank": 738
+    },
+    {
+      "id": "w-fiebre",
+      "kind": "word",
+      "es": "fiebre",
+      "de": "Fieber",
+      "forms": [
+        "fiebre"
+      ],
+      "examples": [
+        {
+          "es": "Tengo fiebre desde ayer.",
+          "de": "Ich habe seit gestern Fieber."
+        }
+      ],
+      "note": "Fieber haben heißt tener fiebre.",
+      "freqRank": 3120
+    },
+    {
+      "id": "w-tos",
+      "kind": "word",
+      "es": "tos",
+      "de": "Husten",
+      "forms": [
+        "tos"
+      ],
+      "examples": [
+        {
+          "es": "Tengo tos y fiebre.",
+          "de": "Ich habe Husten und Fieber."
+        }
+      ],
+      "note": "Husten haben heißt tener tos."
+    },
+    {
+      "id": "w-resfrio",
+      "kind": "word",
+      "es": "resfrío",
+      "de": "Erkältung",
+      "forms": [
+        "resfrío",
+        "resfriado",
+        "resfriada"
+      ],
+      "examples": [
+        {
+          "es": "Tengo un resfrío.",
+          "de": "Ich habe eine Erkältung."
+        }
+      ],
+      "note": "Erkältet sein heißt estar resfriado."
+    },
+    {
+      "id": "w-diarrea",
+      "kind": "word",
+      "es": "diarrea",
+      "de": "Durchfall",
+      "forms": [
+        "diarrea"
+      ],
+      "examples": [
+        {
+          "es": "Tengo diarrea desde anoche.",
+          "de": "Ich habe seit gestern Abend Durchfall."
+        }
+      ]
+    },
+    {
+      "id": "w-nauseas",
+      "kind": "word",
+      "es": "náuseas",
+      "de": "Übelkeit",
+      "forms": [
+        "náuseas",
+        "náusea"
+      ],
+      "examples": [
+        {
+          "es": "Tengo náuseas.",
+          "de": "Mir ist übel."
+        }
+      ],
+      "note": "Tengo náuseas heißt wörtlich: Ich habe Übelkeit."
+    },
+    {
+      "id": "w-mareado",
+      "kind": "word",
+      "es": "mareado",
+      "de": "schwindelig",
+      "accept": [
+        "estoy mareada"
+      ],
+      "forms": [
+        "mareado",
+        "mareada",
+        "mareo"
+      ],
+      "examples": [
+        {
+          "es": "Estoy mareado.",
+          "de": "Mir ist schwindelig."
+        }
+      ],
+      "note": "Mareo ist der Schwindel. Mareado sagst du mit estar."
+    },
+    {
+      "id": "p-me-siento-mal",
+      "kind": "phrase",
+      "es": "me siento mal",
+      "de": "mir geht es schlecht",
+      "forms": [
+        "me siento mal",
+        "me siento bien",
+        "no me siento bien",
+        "me siento"
+      ],
+      "examples": [
+        {
+          "es": "No me siento bien.",
+          "de": "Mir geht es nicht gut."
+        }
+      ],
+      "note": "Sentirse heißt sich fühlen: me siento, te sientes, se siente."
+    },
+    {
+      "id": "w-herida",
+      "kind": "word",
+      "es": "herida",
+      "de": "Wunde, Verletzung",
+      "forms": [
+        "herida",
+        "heridas"
+      ],
+      "examples": [
+        {
+          "es": "Tengo una herida en la mano.",
+          "de": "Ich habe eine Wunde an der Hand."
+        }
+      ],
+      "freqRank": 1759
+    },
+    {
+      "id": "w-accidente",
+      "kind": "word",
+      "es": "accidente",
+      "de": "Unfall",
+      "forms": [
+        "accidente",
+        "accidentes"
+      ],
+      "examples": [
+        {
+          "es": "Hay un accidente en la calle.",
+          "de": "Auf der Straße ist ein Unfall."
+        }
+      ],
+      "freqRank": 800
+    },
+    {
+      "id": "w-grave",
+      "kind": "word",
+      "es": "grave",
+      "de": "schwer, ernst",
+      "forms": [
+        "grave",
+        "graves"
+      ],
+      "examples": [
+        {
+          "es": "No es grave.",
+          "de": "Es ist nicht schlimm."
+        }
+      ],
+      "note": "Grave gilt für Männer und Frauen gleich.",
+      "freqRank": 1771
+    },
+    {
+      "id": "w-fuerte",
+      "kind": "word",
+      "es": "fuerte",
+      "de": "stark, heftig",
+      "forms": [
+        "fuerte",
+        "fuertes"
+      ],
+      "examples": [
+        {
+          "es": "Es un dolor muy fuerte.",
+          "de": "Es ist ein sehr starker Schmerz."
+        }
+      ],
+      "freqRank": 465
+    },
+    {
+      "id": "w-hinchado",
+      "kind": "word",
+      "es": "hinchado",
+      "de": "geschwollen",
+      "forms": [
+        "hinchado",
+        "hinchada"
+      ],
+      "examples": [
+        {
+          "es": "Tengo el pie hinchado.",
+          "de": "Mein Fuß ist geschwollen."
+        }
+      ]
+    },
+    {
+      "id": "w-respirar",
+      "kind": "word",
+      "es": "respirar",
+      "de": "atmen",
+      "forms": [
+        "respirar",
+        "respiro",
+        "respira"
+      ],
+      "examples": [
+        {
+          "es": "No puedo respirar bien.",
+          "de": "Ich kann nicht gut atmen."
+        }
+      ],
+      "freqRank": 2364
+    },
+    {
+      "id": "w-descansar",
+      "kind": "word",
+      "es": "descansar",
+      "de": "sich ausruhen",
+      "forms": [
+        "descansar",
+        "descanso",
+        "descansa"
+      ],
+      "examples": [
+        {
+          "es": "Necesito descansar.",
+          "de": "Ich muss mich ausruhen."
+        }
+      ],
+      "freqRank": 1937
+    },
+    {
+      "id": "p-que-le-pasa",
+      "kind": "phrase",
+      "es": "¿qué le pasa?",
+      "de": "was fehlt Ihnen?",
+      "forms": [
+        "qué le pasa",
+        "qué te pasa"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué le pasa?",
+          "de": "Was fehlt Ihnen?"
+        }
+      ],
+      "note": "Wörtlich heißt es: Was passiert Ihnen? Mit tú: ¿Qué te pasa?"
+    },
+    {
+      "id": "p-desde-cuando",
+      "kind": "phrase",
+      "es": "¿desde cuándo?",
+      "de": "seit wann?",
+      "forms": [
+        "desde cuándo"
+      ],
+      "examples": [
+        {
+          "es": "¿Desde cuándo tiene fiebre?",
+          "de": "Seit wann haben Sie Fieber?"
+        }
+      ]
+    },
+    {
+      "id": "w-ayer",
+      "kind": "word",
+      "es": "ayer",
+      "de": "gestern",
+      "forms": [
+        "ayer"
+      ],
+      "examples": [
+        {
+          "es": "Tengo tos desde ayer.",
+          "de": "Ich habe seit gestern Husten."
+        }
+      ],
+      "freqRank": 670
+    },
+    {
+      "id": "w-anoche",
+      "kind": "word",
+      "es": "anoche",
+      "de": "gestern Abend, letzte Nacht",
+      "forms": [
+        "anoche"
+      ],
+      "examples": [
+        {
+          "es": "Tengo náuseas desde anoche.",
+          "de": "Mir ist seit gestern Abend übel."
+        }
+      ],
+      "freqRank": 580
+    },
+    {
+      "id": "p-no-se-preocupe",
+      "kind": "phrase",
+      "es": "no se preocupe",
+      "de": "keine Sorge",
+      "forms": [
+        "no se preocupe",
+        "no te preocupes"
+      ],
+      "examples": [
+        {
+          "es": "No se preocupe, no es grave.",
+          "de": "Keine Sorge, es ist nicht schlimm."
+        }
+      ],
+      "note": "Das hörst du von Ärzten und Angestellten, mit usted. Unter Freunden: no te preocupes."
+    },
+    {
+      "id": "p-soy-alergico-a",
+      "kind": "phrase",
+      "es": "soy alérgico a",
+      "de": "ich bin allergisch gegen",
+      "accept": [
+        "tengo alergia a"
+      ],
+      "forms": [
+        "soy alérgico a",
+        "soy alérgica a",
+        "alérgico a",
+        "alérgica a",
+        "tengo alergia a"
+      ],
+      "examples": [
+        {
+          "es": "Soy alérgico a este medicamento.",
+          "de": "Ich bin gegen dieses Medikament allergisch."
+        }
+      ],
+      "note": "Frauen sagen soy alérgica a. Du kannst auch sagen: Tengo alergia a."
+    },
+    {
+      "id": "w-remedio",
+      "kind": "word",
+      "es": "remedio",
+      "de": "Medikament, Mittel",
+      "forms": [
+        "remedio",
+        "remedios"
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene un remedio para la tos?",
+          "de": "Haben Sie ein Mittel gegen Husten?"
+        }
+      ],
+      "note": "Remedio und medicamento meinen beide ein Medikament.",
+      "freqRank": 4716
+    },
+    {
+      "id": "w-medicamento",
+      "kind": "word",
+      "es": "medicamento",
+      "de": "Medikament",
+      "forms": [
+        "medicamento",
+        "medicamentos"
+      ],
+      "examples": [
+        {
+          "es": "Tomo este medicamento todos los días.",
+          "de": "Ich nehme dieses Medikament jeden Tag."
+        }
+      ]
+    },
+    {
+      "id": "w-pastilla",
+      "kind": "word",
+      "es": "pastilla",
+      "de": "Tablette",
+      "forms": [
+        "pastilla",
+        "pastillas"
+      ],
+      "examples": [
+        {
+          "es": "Una pastilla para el dolor, por favor.",
+          "de": "Eine Tablette gegen die Schmerzen, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-receta",
+      "kind": "word",
+      "es": "receta",
+      "de": "Rezept",
+      "forms": [
+        "receta",
+        "recetas"
+      ],
+      "examples": [
+        {
+          "es": "No tengo receta.",
+          "de": "Ich habe kein Rezept."
+        }
+      ],
+      "note": "Receta heißt auch das Rezept zum Kochen.",
+      "freqRank": 4599
+    },
+    {
+      "id": "p-sin-receta",
+      "kind": "phrase",
+      "es": "sin receta",
+      "de": "ohne Rezept",
+      "forms": [
+        "sin receta",
+        "con receta"
+      ],
+      "examples": [
+        {
+          "es": "¿Se puede comprar sin receta?",
+          "de": "Kann man das ohne Rezept kaufen?"
+        }
+      ],
+      "note": "Con receta heißt mit Rezept."
+    },
+    {
+      "id": "w-paracetamol",
+      "kind": "word",
+      "es": "paracetamol",
+      "de": "Paracetamol",
+      "forms": [
+        "paracetamol"
+      ],
+      "examples": [
+        {
+          "es": "Quiero paracetamol.",
+          "de": "Ich möchte Paracetamol."
+        }
+      ],
+      "note": "Betont wird die letzte Silbe: paracetamól."
+    },
+    {
+      "id": "w-ibuprofeno",
+      "kind": "word",
+      "es": "ibuprofeno",
+      "de": "Ibuprofen",
+      "forms": [
+        "ibuprofeno"
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene ibuprofeno?",
+          "de": "Haben Sie Ibuprofen?"
+        }
+      ]
+    },
+    {
+      "id": "w-venda",
+      "kind": "word",
+      "es": "venda",
+      "de": "Verband",
+      "forms": [
+        "venda",
+        "vendas"
+      ],
+      "examples": [
+        {
+          "es": "Necesito una venda para la mano.",
+          "de": "Ich brauche einen Verband für die Hand."
+        }
+      ]
+    },
+    {
+      "id": "p-protector-solar",
+      "kind": "phrase",
+      "es": "protector solar",
+      "de": "Sonnencreme",
+      "forms": [
+        "protector solar"
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene protector solar?",
+          "de": "Haben Sie Sonnencreme?"
+        }
+      ]
+    },
+    {
+      "id": "p-algo-para",
+      "kind": "phrase",
+      "es": "algo para",
+      "de": "etwas gegen, etwas für",
+      "forms": [
+        "algo para",
+        "algo para el dolor",
+        "algo para la tos"
+      ],
+      "examples": [
+        {
+          "es": "¿Tiene algo para el dolor de cabeza?",
+          "de": "Haben Sie etwas gegen Kopfschmerzen?"
+        }
+      ],
+      "note": "Algo para und eine Beschwerde heißt etwas gegen: algo para la tos, etwas gegen Husten."
+    },
+    {
+      "id": "p-cada-ocho-horas",
+      "kind": "phrase",
+      "es": "cada ocho horas",
+      "de": "alle acht Stunden",
+      "forms": [
+        "cada ocho horas",
+        "cada seis horas",
+        "cada doce horas"
+      ],
+      "examples": [
+        {
+          "es": "Una pastilla cada ocho horas.",
+          "de": "Eine Tablette alle acht Stunden."
+        }
+      ]
+    },
+    {
+      "id": "p-dos-veces-al-dia",
+      "kind": "phrase",
+      "es": "dos veces al día",
+      "de": "zweimal am Tag",
+      "forms": [
+        "dos veces al día",
+        "tres veces al día",
+        "una vez al día",
+        "veces",
+        "vez"
+      ],
+      "examples": [
+        {
+          "es": "Una pastilla dos veces al día.",
+          "de": "Eine Tablette zweimal am Tag."
+        }
+      ],
+      "note": "Vez heißt Mal, veces ist der Plural: una vez, dos veces."
+    },
+    {
+      "id": "p-tome-una-pastilla",
+      "kind": "phrase",
+      "es": "tome una pastilla",
+      "de": "nehmen Sie eine Tablette",
+      "forms": [
+        "tome una pastilla",
+        "tome"
+      ],
+      "examples": [
+        {
+          "es": "Tome una pastilla dos veces al día.",
+          "de": "Nehmen Sie zweimal am Tag eine Tablette."
+        }
+      ],
+      "note": "Tome ist die Befehlsform mit usted von tomar. Hier hörst du sie beim Arzt und in der Apotheke."
+    },
+    {
+      "id": "p-las-24-horas",
+      "kind": "phrase",
+      "es": "veinticuatro horas",
+      "de": "rund um die Uhr",
+      "forms": [
+        "veinticuatro horas",
+        "veinticuatro"
+      ],
+      "examples": [
+        {
+          "es": "El SAMU funciona veinticuatro horas.",
+          "de": "Der SAMU ist rund um die Uhr im Dienst."
+        }
+      ],
+      "note": "Wörtlich heißt es: vierundzwanzig Stunden."
+    },
+    {
+      "id": "w-alguien",
+      "kind": "word",
+      "es": "alguien",
+      "de": "jemand",
+      "forms": [
+        "alguien"
+      ],
+      "examples": [
+        {
+          "es": "¿Alguien habla inglés?",
+          "de": "Spricht jemand Englisch?"
+        }
+      ],
+      "freqRank": 123
+    },
+    {
+      "id": "p-venga-rapido",
+      "kind": "phrase",
+      "es": "venga rápido",
+      "de": "kommen Sie schnell",
+      "forms": [
+        "venga rápido",
+        "venga",
+        "vengan"
+      ],
+      "examples": [
+        {
+          "es": "Venga rápido, por favor.",
+          "de": "Kommen Sie bitte schnell."
+        }
+      ],
+      "note": "Venga ist die Befehlsform mit usted von venir."
+    },
+    {
+      "id": "p-llame",
+      "kind": "phrase",
+      "es": "llame",
+      "de": "rufen Sie an",
+      "forms": [
+        "llame",
+        "llame a",
+        "llame al"
+      ],
+      "examples": [
+        {
+          "es": "Llame a una ambulancia, por favor.",
+          "de": "Rufen Sie bitte einen Krankenwagen."
+        }
+      ],
+      "note": "Llame ist die Befehlsform mit usted. Du rufst jemanden an mit llamar a: llame a la policía, llame al 131."
+    },
+    {
+      "id": "p-lo-antes-posible",
+      "kind": "phrase",
+      "es": "lo antes posible",
+      "de": "so schnell wie möglich",
+      "forms": [
+        "lo antes posible"
+      ],
+      "examples": [
+        {
+          "es": "Necesito un médico lo antes posible.",
+          "de": "Ich brauche so schnell wie möglich einen Arzt."
+        }
+      ]
+    },
+    {
+      "id": "p-ahora-mismo",
+      "kind": "phrase",
+      "es": "ahora mismo",
+      "de": "sofort, gerade jetzt",
+      "forms": [
+        "ahora mismo"
+      ],
+      "examples": [
+        {
+          "es": "Necesito ayuda ahora mismo.",
+          "de": "Ich brauche sofort Hilfe."
+        }
+      ]
+    },
+    {
+      "id": "p-cual-es-la-emergencia",
+      "kind": "phrase",
+      "es": "¿cuál es la emergencia?",
+      "de": "was ist der Notfall?",
+      "forms": [
+        "cuál es la emergencia"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es la emergencia?",
+          "de": "Was ist der Notfall?"
+        }
+      ],
+      "note": "Das fragt dich die Person am Notruf."
+    },
+    {
+      "id": "p-por-eso",
+      "kind": "phrase",
+      "es": "por eso",
+      "de": "deshalb",
+      "forms": [
+        "por eso"
+      ],
+      "examples": [
+        {
+          "es": "Me duele la cabeza, por eso necesito una pastilla.",
+          "de": "Mir tut der Kopf weh, deshalb brauche ich eine Tablette."
+        }
+      ],
+      "note": "Por nennt den Grund: por eso, deshalb."
+    },
+    {
+      "id": "p-gracias-por",
+      "kind": "phrase",
+      "es": "gracias por",
+      "de": "danke für",
+      "forms": [
+        "gracias por"
+      ],
+      "examples": [
+        {
+          "es": "Gracias por su ayuda.",
+          "de": "Danke für Ihre Hilfe."
+        }
+      ]
+    },
+    {
+      "id": "p-por-telefono",
+      "kind": "phrase",
+      "es": "por teléfono",
+      "de": "per Telefon",
+      "forms": [
+        "por teléfono"
+      ],
+      "examples": [
+        {
+          "es": "Hablo con la embajada por teléfono.",
+          "de": "Ich spreche telefonisch mit der Botschaft."
+        }
+      ],
+      "note": "Por nennt hier das Mittel, über das etwas läuft: por teléfono, por WhatsApp."
+    },
+    {
+      "id": "p-para-mi",
+      "kind": "phrase",
+      "es": "para mí",
+      "de": "für mich",
+      "accept": [
+        "para mi"
+      ],
+      "forms": [
+        "para mí",
+        "para ti",
+        "para usted"
+      ],
+      "examples": [
+        {
+          "es": "El medicamento es para mí.",
+          "de": "Das Medikament ist für mich."
+        }
+      ],
+      "note": "Nach para steht mí mit Akzent. Nach con heißt es conmigo."
+    },
+    {
+      "id": "w-incendio",
+      "kind": "word",
+      "es": "incendio",
+      "de": "Brand, Feuer",
+      "forms": [
+        "incendio",
+        "incendios"
+      ],
+      "examples": [
+        {
+          "es": "Hay un incendio en el cerro.",
+          "de": "Auf dem Hügel brennt es."
+        }
+      ],
+      "freqRank": 2796
+    },
+    {
+      "id": "w-temblor",
+      "kind": "word",
+      "es": "temblor",
+      "de": "Beben, Erdbeben",
+      "forms": [
+        "temblor",
+        "temblores"
+      ],
+      "examples": [
+        {
+          "es": "En Santiago hay temblores.",
+          "de": "In Santiago gibt es Erdbeben."
+        }
+      ],
+      "note": "Temblor ist ein Beben, auch ein leichtes. Ein starkes Beben heißt terremoto.",
+      "chile": {
+        "note": "Chile ist ein Land mit hoher seismischer und vulkanischer Aktivität.",
+        "source": "Sernatur, Chile Travel, Safety precautions, https://chile.travel/en/good-to-know/safety-precautions/"
+      }
+    },
+    {
+      "id": "w-terremoto",
+      "kind": "word",
+      "es": "terremoto",
+      "de": "starkes Erdbeben",
+      "forms": [
+        "terremoto",
+        "terremotos"
+      ],
+      "examples": [
+        {
+          "es": "Un terremoto es un temblor muy fuerte.",
+          "de": "Ein Terremoto ist ein sehr starkes Beben."
+        }
+      ]
+    },
+    {
+      "id": "w-alerta",
+      "kind": "word",
+      "es": "alerta",
+      "de": "Warnung, Alarm",
+      "forms": [
+        "alerta",
+        "alertas"
+      ],
+      "examples": [
+        {
+          "es": "Hay una alerta en el celular.",
+          "de": "Auf dem Handy ist eine Warnung."
+        }
+      ],
+      "chile": {
+        "note": "Bei Evakuierungen kommen Warnungen auf das Handy (SAE). Man soll auf Sirenen und Anweisungen der Behörden achten.",
+        "source": "Sernatur, Chile Travel, Safety precautions, https://chile.travel/en/good-to-know/safety-precautions/"
+      },
+      "freqRank": 2679
+    },
+    {
+      "id": "w-instrucciones",
+      "kind": "word",
+      "es": "instrucciones",
+      "de": "Anweisungen",
+      "forms": [
+        "instrucción",
+        "instrucciones"
+      ],
+      "examples": [
+        {
+          "es": "Hay que seguir las instrucciones.",
+          "de": "Man muss den Anweisungen folgen."
+        }
+      ]
+    },
+    {
+      "id": "w-senapred",
+      "kind": "word",
+      "es": "SENAPRED",
+      "de": "Katastrophenschutzbehörde Chiles",
+      "forms": [
+        "senapred"
+      ],
+      "examples": [
+        {
+          "es": "Senapred informa sobre los temblores.",
+          "de": "Senapred informiert über die Beben."
+        }
+      ],
+      "note": "Senapred steht für Servicio Nacional de Prevención y Respuesta ante Desastres.",
+      "chile": {
+        "note": "Senapred ist die offizielle Behörde für Notfälle und Naturkatastrophen. Auf X informiert @senapredchile.",
+        "source": "Sernatur, Chile Travel, Safety precautions, https://chile.travel/en/good-to-know/safety-precautions/"
+      }
+    },
+    {
+      "id": "s-necesito-un-medico",
+      "kind": "sentence",
+      "es": "Necesito un médico.",
+      "de": "Ich brauche einen Arzt.",
+      "accept": [
+        "Necesito un doctor."
+      ]
+    },
+    {
+      "id": "s-necesito-ayuda-por-favor",
+      "kind": "sentence",
+      "es": "Necesito ayuda, por favor.",
+      "de": "Ich brauche Hilfe, bitte."
+    },
+    {
+      "id": "s-me-puede-ayudar-por-favor",
+      "kind": "sentence",
+      "es": "¿Me puede ayudar, por favor?",
+      "de": "Können Sie mir bitte helfen?",
+      "accept": [
+        "¿Puede ayudarme, por favor?"
+      ]
+    },
+    {
+      "id": "s-hay-una-farmacia-cerca-de-aqui",
+      "kind": "sentence",
+      "es": "¿Hay una farmacia cerca de aquí?",
+      "de": "Gibt es hier in der Nähe eine Apotheke?",
+      "accept": [
+        "¿Hay una farmacia por aquí?"
+      ]
+    },
+    {
+      "id": "s-donde-queda-el-hospital",
+      "kind": "sentence",
+      "es": "¿Dónde queda el hospital?",
+      "de": "Wo ist das Krankenhaus?",
+      "accept": [
+        "¿Dónde está el hospital?"
+      ]
+    },
+    {
+      "id": "s-donde-queda-la-comisaria",
+      "kind": "sentence",
+      "es": "¿Dónde queda la comisaría?",
+      "de": "Wo ist die Polizeiwache?",
+      "accept": [
+        "¿Dónde está la comisaría?"
+      ]
+    },
+    {
+      "id": "s-llame-a-una-ambulancia-por-favor",
+      "kind": "sentence",
+      "es": "Llame a una ambulancia, por favor.",
+      "de": "Rufen Sie bitte einen Krankenwagen.",
+      "accept": [
+        "Llame una ambulancia, por favor."
+      ]
+    },
+    {
+      "id": "s-llame-al-uno-tres-uno",
+      "kind": "sentence",
+      "es": "Llame al uno tres uno.",
+      "de": "Rufen Sie die 131 an.",
+      "accept": [
+        "Llame al 131."
+      ]
+    },
+    {
+      "id": "s-llame-a-la-policia-por-favor",
+      "kind": "sentence",
+      "es": "Llame a la policía, por favor.",
+      "de": "Rufen Sie bitte die Polizei.",
+      "accept": [
+        "Llame a Carabineros, por favor."
+      ]
+    },
+    {
+      "id": "s-llame-a-los-bomberos-hay-un",
+      "kind": "sentence",
+      "es": "Llame a los bomberos, hay un incendio.",
+      "de": "Rufen Sie die Feuerwehr, da ist ein Brand."
+    },
+    {
+      "id": "s-es-una-emergencia",
+      "kind": "sentence",
+      "es": "Es una emergencia.",
+      "de": "Es ist ein Notfall."
+    },
+    {
+      "id": "s-venga-rapido-por-favor",
+      "kind": "sentence",
+      "es": "Venga rápido, por favor.",
+      "de": "Kommen Sie bitte schnell."
+    },
+    {
+      "id": "s-estoy-en-la-calle-lastarria-cerca",
+      "kind": "sentence",
+      "es": "Estoy en la calle Lastarria, cerca del metro.",
+      "de": "Ich bin in der Calle Lastarria, in der Nähe der Metro."
+    },
+    {
+      "id": "s-no-se-la-direccion",
+      "kind": "sentence",
+      "es": "No sé la dirección.",
+      "de": "Ich kenne die Adresse nicht."
+    },
+    {
+      "id": "s-me-duele-la-cabeza",
+      "kind": "sentence",
+      "es": "Me duele la cabeza.",
+      "de": "Mir tut der Kopf weh.",
+      "accept": [
+        "Tengo dolor de cabeza."
+      ]
+    },
+    {
+      "id": "s-me-duele-el-estomago",
+      "kind": "sentence",
+      "es": "Me duele el estómago.",
+      "de": "Mir tut der Bauch weh.",
+      "accept": [
+        "Tengo dolor de estómago."
+      ]
+    },
+    {
+      "id": "s-me-duele-la-garganta",
+      "kind": "sentence",
+      "es": "Me duele la garganta.",
+      "de": "Mir tut der Hals weh.",
+      "accept": [
+        "Tengo dolor de garganta."
+      ]
+    },
+    {
+      "id": "s-me-duelen-los-pies",
+      "kind": "sentence",
+      "es": "Me duelen los pies.",
+      "de": "Mir tun die Füße weh."
+    },
+    {
+      "id": "s-me-duele-una-muela",
+      "kind": "sentence",
+      "es": "Me duele una muela.",
+      "de": "Mir tut ein Zahn weh.",
+      "accept": [
+        "Tengo dolor de muelas."
+      ]
+    },
+    {
+      "id": "s-me-duele-mucho-la-espalda",
+      "kind": "sentence",
+      "es": "Me duele mucho la espalda.",
+      "de": "Mir tut der Rücken sehr weh."
+    },
+    {
+      "id": "s-donde-le-duele",
+      "kind": "sentence",
+      "es": "¿Dónde le duele?",
+      "de": "Wo tut es Ihnen weh?"
+    },
+    {
+      "id": "s-me-duele-aqui",
+      "kind": "sentence",
+      "es": "Me duele aquí.",
+      "de": "Hier tut es mir weh."
+    },
+    {
+      "id": "s-tengo-fiebre",
+      "kind": "sentence",
+      "es": "Tengo fiebre.",
+      "de": "Ich habe Fieber."
+    },
+    {
+      "id": "s-tengo-tos-y-fiebre-desde-ayer",
+      "kind": "sentence",
+      "es": "Tengo tos y fiebre desde ayer.",
+      "de": "Ich habe seit gestern Husten und Fieber."
+    },
+    {
+      "id": "s-tengo-diarrea",
+      "kind": "sentence",
+      "es": "Tengo diarrea.",
+      "de": "Ich habe Durchfall."
+    },
+    {
+      "id": "s-estoy-mareado",
+      "kind": "sentence",
+      "es": "Estoy mareado.",
+      "de": "Mir ist schwindelig.",
+      "accept": [
+        "Estoy mareada.",
+        "Me siento mareado."
+      ]
+    },
+    {
+      "id": "s-no-me-siento-bien",
+      "kind": "sentence",
+      "es": "No me siento bien.",
+      "de": "Mir geht es nicht gut.",
+      "accept": [
+        "Me siento mal."
+      ]
+    },
+    {
+      "id": "s-estoy-enfermo",
+      "kind": "sentence",
+      "es": "Estoy enfermo.",
+      "de": "Ich bin krank.",
+      "accept": [
+        "Estoy enferma."
+      ]
+    },
+    {
+      "id": "s-no-puedo-respirar-bien",
+      "kind": "sentence",
+      "es": "No puedo respirar bien.",
+      "de": "Ich kann nicht gut atmen."
+    },
+    {
+      "id": "s-tengo-el-pie-hinchado",
+      "kind": "sentence",
+      "es": "Tengo el pie hinchado.",
+      "de": "Mein Fuß ist geschwollen.",
+      "accept": [
+        "Tengo hinchado el pie."
+      ]
+    },
+    {
+      "id": "s-tengo-un-dolor-muy-fuerte",
+      "kind": "sentence",
+      "es": "Tengo un dolor muy fuerte.",
+      "de": "Ich habe sehr starke Schmerzen.",
+      "accept": [
+        "Tengo mucho dolor."
+      ]
+    },
+    {
+      "id": "s-no-es-grave",
+      "kind": "sentence",
+      "es": "No es grave.",
+      "de": "Es ist nicht schlimm.",
+      "accept": [
+        "No es nada grave."
+      ]
+    },
+    {
+      "id": "s-necesito-algo-para-el-dolor",
+      "kind": "sentence",
+      "es": "Necesito algo para el dolor.",
+      "de": "Ich brauche etwas gegen die Schmerzen."
+    },
+    {
+      "id": "s-tiene-algo-para-el-dolor-de",
+      "kind": "sentence",
+      "es": "¿Tiene algo para el dolor de cabeza?",
+      "de": "Haben Sie etwas gegen Kopfschmerzen?",
+      "accept": [
+        "¿Tiene un remedio para el dolor de cabeza?"
+      ]
+    },
+    {
+      "id": "s-se-puede-comprar-sin-receta",
+      "kind": "sentence",
+      "es": "¿Se puede comprar sin receta?",
+      "de": "Kann man das ohne Rezept kaufen?",
+      "accept": [
+        "¿Se vende sin receta?"
+      ]
+    },
+    {
+      "id": "s-no-tengo-receta",
+      "kind": "sentence",
+      "es": "No tengo receta.",
+      "de": "Ich habe kein Rezept."
+    },
+    {
+      "id": "s-una-pastilla-cada-ocho-horas",
+      "kind": "sentence",
+      "es": "Una pastilla cada ocho horas.",
+      "de": "Eine Tablette alle acht Stunden."
+    },
+    {
+      "id": "s-dos-veces-al-dia",
+      "kind": "sentence",
+      "es": "Dos veces al día.",
+      "de": "Zweimal am Tag."
+    },
+    {
+      "id": "s-soy-alergico-a-este-medicamento",
+      "kind": "sentence",
+      "es": "Soy alérgico a este medicamento.",
+      "de": "Ich bin gegen dieses Medikament allergisch.",
+      "accept": [
+        "Soy alérgica a este medicamento.",
+        "Tengo alergia a este medicamento."
+      ]
+    },
+    {
+      "id": "s-tomo-este-medicamento-todos-los-dias",
+      "kind": "sentence",
+      "es": "Tomo este medicamento todos los días.",
+      "de": "Ich nehme dieses Medikament jeden Tag.",
+      "accept": [
+        "Tomo este remedio todos los días."
+      ]
+    },
+    {
+      "id": "s-el-medicamento-es-para-mi",
+      "kind": "sentence",
+      "es": "El medicamento es para mí.",
+      "de": "Das Medikament ist für mich.",
+      "accept": [
+        "El remedio es para mí."
+      ]
+    },
+    {
+      "id": "s-necesito-una-venda-para-la-mano",
+      "kind": "sentence",
+      "es": "Necesito una venda para la mano.",
+      "de": "Ich brauche einen Verband für die Hand."
+    },
+    {
+      "id": "s-quiero-hacer-una-denuncia",
+      "kind": "sentence",
+      "es": "Quiero hacer una denuncia.",
+      "de": "Ich möchte eine Anzeige machen."
+    },
+    {
+      "id": "s-me-robaron-la-mochila",
+      "kind": "sentence",
+      "es": "Me robaron la mochila.",
+      "de": "Man hat mir den Rucksack gestohlen."
+    },
+    {
+      "id": "s-me-robaron-el-celular",
+      "kind": "sentence",
+      "es": "Me robaron el celular.",
+      "de": "Man hat mir das Handy gestohlen.",
+      "accept": [
+        "Me robaron el teléfono."
+      ]
+    },
+    {
+      "id": "s-me-robaron-la-billetera-con-el",
+      "kind": "sentence",
+      "es": "Me robaron la billetera con el dinero.",
+      "de": "Man hat mir die Geldbörse mit dem Geld gestohlen."
+    },
+    {
+      "id": "s-perdi-mi-pasaporte",
+      "kind": "sentence",
+      "es": "Perdí mi pasaporte.",
+      "de": "Ich habe meinen Pass verloren.",
+      "accept": [
+        "Perdí el pasaporte."
+      ]
+    },
+    {
+      "id": "s-perdi-mis-documentos",
+      "kind": "sentence",
+      "es": "Perdí mis documentos.",
+      "de": "Ich habe meine Papiere verloren."
+    },
+    {
+      "id": "s-me-cai-en-la-escalera",
+      "kind": "sentence",
+      "es": "Me caí en la escalera.",
+      "de": "Ich bin auf der Treppe gefallen.",
+      "accept": [
+        "Me caí en las escaleras."
+      ]
+    },
+    {
+      "id": "s-necesito-la-denuncia-para-el-seguro",
+      "kind": "sentence",
+      "es": "Necesito la denuncia para el seguro.",
+      "de": "Ich brauche die Anzeige für die Versicherung."
+    },
+    {
+      "id": "s-tengo-seguro-de-viaje",
+      "kind": "sentence",
+      "es": "Tengo seguro de viaje.",
+      "de": "Ich habe eine Reiseversicherung.",
+      "accept": [
+        "Tengo un seguro de viaje."
+      ]
+    },
+    {
+      "id": "s-quiero-llamar-a-la-embajada",
+      "kind": "sentence",
+      "es": "Quiero llamar a la embajada.",
+      "de": "Ich möchte die Botschaft anrufen."
+    },
+    {
+      "id": "s-alguien-habla-ingles",
+      "kind": "sentence",
+      "es": "¿Alguien habla inglés?",
+      "de": "Spricht jemand Englisch?"
+    },
+    {
+      "id": "s-no-hablo-bien-espanol",
+      "kind": "sentence",
+      "es": "No hablo bien español.",
+      "de": "Ich spreche nicht gut Spanisch.",
+      "accept": [
+        "No hablo mucho español."
+      ]
+    },
+    {
+      "id": "s-la-llamada-al-uno-tres-uno",
+      "kind": "sentence",
+      "es": "La llamada al uno tres uno es gratis.",
+      "de": "Der Anruf bei der 131 ist kostenlos.",
+      "accept": [
+        "La llamada al 131 es gratis."
+      ]
+    },
+    {
+      "id": "s-el-uno-tres-tres-es-el",
+      "kind": "sentence",
+      "es": "El uno tres tres es el número de Carabineros.",
+      "de": "Die 133 ist die Nummer der Carabineros.",
+      "accept": [
+        "El 133 es el número de Carabineros."
+      ]
+    },
+    {
+      "id": "s-es-un-temblor-no-es-grave",
+      "kind": "sentence",
+      "es": "Es un temblor, no es grave.",
+      "de": "Es ist ein Beben, es ist nicht schlimm."
+    },
+    {
+      "id": "s-gracias-por-su-ayuda",
+      "kind": "sentence",
+      "es": "Gracias por su ayuda.",
+      "de": "Danke für Ihre Hilfe."
+    },
+    {
+      "id": "d-farmacia-dolor-de-cabeza",
+      "kind": "dialog",
+      "title": "In der Apotheke",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. ¿Tiene algo para el dolor de cabeza?",
+          "de": "Guten Tag. Haben Sie etwas gegen Kopfschmerzen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, claro. ¿Tiene fiebre?",
+          "de": "Ja, klar. Haben Sie Fieber?"
+        },
+        {
+          "speaker": "A",
+          "es": "No, no tengo fiebre. Solo me duele la cabeza.",
+          "de": "Nein, ich habe kein Fieber. Mir tut nur der Kopf weh."
+        },
+        {
+          "speaker": "B",
+          "es": "Tenemos paracetamol. Una pastilla cada ocho horas.",
+          "de": "Wir haben Paracetamol. Eine Tablette alle acht Stunden."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Se puede comprar sin receta?",
+          "de": "Kann man das ohne Rezept kaufen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, no necesita receta.",
+          "de": "Ja, Sie brauchen kein Rezept."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuánto es?",
+          "de": "Wie viel kostet es?"
+        },
+        {
+          "speaker": "B",
+          "es": "Son dos mil pesos.",
+          "de": "Das macht zweitausend Pesos."
+        },
+        {
+          "speaker": "A",
+          "es": "Aquí tiene. Muchas gracias.",
+          "de": "Hier bitte. Vielen Dank."
+        }
+      ]
+    },
+    {
+      "id": "d-con-la-doctora",
+      "kind": "dialog",
+      "title": "Bei der Ärztin",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenos días, doctora. No me siento bien.",
+          "de": "Guten Morgen, Frau Doktor. Mir geht es nicht gut."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Qué le pasa?",
+          "de": "Was fehlt Ihnen?"
+        },
+        {
+          "speaker": "A",
+          "es": "Tengo fiebre y me duele el estómago. También estoy mareado.",
+          "de": "Ich habe Fieber und mir tut der Bauch weh. Mir ist auch schwindelig."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Desde cuándo?",
+          "de": "Seit wann?"
+        },
+        {
+          "speaker": "A",
+          "es": "Desde ayer. Tengo diarrea desde anoche.",
+          "de": "Seit gestern. Seit gestern Abend habe ich Durchfall."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Es un dolor fuerte?",
+          "de": "Ist es ein starker Schmerz?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, es bastante fuerte.",
+          "de": "Ja, er ist ziemlich stark."
+        },
+        {
+          "speaker": "B",
+          "es": "No se preocupe. Necesita descansar y tomar mucha agua. Tome una pastilla dos veces al día.",
+          "de": "Keine Sorge. Sie müssen sich ausruhen und viel Wasser trinken. Nehmen Sie zweimal am Tag eine Tablette."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias, doctora.",
+          "de": "Vielen Dank, Frau Doktor."
+        }
+      ]
+    },
+    {
+      "id": "d-llamar-al-samu",
+      "kind": "dialog",
+      "title": "Der Notruf 131",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. Necesito una ambulancia, es urgente.",
+          "de": "Guten Tag. Ich brauche einen Krankenwagen, es ist dringend."
+        },
+        {
+          "speaker": "B",
+          "es": "Tranquilo. ¿Cuál es la emergencia?",
+          "de": "Ruhig bleiben. Was ist der Notfall?"
+        },
+        {
+          "speaker": "A",
+          "es": "Mi amigo no puede respirar bien.",
+          "de": "Mein Freund kann nicht gut atmen."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Dónde está usted?",
+          "de": "Wo sind Sie?"
+        },
+        {
+          "speaker": "A",
+          "es": "Estoy en la calle Lastarria, cerca del metro.",
+          "de": "Ich bin in der Calle Lastarria, in der Nähe der Metro."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Cómo se llama su amigo?",
+          "de": "Wie heißt Ihr Freund?"
+        },
+        {
+          "speaker": "A",
+          "es": "Se llama Pablo. Tiene treinta años.",
+          "de": "Er heißt Pablo. Er ist dreißig Jahre alt."
+        },
+        {
+          "speaker": "B",
+          "es": "Espere ahí, por favor. La ambulancia llega pronto.",
+          "de": "Warten Sie bitte dort. Der Krankenwagen kommt bald."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias.",
+          "de": "Vielen Dank."
+        }
+      ]
+    },
+    {
+      "id": "d-denuncia-comisaria",
+      "kind": "dialog",
+      "title": "Auf der Polizeiwache",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. Quiero hacer una denuncia.",
+          "de": "Guten Tag. Ich möchte eine Anzeige machen."
+        },
+        {
+          "speaker": "B",
+          "es": "Claro, dígame.",
+          "de": "Natürlich, sagen Sie."
+        },
+        {
+          "speaker": "A",
+          "es": "Me robaron la mochila con mi pasaporte y mi celular.",
+          "de": "Man hat mir den Rucksack mit meinem Pass und meinem Handy gestohlen."
+        },
+        {
+          "speaker": "B",
+          "es": "Lo siento mucho. ¿Está usted bien?",
+          "de": "Das tut mir sehr leid. Geht es Ihnen gut?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, estoy bien. Solo necesito la denuncia para el seguro.",
+          "de": "Ja, mir geht es gut. Ich brauche nur die Anzeige für die Versicherung."
+        },
+        {
+          "speaker": "B",
+          "es": "Un momento, por favor. ¿Cuál es su nombre?",
+          "de": "Einen Moment, bitte. Wie ist Ihr Name?"
+        },
+        {
+          "speaker": "A",
+          "es": "Me llamo Pablo.",
+          "de": "Ich heiße Pablo."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Dónde está su hostal?",
+          "de": "Wo ist Ihr Hostal?"
+        },
+        {
+          "speaker": "A",
+          "es": "Está en Lastarria.",
+          "de": "Es ist in Lastarria."
+        }
+      ]
+    },
+    {
+      "id": "d-pasaporte-perdido",
+      "kind": "dialog",
+      "title": "Der Pass ist weg",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, perdí mi pasaporte.",
+          "de": "Entschuldigung, ich habe meinen Pass verloren."
+        },
+        {
+          "speaker": "B",
+          "es": "Lo siento mucho. ¿Está seguro? ¿Lo tiene en la pieza?",
+          "de": "Das tut mir sehr leid. Sind Sie sicher? Haben Sie ihn im Zimmer?"
+        },
+        {
+          "speaker": "A",
+          "es": "No, no está en la pieza. Necesito ayuda.",
+          "de": "Nein, er ist nicht im Zimmer. Ich brauche Hilfe."
+        },
+        {
+          "speaker": "B",
+          "es": "Tranquilo, no se preocupe. Tiene que hacer una denuncia en la comisaría.",
+          "de": "Ruhig, keine Sorge. Sie müssen auf der Polizeiwache eine Anzeige machen."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Dónde queda la comisaría?",
+          "de": "Wo ist die Polizeiwache?"
+        },
+        {
+          "speaker": "B",
+          "es": "Queda a dos cuadras, a la derecha.",
+          "de": "Sie ist zwei Blocks entfernt, auf der rechten Seite."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias. Después quiero llamar a la embajada de Alemania.",
+          "de": "Danke. Danach möchte ich die Deutsche Botschaft anrufen."
+        },
+        {
+          "speaker": "B",
+          "es": "Buena idea. Puede llamar por teléfono desde la recepción.",
+          "de": "Gute Idee. Sie können an der Rezeption telefonieren."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias por su ayuda.",
+          "de": "Vielen Dank für Ihre Hilfe."
+        }
+      ]
+    },
+    {
+      "id": "d-temblor-en-el-hostal",
+      "kind": "dialog",
+      "title": "Ein Beben im Hostal",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "¿Qué es eso? ¿Es un temblor?",
+          "de": "Was ist das? Ist das ein Beben?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, es un temblor. Tranquilo, no es grave.",
+          "de": "Ja, das ist ein Beben. Ruhig, es ist nicht schlimm."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Qué hago?",
+          "de": "Was mache ich?"
+        },
+        {
+          "speaker": "B",
+          "es": "Hay que esperar un momento. ¿Hay una alerta en el celular?",
+          "de": "Man muss einen Moment warten. Ist eine Warnung auf dem Handy?"
+        },
+        {
+          "speaker": "A",
+          "es": "No, no hay alertas.",
+          "de": "Nein, es gibt keine Warnungen."
+        },
+        {
+          "speaker": "B",
+          "es": "Entonces está todo bien. En Chile hay temblores.",
+          "de": "Dann ist alles in Ordnung. In Chile gibt es Beben."
+        },
+        {
+          "speaker": "A",
+          "es": "Es mi primera vez en Chile. Muchas gracias.",
+          "de": "Es ist mein erstes Mal in Chile. Vielen Dank."
+        }
+      ]
+    },
+    {
+      "id": "g-doler",
+      "kind": "grammar",
+      "title": "doler: me duele, me duelen",
+      "explanation": "Doler funktioniert wie gustar: Der Körperteil tut dir weh, du bist nicht das Subjekt. Bei einem Körperteil steht duele, bei mehreren duelen. Die Person steht davor: me, te, le (er, sie, Sie), nos. Der Körperteil hat den Artikel: me duele la cabeza, nicht mi cabeza. Beim Arzt fragt man: ¿Dónde le duele? Das Wort dolor ist das Hauptwort: tengo dolor de cabeza.",
+      "examples": [
+        {
+          "es": "Me duele la cabeza.",
+          "de": "Mir tut der Kopf weh."
+        },
+        {
+          "es": "Me duelen los pies.",
+          "de": "Mir tun die Füße weh."
+        },
+        {
+          "es": "¿Le duele la pierna?",
+          "de": "Tut Ihnen das Bein weh?"
+        },
+        {
+          "es": "¿Dónde le duele?",
+          "de": "Wo tut es Ihnen weh?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Mir tut der Kopf weh.",
+          "es": "Me duele la cabeza.",
+          "accept": [
+            "Tengo dolor de cabeza."
+          ]
+        },
+        {
+          "de": "Mir tut der Rücken weh.",
+          "es": "Me duele la espalda.",
+          "accept": [
+            "Tengo dolor de espalda."
+          ]
+        },
+        {
+          "de": "Mir tun die Füße weh.",
+          "es": "Me duelen los pies."
+        },
+        {
+          "de": "Mir tun die Augen weh.",
+          "es": "Me duelen los ojos."
+        },
+        {
+          "de": "Mir tut der Bauch weh.",
+          "es": "Me duele el estómago.",
+          "accept": [
+            "Tengo dolor de estómago."
+          ]
+        },
+        {
+          "de": "Tut Ihnen das Bein weh?",
+          "es": "¿Le duele la pierna?"
+        },
+        {
+          "de": "Wo tut es Ihnen weh?",
+          "es": "¿Dónde le duele?"
+        },
+        {
+          "de": "Tut dir der Hals weh?",
+          "es": "¿Te duele la garganta?"
+        }
+      ]
+    },
+    {
+      "id": "g-necesitar",
+      "kind": "grammar",
+      "title": "necesitar: ich brauche",
+      "explanation": "Necesitar heißt brauchen. Nach dem Verb steht ein Hauptwort: Necesito un médico. Necesito una venda. Oder eine Grundform, dann heißt es auch müssen: Necesito descansar. Necesito ir al hospital. Formen: necesito, necesitas, necesita (er, sie, Sie), necesitamos, necesitan. Nach necesitar steht die Grundform direkt, ohne Wort für zu. Frage mit usted: ¿Necesita ayuda?",
+      "examples": [
+        {
+          "es": "Necesito un médico.",
+          "de": "Ich brauche einen Arzt."
+        },
+        {
+          "es": "Necesito descansar.",
+          "de": "Ich muss mich ausruhen."
+        },
+        {
+          "es": "¿Necesita ayuda?",
+          "de": "Brauchen Sie Hilfe?"
+        },
+        {
+          "es": "Necesitamos una ambulancia.",
+          "de": "Wir brauchen einen Krankenwagen."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich brauche Hilfe.",
+          "es": "Necesito ayuda."
+        },
+        {
+          "de": "Ich brauche einen Arzt.",
+          "es": "Necesito un médico.",
+          "accept": [
+            "Necesito un doctor."
+          ]
+        },
+        {
+          "de": "Brauchen Sie Hilfe?",
+          "es": "¿Necesita ayuda?"
+        },
+        {
+          "de": "Ich muss in die Apotheke gehen.",
+          "es": "Necesito ir a la farmacia."
+        },
+        {
+          "de": "Wir brauchen einen Krankenwagen.",
+          "es": "Necesitamos una ambulancia."
+        },
+        {
+          "de": "Ich brauche ein Rezept.",
+          "es": "Necesito una receta."
+        },
+        {
+          "de": "Ich muss mich ausruhen.",
+          "es": "Necesito descansar."
+        }
+      ]
+    },
+    {
+      "id": "g-por-para-notfall",
+      "kind": "grammar",
+      "title": "por und para gemischt",
+      "explanation": "Para nennt das Ziel, den Zweck oder den Empfänger: algo para el dolor (etwas gegen Schmerzen), la denuncia para el seguro, el medicamento es para mí. Por nennt den Grund, das Mittel oder den Dank: por eso (deshalb), por teléfono (per Telefon), gracias por su ayuda. Nach para steht mí, nach con heißt es conmigo.",
+      "examples": [
+        {
+          "es": "Necesito algo para el dolor.",
+          "de": "Ich brauche etwas gegen die Schmerzen."
+        },
+        {
+          "es": "El medicamento es para mí.",
+          "de": "Das Medikament ist für mich."
+        },
+        {
+          "es": "Gracias por su ayuda.",
+          "de": "Danke für Ihre Hilfe."
+        },
+        {
+          "es": "Hablo con la embajada por teléfono.",
+          "de": "Ich spreche per Telefon mit der Botschaft."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich brauche etwas gegen die Schmerzen.",
+          "es": "Necesito algo para el dolor."
+        },
+        {
+          "de": "Danke für Ihre Hilfe.",
+          "es": "Gracias por su ayuda."
+        },
+        {
+          "de": "Das Medikament ist für mich.",
+          "es": "El medicamento es para mí.",
+          "accept": [
+            "El remedio es para mí."
+          ]
+        },
+        {
+          "de": "Ich brauche die Quittung für die Versicherung.",
+          "es": "Necesito la boleta para el seguro."
+        },
+        {
+          "de": "Ich spreche per Telefon mit der Botschaft.",
+          "es": "Hablo con la embajada por teléfono.",
+          "accept": [
+            "Hablo por teléfono con la embajada."
+          ]
+        },
+        {
+          "de": "Mir tut der Kopf weh, deshalb brauche ich eine Tablette.",
+          "es": "Me duele la cabeza, por eso necesito una pastilla."
+        },
+        {
+          "de": "Wegen der Schmerzen bleibe ich im Hostal.",
+          "es": "Me quedo en el hostal por el dolor."
+        }
+      ]
+    },
+    {
+      "id": "g-vergangenheit-feste-wendungen",
+      "kind": "grammar",
+      "title": "Vergangenheit als feste Wendung",
+      "explanation": "Bei Diebstahl und Verlust hörst du Vergangenheitsformen. Du musst sie hier nicht bilden können, nur auswendig als feste Wendung: me robaron (man hat mir gestohlen), perdí (ich habe verloren), me caí (ich bin gefallen). Danach sagst du, was weg ist oder wo es passiert ist: Me robaron la mochila. Perdí mi pasaporte. Me caí en la escalera. Mit ayer (gestern) oder anoche (gestern Abend) kannst du sagen, wann.",
+      "examples": [
+        {
+          "es": "Me robaron la mochila.",
+          "de": "Man hat mir den Rucksack gestohlen."
+        },
+        {
+          "es": "Perdí mi pasaporte.",
+          "de": "Ich habe meinen Pass verloren."
+        },
+        {
+          "es": "Me caí en la escalera.",
+          "de": "Ich bin auf der Treppe gefallen."
+        },
+        {
+          "es": "Me robaron el celular ayer.",
+          "de": "Man hat mir gestern das Handy gestohlen."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Man hat mir den Rucksack gestohlen.",
+          "es": "Me robaron la mochila."
+        },
+        {
+          "de": "Ich habe meinen Pass verloren.",
+          "es": "Perdí mi pasaporte.",
+          "accept": [
+            "Perdí el pasaporte."
+          ]
+        },
+        {
+          "de": "Ich bin auf der Treppe gefallen.",
+          "es": "Me caí en la escalera.",
+          "accept": [
+            "Me caí en las escaleras."
+          ]
+        },
+        {
+          "de": "Man hat mir das Handy gestohlen.",
+          "es": "Me robaron el celular.",
+          "accept": [
+            "Me robaron el teléfono."
+          ]
+        },
+        {
+          "de": "Ich habe meine Geldbörse verloren.",
+          "es": "Perdí mi billetera."
+        },
+        {
+          "de": "Man hat mir das Geld gestohlen.",
+          "es": "Me robaron el dinero.",
+          "accept": [
+            "Me robaron mi dinero."
+          ]
+        },
+        {
+          "de": "Man hat mir gestern das Handy gestohlen.",
+          "es": "Me robaron el celular ayer.",
+          "accept": [
+            "Ayer me robaron el celular.",
+            "Me robaron el teléfono ayer."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g-hilfe-bitten-usted",
+      "kind": "grammar",
+      "title": "Um Hilfe bitten mit usted",
+      "explanation": "Bei Ärzten, Polizei und Apotheken sagst du usted. Die höflichste Bitte beginnt mit ¿Me puede ...? und der Grundform: ¿Me puede ayudar? Kurze Befehle mit usted lernst du als feste Wendungen: llame (rufen Sie an), venga (kommen Sie), espere (warten Sie), ayúdeme (helfen Sie mir), tome (nehmen Sie). Mit por favor klingen sie freundlich. Mit Freunden sagst du ¿Me puedes ayudar? und ayúdame.",
+      "examples": [
+        {
+          "es": "¿Me puede ayudar, por favor?",
+          "de": "Können Sie mir bitte helfen?"
+        },
+        {
+          "es": "Llame a una ambulancia, por favor.",
+          "de": "Rufen Sie bitte einen Krankenwagen."
+        },
+        {
+          "es": "Venga rápido, por favor.",
+          "de": "Kommen Sie bitte schnell."
+        },
+        {
+          "es": "¡Ayúdeme!",
+          "de": "Helfen Sie mir!"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Können Sie mir helfen?",
+          "es": "¿Me puede ayudar?",
+          "accept": [
+            "¿Puede ayudarme?"
+          ]
+        },
+        {
+          "de": "Rufen Sie bitte einen Krankenwagen.",
+          "es": "Llame a una ambulancia, por favor.",
+          "accept": [
+            "Llame una ambulancia, por favor."
+          ]
+        },
+        {
+          "de": "Kommen Sie bitte schnell.",
+          "es": "Venga rápido, por favor."
+        },
+        {
+          "de": "Warten Sie bitte einen Moment.",
+          "es": "Espere un momento, por favor."
+        },
+        {
+          "de": "Helfen Sie mir!",
+          "es": "¡Ayúdeme!"
+        },
+        {
+          "de": "Können Sie mir ein Taxi rufen?",
+          "es": "¿Me puede llamar un taxi?",
+          "accept": [
+            "¿Me puede llamar a un taxi?"
+          ]
+        },
+        {
+          "de": "Nehmen Sie eine Tablette.",
+          "es": "Tome una pastilla."
+        }
+      ]
+    },
+    {
+      "id": "pair-tos-dos",
+      "kind": "pair",
+      "es": "tos",
+      "options": [
+        "tos",
+        "dos"
+      ]
+    },
+    {
+      "id": "pair-dolor-color",
+      "kind": "pair",
+      "es": "dolor",
+      "options": [
+        "dolor",
+        "color"
+      ]
+    },
+    {
+      "id": "pair-mareo-marzo",
+      "kind": "pair",
+      "es": "mareo",
+      "options": [
+        "mareo",
+        "marzo"
+      ]
+    },
+    {
+      "id": "pair-robo-rojo",
+      "kind": "pair",
+      "es": "robo",
+      "options": [
+        "robo",
+        "rojo"
+      ]
+    },
+    {
+      "id": "pair-perdi-perdon",
+      "kind": "pair",
+      "es": "perdí",
+      "options": [
+        "perdí",
+        "perdón"
+      ]
+    },
+    {
+      "id": "pair-brazo-abrazo",
+      "kind": "pair",
+      "es": "brazo",
+      "options": [
+        "brazo",
+        "abrazo"
+      ]
+    }
+  ]
+}

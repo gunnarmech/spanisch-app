@@ -54,10 +54,12 @@ test('Quellen führen die Fotos mit Urheber, Lizenz und Link auf die Commons-Sei
   render(<Sources app={fakeApp({ db: db as never })} onBack={noop} />);
   expect(screen.getByRole('heading', { name: 'Fotos' })).toBeTruthy();
   for (const p of allPhotos) {
-    const link = screen.getByRole('link', { name: p.author }) as HTMLAnchorElement;
-    expect(link.href).toBe(p.page);
+    // Ein Urheber kann mehrere Fotos haben, deshalb über den Link auf die Commons-Seite finden.
+    const links = screen.getAllByRole('link', { name: p.author }) as HTMLAnchorElement[];
+    const link = links.find((a) => a.href === p.page);
+    expect(link, p.page).toBeTruthy();
     const licenses = screen.getAllByRole('link', { name: p.license }) as HTMLAnchorElement[];
     expect(licenses.some((a) => a.href === p.licenseUrl)).toBe(true);
-    expect(link.closest('li')!.textContent).toContain('zugeschnitten');
+    expect(link!.closest('li')!.textContent).toContain('zugeschnitten');
   }
 });
