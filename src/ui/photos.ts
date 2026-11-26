@@ -98,6 +98,17 @@ const bySituation: Record<string, Photo> = {
     page: commons('Hostal_Santa_Luc%C3%ADa,_Santiago.jpg'),
     edit: 'zugeschnitten und verkleinert',
   },
+  '07-smalltalk': {
+    src: url('smalltalk.webp'),
+    width: 160,
+    height: 160,
+    alt: 'Blick vom Cerro San Cristóbal über Häuser und Straßen von Santiago auf einen kleinen Hügel und die Berge am Horizont',
+    author: 'David Berkowitz',
+    license: 'CC BY 2.0',
+    licenseUrl: deed('by/2.0'),
+    page: commons('Cerro_San_Cristobal_Santiago,_Chile.jpg'),
+    edit: 'zugeschnitten und verkleinert',
+  },
 };
 
 /** Foto der Situation, oder null, wenn es keins gibt (dann zeigt die Zeile kein Bild). */

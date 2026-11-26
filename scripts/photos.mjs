@@ -50,6 +50,11 @@ const JOBS = [
     crop: { left: 0.34, top: 0.36, width: 0.5, height: 0.407 },
     outputs: [{ name: 'unterkunft.webp', width: 160, height: 160, maxKb: 25 }],
   },
+  {
+    file: 'Cerro San Cristobal Santiago, Chile.jpg',
+    crop: { left: 0.25, top: 0.1, width: 0.6, height: 0.8 },
+    outputs: [{ name: 'smalltalk.webp', width: 160, height: 160, maxKb: 25 }],
+  },
 ];
 
 async function download(file) {

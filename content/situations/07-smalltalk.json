@@ -1,0 +1,3378 @@
+{
+  "id": "07-smalltalk",
+  "order": 7,
+  "title": "Smalltalk",
+  "items": [
+    {
+      "id": "w-vivir",
+      "kind": "word",
+      "es": "vivir",
+      "de": "wohnen, leben",
+      "forms": [
+        "vivir",
+        "vivo",
+        "vives",
+        "vive",
+        "vivimos",
+        "viven"
+      ],
+      "examples": [
+        {
+          "es": "Vivo en Alemania.",
+          "de": "Ich wohne in Deutschland."
+        }
+      ],
+      "note": "Vivir heißt wohnen und leben. ¿Dónde vives? heißt Wo wohnst du?",
+      "freqRank": 454
+    },
+    {
+      "id": "w-trabajar",
+      "kind": "word",
+      "es": "trabajar",
+      "de": "arbeiten",
+      "forms": [
+        "trabajar",
+        "trabajo",
+        "trabajas",
+        "trabaja",
+        "trabajamos",
+        "trabajan"
+      ],
+      "examples": [
+        {
+          "es": "Trabajo en una empresa.",
+          "de": "Ich arbeite in einer Firma."
+        }
+      ],
+      "note": "Trabajo kann auch das Hauptwort sein: el trabajo, die Arbeit. Ob du ich arbeite oder die Arbeit meinst, zeigt der Satz.",
+      "freqRank": 431
+    },
+    {
+      "id": "w-estudiar",
+      "kind": "word",
+      "es": "estudiar",
+      "de": "studieren, lernen",
+      "forms": [
+        "estudiar",
+        "estudio",
+        "estudias",
+        "estudia",
+        "estudiamos",
+        "estudian"
+      ],
+      "examples": [
+        {
+          "es": "Estudio español.",
+          "de": "Ich lerne Spanisch."
+        }
+      ],
+      "note": "Estudiar heißt studieren und auch lernen, zum Beispiel eine Sprache.",
+      "freqRank": 2477
+    },
+    {
+      "id": "w-estudiante",
+      "kind": "word",
+      "es": "estudiante",
+      "de": "Student, Studentin, Schüler",
+      "forms": [
+        "estudiante",
+        "estudiantes"
+      ],
+      "examples": [
+        {
+          "es": "Soy estudiante.",
+          "de": "Ich bin Student."
+        }
+      ],
+      "note": "Estudiante gilt für Männer und Frauen. Nach soy steht beim Beruf kein Artikel: Soy estudiante, soy ingeniero.",
+      "freqRank": 2250
+    },
+    {
+      "id": "w-profesor",
+      "kind": "word",
+      "es": "profesor",
+      "de": "Lehrer, Dozent",
+      "forms": [
+        "profesor",
+        "profesora",
+        "profesores",
+        "profesoras"
+      ],
+      "examples": [
+        {
+          "es": "Mi hermana es profesora.",
+          "de": "Meine Schwester ist Lehrerin."
+        }
+      ],
+      "freqRank": 852
+    },
+    {
+      "id": "w-ingeniero",
+      "kind": "word",
+      "es": "ingeniero",
+      "de": "Ingenieur",
+      "forms": [
+        "ingeniero",
+        "ingeniera",
+        "ingenieros"
+      ],
+      "examples": [
+        {
+          "es": "Soy ingeniero.",
+          "de": "Ich bin Ingenieur."
+        }
+      ],
+      "freqRank": 4746
+    },
+    {
+      "id": "w-medico",
+      "kind": "word",
+      "es": "médico",
+      "de": "Arzt, Ärztin",
+      "forms": [
+        "médico",
+        "médica",
+        "médicos",
+        "médicas"
+      ],
+      "examples": [
+        {
+          "es": "Mi padre es médico.",
+          "de": "Mein Vater ist Arzt."
+        }
+      ],
+      "freqRank": 704
+    },
+    {
+      "id": "w-oficina",
+      "kind": "word",
+      "es": "oficina",
+      "de": "Büro",
+      "forms": [
+        "oficina",
+        "oficinas"
+      ],
+      "examples": [
+        {
+          "es": "Trabajo en una oficina.",
+          "de": "Ich arbeite in einem Büro."
+        }
+      ],
+      "freqRank": 537
+    },
+    {
+      "id": "w-empresa",
+      "kind": "word",
+      "es": "empresa",
+      "de": "Firma, Unternehmen",
+      "forms": [
+        "empresa",
+        "empresas"
+      ],
+      "examples": [
+        {
+          "es": "Mi padre trabaja en una empresa.",
+          "de": "Mein Vater arbeitet in einer Firma."
+        }
+      ],
+      "freqRank": 1458
+    },
+    {
+      "id": "p-de-donde-eres",
+      "kind": "phrase",
+      "es": "¿de dónde eres?",
+      "de": "woher kommst du?",
+      "forms": [
+        "de dónde eres",
+        "de dónde es"
+      ],
+      "examples": [
+        {
+          "es": "¿De dónde eres?",
+          "de": "Woher kommst du?"
+        }
+      ],
+      "note": "Mit usted fragst du: ¿De dónde es usted?"
+    },
+    {
+      "id": "p-soy-de",
+      "kind": "phrase",
+      "es": "soy de",
+      "de": "ich komme aus",
+      "forms": [
+        "soy de",
+        "eres de",
+        "es de",
+        "somos de"
+      ],
+      "examples": [
+        {
+          "es": "Soy de Alemania.",
+          "de": "Ich komme aus Deutschland."
+        }
+      ],
+      "note": "Nach soy de steht der Ort oder das Land. Wörtlich heißt es ich bin aus."
+    },
+    {
+      "id": "p-a-que-te-dedicas",
+      "kind": "phrase",
+      "es": "¿a qué te dedicas?",
+      "de": "was machst du beruflich?",
+      "forms": [
+        "a qué te dedicas",
+        "a qué se dedica",
+        "dedicas",
+        "dedica",
+        "dedico"
+      ],
+      "examples": [
+        {
+          "es": "¿A qué te dedicas?",
+          "de": "Was machst du beruflich?"
+        }
+      ],
+      "note": "Eine freundliche Frage nach dem Beruf. Mit usted fragst du: ¿A qué se dedica?"
+    },
+    {
+      "id": "p-en-que-trabajas",
+      "kind": "phrase",
+      "es": "¿en qué trabajas?",
+      "de": "was arbeitest du?",
+      "forms": [
+        "en qué trabajas",
+        "en qué trabaja"
+      ],
+      "examples": [
+        {
+          "es": "¿En qué trabajas?",
+          "de": "Was arbeitest du?"
+        }
+      ],
+      "note": "Das ist die zweite Möglichkeit, nach dem Beruf zu fragen."
+    },
+    {
+      "id": "w-extranjero",
+      "kind": "word",
+      "es": "extranjero",
+      "de": "Ausländer, ausländisch",
+      "forms": [
+        "extranjero",
+        "extranjera",
+        "extranjeros",
+        "extranjeras"
+      ],
+      "examples": [
+        {
+          "es": "Soy extranjero, no soy de aquí.",
+          "de": "Ich bin Ausländer, ich komme nicht von hier."
+        }
+      ],
+      "freqRank": 3070
+    },
+    {
+      "id": "w-viajero",
+      "kind": "word",
+      "es": "viajero",
+      "de": "Reisender",
+      "forms": [
+        "viajero",
+        "viajera",
+        "viajeros",
+        "viajeras"
+      ],
+      "examples": [
+        {
+          "es": "Hay muchos viajeros en el hostal.",
+          "de": "Im Hostal sind viele Reisende."
+        }
+      ]
+    },
+    {
+      "id": "w-mochilero",
+      "kind": "word",
+      "es": "mochilero",
+      "de": "Rucksackreisender",
+      "forms": [
+        "mochilero",
+        "mochilera",
+        "mochileros",
+        "mochileras"
+      ],
+      "examples": [
+        {
+          "es": "Soy mochilero y viajo con una mochila.",
+          "de": "Ich bin Rucksackreisender und reise mit einem Rucksack."
+        }
+      ]
+    },
+    {
+      "id": "p-primera-vez",
+      "kind": "phrase",
+      "es": "primera vez",
+      "de": "erstes Mal",
+      "forms": [
+        "primera vez",
+        "por primera vez"
+      ],
+      "examples": [
+        {
+          "es": "Es mi primera vez en Chile.",
+          "de": "Es ist mein erstes Mal in Chile."
+        }
+      ],
+      "note": "Por primera vez heißt zum ersten Mal: Estoy en Chile por primera vez."
+    },
+    {
+      "id": "w-semana",
+      "kind": "word",
+      "es": "semana",
+      "de": "Woche",
+      "forms": [
+        "semana",
+        "semanas"
+      ],
+      "examples": [
+        {
+          "es": "Me quedo dos semanas.",
+          "de": "Ich bleibe zwei Wochen."
+        }
+      ],
+      "freqRank": 326
+    },
+    {
+      "id": "w-mes",
+      "kind": "word",
+      "es": "mes",
+      "de": "Monat",
+      "forms": [
+        "mes",
+        "meses"
+      ],
+      "examples": [
+        {
+          "es": "Me quedo un mes.",
+          "de": "Ich bleibe einen Monat."
+        }
+      ],
+      "freqRank": 822
+    },
+    {
+      "id": "w-tiempo",
+      "kind": "word",
+      "es": "tiempo",
+      "de": "Zeit, Wetter",
+      "forms": [
+        "tiempo"
+      ],
+      "examples": [
+        {
+          "es": "¿Tienes tiempo mañana?",
+          "de": "Hast du morgen Zeit?"
+        }
+      ],
+      "note": "Tiempo heißt Zeit und auch Wetter. Nach dem Wetter fragst du: ¿Qué tiempo hace?",
+      "freqRank": 95
+    },
+    {
+      "id": "p-cuanto-tiempo",
+      "kind": "phrase",
+      "es": "cuánto tiempo",
+      "de": "wie lange",
+      "forms": [
+        "cuánto tiempo"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto tiempo te quedas?",
+          "de": "Wie lange bleibst du?"
+        }
+      ]
+    },
+    {
+      "id": "p-hace-dos-semanas",
+      "kind": "phrase",
+      "es": "hace dos semanas que",
+      "de": "seit zwei Wochen",
+      "forms": [
+        "hace dos semanas que",
+        "hace dos semanas",
+        "hace un mes",
+        "hace un año",
+        "hace dos años",
+        "hace dos días",
+        "hace tres días"
+      ],
+      "examples": [
+        {
+          "es": "Hace dos semanas que estoy en Chile.",
+          "de": "Ich bin seit zwei Wochen in Chile."
+        }
+      ],
+      "note": "Mit hace und einer Zeitangabe sagst du, wie lange etwas schon so ist. Das Verb steht im Präsens, weil es noch andauert."
+    },
+    {
+      "id": "p-desde-hace",
+      "kind": "phrase",
+      "es": "desde hace",
+      "de": "seit",
+      "forms": [
+        "desde hace"
+      ],
+      "examples": [
+        {
+          "es": "Vivo en Santiago desde hace un año.",
+          "de": "Ich wohne seit einem Jahr in Santiago."
+        }
+      ],
+      "note": "Desde hace bedeutet dasselbe wie hace und que, nur in anderer Reihenfolge: Estoy aquí desde hace dos semanas."
+    },
+    {
+      "id": "w-marzo",
+      "kind": "word",
+      "es": "marzo",
+      "de": "März",
+      "forms": [
+        "marzo"
+      ],
+      "examples": [
+        {
+          "es": "Viajo a Chile en marzo.",
+          "de": "Ich reise im März nach Chile."
+        }
+      ],
+      "note": "Monatsnamen schreibt man klein. Chile liegt auf der Südhalbkugel, die Jahreszeiten sind dort umgekehrt wie in Deutschland: Im März geht der Sommer zu Ende.",
+      "freqRank": 5000
+    },
+    {
+      "id": "w-verano",
+      "kind": "word",
+      "es": "verano",
+      "de": "Sommer",
+      "forms": [
+        "verano"
+      ],
+      "examples": [
+        {
+          "es": "En verano hace mucho calor.",
+          "de": "Im Sommer ist es sehr heiß."
+        }
+      ],
+      "note": "Die Jahreszeit heißt estación, genau wie der Bahnhof: las estaciones del año.",
+      "freqRank": 1331
+    },
+    {
+      "id": "w-invierno",
+      "kind": "word",
+      "es": "invierno",
+      "de": "Winter",
+      "forms": [
+        "invierno"
+      ],
+      "examples": [
+        {
+          "es": "En invierno hace frío.",
+          "de": "Im Winter ist es kalt."
+        }
+      ],
+      "freqRank": 2609
+    },
+    {
+      "id": "w-otono",
+      "kind": "word",
+      "es": "otoño",
+      "de": "Herbst",
+      "forms": [
+        "otoño"
+      ],
+      "examples": [
+        {
+          "es": "El otoño en Santiago es muy lindo.",
+          "de": "Der Herbst in Santiago ist sehr schön."
+        }
+      ]
+    },
+    {
+      "id": "w-primavera",
+      "kind": "word",
+      "es": "primavera",
+      "de": "Frühling",
+      "forms": [
+        "primavera"
+      ],
+      "examples": [
+        {
+          "es": "En primavera hay mucho sol.",
+          "de": "Im Frühling ist viel Sonne."
+        }
+      ],
+      "freqRank": 2900
+    },
+    {
+      "id": "p-lunes-a-jueves",
+      "kind": "phrase",
+      "es": "lunes, martes, miércoles, jueves",
+      "de": "Montag, Dienstag, Mittwoch, Donnerstag",
+      "forms": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves"
+      ],
+      "examples": [
+        {
+          "es": "El lunes trabajo.",
+          "de": "Am Montag arbeite ich."
+        }
+      ],
+      "note": "Mit el sagst du am: el lunes heißt am Montag. Wochentage schreibt man klein."
+    },
+    {
+      "id": "w-viernes",
+      "kind": "word",
+      "es": "viernes",
+      "de": "Freitag",
+      "forms": [
+        "viernes"
+      ],
+      "examples": [
+        {
+          "es": "El viernes salgo con mis amigos.",
+          "de": "Am Freitag gehe ich mit meinen Freunden aus."
+        }
+      ],
+      "freqRank": 1726
+    },
+    {
+      "id": "w-sabado",
+      "kind": "word",
+      "es": "sábado",
+      "de": "Samstag",
+      "forms": [
+        "sábado",
+        "sábados"
+      ],
+      "examples": [
+        {
+          "es": "El sábado nos juntamos.",
+          "de": "Am Samstag treffen wir uns."
+        }
+      ],
+      "note": "Das Wochenende heißt fin de semana.",
+      "freqRank": 2039
+    },
+    {
+      "id": "w-domingo",
+      "kind": "word",
+      "es": "domingo",
+      "de": "Sonntag",
+      "forms": [
+        "domingo",
+        "domingos"
+      ],
+      "examples": [
+        {
+          "es": "El domingo no trabajo.",
+          "de": "Am Sonntag arbeite ich nicht."
+        }
+      ],
+      "freqRank": 2006
+    },
+    {
+      "id": "p-que-tiempo-hace",
+      "kind": "phrase",
+      "es": "¿qué tiempo hace?",
+      "de": "wie ist das Wetter?",
+      "forms": [
+        "qué tiempo hace"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué tiempo hace hoy?",
+          "de": "Wie ist das Wetter heute?"
+        }
+      ]
+    },
+    {
+      "id": "p-hace-sol",
+      "kind": "phrase",
+      "es": "hace sol",
+      "de": "die Sonne scheint",
+      "forms": [
+        "hace sol"
+      ],
+      "examples": [
+        {
+          "es": "Hoy hace sol.",
+          "de": "Heute scheint die Sonne."
+        }
+      ]
+    },
+    {
+      "id": "p-hace-viento",
+      "kind": "phrase",
+      "es": "hace viento",
+      "de": "es ist windig",
+      "forms": [
+        "hace viento"
+      ],
+      "examples": [
+        {
+          "es": "En el cerro hace viento.",
+          "de": "Auf dem Hügel ist es windig."
+        }
+      ]
+    },
+    {
+      "id": "w-sol",
+      "kind": "word",
+      "es": "sol",
+      "de": "Sonne",
+      "forms": [
+        "sol"
+      ],
+      "examples": [
+        {
+          "es": "Hoy hay mucho sol.",
+          "de": "Heute ist viel Sonne."
+        }
+      ],
+      "freqRank": 824
+    },
+    {
+      "id": "w-viento",
+      "kind": "word",
+      "es": "viento",
+      "de": "Wind",
+      "forms": [
+        "viento"
+      ],
+      "examples": [
+        {
+          "es": "El viento es frío.",
+          "de": "Der Wind ist kalt."
+        }
+      ],
+      "freqRank": 1658
+    },
+    {
+      "id": "w-llover",
+      "kind": "word",
+      "es": "llover",
+      "de": "regnen",
+      "forms": [
+        "llover",
+        "llueve"
+      ],
+      "examples": [
+        {
+          "es": "Hoy llueve mucho.",
+          "de": "Heute regnet es viel."
+        }
+      ],
+      "note": "Llover gibt es nur in der Form llueve: Hoy llueve. Mañana va a llover."
+    },
+    {
+      "id": "w-lluvia",
+      "kind": "word",
+      "es": "lluvia",
+      "de": "Regen",
+      "forms": [
+        "lluvia"
+      ],
+      "examples": [
+        {
+          "es": "No me gusta la lluvia.",
+          "de": "Ich mag den Regen nicht."
+        }
+      ],
+      "freqRank": 2173
+    },
+    {
+      "id": "w-nublado",
+      "kind": "word",
+      "es": "nublado",
+      "de": "bewölkt",
+      "forms": [
+        "nublado",
+        "nublada"
+      ],
+      "examples": [
+        {
+          "es": "Hoy está nublado.",
+          "de": "Heute ist es bewölkt."
+        }
+      ],
+      "note": "Das Wetter ist ein Zustand, deshalb steht estar: Hoy está nublado."
+    },
+    {
+      "id": "w-grado",
+      "kind": "word",
+      "es": "grado",
+      "de": "Grad",
+      "forms": [
+        "grado",
+        "grados"
+      ],
+      "examples": [
+        {
+          "es": "Hoy hay treinta grados.",
+          "de": "Heute sind es 30 Grad."
+        }
+      ],
+      "note": "Wie viel Grad es sind, sagst du mit hay: Hay treinta grados.",
+      "freqRank": 2545
+    },
+    {
+      "id": "p-voy-a",
+      "kind": "phrase",
+      "es": "voy a",
+      "de": "ich werde, ich habe vor",
+      "forms": [
+        "voy a",
+        "vas a",
+        "va a",
+        "vamos a",
+        "van a"
+      ],
+      "examples": [
+        {
+          "es": "Voy a viajar al sur.",
+          "de": "Ich werde in den Süden reisen."
+        }
+      ],
+      "note": "Ir a mit Grundform sagt, was du vorhast oder was bald passiert: Mañana va a llover. So sprichst du im Alltag über die Zukunft."
+    },
+    {
+      "id": "w-visitar",
+      "kind": "word",
+      "es": "visitar",
+      "de": "besuchen",
+      "forms": [
+        "visitar",
+        "visito",
+        "visitas",
+        "visita",
+        "visitamos",
+        "visitan"
+      ],
+      "examples": [
+        {
+          "es": "Quiero visitar Valparaíso.",
+          "de": "Ich möchte Valparaíso besuchen."
+        }
+      ],
+      "freqRank": 2994
+    },
+    {
+      "id": "w-conocer",
+      "kind": "word",
+      "es": "conocer",
+      "de": "kennen, kennenlernen",
+      "forms": [
+        "conocer",
+        "conozco",
+        "conoces",
+        "conoce",
+        "conocemos",
+        "conocen"
+      ],
+      "examples": [
+        {
+          "es": "¿Conoces Valparaíso?",
+          "de": "Kennst du Valparaíso?"
+        }
+      ],
+      "note": "Conocer gilt für Orte und Menschen. Vor einer Person steht a: ¿Conoces a Ana? Etwas wissen heißt saber.",
+      "freqRank": 1039
+    },
+    {
+      "id": "w-saber",
+      "kind": "word",
+      "es": "saber",
+      "de": "wissen, können",
+      "forms": [
+        "saber",
+        "sé",
+        "sabes",
+        "sabe",
+        "sabemos",
+        "saben"
+      ],
+      "examples": [
+        {
+          "es": "No sé dónde queda la playa.",
+          "de": "Ich weiß nicht, wo der Strand liegt."
+        }
+      ],
+      "note": "Sé schreibt man mit Akzent, damit es nicht mit se verwechselt wird. Mit Grundform heißt saber können, wenn man es gelernt hat: Sé hablar un poco de español.",
+      "freqRank": 236
+    },
+    {
+      "id": "w-playa",
+      "kind": "word",
+      "es": "playa",
+      "de": "Strand",
+      "forms": [
+        "playa",
+        "playas"
+      ],
+      "examples": [
+        {
+          "es": "La playa está cerca.",
+          "de": "Der Strand ist in der Nähe."
+        }
+      ],
+      "freqRank": 1619
+    },
+    {
+      "id": "w-montana",
+      "kind": "word",
+      "es": "montaña",
+      "de": "Berg, Gebirge",
+      "forms": [
+        "montaña",
+        "montañas"
+      ],
+      "examples": [
+        {
+          "es": "Las montañas son hermosas.",
+          "de": "Die Berge sind wunderschön."
+        }
+      ],
+      "freqRank": 2026
+    },
+    {
+      "id": "w-desierto",
+      "kind": "word",
+      "es": "desierto",
+      "de": "Wüste",
+      "forms": [
+        "desierto",
+        "desiertos"
+      ],
+      "examples": [
+        {
+          "es": "El desierto está en el norte.",
+          "de": "Die Wüste ist im Norden."
+        }
+      ],
+      "freqRank": 2702
+    },
+    {
+      "id": "w-volcan",
+      "kind": "word",
+      "es": "volcán",
+      "de": "Vulkan",
+      "forms": [
+        "volcán",
+        "volcanes"
+      ],
+      "examples": [
+        {
+          "es": "Hay muchos volcanes en Chile.",
+          "de": "In Chile gibt es viele Vulkane."
+        }
+      ]
+    },
+    {
+      "id": "w-lago",
+      "kind": "word",
+      "es": "lago",
+      "de": "See",
+      "forms": [
+        "lago",
+        "lagos"
+      ],
+      "examples": [
+        {
+          "es": "El lago es muy grande.",
+          "de": "Der See ist sehr groß."
+        }
+      ],
+      "freqRank": 2191
+    },
+    {
+      "id": "w-mar",
+      "kind": "word",
+      "es": "mar",
+      "de": "Meer",
+      "forms": [
+        "mar"
+      ],
+      "examples": [
+        {
+          "es": "El mar está cerca de Valparaíso.",
+          "de": "Das Meer ist nah bei Valparaíso."
+        }
+      ],
+      "freqRank": 1036
+    },
+    {
+      "id": "p-san-pedro-de-atacama",
+      "kind": "phrase",
+      "es": "San Pedro de Atacama",
+      "de": "San Pedro de Atacama (Ort in der Wüste)",
+      "forms": [
+        "san pedro de atacama",
+        "atacama",
+        "pedro"
+      ],
+      "examples": [
+        {
+          "es": "San Pedro de Atacama está en el norte.",
+          "de": "San Pedro de Atacama liegt im Norden."
+        }
+      ],
+      "note": "Das kleine Dorf in der Atacama-Wüste ist ein Ziel für viele Reisende."
+    },
+    {
+      "id": "w-patagonia",
+      "kind": "word",
+      "es": "Patagonia",
+      "de": "Patagonien",
+      "forms": [
+        "patagonia"
+      ],
+      "examples": [
+        {
+          "es": "La Patagonia está en el sur.",
+          "de": "Patagonien liegt im Süden."
+        }
+      ],
+      "note": "Man sagt meist mit Artikel: la Patagonia."
+    },
+    {
+      "id": "p-vina-del-mar",
+      "kind": "phrase",
+      "es": "Viña del Mar",
+      "de": "Viña del Mar (Küstenstadt neben Valparaíso)",
+      "forms": [
+        "viña del mar",
+        "viña"
+      ],
+      "examples": [
+        {
+          "es": "Viña del Mar está al lado de Valparaíso.",
+          "de": "Viña del Mar liegt neben Valparaíso."
+        }
+      ]
+    },
+    {
+      "id": "w-plan",
+      "kind": "word",
+      "es": "plan",
+      "de": "Plan, Vorhaben",
+      "forms": [
+        "plan",
+        "planes"
+      ],
+      "examples": [
+        {
+          "es": "¿Tienes planes para mañana?",
+          "de": "Hast du morgen etwas vor?"
+        }
+      ],
+      "freqRank": 565
+    },
+    {
+      "id": "w-entonces",
+      "kind": "word",
+      "es": "entonces",
+      "de": "dann, also",
+      "forms": [
+        "entonces"
+      ],
+      "examples": [
+        {
+          "es": "Entonces nos vemos mañana.",
+          "de": "Dann sehen wir uns morgen."
+        }
+      ],
+      "freqRank": 87
+    },
+    {
+      "id": "w-muy",
+      "kind": "word",
+      "es": "muy",
+      "de": "sehr",
+      "forms": [
+        "muy"
+      ],
+      "examples": [
+        {
+          "es": "La ciudad es muy grande.",
+          "de": "Die Stadt ist sehr groß."
+        }
+      ],
+      "note": "Muy steht vor Eigenschaftswörtern, mucho bei Verben und Hauptwörtern: muy lindo, me gusta mucho.",
+      "freqRank": 43
+    },
+    {
+      "id": "w-bastante",
+      "kind": "word",
+      "es": "bastante",
+      "de": "ziemlich, ganz schön",
+      "forms": [
+        "bastante"
+      ],
+      "examples": [
+        {
+          "es": "Hace bastante frío.",
+          "de": "Es ist ziemlich kalt."
+        }
+      ],
+      "freqRank": 385
+    },
+    {
+      "id": "w-nosotros",
+      "kind": "word",
+      "es": "nosotros",
+      "de": "wir",
+      "forms": [
+        "nosotros",
+        "nosotras"
+      ],
+      "examples": [
+        {
+          "es": "Nosotros somos de Alemania.",
+          "de": "Wir kommen aus Deutschland."
+        }
+      ],
+      "note": "Meist lässt man es weg: Somos de Alemania. Nosotras gilt nur für Frauen.",
+      "freqRank": 143
+    },
+    {
+      "id": "w-ellos",
+      "kind": "word",
+      "es": "ellos",
+      "de": "sie (mehrere)",
+      "forms": [
+        "ellos",
+        "ellas"
+      ],
+      "examples": [
+        {
+          "es": "Ellos son de Chile.",
+          "de": "Sie kommen aus Chile."
+        }
+      ],
+      "note": "Ellos steht für Männer oder gemischte Gruppen, ellas nur für Frauen.",
+      "freqRank": 156
+    },
+    {
+      "id": "w-estamos",
+      "kind": "word",
+      "es": "estamos",
+      "de": "wir sind (wo, wie)",
+      "forms": [
+        "estamos"
+      ],
+      "examples": [
+        {
+          "es": "Estamos en el hostal.",
+          "de": "Wir sind im Hostal."
+        }
+      ],
+      "note": "Das ist die Wir-Form von estar.",
+      "freqRank": 139
+    },
+    {
+      "id": "w-conmigo",
+      "kind": "word",
+      "es": "conmigo, contigo",
+      "de": "mit mir, mit dir",
+      "forms": [
+        "conmigo",
+        "contigo"
+      ],
+      "examples": [
+        {
+          "es": "¿Quieres tomar una cerveza conmigo?",
+          "de": "Möchtest du ein Bier mit mir trinken?"
+        }
+      ],
+      "note": "Aus con mí wird conmigo, aus con ti wird contigo."
+    },
+    {
+      "id": "p-a-ti",
+      "kind": "phrase",
+      "es": "y a ti",
+      "de": "und dir?",
+      "forms": [
+        "y a ti",
+        "a ti",
+        "ti"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta el café. ¿Y a ti?",
+          "de": "Ich mag Kaffee. Und du?"
+        }
+      ],
+      "note": "So fragst du zurück, nachdem du selbst etwas über deine Vorlieben gesagt hast."
+    },
+    {
+      "id": "p-a-mi-tambien",
+      "kind": "phrase",
+      "es": "a mí también",
+      "de": "mir auch",
+      "forms": [
+        "a mí también",
+        "a mí tampoco",
+        "a mí",
+        "mí"
+      ],
+      "examples": [
+        {
+          "es": "A mí también me gusta Chile.",
+          "de": "Mir gefällt Chile auch."
+        }
+      ],
+      "note": "A mí también heißt: Mir geht es genauso. Wenn dir etwas nicht gefällt und der andere sagt es auch, heißt es a mí tampoco."
+    },
+    {
+      "id": "w-familia",
+      "kind": "word",
+      "es": "familia",
+      "de": "Familie",
+      "forms": [
+        "familia",
+        "familias"
+      ],
+      "examples": [
+        {
+          "es": "Mi familia vive en Alemania.",
+          "de": "Meine Familie wohnt in Deutschland."
+        }
+      ],
+      "freqRank": 254
+    },
+    {
+      "id": "w-mama",
+      "kind": "word",
+      "es": "mamá",
+      "de": "Mama",
+      "forms": [
+        "mamá"
+      ],
+      "examples": [
+        {
+          "es": "Mi mamá es profesora.",
+          "de": "Meine Mama ist Lehrerin."
+        }
+      ],
+      "note": "Mamá hat den Akzent hinten, ebenso papá.",
+      "freqRank": 196
+    },
+    {
+      "id": "w-papa-padre",
+      "kind": "word",
+      "es": "papá",
+      "de": "Papa",
+      "forms": [
+        "papá"
+      ],
+      "examples": [
+        {
+          "es": "Mi papá es médico.",
+          "de": "Mein Papa ist Arzt."
+        }
+      ],
+      "note": "Papá mit Akzent ist der Vater. Papa ohne Akzent ist die Kartoffel.",
+      "freqRank": 198
+    },
+    {
+      "id": "w-madre",
+      "kind": "word",
+      "es": "madre",
+      "de": "Mutter",
+      "forms": [
+        "madre",
+        "madres"
+      ],
+      "examples": [
+        {
+          "es": "Mi madre es médica.",
+          "de": "Meine Mutter ist Ärztin."
+        }
+      ],
+      "freqRank": 175
+    },
+    {
+      "id": "w-padre",
+      "kind": "word",
+      "es": "padre",
+      "de": "Vater",
+      "forms": [
+        "padre",
+        "padres"
+      ],
+      "examples": [
+        {
+          "es": "Mi padre trabaja en una empresa.",
+          "de": "Mein Vater arbeitet in einer Firma."
+        }
+      ],
+      "note": "Los padres heißt die Eltern: Mis padres viven en Alemania.",
+      "freqRank": 147
+    },
+    {
+      "id": "w-hermano",
+      "kind": "word",
+      "es": "hermano",
+      "de": "Bruder, Schwester",
+      "forms": [
+        "hermano",
+        "hermana",
+        "hermanos",
+        "hermanas"
+      ],
+      "examples": [
+        {
+          "es": "Tengo una hermana.",
+          "de": "Ich habe eine Schwester."
+        }
+      ],
+      "note": "Hermano ist der Bruder, hermana die Schwester. Hermanos heißt Geschwister: ¿Tienes hermanos?",
+      "freqRank": 271
+    },
+    {
+      "id": "w-hijo",
+      "kind": "word",
+      "es": "hijo",
+      "de": "Sohn, Tochter, Kind",
+      "forms": [
+        "hijo",
+        "hija",
+        "hijos",
+        "hijas"
+      ],
+      "examples": [
+        {
+          "es": "Tengo dos hijos.",
+          "de": "Ich habe zwei Kinder."
+        }
+      ],
+      "note": "Hijos heißt auch ganz allgemein Kinder: ¿Tienes hijos?",
+      "freqRank": 188
+    },
+    {
+      "id": "w-abuelo",
+      "kind": "word",
+      "es": "abuelo",
+      "de": "Großvater, Großmutter",
+      "forms": [
+        "abuelo",
+        "abuela",
+        "abuelos",
+        "abuelas"
+      ],
+      "examples": [
+        {
+          "es": "Mi abuela vive en Alemania.",
+          "de": "Meine Oma wohnt in Deutschland."
+        }
+      ],
+      "freqRank": 980
+    },
+    {
+      "id": "w-pareja",
+      "kind": "word",
+      "es": "pareja",
+      "de": "Partner, Partnerin",
+      "forms": [
+        "pareja",
+        "parejas"
+      ],
+      "examples": [
+        {
+          "es": "Viajo con mi pareja.",
+          "de": "Ich reise mit meinem Partner."
+        }
+      ],
+      "note": "Pareja ist neutral und passt für Frauen und Männer.",
+      "freqRank": 1330
+    },
+    {
+      "id": "w-esposo",
+      "kind": "word",
+      "es": "esposo",
+      "de": "Ehemann, Ehefrau",
+      "forms": [
+        "esposo",
+        "esposa",
+        "esposos",
+        "esposas"
+      ],
+      "examples": [
+        {
+          "es": "Mi esposa trabaja en una oficina.",
+          "de": "Meine Frau arbeitet in einem Büro."
+        }
+      ],
+      "note": "Esposo ist der Ehemann, esposa die Ehefrau.",
+      "freqRank": 950
+    },
+    {
+      "id": "w-casado",
+      "kind": "word",
+      "es": "casado",
+      "de": "verheiratet",
+      "forms": [
+        "casado",
+        "casada",
+        "casados"
+      ],
+      "examples": [
+        {
+          "es": "Estoy casado.",
+          "de": "Ich bin verheiratet."
+        }
+      ],
+      "note": "Männer sagen casado, Frauen casada.",
+      "freqRank": 1472
+    },
+    {
+      "id": "w-soltero",
+      "kind": "word",
+      "es": "soltero",
+      "de": "ledig, Single",
+      "forms": [
+        "soltero",
+        "soltera",
+        "solteros"
+      ],
+      "examples": [
+        {
+          "es": "Estoy soltero.",
+          "de": "Ich bin Single."
+        }
+      ],
+      "freqRank": 3938
+    },
+    {
+      "id": "w-gustar",
+      "kind": "word",
+      "es": "gustar",
+      "de": "gefallen, mögen",
+      "forms": [
+        "gustar",
+        "gusta",
+        "gustan"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta el café.",
+          "de": "Ich mag Kaffee."
+        }
+      ],
+      "note": "Gustar heißt wörtlich gefallen: Das Ding gefällt dir. Deshalb steht gusta bei einer Sache und gustan bei mehreren.",
+      "freqRank": 4220
+    },
+    {
+      "id": "p-me-gusta",
+      "kind": "phrase",
+      "es": "me gusta",
+      "de": "mir gefällt, ich mag",
+      "forms": [
+        "me gusta",
+        "te gusta",
+        "le gusta",
+        "nos gusta"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta Santiago.",
+          "de": "Santiago gefällt mir."
+        }
+      ],
+      "note": "Nach me gusta steht eine Sache oder eine Grundform: Me gusta caminar."
+    },
+    {
+      "id": "p-me-gustan",
+      "kind": "phrase",
+      "es": "me gustan",
+      "de": "mir gefallen, ich mag (mehrere)",
+      "forms": [
+        "me gustan",
+        "te gustan",
+        "le gustan",
+        "nos gustan"
+      ],
+      "examples": [
+        {
+          "es": "Me gustan los cerros.",
+          "de": "Die Hügel gefallen mir."
+        }
+      ]
+    },
+    {
+      "id": "p-te-gusta",
+      "kind": "phrase",
+      "es": "¿te gusta?",
+      "de": "gefällt dir? magst du?",
+      "forms": [
+        "te gusta",
+        "le gusta"
+      ],
+      "examples": [
+        {
+          "es": "¿Te gusta Chile?",
+          "de": "Gefällt dir Chile?"
+        }
+      ],
+      "note": "Mit usted fragst du: ¿Le gusta Chile?"
+    },
+    {
+      "id": "p-no-me-gusta",
+      "kind": "phrase",
+      "es": "no me gusta",
+      "de": "ich mag nicht",
+      "forms": [
+        "no me gusta",
+        "no me gustan"
+      ],
+      "examples": [
+        {
+          "es": "No me gusta el picante.",
+          "de": "Ich mag es nicht scharf."
+        }
+      ]
+    },
+    {
+      "id": "p-me-encanta",
+      "kind": "phrase",
+      "es": "me encanta",
+      "de": "ich liebe, mir gefällt sehr",
+      "forms": [
+        "me encanta",
+        "me encantan",
+        "te encanta",
+        "te encantan",
+        "encanta",
+        "encantan"
+      ],
+      "examples": [
+        {
+          "es": "Me encanta la empanada.",
+          "de": "Ich liebe Empanadas."
+        }
+      ],
+      "note": "Das ist stärker als me gusta und folgt derselben Regel: me encanta, me encantan."
+    },
+    {
+      "id": "w-preferir",
+      "kind": "word",
+      "es": "preferir",
+      "de": "lieber mögen, vorziehen",
+      "forms": [
+        "preferir",
+        "prefiero",
+        "prefieres",
+        "prefiere",
+        "preferimos",
+        "prefieren"
+      ],
+      "examples": [
+        {
+          "es": "Prefiero el té.",
+          "de": "Ich nehme lieber Tee."
+        }
+      ]
+    },
+    {
+      "id": "w-favorito",
+      "kind": "word",
+      "es": "favorito",
+      "de": "Lieblings...",
+      "forms": [
+        "favorito",
+        "favorita",
+        "favoritos",
+        "favoritas"
+      ],
+      "examples": [
+        {
+          "es": "Mi comida favorita es la empanada.",
+          "de": "Mein Lieblingsessen ist die Empanada."
+        }
+      ],
+      "note": "Favorito richtet sich nach dem Hauptwort: mi parque favorito, mi comida favorita.",
+      "freqRank": 2214
+    },
+    {
+      "id": "w-musica",
+      "kind": "word",
+      "es": "música",
+      "de": "Musik",
+      "forms": [
+        "música"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta la música.",
+          "de": "Ich mag Musik."
+        }
+      ],
+      "freqRank": 577
+    },
+    {
+      "id": "w-deporte",
+      "kind": "word",
+      "es": "deporte",
+      "de": "Sport",
+      "forms": [
+        "deporte",
+        "deportes"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta el deporte.",
+          "de": "Ich mag Sport."
+        }
+      ],
+      "freqRank": 4299
+    },
+    {
+      "id": "w-futbol",
+      "kind": "word",
+      "es": "fútbol",
+      "de": "Fußball",
+      "forms": [
+        "fútbol"
+      ],
+      "examples": [
+        {
+          "es": "¿Te gusta el fútbol?",
+          "de": "Magst du Fußball?"
+        }
+      ],
+      "freqRank": 2035
+    },
+    {
+      "id": "w-cine",
+      "kind": "word",
+      "es": "cine",
+      "de": "Kino",
+      "forms": [
+        "cine"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta el cine.",
+          "de": "Ich mag Kino."
+        }
+      ],
+      "freqRank": 1406
+    },
+    {
+      "id": "w-pelicula",
+      "kind": "word",
+      "es": "película",
+      "de": "Film",
+      "forms": [
+        "película",
+        "películas"
+      ],
+      "examples": [
+        {
+          "es": "Quiero ver una película.",
+          "de": "Ich möchte einen Film sehen."
+        }
+      ],
+      "freqRank": 641
+    },
+    {
+      "id": "w-libro",
+      "kind": "word",
+      "es": "libro",
+      "de": "Buch",
+      "forms": [
+        "libro",
+        "libros"
+      ],
+      "examples": [
+        {
+          "es": "Tengo un libro en la mochila.",
+          "de": "Ich habe ein Buch im Rucksack."
+        }
+      ],
+      "freqRank": 612
+    },
+    {
+      "id": "w-leer",
+      "kind": "word",
+      "es": "leer",
+      "de": "lesen",
+      "forms": [
+        "leer",
+        "leo",
+        "lees",
+        "lee",
+        "leemos",
+        "leen"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta leer.",
+          "de": "Ich lese gern."
+        }
+      ],
+      "freqRank": 1171
+    },
+    {
+      "id": "w-bailar",
+      "kind": "word",
+      "es": "bailar",
+      "de": "tanzen",
+      "forms": [
+        "bailar",
+        "bailo",
+        "bailas",
+        "baila",
+        "bailamos",
+        "bailan"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta bailar.",
+          "de": "Ich tanze gern."
+        }
+      ],
+      "freqRank": 1222
+    },
+    {
+      "id": "w-cocinar",
+      "kind": "word",
+      "es": "cocinar",
+      "de": "kochen",
+      "forms": [
+        "cocinar",
+        "cocino",
+        "cocinas",
+        "cocinamos",
+        "cocinan"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta cocinar.",
+          "de": "Ich koche gern."
+        }
+      ],
+      "note": "Cocina ist auch das Hauptwort Küche: la cocina. Das Verb heißt cocinar.",
+      "freqRank": 3132
+    },
+    {
+      "id": "w-naturaleza",
+      "kind": "word",
+      "es": "naturaleza",
+      "de": "Natur",
+      "forms": [
+        "naturaleza"
+      ],
+      "examples": [
+        {
+          "es": "Me gusta la naturaleza.",
+          "de": "Ich mag die Natur."
+        }
+      ],
+      "freqRank": 1577
+    },
+    {
+      "id": "w-foto",
+      "kind": "word",
+      "es": "foto",
+      "de": "Foto",
+      "forms": [
+        "foto",
+        "fotos"
+      ],
+      "examples": [
+        {
+          "es": "Tengo muchas fotos.",
+          "de": "Ich habe viele Fotos."
+        }
+      ],
+      "note": "Foto ist weiblich, obwohl es auf o endet: la foto.",
+      "freqRank": 767
+    },
+    {
+      "id": "p-sacar-una-foto",
+      "kind": "phrase",
+      "es": "sacar una foto",
+      "de": "ein Foto machen",
+      "forms": [
+        "sacar una foto",
+        "sacar fotos",
+        "sacar",
+        "saco",
+        "sacas",
+        "saca",
+        "sacamos",
+        "sacan"
+      ],
+      "examples": [
+        {
+          "es": "¿Me puedes sacar una foto?",
+          "de": "Kannst du ein Foto von mir machen?"
+        }
+      ]
+    },
+    {
+      "id": "w-lindo",
+      "kind": "word",
+      "es": "lindo",
+      "de": "schön, hübsch",
+      "forms": [
+        "lindo",
+        "linda",
+        "lindos",
+        "lindas"
+      ],
+      "examples": [
+        {
+          "es": "Santiago es una ciudad muy linda.",
+          "de": "Santiago ist eine sehr schöne Stadt."
+        }
+      ],
+      "note": "Lindo heißt schön und passt für Orte, Dinge und Menschen. Bonito bedeutet dasselbe.",
+      "freqRank": 1035
+    },
+    {
+      "id": "w-bonito",
+      "kind": "word",
+      "es": "bonito",
+      "de": "schön, hübsch",
+      "forms": [
+        "bonito",
+        "bonita",
+        "bonitos",
+        "bonitas"
+      ],
+      "examples": [
+        {
+          "es": "El parque es muy bonito.",
+          "de": "Der Park ist sehr schön."
+        }
+      ],
+      "freqRank": 805
+    },
+    {
+      "id": "w-hermoso",
+      "kind": "word",
+      "es": "hermoso",
+      "de": "wunderschön",
+      "forms": [
+        "hermoso",
+        "hermosa",
+        "hermosos",
+        "hermosas"
+      ],
+      "examples": [
+        {
+          "es": "Las montañas son hermosas.",
+          "de": "Die Berge sind wunderschön."
+        }
+      ],
+      "freqRank": 1069
+    },
+    {
+      "id": "w-increible",
+      "kind": "word",
+      "es": "increíble",
+      "de": "unglaublich, toll",
+      "forms": [
+        "increíble",
+        "increíbles"
+      ],
+      "examples": [
+        {
+          "es": "La vista es increíble.",
+          "de": "Die Aussicht ist unglaublich."
+        }
+      ],
+      "freqRank": 610
+    },
+    {
+      "id": "w-genial",
+      "kind": "word",
+      "es": "genial",
+      "de": "toll, großartig",
+      "forms": [
+        "genial",
+        "geniales"
+      ],
+      "examples": [
+        {
+          "es": "Es un plan genial.",
+          "de": "Das ist ein toller Plan."
+        }
+      ],
+      "freqRank": 292
+    },
+    {
+      "id": "w-amable",
+      "kind": "word",
+      "es": "amable",
+      "de": "freundlich, nett",
+      "forms": [
+        "amable",
+        "amables"
+      ],
+      "examples": [
+        {
+          "es": "La gente es muy amable.",
+          "de": "Die Leute sind sehr freundlich."
+        }
+      ],
+      "note": "Amable gilt für Männer und Frauen gleich.",
+      "freqRank": 919
+    },
+    {
+      "id": "w-simpatico",
+      "kind": "word",
+      "es": "simpático",
+      "de": "sympathisch, nett",
+      "forms": [
+        "simpático",
+        "simpática",
+        "simpáticos",
+        "simpáticas"
+      ],
+      "examples": [
+        {
+          "es": "Ella es muy simpática.",
+          "de": "Sie ist sehr sympathisch."
+        }
+      ]
+    },
+    {
+      "id": "w-delicioso",
+      "kind": "word",
+      "es": "delicioso",
+      "de": "köstlich",
+      "forms": [
+        "delicioso",
+        "deliciosa",
+        "deliciosos",
+        "deliciosas"
+      ],
+      "examples": [
+        {
+          "es": "La comida es deliciosa.",
+          "de": "Das Essen ist köstlich."
+        }
+      ],
+      "freqRank": 3133
+    },
+    {
+      "id": "w-interesante",
+      "kind": "word",
+      "es": "interesante",
+      "de": "interessant",
+      "forms": [
+        "interesante",
+        "interesantes"
+      ],
+      "examples": [
+        {
+          "es": "Es un país muy interesante.",
+          "de": "Es ist ein sehr interessantes Land."
+        }
+      ],
+      "freqRank": 886
+    },
+    {
+      "id": "w-divertido",
+      "kind": "word",
+      "es": "divertido",
+      "de": "lustig, unterhaltsam",
+      "forms": [
+        "divertido",
+        "divertida",
+        "divertidos",
+        "divertidas"
+      ],
+      "examples": [
+        {
+          "es": "El viaje es muy divertido.",
+          "de": "Die Reise ist sehr unterhaltsam."
+        }
+      ],
+      "freqRank": 684
+    },
+    {
+      "id": "w-aburrido",
+      "kind": "word",
+      "es": "aburrido",
+      "de": "langweilig, gelangweilt",
+      "forms": [
+        "aburrido",
+        "aburrida",
+        "aburridos",
+        "aburridas"
+      ],
+      "examples": [
+        {
+          "es": "La película es aburrida.",
+          "de": "Der Film ist langweilig."
+        }
+      ],
+      "note": "Mit ser heißt es langweilig, mit estar gelangweilt: La película es aburrida. Estoy aburrido.",
+      "freqRank": 2388
+    },
+    {
+      "id": "w-cansado",
+      "kind": "word",
+      "es": "cansado",
+      "de": "müde",
+      "forms": [
+        "cansado",
+        "cansada",
+        "cansados",
+        "cansadas"
+      ],
+      "examples": [
+        {
+          "es": "Estoy un poco cansado.",
+          "de": "Ich bin ein bisschen müde."
+        }
+      ],
+      "freqRank": 1469
+    },
+    {
+      "id": "w-contento",
+      "kind": "word",
+      "es": "contento",
+      "de": "froh, zufrieden",
+      "forms": [
+        "contento",
+        "contenta",
+        "contentos",
+        "contentas"
+      ],
+      "examples": [
+        {
+          "es": "Estoy muy contento aquí.",
+          "de": "Ich bin sehr froh hier."
+        }
+      ],
+      "freqRank": 1809
+    },
+    {
+      "id": "w-feliz",
+      "kind": "word",
+      "es": "feliz",
+      "de": "glücklich",
+      "forms": [
+        "feliz",
+        "felices"
+      ],
+      "examples": [
+        {
+          "es": "Estoy muy feliz.",
+          "de": "Ich bin sehr glücklich."
+        }
+      ],
+      "freqRank": 338
+    },
+    {
+      "id": "p-que-lindo",
+      "kind": "phrase",
+      "es": "¡qué lindo!",
+      "de": "wie schön!",
+      "forms": [
+        "qué lindo",
+        "qué linda",
+        "qué lindos",
+        "qué lindas"
+      ],
+      "examples": [
+        {
+          "es": "¡Qué lindo es el cerro!",
+          "de": "Wie schön ist der Hügel!"
+        }
+      ],
+      "note": "Mit qué rufst du etwas aus: qué lindo, qué rico, qué bien."
+    },
+    {
+      "id": "w-juntarse",
+      "kind": "word",
+      "es": "juntarse",
+      "de": "sich treffen",
+      "forms": [
+        "juntarse",
+        "me junto",
+        "te juntas",
+        "se junta",
+        "nos juntamos",
+        "se juntan",
+        "juntarnos"
+      ],
+      "examples": [
+        {
+          "es": "¿Nos juntamos mañana?",
+          "de": "Treffen wir uns morgen?"
+        }
+      ],
+      "note": "Nos juntamos heißt wir treffen uns. Als Frage schlägst du damit ein Treffen vor."
+    },
+    {
+      "id": "w-invitar",
+      "kind": "word",
+      "es": "invitar",
+      "de": "einladen",
+      "forms": [
+        "invitar",
+        "invito",
+        "invitas",
+        "invita",
+        "invitamos",
+        "invitan"
+      ],
+      "examples": [
+        {
+          "es": "Te invito a un café.",
+          "de": "Ich lade dich auf einen Kaffee ein."
+        }
+      ],
+      "note": "Invitar kann auch heißen, dass du die Rechnung übernimmst: Te invito."
+    },
+    {
+      "id": "p-buena-idea",
+      "kind": "phrase",
+      "es": "buena idea",
+      "de": "gute Idee",
+      "forms": [
+        "buena idea",
+        "idea"
+      ],
+      "examples": [
+        {
+          "es": "Buena idea, vamos.",
+          "de": "Gute Idee, gehen wir."
+        }
+      ]
+    },
+    {
+      "id": "w-venir",
+      "kind": "word",
+      "es": "venir",
+      "de": "kommen",
+      "forms": [
+        "venir",
+        "vengo",
+        "vienes",
+        "viene",
+        "venimos",
+        "vienen"
+      ],
+      "examples": [
+        {
+          "es": "¿Quieres venir con nosotros?",
+          "de": "Willst du mit uns kommen?"
+        }
+      ],
+      "freqRank": 339
+    },
+    {
+      "id": "w-whatsapp",
+      "kind": "word",
+      "es": "WhatsApp",
+      "de": "WhatsApp",
+      "forms": [
+        "whatsapp"
+      ],
+      "examples": [
+        {
+          "es": "¿Tienes WhatsApp?",
+          "de": "Hast du WhatsApp?"
+        }
+      ]
+    },
+    {
+      "id": "w-instagram",
+      "kind": "word",
+      "es": "Instagram",
+      "de": "Instagram",
+      "forms": [
+        "instagram"
+      ],
+      "examples": [
+        {
+          "es": "¿Tienes Instagram?",
+          "de": "Hast du Instagram?"
+        }
+      ]
+    },
+    {
+      "id": "w-telefono",
+      "kind": "word",
+      "es": "teléfono",
+      "de": "Telefon",
+      "forms": [
+        "teléfono",
+        "teléfonos"
+      ],
+      "examples": [
+        {
+          "es": "Mi teléfono no funciona.",
+          "de": "Mein Telefon funktioniert nicht."
+        }
+      ],
+      "note": "Das Mobiltelefon heißt celular. Teléfono meint das Telefon allgemein oder die Nummer: número de teléfono.",
+      "freqRank": 443
+    },
+    {
+      "id": "p-numero-de-telefono",
+      "kind": "phrase",
+      "es": "número de teléfono",
+      "de": "Telefonnummer",
+      "forms": [
+        "número de teléfono"
+      ],
+      "examples": [
+        {
+          "es": "¿Me das tu número de teléfono?",
+          "de": "Gibst du mir deine Telefonnummer?"
+        }
+      ]
+    },
+    {
+      "id": "w-mensaje",
+      "kind": "word",
+      "es": "mensaje",
+      "de": "Nachricht",
+      "forms": [
+        "mensaje",
+        "mensajes"
+      ],
+      "examples": [
+        {
+          "es": "Te mando un mensaje.",
+          "de": "Ich schicke dir eine Nachricht."
+        }
+      ],
+      "freqRank": 691
+    },
+    {
+      "id": "w-escribir",
+      "kind": "word",
+      "es": "escribir",
+      "de": "schreiben",
+      "forms": [
+        "escribir",
+        "escribo",
+        "escribes",
+        "escribe",
+        "escribimos",
+        "escriben"
+      ],
+      "examples": [
+        {
+          "es": "Te escribo mañana.",
+          "de": "Ich schreibe dir morgen."
+        }
+      ],
+      "note": "Te escribo heißt ich schreibe dir, zum Beispiel eine Nachricht auf WhatsApp.",
+      "freqRank": 1178
+    },
+    {
+      "id": "w-mandar",
+      "kind": "word",
+      "es": "mandar",
+      "de": "schicken",
+      "forms": [
+        "mandar",
+        "mando",
+        "mandas",
+        "manda",
+        "mandamos",
+        "mandan"
+      ],
+      "examples": [
+        {
+          "es": "Te mando una foto.",
+          "de": "Ich schicke dir ein Foto."
+        }
+      ],
+      "freqRank": 3878
+    },
+    {
+      "id": "p-fue-un-gusto",
+      "kind": "phrase",
+      "es": "fue un gusto",
+      "de": "es war schön",
+      "forms": [
+        "fue un gusto",
+        "fue",
+        "conocerte"
+      ],
+      "examples": [
+        {
+          "es": "Fue un gusto conocerte.",
+          "de": "Es war schön, dich kennenzulernen."
+        }
+      ],
+      "note": "Das ist eine feste Wendung in der Vergangenheit, passend zum Abschied. Beim Kennenlernen sagst du mucho gusto."
+    },
+    {
+      "id": "p-cuidate",
+      "kind": "phrase",
+      "es": "cuídate",
+      "de": "pass auf dich auf",
+      "forms": [
+        "cuídate",
+        "cuídese"
+      ],
+      "examples": [
+        {
+          "es": "Chao, cuídate.",
+          "de": "Tschüss, pass auf dich auf."
+        }
+      ],
+      "note": "Ein freundlicher Gruß zum Abschied. Zu einer älteren Person sagst du cuídese."
+    },
+    {
+      "id": "p-que-te-vaya-bien",
+      "kind": "phrase",
+      "es": "que te vaya bien",
+      "de": "alles Gute für dich",
+      "forms": [
+        "que te vaya bien",
+        "que le vaya bien",
+        "vaya"
+      ],
+      "examples": [
+        {
+          "es": "Que te vaya bien.",
+          "de": "Alles Gute für dich."
+        }
+      ],
+      "note": "Das ist eine feste Wendung zum Abschied. Vaya lernst du nur im ganzen Satz. Zu usted sagst du: Que le vaya bien."
+    },
+    {
+      "id": "s-y-tu-de-donde-eres",
+      "kind": "sentence",
+      "es": "¿Y tú, de dónde eres?",
+      "de": "Und woher kommst du?"
+    },
+    {
+      "id": "s-a-que-te-dedicas",
+      "kind": "sentence",
+      "es": "¿A qué te dedicas?",
+      "de": "Was machst du beruflich?",
+      "accept": [
+        "¿En qué trabajas?"
+      ]
+    },
+    {
+      "id": "s-soy-estudiante",
+      "kind": "sentence",
+      "es": "Soy estudiante.",
+      "de": "Ich bin Student."
+    },
+    {
+      "id": "s-trabajo-en-una-empresa",
+      "kind": "sentence",
+      "es": "Trabajo en una empresa.",
+      "de": "Ich arbeite in einer Firma."
+    },
+    {
+      "id": "s-vivo-en-alemania",
+      "kind": "sentence",
+      "es": "Vivo en Alemania.",
+      "de": "Ich wohne in Deutschland."
+    },
+    {
+      "id": "s-es-mi-primera-vez-en-chile",
+      "kind": "sentence",
+      "es": "Es mi primera vez en Chile.",
+      "de": "Es ist mein erstes Mal in Chile."
+    },
+    {
+      "id": "s-cuanto-tiempo-te-quedas-en-chile",
+      "kind": "sentence",
+      "es": "¿Cuánto tiempo te quedas en Chile?",
+      "de": "Wie lange bleibst du in Chile?",
+      "accept": [
+        "¿Cuánto tiempo te quedas?",
+        "¿Hasta cuándo te quedas en Chile?"
+      ]
+    },
+    {
+      "id": "s-me-quedo-dos-semanas",
+      "kind": "sentence",
+      "es": "Me quedo dos semanas.",
+      "de": "Ich bleibe zwei Wochen.",
+      "accept": [
+        "Me quedo por dos semanas."
+      ]
+    },
+    {
+      "id": "s-hace-dos-semanas-que-estoy-en-chile",
+      "kind": "sentence",
+      "es": "Hace dos semanas que estoy en Chile.",
+      "de": "Ich bin seit zwei Wochen in Chile.",
+      "accept": [
+        "Estoy en Chile desde hace dos semanas."
+      ]
+    },
+    {
+      "id": "s-vivo-aqui-desde-hace-un-ano",
+      "kind": "sentence",
+      "es": "Vivo aquí desde hace un año.",
+      "de": "Ich wohne seit einem Jahr hier.",
+      "accept": [
+        "Hace un año que vivo aquí."
+      ]
+    },
+    {
+      "id": "s-cuanto-tiempo-llevas-en-chile",
+      "kind": "sentence",
+      "es": "¿Cuánto tiempo llevas en Chile?",
+      "de": "Wie lange bist du schon in Chile?",
+      "accept": [
+        "¿Hace cuánto que estás en Chile?"
+      ]
+    },
+    {
+      "id": "s-que-planes-tienes-para-manana",
+      "kind": "sentence",
+      "es": "¿Qué planes tienes para mañana?",
+      "de": "Was hast du morgen vor?",
+      "accept": [
+        "¿Tienes planes para mañana?"
+      ]
+    },
+    {
+      "id": "s-manana-voy-a-valparaiso",
+      "kind": "sentence",
+      "es": "Mañana voy a Valparaíso.",
+      "de": "Morgen fahre ich nach Valparaíso."
+    },
+    {
+      "id": "s-voy-a-viajar-al-sur",
+      "kind": "sentence",
+      "es": "Voy a viajar al sur.",
+      "de": "Ich werde in den Süden reisen."
+    },
+    {
+      "id": "s-quiero-conocer-san-pedro-de-atacama",
+      "kind": "sentence",
+      "es": "Quiero conocer San Pedro de Atacama.",
+      "de": "Ich möchte San Pedro de Atacama kennenlernen.",
+      "accept": [
+        "Quiero visitar San Pedro de Atacama."
+      ]
+    },
+    {
+      "id": "s-conoces-valparaiso",
+      "kind": "sentence",
+      "es": "¿Conoces Valparaíso?",
+      "de": "Kennst du Valparaíso?"
+    },
+    {
+      "id": "s-no-conozco-la-patagonia",
+      "kind": "sentence",
+      "es": "No conozco la Patagonia.",
+      "de": "Ich kenne Patagonien nicht."
+    },
+    {
+      "id": "s-sabes-donde-queda-la-playa",
+      "kind": "sentence",
+      "es": "¿Sabes dónde queda la playa?",
+      "de": "Weißt du, wo der Strand liegt?"
+    },
+    {
+      "id": "s-se-un-poco-de-espanol",
+      "kind": "sentence",
+      "es": "Sé un poco de español.",
+      "de": "Ich kann ein bisschen Spanisch.",
+      "accept": [
+        "Hablo un poco de español."
+      ]
+    },
+    {
+      "id": "s-que-tiempo-hace-hoy",
+      "kind": "sentence",
+      "es": "¿Qué tiempo hace hoy?",
+      "de": "Wie ist das Wetter heute?",
+      "accept": [
+        "¿Qué tiempo hace?"
+      ]
+    },
+    {
+      "id": "s-hoy-hace-sol",
+      "kind": "sentence",
+      "es": "Hoy hace sol.",
+      "de": "Heute scheint die Sonne.",
+      "accept": [
+        "Hoy hay sol."
+      ]
+    },
+    {
+      "id": "s-hoy-esta-nublado",
+      "kind": "sentence",
+      "es": "Hoy está nublado.",
+      "de": "Heute ist es bewölkt."
+    },
+    {
+      "id": "s-hace-mucho-calor-hoy",
+      "kind": "sentence",
+      "es": "Hace mucho calor hoy.",
+      "de": "Heute ist es sehr heiß.",
+      "accept": [
+        "Hoy hace mucho calor."
+      ]
+    },
+    {
+      "id": "s-manana-va-a-llover",
+      "kind": "sentence",
+      "es": "Mañana va a llover.",
+      "de": "Morgen wird es regnen.",
+      "accept": [
+        "Mañana llueve."
+      ]
+    },
+    {
+      "id": "s-hay-treinta-grados",
+      "kind": "sentence",
+      "es": "Hay treinta grados.",
+      "de": "Es sind 30 Grad.",
+      "accept": [
+        "Hace treinta grados."
+      ]
+    },
+    {
+      "id": "s-en-invierno-hace-frio-en-santiago",
+      "kind": "sentence",
+      "es": "En invierno hace frío en Santiago.",
+      "de": "Im Winter ist es in Santiago kalt."
+    },
+    {
+      "id": "s-tengo-una-hermana",
+      "kind": "sentence",
+      "es": "Tengo una hermana.",
+      "de": "Ich habe eine Schwester."
+    },
+    {
+      "id": "s-tienes-hermanos",
+      "kind": "sentence",
+      "es": "¿Tienes hermanos?",
+      "de": "Hast du Geschwister?"
+    },
+    {
+      "id": "s-mi-familia-vive-en-alemania",
+      "kind": "sentence",
+      "es": "Mi familia vive en Alemania.",
+      "de": "Meine Familie wohnt in Deutschland."
+    },
+    {
+      "id": "s-tienes-hijos",
+      "kind": "sentence",
+      "es": "¿Tienes hijos?",
+      "de": "Hast du Kinder?"
+    },
+    {
+      "id": "s-estoy-casado",
+      "kind": "sentence",
+      "es": "Estoy casado.",
+      "de": "Ich bin verheiratet.",
+      "accept": [
+        "Soy casado.",
+        "Estoy casada."
+      ]
+    },
+    {
+      "id": "s-me-gusta-chile",
+      "kind": "sentence",
+      "es": "Me gusta Chile.",
+      "de": "Chile gefällt mir."
+    },
+    {
+      "id": "s-me-gustan-los-cerros",
+      "kind": "sentence",
+      "es": "Me gustan los cerros.",
+      "de": "Die Hügel gefallen mir.",
+      "accept": [
+        "Me gustan las montañas."
+      ]
+    },
+    {
+      "id": "s-te-gusta-la-comida-chilena",
+      "kind": "sentence",
+      "es": "¿Te gusta la comida chilena?",
+      "de": "Magst du das chilenische Essen?"
+    },
+    {
+      "id": "s-no-me-gusta-el-picante",
+      "kind": "sentence",
+      "es": "No me gusta el picante.",
+      "de": "Ich mag es nicht scharf."
+    },
+    {
+      "id": "s-me-encanta-la-empanada",
+      "kind": "sentence",
+      "es": "Me encanta la empanada.",
+      "de": "Ich liebe Empanadas.",
+      "accept": [
+        "Me encantan las empanadas."
+      ]
+    },
+    {
+      "id": "s-a-mi-tambien",
+      "kind": "sentence",
+      "es": "A mí también.",
+      "de": "Mir auch.",
+      "accept": [
+        "Yo también."
+      ]
+    },
+    {
+      "id": "s-prefiero-el-te",
+      "kind": "sentence",
+      "es": "Prefiero el té.",
+      "de": "Ich nehme lieber Tee."
+    },
+    {
+      "id": "s-que-te-gusta-hacer",
+      "kind": "sentence",
+      "es": "¿Qué te gusta hacer?",
+      "de": "Was machst du gern?"
+    },
+    {
+      "id": "s-me-gusta-caminar-y-sacar-fotos",
+      "kind": "sentence",
+      "es": "Me gusta caminar y sacar fotos.",
+      "de": "Ich gehe gern spazieren und mache gern Fotos."
+    },
+    {
+      "id": "s-chile-es-un-pais-muy-lindo",
+      "kind": "sentence",
+      "es": "Chile es un país muy lindo.",
+      "de": "Chile ist ein sehr schönes Land.",
+      "accept": [
+        "Chile es un país muy bonito.",
+        "Chile es un país hermoso."
+      ]
+    },
+    {
+      "id": "s-la-gente-es-muy-amable",
+      "kind": "sentence",
+      "es": "La gente es muy amable.",
+      "de": "Die Leute sind sehr freundlich.",
+      "accept": [
+        "Los chilenos son muy amables."
+      ]
+    },
+    {
+      "id": "s-la-comida-es-deliciosa",
+      "kind": "sentence",
+      "es": "La comida es deliciosa.",
+      "de": "Das Essen ist köstlich.",
+      "accept": [
+        "La comida es muy rica."
+      ]
+    },
+    {
+      "id": "s-santiago-es-una-ciudad-increible",
+      "kind": "sentence",
+      "es": "Santiago es una ciudad increíble.",
+      "de": "Santiago ist eine tolle Stadt.",
+      "accept": [
+        "Santiago es una ciudad muy linda."
+      ]
+    },
+    {
+      "id": "s-estoy-muy-contento-aqui",
+      "kind": "sentence",
+      "es": "Estoy muy contento aquí.",
+      "de": "Ich bin sehr froh hier.",
+      "accept": [
+        "Estoy muy feliz aquí.",
+        "Estoy muy contenta aquí."
+      ]
+    },
+    {
+      "id": "s-estoy-un-poco-cansado",
+      "kind": "sentence",
+      "es": "Estoy un poco cansado.",
+      "de": "Ich bin ein bisschen müde.",
+      "accept": [
+        "Estoy un poco cansada."
+      ]
+    },
+    {
+      "id": "s-quieres-tomar-un-cafe",
+      "kind": "sentence",
+      "es": "¿Quieres tomar un café?",
+      "de": "Möchtest du einen Kaffee trinken?",
+      "accept": [
+        "¿Quieres tomar un café conmigo?"
+      ]
+    },
+    {
+      "id": "s-tienes-tiempo-manana",
+      "kind": "sentence",
+      "es": "¿Tienes tiempo mañana?",
+      "de": "Hast du morgen Zeit?"
+    },
+    {
+      "id": "s-nos-juntamos-manana",
+      "kind": "sentence",
+      "es": "¿Nos juntamos mañana?",
+      "de": "Treffen wir uns morgen?",
+      "accept": [
+        "¿Nos vemos mañana?"
+      ]
+    },
+    {
+      "id": "s-donde-nos-juntamos",
+      "kind": "sentence",
+      "es": "¿Dónde nos juntamos?",
+      "de": "Wo treffen wir uns?"
+    },
+    {
+      "id": "s-listo-nos-vemos-a-las-ocho",
+      "kind": "sentence",
+      "es": "Listo, nos vemos a las ocho.",
+      "de": "Gut, wir sehen uns um acht Uhr.",
+      "accept": [
+        "Perfecto, nos vemos a las ocho."
+      ]
+    },
+    {
+      "id": "s-te-invito-a-un-cafe",
+      "kind": "sentence",
+      "es": "Te invito a un café.",
+      "de": "Ich lade dich auf einen Kaffee ein."
+    },
+    {
+      "id": "s-quieres-venir-con-nosotros",
+      "kind": "sentence",
+      "es": "¿Quieres venir con nosotros?",
+      "de": "Willst du mit uns kommen?"
+    },
+    {
+      "id": "s-tienes-whatsapp",
+      "kind": "sentence",
+      "es": "¿Tienes WhatsApp?",
+      "de": "Hast du WhatsApp?"
+    },
+    {
+      "id": "s-me-das-tu-numero-de-telefono",
+      "kind": "sentence",
+      "es": "¿Me das tu número de teléfono?",
+      "de": "Gibst du mir deine Telefonnummer?",
+      "accept": [
+        "¿Me das tu número?"
+      ]
+    },
+    {
+      "id": "s-te-mando-un-mensaje",
+      "kind": "sentence",
+      "es": "Te mando un mensaje.",
+      "de": "Ich schicke dir eine Nachricht.",
+      "accept": [
+        "Te escribo."
+      ]
+    },
+    {
+      "id": "s-me-puedes-sacar-una-foto",
+      "kind": "sentence",
+      "es": "¿Me puedes sacar una foto?",
+      "de": "Kannst du ein Foto von mir machen?",
+      "accept": [
+        "¿Me sacas una foto?"
+      ]
+    },
+    {
+      "id": "s-fue-un-gusto-conocerte",
+      "kind": "sentence",
+      "es": "Fue un gusto conocerte.",
+      "de": "Es war schön, dich kennenzulernen."
+    },
+    {
+      "id": "s-chao-cuidate",
+      "kind": "sentence",
+      "es": "Chao, cuídate.",
+      "de": "Tschüss, pass auf dich auf.",
+      "accept": [
+        "Cuídate."
+      ]
+    },
+    {
+      "id": "s-que-te-vaya-bien",
+      "kind": "sentence",
+      "es": "Que te vaya bien.",
+      "de": "Alles Gute für dich."
+    },
+    {
+      "id": "d-terraza-hostal",
+      "kind": "dialog",
+      "title": "Auf der Terrasse im Hostal",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Hola, ¿tú también estás en el hostal?",
+          "de": "Hallo, wohnst du auch im Hostal?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, hace dos días que estoy aquí. Me llamo Ana.",
+          "de": "Ja, ich bin seit zwei Tagen hier. Ich heiße Ana."
+        },
+        {
+          "speaker": "A",
+          "es": "Mucho gusto, me llamo Pablo. ¿De dónde eres?",
+          "de": "Freut mich, ich heiße Pablo. Woher kommst du?"
+        },
+        {
+          "speaker": "B",
+          "es": "Soy de Valparaíso, pero ahora estoy de vacaciones en Santiago. ¿Y tú?",
+          "de": "Ich komme aus Valparaíso, aber jetzt mache ich Urlaub in Santiago. Und du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Soy de Alemania. Es mi primera vez en Chile.",
+          "de": "Ich komme aus Deutschland. Es ist mein erstes Mal in Chile."
+        },
+        {
+          "speaker": "B",
+          "es": "¡Qué bien! ¿Cuánto tiempo te quedas?",
+          "de": "Schön! Wie lange bleibst du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Me quedo tres semanas. Mañana voy a viajar al norte.",
+          "de": "Ich bleibe drei Wochen. Morgen reise ich in den Norden."
+        },
+        {
+          "speaker": "B",
+          "es": "Qué lindo. Me encanta el desierto.",
+          "de": "Wie schön. Ich liebe die Wüste."
+        }
+      ]
+    },
+    {
+      "id": "d-te-gusta-chile",
+      "kind": "dialog",
+      "title": "¿Te gusta Chile?",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Perdón, ¿me puedes sacar una foto?",
+          "de": "Entschuldigung, kannst du ein Foto von mir machen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Claro, con gusto. ¿Eres turista?",
+          "de": "Klar, gern. Bist du Tourist?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, soy de Alemania. Estoy de vacaciones.",
+          "de": "Ja, ich komme aus Deutschland. Ich mache Urlaub."
+        },
+        {
+          "speaker": "B",
+          "es": "¡Qué bien! ¿Te gusta Chile?",
+          "de": "Schön! Gefällt dir Chile?"
+        },
+        {
+          "speaker": "A",
+          "es": "Me gusta mucho. La gente es muy amable y la comida es deliciosa.",
+          "de": "Es gefällt mir sehr. Die Leute sind sehr freundlich und das Essen ist köstlich."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Te gustan las empanadas?",
+          "de": "Magst du Empanadas?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, me encantan. ¿Y a ti?",
+          "de": "Ja, ich liebe sie. Und du?"
+        },
+        {
+          "speaker": "B",
+          "es": "A mí también. Listo, aquí tienes la foto.",
+          "de": "Ich auch. So, hier ist dein Foto."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias. Eres muy amable.",
+          "de": "Vielen Dank. Du bist sehr nett."
+        }
+      ]
+    },
+    {
+      "id": "d-familia-y-pareja",
+      "kind": "dialog",
+      "title": "Familie und Beruf",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "¿Tienes hermanos?",
+          "de": "Hast du Geschwister?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, tengo una hermana. Ella vive en Alemania.",
+          "de": "Ja, ich habe eine Schwester. Sie wohnt in Deutschland."
+        },
+        {
+          "speaker": "A",
+          "es": "¿A qué se dedica?",
+          "de": "Was macht sie beruflich?"
+        },
+        {
+          "speaker": "B",
+          "es": "Mi hermana es profesora. Mis padres son médicos.",
+          "de": "Meine Schwester ist Lehrerin. Meine Eltern sind Ärzte."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Estás casado?",
+          "de": "Bist du verheiratet?"
+        },
+        {
+          "speaker": "B",
+          "es": "No, estoy soltero. ¿Y tú?",
+          "de": "Nein, ich bin Single. Und du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Yo tengo pareja. Hace un año que vivimos juntos.",
+          "de": "Ich bin in einer Beziehung. Seit einem Jahr wohnen wir zusammen."
+        },
+        {
+          "speaker": "B",
+          "es": "Qué bien. ¿Tienes hijos?",
+          "de": "Schön. Hast du Kinder?"
+        },
+        {
+          "speaker": "A",
+          "es": "No, todavía no.",
+          "de": "Nein, noch nicht."
+        }
+      ]
+    },
+    {
+      "id": "d-clima-y-planes",
+      "kind": "dialog",
+      "title": "Wetter und Pläne",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "¿Qué tiempo hace hoy?",
+          "de": "Wie ist das Wetter heute?"
+        },
+        {
+          "speaker": "B",
+          "es": "Hoy hace sol, pero mañana va a llover.",
+          "de": "Heute scheint die Sonne, aber morgen wird es regnen."
+        },
+        {
+          "speaker": "A",
+          "es": "Entonces mañana no voy a Valparaíso.",
+          "de": "Dann fahre ich morgen nicht nach Valparaíso."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Qué planes tienes?",
+          "de": "Was hast du vor?"
+        },
+        {
+          "speaker": "A",
+          "es": "Quiero visitar Valparaíso y después voy al sur.",
+          "de": "Ich möchte Valparaíso besuchen und danach fahre ich in den Süden."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Conoces la Patagonia?",
+          "de": "Kennst du Patagonien?"
+        },
+        {
+          "speaker": "A",
+          "es": "No, no la conozco. ¿Y tú?",
+          "de": "Nein, ich kenne es nicht. Und du?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, es muy linda, pero hace frío y viento.",
+          "de": "Ja, es ist sehr schön, aber es ist kalt und windig."
+        },
+        {
+          "speaker": "A",
+          "es": "No hay problema, me gusta el frío.",
+          "de": "Kein Problem, ich mag die Kälte."
+        }
+      ]
+    },
+    {
+      "id": "d-nos-juntamos",
+      "kind": "dialog",
+      "title": "Sich verabreden",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "¿Tienes planes para esta noche?",
+          "de": "Hast du heute Abend etwas vor?"
+        },
+        {
+          "speaker": "B",
+          "es": "Todavía no. ¿Por qué?",
+          "de": "Noch nicht. Warum?"
+        },
+        {
+          "speaker": "A",
+          "es": "¿Quieres tomar una cerveza?",
+          "de": "Möchtest du ein Bier trinken?"
+        },
+        {
+          "speaker": "B",
+          "es": "Buena idea. ¿Dónde nos juntamos?",
+          "de": "Gute Idee. Wo treffen wir uns?"
+        },
+        {
+          "speaker": "A",
+          "es": "¿En Bellavista, a las ocho?",
+          "de": "In Bellavista, um acht Uhr?"
+        },
+        {
+          "speaker": "B",
+          "es": "Listo, nos vemos a las ocho. ¿Tienes WhatsApp?",
+          "de": "Gut, wir sehen uns um acht. Hast du WhatsApp?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, te mando un mensaje. ¿Cuál es tu número?",
+          "de": "Ja, ich schicke dir eine Nachricht. Wie ist deine Nummer?"
+        },
+        {
+          "speaker": "B",
+          "es": "Es el nueve, ocho, siete, seis, cinco, cuatro, tres, dos.",
+          "de": "Es ist die 9, 8, 7, 6, 5, 4, 3, 2."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto. Nos vemos a las ocho.",
+          "de": "Perfekt. Wir sehen uns um acht."
+        },
+        {
+          "speaker": "B",
+          "es": "Chao, hasta luego.",
+          "de": "Tschüss, bis später."
+        }
+      ]
+    },
+    {
+      "id": "d-usted-en-el-parque",
+      "kind": "dialog",
+      "title": "Mit usted im Park",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes, señora. ¿Puedo preguntar algo?",
+          "de": "Guten Tag, Señora. Darf ich etwas fragen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Claro, dígame.",
+          "de": "Natürlich, sagen Sie."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Usted es de aquí, de Santiago?",
+          "de": "Sind Sie von hier, aus Santiago?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, vivo aquí hace cuarenta años.",
+          "de": "Ja, ich wohne seit vierzig Jahren hier."
+        },
+        {
+          "speaker": "A",
+          "es": "Cuarenta años. Santiago es una ciudad muy linda.",
+          "de": "Vierzig Jahre. Santiago ist eine sehr schöne Stadt."
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, pero ahora hay mucho ruido y mucha gente.",
+          "de": "Ja, aber jetzt gibt es viel Lärm und viele Leute."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Usted conoce el cerro San Cristóbal?",
+          "de": "Kennen Sie den Cerro San Cristóbal?"
+        },
+        {
+          "speaker": "B",
+          "es": "Claro, es mi parque favorito. ¿Y usted, de dónde es?",
+          "de": "Natürlich, es ist mein Lieblingspark. Und Sie, woher kommen Sie?"
+        },
+        {
+          "speaker": "A",
+          "es": "Soy de Alemania. Estoy de vacaciones.",
+          "de": "Ich komme aus Deutschland. Ich mache Urlaub."
+        },
+        {
+          "speaker": "B",
+          "es": "Qué bien. Bienvenido a Chile.",
+          "de": "Schön. Willkommen in Chile."
+        }
+      ]
+    },
+    {
+      "id": "g-gustar",
+      "kind": "grammar",
+      "title": "gustar: me gusta, me gustan",
+      "explanation": "Gustar heißt wörtlich gefallen: Das Ding gefällt dir, du bist nicht das Subjekt. Bei einer Sache oder einer Grundform steht gusta: Me gusta el café. Me gusta caminar. Bei mehreren Dingen steht gustan: Me gustan los cerros. Die Person steht davor: me, te, le (er, sie, Sie), nos. Frage: ¿Te gusta Chile? Mit usted: ¿Le gusta Chile? Verneint: No me gusta.",
+      "examples": [
+        {
+          "es": "Me gusta Santiago.",
+          "de": "Santiago gefällt mir."
+        },
+        {
+          "es": "Me gustan los cerros.",
+          "de": "Die Hügel gefallen mir."
+        },
+        {
+          "es": "¿Te gusta la comida chilena?",
+          "de": "Magst du das chilenische Essen?"
+        },
+        {
+          "es": "¿Le gusta Chile?",
+          "de": "Gefällt Ihnen Chile?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Chile gefällt mir.",
+          "es": "Me gusta Chile.",
+          "accept": [
+            "Chile me gusta."
+          ]
+        },
+        {
+          "de": "Die Hügel gefallen mir.",
+          "es": "Me gustan los cerros."
+        },
+        {
+          "de": "Magst du den Kaffee?",
+          "es": "¿Te gusta el café?"
+        },
+        {
+          "de": "Magst du Empanadas?",
+          "es": "¿Te gustan las empanadas?"
+        },
+        {
+          "de": "Ich gehe gern spazieren.",
+          "es": "Me gusta caminar."
+        },
+        {
+          "de": "Gefällt Ihnen Chile?",
+          "es": "¿Le gusta Chile?"
+        },
+        {
+          "de": "Wir mögen die Stadt.",
+          "es": "Nos gusta la ciudad."
+        }
+      ]
+    },
+    {
+      "id": "g-saber-conocer",
+      "kind": "grammar",
+      "title": "saber und conocer",
+      "explanation": "Beide heißen kennen oder wissen, aber sie sind nicht austauschbar. Saber steht für Wissen und Können: No sé. ¿Sabes dónde queda la playa? Sé un poco de español. Conocer steht für kennen, bei Orten und Menschen: Conozco Valparaíso. ¿Conoces a Ana? Vor einer Person steht a. Formen: yo sé, tú sabes, él sabe; yo conozco, tú conoces, él conoce.",
+      "examples": [
+        {
+          "es": "No sé.",
+          "de": "Ich weiß es nicht."
+        },
+        {
+          "es": "¿Sabes dónde queda la playa?",
+          "de": "Weißt du, wo der Strand liegt?"
+        },
+        {
+          "es": "Conozco Valparaíso.",
+          "de": "Ich kenne Valparaíso."
+        },
+        {
+          "es": "¿Conoces a Ana?",
+          "de": "Kennst du Ana?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich weiß es nicht.",
+          "es": "No sé.",
+          "accept": [
+            "No lo sé."
+          ]
+        },
+        {
+          "de": "Kennst du Valparaíso?",
+          "es": "¿Conoces Valparaíso?"
+        },
+        {
+          "de": "Ich kann ein bisschen Spanisch.",
+          "es": "Sé un poco de español.",
+          "accept": [
+            "Hablo un poco de español."
+          ]
+        },
+        {
+          "de": "Ich kenne Ana nicht.",
+          "es": "No conozco a Ana."
+        },
+        {
+          "de": "Weißt du, wo der Strand liegt?",
+          "es": "¿Sabes dónde queda la playa?"
+        },
+        {
+          "de": "Wir kennen Santiago.",
+          "es": "Conocemos Santiago."
+        }
+      ]
+    },
+    {
+      "id": "g-ser-estar",
+      "kind": "grammar",
+      "title": "ser und estar gemischt",
+      "explanation": "Ser sagt, was oder wer etwas ist: Herkunft, Beruf, Eigenschaft. Soy de Alemania. Soy estudiante. Ella es simpática. Estar sagt, wo etwas ist und wie es gerade geht: Estoy en Santiago. Estoy cansado. Hoy está nublado. Manche Wörter ändern den Sinn: Soy aburrido heißt ich bin langweilig, estoy aburrido heißt mir ist langweilig. Nach soy steht beim Beruf kein Artikel.",
+      "examples": [
+        {
+          "es": "Soy de Alemania.",
+          "de": "Ich komme aus Deutschland."
+        },
+        {
+          "es": "Estoy en Santiago.",
+          "de": "Ich bin in Santiago."
+        },
+        {
+          "es": "Estoy cansado.",
+          "de": "Ich bin müde."
+        },
+        {
+          "es": "La película es aburrida.",
+          "de": "Der Film ist langweilig."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich komme aus Deutschland.",
+          "es": "Soy de Alemania."
+        },
+        {
+          "de": "Ich bin in Santiago.",
+          "es": "Estoy en Santiago."
+        },
+        {
+          "de": "Sie ist sehr sympathisch.",
+          "es": "Ella es muy simpática.",
+          "accept": [
+            "Es muy simpática."
+          ]
+        },
+        {
+          "de": "Ich bin müde.",
+          "es": "Estoy cansado.",
+          "accept": [
+            "Estoy cansada."
+          ]
+        },
+        {
+          "de": "Der Film ist langweilig.",
+          "es": "La película es aburrida."
+        },
+        {
+          "de": "Mir ist langweilig.",
+          "es": "Estoy aburrido.",
+          "accept": [
+            "Estoy aburrida."
+          ]
+        },
+        {
+          "de": "Ich bin Student.",
+          "es": "Soy estudiante."
+        },
+        {
+          "de": "Heute ist es bewölkt.",
+          "es": "Hoy está nublado."
+        }
+      ]
+    },
+    {
+      "id": "g-hace-dauer",
+      "kind": "grammar",
+      "title": "hace für die Dauer",
+      "explanation": "Mit hace sagst du, wie lange etwas schon so ist: Hace dos semanas que estoy en Chile heißt Ich bin seit zwei Wochen in Chile. Das Verb steht im Präsens, weil es noch andauert. Dasselbe sagst du mit desde hace: Estoy en Chile desde hace dos semanas. Für die Frage nimmst du llevar: ¿Cuánto tiempo llevas en Chile? Weitere Angaben: hace un mes, hace tres días, hace un año.",
+      "examples": [
+        {
+          "es": "Hace dos semanas que estoy aquí.",
+          "de": "Ich bin seit zwei Wochen hier."
+        },
+        {
+          "es": "Vivo en Santiago desde hace un año.",
+          "de": "Ich wohne seit einem Jahr in Santiago."
+        },
+        {
+          "es": "Hace tres días que estoy en el hostal.",
+          "de": "Ich bin seit drei Tagen im Hostal."
+        },
+        {
+          "es": "¿Cuánto tiempo llevas en Chile?",
+          "de": "Wie lange bist du schon in Chile?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich bin seit drei Tagen hier.",
+          "es": "Hace tres días que estoy aquí.",
+          "accept": [
+            "Estoy aquí desde hace tres días."
+          ]
+        },
+        {
+          "de": "Sie wohnt seit einem Jahr in Santiago.",
+          "es": "Vive en Santiago desde hace un año.",
+          "accept": [
+            "Hace un año que vive en Santiago."
+          ]
+        },
+        {
+          "de": "Wir sind seit zwei Wochen in Chile.",
+          "es": "Hace dos semanas que estamos en Chile.",
+          "accept": [
+            "Estamos en Chile desde hace dos semanas."
+          ]
+        },
+        {
+          "de": "Ich arbeite seit einem Monat hier.",
+          "es": "Trabajo aquí desde hace un mes.",
+          "accept": [
+            "Hace un mes que trabajo aquí."
+          ]
+        },
+        {
+          "de": "Wie lange bist du schon in Chile?",
+          "es": "¿Cuánto tiempo llevas en Chile?"
+        }
+      ]
+    },
+    {
+      "id": "g-presente-tu-usted",
+      "kind": "grammar",
+      "title": "Präsens mit tú und usted",
+      "explanation": "Regelmäßige Verben auf ar, er und ir haben feste Endungen. Trabajar: trabajo, trabajas, trabaja, trabajamos, trabajan. Vivir: vivo, vives, vive, vivimos, viven. Mit Reisenden und jungen Leuten sagst du tú: ¿Dónde vives? Bei älteren Fremden ist usted die sichere Wahl, es hat die Form von él und ella: ¿Dónde vive usted?",
+      "examples": [
+        {
+          "es": "Trabajo en una empresa.",
+          "de": "Ich arbeite in einer Firma."
+        },
+        {
+          "es": "¿Dónde vives?",
+          "de": "Wo wohnst du?"
+        },
+        {
+          "es": "¿Dónde vive usted?",
+          "de": "Wo wohnen Sie?"
+        },
+        {
+          "es": "Vivimos en Alemania.",
+          "de": "Wir wohnen in Deutschland."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich arbeite in einer Firma.",
+          "es": "Trabajo en una empresa."
+        },
+        {
+          "de": "Wo wohnst du?",
+          "es": "¿Dónde vives?"
+        },
+        {
+          "de": "Wo wohnen Sie?",
+          "es": "¿Dónde vive usted?",
+          "accept": [
+            "¿Dónde vive?"
+          ]
+        },
+        {
+          "de": "Wir wohnen in Deutschland.",
+          "es": "Vivimos en Alemania."
+        },
+        {
+          "de": "Meine Eltern arbeiten hier.",
+          "es": "Mis padres trabajan aquí."
+        },
+        {
+          "de": "Ich lerne Spanisch.",
+          "es": "Estudio español."
+        },
+        {
+          "de": "Du arbeitest viel.",
+          "es": "Trabajas mucho."
+        }
+      ]
+    },
+    {
+      "id": "pair-lago-largo",
+      "kind": "pair",
+      "es": "lago",
+      "options": [
+        "lago",
+        "largo"
+      ]
+    },
+    {
+      "id": "pair-playa-plaza",
+      "kind": "pair",
+      "es": "playa",
+      "options": [
+        "playa",
+        "plaza"
+      ]
+    },
+    {
+      "id": "pair-vivo-vino",
+      "kind": "pair",
+      "es": "vivo",
+      "options": [
+        "vivo",
+        "vino"
+      ]
+    },
+    {
+      "id": "pair-mes-mas",
+      "kind": "pair",
+      "es": "mes",
+      "options": [
+        "mes",
+        "más"
+      ]
+    },
+    {
+      "id": "pair-sol-sal",
+      "kind": "pair",
+      "es": "sol",
+      "options": [
+        "sol",
+        "sal"
+      ]
+    },
+    {
+      "id": "pair-mar-mal",
+      "kind": "pair",
+      "es": "mar",
+      "options": [
+        "mar",
+        "mal"
+      ]
+    }
+  ]
+}
