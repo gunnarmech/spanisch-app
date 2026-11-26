@@ -21,16 +21,30 @@ export function Settings({ app, onBack, onDiagnose, onSources, onPlacement }: Pr
   const [note, setNote] = useState('');
   const [confirming, setConfirming] = useState(false);
   const resetting = useRef(false);
+  const [resetError, setResetError] = useState('');
   const cancelRef = useRef<HTMLButtonElement>(null);
+  const resetButtonRef = useRef<HTMLButtonElement>(null);
+  const cancelled = useRef(false);
 
   useEffect(() => {
     if (confirming) cancelRef.current?.focus();
+    else if (cancelled.current) {
+      cancelled.current = false;
+      resetButtonRef.current?.focus();
+    }
   }, [confirming]);
 
   const resetAll = async () => {
     if (resetting.current) return;
     resetting.current = true;
-    await app.record({ kind: 'reset', cardId: RESET_CARD });
+    setResetError('');
+    try {
+      await app.record({ kind: 'reset', cardId: RESET_CARD });
+    } catch {
+      resetting.current = false;
+      setResetError('Zurücksetzen hat nicht geklappt. Bitte noch einmal versuchen.');
+      return;
+    }
     void app.sync();
     onBack();
   };
@@ -153,22 +167,28 @@ export function Settings({ app, onBack, onDiagnose, onSources, onPlacement }: Pr
       <section class="block">
         <h2>Neu anfangen</h2>
         <p class="german">
-          Dein Lernstand beginnt auf allen Geräten, die abgleichen, wieder von vorn. Einstellungen und Token bleiben. Vorher kannst du oben eine Sicherung als Datei speichern.
+          Dein Lernstand beginnt auf allen Geräten, die abgleichen, wieder von vorn. Einstellungen und Token bleiben.
         </p>
         {confirming ? (
           <div class="confirm" role="group" aria-label="Zurücksetzen bestätigen">
             <p>Wirklich alles zurücksetzen? Das lässt sich nicht rückgängig machen.</p>
+            {resetError && <p class="quiet" role="alert">{resetError}</p>}
             <div class="actions">
               <button type="button" class="btn btn--secondary" onClick={() => void resetAll()}>
                 Ja, alles zurücksetzen
               </button>
-              <button type="button" class="btn btn--secondary" ref={cancelRef} onClick={() => setConfirming(false)}>
+              <button type="button" class="btn btn--secondary" ref={cancelRef}
+                onClick={() => {
+                  cancelled.current = true;
+                  setResetError('');
+                  setConfirming(false);
+                }}>
                 Abbrechen
               </button>
             </div>
           </div>
         ) : (
-          <button type="button" class="btn btn--secondary" onClick={() => setConfirming(true)}>
+          <button type="button" class="btn btn--secondary" ref={resetButtonRef} onClick={() => setConfirming(true)}>
             Fortschritt zurücksetzen
           </button>
         )}

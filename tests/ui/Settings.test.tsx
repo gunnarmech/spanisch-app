@@ -194,3 +194,32 @@ test('Abbrechen zeichnet nichts auf und schließt die Bestätigung', () => {
   expect(app.record).not.toHaveBeenCalled();
   expect(onBack).not.toHaveBeenCalled();
 });
+
+test('Neu anfangen: Erklärtext ohne Sicherungsversprechen', () => {
+  render(<Settings app={fakeApp()} onBack={noop} onDiagnose={noop} />);
+  expect(
+    screen.getByText('Dein Lernstand beginnt auf allen Geräten, die abgleichen, wieder von vorn. Einstellungen und Token bleiben.'),
+  ).toBeTruthy();
+  expect(document.body.textContent).not.toMatch(/Sicherung als Datei/);
+});
+
+test('Zurücksetzen scheitert: Sperre frei, Meldung, zweiter Versuch möglich', async () => {
+  const app = fakeApp();
+  app.record.mockRejectedValueOnce(new Error('kaputt'));
+  const onBack = vi.fn();
+  render(<Settings app={app} onBack={onBack} onDiagnose={noop} />);
+  fireEvent.click(screen.getByRole('button', { name: 'Fortschritt zurücksetzen' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Ja, alles zurücksetzen' }));
+  await screen.findByText('Zurücksetzen hat nicht geklappt. Bitte noch einmal versuchen.');
+  expect(onBack).not.toHaveBeenCalled();
+  fireEvent.click(screen.getByRole('button', { name: 'Ja, alles zurücksetzen' }));
+  await waitFor(() => expect(onBack).toHaveBeenCalled());
+  expect(app.record).toHaveBeenCalledTimes(2);
+});
+
+test('Nach Abbrechen steht der Fokus wieder auf "Fortschritt zurücksetzen"', async () => {
+  render(<Settings app={fakeApp()} onBack={noop} onDiagnose={noop} />);
+  fireEvent.click(screen.getByRole('button', { name: 'Fortschritt zurücksetzen' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Abbrechen' }));
+  await waitFor(() => expect(document.activeElement).toBe(screen.getByRole('button', { name: 'Fortschritt zurücksetzen' })));
+});

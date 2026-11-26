@@ -120,6 +120,16 @@ describe('Placement', () => {
     expect(app.record).not.toHaveBeenCalled();
   });
 
+  it('Beenden auf Gerät mit nachgehender Uhr liegt hinter dem Reset', async () => {
+    const resetAt = new Date(2026, 10, 25, 11, 0, 0).getTime();
+    const app = fakeApp({ resetAt });
+    const onFinish = vi.fn();
+    render(<Placement app={app} onFinish={onFinish} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Beenden' }));
+    await waitFor(() => expect(onFinish).toHaveBeenCalled());
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true, placementAt: resetAt + 1 });
+  });
+
   it('nach der letzten Frage kommt ein freundlicher Abschluss, danach ist die Einstufung beendet', async () => {
     const app = fakeApp();
     const onFinish = vi.fn();
@@ -233,6 +243,14 @@ describe('PlacementOffer', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Überspringen' }));
     expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true, placementAt: expect.any(Number) });
     expect(app.record).not.toHaveBeenCalled();
+  });
+
+  it('Überspringen auf Gerät mit nachgehender Uhr liegt hinter dem Reset', () => {
+    const resetAt = new Date(2026, 10, 25, 11, 0, 0).getTime();
+    const app = fakeApp({ resetAt });
+    render(<PlacementOffer app={app} onStart={noop} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Überspringen' }));
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true, placementAt: resetAt + 1 });
   });
 
   it('"Kurz einstufen" startet die Einstufung', () => {

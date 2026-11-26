@@ -69,6 +69,25 @@ describe('buildRound', () => {
     expect(tasks.map((t) => t.form)).toEqual(['intro', 'type']);
   });
 
+  test('Fall A: fünf ungesehene Grammatik-Items und ein neues Hörpaar, Lücke mindestens 2', () => {
+    const grammar = (n: number): Item => ({
+      id: `g${n}`, kind: 'grammar', title: 'G', explanation: 'x', examples: [], exercises: [{ de: 'a', es: 'a' }],
+    });
+    const pair: Item = { id: 'p', kind: 'pair', es: 'p', options: ['p', 'q'] };
+    const sit: Situation = { id: 's1', order: 1, title: 'S', items: [0, 1, 2, 3, 4].map(grammar).concat(pair) };
+    const { tasks } = buildRound({ now: T0, states: new Map(), situations: [sit] });
+    expect(tasks).toHaveLength(7);
+    gapsOk(tasks, 2);
+  });
+
+  test('Fall B: ein neues Item und zwei Wiederholungen, Lücke 2', () => {
+    const sit: Situation = { id: 's1', order: 1, title: 'S', items: [word('r1', 'r1'), word('r2', 'r2'), word('n', 'n')] };
+    const states = replay([review(1, 'r1', T0), review(2, 'r2', T0)], new Set(['r1', 'r2']));
+    const { tasks } = buildRound({ now: T0 + 30 * DAY, states, situations: [sit], focusSituationId: 's1' });
+    expect(tasks.filter((t) => !t.isNew)).toHaveLength(2);
+    gapsOk(tasks, 2);
+  });
+
   test('erster Abruf: type bei produzierbar, listen bei produce false und bei pair', () => {
     const items: Item[] = [
       word('a', 'a'),

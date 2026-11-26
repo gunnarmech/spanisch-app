@@ -40,6 +40,11 @@ export function placementItems(situations: Situation[], states: Map<string, Card
     .map(({ e }) => e);
 }
 
+/** Zeitstempel der Einstufung: nie vor dem letzten Reset, auch wenn die Uhr des Geräts nachgeht. */
+function placementTime(app: AppState): number {
+  return Math.max(Date.now(), (app.resetAt ?? 0) + 1);
+}
+
 /** Angebot beim ersten Start und nach einem Reset: noch kein Lernstand und keine Einstufung seit dem Reset. */
 export function PlacementOffer({ app, onStart }: { app: AppState; onStart(): void }) {
   const { placementDone, placementAt } = app.settings;
@@ -56,7 +61,7 @@ export function PlacementOffer({ app, onStart }: { app: AppState; onStart(): voi
         <button type="button" class="btn btn--secondary" onClick={onStart}>
           Kurz einstufen
         </button>
-        <button type="button" class="link" onClick={() => void app.updateSettings({ placementDone: true, placementAt: Date.now() })}>
+        <button type="button" class="link" onClick={() => void app.updateSettings({ placementDone: true, placementAt: placementTime(app) })}>
           Überspringen
         </button>
       </div>
@@ -182,7 +187,7 @@ export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }
   const finish = async () => {
     if (finished.current) return;
     finished.current = true;
-    await app.updateSettings({ placementDone: true, placementAt: Date.now() });
+    await app.updateSettings({ placementDone: true, placementAt: placementTime(app) });
     onFinish();
   };
 

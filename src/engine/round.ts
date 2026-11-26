@@ -87,6 +87,30 @@ function placeFirstRetrievals(sequence: Task[], checks: Map<Task, Task>): Task[]
   return out;
 }
 
+/**
+ * Rückt Wiederholungen und Grammatik-Aufgaben hinter Einführungen, hinter denen sonst weniger als FIRST_RETRIEVAL_GAP
+ * Aufgaben folgen würden. Die Einführungen behalten ihre Reihenfolge, nur die davor liegenden anderen Aufgaben
+ * (höchstens FIRST_RETRIEVAL_GAP, die letzten zuerst) wandern hinter die letzte betroffene Einführung.
+ * So bleibt Platz für den ersten Abruf, soweit die Runde überhaupt genug Aufgaben hat.
+ */
+function leaveRoomForRetrievals(sequence: Task[], checks: Map<Task, Task>): Task[] {
+  const late = sequence
+    .map((t, i) => (checks.has(t) && sequence.length - 1 - i < FIRST_RETRIEVAL_GAP ? i : -1))
+    .filter((i) => i >= 0);
+  if (late.length === 0) return sequence;
+  const first = late[0];
+  const last = late[late.length - 1];
+  const movable = sequence.slice(0, first).map((_, i) => i).filter((i) => !checks.has(sequence[i])).slice(-FIRST_RETRIEVAL_GAP);
+  if (movable.length === 0) return sequence;
+  const skip = new Set(movable);
+  return [
+    ...sequence.slice(0, first).filter((_, i) => !skip.has(i)),
+    ...sequence.slice(first, last + 1),
+    ...movable.map((i) => sequence[i]),
+    ...sequence.slice(last + 1),
+  ];
+}
+
 export function buildRound(opts: {
   now: number;
   states: Map<string, CardState>;
@@ -154,7 +178,7 @@ export function buildRound(opts: {
   }
 
   const finished = due.length === 0 && groups.length === 0 && newLeft === 0;
-  const tasks = placeFirstRetrievals(interleave(reviews, groups), checks);
+  const tasks = placeFirstRetrievals(leaveRoomForRetrievals(interleave(reviews, groups), checks), checks);
 
   let fallback: Task | undefined;
   if (target && !finished) {
