@@ -26,15 +26,15 @@
 
 ## Review Focus
 
-- Bestehende Lernstände nach dem Update: Ereignisprotokolle aus Teil 1 und 2 (ohne `reset`, mit `known` aus der Einstufung) spielen fehlerfrei ab; `known`-Karten bleiben sicher, einmal bewertete fallen auf nicht sicher. Test in Aufgabe 1.
-- "Kann ich schon" auf einer Einführung: der zugehörige verzögerte erste Abruf derselben Karte erscheint nicht mehr. Test in Aufgabe 2 (Round-UI).
-- Gleicher Zeitstempel bei `reset` und einem anderen Ereignis: die Sortierung (ts, dann id) entscheidet deterministisch, unabhängig von der Eingabereihenfolge. Test in Aufgabe 3.
-- Gist enthält `reset`: `syncNow` liest es als gültig und vereinigt es (kein "invalid"). Test in Aufgabe 3.
-- Doppeltes Tippen auf "Ja, alles zurücksetzen" schreibt höchstens ein `reset`-Ereignis. Test in Aufgabe 4.
+- Bestehende Lernstände nach dem Update: Ereignisprotokolle aus Teil 1 und 2 (ohne `reset`, mit `known` aus der Einstufung) spielen fehlerfrei ab; `known`-Karten bleiben sicher, einmal bewertete fallen auf nicht sicher. Test in Task 1.
+- "Kann ich schon" auf einer Einführung: der zugehörige verzögerte erste Abruf derselben Karte erscheint nicht mehr. Test in Task 2 (Round-UI).
+- Gleicher Zeitstempel bei `reset` und einem anderen Ereignis: die Sortierung (ts, dann id) entscheidet deterministisch, unabhängig von der Eingabereihenfolge. Test in Task 3.
+- Gist enthält `reset`: `syncNow` liest es als gültig und vereinigt es (kein "invalid"). Test in Task 3.
+- Doppeltes Tippen auf "Ja, alles zurücksetzen" schreibt höchstens ein `reset`-Ereignis. Test in Task 4.
 
 ---
 
-### Aufgabe 1: Festigung statt "einmal gesehen"
+### Task 1: Festigung statt "einmal gesehen"
 
 **Files:**
 - Modify: `src/engine/state.ts` (CardState, applyKnown, replay)
@@ -98,14 +98,14 @@ test('situationCoverage ändert sich durch eine einzelne Bewertung nicht', () =>
 
 ---
 
-### Aufgabe 2: Verzögerter erster Abruf und Formen auf Stufe 0
+### Task 2: Verzögerter erster Abruf und Formen auf Stufe 0
 
 **Files:**
 - Modify: `src/engine/round.ts` (Formwahl, Rundenaufbau), `src/engine/state.ts` (nur Kommentar zu `Stage`)
 - Test: `tests/engine/round.test.ts`, `tests/ui/Round.test.tsx`
 
 **Interfaces:**
-- Consumes: nichts Neues aus Aufgabe 1.
+- Consumes: nichts Neues aus Task 1.
 - Produces: `export function retrievalForm(item: Item): TaskForm` in `round.ts`: `'grammar'` für Grammatik, `'listen'` für `pair` und für word/phrase/sentence mit `produce === false`, sonst `'type'`. `buildRound` behält Signatur und Rückgabetyp. Exportierte Konstante `FIRST_RETRIEVAL_GAP = 3`.
 
 Regeln:
@@ -159,7 +159,7 @@ test('Rundenaufbau ist deterministisch', () => { /* zweimal bauen, toEqual */ })
 
 ---
 
-### Aufgabe 3: Reset-Ereignis im Protokoll und Einstufung danach
+### Task 3: Reset-Ereignis im Protokoll und Einstufung danach
 
 **Files:**
 - Modify: `src/engine/state.ts` (ReviewEvent, validEvent, replay, dialogsHeard, neue Helfer)
@@ -206,14 +206,14 @@ test('validEvent akzeptiert reset, lastResetTs liefert den letzten', () => { /* 
 
 ---
 
-### Aufgabe 4: Abschnitt "Neu anfangen" in den Einstellungen
+### Task 4: Abschnitt "Neu anfangen" in den Einstellungen
 
 **Files:**
 - Modify: `src/ui/Settings.tsx`, ggf. Stildatei unter `src/ui/styles/` (bestehende Klassen bevorzugen)
 - Test: `tests/ui/Settings.test.tsx`
 
 **Interfaces:**
-- Consumes: `app.record({ kind: 'reset', cardId: RESET_CARD })` und `app.sync()` aus Aufgabe 3; `Settings`-Prop `onBack()` für die Rückkehr zur Startseite.
+- Consumes: `app.record({ kind: 'reset', cardId: RESET_CARD })` und `app.sync()` aus Task 3; `Settings`-Prop `onBack()` für die Rückkehr zur Startseite.
 
 Verhalten:
 - Letzter Abschnitt der Einstellungen, Überschrift `Neu anfangen`. Erklärung (Wortlaut fest): "Dein Lernstand beginnt auf allen Geräten, die abgleichen, wieder von vorn. Einstellungen und Token bleiben. Vorher kannst du oben eine Sicherung als Datei speichern."
