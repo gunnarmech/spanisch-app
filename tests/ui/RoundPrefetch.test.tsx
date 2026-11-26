@@ -66,7 +66,8 @@ describe('Chile-Aufnahmen in der Runde', () => {
   it('Clip ohne Manifest-Eintrag wird übersprungen, Runde geht weiter', async () => {
     const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
     await roundToClip(app);
-    expect(await screen.findByText('Runde geschafft.')).toBeTruthy();
+    // Der Dialog rückt nach, ein Clip ohne Ton wird nicht gehört.
+    expect(await screen.findByText('Gruß')).toBeTruthy();
     expect(screen.queryByText('Chile hören')).toBeNull();
     expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'heard' }));
   });
@@ -80,7 +81,7 @@ describe('Chile-Aufnahmen in der Runde', () => {
     try {
       const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
       await roundToClip(app);
-      expect(await screen.findByText('Runde geschafft.')).toBeTruthy();
+      expect(await screen.findByText('Gruß')).toBeTruthy();
       expect(screen.queryByText('Chile hören')).toBeNull();
       expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'heard' }));
     } finally {
@@ -120,5 +121,65 @@ describe('Chile-Aufnahmen in der Runde', () => {
     await waitFor(() => expect(app.record).toHaveBeenCalledWith({ kind: 'heard', cardId: 'c-hola' }));
     expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'review' }));
     vi.mocked(loadManifest).mockImplementation(async () => ({}));
+  });
+
+  describe('Lade- und Wiedergabefehler bei onLine', () => {
+    const withManifest = () =>
+      vi.mocked(loadManifest).mockImplementation(async (id: string): Promise<Manifest> =>
+        id === 'chile-echt' ? { 'c-hola': [{ voice: 'cl-f', speed: 'normal' }] } : {},
+      );
+    const failWith = (err: Error) =>
+      vi.spyOn(HTMLMediaElement.prototype, 'play').mockImplementation(() => Promise.reject(err));
+    const cleanUp = () => {
+      vi.restoreAllMocks();
+      vi.mocked(loadManifest).mockImplementation(async () => ({}));
+    };
+
+    it('404 (Quelle nicht unterstützt): Aufgabe wird übersprungen, kein heard, Dialog rückt nach', async () => {
+      withManifest();
+      expect(navigator.onLine).toBe(true);
+      failWith(new DOMException('no supported sources', 'NotSupportedError'));
+      try {
+        const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
+        render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
+        fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+        expect(await screen.findByText('Gruß')).toBeTruthy();
+        expect(screen.queryByText('Chile hören')).toBeNull();
+        expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'heard', cardId: 'c-hola' }));
+      } finally {
+        cleanUp();
+      }
+    });
+
+    it('Netzwerkfehler: Aufgabe wird übersprungen, kein heard', async () => {
+      withManifest();
+      failWith(new DOMException('network', 'NetworkError'));
+      try {
+        // Kein Dialog als Ersatz: die Runde geht zu Ende.
+        const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', Date.now()]]) });
+        render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
+        fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+        await waitFor(() => expect(screen.queryByText('Chile hören')).toBeNull());
+        expect(await screen.findByText('Runde geschafft.')).toBeTruthy();
+        expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'heard' }));
+      } finally {
+        cleanUp();
+      }
+    });
+
+    it('verweigerter Autoplay (NotAllowedError) ist kein Ladefehler: die Aufgabe bleibt', async () => {
+      withManifest();
+      failWith(new DOMException('blocked', 'NotAllowedError'));
+      try {
+        const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
+        render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
+        fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+        expect(await screen.findByText('Chile hören')).toBeTruthy();
+        await new Promise((r) => setTimeout(r, 20));
+        expect(screen.getByText('Chile hören')).toBeTruthy();
+      } finally {
+        cleanUp();
+      }
+    });
   });
 });

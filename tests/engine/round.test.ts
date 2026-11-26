@@ -282,19 +282,50 @@ describe('Chile-Clips in der Runde', () => {
       (t) => t.form === 'dialog' || t.form === 'clip',
     );
 
-  test('höchstens eine Höraufgabe je Runde', () => {
-    const even = listens(new Map([['x', 1], ['y', 2]]), clips);
-    expect(even.map((t) => t.form)).toEqual(['dialog']);
-    const odd = listens(new Map([['x', 1]]), clips);
-    expect(odd).toEqual([
+  test('höchstens eine Höraufgabe je Runde, Wechsel nach der Art des zuletzt Gehörten', () => {
+    // Zuletzt kam ein Dialog: jetzt der Clip.
+    const afterDialog = listens(new Map([['d1', 1]]), clips);
+    expect(afterDialog).toEqual([
       { cardId: 'clip-1', itemId: 'clip-1', situationId: 'chile-echt', form: 'clip', isNew: false },
     ]);
+    // Zuletzt kam ein Clip: jetzt der Dialog.
+    const afterClip = listens(new Map([['d1', 1], ['clip-1', 2]]), clips);
+    expect(afterClip.map((t) => t.form)).toEqual(['dialog']);
+  });
+
+  test('wiederholter Dialog bei gerader Zahl gehörter IDs ergibt als nächstes den Clip', () => {
+    // heard.size ist 2 (gerade), der jüngste Eintrag ist der Dialog d1.
+    const heard = new Map([['d0', 1], ['d1', 5]]);
+    expect(listens(heard, clips).map((t) => t.form)).toEqual(['clip']);
+  });
+
+  test('ohne Gehörtes beginnt der Dialog', () => {
+    expect(listens(new Map(), clips).map((t) => t.form)).toEqual(['dialog']);
+  });
+
+  test('mehrere Runden mit wiederholten IDs wechseln', () => {
+    const heard = new Map<string, number>([['d1', 1]]);
+    const forms: string[] = [];
+    for (let r = 0; r < 4; r++) {
+      const t = listens(heard, clips)[0];
+      forms.push(t.form);
+      heard.set(t.itemId, 10 + r); // dieselben IDs werden wiederholt, die Zahl wächst nicht
+    }
+    expect(forms).toEqual(['clip', 'dialog', 'clip', 'dialog']);
+    expect(heard.size).toBe(2);
+  });
+
+  test('liefert den Dialog als Ersatz, falls der Clip nicht abspielbar ist', () => {
+    const r = buildRound({ now: NOW, states, situations: [grundlagen], heard: new Map([['d1', 1]]), clips, maxNew: 0 });
+    expect(r.fallback).toEqual({ cardId: 'd1', itemId: 'd1', situationId: '01-grundlagen', form: 'dialog', isNew: false });
+    const none = buildRound({ now: NOW, states, situations: [grundlagen], heard: new Map(), clips, maxNew: 0 });
+    expect(none.fallback).toBeUndefined();
   });
 
   test('ohne clips unverändert wie bisher', () => {
-    const t = listens(new Map([['x', 1]]));
+    const t = listens(new Map([['d1', 1]]));
     expect(t.map((x) => x.form)).toEqual(['dialog']);
-    expect(listens(new Map([['x', 1]]), [])).toEqual(t);
+    expect(listens(new Map([['d1', 1]]), [])).toEqual(t);
   });
 
   test('ohne Freischaltung kein Clip', () => {

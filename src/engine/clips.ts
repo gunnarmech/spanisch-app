@@ -1,4 +1,4 @@
-import { seenTokenShare, situationCoverage } from './coverage';
+import { seenTokenShare, seenTokens, situationCoverage, tokenShare } from './coverage';
 import type { CardState } from './state';
 import type { ChileClip, Situation } from '../content/types';
 
@@ -29,8 +29,9 @@ export function chooseClip(
   heard: Map<string, number>,
   now: number,
 ): ChileClip | undefined {
+  const seen = seenTokens(situations, states);
   const eligible = clips
-    .map((c) => ({ c, share: clipShare(c, situations, states) }))
+    .map((c) => ({ c, share: tokenShare([c.es], seen) }))
     .filter((x) => x.share >= CLIP_SEEN_SHARE);
   let best: { c: ChileClip; share: number } | undefined;
   for (const x of eligible) {

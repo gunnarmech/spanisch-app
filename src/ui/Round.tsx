@@ -60,12 +60,18 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     return { ...built, startCoverage };
   });
   const [index, setIndex] = useState(0);
+  // Ist der Clip nicht abspielbar, rückt der Ersatz-Dialog an seine Stelle.
+  const [swapped, setSwapped] = useState(false);
+  const tasks = useMemo(
+    () => (swapped && plan.fallback ? plan.tasks.map((t) => (t.form === 'clip' ? plan.fallback! : t)) : plan.tasks),
+    [plan, swapped],
+  );
   const [manifests, setManifests] = useState<Record<string, Manifest> | null>(null);
   const skipped = useRef(new Set<string>());
 
   useEffect(() => {
     let alive = true;
-    const ids = [...new Set(plan.tasks.map((t) => t.situationId))];
+    const ids = [...new Set([...plan.tasks, ...(plan.fallback ? [plan.fallback] : [])].map((t) => t.situationId))];
     void Promise.all(ids.map(async (id) => [id, await loadManifest(id)] as const)).then((list) => {
       if (alive) setManifests(Object.fromEntries(list));
     });
@@ -111,7 +117,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
 
   const advance = (from: number) => {
     let next = from + 1;
-    while (plan.tasks[next] && skipped.current.has(plan.tasks[next].cardId)) next++;
+    while (tasks[next] && skipped.current.has(tasks[next].cardId)) next++;
     setIndex(next);
   };
 
@@ -158,7 +164,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     advance(index);
   };
 
-  const task = plan.tasks[index];
+  const task = tasks[index];
   const clip = task?.form === 'clip' ? app.clips.find((c) => c.id === task.itemId) : undefined;
   const clipUrl = task && clip && manifests ? env.urlFor(task, clip.id) : null;
   // Offline zählt die Datei nur, wenn sie im Audio-Cache liegt; ohne Cache-API (jsdom) gilt allein das Manifest.
@@ -182,8 +188,13 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
   const cacheMiss = needCache && !cachePending && !cacheCheck?.ok;
   // Eine Aufnahme ohne Ton (kein Manifest-Eintrag, oder offline und nicht im Cache) wird übersprungen, die Runde geht weiter.
   const clipMissing = task?.form === 'clip' && manifests !== null && (!clip || !clipUrl || cacheMiss);
+  /** Clip ohne Ton: ohne heard-Ereignis weiter, mit dem Ersatz-Dialog, wenn es einen gibt. */
+  const skipClip = () => {
+    if (plan.fallback && !swapped) setSwapped(true);
+    else advance(index);
+  };
   useEffect(() => {
-    if (clipMissing) advance(index);
+    if (clipMissing) skipClip();
   }, [clipMissing, index]);
 
   if (manifests === null || (task?.form === 'clip' && cachePending)) return <div class="task" aria-busy="true" />;
@@ -193,10 +204,10 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
   if (task && clip && clipUrl) {
     return (
       <RoundEnvContext.Provider value={env}>
-        <div class="progress" role="progressbar" aria-label="Fortschritt der Runde" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round((index / plan.tasks.length) * 100)}>
-          <div style={{ transform: `scaleX(${index / plan.tasks.length})` }} />
+        <div class="progress" role="progressbar" aria-label="Fortschritt der Runde" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round((index / tasks.length) * 100)}>
+          <div style={{ transform: `scaleX(${index / tasks.length})` }} />
         </div>
-        <ClipTask key={index} clip={clip} clips={app.clips} url={clipUrl} onAnswered={(r) => void answered(task, r)} onDone={next} />
+        <ClipTask key={index} clip={clip} clips={app.clips} url={clipUrl} onUnplayable={skipClip} onAnswered={(r) => void answered(task, r)} onDone={next} />
         <TaskTools key={`tools-${index}`} canKnow={false} onKnown={() => {}} onReport={(text) => app.report(task.itemId, text)} />
         <button type="button" class="link leave" onClick={leave}>
           Runde beenden
@@ -205,11 +216,11 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     );
   }
   if (!task || !item) {
-    return <RoundEnd app={app} tasks={plan.tasks} startCoverage={plan.startCoverage} onExit={onExit} onAgain={onAgain} />;
+    return <RoundEnd app={app} tasks={tasks} startCoverage={plan.startCoverage} onExit={onExit} onAgain={onAgain} />;
   }
 
   const Current = component(task, item);
-  const percent = Math.round((index / plan.tasks.length) * 100);
+  const percent = Math.round((index / tasks.length) * 100);
   return (
     <RoundEnvContext.Provider value={env}>
       <div class="progress" role="progressbar" aria-label="Fortschritt der Runde" aria-valuemin={0} aria-valuemax={100} aria-valuenow={percent}>

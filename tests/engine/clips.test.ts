@@ -62,3 +62,13 @@ describe('chooseClip', () => {
     expect(chooseClip(clips, sits, states, old, NOW)?.id).toBe('c2');
   });
 });
+
+describe('chooseClip mit gemeinsam berechnetem seen', () => {
+  test('liefert dasselbe wie clipShare je Clip (Refactor: seen einmal je Aufruf)', () => {
+    const states = statesOf(['w-hola', 'w-mesa']);
+    const cs = [clip('a', 'hola xyz'), clip('b', 'hola mesa'), clip('c', 'mesa hola mesa')];
+    // a: Anteil 0,5 (nicht zugelassen), b und c: 1; Gleichstand, also Dateireihenfolge: b
+    expect(cs.map((c) => clipShare(c, [grundlagen], states))).toEqual([0.5, 1, 1]);
+    expect(chooseClip(cs, [grundlagen], states, new Map(), T0 + DAY)?.id).toBe('b');
+  });
+});

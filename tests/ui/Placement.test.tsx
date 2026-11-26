@@ -9,7 +9,7 @@ const audio = vi.hoisted(() => ({
 vi.mock('../../src/media/audio', () => audio);
 
 import type { Situation, WordItem } from '../../src/content/types';
-import type { CardState } from '../../src/engine/state';
+import { replay, type CardState } from '../../src/engine/state';
 import { Placement, PlacementOffer, placementItems } from '../../src/ui/Placement';
 import { fakeApp } from './fixtures';
 
@@ -120,7 +120,7 @@ describe('Placement', () => {
     expect(app.record).not.toHaveBeenCalled();
   });
 
-  it('nach der letzten Frage ist die Einstufung beendet', async () => {
+  it('nach der letzten Frage kommt ein freundlicher Abschluss, danach ist die Einstufung beendet', async () => {
     const app = fakeApp();
     const onFinish = vi.fn();
     render(<Placement app={app} onFinish={onFinish} />);
@@ -128,8 +128,38 @@ describe('Placement', () => {
       fireEvent.click(screen.getAllByRole('button', { name: /^\d/ })[0]);
       fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
     }
+    expect(screen.getByText(/das war der ganze Test/i)).toBeTruthy();
+    expect(document.body.textContent).not.toMatch(/\d/);
+    expect(onFinish).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole('button', { name: 'fertig' }));
     await waitFor(() => expect(onFinish).toHaveBeenCalled());
     expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
+  });
+
+  describe('Lernstand, der während des Tests ankommt', () => {
+    const known = (cardId: string): CardState =>
+      replay([{ id: `k-${cardId}`, cardId, ts: Date.now(), device: 'other', kind: 'known' }], new Set(['w-hola', 'w-adios'])).get(cardId)!;
+
+    it('schreibt kein known für eine Karte, die inzwischen ein Lernereignis hat', () => {
+      const app = fakeApp();
+      const { rerender } = render(<Placement app={app} onFinish={noop} />);
+      // Abgleich bringt ein Ereignis für die gerade gezeigte Karte (w-hola).
+      rerender(<Placement app={fakeApp({ record: app.record, states: new Map([['w-hola', known('w-hola')]]) })} onFinish={noop} />);
+      fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+      expect(app.record).not.toHaveBeenCalled();
+    });
+
+    it('überspringt später kommende Karten mit Lernstand', () => {
+      const app = fakeApp();
+      const { rerender } = render(<Placement app={app} onFinish={noop} />);
+      rerender(<Placement app={fakeApp({ record: app.record, states: new Map([['w-adios', known('w-adios')]]) })} onFinish={noop} />);
+      fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+      expect(app.record).toHaveBeenCalledWith({ kind: 'known', cardId: 'w-hola' });
+      fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
+      // w-adios wird nicht mehr gefragt, es folgt der Abschluss.
+      expect(screen.queryByRole('button', { name: /auf Wiedersehen/ })).toBeNull();
+      expect(screen.getByText(/das war der ganze Test/i)).toBeTruthy();
+    });
   });
 
   it('mit Ton wird der Text nicht gezeigt, nur der Hörknopf', async () => {

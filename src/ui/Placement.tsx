@@ -93,17 +93,37 @@ function Question({ app, entry, manifest, onAnswer, onNext }: QuestionProps) {
 }
 
 /** Zwischenstand nach einem Block, ohne Zahl. `stop`: zu wenig richtig, der Test endet hier. */
-export function BlockPause({ stop, onContinue, onQuit }: { stop: boolean; onContinue(): void; onQuit(): void }) {
+export function BlockPause({
+  stop,
+  end = false,
+  onContinue,
+  onQuit,
+}: {
+  stop: boolean;
+  /** Alle Fragen sind durch: Abschluss statt Zwischenstand. */
+  end?: boolean;
+  onContinue(): void;
+  onQuit(): void;
+}) {
   return (
     <>
       <header class="masthead">
-        <h1>Zwischenstand</h1>
+        <h1>{end ? 'Geschafft' : 'Zwischenstand'}</h1>
       </header>
       <div class="progress" aria-hidden="true">
         <div />
       </div>
       <section class="block">
-        {stop ? (
+        {end ? (
+          <>
+            <p class="german">Das war der ganze Test. Was du schon kannst, bleibt gemerkt, der Rest kommt beim normalen Lernen.</p>
+            <div class="actions">
+              <button type="button" class="btn btn--secondary" onClick={onQuit}>
+                fertig
+              </button>
+            </div>
+          </>
+        ) : stop ? (
           <>
             <p class="german">Hier reicht es. Der Rest kommt beim normalen Lernen.</p>
             <div class="actions">
@@ -138,9 +158,12 @@ export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }
   const [entries] = useState(() => placementItems(app.situations, app.states));
   const [index, setIndex] = useState(0);
   const [rightInBlock, setRightInBlock] = useState(0);
-  const [pause, setPause] = useState<'between' | 'stop' | null>(null);
+  const [pause, setPause] = useState<'between' | 'stop' | 'end' | null>(null);
   const [manifests, setManifests] = useState<Record<string, Manifest>>({});
   const finished = useRef(false);
+  // Der jüngste Stand aus dem Abgleich, auch in Rückrufen, die vor einer Synchronisation erzeugt wurden.
+  const latest = useRef(app);
+  latest.current = app;
 
   useEffect(() => {
     let alive = true;
@@ -162,19 +185,26 @@ export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }
 
   const entry = entries[index];
   useEffect(() => {
-    if (!entry) void finish();
+    if (!entry && !pause) void finish();
   });
 
   const next = () => {
     const done = index + 1;
-    if (done % BLOCK === 0 && done < entries.length) {
+    if (done >= entries.length) {
+      setPause('end');
+    } else if (done % BLOCK === 0) {
       setPause(rightInBlock * 4 < BLOCK ? 'stop' : 'between');
       setRightInBlock(0);
     }
     setIndex(done);
   };
 
-  if (pause) return <BlockPause stop={pause === 'stop'} onContinue={() => setPause(null)} onQuit={() => void finish()} />;
+  // Kam beim Abgleich ein Lernereignis für die nächste Karte, wird sie nicht mehr gefragt.
+  useEffect(() => {
+    if (entry && !pause && latest.current.states.has(entry.item.id)) next();
+  }, [index]);
+
+  if (pause) return <BlockPause stop={pause === 'stop'} end={pause === 'end'} onContinue={() => setPause(null)} onQuit={() => void finish()} />;
 
   if (!entry) return null;
   const blockStart = index - (index % BLOCK);
@@ -202,7 +232,8 @@ export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }
         manifest={manifests[entry.situationId]}
         onAnswer={(correct, known) => {
           if (correct) setRightInBlock((n) => n + 1);
-          if (known) void app.record({ kind: 'known', cardId: entry.item.id });
+          // Erst beim Speichern prüfen: ein inzwischen angekommenes Lernereignis wird nie von known überschrieben.
+          if (known && !latest.current.states.has(entry.item.id)) void app.record({ kind: 'known', cardId: entry.item.id });
         }}
         onNext={next}
       />

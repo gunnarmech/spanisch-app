@@ -36,16 +36,23 @@ export function audioUrl(
 
 let shared: HTMLAudioElement | null = null;
 
+/** `ok`: läuft. `blocked`: der Browser lässt es (noch) nicht zu. `failed`: Laden oder Abspielen ist gescheitert (404, Netzabbruch). */
+export type PlayResult = 'ok' | 'blocked' | 'failed';
+
 /** Muss aus einer Nutzergeste heraus aufgerufen werden. Fehler werden geloggt, nicht geworfen. */
-export async function play(url: string): Promise<void> {
+export async function play(url: string): Promise<PlayResult> {
   try {
     shared ??= new Audio();
     shared.pause();
     shared.src = url;
     shared.currentTime = 0;
     await shared.play();
+    return 'ok';
   } catch (err) {
     console.warn('Audio konnte nicht abgespielt werden', url, err);
+    // Autoplay-Sperre und ein durch neues Laden unterbrochenes Abspielen sind keine kaputte Datei.
+    const name = (err as { name?: string } | null)?.name;
+    return name === 'NotAllowedError' || name === 'AbortError' ? 'blocked' : 'failed';
   }
 }
 

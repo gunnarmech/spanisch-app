@@ -68,7 +68,7 @@ export function buildRound(opts: {
   heard?: Map<string, number>;
   /** Echte Chile-Aufnahmen; ohne Angabe oder ohne Freischaltung gibt es keine Clip-Aufgabe. */
   clips?: ChileClip[];
-}): { tasks: Task[]; finished: boolean } {
+}): { tasks: Task[]; finished: boolean; fallback?: Task } {
   const { now, states, situations } = opts;
   const maxReviews = opts.maxReviews ?? 20;
   const maxNew = opts.maxNew ?? 6;
@@ -126,6 +126,7 @@ export function buildRound(opts: {
   const finished = due.length === 0 && groups.length === 0 && newLeft === 0;
   const tasks = interleave(reviews, groups);
 
+  let fallback: Task | undefined;
   if (target && !finished) {
     const heard = opts.heard ?? new Map<string, number>();
     const eligible = target.items.filter(
@@ -140,13 +141,27 @@ export function buildRound(opts: {
     const clip = opts.clips && chileUnlocked(situations, states, now)
       ? chooseClip(opts.clips, situations, states, heard, now)
       : undefined;
-    // Höchstens eine Höraufgabe je Runde: bei ungerader Zahl gehörter Aufnahmen der Clip, sonst der Dialog.
-    if (clip && (!dialog || heard.size % 2 === 1)) {
+    // Höchstens eine Höraufgabe je Runde. Der Wechsel richtet sich nach der Art des zuletzt Gehörten:
+    // kam zuletzt ein Dialog, ist der Clip dran, sonst der Dialog. Wiederholungen ändern daran nichts.
+    const clipIds = new Set((opts.clips ?? []).map((c) => c.id));
+    let lastDialog = -Infinity;
+    let lastClip = -Infinity;
+    for (const [id, ts] of heard) {
+      if (clipIds.has(id)) lastClip = Math.max(lastClip, ts);
+      else lastDialog = Math.max(lastDialog, ts);
+    }
+    const clipTurn = lastDialog > -Infinity && lastDialog >= lastClip;
+    const dialogTask: Task | undefined = dialog
+      ? { cardId: dialog.id, itemId: dialog.id, situationId: target.id, form: 'dialog', isNew: false }
+      : undefined;
+    if (clip && (!dialog || clipTurn)) {
       tasks.push({ cardId: clip.id, itemId: clip.id, situationId: CHILE_SITUATION, form: 'clip', isNew: false });
-    } else if (dialog) {
-      tasks.push({ cardId: dialog.id, itemId: dialog.id, situationId: target.id, form: 'dialog', isNew: false });
+      // Ist der Clip nicht abspielbar, rückt der Dialog nach.
+      fallback = dialogTask;
+    } else if (dialogTask) {
+      tasks.push(dialogTask);
     }
   }
 
-  return { tasks, finished };
+  return fallback ? { tasks, finished, fallback } : { tasks, finished };
 }

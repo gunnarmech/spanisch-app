@@ -89,9 +89,20 @@ describe('play', () => {
 
   it('schluckt Fehler und loggt sie', async () => {
     const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
-    vi.spyOn(HTMLMediaElement.prototype, 'play').mockRejectedValue(new Error('NotAllowed'));
-    await expect(play('x.mp3')).resolves.toBeUndefined();
+    vi.spyOn(HTMLMediaElement.prototype, 'play').mockRejectedValue(new Error('kaputt'));
+    await expect(play('x.mp3')).resolves.toBe('failed');
     expect(warn).toHaveBeenCalled();
+  });
+
+  it('meldet ok, blocked (Autoplay-Sperre) und failed (404) unterscheidbar', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const spy = vi.spyOn(HTMLMediaElement.prototype, 'play');
+    spy.mockResolvedValueOnce(undefined);
+    await expect(play('x.mp3')).resolves.toBe('ok');
+    spy.mockRejectedValueOnce(new DOMException('blocked', 'NotAllowedError'));
+    await expect(play('x.mp3')).resolves.toBe('blocked');
+    spy.mockRejectedValueOnce(new DOMException('no source', 'NotSupportedError'));
+    await expect(play('x.mp3')).resolves.toBe('failed');
   });
 
   it('nutzt ein gemeinsames Element', async () => {
