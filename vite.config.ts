@@ -39,7 +39,7 @@ export default defineConfig({
             options: {
               cacheName: 'audio-v1', // gleicher Name wie AUDIO_CACHE in src/media/audio.ts (prefetch)
               rangeRequests: true,
-              expiration: { maxEntries: 6000 },
+              expiration: { maxEntries: 30000 },
               cacheableResponse: { statuses: [0, 200] },
             },
           },

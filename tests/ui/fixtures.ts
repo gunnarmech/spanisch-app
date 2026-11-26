@@ -23,6 +23,7 @@ export const situation: Situation = {
 export function fakeApp(over: Partial<AppState> = {}): AppState & { record: ReturnType<typeof vi.fn> } {
   return {
     situations: [situation],
+    clips: [],
     states: new Map(),
     heard: new Map(),
     settings: { device: 'test', retention: 0.9, voiceSpeedNew: 'slow' },

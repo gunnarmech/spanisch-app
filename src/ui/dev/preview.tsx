@@ -7,6 +7,7 @@ import { Home } from '../Home';
 import { Placement } from '../Placement';
 import { Progress } from '../Progress';
 import { component } from '../Round';
+import { ClipTask } from '../tasks/ClipTask';
 import { RoundEnd } from '../RoundEnd';
 import { Settings } from '../Settings';
 import { Sources } from '../Sources';
@@ -62,6 +63,14 @@ function Screen({ app, params }: { app: AppState; params: URLSearchParams }) {
     }
     case 'aufgabe': {
       const typ = params.get('typ') as TaskForm | null;
+      if (typ === 'clip') {
+        const clips = [
+          { id: 'c-1', es: 'oye, cachai que llegó la micro', de: 'Hör mal, weißt du, dass der Bus gekommen ist', gender: 'f' as const, source: 'Vorschau' },
+          { id: 'c-2', es: 'ya po, vamos al tiro', de: 'Na klar, wir gehen sofort los', gender: 'm' as const, source: 'Vorschau' },
+          { id: 'c-3', es: 'qué fome está el día', de: 'Wie langweilig der Tag ist', gender: 'f' as const, source: 'Vorschau' },
+        ];
+        return <ClipTask clip={clips[0]} clips={clips} url={`${import.meta.env.BASE_URL}audio/01-grundlagen/d-conocerse-1-cl-f-normal.mp3`} onDone={noop} />;
+      }
       const found = typ && FORMS.includes(typ) ? pick(app, typ) : null;
       if (!found) return null;
       const Current = component(found.task, found.item);

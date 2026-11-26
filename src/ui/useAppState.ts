@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'preact/hooks';
-import { loadSituations } from '../content/load';
-import type { Situation } from '../content/types';
+import { loadClips, loadSituations } from '../content/load';
+import type { ChileClip, Situation } from '../content/types';
 import { dialogsHeard, newEvent, replay, type CardState, type ReviewEvent } from '../engine/state';
 import { openDb, requestPersistence, type Db, type Settings } from '../store/db';
 import { syncNow, type SyncResult } from '../sync/gist';
@@ -10,6 +10,8 @@ export type AppEvent = Distribute<ReviewEvent>;
 
 export type AppState = {
   situations: Situation[];
+  /** Echte Chile-Aufnahmen; leer, solange content/chile-hoeren.json fehlt. */
+  clips: ChileClip[];
   states: Map<string, CardState>;
   /** Zeitpunkt des letzten Anhörens je Dialog-id. */
   heard: Map<string, number>;
@@ -41,6 +43,7 @@ export function validCardIds(situations: Situation[]): Set<string> {
 const SYNC_MIN_GAP_MS = 60_000;
 
 let situationsCache: Situation[] | undefined;
+let clipsCache: ChileClip[] | undefined;
 
 /** Lädt Inhalt, Ereignisprotokoll und Einstellungen, spielt das Protokoll ab. Null, solange geladen wird. */
 export function useAppState(injected?: Db): AppState | null {
@@ -56,12 +59,15 @@ export function useAppState(injected?: Db): AppState | null {
     if (!db.current || !settings.current) return;
     situationsCache ??= loadSituations();
     const situations = situationsCache;
+    clipsCache ??= loadClips();
+    const clips = clipsCache;
     const events = await db.current.allEvents();
     const states = replay(events, validCardIds(situations), settings.current.retention);
     const current = db.current;
     const cfg = settings.current;
     setState({
       situations,
+      clips,
       states,
       heard: dialogsHeard(events),
       settings: cfg,

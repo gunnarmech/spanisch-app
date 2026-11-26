@@ -20,7 +20,7 @@ if (!out) {
 mkdirSync(out, { recursive: true });
 
 const SCREENS = ['start', 'start-neu', 'einstufung', 'fortschritt', 'einstellungen', 'diagnose', 'quellen', 'rundenende'];
-const TYPES = ['intro', 'choice', 'listen', 'type', 'speak', 'grammar', 'pressure', 'dialog'];
+const TYPES = ['intro', 'choice', 'listen', 'type', 'speak', 'grammar', 'pressure', 'dialog', 'clip'];
 const SIZES = [
   { width: 390, height: 844 },
   { width: 1440, height: 900 },
@@ -85,7 +85,7 @@ try {
       for (const typ of TYPES) {
         await open(`zeige=aufgabe&typ=${typ}`);
         await shot(`aufgabe-${typ}`);
-        if (typ === 'choice' || typ === 'listen') {
+        if (typ === 'choice' || typ === 'listen' || typ === 'clip') {
           const option = page.locator('button.option').first();
           if (await option.count()) {
             await option.click();

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { Item } from '../content/types';
+import { CHILE_SITUATION, chileUnlocked } from '../engine/clips';
 import { situationCoverage } from '../engine/coverage';
 import { buildRound, type Task } from '../engine/round';
 import { ratingFor, type Stage } from '../engine/state';
@@ -7,6 +8,7 @@ import { audioUrl, loadManifest, prefetchSituations, prefetchTargets, type Manif
 import { RoundEnd } from './RoundEnd';
 import { TaskTools } from './TaskTools';
 import { Choice } from './tasks/Choice';
+import { ClipTask } from './tasks/ClipTask';
 import { Dialog } from './tasks/Dialog';
 import { RoundEnvContext, type RoundEnv } from './tasks/env';
 import { Grammar } from './tasks/Grammar';
@@ -52,6 +54,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
       situations: app.situations,
       focusSituationId,
       heard: app.heard,
+      clips: app.clips,
     });
     const startCoverage = new Map(app.situations.map((s) => [s.id, situationCoverage(s, app.states, now, app.situations)]));
     return { ...built, startCoverage };
@@ -77,6 +80,10 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
       plan.tasks.map((t) => t.situationId),
       app.situations.map((s) => s.id),
     );
+    // Die Chile-Aufnahmen kommen dazu, sobald sie freigeschaltet sind, auch wenn diese Runde keine enthält.
+    if (app.clips.length > 0 && chileUnlocked(app.situations, app.states, Date.now()) && !ids.includes(CHILE_SITUATION)) {
+      ids.push(CHILE_SITUATION);
+    }
     void prefetchSituations(ids);
   }, [plan]);
 
@@ -95,7 +102,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     situations: app.situations,
     urlFor(task, key) {
       const manifest = manifests?.[task.situationId] ?? {};
-      const speed = task.form === 'pressure' ? 'fast' : task.isNew ? app.settings.voiceSpeedNew : 'normal';
+      const speed = task.form === 'clip' ? 'normal' : task.form === 'pressure' ? 'fast' : task.isNew ? app.settings.voiceSpeedNew : 'normal';
       const pick = { speed, preferChile: task.form === 'pressure' } as const;
       return audioUrl(task.situationId, key, pick, manifest) ?? audioUrl(task.situationId, key, { ...pick, speed: 'normal' }, manifest);
     },
@@ -125,7 +132,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
   const answered = async (task: Task, result: Answer) => {
     if (task.form === 'intro') return;
     recorded.current = true;
-    if (task.form === 'dialog') {
+    if (task.form === 'dialog' || task.form === 'clip') {
       await app.record({ kind: 'heard', cardId: task.itemId });
       return;
     }
@@ -150,10 +157,33 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     advance(index);
   };
 
-  if (manifests === null) return <div class="task" aria-busy="true" />;
-
   const task = plan.tasks[index];
+  const clip = task?.form === 'clip' ? app.clips.find((c) => c.id === task.itemId) : undefined;
+  const clipUrl = task && clip && manifests ? env.urlFor(task, clip.id) : null;
+  // Eine Aufnahme ohne Ton (Manifest fehlt oder ohne Eintrag) wird übersprungen, die Runde geht weiter.
+  const clipMissing = task?.form === 'clip' && manifests !== null && (!clip || !clipUrl);
+  useEffect(() => {
+    if (clipMissing) advance(index);
+  }, [clipMissing, index]);
+
+  if (manifests === null) return <div class="task" aria-busy="true" />;
+  if (clipMissing) return null;
+
   const item = task && items.get(task.itemId);
+  if (task && clip && clipUrl) {
+    return (
+      <RoundEnvContext.Provider value={env}>
+        <div class="progress" role="progressbar" aria-label="Fortschritt der Runde" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round((index / plan.tasks.length) * 100)}>
+          <div style={{ transform: `scaleX(${index / plan.tasks.length})` }} />
+        </div>
+        <ClipTask key={index} clip={clip} clips={app.clips} url={clipUrl} onAnswered={(r) => void answered(task, r)} onDone={next} />
+        <TaskTools key={`tools-${index}`} canKnow={false} onKnown={() => {}} onReport={(text) => app.report(task.itemId, text)} />
+        <button type="button" class="link leave" onClick={leave}>
+          Runde beenden
+        </button>
+      </RoundEnvContext.Provider>
+    );
+  }
   if (!task || !item) {
     return <RoundEnd app={app} tasks={plan.tasks} startCoverage={plan.startCoverage} onExit={onExit} onAgain={onAgain} />;
   }

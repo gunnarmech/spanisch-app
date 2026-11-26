@@ -60,3 +60,33 @@ describe('Audio-Manifest', () => {
     });
   }
 });
+
+describe('Audio-Cache', () => {
+  const manifests = readdirSync(audioDir, { withFileTypes: true })
+    .filter((d) => d.isDirectory() && existsSync(join(audioDir, d.name, 'manifest.json')))
+    .map((d) => JSON.parse(readFileSync(join(audioDir, d.name, 'manifest.json'), 'utf8')) as Record<string, unknown[]>);
+
+  test('Dateien aller Manifeste belegen höchstens 80 % von maxEntries', () => {
+    const cfg = readFileSync('vite.config.ts', 'utf8');
+    const max = Number(/maxEntries:\s*(\d+)/.exec(cfg)?.[1]);
+    expect(max).toBeGreaterThan(0);
+    const files = manifests.reduce((n, m) => n + Object.values(m).reduce((k, e) => k + e.length, 0), 0);
+    expect(files).toBeLessThanOrEqual(max * 0.8);
+  });
+
+  const clipFile = 'content/chile-hoeren.json';
+  test.skipIf(!existsSync(clipFile))('jeder Clip aus content/chile-hoeren.json hat Eintrag und Datei in chile-echt', () => {
+    const { clips } = JSON.parse(readFileSync(clipFile, 'utf8')) as { clips: { id: string }[] };
+    const dir = join(audioDir, 'chile-echt');
+    const manifest = JSON.parse(readFileSync(join(dir, 'manifest.json'), 'utf8')) as Record<string, { voice: string; speed: string }[]>;
+    const missing: string[] = [];
+    for (const c of clips) {
+      const entries = manifest[c.id] ?? [];
+      if (entries.length === 0) missing.push(c.id);
+      for (const e of entries) {
+        if (!existsSync(join(dir, `${c.id}-${e.voice}-${e.speed}.mp3`))) missing.push(`${c.id}-${e.voice}-${e.speed}.mp3`);
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+});
