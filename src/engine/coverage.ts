@@ -4,8 +4,9 @@ import type { Situation, WordItem } from '../content/types';
 
 const KNOWN_THRESHOLD = 0.8;
 
+/** Sicher heißt gefestigt (oder bekannt markiert) und noch abrufbar; eine einzelne Bewertung genügt nicht. */
 export function isSure(s: CardState | undefined, now: number): boolean {
-  return !!s && (s.known || retrievability(s, now) > KNOWN_THRESHOLD);
+  return !!s && (s.known || (s.consolidated && retrievability(s, now) > KNOWN_THRESHOLD));
 }
 
 /**

@@ -163,3 +163,30 @@ describe('heard', () => {
     expect(newEvent({ cardId: 'd1', kind: 'heard' }, 'dev', 5).kind).toBe('heard');
   });
 });
+
+describe('Festigung', () => {
+  test('eine Bewertung festigt nicht', () => {
+    expect(replay([review('1', 'a', T0, 3)], valid).get('a')!.consolidated).toBe(false);
+  });
+  test('zweite erfolgreiche Bewertung nach 20 h festigt, nach 19 h nicht', () => {
+    const H = 3_600_000;
+    expect(replay([review('1', 'a', T0, 3), review('2', 'a', T0 + 20 * H, 2)], valid).get('a')!.consolidated).toBe(true);
+    expect(replay([review('1', 'a', T0, 3), review('2', 'a', T0 + 19 * H, 3)], valid).get('a')!.consolidated).toBe(false);
+  });
+  test('Again nimmt die Festigung, nächste verteilte Wiederholung gibt sie zurück', () => {
+    const ev = [review('1', 'a', T0, 3), review('2', 'a', T0 + DAY, 3), review('3', 'a', T0 + 2 * DAY, 1)];
+    expect(replay(ev, valid).get('a')!.consolidated).toBe(false);
+    expect(replay([...ev, review('4', 'a', T0 + 3 * DAY, 3)], valid).get('a')!.consolidated).toBe(true);
+  });
+  test('known ist gefestigt, Again danach nicht mehr', () => {
+    const k: ReviewEvent = { id: 'k', cardId: 'a', ts: T0, device: 'd1', kind: 'known' };
+    expect(replay([k], valid).get('a')!.consolidated).toBe(true);
+    expect(replay([k, review('2', 'a', T0 + DAY, 1)], valid).get('a')!.consolidated).toBe(false);
+  });
+  test('Bestandsprotokoll: known gefestigt, einzelnes Review nicht', () => {
+    const k: ReviewEvent = { id: 'k', cardId: 'a', ts: T0, device: 'd1', kind: 'known' };
+    const s = replay([k, review('2', 'b', T0 + 1000, 3)], valid);
+    expect(s.get('a')!.consolidated).toBe(true);
+    expect(s.get('b')!.consolidated).toBe(false);
+  });
+});

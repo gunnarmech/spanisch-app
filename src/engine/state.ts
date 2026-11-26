@@ -10,7 +10,14 @@ export type ReviewEvent =
   /** Dialog angehört (cardId = Dialog-id). Dialoge sind keine Karten, das Ereignis ändert keinen Lernstand. */
   | { id: string; cardId: string; ts: number; device: string; kind: 'heard' };
 
-export type CardState = { card: Card; stage: Stage; known: boolean; lastTs: number };
+/**
+ * Lernstand einer Karte. `consolidated` heißt gefestigt: bekannt markiert oder mindestens eine verteilte
+ * erfolgreiche Wiederholung (Rating 2 bis 4, mindestens CONSOLIDATE_MS nach dem vorherigen review) ohne Rating 1 danach.
+ */
+export type CardState = { card: Card; stage: Stage; known: boolean; consolidated: boolean; lastTs: number };
+
+/** Mindestabstand zweier Bewertungen, damit die zweite als verteilte Wiederholung zählt (20 Stunden). */
+export const CONSOLIDATE_MS = 20 * 3_600_000;
 
 const MAX_TS = 8.64e15;
 
@@ -48,7 +55,7 @@ function applyKnown(ts: number): CardState {
     due: new Date(ts + KNOWN_DAYS * DAY_MS),
     last_review: new Date(ts),
   };
-  return { card, stage: 4, known: true, lastTs: ts };
+  return { card, stage: 4, known: true, consolidated: true, lastTs: ts };
 }
 
 /**
@@ -65,6 +72,8 @@ export function replay(
   const sorted = events.filter(validEvent).sort((a, b) => a.ts - b.ts || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const seen = new Set<string>();
   const states = new Map<string, CardState>();
+  // Zeitpunkt des letzten review je Karte (known-Ereignisse zählen nicht).
+  const lastReviewTs = new Map<string, number>();
 
   for (const e of sorted) {
     if (seen.has(e.id)) continue;
@@ -85,7 +94,12 @@ export function replay(
       known = false;
       stage = 2;
     }
-    states.set(e.cardId, { card: next, stage, known, lastTs: e.ts });
+    let consolidated = prev?.consolidated ?? false;
+    const lastReview = lastReviewTs.get(e.cardId);
+    if (e.rating === 1) consolidated = false;
+    else if (lastReview !== undefined && e.ts - lastReview >= CONSOLIDATE_MS) consolidated = true;
+    lastReviewTs.set(e.cardId, e.ts);
+    states.set(e.cardId, { card: next, stage, known, consolidated, lastTs: e.ts });
   }
   return states;
 }
