@@ -77,7 +77,7 @@ export function Home({ app, onStart, onDiagnose, onSettings, onProgress, onPlace
                   {hasDialog ? (
                     <>
                       <span class="understand" id={`understand-${s.id}`}>
-                        du verstehst etwa <span class="num">{pct}</span> % der Dialoge
+                        Du verstehst etwa <span class="num">{pct}</span> % der Dialoge
                       </span>
                       <span class="meter" aria-hidden="true">
                         <span style={{ width: `${pct}%` }} />
@@ -85,7 +85,7 @@ export function Home({ app, onStart, onDiagnose, onSettings, onProgress, onPlace
                     </>
                   ) : (
                     <span class="understand" id={`understand-${s.id}`}>
-                      noch keine Dialoge
+                      Noch keine Dialoge
                     </span>
                   )}
                 </li>

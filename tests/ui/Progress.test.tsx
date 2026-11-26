@@ -17,7 +17,7 @@ test('zeigt Verständnis in Prozent je Situation und die Zahl sicher bekannter W
   const states = replay([newEvent({ kind: 'known', cardId: 'w-hola' }, 'd', now)], new Set(['w-hola', 'w-adios']));
   render(<Progress app={fakeApp({ states })} onBack={noop} />);
   expect(screen.getByText('Grundlagen')).toBeTruthy();
-  expect(document.querySelector('.understand')?.textContent).toBe('du verstehst etwa 100 % der Dialoge');
+  expect(document.querySelector('.understand')?.textContent).toBe('Du verstehst etwa 100 % der Dialoge');
   expect(screen.getByText(/sicher bekannte Wörter und Wendungen: 1/)).toBeTruthy();
   expect(document.body.textContent).not.toMatch(/fällig/i);
   expect(document.body.textContent).not.toMatch(/[—–]/);
@@ -26,7 +26,7 @@ test('zeigt Verständnis in Prozent je Situation und die Zahl sicher bekannter W
 test('Situation ohne Dialog zeigt keinen Prozentwert', () => {
   const noDialog = { ...situation, items: situation.items.filter((i) => i.kind !== 'dialog') };
   render(<Progress app={fakeApp({ situations: [noDialog] })} onBack={noop} />);
-  expect(screen.getByText('noch keine Dialoge')).toBeTruthy();
+  expect(screen.getByText('Noch keine Dialoge')).toBeTruthy();
 });
 
 test('Quellen nennen Lizenzen und listen Fehlermeldungen mit Export als Text', async () => {

@@ -36,8 +36,8 @@ test('Quellen sind über die Einstellungen erreichbar', async () => {
 test('das Angebot zur Einstufung erscheint beim ersten Start und nach dem Überspringen nicht mehr', async () => {
   const db = await openDb(`placement-${Date.now()}`);
   render(<App db={db} />);
-  fireEvent.click(await screen.findByRole('button', { name: 'überspringen' }));
-  await waitFor(() => expect(screen.queryByRole('button', { name: 'überspringen' })).toBeNull());
+  fireEvent.click(await screen.findByRole('button', { name: 'Überspringen' }));
+  await waitFor(() => expect(screen.queryByRole('button', { name: 'Überspringen' })).toBeNull());
   expect((await db.getSettings()).placementDone).toBe(true);
   expect(await db.allEvents()).toEqual([]);
 });

@@ -90,7 +90,7 @@ export function Settings({ app, onBack, onDiagnose, onSources, onPlacement }: Pr
         />
         <p class="german">Letzter Abgleich: {when(settings.lastSync)}</p>
         <button type="button" class="btn btn--secondary" disabled={busy} onClick={() => void syncClick()}>
-          jetzt abgleichen
+          Jetzt abgleichen
         </button>
         {app.syncError && <p class="quiet">{app.syncError}</p>}
         {note && <p class="quiet" role="status">{note}</p>}

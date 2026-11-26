@@ -27,14 +27,14 @@ export function Progress({ app, onBack }: { app: AppState; onBack(): void }) {
                 {hasDialog ? (
                   <>
                     <span class="understand">
-                      du verstehst etwa <span class="num">{pct}</span> % der Dialoge
+                      Du verstehst etwa <span class="num">{pct}</span> % der Dialoge
                     </span>
                     <span class="meter" aria-hidden="true">
                       <span style={{ width: `${pct}%` }} />
                     </span>
                   </>
                 ) : (
-                  <span class="understand">noch keine Dialoge</span>
+                  <span class="understand">Noch keine Dialoge</span>
                 )}
               </div>
             </li>

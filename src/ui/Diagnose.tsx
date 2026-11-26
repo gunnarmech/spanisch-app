@@ -27,11 +27,11 @@ async function toneTest(): Promise<Result> {
   try {
     const manifest = await loadManifest('01-grundlagen');
     const key = Object.keys(manifest).find((k) => manifest[k].length > 0);
-    if (!key) return { text: 'kein Ton gefunden', tone: 'bad' };
+    if (!key) return { text: 'Kein Ton gefunden', tone: 'bad' };
     const url = audioUrl('01-grundlagen', key, { speed: manifest[key][0].speed }, manifest);
-    if (!url) return { text: 'kein Ton gefunden', tone: 'bad' };
+    if (!url) return { text: 'Kein Ton gefunden', tone: 'bad' };
     await new Audio(url).play();
-    return { text: 'läuft', tone: 'good' };
+    return { text: 'Läuft', tone: 'good' };
   } catch (err) {
     return { text: (err as { name?: string })?.name || 'Fehler', tone: 'bad' };
   }
@@ -53,23 +53,23 @@ export function Diagnose({ onBack }: { onBack(): void }) {
   }, []);
 
   const rows: Row[] = [
-    { label: 'Spracherkennung', text: speechSupported() ? 'ja' : 'nein', tone: speechSupported() ? 'good' : 'bad' },
-    { label: 'Anzeige als App', text: standalone() ? 'ja' : 'nein' },
-    { label: 'Ton-Test', text: 'noch nicht geprüft', run: toneTest },
+    { label: 'Spracherkennung', text: speechSupported() ? 'Ja' : 'Nein', tone: speechSupported() ? 'good' : 'bad' },
+    { label: 'Anzeige als App', text: standalone() ? 'Ja' : 'Nein' },
+    { label: 'Ton-Test', text: 'Noch nicht geprüft', run: toneTest },
     {
       label: 'Mikrofon-Test',
-      text: 'noch nicht geprüft',
+      text: 'Noch nicht geprüft',
       run: async () => {
         const clip = await recordClip(2000);
-        return clip ? { text: `ok, ${Math.round(clip.size / 1024)} KB`, tone: 'good' } : { text: 'nicht verfügbar', tone: 'bad' };
+        return clip ? { text: `Ok, ${Math.round(clip.size / 1024)} KB`, tone: 'good' } : { text: 'Nicht verfügbar', tone: 'bad' };
       },
     },
     {
       label: 'Erkennungs-Test',
-      text: 'noch nicht geprüft',
+      text: 'Noch nicht geprüft',
       run: async () => {
         const heard = await recognize();
-        return heard ? { text: heard, tone: '' } : { text: 'keine Erkennung', tone: 'bad' };
+        return heard ? { text: heard, tone: '' } : { text: 'Keine Erkennung', tone: 'bad' };
       },
     },
     { label: 'Speicher', text: storage },
@@ -78,7 +78,7 @@ export function Diagnose({ onBack }: { onBack(): void }) {
   const start = async (row: Row) => {
     if (!row.run || busy) return;
     setBusy(row.label);
-    setResults((r) => ({ ...r, [row.label]: { text: 'läuft gerade', tone: '' } }));
+    setResults((r) => ({ ...r, [row.label]: { text: 'Läuft gerade', tone: '' } }));
     const result = await row.run();
     setResults((r) => ({ ...r, [row.label]: result }));
     setBusy(null);

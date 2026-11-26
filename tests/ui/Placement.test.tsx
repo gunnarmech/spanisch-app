@@ -131,7 +131,7 @@ describe('Placement', () => {
     expect(screen.getByText(/das war der ganze Test/i)).toBeTruthy();
     expect(document.body.textContent).not.toMatch(/\d/);
     expect(onFinish).not.toHaveBeenCalled();
-    fireEvent.click(screen.getByRole('button', { name: 'fertig' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Fertig' }));
     await waitFor(() => expect(onFinish).toHaveBeenCalled());
     expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
   });
@@ -180,9 +180,9 @@ describe('Placement in Blöcken', () => {
     render(<Placement app={big()} onFinish={noop} />);
     for (let i = 0; i < 30; i++) answer(true);
     expect(screen.getByRole('heading', { name: 'Zwischenstand' })).toBeTruthy();
-    expect(screen.getByRole('button', { name: 'weiter' })).toBeTruthy();
-    expect(screen.getByRole('button', { name: 'aufhören' })).toBeTruthy();
-    fireEvent.click(screen.getByRole('button', { name: 'weiter' }));
+    expect(screen.getByRole('button', { name: 'Weiter' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Aufhören' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
     expect(screen.queryByRole('heading', { name: 'Zwischenstand' })).toBeNull();
     expect(screen.getByText('Was bedeutet das?')).toBeTruthy();
   });
@@ -193,8 +193,8 @@ describe('Placement in Blöcken', () => {
     render(<Placement app={app} onFinish={onFinish} />);
     for (let i = 0; i < 30; i++) answer(i < 7);
     expect(screen.getByText('Hier reicht es. Der Rest kommt beim normalen Lernen.')).toBeTruthy();
-    expect(screen.queryByRole('button', { name: 'weiter' })).toBeNull();
-    fireEvent.click(screen.getByRole('button', { name: 'fertig' }));
+    expect(screen.queryByRole('button', { name: 'Weiter' })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'Fertig' }));
     await waitFor(() => expect(onFinish).toHaveBeenCalled());
     expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
   });
@@ -202,7 +202,7 @@ describe('Placement in Blöcken', () => {
   it('genau ein Viertel richtig lässt den Test weiterlaufen', () => {
     render(<Placement app={big()} onFinish={noop} />);
     for (let i = 0; i < 30; i++) answer(i < 8);
-    expect(screen.getByRole('button', { name: 'weiter' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Weiter' })).toBeTruthy();
   });
 
   it('aufhören behält bisherige known-Ereignisse', async () => {
@@ -210,7 +210,7 @@ describe('Placement in Blöcken', () => {
     const app = big();
     render(<Placement app={app} onFinish={onFinish} />);
     for (let i = 0; i < 30; i++) answer(true);
-    fireEvent.click(screen.getByRole('button', { name: 'aufhören' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Aufhören' }));
     await waitFor(() => expect(onFinish).toHaveBeenCalled());
     expect(app.record).toHaveBeenCalledTimes(30);
     expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
@@ -230,15 +230,15 @@ describe('PlacementOffer', () => {
   it('Überspringen erzeugt kein Ereignis und merkt sich das', () => {
     const app = fakeApp();
     render(<PlacementOffer app={app} onStart={noop} />);
-    fireEvent.click(screen.getByRole('button', { name: 'überspringen' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Überspringen' }));
     expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
     expect(app.record).not.toHaveBeenCalled();
   });
 
-  it('"kurz einstufen" startet die Einstufung', () => {
+  it('"Kurz einstufen" startet die Einstufung', () => {
     const onStart = vi.fn();
     render(<PlacementOffer app={fakeApp()} onStart={onStart} />);
-    fireEvent.click(screen.getByRole('button', { name: 'kurz einstufen' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Kurz einstufen' }));
     expect(onStart).toHaveBeenCalled();
   });
 

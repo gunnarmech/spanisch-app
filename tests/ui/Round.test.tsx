@@ -44,7 +44,7 @@ describe('Runde', () => {
     const app = fakeApp();
     render(<Round app={app} onExit={noop} onAgain={noop} />);
     await screen.findByText('hola');
-    fireEvent.click(screen.getByRole('button', { name: 'kann ich schon' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Kann ich schon' }));
 
     await waitFor(() => expect(app.record).toHaveBeenCalledWith({ kind: 'known', cardId: 'w-hola' }));
     expect(await screen.findByText('adiós')).toBeTruthy();
@@ -77,14 +77,14 @@ describe('Runde', () => {
     const onAgain = vi.fn();
     render(<Round app={fakeApp()} onExit={onExit} onAgain={onAgain} />);
     await screen.findByText('hola');
-    fireEvent.click(screen.getByRole('button', { name: 'kann ich schon' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Kann ich schon' }));
     await screen.findByText('adiós');
-    fireEvent.click(screen.getByRole('button', { name: 'kann ich schon' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Kann ich schon' }));
 
     expect(await screen.findByText('Runde geschafft.')).toBeTruthy();
     expect(screen.getByText('Neu in dieser Runde')).toBeTruthy();
-    fireEvent.click(screen.getByRole('button', { name: 'noch eine Runde' }));
-    fireEvent.click(screen.getByRole('button', { name: 'fertig' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Noch eine Runde' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Fertig' }));
     expect(onAgain).toHaveBeenCalled();
     expect(onExit).toHaveBeenCalled();
   });
@@ -95,7 +95,7 @@ describe('Startseite', () => {
     render(<Home app={fakeApp()} onStart={noop} onDiagnose={noop} onSettings={noop} />);
     expect(screen.getByRole('button', { name: 'Heute lernen' })).toBeTruthy();
     expect(
-      screen.getByText((_, el) => el?.classList.contains('understand') === true && el.textContent === 'du verstehst etwa 0 % der Dialoge'),
+      screen.getByText((_, el) => el?.classList.contains('understand') === true && el.textContent === 'Du verstehst etwa 0 % der Dialoge'),
     ).toBeTruthy();
     expect(screen.queryByText(/fällig/)).toBeNull();
   });
@@ -203,7 +203,7 @@ describe('Ereignisse beim Antworten', () => {
     });
     render(<Round app={app} onExit={noop} onAgain={noop} />);
     await screen.findByText('hola');
-    const known = screen.getByRole('button', { name: 'kann ich schon' });
+    const known = screen.getByRole('button', { name: 'Kann ich schon' });
     fireEvent.click(known);
     fireEvent.click(known);
     expect(await screen.findByText('adiós')).toBeTruthy();
@@ -221,7 +221,7 @@ describe('Ereignisse beim Antworten', () => {
     render(<Round app={app} onExit={noop} onAgain={noop} />);
     for (let i = 0; i < 3; i++) {
       if (screen.queryByRole('button', { name: 'Text zeigen' })) break;
-      fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+      fireEvent.click(await screen.findByRole('button', { name: 'Kann ich schon' }));
       await waitFor(() => expect(app.record).toHaveBeenCalledTimes(i + 1));
       await new Promise((r) => setTimeout(r, 0));
     }
@@ -241,7 +241,7 @@ describe('Abgleich beim Beenden', () => {
     const onExit = vi.fn();
     render(<Round app={app} onExit={onExit} onAgain={noop} />);
     await screen.findByText('hola');
-    fireEvent.click(screen.getByRole('button', { name: 'kann ich schon' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Kann ich schon' }));
     await waitFor(() => expect(app.record).toHaveBeenCalledTimes(1));
     fireEvent.click(screen.getByRole('button', { name: 'Runde beenden' }));
     expect(app.sync).toHaveBeenCalledTimes(1);

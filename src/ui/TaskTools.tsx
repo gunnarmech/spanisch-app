@@ -3,7 +3,7 @@ import { useKey } from './tasks/keys';
 
 type Props = { canKnow: boolean; onKnown(): void; onReport(text: string): Promise<void> };
 
-/** Kleine Knöpfe unter jeder Aufgabe: "kann ich schon" und "Fehler melden". */
+/** Kleine Knöpfe unter jeder Aufgabe: "Kann ich schon" und "Fehler melden". */
 export function TaskTools({ canKnow, onKnown, onReport }: Props) {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
@@ -26,7 +26,7 @@ export function TaskTools({ canKnow, onKnown, onReport }: Props) {
       <div class="tool-row">
         {canKnow && (
           <button type="button" class="link" onClick={onKnown}>
-            kann ich schon
+            Kann ich schon
           </button>
         )}
         {sent ? (

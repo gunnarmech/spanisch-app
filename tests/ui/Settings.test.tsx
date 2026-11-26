@@ -48,12 +48,12 @@ test('Ziel-Behaltensquote geht von 0.8 bis 0.95 und wird beim Loslassen gespeich
   expect(app.updateSettings).toHaveBeenCalledWith({ retention: 0.85 });
 });
 
-test('"jetzt abgleichen" meldet das Ergebnis, Fehler stehen als ruhige Zeile da', async () => {
+test('"Jetzt abgleichen" meldet das Ergebnis, Fehler stehen als ruhige Zeile da', async () => {
   const sync = vi.fn(async () => ({ added: 2, pushed: 1 }));
   const app = fakeApp({ sync });
   const { rerender } = render(<Settings app={app} onBack={noop} onDiagnose={noop} />);
   fireEvent.input(screen.getByLabelText('GitHub-Token'), { target: { value: 't' } });
-  fireEvent.click(screen.getByRole('button', { name: 'jetzt abgleichen' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Jetzt abgleichen' }));
   await screen.findByText('Abgeglichen: 2 geholt, 1 gesendet.');
   expect(sync).toHaveBeenCalled();
   rerender(<Settings app={{ ...app, syncError: 'Der Token wurde abgelehnt. Bitte einen neuen anlegen.' }} onBack={noop} onDiagnose={noop} />);

@@ -55,14 +55,14 @@ describe('Diagnose', () => {
   it('zeigt Spracherkennung und Anzeigemodus', () => {
     speech.speechSupported.mockReturnValue(false);
     render(<Diagnose onBack={() => {}} />);
-    expect(row('Spracherkennung').textContent).toContain('nein');
-    expect(row('Anzeige als App').textContent).toContain('nein');
+    expect(row('Spracherkennung').textContent).toContain('Nein');
+    expect(row('Anzeige als App').textContent).toContain('Nein');
   });
 
   it('erkennt den Standalone-Modus', () => {
     vi.stubGlobal('matchMedia', (q: string) => ({ matches: true, media: q }));
     render(<Diagnose onBack={() => {}} />);
-    expect(row('Anzeige als App').textContent).toContain('ja');
+    expect(row('Anzeige als App').textContent).toContain('Ja');
   });
 
   it('Speicher unbekannt ohne storage.estimate', async () => {
@@ -74,7 +74,7 @@ describe('Diagnose', () => {
   it('Ton-Test zeigt läuft', async () => {
     render(<Diagnose onBack={() => {}} />);
     fireEvent.click(within('Ton-Test'));
-    await waitFor(() => expect(row('Ton-Test').textContent).toContain('läuft'));
+    await waitFor(() => expect(row('Ton-Test').textContent).toContain('Läuft'));
   });
 
   it('Ton-Test zeigt den Fehlernamen', async () => {
@@ -90,12 +90,12 @@ describe('Diagnose', () => {
     speech.recordClip.mockResolvedValue(new Blob([new Uint8Array(3072)]));
     render(<Diagnose onBack={() => {}} />);
     fireEvent.click(within('Mikrofon-Test'));
-    await waitFor(() => expect(row('Mikrofon-Test').textContent).toContain('ok, 3 KB'));
+    await waitFor(() => expect(row('Mikrofon-Test').textContent).toContain('Ok, 3 KB'));
     expect(speech.recordClip).toHaveBeenCalledWith(2000);
 
     speech.recordClip.mockResolvedValue(null);
     fireEvent.click(within('Mikrofon-Test'));
-    await waitFor(() => expect(row('Mikrofon-Test').textContent).toContain('nicht verfügbar'));
+    await waitFor(() => expect(row('Mikrofon-Test').textContent).toContain('Nicht verfügbar'));
   });
 
   it('Erkennungs-Test zeigt Text oder keine Erkennung', async () => {
@@ -106,7 +106,7 @@ describe('Diagnose', () => {
 
     speech.recognize.mockResolvedValue(null);
     fireEvent.click(within('Erkennungs-Test'));
-    await waitFor(() => expect(row('Erkennungs-Test').textContent).toContain('keine Erkennung'));
+    await waitFor(() => expect(row('Erkennungs-Test').textContent).toContain('Keine Erkennung'));
   });
 
   it('färbt nach Ergebnis, nicht nach Text: erkanntes "nein" bleibt neutral', async () => {

@@ -51,10 +51,10 @@ export function PlacementOffer({ app, onStart }: { app: AppState; onStart(): voi
       </p>
       <div class="actions">
         <button type="button" class="btn btn--secondary" onClick={onStart}>
-          kurz einstufen
+          Kurz einstufen
         </button>
         <button type="button" class="link" onClick={() => void app.updateSettings({ placementDone: true })}>
-          überspringen
+          Überspringen
         </button>
       </div>
     </section>
@@ -119,7 +119,7 @@ export function BlockPause({
             <p class="german">Das war der ganze Test. Was du schon kannst, bleibt gemerkt, der Rest kommt beim normalen Lernen.</p>
             <div class="actions">
               <button type="button" class="btn btn--secondary" onClick={onQuit}>
-                fertig
+                Fertig
               </button>
             </div>
           </>
@@ -128,7 +128,7 @@ export function BlockPause({
             <p class="german">Hier reicht es. Der Rest kommt beim normalen Lernen.</p>
             <div class="actions">
               <button type="button" class="btn btn--secondary" onClick={onQuit}>
-                fertig
+                Fertig
               </button>
             </div>
           </>
@@ -137,10 +137,10 @@ export function BlockPause({
             <p class="german">Ein Block ist geschafft. Du kannst weitermachen oder hier aufhören, das Bisherige bleibt gemerkt.</p>
             <div class="actions">
               <button type="button" class="btn btn--secondary" onClick={onContinue}>
-                weiter
+                Weiter
               </button>
               <button type="button" class="link" onClick={onQuit}>
-                aufhören
+                Aufhören
               </button>
             </div>
           </>

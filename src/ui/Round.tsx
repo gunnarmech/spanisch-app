@@ -121,7 +121,7 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     setIndex(next);
   };
 
-  // Pro Aufgabe nur ein Weiterschalten oder "kann ich schon", auch bei doppeltem Tippen.
+  // Pro Aufgabe nur ein Weiterschalten oder "Kann ich schon", auch bei doppeltem Tippen.
   const locked = useRef<number | null>(null);
   const recorded = useRef(false);
   const leave = () => {

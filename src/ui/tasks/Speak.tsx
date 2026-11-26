@@ -148,7 +148,7 @@ export function Speak(props: TaskProps) {
             </>
           )}
           <button type="button" class="btn btn--primary" data-primary disabled={phase.name === 'busy'} onClick={() => void speak()}>
-            sprechen
+            Sprechen
           </button>
           {phase.name === 'busy' && <p class="hint" role="status">Ich höre zu.</p>}
         </div>
@@ -167,15 +167,15 @@ export function Speak(props: TaskProps) {
                 class="btn btn--secondary"
                 onClick={() => void playSequence([url, clipUrl].filter((u): u is string => !!u))}
               >
-                beide anhören
+                Beide anhören
               </button>
             </>
           )}
           <button type="button" class="btn btn--primary" onClick={() => assess('correct')}>
-            klang gleich
+            Klang gleich
           </button>
           <button type="button" class="btn btn--secondary" onClick={() => assess('wrong')}>
-            eher nicht
+            Eher nicht
           </button>
         </div>
       )}

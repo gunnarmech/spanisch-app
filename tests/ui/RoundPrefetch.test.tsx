@@ -60,7 +60,7 @@ describe('Chile-Aufnahmen in der Runde', () => {
   /** Überspringen: Einführung des neuen Wortes per "kann ich schon" überspringen, dann kommt die Aufnahme dran. */
   const roundToClip = async (app: ReturnType<typeof fakeApp>) => {
     render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
-    fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Kann ich schon' }));
   };
 
   it('Clip ohne Manifest-Eintrag wird übersprungen, Runde geht weiter', async () => {
@@ -115,7 +115,7 @@ describe('Chile-Aufnahmen in der Runde', () => {
     const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
     render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
     // Zuerst kommt die Einführung des neuen Wortes, die Aufnahme steht am Ende der Runde.
-    fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Kann ich schon' }));
     expect(await screen.findByText('Chile hören')).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: /hallo da/ }));
     await waitFor(() => expect(app.record).toHaveBeenCalledWith({ kind: 'heard', cardId: 'c-hola' }));
@@ -142,7 +142,7 @@ describe('Chile-Aufnahmen in der Runde', () => {
       try {
         const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
         render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
-        fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+        fireEvent.click(await screen.findByRole('button', { name: 'Kann ich schon' }));
         expect(await screen.findByText('Gruß')).toBeTruthy();
         expect(screen.queryByText('Chile hören')).toBeNull();
         expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'heard', cardId: 'c-hola' }));
@@ -158,7 +158,7 @@ describe('Chile-Aufnahmen in der Runde', () => {
         // Kein Dialog als Ersatz: die Runde geht zu Ende.
         const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', Date.now()]]) });
         render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
-        fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+        fireEvent.click(await screen.findByRole('button', { name: 'Kann ich schon' }));
         await waitFor(() => expect(screen.queryByText('Chile hören')).toBeNull());
         expect(await screen.findByText('Runde geschafft.')).toBeTruthy();
         expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'heard' }));
@@ -173,7 +173,7 @@ describe('Chile-Aufnahmen in der Runde', () => {
       try {
         const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
         render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
-        fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+        fireEvent.click(await screen.findByRole('button', { name: 'Kann ich schon' }));
         expect(await screen.findByText('Chile hören')).toBeTruthy();
         await new Promise((r) => setTimeout(r, 20));
         expect(screen.getByText('Chile hören')).toBeTruthy();

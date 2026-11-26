@@ -43,7 +43,7 @@ afterEach(() => {
   vi.clearAllMocks();
 });
 
-const speakButton = () => screen.getByRole('button', { name: 'sprechen' });
+const speakButton = () => screen.getByRole('button', { name: 'Sprechen' });
 
 describe('Speak', () => {
   it('meldet mit Erkennung "donde esta el baño" als richtig', async () => {
@@ -94,20 +94,20 @@ describe('Speak', () => {
     render(<Speak task={task} item={item} onAnswered={onAnswered} onDone={vi.fn()} />);
     expect(speech.recognize).not.toHaveBeenCalled();
     fireEvent.click(speakButton());
-    const same = await screen.findByRole('button', { name: 'klang gleich' });
+    const same = await screen.findByRole('button', { name: 'Klang gleich' });
     expect(playSequence).not.toHaveBeenCalled();
     fireEvent.click(same);
     expect(onAnswered).toHaveBeenCalledTimes(1);
     expect(onAnswered).toHaveBeenCalledWith(expect.objectContaining({ verdict: 'correct' }));
   });
 
-  it('meldet "eher nicht" als falsch, nur einmal', async () => {
+  it('meldet "Eher nicht" als falsch, nur einmal', async () => {
     speech.recordingSupported.mockReturnValue(true);
     speech.recordClip.mockResolvedValue(new Blob(['x']));
     const onAnswered = vi.fn();
     render(<Speak task={task} item={item} onAnswered={onAnswered} onDone={vi.fn()} />);
     fireEvent.click(speakButton());
-    const no = await screen.findByRole('button', { name: 'eher nicht' });
+    const no = await screen.findByRole('button', { name: 'Eher nicht' });
     fireEvent.click(no);
     fireEvent.click(no);
     expect(onAnswered).toHaveBeenCalledTimes(1);
@@ -121,7 +121,7 @@ describe('Speak', () => {
     speech.recordClip.mockResolvedValue(new Blob(['x']));
     render(<Speak task={task} item={item} onAnswered={vi.fn()} onDone={vi.fn()} />);
     fireEvent.click(speakButton());
-    expect(await screen.findByRole('button', { name: 'klang gleich' })).toBeTruthy();
+    expect(await screen.findByRole('button', { name: 'Klang gleich' })).toBeTruthy();
     expect(screen.queryByText(/Fehler/)).toBeNull();
   });
 
@@ -149,7 +149,7 @@ describe('Speak', () => {
       </RoundEnvContext.Provider>,
     );
     fireEvent.click(speakButton());
-    const both = await screen.findByRole('button', { name: 'beide anhören' });
+    const both = await screen.findByRole('button', { name: 'Beide anhören' });
     expect(playSequence).not.toHaveBeenCalled();
     fireEvent.click(both);
     expect(playSequence).toHaveBeenCalledWith(['orig.mp3', 'blob:clip']);
@@ -162,7 +162,7 @@ describe('Speak', () => {
     speech.recordClip.mockResolvedValue(new Blob(['x']));
     const { unmount } = render(<Speak task={task} item={item} onAnswered={vi.fn()} onDone={vi.fn()} />);
     fireEvent.click(speakButton());
-    await screen.findByRole('button', { name: 'klang gleich' });
+    await screen.findByRole('button', { name: 'Klang gleich' });
     unmount();
     expect(URL.revokeObjectURL).toHaveBeenCalledWith('blob:clip');
   });
