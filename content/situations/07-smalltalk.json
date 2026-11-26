@@ -231,7 +231,7 @@
           "de": "Was machst du beruflich?"
         }
       ],
-      "note": "Eine freundliche Frage nach dem Beruf. Mit usted fragst du: ¿A qué se dedica?"
+      "note": "Eine freundliche Frage nach dem Beruf. Mit usted fragst du: ¿A qué se dedica? Über eine dritte Person heißt es Was macht sie oder er beruflich?"
     },
     {
       "id": "p-en-que-trabajas",
@@ -669,7 +669,7 @@
           "de": "Heute regnet es viel."
         }
       ],
-      "note": "Llover gibt es nur in der Form llueve: Hoy llueve. Mañana va a llover."
+      "note": "Llover steht nur in der dritten Person: Hoy llueve. Mañana va a llover."
     },
     {
       "id": "w-lluvia",
@@ -1329,7 +1329,7 @@
           "de": "Ich bin verheiratet."
         }
       ],
-      "note": "Männer sagen casado, Frauen casada.",
+      "note": "Männer sagen casado, Frauen casada. Gelernt wird estar: Estoy casado. In Lateinamerika hörst du auch soy casado, das ist ebenfalls richtig.",
       "freqRank": 1472
     },
     {
@@ -1944,7 +1944,7 @@
       "id": "w-contento",
       "kind": "word",
       "es": "contento",
-      "de": "froh, zufrieden",
+      "de": "zufrieden, froh",
       "forms": [
         "contento",
         "contenta",
@@ -1954,7 +1954,7 @@
       "examples": [
         {
           "es": "Estoy muy contento aquí.",
-          "de": "Ich bin sehr froh hier."
+          "de": "Ich bin hier sehr zufrieden."
         }
       ],
       "freqRank": 1809
@@ -2588,7 +2588,7 @@
       "id": "s-estoy-muy-contento-aqui",
       "kind": "sentence",
       "es": "Estoy muy contento aquí.",
-      "de": "Ich bin sehr froh hier.",
+      "de": "Ich bin hier sehr zufrieden.",
       "accept": [
         "Estoy muy feliz aquí.",
         "Estoy muy contenta aquí."
@@ -2953,8 +2953,8 @@
         },
         {
           "speaker": "B",
-          "es": "Es el nueve, ocho, siete, seis, cinco, cuatro, tres, dos.",
-          "de": "Es ist die 9, 8, 7, 6, 5, 4, 3, 2."
+          "es": "Es el nueve, ocho, siete, seis, cinco, cuatro, tres, dos, uno.",
+          "de": "Es ist die 9, 8, 7, 6, 5, 4, 3, 2, 1."
         },
         {
           "speaker": "A",
@@ -2981,7 +2981,7 @@
         {
           "speaker": "B",
           "es": "Claro, dígame.",
-          "de": "Natürlich, sagen Sie."
+          "de": "Ja, bitte?"
         },
         {
           "speaker": "A",
@@ -3209,7 +3209,7 @@
       "id": "g-hace-dauer",
       "kind": "grammar",
       "title": "hace für die Dauer",
-      "explanation": "Mit hace sagst du, wie lange etwas schon so ist: Hace dos semanas que estoy en Chile heißt Ich bin seit zwei Wochen in Chile. Das Verb steht im Präsens, weil es noch andauert. Dasselbe sagst du mit desde hace: Estoy en Chile desde hace dos semanas. Für die Frage nimmst du llevar: ¿Cuánto tiempo llevas en Chile? Weitere Angaben: hace un mes, hace tres días, hace un año.",
+      "explanation": "Mit hace sagst du, wie lange etwas schon so ist: Hace dos semanas que estoy en Chile heißt Ich bin seit zwei Wochen in Chile. Das Verb steht im Präsens, weil es noch andauert. Dasselbe sagst du mit desde hace: Estoy en Chile desde hace dos semanas. Für die Frage nimmst du llevar: ¿Cuánto tiempo llevas en Chile? Auch nach dem Verb möglich: Vivo aquí hace cuarenta años. Weitere Angaben: hace un mes, hace tres días.",
       "examples": [
         {
           "es": "Hace dos semanas que estoy aquí.",
