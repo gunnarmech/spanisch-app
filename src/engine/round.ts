@@ -16,6 +16,16 @@ export type Task = {
 const DIALOG_SEEN_SHARE = 0.8;
 const DIALOG_REPEAT_MS = 3 * 86_400_000;
 const STAGE_FORMS: TaskForm[] = ['choice', 'listen', 'type', 'speak', 'pressure'];
+/** Mindestzahl Aufgaben zwischen der Einführung eines neuen Items und seinem ersten Abruf. */
+export const FIRST_RETRIEVAL_GAP = 3;
+
+/** Form des ersten Abrufs (Stufe 0): selbst tippen, bei nur Verstehen und bei Paaren hören. */
+export function retrievalForm(item: Item): TaskForm {
+  if (item.kind === 'grammar') return 'grammar';
+  if (item.kind === 'pair') return 'listen';
+  if ((item.kind === 'word' || item.kind === 'phrase' || item.kind === 'sentence') && item.produce === false) return 'listen';
+  return 'type';
+}
 
 /** Karten-ids eines Items: Grammatik je Übung, Dialoge sind keine Karten. */
 function cardIds(item: Item): string[] {
@@ -57,6 +67,26 @@ function interleave(reviews: Task[], groups: Task[][]): Task[] {
   return out;
 }
 
+/**
+ * Hängt jeden ersten Abruf frühestens FIRST_RETRIEVAL_GAP Aufgaben hinter seine Einführung, sonst ans Ende (FIFO).
+ * Je Aufgabe wird höchstens ein Abruf vorgezogen; eine Schleife würde sie gebündelt vor den letzten Einführungen
+ * ablegen, und deren Abrufe stünden ohne Lücke am Ende.
+ */
+function placeFirstRetrievals(sequence: Task[], checks: Map<Task, Task>): Task[] {
+  const out: Task[] = [];
+  const pending: { check: Task; introPos: number }[] = [];
+  for (const x of sequence) {
+    if (pending.length > 0 && out.length - pending[0].introPos - 1 >= FIRST_RETRIEVAL_GAP) {
+      out.push(pending.shift()!.check);
+    }
+    out.push(x);
+    const check = checks.get(x);
+    if (check) pending.push({ check, introPos: out.length - 1 });
+  }
+  for (const p of pending) out.push(p.check);
+  return out;
+}
+
 export function buildRound(opts: {
   now: number;
   states: Map<string, CardState>;
@@ -88,7 +118,7 @@ export function buildRound(opts: {
 
   const reviews: Task[] = due.slice(0, maxReviews).map(({ cardId, state }) => {
     const { item, situationId } = owner.get(cardId)!;
-    let form: TaskForm = item.kind === 'grammar' ? 'grammar' : STAGE_FORMS[state.stage];
+    let form: TaskForm = item.kind === 'grammar' ? 'grammar' : state.stage === 0 ? retrievalForm(item) : STAGE_FORMS[state.stage];
     // Nur verstehen: nie selbst tippen oder sprechen, stattdessen hören und Antwort unter Zeitdruck.
     if ((item.kind === 'word' || item.kind === 'phrase' || item.kind === 'sentence') && item.produce === false) {
       if (form === 'type') form = 'listen';
@@ -102,6 +132,7 @@ export function buildRound(opts: {
 
   // Neue Items in Dateireihenfolge. Ein neues Grammatik-Item bringt je Runde seine erste ungesehene Übung.
   const groups: Task[][] = [];
+  const checks = new Map<Task, Task>();
   let newLeft = 0;
   if (target) {
     for (const item of target.items) {
@@ -112,19 +143,18 @@ export function buildRound(opts: {
         continue;
       }
       const base = { cardId, itemId: item.id, situationId: target.id, isNew: true };
-      groups.push(
-        item.kind === 'grammar'
-          ? [{ ...base, form: 'grammar' }]
-          : [
-              { ...base, form: 'intro' },
-              { ...base, form: 'choice' },
-            ],
-      );
+      if (item.kind === 'grammar') {
+        groups.push([{ ...base, form: 'grammar' }]);
+      } else {
+        const intro: Task = { ...base, form: 'intro' };
+        checks.set(intro, { ...base, form: retrievalForm(item) });
+        groups.push([intro]);
+      }
     }
   }
 
   const finished = due.length === 0 && groups.length === 0 && newLeft === 0;
-  const tasks = interleave(reviews, groups);
+  const tasks = placeFirstRetrievals(interleave(reviews, groups), checks);
 
   let fallback: Task | undefined;
   if (target && !finished) {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { buildRound, currentSituation } from '../../src/engine/round';
+import { FIRST_RETRIEVAL_GAP, buildRound, currentSituation, retrievalForm } from '../../src/engine/round';
 import { dialogsHeard, replay, retrievability, type CardState, type ReviewEvent } from '../../src/engine/state';
 import type { ChileClip, Item, Situation } from '../../src/content/types';
 
@@ -36,12 +36,66 @@ describe('buildRound', () => {
     expect(round.finished).toBe(false);
   });
 
-  test('höchstens 6 neue, intro vor choice', () => {
+  const gapsOk = (tasks: { cardId: string; form: string }[], min: number) => {
+    const intros = tasks.filter((t) => t.form === 'intro');
+    for (const i of intros) {
+      const a = tasks.indexOf(i);
+      const b = tasks.findIndex((t, k) => k > a && t.cardId === i.cardId && t.form !== 'intro');
+      expect(b).toBeGreaterThan(a);
+      expect(b - a - 1).toBeGreaterThanOrEqual(min);
+    }
+  };
+
+  test('neue Items: nie Abruf direkt nach der eigenen Einführung, Lücke mindestens 2', () => {
     const sit: Situation = { id: 's1', order: 1, title: 'S', items: manyWords('n', 10) };
-    const round = buildRound({ now: T0, states: new Map(), situations: [sit] });
-    const news = round.tasks.filter((t) => t.isNew);
-    expect(news.map((t) => t.itemId)).toEqual(['n0', 'n0', 'n1', 'n1', 'n2', 'n2', 'n3', 'n3', 'n4', 'n4', 'n5', 'n5']);
-    expect(news.map((t) => t.form)).toEqual(Array.from({ length: 6 }, () => ['intro', 'choice']).flat());
+    const { tasks } = buildRound({ now: T0, states: new Map(), situations: [sit] });
+    expect(tasks.filter((t) => t.form === 'intro').length).toBe(6);
+    expect(tasks.filter((t) => t.isNew).length).toBe(12);
+    gapsOk(tasks, 2);
+  });
+
+  test('drei neue, keine Wiederholungen: Lücke je 2', () => {
+    const sit: Situation = { id: 's1', order: 1, title: 'S', items: manyWords('n', 3) };
+    const { tasks } = buildRound({ now: T0, states: new Map(), situations: [sit] });
+    expect(tasks.map((t) => `${t.form}:${t.cardId}`)).toEqual([
+      'intro:n0', 'intro:n1', 'intro:n2', 'type:n0', 'type:n1', 'type:n2',
+    ]);
+    gapsOk(tasks, 2);
+  });
+
+  test('ein neues Item allein: Abruf am Ende, kein Fehler', () => {
+    const sit: Situation = { id: 's1', order: 1, title: 'S', items: [word('a', 'a')] };
+    const { tasks } = buildRound({ now: T0, states: new Map(), situations: [sit] });
+    expect(tasks.map((t) => t.form)).toEqual(['intro', 'type']);
+  });
+
+  test('erster Abruf: type bei produzierbar, listen bei produce false und bei pair', () => {
+    const items: Item[] = [
+      word('a', 'a'),
+      { id: 'b', kind: 'word', es: 'b', de: 'b', forms: ['b'], examples: [], produce: false },
+      { id: 'p', kind: 'pair', es: 'p', options: ['p', 'q'] },
+    ];
+    const sit: Situation = { id: 's1', order: 1, title: 'S', items };
+    const { tasks } = buildRound({ now: T0, states: new Map(), situations: [sit] });
+    const check = (id: string) => tasks.find((t) => t.cardId === id && t.form !== 'intro')!.form;
+    expect([check('a'), check('b'), check('p')]).toEqual(['type', 'listen', 'listen']);
+    expect(retrievalForm(items[0])).toBe('type');
+    expect(FIRST_RETRIEVAL_GAP).toBe(3);
+  });
+
+  test('Wiederholung auf Stufe 0 nach Again ist type, nicht choice', () => {
+    const sit: Situation = { id: 's1', order: 1, title: 'S', items: [word('w', 'hola')] };
+    const states = replay([review(1, 'w', T0, 1)], new Set(['w']));
+    const { tasks } = buildRound({ now: T0 + DAY, states, situations: [sit] });
+    expect(tasks.find((t) => t.cardId === 'w' && !t.isNew)!.form).toBe('type');
+  });
+
+  test('Rundenaufbau ist deterministisch', () => {
+    const old = manyWords('o', 5);
+    const sit: Situation = { id: 's1', order: 1, title: 'S', items: [...old, ...manyWords('n', 4)] };
+    const states = replay(old.map((it, i) => review(i, it.id, T0)), new Set(old.map((i) => i.id)));
+    const build = () => buildRound({ now: T0 + 30 * DAY, states, situations: [sit] });
+    expect(build()).toEqual(build());
   });
 
   test('kein neues Item vor seinem intro, auch bei gemischten Wiederholungen', () => {
@@ -91,7 +145,7 @@ describe('buildRound', () => {
     });
     const round = buildRound({ now: T0 + 60 * DAY, states, situations: [sit] });
     const form = (id: string) => round.tasks.find((t) => t.cardId === id)?.form;
-    expect([0, 1, 2, 3, 4].map((i) => form(`w${i}`))).toEqual(['choice', 'listen', 'type', 'speak', 'pressure']);
+    expect([0, 1, 2, 3, 4].map((i) => form(`w${i}`))).toEqual(['type', 'listen', 'type', 'speak', 'pressure']);
   });
 
   describe('produce:false', () => {

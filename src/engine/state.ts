@@ -1,7 +1,7 @@
 import { createEmptyCard, fsrs, generatorParameters, State, type Card, type Grade } from 'ts-fsrs';
 import type { GradeResult } from './grade';
 
-/** 0 Erstkontakt plus Auswahl, 1 Hören zu Bedeutung, 2 Deutsch zu Spanisch tippen, 3 Sprechen, 4 Hören unter Druck. */
+/** 0 erster Abruf (Tippen, bei nur Verstehen Hören), 1 Hören zu Bedeutung, 2 Deutsch zu Spanisch tippen, 3 Sprechen, 4 Hören unter Druck. */
 export type Stage = 0 | 1 | 2 | 3 | 4;
 
 export type ReviewEvent =

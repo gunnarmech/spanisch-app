@@ -11,17 +11,31 @@ afterEach(cleanup);
 
 const noop = () => {};
 
+/** Beide Einführungen durchklicken, danach steht der erste Abruf (Tippen) von "hola" an. */
+async function toFirstCheck() {
+  fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
+  expect(await screen.findByText('adiós')).toBeTruthy();
+  fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
+  await screen.findByText('Wie sagt man das auf Spanisch?');
+}
+
+function typeAnswer(text: string) {
+  const box = screen.getByLabelText('Deine Antwort auf Spanisch') as HTMLInputElement;
+  fireEvent.input(box, { target: { value: text } });
+  fireEvent.click(screen.getByRole('button', { name: 'Prüfen' }));
+}
+
 describe('Runde', () => {
-  it('zeigt bei neuen Items erst die Einführung, dann die Auswahl, und bewertet richtig mit 3', async () => {
+  it('zeigt bei neuen Items erst die Einführungen, dann den Abruf per Tippen, und bewertet richtig mit 3', async () => {
     const app = fakeApp();
     render(<Round app={app} onExit={noop} onAgain={noop} />);
 
     expect(await screen.findByText('Neu')).toBeTruthy();
     expect(screen.getByText('hola')).toBeTruthy();
-    fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
-
-    expect(await screen.findByText('Was bedeutet das?')).toBeTruthy();
-    fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+    await toFirstCheck();
+    expect(screen.queryByText('Was bedeutet das?')).toBeNull();
+    expect(screen.getByText('hallo')).toBeTruthy();
+    typeAnswer('hola');
     expect(screen.getByText('Richtig.')).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
 
@@ -29,15 +43,45 @@ describe('Runde', () => {
     expect(app.record).toHaveBeenCalledWith({ kind: 'review', cardId: 'w-hola', rating: 3, stage: 0 });
   });
 
-  it('wählt mit den Ziffertasten', async () => {
-    const app = fakeApp();
+  it('Kann ich schon bei der Einführung entfernt den späteren Abruf und zeichnet genau ein known auf', async () => {
+    const app = fakeApp({
+      situations: [
+        {
+          ...situation,
+          items: ['a', 'b', 'c'].map((x) => ({
+            id: `w-${x}`,
+            kind: 'word' as const,
+            es: `pal${x}`,
+            de: `wort${x}`,
+            forms: [`pal${x}`],
+            examples: [],
+          })),
+        },
+      ],
+    });
     render(<Round app={app} onExit={noop} onAgain={noop} />);
-    fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
-    await screen.findByText('Was bedeutet das?');
-    const options = screen.getAllByRole('button', { name: /^\d/ });
-    const index = options.findIndex((b) => b.textContent?.includes('hallo'));
-    fireEvent.keyDown(window, { key: String(index + 1) });
-    expect(screen.getByText('Richtig.')).toBeTruthy();
+    await screen.findByText('pala');
+    fireEvent.click(screen.getByRole('button', { name: 'Kann ich schon' }));
+    await waitFor(() => expect(app.record).toHaveBeenCalledWith({ kind: 'known', cardId: 'w-a' }));
+    // Rest der Runde durchlaufen: Einführungen b und c, dann nur noch deren Abrufe.
+    const seen: string[] = [];
+    for (let i = 0; i < 12; i++) {
+      if (screen.queryByText('Runde geschafft.')) break;
+      if (screen.queryByText('Neu')) {
+        seen.push(['pala', 'palb', 'palc'].find((w) => screen.queryByText(w)) ?? '?');
+        fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
+      } else if (screen.queryByText('Wie sagt man das auf Spanisch?')) {
+        seen.push(['worta', 'wortb', 'wortc'].find((w) => screen.queryByText(w)) ?? '?');
+        typeAnswer('x');
+        typeAnswer('x');
+        fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
+      }
+      await new Promise((r) => setTimeout(r, 0));
+    }
+    expect(seen).toEqual(['palb', 'palc', 'wortb', 'wortc']);
+    const calls = app.record.mock.calls.map((c) => c[0] as { kind: string; cardId: string });
+    expect(calls.filter((c) => c.kind === 'known')).toHaveLength(1);
+    expect(calls.filter((c) => c.cardId === 'w-a')).toHaveLength(1);
   });
 
   it('kann ich schon erzeugt ein known-Ereignis und überspringt die Auswahl desselben Items', async () => {
@@ -164,9 +208,8 @@ describe('Ereignisse beim Antworten', () => {
   it('schreibt die Bewertung schon bei der Antwort, vor Weiter', async () => {
     const app = fakeApp();
     render(<Round app={app} onExit={noop} onAgain={noop} />);
-    fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
-    await screen.findByText('Was bedeutet das?');
-    fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+    await toFirstCheck();
+    typeAnswer('hola');
     await waitFor(() => expect(app.record).toHaveBeenCalledTimes(1));
     expect(app.record).toHaveBeenCalledWith({ kind: 'review', cardId: 'w-hola', rating: 3, stage: 0 });
   });
@@ -175,9 +218,8 @@ describe('Ereignisse beim Antworten', () => {
     const app = fakeApp();
     const onExit = vi.fn();
     render(<Round app={app} onExit={onExit} onAgain={noop} />);
-    fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
-    await screen.findByText('Was bedeutet das?');
-    fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+    await toFirstCheck();
+    typeAnswer('hola');
     fireEvent.click(screen.getByRole('button', { name: 'Runde beenden' }));
     expect(app.record).toHaveBeenCalledTimes(1);
     expect(onExit).toHaveBeenCalled();
@@ -186,14 +228,14 @@ describe('Ereignisse beim Antworten', () => {
   it('doppeltes Tippen auf Weiter schaltet nur einmal weiter und schreibt nur ein Ereignis', async () => {
     const app = fakeApp();
     render(<Round app={app} onExit={noop} onAgain={noop} />);
-    fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
-    await screen.findByText('Was bedeutet das?');
-    fireEvent.click(screen.getByRole('button', { name: /hallo/ }));
+    await toFirstCheck();
+    typeAnswer('hola');
     const next = screen.getByRole('button', { name: 'Weiter' });
     fireEvent.click(next);
     fireEvent.click(next);
-    expect(await screen.findByText('adiós')).toBeTruthy();
-    expect(screen.getByText('Neu')).toBeTruthy();
+    // Genau eine Aufgabe weiter: der Abruf von adiós, nicht der übernächste Schritt.
+    expect(await screen.findByText('auf Wiedersehen')).toBeTruthy();
+    expect(screen.getByLabelText('Deine Antwort auf Spanisch')).toBeTruthy();
     expect(app.record).toHaveBeenCalledTimes(1);
   });
 
