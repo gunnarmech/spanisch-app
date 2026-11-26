@@ -57,33 +57,37 @@ export function Home({ app, onStart, onDiagnose, onSettings, onProgress, onPlace
               const pct = Math.round(share * 100);
               const photo = photoFor(s.id);
               return (
-                <li key={s.id}>
+                <li key={s.id} class={`situation row-link${photo ? '' : ' situation--ohne-bild'}`}>
+                  {photo && (
+                    <span class="thumb">
+                      {/* Schmuck: der Nachweis steht auf der Quellenseite, der Name der Zeile im Knopf */}
+                      <img src={photo.src} width={photo.width} height={photo.height} alt="" loading="lazy" />
+                    </span>
+                  )}
                   <h3 class="situation-item">
                     <button
                       type="button"
-                      class={`situation row-link${photo ? '' : ' situation--ohne-bild'}`}
+                      class="situation-link"
+                      aria-describedby={`understand-${s.id}`}
                       onClick={() => onStart(s.id)}
                     >
-                      {photo && (
-                        <span class="thumb">
-                          <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" />
-                        </span>
-                      )}
                       <span class="name">{s.title}</span>
-                      {hasDialog ? (
-                        <>
-                          <span class="understand">
-                            du verstehst etwa <span class="num">{pct}</span> % der Dialoge
-                          </span>
-                          <span class="meter" aria-hidden="true">
-                            <span style={{ width: `${pct}%` }} />
-                          </span>
-                        </>
-                      ) : (
-                        <span class="understand">noch keine Dialoge</span>
-                      )}
                     </button>
                   </h3>
+                  {hasDialog ? (
+                    <>
+                      <span class="understand" id={`understand-${s.id}`}>
+                        du verstehst etwa <span class="num">{pct}</span> % der Dialoge
+                      </span>
+                      <span class="meter" aria-hidden="true">
+                        <span style={{ width: `${pct}%` }} />
+                      </span>
+                    </>
+                  ) : (
+                    <span class="understand" id={`understand-${s.id}`}>
+                      noch keine Dialoge
+                    </span>
+                  )}
                 </li>
               );
             })}

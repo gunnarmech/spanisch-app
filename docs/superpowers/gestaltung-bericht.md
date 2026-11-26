@@ -72,3 +72,14 @@ Stand 26.11.2026, Zweig `teil2`. Gate neu gestartet (`--new`, Prüfordner `.tast
 Bildliche Durchsicht (Startseite mit 9 Situationszeilen, Chile hören, Einstufung, Quellen mit SLR71-Eintrag, 390 und 1440 px, hell und dunkel): keine Auffälligkeiten. Screenshots liegen nicht im Repo.
 
 Playwright gegen `npm run preview`: eine Runde mit Fokus Unterwegs (Situation 04, 18 Schritte bis "Runde geschafft"), keine Konsolen- und Seitenfehler.
+
+### Teil 2, Fix-Welle nach dem Schluss-Review (26.11.2026)
+
+Umbau der Situationszeilen in `Home.tsx`: Der `li` ist die Zeile (Grid wie bisher, `position: relative`), der `h3` umschließt nur den Knopf mit dem Namen, der Knopf deckt per `::after` (`position: absolute; inset: 0`) die ganze Zeile ab. Das Vorschaubild steht ausserhalb des `h3` und hat `alt=""` (Schmuck; der Nachweis steht auf der Quellenseite, der Alt-Text bleibt in `photos.ts`). Der Satz zur Zeile ("du verstehst etwa ... % der Dialoge") hängt per `aria-describedby` am Knopf. Fokus: Der Ring des Bausteins (2 px in der Aktionsfarbe) liegt am Namen, dazu färbt sich der Rand der ganzen Zeile in der Aktionsfarbe (`:has(:focus-visible)`); der erste Versuch mit einem Ring nur an `::after` fiel beim Gate durch (`focus-ring`, `focus-visible`) und ist verworfen. Die Zeile hat einen leisen Schatten (5 % Tinte, 1 px) als Kartenkante, sonst liest das Gate den `li` nicht als Karte und bewertet die Zeilennamen als nackte Überschriften (`copy-headings` FAIL für "Smalltalk" und "Notfall und Gesundheit"). Bildliche Durchsicht Startseite 390 px hell und dunkel sowie Fokus auf einer Zeile: Optik unverändert, Fokus sichtbar. Screenshots liegen nicht im Repo.
+
+Gate neu gestartet (`--start` auf `.taste-skill/root/spanisch-app/index.html` aus `dist`, drei Runden): Runde 1 `GATE: FAIL 14`, Runde 2 `GATE: FAIL 14`, Runde 3 `GATE: OPEN 14 (rounds used up)`. `gate.mjs --done` nicht aufgerufen. Vorher 18 FAIL.
+
+- Behoben: alle sieben `stagger`-Befunde an den Situationszeilen.
+- `no-visual` für "Oder eine Situation wählen" bei 390 px bleibt: Die Zeilenfotos sind 64-px-Vorschaubilder, die Gate-Heuristik erkennt sie nicht als Bild des Abschnitts. Das Bild ist da und sichtbar (Durchsicht 390 px); ein grösseres Bild je Abschnitt würde die Liste auf dem Handy dehnen, ohne dass es der App nützt.
+- Neu durch die Kartenkante, beides Webseiten-Heuristik: `card-layout` ("9 of 9 cards drawn one way": eine Liste gleicher Zeilen ist hier gewollt), `row-gap` für die neunte Zeile bei 1440 px (neun Zeilen in zwei Spalten; die letzte allein über die Reihe zu strecken meldet das Gate ebenfalls, "stretched alone", daher bleibt sie links) und `container-edges` für dieselbe Zeile (Text 13 px vom Containerrand, das ist das Zeilenpolster).
+- Unverändert aus Teil 1: `hero-fill`, `cta`, `hero-screen`, `one-heading` zweimal, `container-edges` viermal, `container`, Begründung oben.

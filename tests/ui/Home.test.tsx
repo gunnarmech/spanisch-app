@@ -1,4 +1,4 @@
-import { cleanup, render } from '@testing-library/preact';
+import { cleanup, fireEvent, render } from '@testing-library/preact';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 const photos = vi.hoisted(() => ({ missing: new Set<string>() }));
@@ -37,16 +37,42 @@ describe('Startseite', () => {
     expect(img?.getAttribute('alt')).toBe(headerPhoto.alt);
   });
 
-  it('zeigt je Situation das Foto mit Alt-Text aus photoFor', () => {
+  it('zeigt je Situation das Vorschaubild als Schmuck (alt leer), der Nachweis bleibt in photos.ts', () => {
     const { container } = render(home());
-    const img = container.querySelector('button.situation img');
-    expect(img?.getAttribute('alt')).toBe(photoFor(situation.id)?.alt);
+    const img = container.querySelector('li.situation img');
+    expect(img?.getAttribute('alt')).toBe('');
+    expect(photoFor(situation.id)?.alt.length).toBeGreaterThan(0);
+  });
+
+  it('Zeile ist der li, der h3 umschließt nur den Knopf mit dem Namen', () => {
+    const { container } = render(home());
+    const row = container.querySelector('li.situation')!;
+    const h3 = row.querySelector('h3')!;
+    expect(h3.querySelector('img')).toBeNull();
+    expect(h3.children).toHaveLength(1);
+    const button = h3.querySelector('button.situation-link')!;
+    expect(button.textContent).toBe(situation.title);
+    expect(row.querySelector('img')?.parentElement?.parentElement).toBe(row);
+  });
+
+  it('Klick auf den Knopf startet die Situation', () => {
+    const onStart = vi.fn();
+    const { container } = render(<Home app={fakeApp()} onStart={onStart} onDiagnose={noop} onSettings={noop} />);
+    fireEvent.click(container.querySelector('li.situation button')!);
+    expect(onStart).toHaveBeenCalledWith(situation.id);
+  });
+
+  it('der Knopf nennt den Satz zur Zeile als Beschreibung', () => {
+    const { container } = render(home());
+    const button = container.querySelector('li.situation button')!;
+    const id = button.getAttribute('aria-describedby')!;
+    expect(container.querySelector(`#${id}`)?.textContent).toMatch(/Dialoge/);
   });
 
   it('lässt bei fehlendem Foto das Bild weg und markiert die Zeile', () => {
     photos.missing.add(situation.id);
     const { container } = render(home());
-    const row = container.querySelector('button.situation');
+    const row = container.querySelector('li.situation');
     expect(row?.querySelector('img')).toBeNull();
     expect(row?.classList.contains('situation--ohne-bild')).toBe(true);
   });
@@ -65,7 +91,7 @@ describe('Startseite', () => {
 
   it('setzt die Prozentzahl in ein num-Element', () => {
     const { container } = render(home());
-    const num = container.querySelector('button.situation .num');
+    const num = container.querySelector('li.situation .num');
     expect(num?.textContent).toMatch(/^\d+$/);
   });
 });

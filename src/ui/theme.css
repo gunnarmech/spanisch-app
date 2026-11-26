@@ -110,6 +110,13 @@ main[data-view="home"] {
   min-width: 0;
 }
 
+/* Die Zeile ist der li; der Knopf im h3 trägt den Namen und deckt die ganze Zeile ab */
+.situation {
+  position: relative;
+  /* Kartenkante: ein leiser Schatten, damit die Zeile auch als Karte lesbar ist (Hover setzt den eigenen) */
+  box-shadow: 0 1px 2px color-mix(in oklab, var(--ink) 5%, transparent);
+}
+
 .situation-item {
   margin: 0;
   font: inherit;
@@ -130,6 +137,29 @@ main[data-view="home"] {
 .situation--ohne-bild {
   grid-template-columns: minmax(0, 1fr);
   padding: var(--s-4);
+}
+
+.situation-link {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.situation-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--r-md);
+}
+
+/* Fokus: der Ring des Bausteins bleibt am Namen, dazu zeigt die ganze Zeile die Aktionsfarbe am Rand */
+.situation:has(.situation-link:focus-visible) {
+  border-color: var(--action);
 }
 
 .situation .thumb {
