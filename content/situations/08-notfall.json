@@ -447,7 +447,7 @@
           "de": "Ich bin auf der Treppe gefallen."
         }
       ],
-      "note": "Auch das lernst du als feste Wendung. Danach sagst du, was dir weh tut: Me caí. Me duele la pierna."
+      "note": "Auch das lernst du als feste Wendung. Danach sagst du, was dir weh tut: Me duele la pierna."
     },
     {
       "id": "w-billetera",
@@ -671,7 +671,7 @@
       "id": "w-enfermera",
       "kind": "word",
       "es": "enfermera",
-      "de": "Krankenschwester, Pfleger",
+      "de": "Krankenschwester",
       "forms": [
         "enfermera",
         "enfermero",
@@ -684,7 +684,7 @@
           "de": "Die Krankenschwester ist sehr freundlich."
         }
       ],
-      "note": "Enfermera ist die Frau, enfermero der Mann.",
+      "note": "Enfermero ist der Pfleger.",
       "freqRank": 1916
     },
     {
@@ -932,7 +932,7 @@
           "de": "Mir tun die Augen weh."
         }
       ],
-      "note": "Der Plural los ojos steht für beide Augen.",
+      "note": "Ojo heißt auch Achtung: Mit ¡Ojo! warnst du jemanden.",
       "freqRank": 1240
     },
     {
@@ -1590,15 +1590,16 @@
     {
       "id": "p-las-24-horas",
       "kind": "phrase",
-      "es": "veinticuatro horas",
+      "es": "las veinticuatro horas",
       "de": "rund um die Uhr",
       "forms": [
+        "las veinticuatro horas",
         "veinticuatro horas",
         "veinticuatro"
       ],
       "examples": [
         {
-          "es": "El SAMU funciona veinticuatro horas.",
+          "es": "El SAMU funciona las veinticuatro horas.",
           "de": "Der SAMU ist rund um die Uhr im Dienst."
         }
       ],
@@ -2415,8 +2416,8 @@
         },
         {
           "speaker": "B",
-          "es": "No se preocupe. Necesita descansar y tomar mucha agua. Tome una pastilla dos veces al día.",
-          "de": "Keine Sorge. Sie müssen sich ausruhen und viel Wasser trinken. Nehmen Sie zweimal am Tag eine Tablette."
+          "es": "No se preocupe. Necesita descansar y tomar mucha agua.",
+          "de": "Keine Sorge. Sie müssen sich ausruhen und viel Wasser trinken."
         },
         {
           "speaker": "A",
@@ -2551,7 +2552,7 @@
         },
         {
           "speaker": "B",
-          "es": "Tranquilo, no se preocupe. Tiene que hacer una denuncia en la comisaría.",
+          "es": "Tranquilo, no se preocupe. Necesita hacer una denuncia en la comisaría.",
           "de": "Ruhig, keine Sorge. Sie müssen auf der Polizeiwache eine Anzeige machen."
         },
         {

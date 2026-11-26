@@ -3871,50 +3871,6 @@
       "hash": "ffccae3bc563f4eb87c4d9420c69254a93cd579f"
     }
   ],
-  "p-las-24-horas": [
-    {
-      "voice": "cl-f",
-      "speed": "normal",
-      "hash": "de637d8172af9c92d46cb5e8446a498be7753636"
-    },
-    {
-      "voice": "co-m",
-      "speed": "normal",
-      "hash": "347161a218e20e3832971799debbf785430dbc0a"
-    },
-    {
-      "voice": "cl-f",
-      "speed": "slow",
-      "hash": "4ed9e66d4ba4b95c83753f76b3b3a526db3f00f5"
-    },
-    {
-      "voice": "co-m",
-      "speed": "slow",
-      "hash": "ba12fb4a837406a0434414caf3a30f6d7aa46162"
-    }
-  ],
-  "p-las-24-horas-ex1": [
-    {
-      "voice": "cl-f",
-      "speed": "normal",
-      "hash": "b8391a1bb217881cc151a2b002e361d1c6c3e7d1"
-    },
-    {
-      "voice": "mx-f",
-      "speed": "normal",
-      "hash": "4126611aeb6aa67e66431471091e8ead5543300f"
-    },
-    {
-      "voice": "cl-f",
-      "speed": "slow",
-      "hash": "7afa7b77ef2cf246533d469ca433ba5a6bbeb2d8"
-    },
-    {
-      "voice": "mx-f",
-      "speed": "slow",
-      "hash": "f326e2a1ed53f7c1da8cc87fd490fb3a9fc0baf2"
-    }
-  ],
   "w-alguien": [
     {
       "voice": "cl-f",
@@ -6377,18 +6333,6 @@
       "hash": "2cddc82fdb67ca38220ac68fe3e2107883df9ebc"
     }
   ],
-  "d-con-la-doctora-8": [
-    {
-      "voice": "co-m",
-      "speed": "normal",
-      "hash": "2cf3029d2e4cd5d44ec8509de7de6fecd24b1b12"
-    },
-    {
-      "voice": "co-m",
-      "speed": "fast",
-      "hash": "326b9c6de569e48a8110ac406cd4fa9ddf580d65"
-    }
-  ],
   "d-con-la-doctora-9": [
     {
       "voice": "cl-f",
@@ -6651,18 +6595,6 @@
       "voice": "cl-f",
       "speed": "fast",
       "hash": "5ec28daf076cb0f42013b8c4f5087b51d0f59d2e"
-    }
-  ],
-  "d-pasaporte-perdido-4": [
-    {
-      "voice": "mx-m",
-      "speed": "normal",
-      "hash": "b91191fec1c79d7899cdb8e8e11b2c50524eb7a2"
-    },
-    {
-      "voice": "mx-m",
-      "speed": "fast",
-      "hash": "ce7ba2b9a7745376da78f268ae329cb51a673d46"
     }
   ],
   "d-pasaporte-perdido-5": [
@@ -8255,6 +8187,74 @@
       "voice": "mx-m",
       "speed": "normal",
       "hash": "5e2a0d66b7268776edec09ff7b35200f61adc899"
+    }
+  ],
+  "p-las-24-horas": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "560e3db15490dd5a0eda604533232b9bdc3a75fa"
+    },
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "f1af8084eaf0c44dd1c145774c03d2863c2e4ab2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "9cfb966b9e68022b9af2f066f89312fb80cfd0c6"
+    },
+    {
+      "voice": "co-m",
+      "speed": "slow",
+      "hash": "f7e1c0a1f29d6d38cdbd3cf846084491975f234f"
+    }
+  ],
+  "p-las-24-horas-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "fc3b1d8f304ac2bdae4fd705e62f855f9735524e"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "065ec010a7d7ba41b686dd2eff1c854d4a1386e2"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d21959668b9bd8e046928f2bbcaa990f0fab5ccf"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "e2a2d92d44a55aed23dacc483c857492cf8fde19"
+    }
+  ],
+  "d-con-la-doctora-8": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "8615fd39ef0611988257abbc7f2e62b96db66fc7"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "d7873cb59d187e3fd4f8a0b8dada5ce8d45fea56"
+    }
+  ],
+  "d-pasaporte-perdido-4": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "9a3496d03d1d773c665468a7bf7835011ba3fa2c"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "e42f2c7ba4526c8843b7d37b7ebb2f823d676aeb"
     }
   ]
 }
