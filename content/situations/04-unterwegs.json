@@ -1,0 +1,2741 @@
+{
+  "id": "04-unterwegs",
+  "order": 4,
+  "title": "Unterwegs",
+  "items": [
+    {
+      "id": "w-metro",
+      "kind": "word",
+      "es": "metro",
+      "de": "U-Bahn",
+      "forms": [
+        "metro",
+        "metros"
+      ],
+      "examples": [
+        {
+          "es": "Voy en metro al centro.",
+          "de": "Ich fahre mit der U-Bahn ins Zentrum."
+        }
+      ],
+      "note": "Die Linien heißen Línea 1, Línea 2 und so weiter, jede mit Nummer und Farbe.",
+      "freqRank": 3230
+    },
+    {
+      "id": "w-micro",
+      "kind": "word",
+      "es": "micro",
+      "de": "Stadtbus",
+      "forms": [
+        "micro",
+        "micros"
+      ],
+      "examples": [
+        {
+          "es": "La micro pasa por aquí.",
+          "de": "Der Bus fährt hier vorbei."
+        }
+      ],
+      "note": "In Santiago sagt man la micro für den Stadtbus. Auf Schildern und Apps steht meist bus.",
+      "chile": {
+        "note": "In Chile ist micro der Stadtbus (weiblich: la micro).",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. micro, https://www.asale.org/damer/micro"
+      }
+    },
+    {
+      "id": "w-bus",
+      "kind": "word",
+      "es": "bus",
+      "de": "Bus",
+      "forms": [
+        "bus",
+        "buses"
+      ],
+      "examples": [
+        {
+          "es": "El bus sale a las ocho.",
+          "de": "Der Bus fährt um acht ab."
+        }
+      ],
+      "note": "Der Fernbus ist einfach el bus. Im Stadtverkehr sagt man dafür meist micro."
+    },
+    {
+      "id": "w-colectivo",
+      "kind": "word",
+      "es": "colectivo",
+      "de": "Sammeltaxi",
+      "forms": [
+        "colectivo",
+        "colectivos"
+      ],
+      "examples": [
+        {
+          "es": "El colectivo va al centro.",
+          "de": "Das Sammeltaxi fährt ins Zentrum."
+        }
+      ],
+      "note": "Ein Taxi mit fester Route: Die Linie steht auf einem Schild auf dem Dach, du zahlst beim Fahrer bar.",
+      "chile": {
+        "note": "Auch in Chile ist ein colectivo ein Taxi mit fester Route, das mehrere Fahrgäste mitnimmt.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. colectivo, https://www.asale.org/damer/colectivo"
+      }
+    },
+    {
+      "id": "w-taxi",
+      "kind": "word",
+      "es": "taxi",
+      "de": "Taxi",
+      "forms": [
+        "taxi",
+        "taxis"
+      ],
+      "examples": [
+        {
+          "es": "¿Hay un taxi aquí?",
+          "de": "Gibt es hier ein Taxi?"
+        }
+      ],
+      "note": "Taxis in Santiago sind schwarz mit gelbem Dach.",
+      "freqRank": 1504
+    },
+    {
+      "id": "w-uber",
+      "kind": "word",
+      "es": "Uber",
+      "de": "Uber",
+      "forms": [
+        "uber"
+      ],
+      "examples": [
+        {
+          "es": "Voy en Uber al aeropuerto.",
+          "de": "Ich fahre mit Uber zum Flughafen."
+        }
+      ],
+      "note": "Uber läuft in Santiago über die App. Du siehst Fahrer und Preis vorher."
+    },
+    {
+      "id": "w-auto",
+      "kind": "word",
+      "es": "auto",
+      "de": "Auto",
+      "forms": [
+        "auto",
+        "autos"
+      ],
+      "examples": [
+        {
+          "es": "El auto está aquí.",
+          "de": "Das Auto steht hier."
+        }
+      ],
+      "note": "In Chile sagt man meist auto.",
+      "freqRank": 452
+    },
+    {
+      "id": "w-tren",
+      "kind": "word",
+      "es": "tren",
+      "de": "Zug",
+      "forms": [
+        "tren",
+        "trenes"
+      ],
+      "examples": [
+        {
+          "es": "El tren sale a las nueve.",
+          "de": "Der Zug fährt um neun ab."
+        }
+      ],
+      "freqRank": 951
+    },
+    {
+      "id": "w-avion",
+      "kind": "word",
+      "es": "avión",
+      "de": "Flugzeug",
+      "forms": [
+        "avión",
+        "aviones"
+      ],
+      "examples": [
+        {
+          "es": "Voy en avión a Santiago.",
+          "de": "Ich fliege nach Santiago."
+        }
+      ],
+      "freqRank": 929
+    },
+    {
+      "id": "w-aeropuerto",
+      "kind": "word",
+      "es": "aeropuerto",
+      "de": "Flughafen",
+      "forms": [
+        "aeropuerto",
+        "aeropuertos"
+      ],
+      "examples": [
+        {
+          "es": "El aeropuerto está lejos.",
+          "de": "Der Flughafen ist weit weg."
+        }
+      ],
+      "note": "Der Flughafen von Santiago liegt außerhalb der Stadt. Die U-Bahn fährt nicht hin, dafür gibt es Flughafenbusse, Taxis und Uber.",
+      "freqRank": 2069
+    },
+    {
+      "id": "w-estacion",
+      "kind": "word",
+      "es": "estación",
+      "de": "Station, Bahnhof",
+      "forms": [
+        "estación",
+        "estaciones"
+      ],
+      "examples": [
+        {
+          "es": "La estación está cerca.",
+          "de": "Die Station ist in der Nähe."
+        }
+      ],
+      "note": "Gilt für U-Bahn-Stationen und für Bahnhöfe.",
+      "freqRank": 1179
+    },
+    {
+      "id": "w-terminal",
+      "kind": "word",
+      "es": "terminal",
+      "de": "Busbahnhof",
+      "forms": [
+        "terminal",
+        "terminales"
+      ],
+      "examples": [
+        {
+          "es": "Voy al terminal.",
+          "de": "Ich fahre zum Busbahnhof."
+        }
+      ],
+      "note": "Die Fernbusse fahren vom terminal de buses ab. Santiago hat mehrere."
+    },
+    {
+      "id": "w-paradero",
+      "kind": "word",
+      "es": "paradero",
+      "de": "Bushaltestelle",
+      "forms": [
+        "paradero",
+        "paraderos"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde está el paradero?",
+          "de": "Wo ist die Bushaltestelle?"
+        }
+      ],
+      "note": "Am Schild steht, welche Linien hier halten.",
+      "chile": {
+        "note": "In Santiago heißt die Bushaltestelle paradero.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. paradero, https://www.asale.org/damer/paradero"
+      }
+    },
+    {
+      "id": "w-linea",
+      "kind": "word",
+      "es": "línea",
+      "de": "Linie",
+      "forms": [
+        "línea",
+        "líneas"
+      ],
+      "examples": [
+        {
+          "es": "Tomo la línea uno.",
+          "de": "Ich nehme die Linie 1."
+        }
+      ],
+      "note": "Línea 1 ist rot.",
+      "freqRank": 812
+    },
+    {
+      "id": "w-vagon",
+      "kind": "word",
+      "es": "vagón",
+      "de": "Wagen, Waggon",
+      "forms": [
+        "vagón",
+        "vagones"
+      ],
+      "examples": [
+        {
+          "es": "El vagón está lleno.",
+          "de": "Der Wagen ist voll."
+        }
+      ]
+    },
+    {
+      "id": "w-anden",
+      "kind": "word",
+      "es": "andén",
+      "de": "Bahnsteig",
+      "forms": [
+        "andén",
+        "andenes"
+      ],
+      "examples": [
+        {
+          "es": "¿De qué andén sale el bus?",
+          "de": "Von welchem Bussteig fährt der Bus ab?"
+        }
+      ],
+      "note": "Im terminal de buses steht auf dem Fahrschein oft der andén, von dem dein Bus abfährt."
+    },
+    {
+      "id": "w-pasaje",
+      "kind": "word",
+      "es": "pasaje",
+      "de": "Fahrschein, Fahrpreis",
+      "forms": [
+        "pasaje",
+        "pasajes"
+      ],
+      "examples": [
+        {
+          "es": "Un pasaje a Santiago, por favor.",
+          "de": "Einen Fahrschein nach Santiago, bitte."
+        }
+      ],
+      "note": "Pasaje ist die übliche Fahrkarte für Fernbus und Flug. Boleto hörst du in Chile seltener.",
+      "chile": {
+        "note": "Auch der Fahrpreis in Metro und Bus heißt pasaje.",
+        "source": "Red Movilidad, Conoce las tarifas, https://www.red.cl/tarifas-y-recargas/conoce-las-tarifas/"
+      }
+    },
+    {
+      "id": "w-bip",
+      "kind": "word",
+      "es": "Bip!",
+      "de": "Bip! (Guthabenkarte für Metro und Bus)",
+      "forms": [
+        "bip"
+      ],
+      "examples": [
+        {
+          "es": "Necesito cargar la Bip.",
+          "de": "Ich muss meine Bip! aufladen."
+        }
+      ],
+      "note": "Gesagt wird la Bip. Aufladen kannst du sie am Schalter im Metro, an den Automaten in den Stationen und in Läden mit Bip!-Punkt. Im Bus brauchst du kein Bargeld, du zahlst mit der Karte.",
+      "chile": {
+        "note": "Die tarjeta bip! ist das offizielle Zahlungsmittel für Metro und Bus in Santiago.",
+        "source": "Red Movilidad, Tarjeta bip!, https://www.red.cl/tarifas-y-recargas/tarjeta-bip/"
+      }
+    },
+    {
+      "id": "p-cargar-la-bip",
+      "kind": "phrase",
+      "es": "cargar la Bip",
+      "de": "die Bip! aufladen",
+      "forms": [
+        "cargar la bip"
+      ],
+      "examples": [
+        {
+          "es": "Quiero cargar la Bip, por favor.",
+          "de": "Ich möchte die Bip! aufladen, bitte."
+        }
+      ]
+    },
+    {
+      "id": "w-cargar",
+      "kind": "word",
+      "es": "cargar",
+      "de": "aufladen",
+      "forms": [
+        "cargar",
+        "cargo",
+        "cargas",
+        "carga",
+        "cargan"
+      ],
+      "examples": [
+        {
+          "es": "Quiero cargar diez mil pesos.",
+          "de": "Ich möchte zehntausend Pesos aufladen."
+        }
+      ],
+      "note": "Die Aufladung selbst heißt la carga.",
+      "freqRank": 4487
+    },
+    {
+      "id": "w-saldo",
+      "kind": "word",
+      "es": "saldo",
+      "de": "Guthaben",
+      "forms": [
+        "saldo",
+        "saldos"
+      ],
+      "examples": [
+        {
+          "es": "No tengo saldo.",
+          "de": "Ich habe kein Guthaben."
+        }
+      ]
+    },
+    {
+      "id": "w-boleteria",
+      "kind": "word",
+      "es": "boletería",
+      "de": "Fahrkartenschalter",
+      "forms": [
+        "boletería",
+        "boleterías"
+      ],
+      "examples": [
+        {
+          "es": "La boletería está abierta.",
+          "de": "Der Schalter ist geöffnet."
+        }
+      ],
+      "note": "An den Schaltern im Metro kaufst du die Bip! und lädst sie auf."
+    },
+    {
+      "id": "w-chofer",
+      "kind": "word",
+      "es": "chofer",
+      "de": "Fahrer",
+      "forms": [
+        "chofer",
+        "choferes",
+        "conductor",
+        "conductora"
+      ],
+      "examples": [
+        {
+          "es": "El chofer no acepta efectivo.",
+          "de": "Der Fahrer nimmt kein Bargeld."
+        }
+      ],
+      "note": "Im Stadtbus ist chofer der Fahrer, conductor hört man auch. Du sprichst ihn mit usted an."
+    },
+    {
+      "id": "w-pasajero",
+      "kind": "word",
+      "es": "pasajero",
+      "de": "Fahrgast",
+      "forms": [
+        "pasajero",
+        "pasajeros",
+        "pasajera",
+        "pasajeras"
+      ],
+      "examples": [
+        {
+          "es": "Hay muchos pasajeros.",
+          "de": "Es gibt viele Fahrgäste."
+        }
+      ]
+    },
+    {
+      "id": "w-asiento",
+      "kind": "word",
+      "es": "asiento",
+      "de": "Sitzplatz",
+      "forms": [
+        "asiento",
+        "asientos"
+      ],
+      "examples": [
+        {
+          "es": "Hay un asiento aquí.",
+          "de": "Hier ist ein Platz."
+        }
+      ],
+      "freqRank": 1568
+    },
+    {
+      "id": "w-puerta",
+      "kind": "word",
+      "es": "puerta",
+      "de": "Tür",
+      "forms": [
+        "puerta",
+        "puertas"
+      ],
+      "examples": [
+        {
+          "es": "La puerta está cerrada.",
+          "de": "Die Tür ist zu."
+        }
+      ],
+      "freqRank": 321
+    },
+    {
+      "id": "w-salida",
+      "kind": "word",
+      "es": "salida",
+      "de": "Ausgang, Abfahrt",
+      "forms": [
+        "salida",
+        "salidas"
+      ],
+      "examples": [
+        {
+          "es": "La salida está allá.",
+          "de": "Der Ausgang ist dort."
+        }
+      ],
+      "freqRank": 1200
+    },
+    {
+      "id": "w-llegada",
+      "kind": "word",
+      "es": "llegada",
+      "de": "Ankunft",
+      "forms": [
+        "llegada",
+        "llegadas"
+      ],
+      "examples": [
+        {
+          "es": "La llegada es a las tres.",
+          "de": "Die Ankunft ist um drei."
+        }
+      ],
+      "freqRank": 3885
+    },
+    {
+      "id": "w-viaje",
+      "kind": "word",
+      "es": "viaje",
+      "de": "Reise, Fahrt",
+      "forms": [
+        "viaje",
+        "viajes"
+      ],
+      "examples": [
+        {
+          "es": "¡Buen viaje!",
+          "de": "Gute Reise!"
+        }
+      ],
+      "freqRank": 626
+    },
+    {
+      "id": "w-maleta",
+      "kind": "word",
+      "es": "maleta",
+      "de": "Koffer",
+      "forms": [
+        "maleta",
+        "maletas"
+      ],
+      "examples": [
+        {
+          "es": "Tengo una maleta.",
+          "de": "Ich habe einen Koffer."
+        }
+      ],
+      "freqRank": 3226
+    },
+    {
+      "id": "w-mochila",
+      "kind": "word",
+      "es": "mochila",
+      "de": "Rucksack",
+      "forms": [
+        "mochila",
+        "mochilas"
+      ],
+      "examples": [
+        {
+          "es": "Llevo una mochila.",
+          "de": "Ich habe einen Rucksack dabei."
+        }
+      ]
+    },
+    {
+      "id": "w-equipaje",
+      "kind": "word",
+      "es": "equipaje",
+      "de": "Gepäck",
+      "forms": [
+        "equipaje"
+      ],
+      "examples": [
+        {
+          "es": "¿Puedo llevar este equipaje?",
+          "de": "Darf ich dieses Gepäck mitnehmen?"
+        }
+      ],
+      "freqRank": 3930
+    },
+    {
+      "id": "w-aplicacion",
+      "kind": "word",
+      "es": "aplicación",
+      "de": "App",
+      "forms": [
+        "aplicación",
+        "aplicaciones",
+        "app"
+      ],
+      "examples": [
+        {
+          "es": "Pido el Uber en la aplicación.",
+          "de": "Ich bestelle den Uber in der App."
+        }
+      ]
+    },
+    {
+      "id": "w-tarifa",
+      "kind": "word",
+      "es": "tarifa",
+      "de": "Fahrpreis, Tarif",
+      "forms": [
+        "tarifa",
+        "tarifas"
+      ],
+      "examples": [
+        {
+          "es": "En la noche la tarifa es más barata.",
+          "de": "Am Abend ist der Tarif günstiger."
+        }
+      ],
+      "note": "Im Metro hängt der Preis von der Uhrzeit ab: früh und spät am günstigsten, zur Stoßzeit am teuersten.",
+      "chile": {
+        "note": "Die Tarife im Metro unterscheiden sich in Tarifa baja, valle und punta, je nach Uhrzeit.",
+        "source": "Red Movilidad, Conoce las tarifas, https://www.red.cl/tarifas-y-recargas/conoce-las-tarifas/"
+      }
+    },
+    {
+      "id": "w-combinacion",
+      "kind": "word",
+      "es": "combinación",
+      "de": "Umstieg",
+      "forms": [
+        "combinación",
+        "combinaciones"
+      ],
+      "examples": [
+        {
+          "es": "Hago combinación en la próxima estación.",
+          "de": "Ich steige an der nächsten Station um."
+        }
+      ],
+      "note": "Umsteigen heißt hacer combinación. Mit der Bip! ist der Umstieg innerhalb von zwei Stunden inklusive.",
+      "chile": {
+        "note": "Offiziell heißt der Umstieg zwischen Metro und Bus combinación.",
+        "source": "Red Movilidad, Conoce las tarifas, https://www.red.cl/tarifas-y-recargas/conoce-las-tarifas/"
+      },
+      "freqRank": 4929
+    },
+    {
+      "id": "w-recorrido",
+      "kind": "word",
+      "es": "recorrido",
+      "de": "Buslinie, Strecke",
+      "forms": [
+        "recorrido",
+        "recorridos"
+      ],
+      "examples": [
+        {
+          "es": "El recorrido tiene un número.",
+          "de": "Die Buslinie hat eine Nummer."
+        }
+      ],
+      "note": "In Santiago heißt jede Buslinie recorrido, mit Nummer, zum Beispiel 213e.",
+      "chile": {
+        "note": "Die Buslinien der Red Movilidad heißen recorridos.",
+        "source": "Red Movilidad, Recorridos, https://www.red.cl"
+      }
+    },
+    {
+      "id": "w-numero",
+      "kind": "word",
+      "es": "número",
+      "de": "Nummer",
+      "forms": [
+        "número",
+        "números"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué número tiene la micro?",
+          "de": "Welche Nummer hat die Micro?"
+        }
+      ],
+      "freqRank": 458
+    },
+    {
+      "id": "w-direccion",
+      "kind": "word",
+      "es": "dirección",
+      "de": "Richtung, Adresse",
+      "forms": [
+        "dirección",
+        "direcciones"
+      ],
+      "examples": [
+        {
+          "es": "¿Esta es la dirección al centro?",
+          "de": "Ist das die Richtung ins Zentrum?"
+        }
+      ],
+      "note": "Im Metro steht am Bahnsteig die Richtung, also die Endstation, in die der Zug fährt.",
+      "freqRank": 843
+    },
+    {
+      "id": "w-manejar",
+      "kind": "word",
+      "es": "manejar",
+      "de": "fahren (Auto), lenken",
+      "forms": [
+        "manejar",
+        "manejo",
+        "manejas",
+        "maneja",
+        "manejan"
+      ],
+      "examples": [
+        {
+          "es": "No manejo en Santiago.",
+          "de": "Ich fahre in Santiago nicht Auto."
+        }
+      ],
+      "note": "Für Auto fahren sagt man in Lateinamerika manejar.",
+      "freqRank": 1992
+    },
+    {
+      "id": "w-centro",
+      "kind": "word",
+      "es": "centro",
+      "de": "Zentrum, Innenstadt",
+      "forms": [
+        "centro",
+        "centros"
+      ],
+      "examples": [
+        {
+          "es": "Voy al centro en metro.",
+          "de": "Ich fahre mit der U-Bahn ins Zentrum."
+        }
+      ],
+      "note": "El centro ist die Innenstadt von Santiago.",
+      "freqRank": 820
+    },
+    {
+      "id": "w-providencia",
+      "kind": "word",
+      "es": "Providencia",
+      "de": "Providencia (Stadtteil)",
+      "forms": [
+        "providencia"
+      ],
+      "examples": [
+        {
+          "es": "Voy a Providencia.",
+          "de": "Ich fahre nach Providencia."
+        }
+      ],
+      "note": "Stadtteil von Santiago mit vielen Cafés und Geschäften, gut mit dem Metro erreichbar."
+    },
+    {
+      "id": "w-las-condes",
+      "kind": "word",
+      "es": "Las Condes",
+      "de": "Las Condes (Stadtteil)",
+      "forms": [
+        "las condes",
+        "condes"
+      ],
+      "examples": [
+        {
+          "es": "Voy a Las Condes en metro.",
+          "de": "Ich fahre mit der U-Bahn nach Las Condes."
+        }
+      ],
+      "note": "Stadtteil im Osten von Santiago, mit vielen Hochhäusern."
+    },
+    {
+      "id": "w-valparaiso",
+      "kind": "word",
+      "es": "Valparaíso",
+      "de": "Valparaíso (Hafenstadt)",
+      "forms": [
+        "valparaíso"
+      ],
+      "examples": [
+        {
+          "es": "El bus a Valparaíso sale del terminal.",
+          "de": "Der Bus nach Valparaíso fährt vom Busbahnhof ab."
+        }
+      ],
+      "note": "Hafenstadt an der Küste, rund 120 Kilometer von Santiago entfernt. Mit dem Bus dauert die Fahrt gut anderthalb Stunden."
+    },
+    {
+      "id": "w-esperar",
+      "kind": "word",
+      "es": "esperar",
+      "de": "warten",
+      "forms": [
+        "esperar",
+        "espero",
+        "esperas",
+        "espera",
+        "esperan",
+        "esperamos"
+      ],
+      "examples": [
+        {
+          "es": "Espero el bus.",
+          "de": "Ich warte auf den Bus."
+        }
+      ],
+      "freqRank": 522
+    },
+    {
+      "id": "w-llegar",
+      "kind": "word",
+      "es": "llegar",
+      "de": "ankommen",
+      "forms": [
+        "llegar",
+        "llego",
+        "llegas",
+        "llega",
+        "llegan",
+        "llegamos"
+      ],
+      "examples": [
+        {
+          "es": "El bus llega a las nueve.",
+          "de": "Der Bus kommt um neun an."
+        }
+      ],
+      "freqRank": 400
+    },
+    {
+      "id": "w-salir",
+      "kind": "word",
+      "es": "salir",
+      "de": "abfahren, hinausgehen",
+      "forms": [
+        "salir",
+        "salgo",
+        "sales",
+        "sale",
+        "salen",
+        "salimos"
+      ],
+      "examples": [
+        {
+          "es": "El bus sale a las ocho.",
+          "de": "Der Bus fährt um acht ab."
+        }
+      ],
+      "note": "Unregelmäßig: salgo, sales, sale. Bei Verkehrsmitteln heißt sale: fährt ab.",
+      "freqRank": 265
+    },
+    {
+      "id": "w-subir",
+      "kind": "word",
+      "es": "subir",
+      "de": "einsteigen, hinaufgehen",
+      "forms": [
+        "subir",
+        "subo",
+        "subes",
+        "sube",
+        "suben",
+        "subimos",
+        "suba",
+        "subirse"
+      ],
+      "examples": [
+        {
+          "es": "Me subo aquí.",
+          "de": "Ich steige hier ein."
+        }
+      ],
+      "note": "Einsteigen heißt subirse (me subo), aussteigen bajarse (me bajo). Der Taxifahrer sagt: Suba, por favor.",
+      "freqRank": 1484
+    },
+    {
+      "id": "w-bajarse",
+      "kind": "word",
+      "es": "bajarse",
+      "de": "aussteigen",
+      "forms": [
+        "bajarse",
+        "bajo",
+        "bajas",
+        "baja",
+        "bajan",
+        "bajamos"
+      ],
+      "examples": [
+        {
+          "es": "Me bajo en la próxima.",
+          "de": "Ich steige an der nächsten aus."
+        }
+      ],
+      "freqRank": 1612
+    },
+    {
+      "id": "w-pasar",
+      "kind": "word",
+      "es": "pasar",
+      "de": "vorbeifahren, vorbeikommen",
+      "forms": [
+        "pasar",
+        "paso",
+        "pasas",
+        "pasa",
+        "pasan",
+        "pasamos"
+      ],
+      "examples": [
+        {
+          "es": "El metro pasa cada cinco minutos.",
+          "de": "Die U-Bahn fährt alle fünf Minuten."
+        }
+      ],
+      "note": "Pasar por heißt: an einem Ort vorbeifahren.",
+      "freqRank": 323
+    },
+    {
+      "id": "w-parar",
+      "kind": "word",
+      "es": "parar",
+      "de": "anhalten",
+      "forms": [
+        "parar",
+        "paro",
+        "paras",
+        "pare",
+        "paran"
+      ],
+      "examples": [
+        {
+          "es": "¿Puede parar aquí, por favor?",
+          "de": "Können Sie hier anhalten, bitte?"
+        }
+      ],
+      "note": "Zum Taxifahrer sagst du: Pare aquí, por favor.",
+      "freqRank": 1172
+    },
+    {
+      "id": "w-cambiar",
+      "kind": "word",
+      "es": "cambiar",
+      "de": "wechseln, umsteigen",
+      "forms": [
+        "cambiar",
+        "cambio",
+        "cambias",
+        "cambia",
+        "cambian",
+        "cambiamos"
+      ],
+      "examples": [
+        {
+          "es": "Hay que cambiar de línea.",
+          "de": "Man muss die Linie wechseln."
+        }
+      ],
+      "freqRank": 699
+    },
+    {
+      "id": "w-demorar",
+      "kind": "word",
+      "es": "demorar",
+      "de": "dauern, brauchen",
+      "forms": [
+        "demorar",
+        "demorarse",
+        "demora",
+        "demoran",
+        "demoro"
+      ],
+      "examples": [
+        {
+          "es": "El viaje se demora dos horas.",
+          "de": "Die Fahrt dauert zwei Stunden."
+        }
+      ],
+      "note": "In Lateinamerika sehr üblich: ¿Cuánto se demora? Gemeint ist: Wie lange dauert es?"
+    },
+    {
+      "id": "w-viajar",
+      "kind": "word",
+      "es": "viajar",
+      "de": "reisen",
+      "forms": [
+        "viajar",
+        "viajo",
+        "viajas",
+        "viaja",
+        "viajan",
+        "viajamos"
+      ],
+      "examples": [
+        {
+          "es": "Mañana viajo a Santiago.",
+          "de": "Morgen reise ich nach Santiago."
+        }
+      ],
+      "freqRank": 2530
+    },
+    {
+      "id": "w-avisar",
+      "kind": "word",
+      "es": "avisar",
+      "de": "Bescheid sagen",
+      "forms": [
+        "avisar",
+        "aviso",
+        "avisas",
+        "avisa",
+        "avisan"
+      ],
+      "examples": [
+        {
+          "es": "Yo le aviso.",
+          "de": "Ich sage Ihnen Bescheid."
+        }
+      ],
+      "note": "Der Fahrer sagt: Yo le aviso, wenn deine Haltestelle kommt."
+    },
+    {
+      "id": "w-minuto",
+      "kind": "word",
+      "es": "minuto",
+      "de": "Minute",
+      "forms": [
+        "minuto",
+        "minutos"
+      ],
+      "examples": [
+        {
+          "es": "Son diez minutos.",
+          "de": "Es sind zehn Minuten."
+        }
+      ],
+      "freqRank": 579
+    },
+    {
+      "id": "w-horario",
+      "kind": "word",
+      "es": "horario",
+      "de": "Fahrplan, Zeiten",
+      "forms": [
+        "horario",
+        "horarios"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuál es el horario?",
+          "de": "Wie sind die Zeiten?"
+        }
+      ],
+      "note": "Fahrplan oder Öffnungszeiten.",
+      "freqRank": 4448
+    },
+    {
+      "id": "p-hora-punta",
+      "kind": "phrase",
+      "es": "hora punta",
+      "de": "Stoßzeit",
+      "forms": [
+        "hora punta",
+        "punta"
+      ],
+      "examples": [
+        {
+          "es": "En hora punta el metro va lleno.",
+          "de": "Zur Stoßzeit ist die U-Bahn voll."
+        }
+      ],
+      "note": "Die Stoßzeit ist morgens und am späten Nachmittag, ungefähr 7 bis 9 und 18 bis 20 Uhr.",
+      "chile": {
+        "note": "Im Metro heißt die Zeit mit dem höchsten Preis horario punta.",
+        "source": "Red Movilidad, Conoce las tarifas, https://www.red.cl/tarifas-y-recargas/conoce-las-tarifas/"
+      }
+    },
+    {
+      "id": "p-en-punto",
+      "kind": "phrase",
+      "es": "en punto",
+      "de": "Punkt, genau",
+      "forms": [
+        "en punto",
+        "punto"
+      ],
+      "examples": [
+        {
+          "es": "El bus sale a las ocho en punto.",
+          "de": "Der Bus fährt Punkt acht ab."
+        }
+      ]
+    },
+    {
+      "id": "w-mediodia",
+      "kind": "word",
+      "es": "mediodía",
+      "de": "Mittag",
+      "forms": [
+        "mediodía"
+      ],
+      "examples": [
+        {
+          "es": "Salgo al mediodía.",
+          "de": "Ich fahre mittags los."
+        }
+      ],
+      "freqRank": 4125
+    },
+    {
+      "id": "w-temprano",
+      "kind": "word",
+      "es": "temprano",
+      "de": "früh",
+      "forms": [
+        "temprano"
+      ],
+      "examples": [
+        {
+          "es": "El metro abre temprano.",
+          "de": "Die U-Bahn öffnet früh."
+        }
+      ],
+      "freqRank": 1085
+    },
+    {
+      "id": "w-tarde",
+      "kind": "word",
+      "es": "tarde",
+      "de": "spät, Nachmittag",
+      "forms": [
+        "tarde"
+      ],
+      "examples": [
+        {
+          "es": "Voy a llegar tarde.",
+          "de": "Ich komme zu spät."
+        }
+      ],
+      "note": "Tarde heißt spät. Mit Artikel ist es der Nachmittag: la tarde.",
+      "freqRank": 243
+    },
+    {
+      "id": "w-noche",
+      "kind": "word",
+      "es": "noche",
+      "de": "Nacht, Abend",
+      "forms": [
+        "noche"
+      ],
+      "examples": [
+        {
+          "es": "El metro cierra de noche.",
+          "de": "Die U-Bahn schließt nachts."
+        }
+      ],
+      "note": "Noche gilt auch für den späten Abend.",
+      "freqRank": 136
+    },
+    {
+      "id": "p-mas-tarde",
+      "kind": "phrase",
+      "es": "más tarde",
+      "de": "später",
+      "forms": [
+        "más tarde"
+      ],
+      "examples": [
+        {
+          "es": "Voy más tarde.",
+          "de": "Ich fahre später."
+        }
+      ]
+    },
+    {
+      "id": "w-ultimo",
+      "kind": "word",
+      "es": "último",
+      "de": "letzter",
+      "forms": [
+        "último",
+        "última"
+      ],
+      "examples": [
+        {
+          "es": "¿A qué hora sale el último bus?",
+          "de": "Wann fährt der letzte Bus?"
+        }
+      ],
+      "freqRank": 542
+    },
+    {
+      "id": "w-siguiente",
+      "kind": "word",
+      "es": "siguiente",
+      "de": "nächster",
+      "forms": [
+        "siguiente"
+      ],
+      "examples": [
+        {
+          "es": "¿A qué hora sale el siguiente?",
+          "de": "Wann fährt der nächste?"
+        }
+      ],
+      "freqRank": 700
+    },
+    {
+      "id": "w-proximo",
+      "kind": "word",
+      "es": "próximo",
+      "de": "nächster",
+      "forms": [
+        "próximo",
+        "próxima"
+      ],
+      "examples": [
+        {
+          "es": "El próximo bus sale en diez minutos.",
+          "de": "Der nächste Bus fährt in zehn Minuten ab."
+        }
+      ],
+      "freqRank": 1213
+    },
+    {
+      "id": "w-cada",
+      "kind": "word",
+      "es": "cada",
+      "de": "jeder, alle (Takt)",
+      "forms": [
+        "cada"
+      ],
+      "examples": [
+        {
+          "es": "El metro pasa cada cinco minutos.",
+          "de": "Die U-Bahn kommt alle fünf Minuten."
+        }
+      ],
+      "freqRank": 227
+    },
+    {
+      "id": "w-pronto",
+      "kind": "word",
+      "es": "pronto",
+      "de": "bald",
+      "forms": [
+        "pronto"
+      ],
+      "examples": [
+        {
+          "es": "El bus llega pronto.",
+          "de": "Der Bus kommt bald."
+        }
+      ],
+      "freqRank": 333
+    },
+    {
+      "id": "w-siempre",
+      "kind": "word",
+      "es": "siempre",
+      "de": "immer",
+      "forms": [
+        "siempre"
+      ],
+      "examples": [
+        {
+          "es": "El metro siempre está lleno.",
+          "de": "Die U-Bahn ist immer voll."
+        }
+      ],
+      "freqRank": 125
+    },
+    {
+      "id": "p-todos-los-dias",
+      "kind": "phrase",
+      "es": "todos los días",
+      "de": "jeden Tag",
+      "forms": [
+        "todos los días",
+        "todos"
+      ],
+      "examples": [
+        {
+          "es": "El metro abre todos los días.",
+          "de": "Die U-Bahn fährt jeden Tag."
+        }
+      ]
+    },
+    {
+      "id": "p-fin-de-semana",
+      "kind": "phrase",
+      "es": "fin de semana",
+      "de": "Wochenende",
+      "forms": [
+        "fin de semana",
+        "fin",
+        "semana"
+      ],
+      "examples": [
+        {
+          "es": "El fin de semana hay menos buses.",
+          "de": "Am Wochenende fahren weniger Busse."
+        }
+      ],
+      "freqRank": 326
+    },
+    {
+      "id": "p-que-hora-es",
+      "kind": "phrase",
+      "es": "qué hora es",
+      "de": "wie spät ist es",
+      "forms": [
+        "qué hora es"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, ¿qué hora es?",
+          "de": "Entschuldigung, wie spät ist es?"
+        }
+      ]
+    },
+    {
+      "id": "p-es-la-una",
+      "kind": "phrase",
+      "es": "es la una",
+      "de": "es ist ein Uhr",
+      "forms": [
+        "es la una"
+      ],
+      "examples": [
+        {
+          "es": "Es la una.",
+          "de": "Es ist ein Uhr."
+        }
+      ]
+    },
+    {
+      "id": "p-son-las",
+      "kind": "phrase",
+      "es": "son las",
+      "de": "es ist (Uhrzeit)",
+      "forms": [
+        "son las"
+      ],
+      "examples": [
+        {
+          "es": "Son las dos.",
+          "de": "Es ist zwei Uhr."
+        }
+      ]
+    },
+    {
+      "id": "p-a-las",
+      "kind": "phrase",
+      "es": "a las",
+      "de": "um (Uhrzeit)",
+      "forms": [
+        "a las"
+      ],
+      "examples": [
+        {
+          "es": "El bus sale a las diez.",
+          "de": "Der Bus fährt um zehn ab."
+        }
+      ]
+    },
+    {
+      "id": "p-y-media",
+      "kind": "phrase",
+      "es": "y media",
+      "de": "halb (nach der vollen Stunde)",
+      "forms": [
+        "y media"
+      ],
+      "examples": [
+        {
+          "es": "Son las ocho y media.",
+          "de": "Es ist halb neun."
+        }
+      ],
+      "note": "Achtung: Son las ocho y media ist 8:30, im Deutschen halb neun."
+    },
+    {
+      "id": "p-y-cuarto",
+      "kind": "phrase",
+      "es": "y cuarto",
+      "de": "Viertel nach",
+      "forms": [
+        "y cuarto",
+        "cuarto"
+      ],
+      "examples": [
+        {
+          "es": "Son las tres y cuarto.",
+          "de": "Es ist Viertel nach drei."
+        }
+      ],
+      "freqRank": 628
+    },
+    {
+      "id": "p-menos-cuarto",
+      "kind": "phrase",
+      "es": "menos cuarto",
+      "de": "Viertel vor",
+      "forms": [
+        "menos cuarto"
+      ],
+      "examples": [
+        {
+          "es": "Son las diez menos cuarto.",
+          "de": "Es ist Viertel vor zehn."
+        }
+      ]
+    },
+    {
+      "id": "p-de-la-manana",
+      "kind": "phrase",
+      "es": "de la mañana",
+      "de": "morgens, vormittags",
+      "forms": [
+        "de la mañana"
+      ],
+      "examples": [
+        {
+          "es": "Son las siete de la mañana.",
+          "de": "Es ist sieben Uhr morgens."
+        }
+      ]
+    },
+    {
+      "id": "p-de-la-tarde",
+      "kind": "phrase",
+      "es": "de la tarde",
+      "de": "nachmittags",
+      "forms": [
+        "de la tarde"
+      ],
+      "examples": [
+        {
+          "es": "Es la una de la tarde.",
+          "de": "Es ist ein Uhr nachmittags."
+        }
+      ]
+    },
+    {
+      "id": "p-de-la-noche",
+      "kind": "phrase",
+      "es": "de la noche",
+      "de": "abends, nachts",
+      "forms": [
+        "de la noche"
+      ],
+      "examples": [
+        {
+          "es": "Son las diez de la noche.",
+          "de": "Es ist zehn Uhr abends."
+        }
+      ]
+    },
+    {
+      "id": "p-a-que-hora-sale",
+      "kind": "phrase",
+      "es": "a qué hora sale",
+      "de": "wann fährt ... ab",
+      "forms": [
+        "a qué hora sale"
+      ],
+      "examples": [
+        {
+          "es": "¿A qué hora sale el bus a Santiago?",
+          "de": "Wann fährt der Bus nach Santiago ab?"
+        }
+      ]
+    },
+    {
+      "id": "p-a-que-hora-llega",
+      "kind": "phrase",
+      "es": "a qué hora llega",
+      "de": "wann kommt ... an",
+      "forms": [
+        "a qué hora llega"
+      ],
+      "examples": [
+        {
+          "es": "¿A qué hora llega el bus?",
+          "de": "Wann kommt der Bus an?"
+        }
+      ]
+    },
+    {
+      "id": "p-pasa-por",
+      "kind": "phrase",
+      "es": "este bus pasa por",
+      "de": "dieser Bus fährt über, an ... vorbei",
+      "forms": [
+        "este bus pasa por"
+      ],
+      "examples": [
+        {
+          "es": "¿Este bus pasa por Providencia?",
+          "de": "Fährt dieser Bus durch Providencia?"
+        }
+      ]
+    },
+    {
+      "id": "p-bus-va-a",
+      "kind": "phrase",
+      "es": "este bus va a",
+      "de": "dieser Bus fährt nach",
+      "forms": [
+        "este bus va a"
+      ],
+      "examples": [
+        {
+          "es": "¿Este bus va al aeropuerto?",
+          "de": "Fährt dieser Bus zum Flughafen?"
+        }
+      ]
+    },
+    {
+      "id": "p-que-micro-va",
+      "kind": "phrase",
+      "es": "qué micro va",
+      "de": "welche Micro fährt",
+      "forms": [
+        "qué micro va"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué micro va al centro?",
+          "de": "Welche Micro fährt ins Zentrum?"
+        }
+      ]
+    },
+    {
+      "id": "p-me-bajo-aqui",
+      "kind": "phrase",
+      "es": "me bajo aquí",
+      "de": "ich steige hier aus",
+      "forms": [
+        "me bajo aquí"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, me bajo aquí.",
+          "de": "Entschuldigung, ich steige hier aus."
+        }
+      ]
+    },
+    {
+      "id": "p-donde-me-bajo",
+      "kind": "phrase",
+      "es": "dónde me bajo",
+      "de": "wo steige ich aus",
+      "forms": [
+        "dónde me bajo"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde me bajo para ir a Las Condes?",
+          "de": "Wo steige ich aus, um nach Las Condes zu kommen?"
+        }
+      ]
+    },
+    {
+      "id": "p-pare-aqui",
+      "kind": "phrase",
+      "es": "pare aquí",
+      "de": "halten Sie hier",
+      "forms": [
+        "pare aquí"
+      ],
+      "examples": [
+        {
+          "es": "Pare aquí, por favor.",
+          "de": "Halten Sie hier an, bitte."
+        }
+      ]
+    },
+    {
+      "id": "p-cuanto-se-demora",
+      "kind": "phrase",
+      "es": "cuánto se demora",
+      "de": "wie lange dauert es",
+      "forms": [
+        "cuánto se demora"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuánto se demora el viaje?",
+          "de": "Wie lange dauert die Fahrt?"
+        }
+      ]
+    },
+    {
+      "id": "p-hay-que",
+      "kind": "phrase",
+      "es": "hay que",
+      "de": "man muss",
+      "forms": [
+        "hay que",
+        "que"
+      ],
+      "examples": [
+        {
+          "es": "Hay que cargar la Bip.",
+          "de": "Man muss die Bip! aufladen."
+        }
+      ],
+      "note": "Unpersönlich und immer gleich: hay que esperar, hay que cambiar."
+    },
+    {
+      "id": "p-ida-y-vuelta",
+      "kind": "phrase",
+      "es": "ida y vuelta",
+      "de": "hin und zurück",
+      "forms": [
+        "ida y vuelta",
+        "ida",
+        "vuelta"
+      ],
+      "examples": [
+        {
+          "es": "Dos pasajes de ida y vuelta, por favor.",
+          "de": "Zwei Fahrscheine hin und zurück, bitte."
+        }
+      ]
+    },
+    {
+      "id": "p-solo-ida",
+      "kind": "phrase",
+      "es": "solo ida",
+      "de": "nur Hinfahrt",
+      "forms": [
+        "solo ida"
+      ],
+      "examples": [
+        {
+          "es": "Solo ida, por favor.",
+          "de": "Nur hin, bitte."
+        }
+      ]
+    },
+    {
+      "id": "p-a-pie",
+      "kind": "phrase",
+      "es": "a pie",
+      "de": "zu Fuß",
+      "forms": [
+        "a pie",
+        "pie"
+      ],
+      "examples": [
+        {
+          "es": "Voy a pie al terminal.",
+          "de": "Ich gehe zu Fuß zum Busbahnhof."
+        }
+      ],
+      "freqRank": 738
+    },
+    {
+      "id": "p-salon-cama",
+      "kind": "phrase",
+      "es": "salón cama",
+      "de": "Liegesitz (Fernbus)",
+      "forms": [
+        "salón cama",
+        "semi cama",
+        "cama",
+        "salón"
+      ],
+      "examples": [
+        {
+          "es": "Un pasaje salón cama, por favor.",
+          "de": "Einen Fahrschein im Liegesitz, bitte."
+        }
+      ],
+      "note": "Fernbusse haben Sitzklassen, zum Beispiel semi cama und salón cama. Salón cama lässt sich am weitesten zurücklegen, gut für Nachtfahrten.",
+      "chile": {
+        "note": "Chilenische Fernbusunternehmen bieten Sitzklassen wie semi cama und salón cama an.",
+        "source": "Turbus, Buchungsseite mit Sitzklassen, https://www.turbus.cl"
+      }
+    },
+    {
+      "id": "w-cuidado",
+      "kind": "word",
+      "es": "cuidado",
+      "de": "Vorsicht",
+      "forms": [
+        "cuidado"
+      ],
+      "examples": [
+        {
+          "es": "Cuidado con la puerta.",
+          "de": "Vorsicht an der Tür."
+        }
+      ],
+      "freqRank": 379
+    },
+    {
+      "id": "w-libre",
+      "kind": "word",
+      "es": "libre",
+      "de": "frei",
+      "forms": [
+        "libre",
+        "libres"
+      ],
+      "examples": [
+        {
+          "es": "¿Está libre este asiento?",
+          "de": "Ist dieser Platz frei?"
+        }
+      ],
+      "freqRank": 634
+    },
+    {
+      "id": "w-ocupado",
+      "kind": "word",
+      "es": "ocupado",
+      "de": "besetzt",
+      "forms": [
+        "ocupado",
+        "ocupada",
+        "ocupados"
+      ],
+      "examples": [
+        {
+          "es": "Este asiento está ocupado.",
+          "de": "Dieser Platz ist besetzt."
+        }
+      ],
+      "freqRank": 1191
+    },
+    {
+      "id": "w-lleno",
+      "kind": "word",
+      "es": "lleno",
+      "de": "voll",
+      "forms": [
+        "lleno",
+        "llena",
+        "llenos",
+        "llenas"
+      ],
+      "examples": [
+        {
+          "es": "El metro está lleno.",
+          "de": "Die U-Bahn ist voll."
+        }
+      ],
+      "note": "Zur Stoßzeit sind Metro und micro oft voll.",
+      "freqRank": 1173
+    },
+    {
+      "id": "w-rapido",
+      "kind": "word",
+      "es": "rápido",
+      "de": "schnell",
+      "forms": [
+        "rápido",
+        "rápida",
+        "rápidos",
+        "rápidas"
+      ],
+      "examples": [
+        {
+          "es": "El metro es rápido.",
+          "de": "Die U-Bahn ist schnell."
+        }
+      ],
+      "freqRank": 311
+    },
+    {
+      "id": "w-directo",
+      "kind": "word",
+      "es": "directo",
+      "de": "direkt",
+      "forms": [
+        "directo",
+        "directa"
+      ],
+      "examples": [
+        {
+          "es": "Este bus es directo.",
+          "de": "Dieser Bus fährt direkt."
+        }
+      ],
+      "freqRank": 1804
+    },
+    {
+      "id": "w-atrasado",
+      "kind": "word",
+      "es": "atrasado",
+      "de": "verspätet",
+      "forms": [
+        "atrasado",
+        "atrasada"
+      ],
+      "examples": [
+        {
+          "es": "El bus viene atrasado.",
+          "de": "Der Bus hat Verspätung."
+        }
+      ]
+    },
+    {
+      "id": "w-desde",
+      "kind": "word",
+      "es": "desde",
+      "de": "von, ab",
+      "forms": [
+        "desde"
+      ],
+      "examples": [
+        {
+          "es": "Voy desde el aeropuerto al centro.",
+          "de": "Ich fahre vom Flughafen ins Zentrum."
+        }
+      ],
+      "freqRank": 163
+    },
+    {
+      "id": "w-hasta",
+      "kind": "word",
+      "es": "hasta",
+      "de": "bis",
+      "forms": [
+        "hasta"
+      ],
+      "examples": [
+        {
+          "es": "Hasta el centro, por favor.",
+          "de": "Bis ins Zentrum, bitte."
+        }
+      ],
+      "freqRank": 126
+    },
+    {
+      "id": "s-donde-esta-la-estacion-de",
+      "kind": "sentence",
+      "es": "¿Dónde está la estación de metro?",
+      "de": "Wo ist die Metrostation?"
+    },
+    {
+      "id": "s-voy-en-metro-al-centro",
+      "kind": "sentence",
+      "es": "Voy en metro al centro.",
+      "de": "Ich fahre mit der U-Bahn ins Zentrum."
+    },
+    {
+      "id": "s-voy-en-micro-a-providencia",
+      "kind": "sentence",
+      "es": "Voy en micro a Providencia.",
+      "de": "Ich fahre mit dem Bus nach Providencia."
+    },
+    {
+      "id": "s-voy-en-taxi-al-aeropuerto",
+      "kind": "sentence",
+      "es": "Voy en taxi al aeropuerto.",
+      "de": "Ich fahre mit dem Taxi zum Flughafen."
+    },
+    {
+      "id": "s-necesito-cargar-la-bip",
+      "kind": "sentence",
+      "es": "Necesito cargar la Bip.",
+      "de": "Ich muss meine Bip! aufladen."
+    },
+    {
+      "id": "s-no-tengo-saldo-en-la",
+      "kind": "sentence",
+      "es": "No tengo saldo en la Bip.",
+      "de": "Ich habe kein Guthaben auf der Bip!."
+    },
+    {
+      "id": "s-donde-puedo-cargar-la-bip",
+      "kind": "sentence",
+      "es": "¿Dónde puedo cargar la Bip?",
+      "de": "Wo kann ich die Bip! aufladen?"
+    },
+    {
+      "id": "s-quiero-cargar-diez-mil-pesos",
+      "kind": "sentence",
+      "es": "Quiero cargar diez mil pesos.",
+      "de": "Ich möchte zehntausend Pesos aufladen."
+    },
+    {
+      "id": "s-en-la-micro-no-se",
+      "kind": "sentence",
+      "es": "En la micro no se paga en efectivo.",
+      "de": "Im Bus zahlt man nicht bar."
+    },
+    {
+      "id": "s-la-micro-pasa-cada-diez",
+      "kind": "sentence",
+      "es": "La micro pasa cada diez minutos.",
+      "de": "Die Micro fährt alle zehn Minuten."
+    },
+    {
+      "id": "s-que-micro-va-al-centro",
+      "kind": "sentence",
+      "es": "¿Qué micro va al centro?",
+      "de": "Welche Micro fährt ins Zentrum?"
+    },
+    {
+      "id": "s-este-bus-pasa-por-providencia",
+      "kind": "sentence",
+      "es": "¿Este bus pasa por Providencia?",
+      "de": "Fährt dieser Bus durch Providencia?"
+    },
+    {
+      "id": "s-este-bus-va-al-aeropuerto",
+      "kind": "sentence",
+      "es": "¿Este bus va al aeropuerto?",
+      "de": "Fährt dieser Bus zum Flughafen?"
+    },
+    {
+      "id": "s-disculpe-donde-me-bajo-para",
+      "kind": "sentence",
+      "es": "Disculpe, ¿dónde me bajo para ir a Las Condes?",
+      "de": "Entschuldigung, wo steige ich aus, um nach Las Condes zu kommen?"
+    },
+    {
+      "id": "s-me-bajo-en-la-proxima",
+      "kind": "sentence",
+      "es": "Me bajo en la próxima.",
+      "de": "Ich steige an der nächsten aus."
+    },
+    {
+      "id": "s-me-bajo-aqui-por-favor",
+      "kind": "sentence",
+      "es": "Me bajo aquí, por favor.",
+      "de": "Ich steige hier aus, bitte."
+    },
+    {
+      "id": "s-pare-aqui-por-favor",
+      "kind": "sentence",
+      "es": "Pare aquí, por favor.",
+      "de": "Halten Sie hier an, bitte."
+    },
+    {
+      "id": "s-donde-esta-el-paradero",
+      "kind": "sentence",
+      "es": "¿Dónde está el paradero?",
+      "de": "Wo ist die Bushaltestelle?"
+    },
+    {
+      "id": "s-el-paradero-esta-cerca",
+      "kind": "sentence",
+      "es": "El paradero está cerca.",
+      "de": "Die Bushaltestelle ist in der Nähe."
+    },
+    {
+      "id": "s-el-metro-abre-temprano-y",
+      "kind": "sentence",
+      "es": "El metro abre temprano y cierra tarde.",
+      "de": "Die U-Bahn öffnet früh und schließt spät."
+    },
+    {
+      "id": "s-a-que-hora-sale-el",
+      "kind": "sentence",
+      "es": "¿A qué hora sale el último metro?",
+      "de": "Wann fährt die letzte U-Bahn?"
+    },
+    {
+      "id": "s-a-que-hora-sale-el-2",
+      "kind": "sentence",
+      "es": "¿A qué hora sale el bus a Santiago?",
+      "de": "Wann fährt der Bus nach Santiago ab?"
+    },
+    {
+      "id": "s-a-que-hora-llega-el",
+      "kind": "sentence",
+      "es": "¿A qué hora llega el bus?",
+      "de": "Wann kommt der Bus an?"
+    },
+    {
+      "id": "s-el-bus-sale-a-las",
+      "kind": "sentence",
+      "es": "El bus sale a las ocho en punto.",
+      "de": "Der Bus fährt Punkt acht ab."
+    },
+    {
+      "id": "s-el-bus-sale-a-las-2",
+      "kind": "sentence",
+      "es": "El bus sale a las ocho y media.",
+      "de": "Der Bus fährt um halb neun ab."
+    },
+    {
+      "id": "s-el-tren-llega-a-las",
+      "kind": "sentence",
+      "es": "El tren llega a las nueve y cuarto.",
+      "de": "Der Zug kommt um Viertel nach neun an."
+    },
+    {
+      "id": "s-son-las-diez-menos-cuarto",
+      "kind": "sentence",
+      "es": "Son las diez menos cuarto.",
+      "de": "Es ist Viertel vor zehn."
+    },
+    {
+      "id": "s-es-la-una-de-la",
+      "kind": "sentence",
+      "es": "Es la una de la tarde.",
+      "de": "Es ist ein Uhr nachmittags."
+    },
+    {
+      "id": "s-disculpe-que-hora-es",
+      "kind": "sentence",
+      "es": "Disculpe, ¿qué hora es?",
+      "de": "Entschuldigung, wie spät ist es?"
+    },
+    {
+      "id": "s-son-las-siete-de-la",
+      "kind": "sentence",
+      "es": "Son las siete de la mañana.",
+      "de": "Es ist sieben Uhr morgens."
+    },
+    {
+      "id": "s-cuanto-se-demora-el-viaje",
+      "kind": "sentence",
+      "es": "¿Cuánto se demora el viaje?",
+      "de": "Wie lange dauert die Fahrt?"
+    },
+    {
+      "id": "s-el-viaje-se-demora-dos",
+      "kind": "sentence",
+      "es": "El viaje se demora dos horas.",
+      "de": "Die Fahrt dauert zwei Stunden."
+    },
+    {
+      "id": "s-un-pasaje-a-santiago-por",
+      "kind": "sentence",
+      "es": "Un pasaje a Santiago, por favor.",
+      "de": "Einen Fahrschein nach Santiago, bitte."
+    },
+    {
+      "id": "s-un-pasaje-de-ida-y",
+      "kind": "sentence",
+      "es": "Un pasaje de ida y vuelta, por favor.",
+      "de": "Einen Fahrschein hin und zurück, bitte."
+    },
+    {
+      "id": "s-solo-ida-por-favor",
+      "kind": "sentence",
+      "es": "Solo ida, por favor.",
+      "de": "Nur hin, bitte."
+    },
+    {
+      "id": "s-de-que-anden-sale-el",
+      "kind": "sentence",
+      "es": "¿De qué andén sale el bus?",
+      "de": "Von welchem Bussteig fährt der Bus ab?"
+    },
+    {
+      "id": "s-el-bus-sale-del-anden",
+      "kind": "sentence",
+      "es": "El bus sale del andén cuatro.",
+      "de": "Der Bus fährt von Bussteig vier ab."
+    },
+    {
+      "id": "s-hay-que-cambiar-de-linea",
+      "kind": "sentence",
+      "es": "Hay que cambiar de línea en la próxima estación.",
+      "de": "Man muss an der nächsten Station die Linie wechseln."
+    },
+    {
+      "id": "s-hay-que-cargar-la-bip",
+      "kind": "sentence",
+      "es": "Hay que cargar la Bip en la estación.",
+      "de": "Man muss die Bip! in der Station aufladen."
+    },
+    {
+      "id": "s-el-metro-esta-lleno-en",
+      "kind": "sentence",
+      "es": "El metro está lleno en hora punta.",
+      "de": "Zur Stoßzeit ist die U-Bahn voll."
+    },
+    {
+      "id": "s-esta-libre-este-asiento",
+      "kind": "sentence",
+      "es": "¿Está libre este asiento?",
+      "de": "Ist dieser Platz frei?"
+    },
+    {
+      "id": "s-este-asiento-esta-ocupado",
+      "kind": "sentence",
+      "es": "Este asiento está ocupado.",
+      "de": "Dieser Platz ist besetzt."
+    },
+    {
+      "id": "s-tengo-una-maleta-y-una",
+      "kind": "sentence",
+      "es": "Tengo una maleta y una mochila.",
+      "de": "Ich habe einen Koffer und einen Rucksack."
+    },
+    {
+      "id": "s-me-lleva-al-centro-por",
+      "kind": "sentence",
+      "es": "¿Me lleva al centro, por favor?",
+      "de": "Fahren Sie mich bitte ins Zentrum?"
+    },
+    {
+      "id": "s-cuanto-cuesta-ir-al-aeropuerto",
+      "kind": "sentence",
+      "es": "¿Cuánto cuesta ir al aeropuerto en taxi?",
+      "de": "Was kostet die Taxifahrt zum Flughafen?"
+    },
+    {
+      "id": "s-pido-un-uber-en-la",
+      "kind": "sentence",
+      "es": "Pido un Uber en la aplicación.",
+      "de": "Ich bestelle einen Uber in der App."
+    },
+    {
+      "id": "s-el-uber-llega-en-cinco",
+      "kind": "sentence",
+      "es": "El Uber llega en cinco minutos.",
+      "de": "Der Uber kommt in fünf Minuten."
+    },
+    {
+      "id": "s-el-colectivo-va-al-centro",
+      "kind": "sentence",
+      "es": "El colectivo va al centro.",
+      "de": "Das Sammeltaxi fährt ins Zentrum."
+    },
+    {
+      "id": "s-el-colectivo-es-mas-barato",
+      "kind": "sentence",
+      "es": "El colectivo es más barato que el taxi.",
+      "de": "Das Sammeltaxi ist günstiger als das Taxi."
+    },
+    {
+      "id": "s-el-aeropuerto-esta-lejos-del",
+      "kind": "sentence",
+      "es": "El aeropuerto está lejos del centro.",
+      "de": "Der Flughafen ist weit vom Zentrum entfernt."
+    },
+    {
+      "id": "s-manana-viajo-a-valparaiso",
+      "kind": "sentence",
+      "es": "Mañana viajo a Valparaíso.",
+      "de": "Morgen fahre ich nach Valparaíso."
+    },
+    {
+      "id": "s-espero-el-bus-en-el",
+      "kind": "sentence",
+      "es": "Espero el bus en el paradero.",
+      "de": "Ich warte an der Haltestelle auf den Bus."
+    },
+    {
+      "id": "s-el-bus-viene-atrasado",
+      "kind": "sentence",
+      "es": "El bus viene atrasado.",
+      "de": "Der Bus hat Verspätung."
+    },
+    {
+      "id": "s-el-metro-es-rapido-y",
+      "kind": "sentence",
+      "es": "El metro es rápido y barato.",
+      "de": "Die U-Bahn ist schnell und günstig."
+    },
+    {
+      "id": "s-cuidado-con-la-puerta",
+      "kind": "sentence",
+      "es": "Cuidado con la puerta.",
+      "de": "Vorsicht an der Tür."
+    },
+    {
+      "id": "d-cargar-bip",
+      "kind": "dialog",
+      "title": "Die Bip! aufladen",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenos días. Quiero cargar la Bip, por favor.",
+          "de": "Guten Morgen. Ich möchte die Bip! aufladen, bitte."
+        },
+        {
+          "speaker": "B",
+          "es": "Buenos días. ¿Cuánto quiere cargar?",
+          "de": "Guten Morgen. Wie viel möchten Sie aufladen?"
+        },
+        {
+          "speaker": "A",
+          "es": "Diez mil pesos.",
+          "de": "Zehntausend Pesos."
+        },
+        {
+          "speaker": "B",
+          "es": "Son diez mil pesos. ¿Con tarjeta o efectivo?",
+          "de": "Das macht zehntausend Pesos. Mit Karte oder bar?"
+        },
+        {
+          "speaker": "A",
+          "es": "Con efectivo. Aquí tiene.",
+          "de": "Bar. Bitte sehr."
+        },
+        {
+          "speaker": "B",
+          "es": "Listo. Ya tiene saldo en la Bip.",
+          "de": "Fertig. Jetzt ist Guthaben auf der Bip!."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias. ¿Dónde está la línea uno?",
+          "de": "Danke. Wo ist die Linie 1?"
+        },
+        {
+          "speaker": "B",
+          "es": "Está allá. Chao.",
+          "de": "Sie ist dort. Tschüss."
+        }
+      ]
+    },
+    {
+      "id": "d-micro-providencia",
+      "kind": "dialog",
+      "title": "Micro nach Providencia",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. ¿Este bus pasa por Providencia?",
+          "de": "Guten Tag. Fährt dieser Bus durch Providencia?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, pasa por Providencia.",
+          "de": "Ja, er fährt durch Providencia."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuánto se demora?",
+          "de": "Wie lange dauert es?"
+        },
+        {
+          "speaker": "B",
+          "es": "Veinte minutos, más o menos.",
+          "de": "Zwanzig Minuten, ungefähr."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Dónde me bajo?",
+          "de": "Wo steige ich aus?"
+        },
+        {
+          "speaker": "B",
+          "es": "Yo le aviso.",
+          "de": "Ich sage Ihnen Bescheid."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias.",
+          "de": "Vielen Dank."
+        },
+        {
+          "speaker": "B",
+          "es": "De nada.",
+          "de": "Gern geschehen."
+        }
+      ]
+    },
+    {
+      "id": "d-taxi-aeropuerto",
+      "kind": "dialog",
+      "title": "Taxi zum Flughafen",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. ¿Me lleva al aeropuerto, por favor?",
+          "de": "Guten Tag. Fahren Sie mich bitte zum Flughafen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Claro. ¿Tiene maleta?",
+          "de": "Klar. Haben Sie einen Koffer?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, una maleta y una mochila.",
+          "de": "Ja, einen Koffer und einen Rucksack."
+        },
+        {
+          "speaker": "B",
+          "es": "Listo. Suba, por favor.",
+          "de": "Fertig. Steigen Sie bitte ein."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuánto cuesta?",
+          "de": "Was kostet es?"
+        },
+        {
+          "speaker": "B",
+          "es": "Son veinticinco mil pesos.",
+          "de": "Das macht fünfundzwanzigtausend Pesos."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Puedo pagar con tarjeta?",
+          "de": "Kann ich mit Karte zahlen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, claro.",
+          "de": "Ja, klar."
+        }
+      ]
+    },
+    {
+      "id": "d-uber-centro",
+      "kind": "dialog",
+      "title": "Uber ins Zentrum",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas noches. ¿Usted es Ana?",
+          "de": "Guten Abend. Sind Sie Ana?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, soy Ana.",
+          "de": "Ja, ich bin Ana."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Va al centro?",
+          "de": "Fahren Sie ins Zentrum?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, al centro, por favor.",
+          "de": "Ja, ins Zentrum, bitte."
+        },
+        {
+          "speaker": "A",
+          "es": "Listo. Son veinte minutos, más o menos.",
+          "de": "In Ordnung. Es sind ungefähr zwanzig Minuten."
+        },
+        {
+          "speaker": "B",
+          "es": "Muy bien. Gracias.",
+          "de": "Sehr gut. Danke."
+        },
+        {
+          "speaker": "A",
+          "es": "De nada.",
+          "de": "Gern geschehen."
+        }
+      ]
+    },
+    {
+      "id": "d-terminal-valparaiso",
+      "kind": "dialog",
+      "title": "Pasaje nach Valparaíso",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. Un pasaje a Valparaíso, por favor.",
+          "de": "Guten Tag. Einen Fahrschein nach Valparaíso, bitte."
+        },
+        {
+          "speaker": "B",
+          "es": "¿De ida o de ida y vuelta?",
+          "de": "Einfach oder hin und zurück?"
+        },
+        {
+          "speaker": "A",
+          "es": "Ida y vuelta. ¿A qué hora sale el próximo bus?",
+          "de": "Hin und zurück. Wann fährt der nächste Bus?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sale a las tres y media.",
+          "de": "Er fährt um halb vier ab."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuánto se demora el viaje?",
+          "de": "Wie lange dauert die Fahrt?"
+        },
+        {
+          "speaker": "B",
+          "es": "Dos horas, más o menos.",
+          "de": "Zwei Stunden, ungefähr."
+        },
+        {
+          "speaker": "A",
+          "es": "¿De qué andén sale?",
+          "de": "Von welchem Bussteig fährt er ab?"
+        },
+        {
+          "speaker": "B",
+          "es": "Del andén doce.",
+          "de": "Von Bussteig zwölf."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias.",
+          "de": "Vielen Dank."
+        },
+        {
+          "speaker": "B",
+          "es": "De nada. ¡Buen viaje!",
+          "de": "Gern geschehen. Gute Fahrt!"
+        }
+      ]
+    },
+    {
+      "id": "d-hora-metro",
+      "kind": "dialog",
+      "title": "Wie spät ist es?",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, ¿qué hora es?",
+          "de": "Entschuldigung, wie spät ist es?"
+        },
+        {
+          "speaker": "B",
+          "es": "Son las nueve y cuarto.",
+          "de": "Es ist Viertel nach neun."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias. ¿A qué hora cierra el metro?",
+          "de": "Danke. Wann schließt die U-Bahn?"
+        },
+        {
+          "speaker": "B",
+          "es": "No sé, pero cierra tarde.",
+          "de": "Ich weiß nicht, aber sie schließt spät."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Y abre temprano?",
+          "de": "Und öffnet sie früh?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, claro. Todos los días.",
+          "de": "Ja, klar. Jeden Tag."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias.",
+          "de": "Vielen Dank."
+        }
+      ]
+    },
+    {
+      "id": "g-ir-a-en",
+      "kind": "grammar",
+      "title": "ir: wohin und womit",
+      "explanation": "Mit a sagst du, wohin du fährst: voy al centro, vamos a Providencia (a und el werden zu al). Mit en sagst du, womit: voy en metro, vamos en micro, voy en taxi. Zu Fuß heißt a pie: voy a pie. Von ... nach ... sagst du de ... a ...: de Santiago a Valparaíso. Zum Fragen: ¿Vas en metro? ¿Van al aeropuerto?",
+      "examples": [
+        {
+          "es": "Voy en metro al centro.",
+          "de": "Ich fahre mit der U-Bahn ins Zentrum."
+        },
+        {
+          "es": "Vamos a Providencia en micro.",
+          "de": "Wir fahren mit dem Bus nach Providencia."
+        },
+        {
+          "es": "Voy a pie al terminal.",
+          "de": "Ich gehe zu Fuß zum Busbahnhof."
+        },
+        {
+          "es": "El bus va de Santiago a Valparaíso.",
+          "de": "Der Bus fährt von Santiago nach Valparaíso."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Ich fahre mit der U-Bahn.",
+          "es": "Voy en metro."
+        },
+        {
+          "de": "Wir fahren mit dem Bus ins Zentrum.",
+          "es": "Vamos en bus al centro.",
+          "accept": [
+            "Vamos al centro en bus."
+          ]
+        },
+        {
+          "de": "Ich gehe zu Fuß zum Busbahnhof.",
+          "es": "Voy a pie al terminal.",
+          "accept": [
+            "Voy al terminal a pie."
+          ]
+        },
+        {
+          "de": "Fährst du mit dem Taxi zum Flughafen?",
+          "es": "¿Vas en taxi al aeropuerto?",
+          "accept": [
+            "¿Vas al aeropuerto en taxi?"
+          ]
+        },
+        {
+          "de": "Sie fahren mit dem Zug nach Santiago.",
+          "es": "Van en tren a Santiago.",
+          "accept": [
+            "Ellos van en tren a Santiago.",
+            "Ustedes van en tren a Santiago."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g-hora",
+      "kind": "grammar",
+      "title": "Die Uhrzeit",
+      "explanation": "Gefragt wird ¿Qué hora es? Für ein Uhr sagst du es la una, für alle anderen Stunden son las dos, son las tres. Viertel nach ist y cuarto, halb ist y media, Viertel vor ist menos cuarto: son las tres menos cuarto ist 2:45. Den Tagesabschnitt hängst du an: de la mañana, de la tarde, de la noche. Auf Fahrplänen stehen oft 24-Stunden-Zeiten, gesprochen sind 12 Stunden üblicher.",
+      "examples": [
+        {
+          "es": "Es la una.",
+          "de": "Es ist ein Uhr."
+        },
+        {
+          "es": "Son las ocho y media.",
+          "de": "Es ist 8:30 Uhr."
+        },
+        {
+          "es": "Son las tres y cuarto.",
+          "de": "Es ist Viertel nach drei."
+        },
+        {
+          "es": "Son las diez menos cuarto.",
+          "de": "Es ist Viertel vor zehn."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Es ist ein Uhr.",
+          "es": "Es la una."
+        },
+        {
+          "de": "Es ist 8:30 Uhr.",
+          "es": "Son las ocho y media."
+        },
+        {
+          "de": "Es ist 3:15 Uhr.",
+          "es": "Son las tres y cuarto."
+        },
+        {
+          "de": "Es ist 9:45 Uhr.",
+          "es": "Son las diez menos cuarto."
+        },
+        {
+          "de": "Es ist sieben Uhr morgens.",
+          "es": "Son las siete de la mañana."
+        },
+        {
+          "de": "Es ist zwei Uhr.",
+          "es": "Son las dos."
+        }
+      ]
+    },
+    {
+      "id": "g-a-las",
+      "kind": "grammar",
+      "title": "a las: um wie viel Uhr",
+      "explanation": "Für eine Uhrzeit sagst du a las: a las ocho, a las tres y media. Bei ein Uhr heißt es a la una. Die Frage ist ¿A qué hora sale el bus? und die Antwort Sale a las ocho. Mit en gibst du eine Dauer bis zu einem Ereignis an: en diez minutos heißt in zehn Minuten. Mit desde und hasta nennst du Anfang und Ende: desde las seis hasta las diez.",
+      "examples": [
+        {
+          "es": "El bus sale a las ocho.",
+          "de": "Der Bus fährt um acht ab."
+        },
+        {
+          "es": "El tren llega a la una.",
+          "de": "Der Zug kommt um ein Uhr an."
+        },
+        {
+          "es": "¿A qué hora sale el bus?",
+          "de": "Um wie viel Uhr fährt der Bus ab?"
+        },
+        {
+          "es": "El bus llega en diez minutos.",
+          "de": "Der Bus kommt in zehn Minuten."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Der Bus fährt um acht Uhr ab.",
+          "es": "El bus sale a las ocho."
+        },
+        {
+          "de": "Der Zug kommt um 9:30 Uhr an.",
+          "es": "El tren llega a las nueve y media."
+        },
+        {
+          "de": "Um wie viel Uhr fährt der Bus ab?",
+          "es": "¿A qué hora sale el bus?"
+        },
+        {
+          "de": "Der Bus kommt in zehn Minuten.",
+          "es": "El bus llega en diez minutos."
+        },
+        {
+          "de": "Der Zug fährt um ein Uhr ab.",
+          "es": "El tren sale a la una."
+        }
+      ]
+    },
+    {
+      "id": "g-hay-que",
+      "kind": "grammar",
+      "title": "hay que: man muss",
+      "explanation": "Hay que mit Infinitiv heißt man muss oder es ist nötig. Die Form ist unpersönlich und bleibt immer gleich: hay que cargar la Bip, hay que esperar. Sie sagt nicht, wer muss. Geht es um dich, sagst du necesito mit Infinitiv: necesito cambiar de línea. Für Anweisungen und Tipps im Alltag ist hay que sehr häufig.",
+      "examples": [
+        {
+          "es": "Hay que cargar la Bip.",
+          "de": "Man muss die Bip! aufladen."
+        },
+        {
+          "es": "Hay que cambiar de línea.",
+          "de": "Man muss die Linie wechseln."
+        },
+        {
+          "es": "Hay que esperar.",
+          "de": "Man muss warten."
+        },
+        {
+          "es": "Necesito tomar el bus.",
+          "de": "Ich muss den Bus nehmen."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Man muss die Bip! aufladen.",
+          "es": "Hay que cargar la Bip."
+        },
+        {
+          "de": "Man muss umsteigen.",
+          "es": "Hay que cambiar de línea.",
+          "accept": [
+            "Hay que hacer combinación."
+          ]
+        },
+        {
+          "de": "Man muss warten.",
+          "es": "Hay que esperar."
+        },
+        {
+          "de": "Ich muss den Bus nehmen.",
+          "es": "Necesito tomar el bus.",
+          "accept": [
+            "Necesito tomar la micro."
+          ]
+        },
+        {
+          "de": "Man muss hier aussteigen.",
+          "es": "Hay que bajarse aquí."
+        }
+      ]
+    },
+    {
+      "id": "g-fahrplan-verben",
+      "kind": "grammar",
+      "title": "sale, llega, pasa: Fahrplanverben",
+      "explanation": "Für Verkehrsmittel brauchst du meist nur die dritte Person: el bus sale (fährt ab), llega (kommt an), pasa (fährt vorbei). Salir ist unregelmäßig: salgo, sales, sale, salimos, salen. Der Ort steht danach mit de oder a: sale de Santiago, llega a Valparaíso. Von dir selbst sagst du me subo (ich steige ein) und me bajo (ich steige aus).",
+      "examples": [
+        {
+          "es": "El bus sale del terminal.",
+          "de": "Der Bus fährt vom Busbahnhof ab."
+        },
+        {
+          "es": "El tren llega a Santiago.",
+          "de": "Der Zug kommt in Santiago an."
+        },
+        {
+          "es": "La micro pasa por aquí.",
+          "de": "Die Micro fährt hier vorbei."
+        },
+        {
+          "es": "Me bajo aquí.",
+          "de": "Ich steige hier aus."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Der Bus fährt um neun ab.",
+          "es": "El bus sale a las nueve."
+        },
+        {
+          "de": "Der Zug kommt in Santiago an.",
+          "es": "El tren llega a Santiago."
+        },
+        {
+          "de": "Die Micro fährt hier vorbei.",
+          "es": "La micro pasa por aquí."
+        },
+        {
+          "de": "Ich steige hier aus.",
+          "es": "Me bajo aquí."
+        },
+        {
+          "de": "Ich steige hier ein.",
+          "es": "Me subo aquí."
+        }
+      ]
+    },
+    {
+      "id": "pair-tren-tres",
+      "kind": "pair",
+      "es": "tren",
+      "options": [
+        "tren",
+        "tres"
+      ]
+    },
+    {
+      "id": "pair-cuarto-cuatro",
+      "kind": "pair",
+      "es": "cuarto",
+      "options": [
+        "cuarto",
+        "cuatro"
+      ]
+    },
+    {
+      "id": "pair-hora-ahora",
+      "kind": "pair",
+      "es": "hora",
+      "options": [
+        "hora",
+        "ahora"
+      ]
+    },
+    {
+      "id": "pair-sale-sal",
+      "kind": "pair",
+      "es": "sale",
+      "options": [
+        "sale",
+        "sal"
+      ]
+    },
+    {
+      "id": "pair-pare-para",
+      "kind": "pair",
+      "es": "pare",
+      "options": [
+        "pare",
+        "para"
+      ]
+    }
+  ]
+}

@@ -35,6 +35,11 @@ const JOBS = [
     crop: { left: 0.125, top: 0, width: 0.75, height: 1 },
     outputs: [{ name: 'einkaufen.webp', width: 160, height: 160, maxKb: 25 }],
   },
+  {
+    file: 'Bus 213e en Parque Forestal, Santiago 20230421.jpg',
+    crop: { left: 0.04, top: 0.0, width: 0.667, height: 1 },
+    outputs: [{ name: 'unterwegs.webp', width: 160, height: 160, maxKb: 25 }],
+  },
 ];
 
 async function download(file) {

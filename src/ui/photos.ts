@@ -65,6 +65,17 @@ const bySituation: Record<string, Photo> = {
     page: commons('Condimentos_en_la_Vega_Central.jpg'),
     edit: 'zugeschnitten und verkleinert',
   },
+  '04-unterwegs': {
+    src: url('unterwegs.webp'),
+    width: 160,
+    height: 160,
+    alt: 'Roter Stadtbus der Red Movilidad auf einer Kopfsteinpflasterstraße unter Herbstbäumen',
+    author: 'Carlos Figueroa Rojas',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: deed('by-sa/4.0'),
+    page: commons('Bus_213e_en_Parque_Forestal,_Santiago_20230421.jpg'),
+    edit: 'zugeschnitten und verkleinert',
+  },
 };
 
 /** Foto der Situation, oder null, wenn es keins gibt (dann zeigt die Zeile kein Bild). */
