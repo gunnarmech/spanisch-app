@@ -2746,18 +2746,6 @@
       "hash": "adb90b322f3179011d780fad1610ac86c5222d4a"
     }
   ],
-  "d-carrete-en-casa-7": [
-    {
-      "voice": "cl-f",
-      "speed": "normal",
-      "hash": "9f6a633409df96220ce44e1bd3442cce5a387b17"
-    },
-    {
-      "voice": "cl-f",
-      "speed": "fast",
-      "hash": "4ad0695b059f0350892f1262c2a3455818d02e6b"
-    }
-  ],
   "d-carrete-en-casa-8": [
     {
       "voice": "cl-m",
@@ -2804,18 +2792,6 @@
       "voice": "cl-f",
       "speed": "fast",
       "hash": "9d9a3db528ee488147557cdc75a16110703dc93b"
-    }
-  ],
-  "d-taco-en-la-avenida-4": [
-    {
-      "voice": "cl-m",
-      "speed": "normal",
-      "hash": "ec6307e5433128664d5aa797595c6810bda5a733"
-    },
-    {
-      "voice": "cl-m",
-      "speed": "fast",
-      "hash": "53c56b78e48275387e2640c008747f67b5ad6c8d"
     }
   ],
   "d-taco-en-la-avenida-5": [
@@ -3504,6 +3480,74 @@
       "voice": "cl-f",
       "speed": "slow",
       "hash": "dac9f1f138b455dc1dc4ac917f92bab2171ad5b5"
+    }
+  ],
+  "d-carrete-en-casa-7": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "dbea73ae4eb15077015ad3fa305fc6adc89de83c"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "fast",
+      "hash": "109296e034783f122c8c3e2556ee80aa7b34e5b7"
+    }
+  ],
+  "d-taco-en-la-avenida-4": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "c13c6f816ec7041110dc6c4502144f4f3bc4fe3f"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "fast",
+      "hash": "aad2c40bb974932618e33f5e261323540463f1e0"
+    }
+  ],
+  "g-chilenisch-hoeren-ex5": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "f2e0f27229b7f7d614c7f7149a85803b706579b9"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "4e987d695cde1b1a68cfc322558b9a7e747a8f46"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "3e4770906125af2c9f45eb8a7a3df49de0fec433"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "d87409609e5dbb3035f4943dc4589e841ded64fd"
+    }
+  ],
+  "g-chilenisch-hoeren-ex6": [
+    {
+      "voice": "cl-m",
+      "speed": "normal",
+      "hash": "7958ba490b98f768264d62a31bc6a05de1289cf9"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "29e4f8bd853632b2ab3000e93c608d95785ead57"
+    },
+    {
+      "voice": "cl-m",
+      "speed": "slow",
+      "hash": "7986500cdb70b17dbb0f0672088a21085e365eba"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "d711b9933f30d3d229cb94e588c159bbf15a04c6"
     }
   ]
 }

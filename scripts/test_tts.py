@@ -165,3 +165,24 @@ def test_chile_situation_gives_both_cl_voices_per_key():
     assert {j.voice for j in jobs_for("d-1-2", djobs)} == {"cl-m"}
     sj = jobs_for("s-1", tts.plan(chile_sit({"id": "s-1", "kind": "sentence", "es": "Ya po.", "de": "x"})))
     assert len(sj) == 5 and sum(j.speed == "fast" for j in sj) == 1
+
+
+def test_chile_fallback_never_uses_non_cl_voice(monkeypatch, tmp_path):
+    import asyncio
+
+    tried = []
+
+    async def fake_synth(text, voice, speed, path):
+        tried.append(voice)
+        raise RuntimeError("Dienst aus")
+
+    monkeypatch.setattr(tts, "_synthesize", fake_synth)
+    jobs = tts.plan(chile_sit(word()))
+    job = next(j for j in jobs if j.voice == "cl-f" and j.speed == "normal")
+    taken = {(j.key, j.voice, j.speed) for j in jobs}
+
+    async def go():
+        return await tts._render(job, tmp_path, taken, asyncio.Semaphore(1), True)
+
+    assert asyncio.run(go()) is None
+    assert tried and all(v.startswith("cl-") for v in tried)
