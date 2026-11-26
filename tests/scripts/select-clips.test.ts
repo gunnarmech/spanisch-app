@@ -1,6 +1,9 @@
 // @vitest-environment node
 import { describe, expect, test } from 'vitest';
-import { cleanText, clipFromSource, selectCandidates } from '../../scripts/select_clips';
+import { mkdtempSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { cleanText, clipFromSource, readIndex, selectCandidates } from '../../scripts/select_clips';
 
 const forms = new Set(['hola', 'me', 'gusta', 'mucho', 'el', 'café', 'tranquilo', 'va', 'a', 'estar', 'todo', 'bien']);
 const ids = new Set<string>();
@@ -28,5 +31,11 @@ describe('select_clips', () => {
     const out = selectCandidates(rows, ids, forms);
     expect(out.map((c) => c.es)).toEqual(['Me gusta mucho el café', 'Tranquilo va a estar todo bien']);
     expect(out.map((c) => c.gender).sort()).toEqual(['f', 'm']);
+  });
+
+  test('Zeile ohne Tab ist ein Fehler', () => {
+    const f = join(mkdtempSync(join(tmpdir(), 'idx-')), 'x.tsv');
+    writeFileSync(f, 'clf_1_2\tHola\nclf_1_3 ohne tab\n');
+    expect(() => readIndex(f)).toThrow(/Zeile 2/);
   });
 });

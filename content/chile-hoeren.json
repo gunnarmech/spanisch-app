@@ -351,13 +351,6 @@
    "source": "clf_02484_00831076488"
   },
   {
-   "id": "clip-02484-00892139482",
-   "es": "La cerveza cuesta solo treinta y cinco pesos",
-   "de": "Das Bier kostet nur fünfunddreißig Pesos.",
-   "gender": "f",
-   "source": "clf_02484_00892139482"
-  },
-  {
    "id": "clip-02484-00972988696",
    "es": "Resérvame tres entradas por favor para la función de un cuarto para las nueve",
    "de": "Reserviere mir bitte drei Karten für die Vorstellung um Viertel vor neun.",
@@ -556,7 +549,7 @@
   {
    "id": "clip-03397-00811045266",
    "es": "Te quiero pedir unas seis cajas de atún y treinta paquetes con botellas de agua",
-   "de": "Ich brauche etwa sechs Dosen Thunfisch und dreißig Packungen Wasserflaschen.",
+   "de": "Ich möchte etwa sechs Kisten Thunfisch und dreißig Packungen Wasserflaschen bestellen.",
    "gender": "m",
    "source": "clm_03397_00811045266"
   },
@@ -653,7 +646,7 @@
   },
   {
    "id": "clip-05223-01175909940",
-   "es": "Estoy bien emocionado, me voy a Tierra del Fuego",
+   "es": "Estoy bien emocionada, me voy a Tierra del Fuego",
    "de": "Ich freue mich sehr, ich fahre nach Feuerland.",
    "gender": "m",
    "source": "clm_05223_01175909940"
@@ -904,13 +897,6 @@
    "source": "clf_07508_01982287299"
   },
   {
-   "id": "clip-07508-01330033478",
-   "es": "Una máquina de escribir cuesta como cuatro mil pesos.",
-   "de": "Eine Schreibmaschine kostet ungefähr viertausend Pesos.",
-   "gender": "f",
-   "source": "clf_07508_01330033478"
-  },
-  {
    "id": "clip-07508-01352466950",
    "es": "Cuesta siete mil pesos, pero no cuesta el envío.",
    "de": "Es kostet siebentausend Pesos, aber der Versand kostet nichts.",
@@ -948,7 +934,7 @@
   {
    "id": "clip-08421-00010992088",
    "es": "Necesito una reservación en ese hotel para la noche del veintitrés y veinticuatro de octubre",
-   "de": "Ich brauche eine Reservierung in diesem Hotel für die Nacht vom dreiundzwanzigsten auf den vierundzwanzigsten Oktober.",
+   "de": "Ich brauche eine Reservierung in diesem Hotel für die Nacht des 23. und 24. Oktober.",
    "gender": "m",
    "source": "clm_08421_00010992088"
   },
@@ -1059,7 +1045,7 @@
   },
   {
    "id": "clip-08421-01936825383",
-   "es": "Hola Cristina, qué bueno que puedo hablar contigo",
+   "es": "Hola Cristina, qué bien que puedo hablar contigo",
    "de": "Hallo Cristina, schön, dass ich mit dir sprechen kann.",
    "gender": "f",
    "source": "clf_08421_01936825383"
@@ -1101,7 +1087,7 @@
   },
   {
    "id": "clip-08784-00248594341",
-   "es": "¿Qué necesito para postular a una tarjeta de crédito?",
+   "es": "¿Qué necesito para postular para una tarjeta de crédito?",
    "de": "Was brauche ich, um eine Kreditkarte zu beantragen?",
    "gender": "m",
    "source": "clm_08784_00248594341"
@@ -1406,13 +1392,6 @@
    "de": "Dieses Café schließt erst um elf Uhr nachts und hat sehr leckere Desserts.",
    "gender": "m",
    "source": "clm_09697_00193151402"
-  },
-  {
-   "id": "clip-09697-00291521777",
-   "es": "Los precios que manejan están entre cincuenta y ciento cincuenta pesos.",
-   "de": "Die Preise liegen zwischen fünfzig und hundertfünfzig Pesos.",
-   "gender": "m",
-   "source": "clm_09697_00291521777"
   },
   {
    "id": "clip-09697-00307005129",

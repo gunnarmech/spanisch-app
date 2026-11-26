@@ -1,6 +1,6 @@
 # Chile hören: Herkunft, Lizenz, Bearbeitung
 
-`chile-hoeren.json` enthält 231 echte chilenische Sätze mit deutscher Übersetzung. Die Aufnahmen liegen unter `public/audio/chile-echt/`.
+`chile-hoeren.json` enthält 228 echte chilenische Sätze mit deutscher Übersetzung. Die Aufnahmen liegen unter `public/audio/chile-echt/`.
 
 ## Quelle
 

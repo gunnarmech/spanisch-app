@@ -9,6 +9,7 @@ Ausgabe: public/audio/chile-echt/<clip-id>-cl-<f|m>-normal.mp3 und manifest.json
 Filter: Stille an Anfang und Ende entfernen, Lautheit normalisieren, mono, 64 kbit/s.
 """
 import argparse
+import contextlib
 import hashlib
 import json
 import re
@@ -75,13 +76,10 @@ def main() -> int:
 
     slr = Path(args.slr71)
     clips = json.loads(CLIPS.read_text(encoding="utf-8"))["clips"]
-    zips = {}
-    for g, name in ZIPS.items():
-        p = slr / name
-        if not p.exists():
-            print(f"{p} fehlt", file=sys.stderr)
+    for name in ZIPS.values():
+        if not (slr / name).exists():
+            print(f"{slr / name} fehlt", file=sys.stderr)
             return 1
-        zips[g] = zipfile.ZipFile(p)
 
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
     OUT.mkdir(parents=True, exist_ok=True)
@@ -92,12 +90,17 @@ def main() -> int:
     converted = skipped = 0
     durations = []
 
-    with tempfile.TemporaryDirectory(prefix="slr71-") as tmp:
-        tmpdir = Path(tmp)
+    with contextlib.ExitStack() as stack:
+        zips = {g: stack.enter_context(zipfile.ZipFile(slr / name)) for g, name in ZIPS.items()}
+        tmpdir = Path(stack.enter_context(tempfile.TemporaryDirectory(prefix="slr71-")))
         for c in clips:
             g = c["gender"]
             member = c["source"] + ".wav"
-            wav = zips[g].read(member)
+            try:
+                wav = zips[g].read(member)
+            except KeyError:
+                print(f"{member} fehlt in {slr / ZIPS[g]} (Clip {c['id']})", file=sys.stderr)
+                return 1
             h = source_hash(wav)
             target = OUT / mp3_name(c["id"], g)
             prev = next((e for e in old.get(c["id"], []) if e["voice"] == voice_of(g) and e["speed"] == "normal"), None)

@@ -2,7 +2,8 @@
 // Aufruf: npm run select:clips -- <slr71-ordner> <ausgabedatei>
 // Jeder Kandidat besteht validateClips (gleiche Regeln wie check:content).
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { basename, join } from 'node:path';
+import { basename, dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { tokens, validateClips } from '../src/content/validate';
 import type { ChileClip } from '../src/content/types';
 
@@ -70,15 +71,20 @@ export function selectCandidates(
   return out.sort((a, b) => a.id.localeCompare(b.id));
 }
 
-function readIndex(file: string): { source: string; text: string }[] {
-  return readFileSync(file, 'utf8')
+export function readIndex(file: string): { source: string; text: string }[] {
+  const out: { source: string; text: string }[] = [];
+  readFileSync(file, 'utf8')
     .split(/\r?\n/)
-    .filter(Boolean)
-    .map((l) => {
+    .forEach((l, n) => {
+      if (!l) return;
       const i = l.indexOf('\t');
-      return { source: l.slice(0, i), text: l.slice(i + 1) };
+      if (i < 0) throw new Error(`${file} Zeile ${n + 1}: kein Tab gefunden`);
+      out.push({ source: l.slice(0, i), text: l.slice(i + 1) });
     });
+  return out;
 }
+
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 const isMain = process.argv[1] !== undefined && basename(process.argv[1]) === 'select_clips.ts';
 if (isMain) {
@@ -96,7 +102,7 @@ if (isMain) {
     }
     rows.push(...readIndex(p));
   }
-  const { forms, ids } = knownFormsFromDir('content/situations');
+  const { forms, ids } = knownFormsFromDir(join(ROOT, 'content', 'situations'));
   const cands = selectCandidates(rows, ids, forms);
   writeFileSync(outFile, JSON.stringify({ clips: cands }, null, 1), 'utf8');
   const nf = cands.filter((c) => c.gender === 'f').length;
