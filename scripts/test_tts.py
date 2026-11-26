@@ -137,3 +137,31 @@ def test_hash_depends_on_text_voice_speed():
     assert h != tts.text_hash("b", "cl-f", "normal")
     assert h != tts.text_hash("a", "cl-m", "normal")
     assert h != tts.text_hash("a", "cl-f", "slow")
+
+
+def chile_sit(*items):
+    return {"id": "09-chile", "items": list(items)}
+
+
+def test_chile_situation_uses_only_cl_voices():
+    d = {"id": "d-1", "kind": "dialog", "title": "t", "lines": [
+        {"speaker": "A", "es": "Hola", "de": "x"}, {"speaker": "B", "es": "Hola", "de": "x"}]}
+    s = {"id": "s-1", "kind": "sentence", "es": "Ya po.", "de": "x"}
+    pair = {"id": "pair-1", "kind": "pair", "es": "po", "options": ["po", "pa"]}
+    g = {"id": "g-1", "kind": "grammar", "title": "t", "explanation": "e",
+         "examples": [{"es": "A", "de": "x"}], "exercises": [{"de": "x", "es": "B"}]}
+    jobs = tts.plan(chile_sit(word(examples=2), s, d, pair, g))
+    assert jobs and all(j.voice.startswith("cl-") for j in jobs)
+
+
+def test_chile_situation_gives_both_cl_voices_per_key():
+    jobs = jobs_for("w-hola", tts.plan(chile_sit(word())))
+    for speed in ("normal", "slow"):
+        assert {j.voice for j in jobs if j.speed == speed} == {"cl-f", "cl-m"}
+    d = {"id": "d-1", "kind": "dialog", "title": "t", "lines": [
+        {"speaker": "A", "es": "Hola", "de": "x"}, {"speaker": "B", "es": "Hola", "de": "x"}]}
+    djobs = tts.plan(chile_sit(d))
+    assert {j.voice for j in jobs_for("d-1-1", djobs)} == {"cl-f"}
+    assert {j.voice for j in jobs_for("d-1-2", djobs)} == {"cl-m"}
+    sj = jobs_for("s-1", tts.plan(chile_sit({"id": "s-1", "kind": "sentence", "es": "Ya po.", "de": "x"})))
+    assert len(sj) == 5 and sum(j.speed == "fast" for j in sj) == 1

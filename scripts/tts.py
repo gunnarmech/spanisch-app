@@ -34,6 +34,9 @@ CL_CYCLE = ["cl-f", "cl-m"]
 OTHER_CYCLE = ["mx-f", "co-m", "mx-m", "co-f"]
 DIALOG_B_CYCLE = ["mx-m", "co-m"]
 
+# Die Chile-Ebene nutzt nur chilenische Stimmen: beide cl-Stimmen je Schluessel.
+CHILE_ONLY_SITUATIONS = {"09-chile"}
+
 MAX_PARALLEL = 4
 
 
@@ -62,9 +65,12 @@ def _stable_index(key: str, n: int) -> int:
     return int(hashlib.sha1(key.encode("utf-8")).hexdigest(), 16) % n
 
 
-def _two_voices(key, text, speeds, fast_chile=False):
+def _two_voices(key, text, speeds, fast_chile=False, chile_only=False):
     cl = CL_CYCLE[_stable_index(key + ":cl", len(CL_CYCLE))]
-    other = OTHER_CYCLE[_stable_index(key + ":other", len(OTHER_CYCLE))]
+    if chile_only:
+        other = next(v for v in CL_CYCLE if v != cl)
+    else:
+        other = OTHER_CYCLE[_stable_index(key + ":other", len(OTHER_CYCLE))]
     jobs = []
     for speed in speeds:
         jobs.append(Job(key, text, cl, speed))
@@ -77,29 +83,30 @@ def _two_voices(key, text, speeds, fast_chile=False):
 def plan(situation: dict) -> list[Job]:
     """Reine Planung ohne Netz: welche Dateien zu welchem Text gehoeren."""
     jobs: list[Job] = []
+    co = situation.get("id") in CHILE_ONLY_SITUATIONS
     for item in situation["items"]:
         kind, iid = item["kind"], item["id"]
         if kind in ("word", "phrase"):
-            jobs += _two_voices(iid, item["es"], ("normal", "slow"))
+            jobs += _two_voices(iid, item["es"], ("normal", "slow"), chile_only=co)
             for n, ex in enumerate(item.get("examples", []), 1):
-                jobs += _two_voices(f"{iid}-ex{n}", ex["es"], ("normal", "slow"))
+                jobs += _two_voices(f"{iid}-ex{n}", ex["es"], ("normal", "slow"), chile_only=co)
         elif kind == "sentence":
-            jobs += _two_voices(iid, item["es"], ("normal", "slow"), fast_chile=True)
+            jobs += _two_voices(iid, item["es"], ("normal", "slow"), fast_chile=True, chile_only=co)
         elif kind == "dialog":
-            b_voice = DIALOG_B_CYCLE[_stable_index(iid, len(DIALOG_B_CYCLE))]
+            b_voice = "cl-m" if co else DIALOG_B_CYCLE[_stable_index(iid, len(DIALOG_B_CYCLE))]
             for n, line in enumerate(item["lines"], 1):
                 voice = "cl-f" if line["speaker"] == "A" else b_voice
                 for speed in ("normal", "fast"):
                     jobs.append(Job(f"{iid}-{n}", line["es"], voice, speed))
         elif kind == "grammar":
             for n, ex in enumerate(item.get("examples", []), 1):
-                jobs += _two_voices(f"{iid}-ex{n}", ex["es"], ("normal", "slow"))
+                jobs += _two_voices(f"{iid}-ex{n}", ex["es"], ("normal", "slow"), chile_only=co)
             for n, ex in enumerate(item.get("exercises", []), 1):
-                jobs += _two_voices(f"{iid}-{n}", ex["es"], ("normal", "slow"))
+                jobs += _two_voices(f"{iid}-{n}", ex["es"], ("normal", "slow"), chile_only=co)
         elif kind == "pair":
-            jobs += _two_voices(iid, item["es"], ("normal",))
+            jobs += _two_voices(iid, item["es"], ("normal",), chile_only=co)
             for n, opt in enumerate(item["options"], 1):
-                jobs += _two_voices(f"{iid}-opt{n}", opt, ("normal",))
+                jobs += _two_voices(f"{iid}-opt{n}", opt, ("normal",), chile_only=co)
     return jobs
 
 
@@ -156,10 +163,12 @@ async def _synthesize(text: str, voice: str, speed: str, path: Path) -> None:
         tmp.unlink(missing_ok=True)
 
 
-async def _render(job: Job, out: Path, taken: set, sem: asyncio.Semaphore):
+async def _render(job: Job, out: Path, taken: set, sem: asyncio.Semaphore, chile_only: bool = False):
     """Erzeugt die Datei, bei Fehler mit Ersatzstimme. Gibt den tatsaechlich erzeugten Job zurueck oder None."""
     for voice in [job.voice] + fallback_voices(job.voice):
         if voice != job.voice and (job.key, voice, job.speed) in taken:
+            continue
+        if chile_only and not voice.startswith("cl-"):
             continue
         candidate = replace(job, voice=voice)
         for _ in range(2):
@@ -190,7 +199,7 @@ async def run_situation(situation: dict, only_missing_flag: bool) -> bool:
     print(f"{sid}: {len(jobs)} Dateien geplant, {len(todo)} zu erzeugen")
 
     sem = asyncio.Semaphore(MAX_PARALLEL)
-    results = await asyncio.gather(*(_render(j, out, taken, sem) for j in todo))
+    results = await asyncio.gather(*(_render(j, out, taken, sem, sid in CHILE_ONLY_SITUATIONS) for j in todo))
     failed = [j for j, r in zip(todo, results) if r is None]
     final += [r for r in results if r is not None]
 
