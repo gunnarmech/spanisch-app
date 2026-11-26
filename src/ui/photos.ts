@@ -120,6 +120,17 @@ const bySituation: Record<string, Photo> = {
     page: commons('Hospital_de_Urgencia_Asistencia_P%C3%BAblica,_Santiago_20230325.jpg'),
     edit: 'zugeschnitten und verkleinert',
   },
+  '09-chile': {
+    src: url('chile.webp'),
+    width: 160,
+    height: 160,
+    alt: 'Enge Gasse in Valparaíso mit bunten Häusern in Blau, Violett und Grün',
+    author: 'Trinidadvj',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: deed('by-sa/3.0'),
+    page: commons('Multiples_colores,_Valpara%C3%ADso..JPG'),
+    edit: 'zugeschnitten und verkleinert',
+  },
 };
 
 /** Foto der Situation, oder null, wenn es keins gibt (dann zeigt die Zeile kein Bild). */

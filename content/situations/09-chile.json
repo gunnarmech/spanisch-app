@@ -1,0 +1,1410 @@
+{
+  "id": "09-chile",
+  "order": 9,
+  "title": "Chile-Ebene",
+  "items": [
+    {
+      "id": "p-ya-po",
+      "kind": "phrase",
+      "es": "ya po",
+      "de": "na los, ja klar",
+      "forms": [
+        "ya po",
+        "ya",
+        "po"
+      ],
+      "examples": [
+        {
+          "es": "Ya po, vamos.",
+          "de": "Na los, gehen wir."
+        }
+      ],
+      "note": "Ya po hat zwei Töne: freundlich zustimmend (ja klar, machen wir) oder leicht drängend (na los jetzt). Der Ton macht den Unterschied. Neutral sagst du nur ya.",
+      "chile": {
+        "note": "Ya po verbindet ya (okay) mit der Partikel po. Wiktionary führt po als chilenische, familiäre, nachdrückliche Partikel am Satzende. Unter Freunden und im Alltag normal, in sehr förmlichen Situationen lässt man sie weg.",
+        "source": "Wiktionary (es), Eintrag «po», Bedeutung «Partikel am Satzende, familiär, nachdrücklich», Region Chile, https://es.wiktionary.org/wiki/po"
+      }
+    },
+    {
+      "id": "w-po",
+      "kind": "word",
+      "es": "po",
+      "de": "eben, doch (Füllwort)",
+      "forms": [
+        "po",
+        "pues"
+      ],
+      "examples": [
+        {
+          "es": "Dale po, no seas fome.",
+          "de": "Komm schon, sei nicht so langweilig."
+        }
+      ],
+      "note": "Po ist eine Kurzform von pues und hat keine eigene Bedeutung. Es verstärkt das Wort davor und steht fast nie allein: sí po, no po, ya po. Neutral lässt du es einfach weg.",
+      "chile": {
+        "note": "Laut Wiktionary eine chilenische Partikel, familiär und nachdrücklich, von pues abgeleitet. Sehr häufig im Alltag, ohne negativen Beiklang.",
+        "source": "Wiktionary (es), Eintrag «po», Bedeutung «Partikel am Satzende, familiär, nachdrücklich», Region Chile, https://es.wiktionary.org/wiki/po"
+      }
+    },
+    {
+      "id": "p-si-po",
+      "kind": "phrase",
+      "es": "sí po",
+      "de": "ja klar, doch",
+      "forms": [
+        "sí po",
+        "si po"
+      ],
+      "examples": [
+        {
+          "es": "Sí po, claro que sí.",
+          "de": "Ja klar, natürlich."
+        }
+      ],
+      "note": "Sí po ist ein ganz normales, freundliches Ja. Neutral sagst du sí, claro.",
+      "chile": {
+        "note": "Sí mit der chilenischen Partikel po, die ein Ja nachdrücklicher und lockerer macht. Zur Partikel siehe den Eintrag po.",
+        "source": "Wiktionary (es), Eintrag «po», Bedeutung «Partikel am Satzende, familiär, nachdrücklich», Region Chile, https://es.wiktionary.org/wiki/po"
+      }
+    },
+    {
+      "id": "p-no-po",
+      "kind": "phrase",
+      "es": "no po",
+      "de": "nee, wirklich nicht",
+      "forms": [
+        "no po"
+      ],
+      "examples": [
+        {
+          "es": "No po, no tengo dinero.",
+          "de": "Nee, ich habe kein Geld."
+        }
+      ],
+      "note": "No po klingt wie ein freundliches, bestimmtes Nein, oft mit leichtem Bedauern. Neutral sagst du no.",
+      "chile": {
+        "note": "No mit der chilenischen Partikel po. Wie bei sí po verstärkt die Partikel nur den Ton. Zur Partikel siehe den Eintrag po.",
+        "source": "Wiktionary (es), Eintrag «po», Bedeutung «Partikel am Satzende, familiär, nachdrücklich», Region Chile, https://es.wiktionary.org/wiki/po"
+      }
+    },
+    {
+      "id": "p-al-tiro",
+      "kind": "phrase",
+      "es": "al tiro",
+      "de": "sofort, gleich",
+      "forms": [
+        "al tiro",
+        "tiro"
+      ],
+      "examples": [
+        {
+          "es": "Voy al tiro.",
+          "de": "Ich komme sofort."
+        }
+      ],
+      "note": "Al tiro heißt sofort oder gleich und passt zu Verben wie ir, llegar, volver. Neutral sagst du ahora mismo oder enseguida.",
+      "chile": {
+        "note": "Wiktionary führt al tiro als umgangssprachliche Wendung für Bolivien und Chile mit der Bedeutung inmediatamente. Im Alltag sehr häufig und unauffällig, auch gegenüber Fremden.",
+        "source": "Wiktionary (es), Eintrag «al tiro», Bedeutung «inmediatamente, en un futuro próximo», Region Chile, https://es.wiktionary.org/wiki/al_tiro"
+      }
+    },
+    {
+      "id": "w-fome",
+      "kind": "word",
+      "es": "fome",
+      "de": "langweilig, fad",
+      "forms": [
+        "fome"
+      ],
+      "examples": [
+        {
+          "es": "Esta película es muy fome.",
+          "de": "Dieser Film ist sehr langweilig."
+        }
+      ],
+      "note": "Fome beschreibt etwas Langweiliges, Fades oder Uninteressantes, auch Menschen ohne Ausstrahlung. Neutral sagst du aburrido.",
+      "chile": {
+        "note": "Wiktionary führt fome als chilenisches, umgangssprachliches Adjektiv mit den Bedeutungen ohne Witz, langweilig und (von Personen) wenig unterhaltsam; Synonyme sind aburrido und soso. Locker, aber nicht beleidigend.",
+        "source": "Wiktionary (es), Eintrag «fome», Bedeutung «langweilig, ohne Witz oder Interesse», Region Chile, https://es.wiktionary.org/wiki/fome"
+      }
+    },
+    {
+      "id": "w-bacan",
+      "kind": "word",
+      "es": "bacán",
+      "de": "toll, super",
+      "forms": [
+        "bacán",
+        "bacan"
+      ],
+      "examples": [
+        {
+          "es": "¡Qué bacán este lugar!",
+          "de": "Wie toll dieser Ort ist!"
+        }
+      ],
+      "note": "Bacán heißt toll oder super und wird für Orte, Pläne und Dinge benutzt. Neutral sagst du genial oder muy bueno.",
+      "chile": {
+        "note": "Wiktionary führt bacán in dieser Bedeutung (de muy buena calidad) als umgangssprachlich für Chile, Kolumbien, Kuba und Peru, mit Beispiel aus der chilenischen Zeitung La Cuarta. Im Alltag üblich, völlig harmlos.",
+        "source": "Wiktionary (es), Eintrag «bacán», Bedeutung «de muy buena calidad», Region Chile, https://es.wiktionary.org/wiki/bacán"
+      }
+    },
+    {
+      "id": "w-harto",
+      "kind": "word",
+      "es": "harto",
+      "de": "viel, sehr",
+      "forms": [
+        "harto",
+        "harta",
+        "hartos",
+        "hartas"
+      ],
+      "examples": [
+        {
+          "es": "Hoy hace harto calor.",
+          "de": "Heute ist es richtig heiß."
+        }
+      ],
+      "note": "Harto bedeutet in Chile viel oder sehr: harta gente (viele Leute), harto frío (sehr kalt). Als Adjektiv richtet es sich nach dem Wort. In Spanien heißt es dagegen eher satt oder genervt.",
+      "chile": {
+        "note": "Laut Wiktionary (mit Verweis auf das Diccionario de americanismos) steht harto in Chile und weiteren Ländern Amerikas für demasiado oder mucho, in Chile auch für muy. Sehr häufig und neutral.",
+        "source": "Wiktionary (es), Eintrag «harto», Bedeutung «muy, mucho, demasiado», Region Chile, https://es.wiktionary.org/wiki/harto"
+      }
+    },
+    {
+      "id": "w-luca",
+      "kind": "word",
+      "es": "luca",
+      "de": "Tausend (Pesos)",
+      "forms": [
+        "luca",
+        "lucas"
+      ],
+      "examples": [
+        {
+          "es": "Son dos lucas.",
+          "de": "Das sind zweitausend Pesos."
+        }
+      ],
+      "note": "Una luca sind tausend Pesos, dos lucas zweitausend. Du hörst es beim Preis auf Märkten und unter Freunden. Im Geschäft steht trotzdem die volle Zahl auf dem Schild.",
+      "chile": {
+        "note": "Wiktionary führt luca mit der Bedeutung mil unidades de una divisa (umgangssprachlich, meist im Plural) für Argentinien, Uruguay und Chile. In Chile bezieht es sich auf Pesos. Alltagssprache, unauffällig.",
+        "source": "Wiktionary (es), Eintrag «luca», Bedeutung «mil unidades de una divisa», Region Chile, https://es.wiktionary.org/wiki/luca"
+      }
+    },
+    {
+      "id": "w-pololo",
+      "kind": "word",
+      "es": "pololo",
+      "de": "fester Freund",
+      "forms": [
+        "pololo"
+      ],
+      "examples": [
+        {
+          "es": "Mi pololo es chileno.",
+          "de": "Mein Freund ist Chilene."
+        }
+      ],
+      "note": "Pololo ist der feste Freund, polola die feste Freundin. Gemeint ist eine feste, aber noch nicht eheliche Beziehung. Neutral sagst du novio, novia oder pareja.",
+      "chile": {
+        "note": "Wiktionary führt pololo als Adjektiv oder Nomen für Bolivien und Chile (en una relación sentimental estable), mit Beleg aus Donosos Roman El obsceno pájaro de la noche. Alltagssprache, in allen Altersgruppen üblich.",
+        "source": "Wiktionary (es), Eintrag «pololo», Bedeutung «en una relación sentimental estable», Region Chile, https://es.wiktionary.org/wiki/pololo"
+      }
+    },
+    {
+      "id": "w-polola",
+      "kind": "word",
+      "es": "polola",
+      "de": "feste Freundin",
+      "forms": [
+        "polola",
+        "pololas"
+      ],
+      "examples": [
+        {
+          "es": "Mi polola trabaja en el centro.",
+          "de": "Meine Freundin arbeitet in der Innenstadt."
+        }
+      ],
+      "note": "Polola ist die feste Freundin, die männliche Form heißt pololo. Neutral sagst du novia oder pareja.",
+      "chile": {
+        "note": "Wiktionary führt polola für Bolivien und Chile mit dem Synonym novia. Alltagssprache, unauffällig.",
+        "source": "Wiktionary (es), Eintrag «polola», Bedeutung «novia», Region Chile, https://es.wiktionary.org/wiki/polola"
+      }
+    },
+    {
+      "id": "w-pololear",
+      "kind": "word",
+      "es": "pololear",
+      "de": "zusammen sein, ein Paar sein",
+      "forms": [
+        "pololear",
+        "pololeando",
+        "pololeo"
+      ],
+      "examples": [
+        {
+          "es": "Ellos están pololeando.",
+          "de": "Die beiden sind zusammen."
+        }
+      ],
+      "note": "Pololear heißt, in einer festen Beziehung zu sein, ohne verheiratet zu sein. Neutral sagst du salir con alguien oder ser pareja.",
+      "chile": {
+        "note": "Wiktionary führt pololear für Bolivien und Chile als umgangssprachliches Verb für eine mehr oder weniger stabile Beziehung; das Nomen pololeo steht ebenfalls dort. Alltagssprache, harmlos.",
+        "source": "Wiktionary (es), Eintrag «pololear», Bedeutung «estar en una relación sentimental estable», Region Chile, https://es.wiktionary.org/wiki/pololear"
+      }
+    },
+    {
+      "id": "w-carrete",
+      "kind": "word",
+      "es": "carrete",
+      "de": "Party, Ausgehen",
+      "forms": [
+        "carrete",
+        "carretes"
+      ],
+      "examples": [
+        {
+          "es": "Mañana hay carrete en mi casa.",
+          "de": "Morgen gibt es eine Party bei mir."
+        }
+      ],
+      "note": "Carrete ist eine Party oder ein Abend mit Freunden. In Spanien ist ein carrete dagegen eine Garnrolle oder Filmspule. Neutral sagst du fiesta.",
+      "chile": {
+        "note": "Wiktionary führt carrete in Bedeutung 6 (fiesta, diversión social) und 7 (jede Aktivität mit Freunden) als Chile und jugendsprachlich, mit Verweis auf das Diccionario de americanismos. Besonders unter jungen Leuten üblich, nicht anstößig.",
+        "source": "Wiktionary (es), Eintrag «carrete», Bedeutung «fiesta, diversión social con amigos», Region Chile, https://es.wiktionary.org/wiki/carrete"
+      }
+    },
+    {
+      "id": "w-taco",
+      "kind": "word",
+      "es": "taco",
+      "de": "Stau",
+      "forms": [
+        "taco",
+        "tacos"
+      ],
+      "examples": [
+        {
+          "es": "Hay mucho taco en la avenida.",
+          "de": "Auf der Avenida ist viel Stau."
+        }
+      ],
+      "note": "Taco heißt in Chile auch Stau. Das taco aus Mexiko (gefüllte Tortilla) ist ein anderes Wort. Neutral sagst du atasco oder embotellamiento.",
+      "chile": {
+        "note": "Wiktionary führt taco in der Bedeutung acumulación de vehículos que obstaculizan el tránsito für Chile (und Medellín), mit den Synonymen atasco und embotellamiento. Alltagssprache, in Verkehrsmeldungen üblich.",
+        "source": "Wiktionary (es), Eintrag «taco», Bedeutung «acumulación de vehículos, Stau», Region Chile, https://es.wiktionary.org/wiki/taco"
+      }
+    },
+    {
+      "id": "w-copete",
+      "kind": "word",
+      "es": "copete",
+      "de": "alkoholisches Getränk",
+      "forms": [
+        "copete",
+        "copetes"
+      ],
+      "examples": [
+        {
+          "es": "Voy a comprar un copete.",
+          "de": "Ich kaufe mir einen Drink."
+        }
+      ],
+      "note": "Copete ist ein alkoholisches Getränk, oft ein Mixgetränk. Neutral sagst du bebida alcohólica oder trago.",
+      "chile": {
+        "note": "Wiktionary führt copete in dieser Bedeutung (bebida alcohólica) als umgangssprachlich für Chile. Üblich unter Freunden, nicht anstößig.",
+        "source": "Wiktionary (es), Eintrag «copete», Bedeutung «bebida alcohólica», Region Chile, https://es.wiktionary.org/wiki/copete"
+      }
+    },
+    {
+      "id": "w-guagua",
+      "kind": "word",
+      "es": "guagua",
+      "de": "Baby, Säugling",
+      "forms": [
+        "guagua",
+        "guaguas"
+      ],
+      "examples": [
+        {
+          "es": "La guagua duerme.",
+          "de": "Das Baby schläft."
+        }
+      ],
+      "note": "Guagua heißt in Chile Baby. Auf Kuba und den Kanaren ist eine guagua dagegen der Bus, in Chile nicht. Neutral sagst du bebé.",
+      "chile": {
+        "note": "Wiktionary führt guagua für Argentinien (Cuyo), Bolivien, Chile, Ecuador und Peru als Wort für niño recién nacido o de muy corta edad. Neutral und liebevoll, auch in Familie und Behörde gebräuchlich.",
+        "source": "Wiktionary (es), Eintrag «guagua», Bedeutung «niño recién nacido», Region Chile, https://es.wiktionary.org/wiki/guagua"
+      }
+    },
+    {
+      "id": "w-pucha",
+      "kind": "word",
+      "es": "pucha",
+      "de": "Mist, ach",
+      "forms": [
+        "pucha"
+      ],
+      "examples": [
+        {
+          "es": "Pucha, perdí la micro.",
+          "de": "Mist, ich habe die Micro verpasst."
+        }
+      ],
+      "note": "Pucha ist ein milder Ausruf bei Enttäuschung oder Ärger, ungefähr so stark wie Mist oder schade. Er gilt als harmlos.",
+      "chile": {
+        "note": "Wiktionary führt pucha als umgangssprachliche Interjektion für Überraschung, Enttäuschung oder Ärger in mehreren Ländern, darunter Chile, und leitet sie von hijuepucha ab. Als abgeschwächte Form harmlos; du kannst sie bedenkenlos benutzen.",
+        "source": "Wiktionary (es), Eintrag «pucha», Bedeutung «interjección: sorpresa, decepción, contrariedad», Region Chile, https://es.wiktionary.org/wiki/pucha"
+      }
+    },
+    {
+      "id": "w-pega",
+      "kind": "word",
+      "es": "pega",
+      "de": "Arbeit, Job",
+      "forms": [
+        "pega",
+        "pegas"
+      ],
+      "examples": [
+        {
+          "es": "Mañana tengo harta pega.",
+          "de": "Morgen habe ich viel Arbeit."
+        }
+      ],
+      "note": "Pega ist die Arbeit oder der Job: la pega, buscar pega. Neutral sagst du trabajo.",
+      "chile": {
+        "note": "Wiktionary führt pega in der Bedeutung empleo, ocupación en un trabajo remunerado als umgangssprachlich für Chile. Alltagssprache, harmlos.",
+        "source": "Wiktionary (es), Eintrag «pega», Bedeutung «empleo, ocupación en un trabajo remunerado», Region Chile, https://es.wiktionary.org/wiki/pega"
+      }
+    },
+    {
+      "id": "w-piola",
+      "kind": "word",
+      "es": "piola",
+      "de": "okay, angenehm unkompliziert",
+      "forms": [
+        "piola"
+      ],
+      "examples": [
+        {
+          "es": "Este hostal es piola.",
+          "de": "Dieses Hostel ist in Ordnung."
+        }
+      ],
+      "note": "Piola heißt, dass etwas angenehm, in Ordnung oder unauffällig gut ist, zum Beispiel ein Ort oder ein Mensch. Es lobt ruhig, nicht überschwänglich. Neutral sagst du bien oder agradable.",
+      "chile": {
+        "note": "Wiktionary führt piola für Chile mit mehreren umgangssprachlichen Bedeutungen: agradable, simpático und discreto sowie de buena calidad que cumple las expectativas sin ser sobresaliente. In anderen Ländern hat das Wort andere Bedeutungen, in Chile ist es freundlich gemeint.",
+        "source": "Wiktionary (es), Eintrag «piola», Bedeutung «de buena calidad que cumple las expectativas», Region Chile, https://es.wiktionary.org/wiki/piola"
+      }
+    },
+    {
+      "id": "w-bencina",
+      "kind": "word",
+      "es": "bencina",
+      "de": "Benzin",
+      "forms": [
+        "bencina"
+      ],
+      "examples": [
+        {
+          "es": "Necesito bencina.",
+          "de": "Ich brauche Benzin."
+        }
+      ],
+      "note": "In Chile sagt man bencina für Benzin. Gasolina versteht auch jeder, es ist aber seltener.",
+      "chile": {
+        "note": "Wiktionary führt bencina als Name für gasolina in Chile. Das ist dort das normale Wort, nicht nur Umgangssprache.",
+        "source": "Wiktionary (es), Eintrag «bencina», Bedeutung «gasolina», Region Chile, https://es.wiktionary.org/wiki/bencina"
+      }
+    },
+    {
+      "id": "w-bencinera",
+      "kind": "word",
+      "es": "bencinera",
+      "de": "Tankstelle",
+      "forms": [
+        "bencinera",
+        "bencineras"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde hay una bencinera?",
+          "de": "Wo gibt es eine Tankstelle?"
+        }
+      ],
+      "note": "Die bencinera ist die Tankstelle. Neutral sagst du gasolinera.",
+      "chile": {
+        "note": "Wiktionary führt bencinera als estación de venta de combustible, especialmente bencina, für Chile; als weiterer chilenischer Ausdruck steht dort bomba de bencina. Alltagssprache.",
+        "source": "Wiktionary (es), Eintrag «bencinera», Bedeutung «estación de venta de combustible», Region Chile, https://es.wiktionary.org/wiki/bencinera"
+      }
+    },
+    {
+      "id": "w-chela",
+      "kind": "word",
+      "es": "chela",
+      "de": "Bier",
+      "forms": [
+        "chela",
+        "chelas"
+      ],
+      "examples": [
+        {
+          "es": "Una chela, por favor.",
+          "de": "Ein Bier, bitte."
+        }
+      ],
+      "note": "Chela ist ein umgangssprachliches Wort für Bier. In der Bar bestellst du notfalls auch einfach cerveza.",
+      "chile": {
+        "note": "Wiktionary führt chela als umgangssprachliches Wort für Bier unter anderem für Bolivien, Chile, Mexiko und Peru; für Chile und Peru steht es dort als Synonym zu cerveza. Locker, aber harmlos.",
+        "source": "Wiktionary (es), Eintrag «chela», Bedeutung «cerveza», Region Chile, https://es.wiktionary.org/wiki/chela"
+      }
+    },
+    {
+      "id": "w-polera",
+      "kind": "word",
+      "es": "polera",
+      "de": "T-Shirt",
+      "forms": [
+        "polera",
+        "poleras"
+      ],
+      "examples": [
+        {
+          "es": "Esta polera es muy bonita.",
+          "de": "Dieses T-Shirt ist sehr schön."
+        }
+      ],
+      "note": "Polera ist das T-Shirt. In Argentinien meint das Wort dagegen einen Rollkragenpullover. Neutral sagst du camiseta.",
+      "chile": {
+        "note": "Wiktionary führt polera für Bolivien und Chile als prenda de vestir ligera para el torso, mit camiseta als Synonym. Alltagssprache im Laden und auf der Straße.",
+        "source": "Wiktionary (es), Eintrag «polera», Bedeutung «camiseta», Region Chile, https://es.wiktionary.org/wiki/polera"
+      }
+    },
+    {
+      "id": "w-guata",
+      "kind": "word",
+      "es": "guata",
+      "de": "Bauch",
+      "forms": [
+        "guata",
+        "guatas"
+      ],
+      "examples": [
+        {
+          "es": "Me duele la guata.",
+          "de": "Mir tut der Bauch weh."
+        }
+      ],
+      "note": "Guata ist der Bauch, besonders bei Beschwerden: me duele la guata. Neutral sagst du el estómago oder la barriga.",
+      "chile": {
+        "note": "Wiktionary führt guata als sección inferior y anterior del tronco für Argentinien, Bolivien, Chile, Ecuador und Peru (Synonyme barriga, panza, vientre). Gebräuchlich, auch gegenüber Ärzten.",
+        "source": "Wiktionary (es), Eintrag «guata», Bedeutung «barriga, vientre», Region Chile, https://es.wiktionary.org/wiki/guata"
+      }
+    },
+    {
+      "id": "p-que-lata",
+      "kind": "phrase",
+      "es": "¡qué lata!",
+      "de": "wie lästig!, wie langweilig!",
+      "forms": [
+        "qué lata"
+      ],
+      "examples": [
+        {
+          "es": "¡Qué lata esperar tanto!",
+          "de": "Wie lästig, so lange zu warten!"
+        }
+      ],
+      "note": "Lata heißt hier etwas Lästiges, Langweiliges. Die Dose (lata) aus dem Einkaufen ist ein anderes Wort. Neutral sagst du qué aburrido.",
+      "chile": {
+        "note": "Wiktionary führt lata in der Bedeutung cosa monótona, aburrida, sin interés für Chile und verweist auf fome und latero. Alltagssprache, harmlos.",
+        "source": "Wiktionary (es), Eintrag «lata», Bedeutung «cosa monótona, aburrida, sin interés», Region Chile, https://es.wiktionary.org/wiki/lata"
+      }
+    },
+    {
+      "id": "w-choro",
+      "kind": "word",
+      "es": "choro",
+      "de": "Miesmuschel",
+      "forms": [
+        "choro",
+        "choros",
+        "choritos"
+      ],
+      "examples": [
+        {
+          "es": "Quiero unos choros, por favor.",
+          "de": "Ich möchte ein paar Miesmuscheln, bitte."
+        }
+      ],
+      "note": "Choros sind Miesmuscheln. Auf der Speisekarte steht oft choritos al vapor (gedämpft). Neutral kennst du das Wort mejillón.",
+      "chile": {
+        "note": "Wiktionary führt choro für Argentinien, Chile und Peru als Name bestimmter essbarer Muscheln, in Chile mit marisco als Synonym. In der Küche ein neutrales Wort. Das Wort hat auch andere Bedeutungen, hier geht es nur um die Muschel.",
+        "source": "Wiktionary (es), Eintrag «choro», Bedeutung «molusco bivalvo comestible», Region Chile, https://es.wiktionary.org/wiki/choro"
+      }
+    },
+    {
+      "id": "p-cachai",
+      "kind": "phrase",
+      "es": "¿cachái?",
+      "de": "verstehst du?, kapiert?",
+      "forms": [
+        "cachái",
+        "cachai"
+      ],
+      "examples": [
+        {
+          "es": "Hablo poco español, ¿cachái?",
+          "de": "Ich spreche wenig Spanisch, verstehst du?"
+        }
+      ],
+      "note": "Cachái ist ein Füllwort am Satzende, ungefähr wie weißt du, verstehst du, ne. Du musst es nur erkennen, nicht selbst sagen. Neutral fragst du ¿entiendes?",
+      "chile": {
+        "note": "Wiktionary führt cachái als zweite Person von cachar in der chilenischen Du-Form (voseo) mit der Bedeutung verstehen, mitbekommen, als umgangssprachliche Muletilla (Füllwort). Sehr häufig, vor allem bei jungen Leuten, und nicht anstößig. Zu cachar siehe den Eintrag cachar.",
+        "source": "Wiktionary (es), Eintrag «cachái», Bedeutung «segunda persona de cachar (entender, darse cuenta)», Region Chile, https://es.wiktionary.org/wiki/cachái"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-cachar",
+      "kind": "word",
+      "es": "cachar",
+      "de": "verstehen, mitbekommen",
+      "forms": [
+        "cachar",
+        "cacho",
+        "cachas"
+      ],
+      "examples": [
+        {
+          "es": "No cacho mucho español.",
+          "de": "Ich verstehe nicht viel Spanisch."
+        }
+      ],
+      "note": "Cachar heißt verstehen oder mitbekommen. Vorsicht: In Chile hat cachar auch eine vulgäre sexuelle Bedeutung. Du verstehst es, benutzt es aber nicht selbst. Neutral sagst du entender.",
+      "chile": {
+        "note": "Wiktionary führt cachar mit der Bedeutung entender, comprender, darse cuenta als umgangssprachlich für Argentinien, Bolivien, Chile und Ecuador. Für Chile und Peru steht dort außerdem eine vulgäre Bedeutung (tener relaciones sexuales). Deshalb nur verstehen, nicht selbst sagen.",
+        "source": "Wiktionary (es), Eintrag «cachar», Bedeutung «entender, darse cuenta; Vorsicht, auch vulgäre Bedeutung», Region Chile, https://es.wiktionary.org/wiki/cachar"
+      },
+      "produce": false
+    },
+    {
+      "id": "p-como-estai",
+      "kind": "phrase",
+      "es": "¿cómo estái?",
+      "de": "wie geht's?",
+      "forms": [
+        "cómo estái",
+        "estái",
+        "estai"
+      ],
+      "examples": [
+        {
+          "es": "¿Cómo estái? ¿Todo bien?",
+          "de": "Wie geht's dir? Alles gut?"
+        }
+      ],
+      "note": "Estái ist die chilenische Du-Form von estar, in der Standardsprache estás. Du verstehst sie nur, fragst aber selbst ¿cómo estás?",
+      "chile": {
+        "note": "Die chilenische Du-Form (voseo verbal) macht aus -áis die Endung -ái: estáis wird estái. Die Wikipedia beschreibt diese Formen auf -ái und -ís als Form des informellen, familiären Registers; die förmliche Anrede bleibt usted. Alltagssprache, nicht grob, aber gegenüber Fremden ist die Standardform höflicher.",
+        "source": "Wikipedia (es), «Español chileno», Abschnitt Voseo, Conjugaciones en -ái e -ís, https://es.wikipedia.org/wiki/Espa%C3%B1ol_chileno"
+      },
+      "produce": false
+    },
+    {
+      "id": "p-que-queris",
+      "kind": "phrase",
+      "es": "¿qué querís?",
+      "de": "was willst du?",
+      "forms": [
+        "qué querís",
+        "querís",
+        "queris"
+      ],
+      "examples": [
+        {
+          "es": "¿Qué querís comer?",
+          "de": "Was willst du essen?"
+        }
+      ],
+      "note": "Querís ist die chilenische Du-Form von querer, standardsprachlich quieres. Du verstehst sie nur. Selbst fragst du ¿qué quieres?",
+      "chile": {
+        "note": "Die chilenische Du-Form (voseo verbal) endet bei Verben auf -er auf -ís: quieres wird querís. Beschrieben in der Wikipedia zum chilenischen Spanisch (Abschnitt Voseo, Formen auf -ái und -ís). Informell, in Familie und unter Freunden üblich.",
+        "source": "Wikipedia (es), «Español chileno», Abschnitt Voseo, Conjugaciones en -ái e -ís, https://es.wikipedia.org/wiki/Espa%C3%B1ol_chileno"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-weon",
+      "kind": "word",
+      "es": "weón",
+      "de": "Kerl, Typ, Alter (Vorsicht)",
+      "forms": [
+        "weón",
+        "weon",
+        "weones",
+        "huevón"
+      ],
+      "examples": [
+        {
+          "es": "¡Hola, weón! ¿Cómo estái?",
+          "de": "Hallo, Alter! Wie geht's?"
+        }
+      ],
+      "note": "Weón ist unter Freunden ein sehr häufiges Wort, ungefähr Alter oder Kumpel, kann aber je nach Ton auch eine schwere Beleidigung sein. Du erkennst es, sagst es aber nie selbst, schon gar nicht zu Fremden.",
+      "chile": {
+        "note": "Wiktionary führt weón als subestandarte Variante von huevón, umgangssprachlich und peyorativo je nach Kontext (depende del contexto), für Chile. Unter Freunden sehr verbreitet und freundschaftlich gemeint, zu Fremden kann es grob und beleidigend wirken. Deshalb nur verstehen.",
+        "source": "Wiktionary (es), Eintrag «weón», Bedeutung «variante subestándar de huevón; peyorativo según el contexto», Region Chile, https://es.wiktionary.org/wiki/weón"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-flaite",
+      "kind": "word",
+      "es": "flaite",
+      "de": "asozial, prollig (abwertend)",
+      "forms": [
+        "flaite",
+        "flaites"
+      ],
+      "examples": [
+        {
+          "es": "Dicen que ese barrio es flaite.",
+          "de": "Man sagt, dass dieses Viertel prollig sei."
+        }
+      ],
+      "note": "Flaite ist ein abwertendes Wort für Menschen oder Orte, die als sozial niedrig und nah am Kriminellen gelten. Es ist herablassend gemeint. Du verstehst es, sagst es aber nicht.",
+      "chile": {
+        "note": "Wiktionary führt flaite für Chile als umgangssprachliches, despectivo Adjektiv für eine Person, die als sozial niedrig und marginal nah gilt, mit ungebildeten Gewohnheiten und aggressivem Verhalten. Das Wort ist herabsetzend und trifft eine soziale Schicht. Nur verstehen.",
+        "source": "Wiktionary (es), Eintrag «flaite», Bedeutung «despectivo: persona socialmente inferior, cercana a la marginalidad», Region Chile, https://es.wiktionary.org/wiki/flaite"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-cuatico",
+      "kind": "word",
+      "es": "cuático",
+      "de": "übertrieben, verrückt",
+      "forms": [
+        "cuático",
+        "cuatico",
+        "cuática",
+        "cuaticos"
+      ],
+      "examples": [
+        {
+          "es": "Es cuático lo que dices.",
+          "de": "Was du sagst, ist verrückt."
+        }
+      ],
+      "note": "Cuático heißt übertrieben, schräg oder verrückt, je nach Zusammenhang positiv oder negativ. Es ist Jugendsprache und zu vielseitig, um es sicher selbst zu benutzen.",
+      "chile": {
+        "note": "Wiktionary führt cuático als umgangssprachliches Adjektiv für Chile mit den Bedeutungen exagerado (Synonym escandaloso), excéntrico und esnob. Weil die Bedeutung stark vom Ton abhängt, nur verstehen.",
+        "source": "Wiktionary (es), Eintrag «cuático», Bedeutung «exagerado, excéntrico, esnob», Region Chile, https://es.wiktionary.org/wiki/cuático"
+      },
+      "produce": false
+    },
+    {
+      "id": "p-la-raja",
+      "kind": "phrase",
+      "es": "la raja",
+      "de": "der Hammer, super",
+      "forms": [
+        "la raja",
+        "raja"
+      ],
+      "examples": [
+        {
+          "es": "Esta playa es la raja.",
+          "de": "Dieser Strand ist der Hammer."
+        }
+      ],
+      "note": "La raja heißt sehr gut, der Hammer. Das Wort raja hat zugleich eine derbe Grundbedeutung. Deshalb ist die Wendung unter Freunden üblich, aber nicht höflich. Du verstehst sie, sagst sie aber nicht.",
+      "chile": {
+        "note": "Wiktionary führt la raja als Wendung für Chile mit der Bedeutung muy bueno, excelente und markiert sie als malsonante (derb), weil raja in Chile auch den Hintern bezeichnet. Unter Freunden verbreitet, für Gäste und Fremde nicht passend.",
+        "source": "Wiktionary (es), Eintrag «raja», Bedeutung «locución la raja: muy bueno, excelente; malsonante», Region Chile, https://es.wiktionary.org/wiki/raja"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-latero",
+      "kind": "word",
+      "es": "latero",
+      "de": "langweilig, nervig (Person)",
+      "forms": [
+        "latero",
+        "latera"
+      ],
+      "examples": [
+        {
+          "es": "Mi tío es muy latero.",
+          "de": "Mein Onkel ist sehr langweilig."
+        }
+      ],
+      "note": "Latero ist ein Mensch, der langweilig redet oder nervt. Ein Verwandter von lata. Du erkennst es, es klingt aber leicht abwertend.",
+      "chile": {
+        "note": "Wiktionary führt latero für Chile als umgangssprachlich für jemanden, der über uninteressante Dinge redet und die Zuhörer langweilt (Synonyme aburridor, cansador, fome). Leicht abwertend, deshalb nur verstehen.",
+        "source": "Wiktionary (es), Eintrag «latero», Bedeutung «persona que habla cosas sin interés», Region Chile, https://es.wiktionary.org/wiki/latero"
+      },
+      "produce": false
+    },
+    {
+      "id": "p-pasarlo-chancho",
+      "kind": "phrase",
+      "es": "pasarlo chancho",
+      "de": "sich bestens amüsieren",
+      "forms": [
+        "pasarlo chancho"
+      ],
+      "examples": [
+        {
+          "es": "Lo pasamos chancho en la playa.",
+          "de": "Wir haben uns am Strand bestens amüsiert."
+        }
+      ],
+      "note": "Pasarlo chancho heißt sich prächtig amüsieren, wörtlich wie ein Schwein. Es klingt in Chile fröhlich, nicht abwertend. Neutral sagst du pasarlo muy bien.",
+      "chile": {
+        "note": "Die spanische Wikipedia nennt pasarlo chancho (pasarlo bien) unter den typischen Wendungen des chilenischen Spanisch. Alltagssprache, nur als Wendung zu verstehen.",
+        "source": "Wikipedia (es), «Español chileno», Abschnitt Léxico, https://es.wikipedia.org/wiki/Espa%C3%B1ol_chileno"
+      },
+      "produce": false
+    },
+    {
+      "id": "p-hacer-una-vaca",
+      "kind": "phrase",
+      "es": "hacer una vaca",
+      "de": "zusammenlegen, Geld sammeln",
+      "forms": [
+        "hacer una vaca",
+        "una vaca"
+      ],
+      "examples": [
+        {
+          "es": "Hagamos una vaca para el regalo.",
+          "de": "Legen wir zusammen für das Geschenk."
+        }
+      ],
+      "note": "Hacer una vaca heißt, dass mehrere Leute Geld für etwas Gemeinsames zusammenlegen, etwa für ein Geschenk. Das Wort vaca bedeutet hier nicht die Kuh. Neutral sagst du juntar dinero.",
+      "chile": {
+        "note": "Die spanische Wikipedia nennt hacer una vaca (donar dinero para un fin común entre varias personas) unter den typischen Wendungen des chilenischen Spanisch. Alltagssprache, harmlos, nur verstehen.",
+        "source": "Wikipedia (es), «Español chileno», Abschnitt Léxico, https://es.wikipedia.org/wiki/Espa%C3%B1ol_chileno"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-caleta",
+      "kind": "word",
+      "es": "caleta",
+      "de": "viel, eine Menge",
+      "forms": [
+        "caleta"
+      ],
+      "examples": [
+        {
+          "es": "Hay caleta de gente.",
+          "de": "Es sind eine Menge Leute da."
+        }
+      ],
+      "note": "Caleta heißt viel, eine Menge, oft als caleta de. Es ist Jugendsprache und wird nicht von allen benutzt. Das Wort hat auch andere Bedeutungen, etwa kleine Bucht für Fischer.",
+      "chile": {
+        "note": "Wiktionary führt caleta für Chile als jergal juvenil (Jugendsprache) mit der Bedeutung mucho, en gran cantidad. Deshalb als Verständniswort geführt, nicht zum Selbersagen.",
+        "source": "Wiktionary (es), Eintrag «caleta», Bedeutung «mucho, en gran cantidad; jergal juvenil», Region Chile, https://es.wiktionary.org/wiki/caleta"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-pituto",
+      "kind": "word",
+      "es": "pituto",
+      "de": "Beziehungen, Vitamin B",
+      "forms": [
+        "pituto",
+        "pitutos"
+      ],
+      "examples": [
+        {
+          "es": "Consiguió la pega por un pituto.",
+          "de": "Er hat den Job über Beziehungen bekommen."
+        }
+      ],
+      "note": "Pituto ist eine Verbindung zu einer einflussreichen Person, mit der man einen Vorteil bekommt, etwa einen Job. Im Deutschen entspricht ihm Vitamin B. Es kann auch ein Gelegenheitsjob sein.",
+      "chile": {
+        "note": "Wiktionary führt pituto für Chile als umgangssprachlich für relación con alguien influyente que se utiliza para obtener una ventaja, en particular un trabajo, und als trabajo esporádico e informal. Etwas kritisch gemeint (unfaire Vorteile), deshalb nur verstehen.",
+        "source": "Wiktionary (es), Eintrag «pituto», Bedeutung «relación con alguien influyente para obtener una ventaja», Region Chile, https://es.wiktionary.org/wiki/pituto"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-huaso",
+      "kind": "word",
+      "es": "huaso",
+      "de": "chilenischer Landmann, Reiter",
+      "forms": [
+        "huaso",
+        "huasos"
+      ],
+      "examples": [
+        {
+          "es": "El huaso baila cueca.",
+          "de": "Der Huaso tanzt Cueca."
+        }
+      ],
+      "note": "Der huaso ist der traditionelle Landmann und Reiter Zentralchiles, ein Symbol des Landes. Du siehst ihn beim Rodeo und beim Nationalfeiertag im September.",
+      "chile": {
+        "note": "Wiktionary führt huaso als campesino o peón rural de la zona central de Chile, símbolo de la chilenidad, und als Mann in der typischen Tracht zum Tanzen der cueca. Neutrales Kulturwort. Das Wort hat auch eine abwertende Bedeutung (ungeschickt in der Stadt), deshalb nur verstehen.",
+        "source": "Wiktionary (es), Eintrag «huaso», Bedeutung «campesino de la zona central de Chile, símbolo de la chilenidad», Region Chile, https://es.wiktionary.org/wiki/huaso"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-cuico",
+      "kind": "word",
+      "es": "cuico",
+      "de": "Schickimicki, Angeber (abwertend)",
+      "forms": [
+        "cuico",
+        "cuicos",
+        "cuica"
+      ],
+      "examples": [
+        {
+          "es": "Dicen que ese barrio es cuico.",
+          "de": "Man sagt, dass dieses Viertel schickimicki ist."
+        }
+      ],
+      "note": "Cuico ist abwertend für Leute, die zur reichen Oberschicht gehören oder so tun. Es ist herablassend, wie flaite in die andere Richtung. Du erkennst es, sagst es aber nicht.",
+      "chile": {
+        "note": "Wiktionary führt cuico für Chile als despectivo für eine Person, die ostentativ zur wohlhabenden Gesellschaftsschicht gehört oder dies vortäuscht (Synonym snob). Herabsetzend, deshalb nur verstehen.",
+        "source": "Wiktionary (es), Eintrag «cuico», Bedeutung «despectivo: persona que ostenta pertenecer a una clase social pudiente», Region Chile, https://es.wiktionary.org/wiki/cuico"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-lolo",
+      "kind": "word",
+      "es": "lolo",
+      "de": "Jugendlicher",
+      "forms": [
+        "lolo",
+        "lola",
+        "lolos",
+        "lolas"
+      ],
+      "examples": [
+        {
+          "es": "Los lolos juegan fútbol en la plaza.",
+          "de": "Die Jugendlichen spielen Fußball auf dem Platz."
+        }
+      ],
+      "note": "Lolo (lola) ist ein Jugendlicher oder eine Jugendliche, älter als ein Kind, noch kein Erwachsener. Umgangssprachlich und freundlich.",
+      "chile": {
+        "note": "Wiktionary führt lolo als umgangssprachliches Adjektiv für Chile für eine junge Person zwischen Kind und Erwachsenem (Synonyme adolescente, joven, muchacho). Harmlos, aber Jugendsprache, deshalb nur verstehen.",
+        "source": "Wiktionary (es), Eintrag «lolo», Bedeutung «persona joven, adolescente», Region Chile, https://es.wiktionary.org/wiki/lolo"
+      },
+      "produce": false
+    },
+    {
+      "id": "w-gallo",
+      "kind": "word",
+      "es": "gallo",
+      "de": "Typ, Kerl",
+      "forms": [
+        "gallo",
+        "gallos"
+      ],
+      "examples": [
+        {
+          "es": "Ese gallo es mi vecino.",
+          "de": "Der Typ da ist mein Nachbar."
+        }
+      ],
+      "note": "Gallo heißt in Chile auch ein beliebiger Mann, ein Typ. Wörtlich ist es der Hahn. Du erkennst es, es ist locker und gegenüber Fremden leicht respektlos.",
+      "chile": {
+        "note": "Wiktionary führt gallo für Chile als persona cualquiera (Synonym tipo) und nennt es auch als Anrede verwendbar. Alltagssprache, deshalb nur als Verständniswort.",
+        "source": "Wiktionary (es), Eintrag «gallo», Bedeutung «persona cualquiera», Region Chile, https://es.wiktionary.org/wiki/gallo"
+      },
+      "produce": false
+    },
+    {
+      "id": "s-ya-po-vamos",
+      "kind": "sentence",
+      "es": "Ya po, vamos.",
+      "de": "Na los, gehen wir."
+    },
+    {
+      "id": "s-voy-al-tiro",
+      "kind": "sentence",
+      "es": "Voy al tiro.",
+      "de": "Ich komme sofort.",
+      "accept": [
+        "Ya voy al tiro."
+      ]
+    },
+    {
+      "id": "s-llego-al-tiro",
+      "kind": "sentence",
+      "es": "Llego al tiro.",
+      "de": "Ich bin gleich da."
+    },
+    {
+      "id": "s-si-po-claro",
+      "kind": "sentence",
+      "es": "Sí po, claro.",
+      "de": "Ja klar, natürlich."
+    },
+    {
+      "id": "s-no-po-no-tengo-dinero",
+      "kind": "sentence",
+      "es": "No po, no tengo dinero.",
+      "de": "Nee, ich habe kein Geld."
+    },
+    {
+      "id": "s-pelicula-fome",
+      "kind": "sentence",
+      "es": "Esta película es muy fome.",
+      "de": "Dieser Film ist sehr langweilig."
+    },
+    {
+      "id": "s-que-bacan-lugar",
+      "kind": "sentence",
+      "es": "¡Qué bacán este lugar!",
+      "de": "Wie toll dieser Ort ist!"
+    },
+    {
+      "id": "s-harto-calor",
+      "kind": "sentence",
+      "es": "Hoy hace harto calor.",
+      "de": "Heute ist es richtig heiß."
+    },
+    {
+      "id": "s-dos-lucas",
+      "kind": "sentence",
+      "es": "Son dos lucas.",
+      "de": "Das sind zweitausend Pesos."
+    },
+    {
+      "id": "s-entrada-una-luca",
+      "kind": "sentence",
+      "es": "La entrada cuesta una luca.",
+      "de": "Der Eintritt kostet tausend Pesos."
+    },
+    {
+      "id": "s-carrete-manana",
+      "kind": "sentence",
+      "es": "Mañana hay carrete en mi casa.",
+      "de": "Morgen gibt es eine Party bei mir."
+    },
+    {
+      "id": "s-taco-avenida",
+      "kind": "sentence",
+      "es": "Hay mucho taco en la avenida.",
+      "de": "Auf der Avenida ist viel Stau."
+    },
+    {
+      "id": "s-comprar-copete",
+      "kind": "sentence",
+      "es": "Voy a comprar un copete.",
+      "de": "Ich kaufe mir einen Drink."
+    },
+    {
+      "id": "s-guagua-duerme",
+      "kind": "sentence",
+      "es": "La guagua duerme.",
+      "de": "Das Baby schläft."
+    },
+    {
+      "id": "s-pucha-micro",
+      "kind": "sentence",
+      "es": "Pucha, perdí la micro.",
+      "de": "Mist, ich habe die Micro verpasst."
+    },
+    {
+      "id": "s-harta-pega",
+      "kind": "sentence",
+      "es": "Mañana tengo harta pega.",
+      "de": "Morgen habe ich viel Arbeit."
+    },
+    {
+      "id": "s-hostal-piola",
+      "kind": "sentence",
+      "es": "Este hostal es piola.",
+      "de": "Dieses Hostel ist in Ordnung."
+    },
+    {
+      "id": "s-necesito-bencina",
+      "kind": "sentence",
+      "es": "Necesito bencina.",
+      "de": "Ich brauche Benzin."
+    },
+    {
+      "id": "s-donde-bencinera",
+      "kind": "sentence",
+      "es": "¿Dónde hay una bencinera?",
+      "de": "Wo gibt es eine Tankstelle?"
+    },
+    {
+      "id": "s-una-chela",
+      "kind": "sentence",
+      "es": "Una chela, por favor.",
+      "de": "Ein Bier, bitte."
+    },
+    {
+      "id": "s-duele-la-guata",
+      "kind": "sentence",
+      "es": "Me duele la guata.",
+      "de": "Mir tut der Bauch weh."
+    },
+    {
+      "id": "s-mi-pololo",
+      "kind": "sentence",
+      "es": "Mi pololo es chileno.",
+      "de": "Mein Freund ist Chilene."
+    },
+    {
+      "id": "s-que-lata-esperar",
+      "kind": "sentence",
+      "es": "¡Qué lata esperar tanto!",
+      "de": "Wie lästig, so lange zu warten!"
+    },
+    {
+      "id": "s-quiero-choros",
+      "kind": "sentence",
+      "es": "Quiero unos choros, por favor.",
+      "de": "Ich möchte ein paar Miesmuscheln, bitte."
+    },
+    {
+      "id": "s-hablo-poco-cachai",
+      "kind": "sentence",
+      "es": "Hablo poco español, ¿cachái?",
+      "de": "Ich spreche wenig Spanisch, verstehst du?",
+      "produce": false
+    },
+    {
+      "id": "s-como-estai-todo-bien",
+      "kind": "sentence",
+      "es": "¿Cómo estái? ¿Todo bien?",
+      "de": "Wie geht's dir? Alles gut?",
+      "produce": false
+    },
+    {
+      "id": "s-que-queris-comer",
+      "kind": "sentence",
+      "es": "¿Qué querís comer?",
+      "de": "Was willst du essen?",
+      "produce": false
+    },
+    {
+      "id": "s-eso-es-cuatico",
+      "kind": "sentence",
+      "es": "Eso es cuático.",
+      "de": "Das ist verrückt.",
+      "produce": false
+    },
+    {
+      "id": "s-esa-playa-la-raja",
+      "kind": "sentence",
+      "es": "Esta playa es la raja.",
+      "de": "Dieser Strand ist der Hammer.",
+      "produce": false
+    },
+    {
+      "id": "d-carrete-en-casa",
+      "kind": "dialog",
+      "title": "Einladung zum Carrete",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "¡Hola, weón! ¿Cómo estái?",
+          "de": "Hallo, Alter! Wie geht's?"
+        },
+        {
+          "speaker": "B",
+          "es": "Bien, po. ¿Y tú?",
+          "de": "Gut, na. Und du?"
+        },
+        {
+          "speaker": "A",
+          "es": "Bien también. Mañana hay carrete en mi casa. ¿Vienes?",
+          "de": "Auch gut. Morgen gibt es eine Party bei mir. Kommst du?"
+        },
+        {
+          "speaker": "B",
+          "es": "¡Bacán! ¿A qué hora?",
+          "de": "Super! Um wie viel Uhr?"
+        },
+        {
+          "speaker": "A",
+          "es": "A las nueve. Viene harta gente.",
+          "de": "Um neun. Es kommen viele Leute."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Llevo algo?",
+          "de": "Soll ich etwas mitbringen?"
+        },
+        {
+          "speaker": "A",
+          "es": "Lleva unas chelas, po.",
+          "de": "Bring ein paar Bier mit, na."
+        },
+        {
+          "speaker": "B",
+          "es": "Ya po. Nos vemos mañana. Chao.",
+          "de": "Okay. Wir sehen uns morgen. Tschüss."
+        }
+      ]
+    },
+    {
+      "id": "d-taco-en-la-avenida",
+      "kind": "dialog",
+      "title": "Im Stau",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "¡Qué taco! Hace una hora que estamos aquí.",
+          "de": "So ein Stau! Wir stehen schon eine Stunde hier."
+        },
+        {
+          "speaker": "B",
+          "es": "Pucha, es lunes por la mañana. Siempre hay harto taco.",
+          "de": "Mist, es ist Montagmorgen. Es ist immer viel Stau."
+        },
+        {
+          "speaker": "A",
+          "es": "Voy a llegar atrasada a la pega.",
+          "de": "Ich komme zu spät zur Arbeit."
+        },
+        {
+          "speaker": "B",
+          "es": "Llama y avisa. Dices que hay taco.",
+          "de": "Ruf an und sag Bescheid. Sag, dass Stau ist."
+        },
+        {
+          "speaker": "A",
+          "es": "Ya po, llamo al tiro.",
+          "de": "Okay, ich rufe sofort an."
+        },
+        {
+          "speaker": "B",
+          "es": "Después voy a la bencinera. Necesito bencina.",
+          "de": "Danach fahre ich zur Tankstelle. Ich brauche Benzin."
+        },
+        {
+          "speaker": "A",
+          "es": "Ya po. ¡Qué lata!",
+          "de": "Okay. Wie lästig!"
+        }
+      ]
+    },
+    {
+      "id": "d-que-significa-po",
+      "kind": "dialog",
+      "title": "Was heißt po?",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Perdón, ¿qué significa po?",
+          "de": "Entschuldigung, was bedeutet po?"
+        },
+        {
+          "speaker": "B",
+          "es": "Po es como pues. Se dice mucho: sí po, no po, ya po.",
+          "de": "Po ist wie pues. Man sagt es oft: sí po, no po, ya po."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Y cachái? ¿Qué es?",
+          "de": "Und cachái? Was ist das?"
+        },
+        {
+          "speaker": "B",
+          "es": "Cachái es como ¿entiendes? Se dice mucho entre amigos.",
+          "de": "Cachái ist wie ¿entiendes? Man sagt es oft unter Freunden."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Y weón? Lo dicen todo el día.",
+          "de": "Und weón? Das sagen sie den ganzen Tag."
+        },
+        {
+          "speaker": "B",
+          "es": "Entre amigos está bien. Con otra gente no. Tú no. Es muy fuerte.",
+          "de": "Unter Freunden ist es okay. Mit anderen Leuten nicht. Du nicht. Es ist sehr derb."
+        },
+        {
+          "speaker": "A",
+          "es": "Pucha, entiendo. Gracias.",
+          "de": "Mist, ich verstehe. Danke."
+        }
+      ]
+    },
+    {
+      "id": "d-mi-polola",
+      "kind": "dialog",
+      "title": "Wochenendpläne",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "¿Cómo estái? ¿Y tu polola?",
+          "de": "Wie geht's dir? Und deine Freundin?"
+        },
+        {
+          "speaker": "B",
+          "es": "Bien, po. Está en la pega. Hoy tiene harta pega.",
+          "de": "Gut, na. Sie ist bei der Arbeit. Heute hat sie viel zu tun."
+        },
+        {
+          "speaker": "A",
+          "es": "Pucha. ¿Van al carrete mañana?",
+          "de": "Mist. Geht ihr morgen zur Party?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí po. Ella dice que el barrio es piola.",
+          "de": "Ja klar. Sie sagt, dass das Viertel in Ordnung ist."
+        },
+        {
+          "speaker": "A",
+          "es": "Bacán. ¿Y cuánto cuesta la entrada?",
+          "de": "Super. Und wie viel kostet der Eintritt?"
+        },
+        {
+          "speaker": "B",
+          "es": "Una luca.",
+          "de": "Tausend Pesos."
+        },
+        {
+          "speaker": "A",
+          "es": "Ya po, es barato. Voy.",
+          "de": "Okay, das ist billig. Ich komme."
+        }
+      ]
+    },
+    {
+      "id": "g-chilenisch-hoeren",
+      "kind": "grammar",
+      "title": "Chilenisch hören",
+      "explanation": "Im Chile-Spanisch klingen viele Wörter anders als in der Standardsprache. Das s am Silbenende wird zu einem Hauchlaut oder fällt weg: aus estás wird fast estáh. Aus -ado wird -ao (cansao statt cansado), und para wird zu pa'. Dazu kommt die Du-Form auf -ái und -ís: ¿cómo estái? statt ¿cómo estás?, ¿qué querís? statt ¿qué quieres?, ¿cachái? ist die Form von cachar (verstehen). Du musst das nicht selbst sagen, nur erkennen. Die Übungen zeigen dir die chilenische Form, du schreibst die Standardform.",
+      "examples": [
+        {
+          "es": "¿Cómo estái?",
+          "de": "Wie geht's dir? (Standard: ¿Cómo estás?)"
+        },
+        {
+          "es": "Estoy cansao.",
+          "de": "Ich bin müde. (cansao ist cansado)"
+        },
+        {
+          "es": "Voy pa' la casa.",
+          "de": "Ich gehe nach Hause. (pa' ist para)"
+        },
+        {
+          "es": "¿Qué querís comer?",
+          "de": "Was willst du essen? (Standard: ¿Qué quieres comer?)"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Standardform von: ¿Cómo estái?",
+          "es": "¿Cómo estás?"
+        },
+        {
+          "de": "Standardform von: ¿Qué querís?",
+          "es": "¿Qué quieres?"
+        },
+        {
+          "de": "Standardform von: Estoy cansao.",
+          "es": "Estoy cansado."
+        },
+        {
+          "de": "Standardform von: pa' la casa",
+          "es": "para la casa"
+        },
+        {
+          "de": "Standardform von: ¿Tenís hora?",
+          "es": "¿Tienes hora?",
+          "accept": [
+            "¿Tienes la hora?"
+          ]
+        },
+        {
+          "de": "Standardform von: ¿Vai al centro?",
+          "es": "¿Vas al centro?"
+        },
+        {
+          "de": "Standardform von: Soi alemán.",
+          "es": "Eres alemán."
+        },
+        {
+          "de": "Standardform von: ¿Cachái?",
+          "es": "¿Entiendes?",
+          "accept": [
+            "¿Me entiendes?",
+            "¿Comprendes?",
+            "¿Cachas?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g-ya-po-al-tiro",
+      "kind": "grammar",
+      "title": "Ya po und al tiro selbst sagen",
+      "explanation": "Zwei Wendungen, die du ruhig selbst benutzen kannst. Po verstärkt das Wort davor: sí po (ja klar), no po (nee), ya po (na los, okay). Al tiro heißt sofort: voy al tiro, llego al tiro. Beide sind locker, aber nicht grob. Sprich sie ohne Eile und mit einem Lächeln, dann klingen sie freundlich. Mit Fremden und Älteren stellst du einen normalen Satz davor und bleibst bei usted.",
+      "examples": [
+        {
+          "es": "Ya po, vamos.",
+          "de": "Na los, gehen wir."
+        },
+        {
+          "es": "Voy al tiro.",
+          "de": "Ich komme sofort."
+        },
+        {
+          "es": "Sí po, claro.",
+          "de": "Ja klar, natürlich."
+        },
+        {
+          "es": "Llego al tiro.",
+          "de": "Ich bin gleich da."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Sag: Na los, gehen wir!",
+          "es": "Ya po, vamos.",
+          "accept": [
+            "Ya po vamos."
+          ]
+        },
+        {
+          "de": "Sag: Ich komme sofort.",
+          "es": "Voy al tiro."
+        },
+        {
+          "de": "Sag: Ich bin gleich da.",
+          "es": "Llego al tiro."
+        },
+        {
+          "de": "Sag: Ja klar, natürlich.",
+          "es": "Sí po, claro."
+        },
+        {
+          "de": "Sag: Nee, ich habe kein Geld.",
+          "es": "No po, no tengo dinero."
+        },
+        {
+          "de": "Dein Freund fragt, ob ihr gehen sollt. Du stimmst zu: Okay, machen wir.",
+          "es": "Ya po.",
+          "accept": [
+            "Ya po, vamos."
+          ]
+        }
+      ]
+    }
+  ]
+}

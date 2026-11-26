@@ -28,7 +28,7 @@ test('Café liefert ein Foto, eine unbekannte Situation null', () => {
 
 test('jedes Foto hat Urheber, Lizenz und Seite, und alle Dateien liegen in public/photos', () => {
   expect(allPhotos).toContain(headerPhoto);
-  expect(allPhotos.length).toBe(9);
+  expect(allPhotos.length).toBe(10);
   for (const p of allPhotos) {
     expect(p.author).not.toBe('');
     expect(p.license).not.toBe('');

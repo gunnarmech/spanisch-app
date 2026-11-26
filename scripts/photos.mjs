@@ -60,6 +60,11 @@ const JOBS = [
     crop: { left: 0.27, top: 0.1, width: 0.56, height: 0.84 },
     outputs: [{ name: 'notfall.webp', width: 160, height: 160, maxKb: 25 }],
   },
+  {
+    file: 'Multiples colores, Valparaíso..JPG',
+    crop: { left: 0.28, top: 0.12, width: 0.72, height: 0.54 },
+    outputs: [{ name: 'chile.webp', width: 160, height: 160, maxKb: 25 }],
+  },
 ];
 
 async function download(file) {
