@@ -100,7 +100,12 @@ export function buildRound(opts: {
 
   const reviews: Task[] = due.slice(0, maxReviews).map(({ cardId, state }) => {
     const { item, situationId } = owner.get(cardId)!;
-    const form: TaskForm = item.kind === 'grammar' ? 'grammar' : STAGE_FORMS[state.stage];
+    let form: TaskForm = item.kind === 'grammar' ? 'grammar' : STAGE_FORMS[state.stage];
+    // Nur verstehen: nie selbst tippen oder sprechen, stattdessen hören und Antwort unter Zeitdruck.
+    if ((item.kind === 'word' || item.kind === 'phrase' || item.kind === 'sentence') && item.produce === false) {
+      if (form === 'type') form = 'listen';
+      else if (form === 'speak') form = 'pressure';
+    }
     return { cardId, itemId: item.id, situationId, form, isNew: false };
   });
 

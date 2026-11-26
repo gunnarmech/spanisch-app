@@ -94,6 +94,38 @@ describe('buildRound', () => {
     expect([0, 1, 2, 3, 4].map((i) => form(`w${i}`))).toEqual(['choice', 'listen', 'type', 'speak', 'pressure']);
   });
 
+  describe('produce:false', () => {
+    const noProduce = (id: string): Item => ({ id, kind: 'word', es: id, de: id, forms: [id], examples: [], produce: false });
+    const formFor = (items: Item[], stage: 0 | 1 | 2 | 3 | 4, id: string, known = false) => {
+      const sit: Situation = { id: 's1', order: 1, title: 'S', items };
+      const base = replay([review(1, id, T0)], new Set([id])).get(id) as CardState;
+      const states = new Map<string, CardState>([[id, { ...base, stage, known }]]);
+      const round = buildRound({ now: T0 + 60 * DAY, states, situations: [sit] });
+      return round.tasks.find((t) => t.cardId === id)?.form;
+    };
+
+    test('produce:false auf Stufe 2 wird listen', () => {
+      expect(formFor([noProduce('a')], 2, 'a')).toBe('listen');
+    });
+    test('produce:false auf Stufe 3 wird pressure', () => {
+      expect(formFor([noProduce('a')], 3, 'a')).toBe('pressure');
+    });
+    test('produce:false nach known und einem Fehler (Stufe 2) wird listen', () => {
+      const sit: Situation = { id: 's1', order: 1, title: 'S', items: [noProduce('a')] };
+      const events: ReviewEvent[] = [
+        { id: 'k', cardId: 'a', ts: T0, device: 'd', kind: 'known' } as ReviewEvent,
+        review(2, 'a', T0 + 1000, 1),
+      ];
+      const states = replay(events, new Set(['a']));
+      expect(states.get('a')?.stage).toBe(2);
+      const round = buildRound({ now: T0 + 400 * DAY, states, situations: [sit] });
+      expect(round.tasks.find((t) => t.cardId === 'a')?.form).toBe('listen');
+    });
+    test('ohne produce bleibt Stufe 2 type', () => {
+      expect(formFor([word('a', 'a')], 2, 'a')).toBe('type');
+    });
+  });
+
   test('Grammatik: Übungskarten, Form grammar, neu ohne intro', () => {
     const g: Item = {
       id: 'g1',

@@ -83,6 +83,7 @@ export function validateSituation(s: unknown, allIds: Set<string>, knownForms?: 
       case 'phrase': {
         if (!isStr(raw.es)) bad('es fehlt');
         if (!isStr(raw.de)) bad('de fehlt');
+        if (raw.produce !== undefined && raw.produce !== false) bad('produce darf nur false sein');
         if (!isStrArr(raw.forms) || raw.forms.length === 0) bad('forms fehlt');
         else for (const f of raw.forms) for (const t of tokens(f)) ownForms.add(t);
         if (!Array.isArray(raw.examples) || !raw.examples.every(isExample)) bad('examples ungültig');
@@ -96,6 +97,7 @@ export function validateSituation(s: unknown, allIds: Set<string>, knownForms?: 
       case 'sentence': {
         if (!isStr(raw.es)) bad('es fehlt');
         if (!isStr(raw.de)) bad('de fehlt');
+        if (raw.produce !== undefined && raw.produce !== false) bad('produce darf nur false sein');
         if (raw.accept !== undefined && !isStrArr(raw.accept)) bad('accept ungültig');
         addEs(id, raw.es);
         addEsList(id, raw.accept);
@@ -125,6 +127,7 @@ export function validateSituation(s: unknown, allIds: Set<string>, knownForms?: 
         if (!Array.isArray(raw.examples) || !raw.examples.every(isExample)) bad('examples ungültig');
         if (
           !Array.isArray(raw.exercises) ||
+          raw.exercises.length === 0 ||
           !raw.exercises.every((x) => isObj(x) && isStr(x.de) && isStr(x.es) && (x.accept === undefined || isStrArr(x.accept)))
         )
           bad('exercises ungültig');
@@ -165,6 +168,67 @@ export function validateSituation(s: unknown, allIds: Set<string>, knownForms?: 
     }
   }
 
+  return [...new Set(errors)];
+}
+
+const CLIP_MIN_TOKENS = 3;
+const CLIP_MAX_TOKENS = 16;
+const CLIP_MIN_COVERAGE = 0.85;
+
+/**
+ * Prüft die Chile-Aufnahmen ({ clips: [...] }) und gibt die Fehlerliste zurück (leer = gut).
+ * itemIds: alle Item-IDs der Situationen (Kartenkollisionen); knownForms: alle normalisierten Wortformen.
+ */
+export function validateClips(data: unknown, itemIds: Set<string>, knownForms: Set<string>): string[] {
+  const errors: string[] = [];
+  if (!isObj(data) || !Array.isArray(data.clips)) return ['Clipdatei braucht { clips: [...] }'];
+  const seen = new Set<string>();
+
+  for (const raw of data.clips as unknown[]) {
+    if (!isObj(raw)) {
+      errors.push('Clip ist kein Objekt');
+      continue;
+    }
+    const id = isStr(raw.id) ? raw.id : '(ohne id)';
+    const bad = (msg: string) => errors.push(`${id}: ${msg}`);
+
+    if (!isStr(raw.id) || !ID_RE.test(raw.id)) bad('ungültige Clip-ID');
+    else if (seen.has(raw.id)) bad('doppelte Clip-ID');
+    else if (itemIds.has(raw.id)) bad('Clip-ID kollidiert mit Item-ID');
+    else seen.add(raw.id);
+
+    if (!isStr(raw.de)) bad('de fehlt');
+    if (raw.gender !== 'f' && raw.gender !== 'm') bad('gender muss f oder m sein');
+    if (!isStr(raw.source)) bad('source fehlt');
+    if (!isStr(raw.es)) {
+      bad('es fehlt');
+      continue;
+    }
+
+    const toks = tokens(raw.es);
+    if (toks.length < CLIP_MIN_TOKENS || toks.length > CLIP_MAX_TOKENS)
+      bad(`${CLIP_MIN_TOKENS} bis ${CLIP_MAX_TOKENS} Wörter nötig, gefunden ${toks.length}`);
+
+    // Eigennamen (Großbuchstabe, nicht am Satzanfang) zählen für die Deckung nicht.
+    const words = raw.es.split(/\s+/).filter(Boolean);
+    let counted = 0;
+    let hit = 0;
+    words.forEach((w, i) => {
+      const startsSentence = i === 0 || /[.!?…]["»”)]*$/.test(words[i - 1]);
+      const proper = !startsSentence && /^[¿¡"«“(]*\p{Lu}/u.test(w);
+      if (proper) return;
+      for (const t of tokens(w)) {
+        counted++;
+        if (knownForms.has(t)) hit++;
+      }
+    });
+    if (counted > 0 && hit / counted < CLIP_MIN_COVERAGE)
+      bad(`Deckung durch bekannte Wortformen ${(hit / counted).toFixed(2)} unter ${CLIP_MIN_COVERAGE}`);
+
+    for (const t of stripDiacritics(normalize(raw.es)).split(' ')) {
+      if (BANNED.has(t)) bad(`Peninsularismus ${t} in "${raw.es}"`);
+    }
+  }
   return [...new Set(errors)];
 }
 

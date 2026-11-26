@@ -1,6 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { tokens, validateSituation } from '../src/content/validate';
+import { tokens, validateClips, validateSituation } from '../src/content/validate';
 
 const dir = 'content/situations';
 const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).sort() : [];
@@ -44,9 +44,22 @@ for (const { file, data } of parsed) {
   }
 }
 
+// Chile-Aufnahmen sind optional.
+const clipFile = 'content/chile-hoeren.json';
+let clipCount = 0;
+if (existsSync(clipFile)) {
+  try {
+    const data = JSON.parse(readFileSync(clipFile, 'utf8'));
+    clipCount = Array.isArray(data?.clips) ? data.clips.length : 0;
+    for (const e of validateClips(data, allIds, knownForms)) errors.push(`chile-hoeren.json: ${e}`);
+  } catch (e) {
+    errors.push(`chile-hoeren.json: kein gültiges JSON (${(e as Error).message})`);
+  }
+}
+
 if (errors.length > 0) {
   console.error(errors.join('\n'));
   console.error(`${errors.length} Fehler in ${files.length} Dateien`);
   process.exit(1);
 }
-console.log(`${files.length} Situationsdateien ohne Fehler`);
+console.log(`${files.length} Situationsdateien und ${clipCount} Chile-Clips ohne Fehler`);

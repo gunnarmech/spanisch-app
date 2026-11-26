@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { validateSituation } from '../../src/content/validate';
+import { validateClips, validateSituation } from '../../src/content/validate';
 
 function word(id: string, es: string, forms: string[]) {
   return { id, kind: 'word', es, de: 'x', forms, examples: [{ es: 'a', de: 'b' }] };
@@ -113,5 +113,62 @@ describe('validateSituation', () => {
 
   test('kein Objekt als Situation', () => {
     expect(validateSituation(null, new Set()).length).toBeGreaterThan(0);
+  });
+});
+
+describe('Inhaltsformat nur verstehen', () => {
+  test('grammar ohne Übung ist Fehler', () => {
+    const s = base();
+    s.items.push({ id: 'g-1', kind: 'grammar', title: 'G', explanation: 'x', examples: [], exercises: [] });
+    expect(validateSituation(s, new Set()).some((e) => e.includes('exercises ungültig'))).toBe(true);
+  });
+
+  test('produce: true ist Fehler, produce: false gültig', () => {
+    const s = base();
+    s.items[0].produce = true;
+    expect(validateSituation(s, new Set()).some((e) => e.includes('produce'))).toBe(true);
+    s.items[0].produce = false;
+    expect(validateSituation(s, new Set())).toEqual([]);
+    s.items.push({ id: 'sent-1', kind: 'sentence', es: 'hola', de: 'hallo', produce: true });
+    expect(validateSituation(s, new Set()).some((e) => e.includes('produce'))).toBe(true);
+  });
+});
+
+describe('validateClips', () => {
+  const forms = new Set(['hola', 'mesa', 'casa', 'amigo', 'bueno', 'dia', 'vamos', 'ahora', 'tengo', 'un']);
+  const clip = (over: Record<string, unknown> = {}) => ({
+    id: 'clip-09334-01278378087',
+    es: 'hola mesa casa amigo bueno dia vamos ahora tengo un',
+    de: 'x',
+    gender: 'f',
+    source: 'clf_09334_01278378087',
+    ...over,
+  });
+  const run = (clips: unknown[], ids = new Set<string>()) => validateClips({ clips }, ids, forms);
+
+  test('gültiger Clip ohne Fehler', () => {
+    expect(run([clip()])).toEqual([]);
+  });
+  test('Deckung 0.8 abgelehnt, 0.9 angenommen', () => {
+    const nine = 'hola mesa casa amigo bueno dia vamos ahora tengo';
+    expect(run([clip({ es: `${nine} zzz` })])).toEqual([]);
+    const eight = 'hola mesa casa amigo bueno dia vamos ahora';
+    expect(run([clip({ es: `${eight} zzz yyy` })]).length).toBeGreaterThan(0);
+  });
+  test('Eigenname mitten im Satz zählt nicht', () => {
+    expect(run([clip({ es: 'hola mesa casa Valparaíso amigo bueno dia vamos' })])).toEqual([]);
+  });
+  test('2 Tokens abgelehnt', () => {
+    expect(run([clip({ es: 'hola mesa' })]).length).toBeGreaterThan(0);
+  });
+  test('ID-Kollision mit Item-ID gemeldet', () => {
+    expect(run([clip()], new Set(['clip-09334-01278378087'])).some((e) => e.includes('clip-09334-01278378087'))).toBe(true);
+  });
+  test('doppelte Clip-ID gemeldet', () => {
+    expect(run([clip(), clip()]).some((e) => e.includes('doppelte'))).toBe(true);
+  });
+  test('Peninsularismus und gender', () => {
+    expect(run([clip({ es: 'hola mesa casa amigo coche bueno dia vamos' })]).some((e) => e.includes('Peninsularismus'))).toBe(true);
+    expect(run([clip({ gender: 'x' })].map((c) => c)).some((e) => e.includes('gender'))).toBe(true);
   });
 });
