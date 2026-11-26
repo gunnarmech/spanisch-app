@@ -140,3 +140,27 @@ test('Wechsel des Tokens verwirft die gemerkte gistId', () => {
   expect(patch).toEqual({ gistToken: 'neu', gistId: undefined });
   expect(Object.keys(patch)).toContain('gistId');
 });
+
+test('Knopf Einstufung machen öffnet die Einstufung', () => {
+  const onPlacement = vi.fn();
+  render(<Settings app={fakeApp()} onBack={noop} onDiagnose={noop} onPlacement={onPlacement} />);
+  fireEvent.click(screen.getByRole('button', { name: 'Einstufung machen' }));
+  expect(onPlacement).toHaveBeenCalled();
+});
+
+test('ohne Kandidaten Hinweistext statt Knopf', () => {
+  const states = new Map([
+    ['w-hola', {} as never],
+    ['w-adios', {} as never],
+  ]);
+  render(<Settings app={fakeApp({ states })} onBack={noop} onDiagnose={noop} onPlacement={noop} />);
+  expect(screen.queryByRole('button', { name: 'Einstufung machen' })).toBeNull();
+  expect(screen.getByText('Es gibt gerade nichts einzustufen.')).toBeTruthy();
+});
+
+test('Einstufung ist über die Einstellungen erreichbar', async () => {
+  render(<App db={await fresh()} />);
+  fireEvent.click(await screen.findByRole('button', { name: 'Einstellungen' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Einstufung machen' }));
+  expect(screen.getByRole('heading', { name: 'Einstufung' })).toBeTruthy();
+});

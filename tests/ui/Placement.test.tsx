@@ -9,6 +9,7 @@ const audio = vi.hoisted(() => ({
 vi.mock('../../src/media/audio', () => audio);
 
 import type { Situation, WordItem } from '../../src/content/types';
+import type { CardState } from '../../src/engine/state';
 import { Placement, PlacementOffer, placementItems } from '../../src/ui/Placement';
 import { fakeApp } from './fixtures';
 
@@ -46,19 +47,47 @@ const ranked: Situation = {
   ],
 };
 
+const many = (n: number): Situation => ({
+  id: 's3',
+  order: 3,
+  title: 'viele',
+  items: Array.from({ length: n }, (_, i) => word(`w${i}`, `p${i}`, `d${String(i).padStart(3, '0')}`, i + 1)),
+});
+
+/** Beantwortet die aktuelle Frage (Spanisch steht im Text, Deutsch ist `d` plus die gleiche Nummer) und geht weiter. */
+function answer(right: boolean) {
+  const n = Number(screen.getByText(/^p\d+$/).textContent!.slice(1));
+  const rightDe = `d${String(n).padStart(3, '0')}`;
+  const options = screen.getAllByRole('button', { name: /^\d/ });
+  const pick = options.find((b) => (b.textContent ?? '').includes(rightDe) === right)!;
+  fireEvent.click(pick);
+  fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
+}
+
 describe('placementItems', () => {
   it('sortiert nach freqRank, Items ohne Rang danach in Dateireihenfolge, ohne Dialoge', () => {
-    expect(placementItems([ranked]).map((p) => p.item.id)).toEqual(['w-a', 'w-b', 'w-c', 'w-d']);
+    expect(placementItems([ranked], new Map()).map((p) => p.item.id)).toEqual(['w-a', 'w-b', 'w-c', 'w-d']);
   });
 
-  it('nimmt höchstens 40', () => {
-    const many: Situation = {
-      id: 's3',
-      order: 3,
-      title: 'viele',
-      items: Array.from({ length: 60 }, (_, i) => word(`w${i}`, `p${i}`, `d${i}`, i + 1)),
+  it('bietet nur Items ohne Lernstand an', () => {
+    const states = new Map([['w-a', {} as CardState]]);
+    expect(placementItems([ranked], states).map((p) => p.item.id)).toEqual(['w-b', 'w-c', 'w-d']);
+  });
+
+  it('ohne Chile-Ebene und ohne produce false', () => {
+    const chile: Situation = { id: '09-chile', order: 9, title: 'Chile', items: [word('w-ch', 'fome', 'langweilig', 1)] };
+    const only: Situation = {
+      id: 's5',
+      order: 5,
+      title: 'nur verstehen',
+      items: [{ ...word('w-v', 'weon', 'Kerl', 2), produce: false }, word('w-ok', 'bien', 'gut', 3)],
     };
-    expect(placementItems([many])).toHaveLength(40);
+    expect(placementItems([chile, only], new Map()).map((p) => p.item.id)).toEqual(['w-ok']);
+  });
+
+  it('höchstens 150', () => {
+    expect(placementItems([many(200)], new Map())).toHaveLength(150);
+    expect(placementItems([many(200)], new Map(), 10)).toHaveLength(10);
   });
 });
 
@@ -114,6 +143,59 @@ describe('Placement', () => {
   });
 });
 
+describe('Placement in Blöcken', () => {
+  const big = () => fakeApp({ situations: [many(100)] });
+
+  it('nach 30 Fragen Zwischenstand mit weiter und aufhören', () => {
+    render(<Placement app={big()} onFinish={noop} />);
+    for (let i = 0; i < 30; i++) answer(true);
+    expect(screen.getByRole('heading', { name: 'Zwischenstand' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'weiter' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'aufhören' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'weiter' }));
+    expect(screen.queryByRole('heading', { name: 'Zwischenstand' })).toBeNull();
+    expect(screen.getByText('Was bedeutet das?')).toBeTruthy();
+  });
+
+  it('weniger als ein Viertel richtig im Block beendet den Test', async () => {
+    const onFinish = vi.fn();
+    const app = big();
+    render(<Placement app={app} onFinish={onFinish} />);
+    for (let i = 0; i < 30; i++) answer(i < 7);
+    expect(screen.getByText('Hier reicht es. Der Rest kommt beim normalen Lernen.')).toBeTruthy();
+    expect(screen.queryByRole('button', { name: 'weiter' })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'fertig' }));
+    await waitFor(() => expect(onFinish).toHaveBeenCalled());
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
+  });
+
+  it('genau ein Viertel richtig lässt den Test weiterlaufen', () => {
+    render(<Placement app={big()} onFinish={noop} />);
+    for (let i = 0; i < 30; i++) answer(i < 8);
+    expect(screen.getByRole('button', { name: 'weiter' })).toBeTruthy();
+  });
+
+  it('aufhören behält bisherige known-Ereignisse', async () => {
+    const onFinish = vi.fn();
+    const app = big();
+    render(<Placement app={app} onFinish={onFinish} />);
+    for (let i = 0; i < 30; i++) answer(true);
+    fireEvent.click(screen.getByRole('button', { name: 'aufhören' }));
+    await waitFor(() => expect(onFinish).toHaveBeenCalled());
+    expect(app.record).toHaveBeenCalledTimes(30);
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
+  });
+
+  it('kein Text "von" mit Zahlen im Einstufungsbildschirm', () => {
+    const { container } = render(<Placement app={big()} onFinish={noop} />);
+    expect(container.textContent).not.toMatch(/\d+\s*von\s*\d+/);
+    expect(container.textContent).not.toMatch(/Frage\s*\d/);
+    for (let i = 0; i < 30; i++) answer(true);
+    expect(container.textContent).not.toMatch(/\d+\s*von\s*\d+/);
+    expect(container.textContent).not.toMatch(/\d/);
+  });
+});
+
 describe('PlacementOffer', () => {
   it('Überspringen erzeugt kein Ereignis und merkt sich das', () => {
     const app = fakeApp();
@@ -128,6 +210,13 @@ describe('PlacementOffer', () => {
     render(<PlacementOffer app={fakeApp()} onStart={onStart} />);
     fireEvent.click(screen.getByRole('button', { name: 'kurz einstufen' }));
     expect(onStart).toHaveBeenCalled();
+  });
+
+  it('nennt Blöcke im Angebotstext', () => {
+    render(<PlacementOffer app={fakeApp()} onStart={noop} />);
+    expect(
+      screen.getByText('Mit kurzen Fragen in Blöcken merkt sich die App, was du schon kannst, und fragt es später nicht mehr als Neues ab.'),
+    ).toBeTruthy();
   });
 
   it('erscheint nicht, wenn placementDone gesetzt ist oder es schon Ereignisse gibt', () => {

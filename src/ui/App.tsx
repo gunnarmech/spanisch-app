@@ -30,6 +30,7 @@ export function App({ db }: { db?: Db }) {
           onBack={() => setView({ name: 'home' })}
           onDiagnose={() => setView({ name: 'diagnose' })}
           onSources={() => setView({ name: 'sources' })}
+          onPlacement={() => setView({ name: 'placement' })}
         />
       ) : view.name === 'sources' && app ? (
         <Sources app={app} onBack={() => setView({ name: 'settings' })} />

@@ -1,17 +1,18 @@
 import { useState } from 'preact/hooks';
 import { exportBackup, importBackup } from '../store/backup';
 import { saveBackupFile } from '../store/exportFile';
+import { placementItems } from './Placement';
 import type { AppState } from './useAppState';
 
 const TOKEN_URL = 'https://github.com/settings/tokens/new?scopes=gist&description=spanisch-app';
 
-type Props = { app: AppState; onBack(): void; onDiagnose(): void; onSources?(): void };
+type Props = { app: AppState; onBack(): void; onDiagnose(): void; onSources?(): void; onPlacement?(): void };
 
 function when(ts: number | undefined): string {
   return ts ? new Date(ts).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' }) : 'noch nie';
 }
 
-export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
+export function Settings({ app, onBack, onDiagnose, onSources, onPlacement }: Props) {
   const { settings } = app;
   const [token, setToken] = useState(settings.gistToken ?? '');
   const [retention, setRetention] = useState(settings.retention);
@@ -124,6 +125,13 @@ export function Settings({ app, onBack, onDiagnose, onSources }: Props) {
           onChange={() => void app.updateSettings({ retention })}
         />
         <p class="german">Höher heißt öfter wiederholen, niedriger heißt weniger Aufwand.</p>
+        {placementItems(app.situations, app.states, 1).length > 0 ? (
+          <button type="button" class="btn btn--secondary" onClick={() => onPlacement?.()}>
+            Einstufung machen
+          </button>
+        ) : (
+          <p class="quiet">Es gibt gerade nichts einzustufen.</p>
+        )}
       </section>
 
       <footer class="foot">

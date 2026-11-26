@@ -1,32 +1,42 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Item, Situation, WordItem } from '../content/types';
+import type { CardState } from '../engine/state';
 import { audioUrl, loadManifest, type Manifest } from '../media/audio';
 import { AudioButton } from './tasks/AudioButton';
 import { ChoiceBase } from './tasks/ChoiceBase';
 import { choiceOptions } from './tasks/distractors';
 import type { AppState } from './useAppState';
 
-const COUNT = 40;
+const COUNT = 150;
+/** Fragen je Block; danach gibt es einen Zwischenstand. */
+export const BLOCK = 30;
 /** Richtig und schneller als diese Zeit (Millisekunden) heißt: sicher bekannt. */
 const QUICK_MS = 4000;
+/** Situation mit der Chile-Ebene: nur Verstehen, wird nicht eingestuft. */
+const CHILE = '09-chile';
 
-type Entry = { item: WordItem; situationId: string };
+export type Entry = { item: WordItem; situationId: string };
 
 /**
- * Die ersten 40 Wörter und Wendungen nach Häufigkeit. Items ohne freqRank kommen danach, in Dateireihenfolge.
- * Die Sortierung ist stabil, Gleichstand bleibt in Dateireihenfolge.
+ * Wörter und Wendungen ohne Lernstand, ohne `produce: false`, ohne Chile-Ebene, nach Häufigkeit.
+ * Items ohne freqRank kommen danach, in Dateireihenfolge. Die Sortierung ist stabil.
+ * Items mit Lernstand werden nie angeboten, damit `known` nie auf eine laufende Karte geschrieben wird.
  */
-export function placementItems(situations: Situation[]): Entry[] {
-  const all: Entry[] = situations.flatMap((s) =>
-    s.items
-      .filter((it): it is WordItem => it.kind === 'word' || it.kind === 'phrase')
-      .map((item) => ({ item, situationId: s.id })),
-  );
+export function placementItems(situations: Situation[], states: Map<string, CardState>, count = COUNT): Entry[] {
+  const all: Entry[] = situations
+    .filter((s) => s.id !== CHILE)
+    .flatMap((s) =>
+      s.items
+        .filter(
+          (it): it is WordItem => (it.kind === 'word' || it.kind === 'phrase') && it.produce !== false && !states.has(it.id),
+        )
+        .map((item) => ({ item, situationId: s.id })),
+    );
   const rank = (e: Entry) => e.item.freqRank ?? Infinity;
   return all
     .map((e, i) => ({ e, i }))
     .sort((a, b) => (rank(a.e) === rank(b.e) ? a.i - b.i : rank(a.e) < rank(b.e) ? -1 : 1))
-    .slice(0, COUNT)
+    .slice(0, count)
     .map(({ e }) => e);
 }
 
@@ -37,7 +47,7 @@ export function PlacementOffer({ app, onStart }: { app: AppState; onStart(): voi
     <section class="placement-offer">
       <h2>Kurz einstufen?</h2>
       <p class="german">
-        Mit etwa 40 kurzen Fragen merkt sich die App, was du schon kannst, und fragt es später nicht mehr als Neues ab.
+        Mit kurzen Fragen in Blöcken merkt sich die App, was du schon kannst, und fragt es später nicht mehr als Neues ab.
       </p>
       <div class="actions">
         <button type="button" class="btn btn--secondary" onClick={onStart}>
@@ -55,7 +65,7 @@ type QuestionProps = {
   app: AppState;
   entry: Entry;
   manifest: Manifest | undefined;
-  onAnswer(known: boolean): void;
+  onAnswer(correct: boolean, known: boolean): void;
   onNext(): void;
 };
 
@@ -76,16 +86,59 @@ function Question({ app, entry, manifest, onAnswer, onNext }: QuestionProps) {
       }
       options={options}
       correct={item.de}
-      onAnswered={(r) => onAnswer(r.verdict === 'correct' && r.ms < QUICK_MS)}
+      onAnswered={(r) => onAnswer(r.verdict === 'correct', r.verdict === 'correct' && r.ms < QUICK_MS)}
       onDone={onNext}
     />
   );
 }
 
-/** Kurzer Einstufungstest: Hören plus Auswahl. Nur richtig und schnell erzeugt `known`, sonst nichts. */
+/** Zwischenstand nach einem Block, ohne Zahl. `stop`: zu wenig richtig, der Test endet hier. */
+export function BlockPause({ stop, onContinue, onQuit }: { stop: boolean; onContinue(): void; onQuit(): void }) {
+  return (
+    <>
+      <header class="masthead">
+        <h1>Zwischenstand</h1>
+      </header>
+      <div class="progress" aria-hidden="true">
+        <div />
+      </div>
+      <section class="block">
+        {stop ? (
+          <>
+            <p class="german">Hier reicht es. Der Rest kommt beim normalen Lernen.</p>
+            <div class="actions">
+              <button type="button" class="btn btn--secondary" onClick={onQuit}>
+                fertig
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <p class="german">Ein Block ist geschafft. Du kannst weitermachen oder hier aufhören, das Bisherige bleibt gemerkt.</p>
+            <div class="actions">
+              <button type="button" class="btn btn--secondary" onClick={onContinue}>
+                weiter
+              </button>
+              <button type="button" class="link" onClick={onQuit}>
+                aufhören
+              </button>
+            </div>
+          </>
+        )}
+      </section>
+    </>
+  );
+}
+
+/**
+ * Einstufungstest in Blöcken: Hören plus Auswahl. Nur richtig und schnell erzeugt `known`, sonst nichts.
+ * Nach jedem Block gibt es einen Zwischenstand ohne Zahl. Weniger als ein Viertel richtig im Block beendet den Test.
+ */
 export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }) {
-  const [entries] = useState(() => placementItems(app.situations));
+  const [entries] = useState(() => placementItems(app.situations, app.states));
   const [index, setIndex] = useState(0);
+  const [rightInBlock, setRightInBlock] = useState(0);
+  const [pause, setPause] = useState<'between' | 'stop' | null>(null);
   const [manifests, setManifests] = useState<Record<string, Manifest>>({});
   const finished = useRef(false);
 
@@ -112,34 +165,46 @@ export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }
     if (!entry) void finish();
   });
 
+  const next = () => {
+    const done = index + 1;
+    if (done % BLOCK === 0 && done < entries.length) {
+      setPause(rightInBlock * 4 < BLOCK ? 'stop' : 'between');
+      setRightInBlock(0);
+    }
+    setIndex(done);
+  };
+
+  if (pause) return <BlockPause stop={pause === 'stop'} onContinue={() => setPause(null)} onQuit={() => void finish()} />;
+
   if (!entry) return null;
+  const blockStart = index - (index % BLOCK);
+  const blockLength = Math.min(BLOCK, entries.length - blockStart);
+  const inBlock = index - blockStart;
   return (
     <>
       <header class="masthead">
-        <h1>Kurze Einstufung</h1>
-        <p class="label">
-          Frage <span class="num">{index + 1}</span> von <span class="num">{entries.length}</span>
-        </p>
+        <h1>Einstufung</h1>
       </header>
       <div
         class="progress"
         role="progressbar"
-        aria-label="Fortschritt der Einstufung"
+        aria-label="Fortschritt im Block"
         aria-valuemin={0}
-        aria-valuemax={entries.length}
-        aria-valuenow={index}
+        aria-valuemax={blockLength}
+        aria-valuenow={inBlock}
       >
-        <div style={{ transform: `scaleX(${index / entries.length})` }} />
+        <div style={{ transform: `scaleX(${inBlock / blockLength})` }} />
       </div>
       <Question
         key={index}
         app={app}
         entry={entry}
         manifest={manifests[entry.situationId]}
-        onAnswer={(known) => {
+        onAnswer={(correct, known) => {
+          if (correct) setRightInBlock((n) => n + 1);
           if (known) void app.record({ kind: 'known', cardId: entry.item.id });
         }}
-        onNext={() => setIndex(index + 1)}
+        onNext={next}
       />
       <button type="button" class="link leave" onClick={() => void finish()}>
         Beenden

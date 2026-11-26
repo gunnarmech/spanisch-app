@@ -4,7 +4,7 @@ import type { Task, TaskForm } from '../../engine/round';
 import { openDb } from '../../store/db';
 import { Diagnose } from '../Diagnose';
 import { Home } from '../Home';
-import { Placement } from '../Placement';
+import { BlockPause, Placement } from '../Placement';
 import { Progress } from '../Progress';
 import { component } from '../Round';
 import { ClipTask } from '../tasks/ClipTask';
@@ -35,7 +35,7 @@ function pick(app: AppState, form: TaskForm): { task: Task; item: Item } | null 
 }
 
 /** Alle zeige-Werte; Screen und Preview lesen dieselbe Liste. */
-const KNOWN = ['start', 'start-neu', 'einstufung', 'fortschritt', 'einstellungen', 'diagnose', 'quellen', 'rundenende', 'aufgabe'] as const;
+const KNOWN = ['start', 'start-neu', 'einstufung', 'einstufung-pause', 'einstufung-ende', 'fortschritt', 'einstellungen', 'diagnose', 'quellen', 'rundenende', 'aufgabe'] as const;
 type Zeige = (typeof KNOWN)[number];
 
 // Nur im Dev-Build erreichbar (main.tsx lädt dieses Modul dynamisch hinter import.meta.env.DEV).
@@ -48,6 +48,10 @@ function Screen({ app, params }: { app: AppState; params: URLSearchParams }) {
       return <Home app={{ ...app, settings: { ...app.settings, placementDone: false } }} onStart={noop} onDiagnose={noop} onSettings={noop} onProgress={noop} onPlacement={noop} />;
     case 'einstufung':
       return <Placement app={app} onFinish={noop} />;
+    case 'einstufung-pause':
+      return <BlockPause stop={false} onContinue={noop} onQuit={noop} />;
+    case 'einstufung-ende':
+      return <BlockPause stop onContinue={noop} onQuit={noop} />;
     case 'fortschritt':
       return <Progress app={app} onBack={noop} />;
     case 'einstellungen':
