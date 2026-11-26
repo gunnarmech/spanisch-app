@@ -40,6 +40,11 @@ const JOBS = [
     crop: { left: 0.04, top: 0.0, width: 0.667, height: 1 },
     outputs: [{ name: 'unterwegs.webp', width: 160, height: 160, maxKb: 25 }],
   },
+  {
+    file: 'Lascar Cerro Santa Lucía (Santa Lucía Hill) (4576822725).jpg',
+    crop: { left: 0.05, top: 0, width: 0.664, height: 1 },
+    outputs: [{ name: 'weg.webp', width: 160, height: 160, maxKb: 25 }],
+  },
 ];
 
 async function download(file) {

@@ -76,6 +76,17 @@ const bySituation: Record<string, Photo> = {
     page: commons('Bus_213e_en_Parque_Forestal,_Santiago_20230421.jpg'),
     edit: 'zugeschnitten und verkleinert',
   },
+  '05-weg': {
+    src: url('weg.webp'),
+    width: 160,
+    height: 160,
+    alt: 'Gelbe Balustraden und Treppen am Fuß des Cerro Santa Lucía, dahinter Palmen und Bäume',
+    author: 'Jorge Láscar',
+    license: 'CC BY 2.0',
+    licenseUrl: deed('by/2.0'),
+    page: commons('Lascar_Cerro_Santa_Luc%C3%ADa_(Santa_Luc%C3%ADa_Hill)_(4576822725).jpg'),
+    edit: 'zugeschnitten und verkleinert',
+  },
 };
 
 /** Foto der Situation, oder null, wenn es keins gibt (dann zeigt die Zeile kein Bild). */

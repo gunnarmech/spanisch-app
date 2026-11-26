@@ -1,0 +1,2815 @@
+{
+  "id": "05-weg",
+  "order": 5,
+  "title": "Weg fragen",
+  "items": [
+    {
+      "id": "w-calle",
+      "kind": "word",
+      "es": "calle",
+      "de": "Straße",
+      "forms": [
+        "calle",
+        "calles"
+      ],
+      "examples": [
+        {
+          "es": "La calle es larga.",
+          "de": "Die Straße ist lang."
+        }
+      ],
+      "note": "Der Straßenname steht meist auf einem Schild an der Ecke.",
+      "freqRank": 607
+    },
+    {
+      "id": "w-avenida",
+      "kind": "word",
+      "es": "avenida",
+      "de": "Hauptstraße, Allee",
+      "forms": [
+        "avenida",
+        "avenidas"
+      ],
+      "examples": [
+        {
+          "es": "La avenida es ancha.",
+          "de": "Die Hauptstraße ist breit."
+        }
+      ],
+      "note": "Große Straßen heißen avenida, abgekürzt Av. auf Schildern und Karten."
+    },
+    {
+      "id": "w-alameda",
+      "kind": "word",
+      "es": "Alameda",
+      "de": "Alameda (Hauptstraße im Zentrum)",
+      "forms": [
+        "alameda"
+      ],
+      "examples": [
+        {
+          "es": "La Alameda pasa por el centro.",
+          "de": "Die Alameda führt durch das Zentrum."
+        }
+      ],
+      "note": "So nennt man in Santiago die große Hauptstraße durch das Zentrum, offiziell Avenida Libertador Bernardo O'Higgins. Unter ihr fährt die Línea 1 vom Metro."
+    },
+    {
+      "id": "w-cuadra",
+      "kind": "word",
+      "es": "cuadra",
+      "de": "Häuserblock, Straßenabschnitt",
+      "forms": [
+        "cuadra",
+        "cuadras"
+      ],
+      "examples": [
+        {
+          "es": "El banco está a una cuadra.",
+          "de": "Die Bank ist einen Block entfernt."
+        }
+      ],
+      "note": "Kurze Strecken misst man in cuadras: von einer Ecke bis zur nächsten, meist etwa hundert Meter.",
+      "chile": {
+        "note": "Auch in Chile ist die cuadra die Strecke von einer Ecke zur nächsten.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. cuadra, https://www.asale.org/damer/cuadra"
+      }
+    },
+    {
+      "id": "w-esquina",
+      "kind": "word",
+      "es": "esquina",
+      "de": "Ecke",
+      "forms": [
+        "esquina",
+        "esquinas"
+      ],
+      "examples": [
+        {
+          "es": "El banco está en la esquina.",
+          "de": "Die Bank ist an der Ecke."
+        }
+      ],
+      "note": "Bei Wegbeschreibungen oft zu hören: en la esquina, hasta la esquina.",
+      "freqRank": 2147
+    },
+    {
+      "id": "w-plaza",
+      "kind": "word",
+      "es": "plaza",
+      "de": "Platz",
+      "forms": [
+        "plaza",
+        "plazas"
+      ],
+      "examples": [
+        {
+          "es": "La plaza está en el centro.",
+          "de": "Der Platz ist im Zentrum."
+        }
+      ],
+      "freqRank": 3505
+    },
+    {
+      "id": "w-semaforo",
+      "kind": "word",
+      "es": "semáforo",
+      "de": "Ampel",
+      "forms": [
+        "semáforo",
+        "semáforos"
+      ],
+      "examples": [
+        {
+          "es": "Doble a la derecha en el semáforo.",
+          "de": "Biegen Sie an der Ampel rechts ab."
+        }
+      ],
+      "note": "Doble ist die usted-Form: So erklären dir Fremde den Weg."
+    },
+    {
+      "id": "w-cerro",
+      "kind": "word",
+      "es": "cerro",
+      "de": "Hügel",
+      "forms": [
+        "cerro",
+        "cerros"
+      ],
+      "examples": [
+        {
+          "es": "El cerro está cerca.",
+          "de": "Der Hügel ist in der Nähe."
+        }
+      ],
+      "note": "Mitten in Santiago stehen einzelne Hügel, die cerros, zum Beispiel der Cerro San Cristóbal und der Cerro Santa Lucía."
+    },
+    {
+      "id": "w-puente",
+      "kind": "word",
+      "es": "puente",
+      "de": "Brücke",
+      "forms": [
+        "puente",
+        "puentes"
+      ],
+      "examples": [
+        {
+          "es": "Cruce el puente.",
+          "de": "Gehen Sie über die Brücke."
+        }
+      ],
+      "freqRank": 1670
+    },
+    {
+      "id": "w-parque",
+      "kind": "word",
+      "es": "parque",
+      "de": "Park",
+      "forms": [
+        "parque",
+        "parques"
+      ],
+      "examples": [
+        {
+          "es": "El parque está cerca.",
+          "de": "Der Park ist in der Nähe."
+        }
+      ],
+      "freqRank": 1646
+    },
+    {
+      "id": "w-iglesia",
+      "kind": "word",
+      "es": "iglesia",
+      "de": "Kirche",
+      "forms": [
+        "iglesia",
+        "iglesias"
+      ],
+      "examples": [
+        {
+          "es": "La iglesia está en la plaza.",
+          "de": "Die Kirche ist am Platz."
+        }
+      ],
+      "freqRank": 1000
+    },
+    {
+      "id": "w-museo",
+      "kind": "word",
+      "es": "museo",
+      "de": "Museum",
+      "forms": [
+        "museo",
+        "museos"
+      ],
+      "examples": [
+        {
+          "es": "El museo abre a las diez.",
+          "de": "Das Museum öffnet um zehn."
+        }
+      ],
+      "freqRank": 3190
+    },
+    {
+      "id": "w-banco",
+      "kind": "word",
+      "es": "banco",
+      "de": "Bank",
+      "forms": [
+        "banco",
+        "bancos"
+      ],
+      "examples": [
+        {
+          "es": "El banco está en la esquina.",
+          "de": "Die Bank ist an der Ecke."
+        }
+      ],
+      "freqRank": 1103
+    },
+    {
+      "id": "w-correo",
+      "kind": "word",
+      "es": "correo",
+      "de": "Post",
+      "forms": [
+        "correo",
+        "correos"
+      ],
+      "examples": [
+        {
+          "es": "El correo está lejos.",
+          "de": "Die Post ist weit weg."
+        }
+      ],
+      "note": "Die chilenische Post heißt Correos de Chile.",
+      "freqRank": 1875
+    },
+    {
+      "id": "p-cajero-automatico",
+      "kind": "phrase",
+      "es": "cajero automático",
+      "de": "Geldautomat",
+      "forms": [
+        "cajero automático",
+        "automático"
+      ],
+      "examples": [
+        {
+          "es": "¿Hay un cajero automático por aquí?",
+          "de": "Gibt es hier in der Nähe einen Geldautomaten?"
+        }
+      ]
+    },
+    {
+      "id": "w-barrio",
+      "kind": "word",
+      "es": "barrio",
+      "de": "Viertel",
+      "forms": [
+        "barrio",
+        "barrios"
+      ],
+      "examples": [
+        {
+          "es": "Es un barrio tranquilo.",
+          "de": "Es ist ein ruhiges Viertel."
+        }
+      ],
+      "freqRank": 2329
+    },
+    {
+      "id": "w-mapa",
+      "kind": "word",
+      "es": "mapa",
+      "de": "Karte, Stadtplan",
+      "forms": [
+        "mapa",
+        "mapas"
+      ],
+      "examples": [
+        {
+          "es": "Miro el mapa.",
+          "de": "Ich schaue auf die Karte."
+        }
+      ],
+      "freqRank": 2241
+    },
+    {
+      "id": "w-letrero",
+      "kind": "word",
+      "es": "letrero",
+      "de": "Schild",
+      "forms": [
+        "letrero",
+        "letreros"
+      ],
+      "examples": [
+        {
+          "es": "Hay un letrero en la esquina.",
+          "de": "An der Ecke steht ein Schild."
+        }
+      ]
+    },
+    {
+      "id": "w-edificio",
+      "kind": "word",
+      "es": "edificio",
+      "de": "Gebäude",
+      "forms": [
+        "edificio",
+        "edificios"
+      ],
+      "examples": [
+        {
+          "es": "El edificio es grande.",
+          "de": "Das Gebäude ist groß."
+        }
+      ],
+      "freqRank": 1038
+    },
+    {
+      "id": "w-casa",
+      "kind": "word",
+      "es": "casa",
+      "de": "Haus",
+      "forms": [
+        "casa",
+        "casas"
+      ],
+      "examples": [
+        {
+          "es": "La casa está en la esquina.",
+          "de": "Das Haus ist an der Ecke."
+        }
+      ],
+      "freqRank": 91
+    },
+    {
+      "id": "w-lado",
+      "kind": "word",
+      "es": "lado",
+      "de": "Seite",
+      "forms": [
+        "lado",
+        "lados"
+      ],
+      "examples": [
+        {
+          "es": "El banco está al otro lado.",
+          "de": "Die Bank ist auf der anderen Seite."
+        }
+      ],
+      "note": "Mit de wird daraus al lado de: neben.",
+      "freqRank": 285
+    },
+    {
+      "id": "w-vereda",
+      "kind": "word",
+      "es": "vereda",
+      "de": "Gehweg, Bürgersteig",
+      "forms": [
+        "vereda",
+        "veredas"
+      ],
+      "examples": [
+        {
+          "es": "Camine por la vereda.",
+          "de": "Gehen Sie auf dem Gehweg."
+        }
+      ],
+      "note": "In Chile heißt der Gehweg vereda. Acera, wie man in Spanien sagt, hörst du seltener.",
+      "chile": {
+        "note": "In Chile heißt der Gehweg vereda.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. vereda, https://www.asale.org/damer/vereda"
+      }
+    },
+    {
+      "id": "w-rio",
+      "kind": "word",
+      "es": "río",
+      "de": "Fluss",
+      "forms": [
+        "río",
+        "ríos"
+      ],
+      "examples": [
+        {
+          "es": "El río está cerca.",
+          "de": "Der Fluss ist in der Nähe."
+        }
+      ],
+      "note": "Durch Santiago fließt der Río Mapocho.",
+      "freqRank": 1259
+    },
+    {
+      "id": "w-ciudad",
+      "kind": "word",
+      "es": "ciudad",
+      "de": "Stadt",
+      "forms": [
+        "ciudad",
+        "ciudades"
+      ],
+      "examples": [
+        {
+          "es": "Santiago es una ciudad grande.",
+          "de": "Santiago ist eine große Stadt."
+        }
+      ],
+      "freqRank": 336
+    },
+    {
+      "id": "w-gente",
+      "kind": "word",
+      "es": "gente",
+      "de": "Leute",
+      "forms": [
+        "gente"
+      ],
+      "examples": [
+        {
+          "es": "Hay mucha gente en la plaza.",
+          "de": "Auf dem Platz sind viele Leute."
+        }
+      ],
+      "freqRank": 145
+    },
+    {
+      "id": "w-turista",
+      "kind": "word",
+      "es": "turista",
+      "de": "Tourist, Touristin",
+      "forms": [
+        "turista",
+        "turistas"
+      ],
+      "examples": [
+        {
+          "es": "Soy turista.",
+          "de": "Ich bin Tourist."
+        }
+      ]
+    },
+    {
+      "id": "w-celular",
+      "kind": "word",
+      "es": "celular",
+      "de": "Handy",
+      "forms": [
+        "celular",
+        "celulares"
+      ],
+      "examples": [
+        {
+          "es": "Miro el mapa en el celular.",
+          "de": "Ich schaue auf dem Handy auf die Karte."
+        }
+      ],
+      "note": "In Chile heißt das Handy celular.",
+      "chile": {
+        "note": "Für das Mobiltelefon sagt man in Chile celular.",
+        "source": "Diccionario de americanismos (RAE-ASALE), s. v. celular, https://www.asale.org/damer/celular"
+      },
+      "freqRank": 2492
+    },
+    {
+      "id": "w-google-maps",
+      "kind": "word",
+      "es": "Google Maps",
+      "de": "Google Maps",
+      "forms": [
+        "google maps",
+        "google",
+        "maps"
+      ],
+      "examples": [
+        {
+          "es": "Busco la calle en Google Maps.",
+          "de": "Ich suche die Straße in Google Maps."
+        }
+      ]
+    },
+    {
+      "id": "w-kilometro",
+      "kind": "word",
+      "es": "kilómetro",
+      "de": "Kilometer",
+      "forms": [
+        "kilómetro",
+        "kilómetros"
+      ],
+      "examples": [
+        {
+          "es": "Son dos kilómetros.",
+          "de": "Es sind zwei Kilometer."
+        }
+      ]
+    },
+    {
+      "id": "p-cien-metros",
+      "kind": "phrase",
+      "es": "cien metros",
+      "de": "hundert Meter",
+      "forms": [
+        "cien metros"
+      ],
+      "examples": [
+        {
+          "es": "El banco está a cien metros.",
+          "de": "Die Bank ist hundert Meter entfernt."
+        }
+      ],
+      "note": "Metro ist auch die U-Bahn. Mit einer Zahl davor ist es der Meter."
+    },
+    {
+      "id": "w-mirador",
+      "kind": "word",
+      "es": "mirador",
+      "de": "Aussichtspunkt",
+      "forms": [
+        "mirador",
+        "miradores"
+      ],
+      "examples": [
+        {
+          "es": "Arriba hay un mirador.",
+          "de": "Oben gibt es einen Aussichtspunkt."
+        }
+      ]
+    },
+    {
+      "id": "w-escalera",
+      "kind": "word",
+      "es": "escalera",
+      "de": "Treppe",
+      "forms": [
+        "escalera",
+        "escaleras"
+      ],
+      "examples": [
+        {
+          "es": "Hay muchas escaleras.",
+          "de": "Es gibt viele Treppen."
+        }
+      ],
+      "freqRank": 3053
+    },
+    {
+      "id": "w-ascensor",
+      "kind": "word",
+      "es": "ascensor",
+      "de": "Aufzug",
+      "forms": [
+        "ascensor",
+        "ascensores"
+      ],
+      "examples": [
+        {
+          "es": "También hay un ascensor.",
+          "de": "Es gibt auch einen Aufzug."
+        }
+      ],
+      "freqRank": 3548
+    },
+    {
+      "id": "w-fuente",
+      "kind": "word",
+      "es": "fuente",
+      "de": "Brunnen",
+      "forms": [
+        "fuente",
+        "fuentes"
+      ],
+      "examples": [
+        {
+          "es": "La fuente está en la plaza.",
+          "de": "Der Brunnen ist auf dem Platz."
+        }
+      ],
+      "freqRank": 1947
+    },
+    {
+      "id": "p-plaza-de-armas",
+      "kind": "phrase",
+      "es": "Plaza de Armas",
+      "de": "Plaza de Armas (Hauptplatz im Zentrum)",
+      "forms": [
+        "plaza de armas"
+      ],
+      "examples": [
+        {
+          "es": "La Plaza de Armas está en el centro.",
+          "de": "Die Plaza de Armas ist im Zentrum."
+        }
+      ],
+      "note": "Der Hauptplatz im Zentrum von Santiago, mit Kathedrale und Palmen. Alle kennen ihn, deshalb ist er ein guter Treffpunkt."
+    },
+    {
+      "id": "p-cerro-santa-lucia",
+      "kind": "phrase",
+      "es": "cerro Santa Lucía",
+      "de": "Cerro Santa Lucía (Hügel im Zentrum)",
+      "forms": [
+        "cerro santa lucía"
+      ],
+      "examples": [
+        {
+          "es": "Subo el cerro Santa Lucía a pie.",
+          "de": "Ich gehe zu Fuß auf den Cerro Santa Lucía."
+        }
+      ],
+      "note": "Kleiner Hügel mitten im Zentrum, mit Treppen, Brunnen und Aussicht auf die Stadt. Neben dem Hügel liegt die Metrostation Santa Lucía."
+    },
+    {
+      "id": "p-cerro-san-cristobal",
+      "kind": "phrase",
+      "es": "cerro San Cristóbal",
+      "de": "Cerro San Cristóbal (großer Hügel im Norden)",
+      "forms": [
+        "cerro san cristóbal",
+        "san",
+        "cristóbal"
+      ],
+      "examples": [
+        {
+          "es": "El cerro San Cristóbal es grande.",
+          "de": "Der Cerro San Cristóbal ist groß."
+        }
+      ],
+      "note": "Der große Hügel nördlich der Innenstadt, mit Park und Aussicht. Oben steht eine große Marienstatue."
+    },
+    {
+      "id": "p-la-moneda",
+      "kind": "phrase",
+      "es": "La Moneda",
+      "de": "La Moneda (Regierungspalast)",
+      "forms": [
+        "la moneda"
+      ],
+      "examples": [
+        {
+          "es": "La Moneda queda en el centro.",
+          "de": "La Moneda liegt im Zentrum."
+        }
+      ],
+      "note": "Der Regierungspalast von Chile, im Zentrum von Santiago nahe der Alameda."
+    },
+    {
+      "id": "w-lastarria",
+      "kind": "word",
+      "es": "Lastarria",
+      "de": "Lastarria (Viertel)",
+      "forms": [
+        "lastarria"
+      ],
+      "examples": [
+        {
+          "es": "Lastarria es un barrio bonito.",
+          "de": "Lastarria ist ein schönes Viertel."
+        }
+      ],
+      "note": "Kleines Viertel nahe dem Cerro Santa Lucía, mit Cafés und Restaurants."
+    },
+    {
+      "id": "w-bellavista",
+      "kind": "word",
+      "es": "Bellavista",
+      "de": "Bellavista (Viertel)",
+      "forms": [
+        "bellavista"
+      ],
+      "examples": [
+        {
+          "es": "Bellavista queda cerca del cerro San Cristóbal.",
+          "de": "Bellavista liegt nahe dem Cerro San Cristóbal."
+        }
+      ],
+      "note": "Viertel am Fuß des Cerro San Cristóbal, mit Restaurants und Bars."
+    },
+    {
+      "id": "w-norte",
+      "kind": "word",
+      "es": "norte",
+      "de": "Norden",
+      "forms": [
+        "norte"
+      ],
+      "examples": [
+        {
+          "es": "Arica está en el norte de Chile.",
+          "de": "Arica liegt im Norden von Chile."
+        }
+      ],
+      "freqRank": 1118
+    },
+    {
+      "id": "w-sur",
+      "kind": "word",
+      "es": "sur",
+      "de": "Süden",
+      "forms": [
+        "sur"
+      ],
+      "examples": [
+        {
+          "es": "Puerto Montt está en el sur de Chile.",
+          "de": "Puerto Montt liegt im Süden von Chile."
+        }
+      ],
+      "freqRank": 1227
+    },
+    {
+      "id": "p-el-este",
+      "kind": "phrase",
+      "es": "el este",
+      "de": "der Osten",
+      "forms": [
+        "el este"
+      ],
+      "examples": [
+        {
+          "es": "Las Condes queda en el este de la ciudad.",
+          "de": "Las Condes liegt im Osten der Stadt."
+        }
+      ],
+      "note": "In Santiago hört man für Osten auch oriente und für Westen poniente, zum Beispiel sector oriente für Viertel wie Las Condes."
+    },
+    {
+      "id": "p-el-oeste",
+      "kind": "phrase",
+      "es": "el oeste",
+      "de": "der Westen",
+      "forms": [
+        "el oeste"
+      ],
+      "examples": [
+        {
+          "es": "El aeropuerto está en el oeste de la ciudad.",
+          "de": "Der Flughafen liegt im Westen der Stadt."
+        }
+      ]
+    },
+    {
+      "id": "w-derecha",
+      "kind": "word",
+      "es": "derecha",
+      "de": "rechts, rechte Seite",
+      "forms": [
+        "derecha"
+      ],
+      "examples": [
+        {
+          "es": "La plaza está a la derecha.",
+          "de": "Der Platz ist rechts."
+        }
+      ],
+      "freqRank": 973
+    },
+    {
+      "id": "w-izquierda",
+      "kind": "word",
+      "es": "izquierda",
+      "de": "links, linke Seite",
+      "forms": [
+        "izquierda"
+      ],
+      "examples": [
+        {
+          "es": "El banco está a la izquierda.",
+          "de": "Die Bank ist links."
+        }
+      ],
+      "freqRank": 1051
+    },
+    {
+      "id": "p-todo-derecho",
+      "kind": "phrase",
+      "es": "todo derecho",
+      "de": "immer geradeaus",
+      "forms": [
+        "todo derecho",
+        "derecho"
+      ],
+      "examples": [
+        {
+          "es": "Siga todo derecho.",
+          "de": "Gehen Sie immer geradeaus."
+        }
+      ],
+      "note": "In Chile sehr üblich: todo derecho oder einfach derecho. In Spanien sagt man eher todo recto."
+    },
+    {
+      "id": "p-a-la-derecha",
+      "kind": "phrase",
+      "es": "a la derecha",
+      "de": "nach rechts, rechts",
+      "forms": [
+        "a la derecha"
+      ],
+      "examples": [
+        {
+          "es": "Doble a la derecha.",
+          "de": "Biegen Sie rechts ab."
+        }
+      ]
+    },
+    {
+      "id": "p-a-la-izquierda",
+      "kind": "phrase",
+      "es": "a la izquierda",
+      "de": "nach links, links",
+      "forms": [
+        "a la izquierda"
+      ],
+      "examples": [
+        {
+          "es": "Doble a la izquierda.",
+          "de": "Biegen Sie links ab."
+        }
+      ]
+    },
+    {
+      "id": "p-al-lado-de",
+      "kind": "phrase",
+      "es": "al lado de",
+      "de": "neben",
+      "forms": [
+        "al lado de",
+        "lado"
+      ],
+      "examples": [
+        {
+          "es": "El banco está al lado de la farmacia.",
+          "de": "Die Bank ist neben der Apotheke."
+        }
+      ]
+    },
+    {
+      "id": "p-enfrente-de",
+      "kind": "phrase",
+      "es": "enfrente de",
+      "de": "gegenüber von",
+      "forms": [
+        "enfrente de",
+        "enfrente"
+      ],
+      "examples": [
+        {
+          "es": "La plaza está enfrente de la iglesia.",
+          "de": "Der Platz ist gegenüber der Kirche."
+        }
+      ]
+    },
+    {
+      "id": "p-frente-a",
+      "kind": "phrase",
+      "es": "frente a",
+      "de": "gegenüber, vor",
+      "forms": [
+        "frente a",
+        "frente",
+        "al frente"
+      ],
+      "examples": [
+        {
+          "es": "La farmacia está frente a la plaza.",
+          "de": "Die Apotheke ist gegenüber dem Platz."
+        }
+      ],
+      "note": "Ohne Bezugsort sagt man auch einfach al frente: gegenüber."
+    },
+    {
+      "id": "p-detras-de",
+      "kind": "phrase",
+      "es": "detrás de",
+      "de": "hinter",
+      "forms": [
+        "detrás de",
+        "detrás"
+      ],
+      "examples": [
+        {
+          "es": "El museo está detrás del parque.",
+          "de": "Das Museum ist hinter dem Park."
+        }
+      ]
+    },
+    {
+      "id": "p-delante-de",
+      "kind": "phrase",
+      "es": "delante de",
+      "de": "vor (örtlich)",
+      "forms": [
+        "delante de",
+        "delante"
+      ],
+      "examples": [
+        {
+          "es": "El taxi está delante de la iglesia.",
+          "de": "Das Taxi steht vor der Kirche."
+        }
+      ]
+    },
+    {
+      "id": "w-entre",
+      "kind": "word",
+      "es": "entre",
+      "de": "zwischen",
+      "forms": [
+        "entre"
+      ],
+      "examples": [
+        {
+          "es": "El banco está entre la farmacia y la iglesia.",
+          "de": "Die Bank ist zwischen der Apotheke und der Kirche."
+        }
+      ],
+      "freqRank": 251
+    },
+    {
+      "id": "p-cerca-de",
+      "kind": "phrase",
+      "es": "cerca de",
+      "de": "in der Nähe von",
+      "forms": [
+        "cerca de"
+      ],
+      "examples": [
+        {
+          "es": "La farmacia está cerca de la plaza.",
+          "de": "Die Apotheke ist in der Nähe des Platzes."
+        }
+      ]
+    },
+    {
+      "id": "p-lejos-de",
+      "kind": "phrase",
+      "es": "lejos de",
+      "de": "weit weg von",
+      "forms": [
+        "lejos de"
+      ],
+      "examples": [
+        {
+          "es": "El terminal está lejos de la plaza.",
+          "de": "Der Busbahnhof ist weit weg vom Platz."
+        }
+      ]
+    },
+    {
+      "id": "p-en-la-esquina",
+      "kind": "phrase",
+      "es": "en la esquina",
+      "de": "an der Ecke",
+      "forms": [
+        "en la esquina"
+      ],
+      "examples": [
+        {
+          "es": "El banco está en la esquina.",
+          "de": "Die Bank ist an der Ecke."
+        }
+      ]
+    },
+    {
+      "id": "p-a-una-cuadra",
+      "kind": "phrase",
+      "es": "a una cuadra",
+      "de": "einen Block entfernt",
+      "forms": [
+        "a una cuadra"
+      ],
+      "examples": [
+        {
+          "es": "La farmacia está a una cuadra.",
+          "de": "Die Apotheke ist einen Block entfernt."
+        }
+      ]
+    },
+    {
+      "id": "p-a-dos-cuadras",
+      "kind": "phrase",
+      "es": "a dos cuadras",
+      "de": "zwei Blocks entfernt",
+      "forms": [
+        "a dos cuadras"
+      ],
+      "examples": [
+        {
+          "es": "El banco está a dos cuadras.",
+          "de": "Die Bank ist zwei Blocks entfernt."
+        }
+      ]
+    },
+    {
+      "id": "p-a-media-cuadra",
+      "kind": "phrase",
+      "es": "a media cuadra",
+      "de": "einen halben Block entfernt",
+      "forms": [
+        "a media cuadra"
+      ],
+      "examples": [
+        {
+          "es": "La iglesia está a media cuadra.",
+          "de": "Die Kirche ist einen halben Block entfernt."
+        }
+      ]
+    },
+    {
+      "id": "p-a-la-vuelta",
+      "kind": "phrase",
+      "es": "a la vuelta de la esquina",
+      "de": "gleich um die Ecke",
+      "forms": [
+        "a la vuelta de la esquina"
+      ],
+      "examples": [
+        {
+          "es": "El museo está a la vuelta de la esquina.",
+          "de": "Das Museum ist gleich um die Ecke."
+        }
+      ]
+    },
+    {
+      "id": "p-al-final-de",
+      "kind": "phrase",
+      "es": "al final de",
+      "de": "am Ende von",
+      "forms": [
+        "al final de",
+        "final"
+      ],
+      "examples": [
+        {
+          "es": "La plaza está al final de la calle.",
+          "de": "Der Platz ist am Ende der Straße."
+        }
+      ]
+    },
+    {
+      "id": "p-mas-adelante",
+      "kind": "phrase",
+      "es": "más adelante",
+      "de": "weiter vorn",
+      "forms": [
+        "más adelante",
+        "adelante"
+      ],
+      "examples": [
+        {
+          "es": "El banco está más adelante.",
+          "de": "Die Bank ist weiter vorn."
+        }
+      ]
+    },
+    {
+      "id": "p-por-aqui",
+      "kind": "phrase",
+      "es": "por aquí",
+      "de": "hier entlang, hier in der Nähe",
+      "forms": [
+        "por aquí"
+      ],
+      "examples": [
+        {
+          "es": "Es por aquí.",
+          "de": "Es ist hier entlang."
+        }
+      ]
+    },
+    {
+      "id": "p-por-alla",
+      "kind": "phrase",
+      "es": "por allá",
+      "de": "dort entlang",
+      "forms": [
+        "por allá"
+      ],
+      "examples": [
+        {
+          "es": "La estación está por allá.",
+          "de": "Die Station ist dort entlang."
+        }
+      ]
+    },
+    {
+      "id": "p-por-ahi",
+      "kind": "phrase",
+      "es": "por ahí",
+      "de": "da entlang",
+      "forms": [
+        "por ahí"
+      ],
+      "examples": [
+        {
+          "es": "Siga por ahí.",
+          "de": "Gehen Sie da entlang."
+        }
+      ]
+    },
+    {
+      "id": "p-ahi-mismo",
+      "kind": "phrase",
+      "es": "ahí mismo",
+      "de": "genau dort",
+      "forms": [
+        "ahí mismo",
+        "mismo"
+      ],
+      "examples": [
+        {
+          "es": "El banco está ahí mismo.",
+          "de": "Die Bank ist genau dort."
+        }
+      ]
+    },
+    {
+      "id": "w-justo",
+      "kind": "word",
+      "es": "justo",
+      "de": "genau, direkt",
+      "forms": [
+        "justo"
+      ],
+      "examples": [
+        {
+          "es": "Está justo en la esquina.",
+          "de": "Es ist direkt an der Ecke."
+        }
+      ],
+      "freqRank": 360
+    },
+    {
+      "id": "p-despues-de",
+      "kind": "phrase",
+      "es": "después de",
+      "de": "nach (Ortsangabe)",
+      "forms": [
+        "después de"
+      ],
+      "examples": [
+        {
+          "es": "Está después del semáforo.",
+          "de": "Es ist nach der Ampel."
+        }
+      ]
+    },
+    {
+      "id": "p-antes-de",
+      "kind": "phrase",
+      "es": "antes de",
+      "de": "vor (Ortsangabe)",
+      "forms": [
+        "antes de",
+        "antes"
+      ],
+      "examples": [
+        {
+          "es": "Está antes de la plaza.",
+          "de": "Es ist vor dem Platz."
+        }
+      ]
+    },
+    {
+      "id": "p-en-el-semaforo",
+      "kind": "phrase",
+      "es": "en el semáforo",
+      "de": "an der Ampel",
+      "forms": [
+        "en el semáforo"
+      ],
+      "examples": [
+        {
+          "es": "Doble en el semáforo.",
+          "de": "Biegen Sie an der Ampel ab."
+        }
+      ]
+    },
+    {
+      "id": "p-hasta-la-esquina",
+      "kind": "phrase",
+      "es": "hasta la esquina",
+      "de": "bis zur Ecke",
+      "forms": [
+        "hasta la esquina"
+      ],
+      "examples": [
+        {
+          "es": "Siga hasta la esquina.",
+          "de": "Gehen Sie bis zur Ecke."
+        }
+      ]
+    },
+    {
+      "id": "w-primero",
+      "kind": "word",
+      "es": "primero",
+      "de": "erster",
+      "forms": [
+        "primero",
+        "primera",
+        "primer"
+      ],
+      "examples": [
+        {
+          "es": "Es la primera calle a la derecha.",
+          "de": "Es ist die erste Straße rechts."
+        }
+      ],
+      "note": "Vor männlichen Hauptwörtern wird primero zu primer: el primer semáforo.",
+      "freqRank": 324
+    },
+    {
+      "id": "w-segundo",
+      "kind": "word",
+      "es": "segundo",
+      "de": "zweiter",
+      "forms": [
+        "segundo",
+        "segunda"
+      ],
+      "examples": [
+        {
+          "es": "Es el segundo semáforo.",
+          "de": "Es ist die zweite Ampel."
+        }
+      ],
+      "freqRank": 480
+    },
+    {
+      "id": "w-tercero",
+      "kind": "word",
+      "es": "tercero",
+      "de": "dritter",
+      "forms": [
+        "tercero",
+        "tercera",
+        "tercer"
+      ],
+      "examples": [
+        {
+          "es": "Es la tercera calle a la izquierda.",
+          "de": "Es ist die dritte Straße links."
+        }
+      ],
+      "note": "Vor männlichen Hauptwörtern wird tercero zu tercer: el tercer semáforo.",
+      "freqRank": 4763
+    },
+    {
+      "id": "w-arriba",
+      "kind": "word",
+      "es": "arriba",
+      "de": "oben, hinauf",
+      "forms": [
+        "arriba"
+      ],
+      "examples": [
+        {
+          "es": "Arriba hay un mirador.",
+          "de": "Oben gibt es einen Aussichtspunkt."
+        }
+      ],
+      "freqRank": 420
+    },
+    {
+      "id": "w-abajo",
+      "kind": "word",
+      "es": "abajo",
+      "de": "unten, hinunter",
+      "forms": [
+        "abajo"
+      ],
+      "examples": [
+        {
+          "es": "La estación está abajo.",
+          "de": "Die Station ist unten."
+        }
+      ],
+      "freqRank": 462
+    },
+    {
+      "id": "w-largo",
+      "kind": "word",
+      "es": "largo",
+      "de": "lang",
+      "forms": [
+        "largo",
+        "larga",
+        "largos",
+        "largas"
+      ],
+      "examples": [
+        {
+          "es": "La avenida es larga.",
+          "de": "Die Hauptstraße ist lang."
+        }
+      ],
+      "freqRank": 709
+    },
+    {
+      "id": "w-tranquilo",
+      "kind": "word",
+      "es": "tranquilo",
+      "de": "ruhig",
+      "forms": [
+        "tranquilo",
+        "tranquila"
+      ],
+      "examples": [
+        {
+          "es": "Es un barrio tranquilo.",
+          "de": "Es ist ein ruhiges Viertel."
+        }
+      ],
+      "note": "Als Zuruf heißt Tranquilo: keine Sorge.",
+      "freqRank": 804
+    },
+    {
+      "id": "w-facil",
+      "kind": "word",
+      "es": "fácil",
+      "de": "einfach, leicht",
+      "forms": [
+        "fácil",
+        "fáciles"
+      ],
+      "examples": [
+        {
+          "es": "Es fácil llegar.",
+          "de": "Es ist leicht hinzukommen."
+        }
+      ],
+      "freqRank": 487
+    },
+    {
+      "id": "w-rojo",
+      "kind": "word",
+      "es": "rojo",
+      "de": "rot",
+      "forms": [
+        "rojo",
+        "roja",
+        "rojos",
+        "rojas"
+      ],
+      "examples": [
+        {
+          "es": "El edificio es rojo.",
+          "de": "Das Gebäude ist rot."
+        }
+      ],
+      "freqRank": 1313
+    },
+    {
+      "id": "w-blanco",
+      "kind": "word",
+      "es": "blanco",
+      "de": "weiß",
+      "forms": [
+        "blanco",
+        "blanca",
+        "blancos",
+        "blancas"
+      ],
+      "examples": [
+        {
+          "es": "La iglesia es blanca.",
+          "de": "Die Kirche ist weiß."
+        }
+      ],
+      "freqRank": 850
+    },
+    {
+      "id": "w-amarillo",
+      "kind": "word",
+      "es": "amarillo",
+      "de": "gelb",
+      "forms": [
+        "amarillo",
+        "amarilla",
+        "amarillos",
+        "amarillas"
+      ],
+      "examples": [
+        {
+          "es": "Busco un edificio amarillo.",
+          "de": "Ich suche ein gelbes Gebäude."
+        }
+      ],
+      "freqRank": 4254
+    },
+    {
+      "id": "w-seguir",
+      "kind": "word",
+      "es": "seguir",
+      "de": "weitergehen, folgen",
+      "forms": [
+        "seguir",
+        "sigo",
+        "sigues",
+        "sigue",
+        "siguen",
+        "seguimos",
+        "siga",
+        "sigan"
+      ],
+      "examples": [
+        {
+          "es": "Siga por esta calle.",
+          "de": "Gehen Sie diese Straße entlang weiter."
+        }
+      ],
+      "note": "Siga ist die usted-Form, die Höflichkeitsform: So erklären dir Fremde den Weg. Siga derecho heißt geradeaus weitergehen.",
+      "freqRank": 512
+    },
+    {
+      "id": "w-doblar",
+      "kind": "word",
+      "es": "doblar",
+      "de": "abbiegen",
+      "forms": [
+        "doblar",
+        "doblo",
+        "doblas",
+        "dobla",
+        "doblan",
+        "doblamos",
+        "doble",
+        "doblen"
+      ],
+      "examples": [
+        {
+          "es": "Doble a la izquierda en la esquina.",
+          "de": "Biegen Sie an der Ecke links ab."
+        }
+      ],
+      "note": "Doble ist die usted-Form, die Höflichkeitsform. Du hörst sie, wenn dir jemand den Weg beschreibt."
+    },
+    {
+      "id": "w-cruzar",
+      "kind": "word",
+      "es": "cruzar",
+      "de": "überqueren",
+      "forms": [
+        "cruzar",
+        "cruzo",
+        "cruzas",
+        "cruza",
+        "cruzan",
+        "cruzamos",
+        "cruce",
+        "crucen"
+      ],
+      "examples": [
+        {
+          "es": "Cruce la calle en el semáforo.",
+          "de": "Überqueren Sie die Straße an der Ampel."
+        }
+      ],
+      "note": "Cruce ist die usted-Form, die Höflichkeitsform.",
+      "freqRank": 3175
+    },
+    {
+      "id": "w-quedar",
+      "kind": "word",
+      "es": "quedar",
+      "de": "liegen, sich befinden",
+      "forms": [
+        "quedar",
+        "queda",
+        "quedan"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde queda la farmacia?",
+          "de": "Wo liegt die Apotheke?"
+        }
+      ],
+      "note": "In ¿Dónde queda...? heißt quedar liegen, sich befinden. Es ist die übliche Frage nach einem Ort, gleichbedeutend mit ¿Dónde está...? Die Antwort lautet oft: Queda a dos cuadras.",
+      "freqRank": 1290
+    },
+    {
+      "id": "w-caminar",
+      "kind": "word",
+      "es": "caminar",
+      "de": "zu Fuß gehen",
+      "forms": [
+        "caminar",
+        "camino",
+        "caminas",
+        "camina",
+        "caminan",
+        "caminamos",
+        "camine"
+      ],
+      "examples": [
+        {
+          "es": "Camino diez minutos.",
+          "de": "Ich gehe zehn Minuten zu Fuß."
+        }
+      ],
+      "note": "Camine ist die usted-Form, die Höflichkeitsform.",
+      "freqRank": 1560
+    },
+    {
+      "id": "w-perdido",
+      "kind": "word",
+      "es": "perdido",
+      "de": "verirrt, verloren",
+      "forms": [
+        "perdido",
+        "perdida"
+      ],
+      "examples": [
+        {
+          "es": "Estoy perdido.",
+          "de": "Ich habe mich verirrt."
+        }
+      ],
+      "note": "Eine Frau sagt estoy perdida.",
+      "freqRank": 591
+    },
+    {
+      "id": "w-encontrar",
+      "kind": "word",
+      "es": "encontrar",
+      "de": "finden",
+      "forms": [
+        "encontrar",
+        "encuentro",
+        "encuentras",
+        "encuentra",
+        "encuentran",
+        "encontramos"
+      ],
+      "examples": [
+        {
+          "es": "No encuentro la calle.",
+          "de": "Ich finde die Straße nicht."
+        }
+      ],
+      "freqRank": 372
+    },
+    {
+      "id": "w-mostrar",
+      "kind": "word",
+      "es": "mostrar",
+      "de": "zeigen",
+      "forms": [
+        "mostrar",
+        "muestro",
+        "muestras",
+        "muestra",
+        "muestran"
+      ],
+      "examples": [
+        {
+          "es": "¿Me puede mostrar en el mapa?",
+          "de": "Können Sie mir das auf der Karte zeigen?"
+        }
+      ],
+      "freqRank": 2353
+    },
+    {
+      "id": "w-decir",
+      "kind": "word",
+      "es": "decir",
+      "de": "sagen",
+      "forms": [
+        "decir",
+        "digo",
+        "dices",
+        "dice",
+        "dicen",
+        "diga",
+        "dígame"
+      ],
+      "examples": [
+        {
+          "es": "¿Me puede decir dónde queda la plaza?",
+          "de": "Können Sie mir sagen, wo die Plaza liegt?"
+        }
+      ],
+      "note": "Dígame ist die usted-Form: Sagen Sie mir.",
+      "freqRank": 111
+    },
+    {
+      "id": "w-preguntar",
+      "kind": "word",
+      "es": "preguntar",
+      "de": "fragen",
+      "forms": [
+        "preguntar",
+        "pregunto",
+        "preguntas",
+        "pregunta",
+        "preguntan",
+        "preguntamos"
+      ],
+      "examples": [
+        {
+          "es": "Pregunto en la farmacia.",
+          "de": "Ich frage in der Apotheke."
+        }
+      ],
+      "freqRank": 1507
+    },
+    {
+      "id": "p-donde-queda",
+      "kind": "phrase",
+      "es": "dónde queda",
+      "de": "wo liegt",
+      "forms": [
+        "dónde queda",
+        "queda"
+      ],
+      "examples": [
+        {
+          "es": "¿Dónde queda la Plaza de Armas?",
+          "de": "Wo liegt die Plaza de Armas?"
+        }
+      ]
+    },
+    {
+      "id": "p-como-llego-a",
+      "kind": "phrase",
+      "es": "cómo llego a",
+      "de": "wie komme ich zu",
+      "forms": [
+        "cómo llego a",
+        "llego"
+      ],
+      "examples": [
+        {
+          "es": "¿Cómo llego a la plaza?",
+          "de": "Wie komme ich zum Platz?"
+        }
+      ]
+    },
+    {
+      "id": "p-como-se-va-a",
+      "kind": "phrase",
+      "es": "cómo se va a",
+      "de": "wie kommt man zu",
+      "forms": [
+        "cómo se va a"
+      ],
+      "examples": [
+        {
+          "es": "¿Cómo se va al terminal?",
+          "de": "Wie kommt man zum Busbahnhof?"
+        }
+      ]
+    },
+    {
+      "id": "p-me-puede-decir",
+      "kind": "phrase",
+      "es": "me puede decir",
+      "de": "können Sie mir sagen",
+      "forms": [
+        "me puede decir"
+      ],
+      "examples": [
+        {
+          "es": "¿Me puede decir dónde queda el correo?",
+          "de": "Können Sie mir sagen, wo die Post liegt?"
+        }
+      ],
+      "note": "Puede ist die usted-Form. Fremde sprichst du so höflich an."
+    },
+    {
+      "id": "p-me-puede-mostrar",
+      "kind": "phrase",
+      "es": "me puede mostrar",
+      "de": "können Sie mir zeigen",
+      "forms": [
+        "me puede mostrar"
+      ],
+      "examples": [
+        {
+          "es": "¿Me puede mostrar en el mapa?",
+          "de": "Können Sie mir das auf der Karte zeigen?"
+        }
+      ]
+    },
+    {
+      "id": "p-estoy-perdido",
+      "kind": "phrase",
+      "es": "estoy perdido",
+      "de": "ich habe mich verirrt",
+      "forms": [
+        "estoy perdido",
+        "estoy perdida"
+      ],
+      "examples": [
+        {
+          "es": "Disculpe, estoy perdido.",
+          "de": "Entschuldigung, ich habe mich verirrt."
+        }
+      ]
+    },
+    {
+      "id": "p-no-soy-de-aqui",
+      "kind": "phrase",
+      "es": "no soy de aquí",
+      "de": "ich bin nicht von hier",
+      "forms": [
+        "no soy de aquí"
+      ],
+      "examples": [
+        {
+          "es": "No soy de aquí.",
+          "de": "Ich bin nicht von hier."
+        }
+      ]
+    },
+    {
+      "id": "p-cuantas-cuadras",
+      "kind": "phrase",
+      "es": "cuántas cuadras",
+      "de": "wie viele Blocks",
+      "forms": [
+        "cuántas cuadras"
+      ],
+      "examples": [
+        {
+          "es": "¿Cuántas cuadras son?",
+          "de": "Wie viele Blocks sind es?"
+        }
+      ]
+    },
+    {
+      "id": "p-a-cinco-minutos",
+      "kind": "phrase",
+      "es": "a cinco minutos",
+      "de": "fünf Minuten entfernt",
+      "forms": [
+        "a cinco minutos"
+      ],
+      "examples": [
+        {
+          "es": "Está a cinco minutos a pie.",
+          "de": "Es ist fünf Minuten zu Fuß entfernt."
+        }
+      ]
+    },
+    {
+      "id": "p-otra-vez",
+      "kind": "phrase",
+      "es": "otra vez",
+      "de": "noch einmal",
+      "forms": [
+        "otra vez",
+        "vez"
+      ],
+      "examples": [
+        {
+          "es": "¿Puede repetir otra vez, por favor?",
+          "de": "Können Sie es noch einmal wiederholen, bitte?"
+        }
+      ]
+    },
+    {
+      "id": "w-perfecto",
+      "kind": "word",
+      "es": "perfecto",
+      "de": "perfekt",
+      "forms": [
+        "perfecto",
+        "perfecta"
+      ],
+      "examples": [
+        {
+          "es": "Perfecto, muchas gracias.",
+          "de": "Perfekt, vielen Dank."
+        }
+      ],
+      "freqRank": 667
+    },
+    {
+      "id": "s-donde-queda-la-plaza-de-armas",
+      "kind": "sentence",
+      "es": "¿Dónde queda la Plaza de Armas?",
+      "de": "Wo liegt die Plaza de Armas?",
+      "accept": [
+        "¿Dónde está la Plaza de Armas?"
+      ]
+    },
+    {
+      "id": "s-donde-queda-el-banco-por-favor",
+      "kind": "sentence",
+      "es": "¿Dónde queda el banco, por favor?",
+      "de": "Wo ist die Bank, bitte?",
+      "accept": [
+        "¿Dónde está el banco, por favor?",
+        "Por favor, ¿dónde queda el banco?"
+      ]
+    },
+    {
+      "id": "s-disculpe-donde-queda-la-farmacia",
+      "kind": "sentence",
+      "es": "Disculpe, ¿dónde queda la farmacia?",
+      "de": "Entschuldigung, wo ist die Apotheke?",
+      "accept": [
+        "Disculpe, ¿dónde está la farmacia?",
+        "Perdón, ¿dónde queda la farmacia?"
+      ]
+    },
+    {
+      "id": "s-como-llego-al-cerro-santa-lucia",
+      "kind": "sentence",
+      "es": "¿Cómo llego al cerro Santa Lucía?",
+      "de": "Wie komme ich zum Cerro Santa Lucía?"
+    },
+    {
+      "id": "s-como-llego-a-la-estacion-de",
+      "kind": "sentence",
+      "es": "¿Cómo llego a la estación de metro?",
+      "de": "Wie komme ich zur Metrostation?",
+      "accept": [
+        "¿Cómo llego a la estación del metro?"
+      ]
+    },
+    {
+      "id": "s-como-se-va-al-terminal",
+      "kind": "sentence",
+      "es": "¿Cómo se va al terminal?",
+      "de": "Wie kommt man zum Busbahnhof?",
+      "accept": [
+        "¿Cómo llego al terminal?"
+      ]
+    },
+    {
+      "id": "s-me-puede-decir-donde-queda-el",
+      "kind": "sentence",
+      "es": "¿Me puede decir dónde queda el correo?",
+      "de": "Können Sie mir sagen, wo die Post liegt?",
+      "accept": [
+        "¿Me puede decir dónde está el correo?"
+      ]
+    },
+    {
+      "id": "s-me-puede-mostrar-en-el-mapa",
+      "kind": "sentence",
+      "es": "¿Me puede mostrar en el mapa?",
+      "de": "Können Sie mir das auf der Karte zeigen?",
+      "accept": [
+        "¿Me puede mostrar en el celular?"
+      ]
+    },
+    {
+      "id": "s-hay-un-cajero-automatico-por-aqui",
+      "kind": "sentence",
+      "es": "¿Hay un cajero automático por aquí?",
+      "de": "Gibt es hier in der Nähe einen Geldautomaten?",
+      "accept": [
+        "¿Hay un cajero automático cerca?"
+      ]
+    },
+    {
+      "id": "s-esta-lejos-de-aqui",
+      "kind": "sentence",
+      "es": "¿Está lejos de aquí?",
+      "de": "Ist es weit von hier?",
+      "accept": [
+        "¿Queda lejos de aquí?",
+        "¿Está lejos?"
+      ]
+    },
+    {
+      "id": "s-esta-cerca",
+      "kind": "sentence",
+      "es": "¿Está cerca?",
+      "de": "Ist es in der Nähe?",
+      "accept": [
+        "¿Queda cerca?"
+      ]
+    },
+    {
+      "id": "s-no-esta-lejos",
+      "kind": "sentence",
+      "es": "No está lejos.",
+      "de": "Es ist nicht weit.",
+      "accept": [
+        "No queda lejos."
+      ]
+    },
+    {
+      "id": "s-esta-a-dos-cuadras",
+      "kind": "sentence",
+      "es": "Está a dos cuadras.",
+      "de": "Es ist zwei Blocks entfernt.",
+      "accept": [
+        "Queda a dos cuadras."
+      ]
+    },
+    {
+      "id": "s-esta-a-cinco-minutos-a-pie",
+      "kind": "sentence",
+      "es": "Está a cinco minutos a pie.",
+      "de": "Es ist fünf Minuten zu Fuß entfernt.",
+      "accept": [
+        "Queda a cinco minutos a pie."
+      ]
+    },
+    {
+      "id": "s-cuantas-cuadras-son",
+      "kind": "sentence",
+      "es": "¿Cuántas cuadras son?",
+      "de": "Wie viele Blocks sind es?"
+    },
+    {
+      "id": "s-cuanto-se-demora-a-pie",
+      "kind": "sentence",
+      "es": "¿Cuánto se demora a pie?",
+      "de": "Wie lange braucht man zu Fuß?"
+    },
+    {
+      "id": "s-siga-todo-derecho",
+      "kind": "sentence",
+      "es": "Siga todo derecho.",
+      "de": "Gehen Sie immer geradeaus.",
+      "accept": [
+        "Siga derecho."
+      ]
+    },
+    {
+      "id": "s-siga-por-esta-calle-hasta-la",
+      "kind": "sentence",
+      "es": "Siga por esta calle hasta la esquina.",
+      "de": "Gehen Sie diese Straße bis zur Ecke entlang."
+    },
+    {
+      "id": "s-doble-a-la-derecha-en-la",
+      "kind": "sentence",
+      "es": "Doble a la derecha en la esquina.",
+      "de": "Biegen Sie an der Ecke rechts ab.",
+      "accept": [
+        "En la esquina doble a la derecha."
+      ]
+    },
+    {
+      "id": "s-doble-a-la-izquierda-en-el",
+      "kind": "sentence",
+      "es": "Doble a la izquierda en el semáforo.",
+      "de": "Biegen Sie an der Ampel links ab.",
+      "accept": [
+        "En el semáforo doble a la izquierda."
+      ]
+    },
+    {
+      "id": "s-cruce-la-calle",
+      "kind": "sentence",
+      "es": "Cruce la calle.",
+      "de": "Überqueren Sie die Straße."
+    },
+    {
+      "id": "s-cruce-el-puente",
+      "kind": "sentence",
+      "es": "Cruce el puente.",
+      "de": "Gehen Sie über die Brücke."
+    },
+    {
+      "id": "s-es-la-primera-calle-a-la",
+      "kind": "sentence",
+      "es": "Es la primera calle a la derecha.",
+      "de": "Es ist die erste Straße rechts."
+    },
+    {
+      "id": "s-es-la-segunda-calle-a-la",
+      "kind": "sentence",
+      "es": "Es la segunda calle a la izquierda.",
+      "de": "Es ist die zweite Straße links."
+    },
+    {
+      "id": "s-esta-en-la-esquina",
+      "kind": "sentence",
+      "es": "Está en la esquina.",
+      "de": "Es ist an der Ecke.",
+      "accept": [
+        "Queda en la esquina."
+      ]
+    },
+    {
+      "id": "s-esta-al-lado-del-banco",
+      "kind": "sentence",
+      "es": "Está al lado del banco.",
+      "de": "Es ist neben der Bank.",
+      "accept": [
+        "Queda al lado del banco."
+      ]
+    },
+    {
+      "id": "s-esta-enfrente-de-la-plaza",
+      "kind": "sentence",
+      "es": "Está enfrente de la plaza.",
+      "de": "Es ist gegenüber dem Platz.",
+      "accept": [
+        "Queda enfrente de la plaza.",
+        "Está frente a la plaza."
+      ]
+    },
+    {
+      "id": "s-esta-frente-a-la-iglesia",
+      "kind": "sentence",
+      "es": "Está frente a la iglesia.",
+      "de": "Es ist gegenüber der Kirche.",
+      "accept": [
+        "Está enfrente de la iglesia."
+      ]
+    },
+    {
+      "id": "s-esta-detras-del-museo",
+      "kind": "sentence",
+      "es": "Está detrás del museo.",
+      "de": "Es ist hinter dem Museum.",
+      "accept": [
+        "Queda detrás del museo."
+      ]
+    },
+    {
+      "id": "s-esta-entre-la-farmacia-y-el",
+      "kind": "sentence",
+      "es": "Está entre la farmacia y el banco.",
+      "de": "Es ist zwischen der Apotheke und der Bank.",
+      "accept": [
+        "Queda entre la farmacia y el banco."
+      ]
+    },
+    {
+      "id": "s-esta-ahi-mismo",
+      "kind": "sentence",
+      "es": "Está ahí mismo.",
+      "de": "Es ist genau dort.",
+      "accept": [
+        "Queda ahí mismo."
+      ]
+    },
+    {
+      "id": "s-esta-mas-adelante-despues-del-semaforo",
+      "kind": "sentence",
+      "es": "Está más adelante, después del semáforo.",
+      "de": "Es ist weiter vorn, nach der Ampel."
+    },
+    {
+      "id": "s-esta-antes-de-la-plaza",
+      "kind": "sentence",
+      "es": "Está antes de la plaza.",
+      "de": "Es ist vor dem Platz."
+    },
+    {
+      "id": "s-es-por-alla",
+      "kind": "sentence",
+      "es": "Es por allá.",
+      "de": "Es ist dort entlang."
+    },
+    {
+      "id": "s-es-por-aqui",
+      "kind": "sentence",
+      "es": "Es por aquí.",
+      "de": "Es ist hier entlang."
+    },
+    {
+      "id": "s-el-mirador-queda-arriba",
+      "kind": "sentence",
+      "es": "El mirador queda arriba.",
+      "de": "Der Aussichtspunkt liegt oben.",
+      "accept": [
+        "El mirador está arriba."
+      ]
+    },
+    {
+      "id": "s-hay-una-escalera-y-un-ascensor",
+      "kind": "sentence",
+      "es": "Hay una escalera y un ascensor.",
+      "de": "Es gibt eine Treppe und einen Aufzug."
+    },
+    {
+      "id": "s-la-plaza-queda-en-el-centro",
+      "kind": "sentence",
+      "es": "La plaza queda en el centro de la ciudad.",
+      "de": "Die Plaza liegt im Zentrum der Stadt.",
+      "accept": [
+        "La plaza está en el centro de la ciudad."
+      ]
+    },
+    {
+      "id": "s-busco-un-edificio-amarillo",
+      "kind": "sentence",
+      "es": "Busco un edificio amarillo.",
+      "de": "Ich suche ein gelbes Gebäude."
+    },
+    {
+      "id": "s-estoy-perdido",
+      "kind": "sentence",
+      "es": "Estoy perdido.",
+      "de": "Ich habe mich verirrt.",
+      "accept": [
+        "Estoy perdida."
+      ]
+    },
+    {
+      "id": "s-no-soy-de-aqui",
+      "kind": "sentence",
+      "es": "No soy de aquí.",
+      "de": "Ich bin nicht von hier."
+    },
+    {
+      "id": "s-soy-turista",
+      "kind": "sentence",
+      "es": "Soy turista.",
+      "de": "Ich bin Tourist.",
+      "accept": [
+        "Soy turista, no soy de aquí."
+      ]
+    },
+    {
+      "id": "s-no-encuentro-la-calle",
+      "kind": "sentence",
+      "es": "No encuentro la calle.",
+      "de": "Ich finde die Straße nicht."
+    },
+    {
+      "id": "s-mas-despacio-por-favor-no-entiendo",
+      "kind": "sentence",
+      "es": "Más despacio, por favor. No entiendo.",
+      "de": "Langsamer, bitte. Ich verstehe nicht.",
+      "accept": [
+        "Más despacio, por favor. No entendí."
+      ]
+    },
+    {
+      "id": "s-perfecto-muchas-gracias",
+      "kind": "sentence",
+      "es": "Perfecto, muchas gracias.",
+      "de": "Perfekt, vielen Dank.",
+      "accept": [
+        "Perfecto, gracias."
+      ]
+    },
+    {
+      "id": "s-muchas-gracias-por-su-ayuda",
+      "kind": "sentence",
+      "es": "Muchas gracias por su ayuda.",
+      "de": "Vielen Dank für Ihre Hilfe.",
+      "accept": [
+        "Gracias por su ayuda."
+      ]
+    },
+    {
+      "id": "s-pregunto-en-la-farmacia",
+      "kind": "sentence",
+      "es": "Pregunto en la farmacia.",
+      "de": "Ich frage in der Apotheke."
+    },
+    {
+      "id": "s-miro-el-mapa-en-el-celular",
+      "kind": "sentence",
+      "es": "Miro el mapa en el celular.",
+      "de": "Ich schaue auf dem Handy auf die Karte."
+    },
+    {
+      "id": "s-busco-la-calle-en-google-maps",
+      "kind": "sentence",
+      "es": "Busco la calle en Google Maps.",
+      "de": "Ich suche die Straße in Google Maps."
+    },
+    {
+      "id": "s-el-cerro-san-cristobal-queda-al",
+      "kind": "sentence",
+      "es": "El cerro San Cristóbal queda al norte del centro.",
+      "de": "Der Cerro San Cristóbal liegt nördlich des Zentrums."
+    },
+    {
+      "id": "s-providencia-queda-al-este-del-centro",
+      "kind": "sentence",
+      "es": "Providencia queda al este del centro.",
+      "de": "Providencia liegt östlich des Zentrums.",
+      "accept": [
+        "Providencia está al este del centro."
+      ]
+    },
+    {
+      "id": "s-lastarria-queda-cerca-del-cerro-santa",
+      "kind": "sentence",
+      "es": "Lastarria queda cerca del cerro Santa Lucía.",
+      "de": "Lastarria liegt in der Nähe des Cerro Santa Lucía.",
+      "accept": [
+        "Lastarria está cerca del cerro Santa Lucía."
+      ]
+    },
+    {
+      "id": "s-camino-diez-minutos-por-la-vereda",
+      "kind": "sentence",
+      "es": "Camino diez minutos por la vereda.",
+      "de": "Ich gehe zehn Minuten auf dem Gehweg."
+    },
+    {
+      "id": "s-voy-a-pie-hasta-la-plaza",
+      "kind": "sentence",
+      "es": "Voy a pie hasta la plaza.",
+      "de": "Ich gehe zu Fuß bis zur Plaza.",
+      "accept": [
+        "Voy a pie a la plaza."
+      ]
+    },
+    {
+      "id": "s-hay-un-bano-cerca",
+      "kind": "sentence",
+      "es": "¿Hay un baño cerca?",
+      "de": "Gibt es in der Nähe eine Toilette?",
+      "accept": [
+        "¿Hay un baño por aquí?"
+      ]
+    },
+    {
+      "id": "d-plaza-de-armas",
+      "kind": "dialog",
+      "title": "Wo liegt die Plaza de Armas?",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, ¿dónde queda la Plaza de Armas?",
+          "de": "Entschuldigung, wo liegt die Plaza de Armas?"
+        },
+        {
+          "speaker": "B",
+          "es": "Está cerca. Siga todo derecho por esta calle.",
+          "de": "Das ist in der Nähe. Gehen Sie diese Straße immer geradeaus."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Cuántas cuadras son?",
+          "de": "Wie viele Blocks sind es?"
+        },
+        {
+          "speaker": "B",
+          "es": "Son cuatro cuadras, más o menos.",
+          "de": "Es sind ungefähr vier Blocks."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Y después?",
+          "de": "Und dann?"
+        },
+        {
+          "speaker": "B",
+          "es": "Doble a la derecha en el semáforo. La plaza queda ahí mismo.",
+          "de": "Biegen Sie an der Ampel rechts ab. Die Plaza liegt direkt dort."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias.",
+          "de": "Vielen Dank."
+        },
+        {
+          "speaker": "B",
+          "es": "De nada.",
+          "de": "Gern geschehen."
+        }
+      ]
+    },
+    {
+      "id": "d-cerro-santa-lucia",
+      "kind": "dialog",
+      "title": "Zum Cerro Santa Lucía",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Buenas tardes. ¿Cómo llego al cerro Santa Lucía?",
+          "de": "Guten Tag. Wie komme ich zum Cerro Santa Lucía?"
+        },
+        {
+          "speaker": "B",
+          "es": "Está en el centro, a diez minutos a pie.",
+          "de": "Er ist im Zentrum, zehn Minuten zu Fuß entfernt."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Y en metro?",
+          "de": "Und mit der U-Bahn?"
+        },
+        {
+          "speaker": "B",
+          "es": "Puede ir en la línea uno hasta Santa Lucía.",
+          "de": "Sie können mit der Linie 1 bis Santa Lucía fahren."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Hay escaleras?",
+          "de": "Gibt es Treppen?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, hay escaleras y también un ascensor.",
+          "de": "Ja, es gibt Treppen und auch einen Aufzug."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto. Muchas gracias.",
+          "de": "Perfekt. Vielen Dank."
+        },
+        {
+          "speaker": "B",
+          "es": "Hasta luego.",
+          "de": "Bis später."
+        }
+      ]
+    },
+    {
+      "id": "d-perdido",
+      "kind": "dialog",
+      "title": "Ich habe mich verirrt",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, estoy perdido. No soy de aquí.",
+          "de": "Entschuldigung, ich habe mich verirrt. Ich bin nicht von hier."
+        },
+        {
+          "speaker": "B",
+          "es": "Tranquilo. ¿Qué busca?",
+          "de": "Keine Sorge. Was suchen Sie?"
+        },
+        {
+          "speaker": "A",
+          "es": "Busco la estación de metro.",
+          "de": "Ich suche die Metrostation."
+        },
+        {
+          "speaker": "B",
+          "es": "¿Ve el semáforo?",
+          "de": "Sehen Sie die Ampel?"
+        },
+        {
+          "speaker": "A",
+          "es": "Sí, ahí está.",
+          "de": "Ja, da ist sie."
+        },
+        {
+          "speaker": "B",
+          "es": "Cruce la calle. La estación está a la izquierda, al lado del banco.",
+          "de": "Überqueren Sie die Straße. Die Station ist links, neben der Bank."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto, gracias.",
+          "de": "Perfekt, danke."
+        },
+        {
+          "speaker": "B",
+          "es": "De nada.",
+          "de": "Gern geschehen."
+        }
+      ]
+    },
+    {
+      "id": "d-farmacia-cuadras",
+      "kind": "dialog",
+      "title": "Wo ist die Apotheke?",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Perdón, ¿me puede decir dónde queda la farmacia?",
+          "de": "Verzeihung, können Sie mir sagen, wo die Apotheke liegt?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, claro. Está a dos cuadras, al lado de la iglesia.",
+          "de": "Ja, klar. Sie ist zwei Blocks entfernt, neben der Kirche."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Por allá?",
+          "de": "Dort entlang?"
+        },
+        {
+          "speaker": "B",
+          "es": "No, por aquí. Siga todo derecho y la farmacia está a la derecha.",
+          "de": "Nein, hier entlang. Gehen Sie immer geradeaus, die Apotheke ist rechts."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Está lejos?",
+          "de": "Ist es weit?"
+        },
+        {
+          "speaker": "B",
+          "es": "No, es cerca. Son tres minutos a pie.",
+          "de": "Nein, es ist nah. Es sind drei Minuten zu Fuß."
+        },
+        {
+          "speaker": "A",
+          "es": "Muchas gracias.",
+          "de": "Vielen Dank."
+        },
+        {
+          "speaker": "B",
+          "es": "Con gusto.",
+          "de": "Gern."
+        }
+      ]
+    },
+    {
+      "id": "d-mapa-celular",
+      "kind": "dialog",
+      "title": "Auf dem Handy zeigen",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, ¿me puede mostrar en el celular dónde queda el museo?",
+          "de": "Entschuldigung, können Sie mir auf dem Handy zeigen, wo das Museum liegt?"
+        },
+        {
+          "speaker": "B",
+          "es": "Sí, un momento. El museo queda aquí, enfrente de la plaza.",
+          "de": "Ja, einen Moment. Das Museum liegt hier, gegenüber der Plaza."
+        },
+        {
+          "speaker": "A",
+          "es": "¿Y yo dónde estoy?",
+          "de": "Und wo bin ich?"
+        },
+        {
+          "speaker": "B",
+          "es": "Usted está aquí, en la avenida. La plaza está a tres cuadras.",
+          "de": "Sie sind hier, an der Hauptstraße. Die Plaza ist drei Blocks entfernt."
+        },
+        {
+          "speaker": "A",
+          "es": "Gracias. ¿Cuánto se demora a pie?",
+          "de": "Danke. Wie lange braucht man zu Fuß?"
+        },
+        {
+          "speaker": "B",
+          "es": "Unos cinco minutos.",
+          "de": "Ungefähr fünf Minuten."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto, muchas gracias.",
+          "de": "Perfekt, vielen Dank."
+        },
+        {
+          "speaker": "B",
+          "es": "De nada.",
+          "de": "Gern geschehen."
+        }
+      ]
+    },
+    {
+      "id": "d-mas-despacio",
+      "kind": "dialog",
+      "title": "Noch einmal, bitte",
+      "lines": [
+        {
+          "speaker": "A",
+          "es": "Disculpe, ¿dónde queda el correo?",
+          "de": "Entschuldigung, wo liegt die Post?"
+        },
+        {
+          "speaker": "B",
+          "es": "Siga derecho hasta el semáforo. Cruce la calle y doble a la izquierda.",
+          "de": "Gehen Sie geradeaus bis zur Ampel. Überqueren Sie die Straße und biegen Sie links ab."
+        },
+        {
+          "speaker": "A",
+          "es": "Perdón, más despacio, por favor. No entiendo.",
+          "de": "Verzeihung, langsamer bitte. Ich verstehe nicht."
+        },
+        {
+          "speaker": "B",
+          "es": "Claro. Primero, siga derecho hasta el semáforo. Segundo, cruce la calle. Tercero, doble a la izquierda.",
+          "de": "Klar. Erstens, gehen Sie geradeaus bis zur Ampel. Zweitens, überqueren Sie die Straße. Drittens, biegen Sie links ab."
+        },
+        {
+          "speaker": "A",
+          "es": "Listo. ¿Está lejos?",
+          "de": "In Ordnung. Ist es weit?"
+        },
+        {
+          "speaker": "B",
+          "es": "No, el correo está en la esquina.",
+          "de": "Nein, die Post ist an der Ecke."
+        },
+        {
+          "speaker": "A",
+          "es": "Perfecto. Muchas gracias.",
+          "de": "Perfekt. Vielen Dank."
+        }
+      ]
+    },
+    {
+      "id": "g-estar-lage",
+      "kind": "grammar",
+      "title": "estar: wo etwas liegt",
+      "explanation": "Für Orte und Lage nimmst du estar: la plaza está en el centro, el banco está en la esquina, las farmacias están cerca. Está gilt für eines, están für mehrere. In Chile hörst du oft ¿Dónde queda...? mit quedar, das heißt dasselbe wie ¿Dónde está...? Mit hay fragst du, ob es etwas gibt: ¿Hay una farmacia por aquí? Die Antwort gibst du dann mit estar: Sí, la farmacia está a dos cuadras.",
+      "examples": [
+        {
+          "es": "La plaza está en el centro.",
+          "de": "Die Plaza ist im Zentrum."
+        },
+        {
+          "es": "¿Dónde queda el banco?",
+          "de": "Wo liegt die Bank?"
+        },
+        {
+          "es": "Las farmacias están cerca.",
+          "de": "Die Apotheken sind in der Nähe."
+        },
+        {
+          "es": "¿Hay un cajero automático por aquí?",
+          "de": "Gibt es hier in der Nähe einen Geldautomaten?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Die Plaza ist im Zentrum.",
+          "es": "La plaza está en el centro."
+        },
+        {
+          "de": "Wo liegt die Apotheke?",
+          "es": "¿Dónde queda la farmacia?",
+          "accept": [
+            "¿Dónde está la farmacia?"
+          ]
+        },
+        {
+          "de": "Die Banken sind in der Nähe.",
+          "es": "Los bancos están cerca."
+        },
+        {
+          "de": "Gibt es hier einen Geldautomaten?",
+          "es": "¿Hay un cajero automático por aquí?",
+          "accept": [
+            "¿Hay un cajero automático aquí?"
+          ]
+        },
+        {
+          "de": "Die Station ist nicht weit.",
+          "es": "La estación no está lejos.",
+          "accept": [
+            "La estación no queda lejos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g-fragen",
+      "kind": "grammar",
+      "title": "Nach dem Weg fragen",
+      "explanation": "Du beginnst mit Disculpe oder Perdón. Dann fragst du nach dem Ort: ¿Dónde queda...? Oder nach dem Weg: ¿Cómo llego a...? Höflicher klingt ¿Me puede decir...? oder ¿Me puede mostrar...? Fremde sprichst du mit usted an, deshalb puede und nicht puedes. Am Ende steht Gracias oder Muchas gracias. Hast du etwas nicht verstanden, sagst du: Más despacio, por favor.",
+      "examples": [
+        {
+          "es": "Disculpe, ¿dónde queda la plaza?",
+          "de": "Entschuldigung, wo liegt die Plaza?"
+        },
+        {
+          "es": "¿Cómo llego al cerro?",
+          "de": "Wie komme ich zum Cerro?"
+        },
+        {
+          "es": "¿Me puede decir dónde queda el correo?",
+          "de": "Können Sie mir sagen, wo die Post liegt?"
+        },
+        {
+          "es": "¿Me puede mostrar en el mapa?",
+          "de": "Können Sie mir das auf der Karte zeigen?"
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Wie komme ich zur Plaza de Armas?",
+          "es": "¿Cómo llego a la Plaza de Armas?"
+        },
+        {
+          "de": "Wo liegt der Bahnhof?",
+          "es": "¿Dónde queda la estación?",
+          "accept": [
+            "¿Dónde está la estación?"
+          ]
+        },
+        {
+          "de": "Können Sie mir sagen, wo die Post liegt?",
+          "es": "¿Me puede decir dónde queda el correo?",
+          "accept": [
+            "¿Me puede decir dónde está el correo?"
+          ]
+        },
+        {
+          "de": "Können Sie mir das auf der Karte zeigen?",
+          "es": "¿Me puede mostrar en el mapa?"
+        },
+        {
+          "de": "Entschuldigung, wie komme ich zum Museum?",
+          "es": "Disculpe, ¿cómo llego al museo?",
+          "accept": [
+            "Perdón, ¿cómo llego al museo?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g-wegbeschreibung",
+      "kind": "grammar",
+      "title": "Wegbeschreibungen verstehen",
+      "explanation": "Wenn dir jemand den Weg erklärt, hörst du feste Formen mit usted: Siga todo derecho. Doble a la derecha. Cruce la calle. Tome la línea uno. Das sind Höflichkeitsformen von seguir, doblar, cruzar und tomar. Du musst sie nicht selbst bilden, nur erkennen und als Wendung lernen. Unter Gleichaltrigen hörst du eher sigue, dobla, cruza. Dazu kommen Ortsangaben: hasta la esquina, en el semáforo, después del puente.",
+      "examples": [
+        {
+          "es": "Siga todo derecho.",
+          "de": "Gehen Sie immer geradeaus."
+        },
+        {
+          "es": "Doble a la derecha en la esquina.",
+          "de": "Biegen Sie an der Ecke rechts ab."
+        },
+        {
+          "es": "Cruce la calle en el semáforo.",
+          "de": "Überqueren Sie die Straße an der Ampel."
+        },
+        {
+          "es": "Tome la línea uno.",
+          "de": "Nehmen Sie die Linie 1."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Gehen Sie immer geradeaus.",
+          "es": "Siga todo derecho.",
+          "accept": [
+            "Siga derecho."
+          ]
+        },
+        {
+          "de": "Biegen Sie rechts ab.",
+          "es": "Doble a la derecha."
+        },
+        {
+          "de": "Biegen Sie an der Ecke links ab.",
+          "es": "Doble a la izquierda en la esquina.",
+          "accept": [
+            "En la esquina doble a la izquierda."
+          ]
+        },
+        {
+          "de": "Überqueren Sie die Straße.",
+          "es": "Cruce la calle."
+        },
+        {
+          "de": "Gehen Sie bis zur Ecke.",
+          "es": "Siga hasta la esquina.",
+          "accept": [
+            "Camine hasta la esquina."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g-praepositionen-ort",
+      "kind": "grammar",
+      "title": "Wo genau? Präpositionen des Ortes",
+      "explanation": "Diese Wendungen stehen mit de: al lado de (neben), enfrente de (gegenüber), cerca de (nahe bei), lejos de (weit weg von), detrás de (hinter), delante de (vor). Entre heißt zwischen: entre el banco y la farmacia. Vor el wird de zu del: al lado del banco. Vor la bleibt es de la: enfrente de la plaza. Auch frente a und en la esquina sind häufig.",
+      "examples": [
+        {
+          "es": "El banco está al lado de la farmacia.",
+          "de": "Die Bank ist neben der Apotheke."
+        },
+        {
+          "es": "La plaza está enfrente de la iglesia.",
+          "de": "Die Plaza ist gegenüber der Kirche."
+        },
+        {
+          "es": "La estación está cerca del centro.",
+          "de": "Die Station ist in der Nähe des Zentrums."
+        },
+        {
+          "es": "La farmacia está entre el banco y el correo.",
+          "de": "Die Apotheke ist zwischen der Bank und der Post."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Die Bank ist neben der Apotheke.",
+          "es": "El banco está al lado de la farmacia."
+        },
+        {
+          "de": "Die Plaza ist gegenüber der Kirche.",
+          "es": "La plaza está enfrente de la iglesia.",
+          "accept": [
+            "La plaza está frente a la iglesia."
+          ]
+        },
+        {
+          "de": "Das Museum ist hinter dem Park.",
+          "es": "El museo está detrás del parque."
+        },
+        {
+          "de": "Die Apotheke ist weit weg vom Zentrum.",
+          "es": "La farmacia está lejos del centro."
+        },
+        {
+          "de": "Die Station ist zwischen dem Park und der Plaza.",
+          "es": "La estación está entre el parque y la plaza."
+        }
+      ]
+    },
+    {
+      "id": "g-distanz-ordinal",
+      "kind": "grammar",
+      "title": "Wie weit? Die wievielte Straße?",
+      "explanation": "Eine Entfernung gibst du mit a an: a una cuadra, a dos cuadras, a cien metros, a cinco minutos. Zu Fuß: a diez minutos a pie. Bei mehreren Blocks steht cuadras mit s. Die Reihenfolge sagst du mit primera, segunda, tercera calle. Vor männlichen Wörtern heißt es primer und tercer: el primer semáforo. Segundo bleibt: el segundo semáforo.",
+      "examples": [
+        {
+          "es": "La farmacia está a dos cuadras.",
+          "de": "Die Apotheke ist zwei Blocks entfernt."
+        },
+        {
+          "es": "El cerro está a diez minutos a pie.",
+          "de": "Der Cerro ist zehn Minuten zu Fuß entfernt."
+        },
+        {
+          "es": "Es la primera calle a la derecha.",
+          "de": "Es ist die erste Straße rechts."
+        },
+        {
+          "es": "Es el segundo semáforo.",
+          "de": "Es ist die zweite Ampel."
+        }
+      ],
+      "exercises": [
+        {
+          "de": "Die Apotheke ist einen Block entfernt.",
+          "es": "La farmacia está a una cuadra.",
+          "accept": [
+            "La farmacia queda a una cuadra."
+          ]
+        },
+        {
+          "de": "Die Plaza ist fünf Minuten zu Fuß entfernt.",
+          "es": "La plaza está a cinco minutos a pie."
+        },
+        {
+          "de": "Es ist die erste Straße links.",
+          "es": "Es la primera calle a la izquierda."
+        },
+        {
+          "de": "Es ist die dritte Straße rechts.",
+          "es": "Es la tercera calle a la derecha."
+        },
+        {
+          "de": "Die Bank ist hundert Meter entfernt.",
+          "es": "El banco está a cien metros."
+        }
+      ]
+    },
+    {
+      "id": "pair-puente-puerta",
+      "kind": "pair",
+      "es": "puente",
+      "options": [
+        "puente",
+        "puerta"
+      ]
+    },
+    {
+      "id": "pair-cerro-perro",
+      "kind": "pair",
+      "es": "cerro",
+      "options": [
+        "cerro",
+        "perro"
+      ]
+    },
+    {
+      "id": "pair-cuadra-cuadro",
+      "kind": "pair",
+      "es": "cuadra",
+      "options": [
+        "cuadra",
+        "cuadro"
+      ]
+    },
+    {
+      "id": "pair-banco-barco",
+      "kind": "pair",
+      "es": "banco",
+      "options": [
+        "banco",
+        "barco"
+      ]
+    },
+    {
+      "id": "pair-derecha-derecho",
+      "kind": "pair",
+      "es": "derecha",
+      "options": [
+        "derecha",
+        "derecho"
+      ]
+    }
+  ]
+}
