@@ -60,3 +60,15 @@ Die Screenshots liegen bewusst nicht im Repo, sondern in `C:\Users\gunna\AppData
 ## Hinweis zu den Verzichten
 
 Die Ziele der Verzichte in `waivers.json` sind konkrete DOM-Selektoren (zum Beispiel `div#app > main > footer.foot`). Ändert sich das DOM, greifen sie nicht mehr und die Befunde erscheinen wieder.
+
+## Teil 2
+
+Stand 26.11.2026, Zweig `teil2`. Gate neu gestartet (`--new`, Prüfordner `.taste-skill/root/spanisch-app/` aus `dist`): `GATE: FAIL 18 (round 1 of 3)`. `gate.mjs --done` nicht aufgerufen.
+
+- Dieselben Webseiten-Befunde wie in Teil 1 (`hero-fill`, `cta`, `hero-screen`, `one-heading` zweimal, `container-edges` viermal, `container`), Begründung oben unverändert.
+- Neu gegenüber Teil 1: `stagger` an den Situationszeilen 1, 2, 4, 5, 6, 7 und 9 (7 Befunde, "the 2 lines of this heading start at 245, 341px"). Ursache: Der h3 umschließt die ganze Zeile (Foto links, Name und Satz rechts), das Gate liest Foto und Text als zwei Zeilen einer Überschrift. `Home.tsx` und das Stylesheet der Startseite sind seit Teil 1 unverändert; warum die Befunde erst jetzt erscheinen (neun statt acht Zeilen, Ladezeitpunkt der Bilder), ist nicht geklärt. Nicht behoben und nicht verzichtet (fünf Verzichte sind ausgeschöpft). Mögliche Abhilfe: nur den Namen in den h3, das Foto ausserhalb.
+- Neu: `no-visual` für "Oder eine Situation wählen" bei 390 px (Zeilenfotos sind Vorschaubilder, das Gate erkennt sie dort nicht als Bild).
+
+Bildliche Durchsicht (Startseite mit 9 Situationszeilen, Chile hören, Einstufung, Quellen mit SLR71-Eintrag, 390 und 1440 px, hell und dunkel): keine Auffälligkeiten. Screenshots liegen nicht im Repo.
+
+Playwright gegen `npm run preview`: eine Runde mit Fokus Unterwegs (Situation 04, 18 Schritte bis "Runde geschafft"), keine Konsolen- und Seitenfehler.

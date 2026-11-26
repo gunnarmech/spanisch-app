@@ -4,6 +4,7 @@ import { allPhotos } from './photos';
 import type { AppState } from './useAppState';
 
 const FREQ_URL = 'https://github.com/hermitdave/FrequencyWords';
+const SLR71_URL = 'https://www.openslr.org/71/';
 const DAMER_URL = 'https://www.asale.org/damer';
 
 function stamp(ts: number): string {
@@ -78,6 +79,15 @@ export function Sources({ app, onBack }: { app: AppState; onBack(): void }) {
             </span>
           </li>
           <li>Die Stimmen sind erzeugt mit edge-tts.</li>
+          <li>
+            <span>
+              Die Aufnahmen in der Aufgabe "Chile hören" stammen aus dem Korpus "Crowdsourced high-quality Chilean Spanish speech data set" auf{' '}
+              <a href={SLR71_URL} target="_blank" rel="noopener noreferrer">
+                OpenSLR (SLR71)
+              </a>{' '}
+              (CC BY-SA 4.0), gekürzt, normalisiert und in mp3 umgewandelt.
+            </span>
+          </li>
           <li>
             <span>
               Die Hinweise zum Sprachgebrauch in Chile stützen sich auf das{' '}

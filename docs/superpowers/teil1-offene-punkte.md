@@ -27,6 +27,6 @@ Aus dem Ledger der Ausfuehrung uebernommen (zurueckgestellte Kleinigkeiten und H
 - Task 14: minor (deferred): DAMER-Eintraege nicht vom Review geoeffnet
 - Task 14: minor (deferred): w-chico-Note behauptet derbe Nebenbedeutung von "el chico" in Chile ohne Beleg, im Schluss-Fix streichen; chucrut nur in deutscher Note
 - Task 16: minor (deferred): Grammatik-Eingabe unter langer Erklaerung (Scrollen); Hoerpaare erst spaet in Dateireihenfolge; Erkennungs-Timeout nur mit Uhr-Vorspulen geprueft
-- Schluss-Review: Re-Review der Fix-Welle clean (A1 bis A6, B1 bis B8 addressed); deferred: maxEntries 6000 reicht nur fuer etwa 4 Situationen, in Teil 2 anheben; Vorabruf laedt beim ersten Mal etwa 50 MB je Situation
+- Schluss-Review: Re-Review der Fix-Welle clean (A1 bis A6, B1 bis B8 addressed); deferred: maxEntries 6000 reicht nur fuer etwa 4 Situationen, in Teil 2 angehoben (erledigt, jetzt 30000); Vorabruf laedt beim ersten Mal etwa 50 MB je Situation
 - iPhone-Test (Plan Task 10, Schritte 4 und 5) offen, Ergebnis gehoert nach docs/ios-test.md
 - Push auf main loest den Pages-Workflow nicht aus; Auslieferung per gh workflow run pages.yml --ref main
