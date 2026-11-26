@@ -681,8 +681,8 @@
       ],
       "examples": [
         {
-          "es": "¿Esta es la dirección al centro?",
-          "de": "Ist das die Richtung ins Zentrum?"
+          "es": "¿Este metro va en dirección al centro?",
+          "de": "Fährt diese U-Bahn Richtung Zentrum?"
         }
       ],
       "note": "Im Metro steht am Bahnsteig die Richtung, also die Endstation, in die der Zug fährt.",
@@ -861,7 +861,7 @@
           "de": "Ich steige hier ein."
         }
       ],
-      "note": "Einsteigen heißt subirse (me subo), aussteigen bajarse (me bajo). Der Taxifahrer sagt: Suba, por favor.",
+      "note": "Einsteigen heißt subirse (me subo), aussteigen bajarse (me bajo). Der Taxifahrer sagt: Suba, por favor (usted-Form).",
       "freqRank": 1484
     },
     {
@@ -925,7 +925,7 @@
           "de": "Können Sie hier anhalten, bitte?"
         }
       ],
-      "note": "Zum Taxifahrer sagst du: Pare aquí, por favor.",
+      "note": "Zum Taxifahrer sagst du: Pare aquí, por favor. Pare ist die usted-Form, so sprichst du Fahrer höflich an.",
       "freqRank": 1172
     },
     {
@@ -1060,7 +1060,7 @@
           "de": "Zur Stoßzeit ist die U-Bahn voll."
         }
       ],
-      "note": "Die Stoßzeit ist morgens und am späten Nachmittag, ungefähr 7 bis 9 und 18 bis 20 Uhr.",
+      "note": "Im Tarifsystem heißt die Stoßzeit horario punta. Sie liegt morgens und am späten Nachmittag, ungefähr 7 bis 9 und 18 bis 20 Uhr.",
       "chile": {
         "note": "Im Metro heißt die Zeit mit dem höchsten Preis horario punta.",
         "source": "Red Movilidad, Conoce las tarifas, https://www.red.cl/tarifas-y-recargas/conoce-las-tarifas/"
@@ -1861,7 +1861,7 @@
       "id": "s-no-tengo-saldo-en-la",
       "kind": "sentence",
       "es": "No tengo saldo en la Bip.",
-      "de": "Ich habe kein Guthaben auf der Bip!."
+      "de": "Ich habe kein Guthaben auf meiner Bip!-Karte."
     },
     {
       "id": "s-donde-puedo-cargar-la-bip",
@@ -2190,7 +2190,7 @@
         {
           "speaker": "B",
           "es": "Listo. Ya tiene saldo en la Bip.",
-          "de": "Fertig. Jetzt ist Guthaben auf der Bip!."
+          "de": "Fertig. Jetzt ist Guthaben auf Ihrer Bip!-Karte."
         },
         {
           "speaker": "A",
@@ -2372,8 +2372,8 @@
         },
         {
           "speaker": "B",
-          "es": "Dos horas, más o menos.",
-          "de": "Zwei Stunden, ungefähr."
+          "es": "Una hora y media, más o menos.",
+          "de": "Anderthalb Stunden, ungefähr."
         },
         {
           "speaker": "A",
@@ -2419,8 +2419,8 @@
         },
         {
           "speaker": "B",
-          "es": "No sé, pero cierra tarde.",
-          "de": "Ich weiß nicht, aber sie schließt spät."
+          "es": "Cierra tarde, a las once.",
+          "de": "Sie schließt spät, um elf."
         },
         {
           "speaker": "A",
@@ -2471,7 +2471,9 @@
           "de": "Wir fahren mit dem Bus ins Zentrum.",
           "es": "Vamos en bus al centro.",
           "accept": [
-            "Vamos al centro en bus."
+            "Vamos al centro en bus.",
+            "Vamos en micro al centro.",
+            "Vamos al centro en micro."
           ]
         },
         {
@@ -2502,7 +2504,7 @@
       "id": "g-hora",
       "kind": "grammar",
       "title": "Die Uhrzeit",
-      "explanation": "Gefragt wird ¿Qué hora es? Für ein Uhr sagst du es la una, für alle anderen Stunden son las dos, son las tres. Viertel nach ist y cuarto, halb ist y media, Viertel vor ist menos cuarto: son las tres menos cuarto ist 2:45. Den Tagesabschnitt hängst du an: de la mañana, de la tarde, de la noche. Auf Fahrplänen stehen oft 24-Stunden-Zeiten, gesprochen sind 12 Stunden üblicher.",
+      "explanation": "Gefragt wird ¿Qué hora es? Für ein Uhr sagst du es la una, für alle anderen Stunden son las dos, son las tres. Viertel nach ist y cuarto, halb ist y media, Viertel vor ist menos cuarto: son las tres menos cuarto ist 2:45. In Chile hört man dafür oft un cuarto para las tres. Den Tagesabschnitt hängst du an: de la mañana, de la tarde, de la noche. Auf Fahrplänen stehen oft 24-Stunden-Zeiten, gesprochen sind 12 Stunden üblicher.",
       "examples": [
         {
           "es": "Es la una.",
@@ -2650,7 +2652,7 @@
       "id": "g-fahrplan-verben",
       "kind": "grammar",
       "title": "sale, llega, pasa: Fahrplanverben",
-      "explanation": "Für Verkehrsmittel brauchst du meist nur die dritte Person: el bus sale (fährt ab), llega (kommt an), pasa (fährt vorbei). Salir ist unregelmäßig: salgo, sales, sale, salimos, salen. Der Ort steht danach mit de oder a: sale de Santiago, llega a Valparaíso. Von dir selbst sagst du me subo (ich steige ein) und me bajo (ich steige aus).",
+      "explanation": "Für Verkehrsmittel brauchst du meist nur die dritte Person: el bus sale (fährt ab), llega (kommt an), pasa (fährt vorbei). Salir ist unregelmäßig: salgo, sales, sale, salimos, salen. Der Ort steht danach mit de oder a: sale de Santiago, llega a Valparaíso. Von dir selbst sagst du me subo (ich steige ein) und me bajo (ich steige aus). Fahrer sprichst du mit usted an: Pare aquí, por favor.",
       "examples": [
         {
           "es": "El bus sale del terminal.",

@@ -1649,28 +1649,6 @@
       "hash": "d2ad99fa6c2ca1321e3d09341dadd85d8725813c"
     }
   ],
-  "w-direccion-ex1": [
-    {
-      "voice": "cl-f",
-      "speed": "normal",
-      "hash": "e6e3629e7839ad59846d2661eeb2722a9fecaafa"
-    },
-    {
-      "voice": "mx-f",
-      "speed": "normal",
-      "hash": "da10a2e01da2cb551d768f4916d06a1219c1e195"
-    },
-    {
-      "voice": "cl-f",
-      "speed": "slow",
-      "hash": "fd9e5cbf2f28dd30c39b6be552f9393083f20a6f"
-    },
-    {
-      "voice": "mx-f",
-      "speed": "slow",
-      "hash": "3e34ca035325feac3d5ddc98fb72648f5eb8c62e"
-    }
-  ],
   "w-manejar": [
     {
       "voice": "cl-f",
@@ -6492,18 +6470,6 @@
       "hash": "b6c2613c9164a7a7b4a785d6c7196f3b5d1b6a43"
     }
   ],
-  "d-terminal-valparaiso-6": [
-    {
-      "voice": "co-m",
-      "speed": "normal",
-      "hash": "f21dc8d71abceef854d9b6c1c884df551c1f826e"
-    },
-    {
-      "voice": "co-m",
-      "speed": "fast",
-      "hash": "205a042618c6bf6d59554b5e78d789382b114db9"
-    }
-  ],
   "d-terminal-valparaiso-7": [
     {
       "voice": "cl-f",
@@ -6586,18 +6552,6 @@
       "voice": "cl-f",
       "speed": "fast",
       "hash": "f63260e369aa288233466082920fe24d43e95de6"
-    }
-  ],
-  "d-hora-metro-4": [
-    {
-      "voice": "mx-m",
-      "speed": "normal",
-      "hash": "db21c930b2fa6c6b62e5be7467777e98d242a47a"
-    },
-    {
-      "voice": "mx-m",
-      "speed": "fast",
-      "hash": "009063e00a7cca07fab60881905cd1285951b962"
     }
   ],
   "d-hora-metro-5": [
@@ -7826,6 +7780,52 @@
       "voice": "co-m",
       "speed": "normal",
       "hash": "7754affa50ca29cda8a7a418f76b894a7f781999"
+    }
+  ],
+  "w-direccion-ex1": [
+    {
+      "voice": "cl-f",
+      "speed": "normal",
+      "hash": "5f4880471d0e3f6a6befd6a16e8a4644a9d06be4"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "normal",
+      "hash": "908a5769d9fb3143bb26df46942f75a1ad675a05"
+    },
+    {
+      "voice": "cl-f",
+      "speed": "slow",
+      "hash": "87dea0e3910d387f5678bfde9a5fefae11da5479"
+    },
+    {
+      "voice": "mx-f",
+      "speed": "slow",
+      "hash": "d55f0530dd30cbc61fbafef49c088eb533dec783"
+    }
+  ],
+  "d-terminal-valparaiso-6": [
+    {
+      "voice": "co-m",
+      "speed": "normal",
+      "hash": "a4cf74e5a58f470d97f523b6de2f5d7e35c3d9ce"
+    },
+    {
+      "voice": "co-m",
+      "speed": "fast",
+      "hash": "269ccbe4dafe3ab264208249e44ae6b96a957cdd"
+    }
+  ],
+  "d-hora-metro-4": [
+    {
+      "voice": "mx-m",
+      "speed": "normal",
+      "hash": "19a3a3b277546f6acd194439ea80c2aa17327c4a"
+    },
+    {
+      "voice": "mx-m",
+      "speed": "fast",
+      "hash": "b89058a053a93df1b87e30ddb45f5c96a9f9536e"
     }
   ]
 }
