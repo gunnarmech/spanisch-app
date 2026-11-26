@@ -4,7 +4,7 @@ import { CHILE_SITUATION, chileUnlocked } from '../engine/clips';
 import { situationCoverage } from '../engine/coverage';
 import { buildRound, type Task } from '../engine/round';
 import { ratingFor, type Stage } from '../engine/state';
-import { audioUrl, loadManifest, prefetchSituations, prefetchTargets, type Manifest } from '../media/audio';
+import { AUDIO_CACHE, audioUrl, loadManifest, prefetchSituations, prefetchTargets, type Manifest } from '../media/audio';
 import { RoundEnd } from './RoundEnd';
 import { TaskTools } from './TaskTools';
 import { Choice } from './tasks/Choice';
@@ -102,7 +102,8 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
     situations: app.situations,
     urlFor(task, key) {
       const manifest = manifests?.[task.situationId] ?? {};
-      const speed = task.form === 'clip' ? 'normal' : task.form === 'pressure' ? 'fast' : task.isNew ? app.settings.voiceSpeedNew : 'normal';
+      if (task.form === 'clip') return audioUrl(task.situationId, key, { speed: 'normal' }, manifest);
+      const speed = task.form === 'pressure' ? 'fast' : task.isNew ? app.settings.voiceSpeedNew : 'normal';
       const pick = { speed, preferChile: task.form === 'pressure' } as const;
       return audioUrl(task.situationId, key, pick, manifest) ?? audioUrl(task.situationId, key, { ...pick, speed: 'normal' }, manifest);
     },
@@ -160,13 +161,32 @@ export function Round({ app, focusSituationId, onExit, onAgain }: Props) {
   const task = plan.tasks[index];
   const clip = task?.form === 'clip' ? app.clips.find((c) => c.id === task.itemId) : undefined;
   const clipUrl = task && clip && manifests ? env.urlFor(task, clip.id) : null;
-  // Eine Aufnahme ohne Ton (Manifest fehlt oder ohne Eintrag) wird übersprungen, die Runde geht weiter.
-  const clipMissing = task?.form === 'clip' && manifests !== null && (!clip || !clipUrl);
+  // Offline zählt die Datei nur, wenn sie im Audio-Cache liegt; ohne Cache-API (jsdom) gilt allein das Manifest.
+  const needCache = !!clipUrl && typeof navigator !== 'undefined' && navigator.onLine === false && typeof caches !== 'undefined';
+  const [cacheCheck, setCacheCheck] = useState<{ url: string; ok: boolean } | null>(null);
+  useEffect(() => {
+    if (!needCache || !clipUrl) return;
+    let alive = true;
+    void caches
+      .open(AUDIO_CACHE)
+      .then((c) => c.match(clipUrl))
+      .then((hit) => !!hit, () => false)
+      .then((ok) => {
+        if (alive) setCacheCheck({ url: clipUrl, ok });
+      });
+    return () => {
+      alive = false;
+    };
+  }, [needCache, clipUrl]);
+  const cachePending = needCache && cacheCheck?.url !== clipUrl;
+  const cacheMiss = needCache && !cachePending && !cacheCheck?.ok;
+  // Eine Aufnahme ohne Ton (kein Manifest-Eintrag, oder offline und nicht im Cache) wird übersprungen, die Runde geht weiter.
+  const clipMissing = task?.form === 'clip' && manifests !== null && (!clip || !clipUrl || cacheMiss);
   useEffect(() => {
     if (clipMissing) advance(index);
   }, [clipMissing, index]);
 
-  if (manifests === null) return <div class="task" aria-busy="true" />;
+  if (manifests === null || (task?.form === 'clip' && cachePending)) return <div class="task" aria-busy="true" />;
   if (clipMissing) return null;
 
   const item = task && items.get(task.itemId);

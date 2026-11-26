@@ -57,13 +57,54 @@ describe('Chile-Aufnahmen in der Runde', () => {
     expect(vi.mocked(prefetchSituations).mock.calls[0][0]).not.toContain('chile-echt');
   });
 
-  it('Clip ohne Manifest-Eintrag wird übersprungen, Runde geht weiter', async () => {
-    // loadManifest liefert im Test nichts: die Clip-Aufgabe darf nicht hängen bleiben
-    const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
+  /** Überspringen: Einführung des neuen Wortes per "kann ich schon" überspringen, dann kommt die Aufnahme dran. */
+  const roundToClip = async (app: ReturnType<typeof fakeApp>) => {
     render(<Round app={app} onExit={() => {}} onAgain={() => {}} />);
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Runde beenden' }) ).toBeTruthy());
-    await waitFor(() => expect(screen.queryByText('Chile hören')).toBeNull());
+    fireEvent.click(await screen.findByRole('button', { name: 'kann ich schon' }));
+  };
+
+  it('Clip ohne Manifest-Eintrag wird übersprungen, Runde geht weiter', async () => {
+    const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
+    await roundToClip(app);
+    expect(await screen.findByText('Runde geschafft.')).toBeTruthy();
+    expect(screen.queryByText('Chile hören')).toBeNull();
     expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'heard' }));
+  });
+
+  it('Clip mit Eintrag, aber offline und nicht im Cache, wird übersprungen', async () => {
+    vi.mocked(loadManifest).mockImplementation(async (id: string): Promise<Manifest> =>
+      id === 'chile-echt' ? { 'c-hola': [{ voice: 'cl-f', speed: 'normal' }] } : {},
+    );
+    vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(false);
+    vi.stubGlobal('caches', { open: async () => ({ match: async () => undefined }) });
+    try {
+      const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
+      await roundToClip(app);
+      expect(await screen.findByText('Runde geschafft.')).toBeTruthy();
+      expect(screen.queryByText('Chile hören')).toBeNull();
+      expect(app.record).not.toHaveBeenCalledWith(expect.objectContaining({ kind: 'heard' }));
+    } finally {
+      vi.unstubAllGlobals();
+      vi.restoreAllMocks();
+      vi.mocked(loadManifest).mockImplementation(async () => ({}));
+    }
+  });
+
+  it('Clip offline, aber im Cache, wird gezeigt', async () => {
+    vi.mocked(loadManifest).mockImplementation(async (id: string): Promise<Manifest> =>
+      id === 'chile-echt' ? { 'c-hola': [{ voice: 'cl-f', speed: 'normal' }] } : {},
+    );
+    vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(false);
+    vi.stubGlobal('caches', { open: async () => ({ match: async () => ({}) }) });
+    try {
+      const app = fakeApp({ situations: [chileSituation], states: unlockedStates(), clips, heard: new Map([['d-1', 1]]) });
+      await roundToClip(app);
+      expect(await screen.findByText('Chile hören')).toBeTruthy();
+    } finally {
+      vi.unstubAllGlobals();
+      vi.restoreAllMocks();
+      vi.mocked(loadManifest).mockImplementation(async () => ({}));
+    }
   });
 
   it('Clip mit Manifest-Eintrag wird gezeigt, die Antwort schreibt heard', async () => {
