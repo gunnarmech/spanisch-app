@@ -156,19 +156,26 @@ describe('validateClips', () => {
     expect(run([clip({ es: `${eight} zzz yyy` })]).length).toBeGreaterThan(0);
   });
   test('Eigenname mitten im Satz zählt nicht', () => {
-    expect(run([clip({ es: 'hola mesa casa Valparaíso amigo bueno dia vamos' })])).toEqual([]);
+    expect(run([clip({ es: 'hola mesa casa amigo bueno dia Valparaíso Santiago' })])).toEqual([]);
+    // Gegenprobe: dieselben Wörter kleingeschrieben sind unbekannt, Deckung 6/8
+    expect(run([clip({ es: 'hola mesa casa amigo bueno dia valparaíso santiago' })]).some((e) => e.includes('Deckung'))).toBe(true);
   });
   test('2 Tokens abgelehnt', () => {
     expect(run([clip({ es: 'hola mesa' })]).length).toBeGreaterThan(0);
   });
+  test('17 Tokens abgelehnt, 16 angenommen', () => {
+    const w = 'hola mesa casa amigo bueno dia vamos ahora tengo un hola mesa casa amigo bueno dia';
+    expect(run([clip({ es: w })])).toEqual([]);
+    expect(run([clip({ es: `${w} hola` })]).some((e) => e.includes('Wörter nötig'))).toBe(true);
+  });
   test('ID-Kollision mit Item-ID gemeldet', () => {
-    expect(run([clip()], new Set(['clip-09334-01278378087'])).some((e) => e.includes('clip-09334-01278378087'))).toBe(true);
+    expect(run([clip()], new Set(['clip-09334-01278378087'])).some((e) => e.includes('kollidiert'))).toBe(true);
   });
   test('doppelte Clip-ID gemeldet', () => {
     expect(run([clip(), clip()]).some((e) => e.includes('doppelte'))).toBe(true);
   });
   test('Peninsularismus und gender', () => {
     expect(run([clip({ es: 'hola mesa casa amigo coche bueno dia vamos' })]).some((e) => e.includes('Peninsularismus'))).toBe(true);
-    expect(run([clip({ gender: 'x' })].map((c) => c)).some((e) => e.includes('gender'))).toBe(true);
+    expect(run([clip({ gender: 'x' })]).some((e) => e.includes('gender'))).toBe(true);
   });
 });
