@@ -2,7 +2,8 @@ import { cleanup, render, waitFor } from '@testing-library/preact';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
 import { openDb } from '../../src/store/db';
 import { syncNow } from '../../src/sync/gist';
-import { useAppState } from '../../src/ui/useAppState';
+import { loadSituations } from '../../src/content/load';
+import { useAppState, validCardIds } from '../../src/ui/useAppState';
 
 vi.mock('../../src/sync/gist', () => ({ syncNow: vi.fn(async () => ({ added: 0, pushed: 0 })) }));
 
@@ -53,4 +54,22 @@ test('gleicht beim Wiederkehren der Verbindung ab', async () => {
   await mount();
   window.dispatchEvent(new Event('online'));
   await waitFor(() => expect(sync).toHaveBeenCalledTimes(2));
+});
+
+test('record(reset) leert den Lernstand und setzt resetAt', async () => {
+  const db = await openDb(`appstate-${Date.now()}-${n++}`);
+  const cardId = [...validCardIds(loadSituations())][0];
+  await db.addEvents([{ id: 'k', cardId, ts: 1, device: 'd', kind: 'known' }]);
+  let app: ReturnType<typeof useAppState> = null;
+  const Probe = () => {
+    app = useAppState(db);
+    return null;
+  };
+  render(<Probe />);
+  await waitFor(() => expect(app).not.toBeNull());
+  expect(app!.resetAt).toBeUndefined();
+  expect(app!.states.size).toBe(1);
+  await app!.record({ kind: 'reset', cardId: '*' });
+  await waitFor(() => expect(app!.resetAt).toBeDefined());
+  expect(app!.states.size).toBe(0);
 });

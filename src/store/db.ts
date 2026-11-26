@@ -10,6 +10,8 @@ export type Settings = {
   lastSync?: number;
   /** Einstufung beim ersten Start angeboten und beendet oder übersprungen. */
   placementDone?: boolean;
+  /** Zeitpunkt, an dem die Einstufung beendet oder übersprungen wurde; verglichen mit dem letzten Reset. */
+  placementAt?: number;
 };
 
 export type ErrorReport = { id: string; itemId: string; ts: number; text: string };

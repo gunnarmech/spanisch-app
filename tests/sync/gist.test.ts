@@ -244,4 +244,15 @@ describe('syncNow', () => {
     expect(gh.calls.some((c) => c.method === 'PATCH')).toBe(false);
     expect(gh.gists[0].files['spanisch-app-log.json'].content).toBe(bad);
   });
+
+  it('vereinigt ein Gist mit reset-Ereignis ohne Fehler und speichert es lokal', async () => {
+    const db = await fresh();
+    await withToken(db);
+    const r: ReviewEvent = { id: 'r', cardId: '*', ts: 5, device: 'x', kind: 'reset' };
+    const file = { content: JSON.stringify({ version: 1, events: [r] }) };
+    const gh = fakeGithub([{ id: 'mine', description: 'spanisch-app sync', files: { 'spanisch-app-log.json': file } }]);
+    const res = await syncNow(db, gh.impl);
+    expect('error' in res).toBe(false);
+    expect((await db.allEvents()).map((e) => e.kind)).toEqual(['reset']);
+  });
 });

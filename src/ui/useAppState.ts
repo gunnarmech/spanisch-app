@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { loadClips, loadSituations } from '../content/load';
 import type { ChileClip, Situation } from '../content/types';
-import { dialogsHeard, newEvent, replay, type CardState, type ReviewEvent } from '../engine/state';
+import { dialogsHeard, lastResetTs, newEvent, replay, type CardState, type ReviewEvent } from '../engine/state';
 import { openDb, requestPersistence, type Db, type Settings } from '../store/db';
 import { syncNow, type SyncResult } from '../sync/gist';
 
@@ -15,6 +15,8 @@ export type AppState = {
   states: Map<string, CardState>;
   /** Zeitpunkt des letzten Anhörens je Dialog-id. */
   heard: Map<string, number>;
+  /** Zeitpunkt des letzten Resets im Protokoll, falls es einen gibt. */
+  resetAt?: number;
   settings: Settings;
   db: Db;
   /** Letzter Fehler des Abgleichs, nur im Speicher. */
@@ -70,6 +72,7 @@ export function useAppState(injected?: Db): AppState | null {
       clips,
       states,
       heard: dialogsHeard(events),
+      resetAt: lastResetTs(events),
       settings: cfg,
       db: current,
       reload,

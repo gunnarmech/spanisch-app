@@ -116,7 +116,7 @@ describe('Placement', () => {
     render(<Placement app={app} onFinish={onFinish} />);
     fireEvent.click(screen.getByRole('button', { name: 'Beenden' }));
     await waitFor(() => expect(onFinish).toHaveBeenCalled());
-    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true, placementAt: expect.any(Number) });
     expect(app.record).not.toHaveBeenCalled();
   });
 
@@ -133,7 +133,7 @@ describe('Placement', () => {
     expect(onFinish).not.toHaveBeenCalled();
     fireEvent.click(screen.getByRole('button', { name: 'Fertig' }));
     await waitFor(() => expect(onFinish).toHaveBeenCalled());
-    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true, placementAt: expect.any(Number) });
   });
 
   describe('Lernstand, der während des Tests ankommt', () => {
@@ -196,7 +196,7 @@ describe('Placement in Blöcken', () => {
     expect(screen.queryByRole('button', { name: 'Weiter' })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'Fertig' }));
     await waitFor(() => expect(onFinish).toHaveBeenCalled());
-    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true, placementAt: expect.any(Number) });
   });
 
   it('genau ein Viertel richtig lässt den Test weiterlaufen', () => {
@@ -213,7 +213,7 @@ describe('Placement in Blöcken', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Aufhören' }));
     await waitFor(() => expect(onFinish).toHaveBeenCalled());
     expect(app.record).toHaveBeenCalledTimes(30);
-    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true, placementAt: expect.any(Number) });
   });
 
   it('kein Text "von" mit Zahlen im Einstufungsbildschirm', () => {
@@ -231,7 +231,7 @@ describe('PlacementOffer', () => {
     const app = fakeApp();
     render(<PlacementOffer app={app} onStart={noop} />);
     fireEvent.click(screen.getByRole('button', { name: 'Überspringen' }));
-    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true });
+    expect(app.updateSettings).toHaveBeenCalledWith({ placementDone: true, placementAt: expect.any(Number) });
     expect(app.record).not.toHaveBeenCalled();
   });
 
@@ -255,6 +255,17 @@ describe('PlacementOffer', () => {
     const { container, rerender } = render(<PlacementOffer app={done} onStart={noop} />);
     expect(container.textContent).toBe('');
     rerender(<PlacementOffer app={fakeApp({ heard: new Map([['d-1', 1]]) })} onStart={noop} />);
+    expect(container.textContent).toBe('');
+  });
+  it('erscheint nach einem Reset wieder, wenn die Einstufung davor war und der Lernstand leer ist', () => {
+    const settings = { device: 'd', retention: 0.9, voiceSpeedNew: 'slow' as const, placementDone: true, placementAt: 1000 };
+    render(<PlacementOffer app={fakeApp({ settings, resetAt: 1001 })} onStart={noop} />);
+    expect(screen.getByRole('button', { name: 'Kurz einstufen' })).toBeTruthy();
+  });
+
+  it('erscheint nicht, wenn die Einstufung nach dem Reset lag', () => {
+    const settings = { device: 'd', retention: 0.9, voiceSpeedNew: 'slow' as const, placementDone: true, placementAt: 1002 };
+    const { container } = render(<PlacementOffer app={fakeApp({ settings, resetAt: 1001 })} onStart={noop} />);
     expect(container.textContent).toBe('');
   });
 });

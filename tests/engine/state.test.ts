@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import { State } from 'ts-fsrs';
-import { dialogsHeard, newEvent, ratingFor, replay, retrievability, type ReviewEvent, type Stage } from '../../src/engine/state';
+import { dialogsHeard, lastResetTs, newEvent, ratingFor, replay, retrievability, validEvent, type ReviewEvent, type Stage } from '../../src/engine/state';
 
 const DAY = 86_400_000;
 const T0 = Date.UTC(2026, 10, 25, 10, 0, 0);
@@ -188,5 +188,35 @@ describe('Festigung', () => {
     const s = replay([k, review('2', 'b', T0 + 1000, 3)], valid);
     expect(s.get('a')!.consolidated).toBe(true);
     expect(s.get('b')!.consolidated).toBe(false);
+  });
+});
+
+describe('reset', () => {
+  const reset = (id: string, ts: number): ReviewEvent => ({ id, cardId: '*', ts, device: 'd1', kind: 'reset' });
+  const heard = (id: string, cardId: string, ts: number): ReviewEvent => ({ id, cardId, ts, device: 'd', kind: 'heard' });
+
+  test('reset leert den Lernstand, spätere Ereignisse zählen', () => {
+    const ev = [review('1', 'a', T0, 3), reset('r', T0 + DAY), review('2', 'b', T0 + 2 * DAY, 3)];
+    const st = replay(ev, valid);
+    expect(st.has('a')).toBe(false);
+    expect(st.get('b')!.stage).toBe(1);
+  });
+
+  test('dialogsHeard ignoriert Gehörtes vor dem reset', () => {
+    const m = dialogsHeard([heard('h1', 'd1', T0), heard('h2', 'd2', T0), reset('r', T0 + DAY), heard('h3', 'd2', T0 + 2 * DAY)]);
+    expect([...m.keys()]).toEqual(['d2']);
+    expect(m.get('d2')).toBe(T0 + 2 * DAY);
+  });
+
+  test('gleicher ts: id entscheidet, unabhängig von der Eingabereihenfolge', () => {
+    const a = review('a1', 'a', T0, 3), r = reset('b0', T0);
+    expect(replay([a, r], valid)).toEqual(replay([r, a], valid));
+    expect(replay([a, r], valid).has('a')).toBe(false); // 'a1' < 'b0', also vor dem reset
+  });
+
+  test('validEvent akzeptiert reset, lastResetTs liefert den letzten', () => {
+    expect(validEvent(reset('r', T0))).toBe(true);
+    expect(lastResetTs([review('1', 'a', T0, 3)])).toBeUndefined();
+    expect(lastResetTs([reset('r2', T0 + DAY), reset('r1', T0), review('1', 'a', T0 + 2 * DAY, 3)])).toBe(T0 + DAY);
   });
 });

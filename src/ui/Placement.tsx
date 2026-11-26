@@ -40,9 +40,12 @@ export function placementItems(situations: Situation[], states: Map<string, Card
     .map(({ e }) => e);
 }
 
-/** Angebot beim allerersten Start: noch keine Ereignisse und weder beendet noch übersprungen. */
+/** Angebot beim ersten Start und nach einem Reset: noch kein Lernstand und keine Einstufung seit dem Reset. */
 export function PlacementOffer({ app, onStart }: { app: AppState; onStart(): void }) {
-  if (app.settings.placementDone || app.states.size > 0 || app.heard.size > 0) return null;
+  const { placementDone, placementAt } = app.settings;
+  // Eine Einstufung vor dem letzten Reset zählt nicht mehr.
+  const placementCounts = !!placementDone && (app.resetAt === undefined || (placementAt ?? 0) > app.resetAt);
+  if (placementCounts || app.states.size > 0 || app.heard.size > 0) return null;
   return (
     <section class="placement-offer">
       <h2>Kurz einstufen?</h2>
@@ -53,7 +56,7 @@ export function PlacementOffer({ app, onStart }: { app: AppState; onStart(): voi
         <button type="button" class="btn btn--secondary" onClick={onStart}>
           Kurz einstufen
         </button>
-        <button type="button" class="link" onClick={() => void app.updateSettings({ placementDone: true })}>
+        <button type="button" class="link" onClick={() => void app.updateSettings({ placementDone: true, placementAt: Date.now() })}>
           Überspringen
         </button>
       </div>
@@ -179,7 +182,7 @@ export function Placement({ app, onFinish }: { app: AppState; onFinish(): void }
   const finish = async () => {
     if (finished.current) return;
     finished.current = true;
-    await app.updateSettings({ placementDone: true });
+    await app.updateSettings({ placementDone: true, placementAt: Date.now() });
     onFinish();
   };
 

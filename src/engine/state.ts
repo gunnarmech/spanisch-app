@@ -8,7 +8,12 @@ export type ReviewEvent =
   | { id: string; cardId: string; ts: number; device: string; kind: 'review'; rating: 1 | 2 | 3 | 4; stage: Stage }
   | { id: string; cardId: string; ts: number; device: string; kind: 'known' }
   /** Dialog angehört (cardId = Dialog-id). Dialoge sind keine Karten, das Ereignis ändert keinen Lernstand. */
-  | { id: string; cardId: string; ts: number; device: string; kind: 'heard' };
+  | { id: string; cardId: string; ts: number; device: string; kind: 'heard' }
+  /** Setzt den Fortschritt zurück: alles Frühere (in der Sortierung ts, id) zählt nicht mehr. */
+  | { id: string; cardId: typeof RESET_CARD; ts: number; device: string; kind: 'reset' };
+
+/** Platzhalter-cardId des reset-Ereignisses (cardId darf nicht leer sein). */
+export const RESET_CARD = '*';
 
 /**
  * Lernstand einer Karte. `consolidated` heißt gefestigt: bekannt markiert oder mindestens eine verteilte
@@ -27,7 +32,7 @@ export function validEvent(x: unknown): x is ReviewEvent {
   const e = x as Record<string, unknown>;
   if (typeof e.id !== 'string' || e.id === '' || typeof e.cardId !== 'string' || e.cardId === '') return false;
   if (typeof e.ts !== 'number' || !Number.isFinite(e.ts) || Math.abs(e.ts) > MAX_TS) return false;
-  if (e.kind === 'known' || e.kind === 'heard') return true;
+  if (e.kind === 'known' || e.kind === 'heard' || e.kind === 'reset') return true;
   return e.kind === 'review' && Number.isInteger(e.rating) && (e.rating as number) >= 1 && (e.rating as number) <= 4 && Number.isInteger(e.stage) && (e.stage as number) >= 0 && (e.stage as number) <= 4;
 }
 
@@ -58,6 +63,31 @@ function applyKnown(ts: number): CardState {
   return { card, stage: 4, known: true, consolidated: true, lastTs: ts };
 }
 
+function byTsId(a: ReviewEvent, b: ReviewEvent): number {
+  return a.ts - b.ts || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+}
+
+/** Gültige Ereignisse nach (ts, id) sortiert, ohne doppelte ids, nur die nach dem letzten reset (der reset selbst entfällt). */
+function afterLastReset(events: ReviewEvent[]): ReviewEvent[] {
+  const sorted = events.filter(validEvent).sort(byTsId);
+  const seen = new Set<string>();
+  let out: ReviewEvent[] = [];
+  for (const e of sorted) {
+    if (seen.has(e.id)) continue;
+    seen.add(e.id);
+    if (e.kind === 'reset') out = [];
+    else out.push(e);
+  }
+  return out;
+}
+
+/** Zeitpunkt des letzten gültigen reset in der Sortierung (ts, id); undefined ohne reset. */
+export function lastResetTs(events: ReviewEvent[]): number | undefined {
+  let last: ReviewEvent | undefined;
+  for (const e of events) if (validEvent(e) && e.kind === 'reset' && (!last || byTsId(e, last) > 0)) last = e;
+  return last?.ts;
+}
+
 /**
  * Spielt das Ereignisprotokoll ab. Sortiert nach ts, dann id; doppelte ids zählen einmal;
  * Ereignisse zu unbekannten Karten und ungültige Ereignisse werden ignoriert. Das Ergebnis hängt nicht von der Eingabereihenfolge ab.
@@ -69,16 +99,12 @@ export function replay(
 ): Map<string, CardState> {
   const f = scheduler(retention ?? DEFAULT_RETENTION);
   // Ungültige Einträge (z. B. aus schon beschädigten Protokollen) werden übersprungen, statt zu werfen.
-  const sorted = events.filter(validEvent).sort((a, b) => a.ts - b.ts || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
-  const seen = new Set<string>();
   const states = new Map<string, CardState>();
   // Zeitpunkt des letzten review je Karte (known-Ereignisse zählen nicht).
   const lastReviewTs = new Map<string, number>();
 
-  for (const e of sorted) {
-    if (seen.has(e.id)) continue;
-    seen.add(e.id);
-    if (e.kind === 'heard' || !validCardIds.has(e.cardId)) continue;
+  for (const e of afterLastReset(events)) {
+    if (e.kind === 'heard' || e.kind === 'reset' || !validCardIds.has(e.cardId)) continue;
 
     if (e.kind === 'known') {
       states.set(e.cardId, applyKnown(e.ts));
@@ -107,7 +133,7 @@ export function replay(
 /** Spätester Zeitpunkt, an dem ein Dialog angehört wurde, je Dialog-id. Doppelte ids zählen einmal. */
 export function dialogsHeard(events: ReviewEvent[]): Map<string, number> {
   const heard = new Map<string, number>();
-  for (const e of events) {
+  for (const e of afterLastReset(events)) {
     if (e.kind !== 'heard') continue;
     heard.set(e.cardId, Math.max(heard.get(e.cardId) ?? 0, e.ts));
   }
