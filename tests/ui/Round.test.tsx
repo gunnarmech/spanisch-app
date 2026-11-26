@@ -43,6 +43,37 @@ describe('Runde', () => {
     expect(app.record).toHaveBeenCalledWith({ kind: 'review', cardId: 'w-hola', rating: 3, stage: 0 });
   });
 
+  it('wählt bei einer Auswahlaufgabe (Wiederholung auf Stufe 1, hören) mit den Ziffertasten', async () => {
+    const words = ['hola', 'mesa', 'sol', 'luz'].map((es, i) => ({
+      id: `w-${es}`,
+      kind: 'word' as const,
+      es,
+      de: ['hallo', 'Tisch', 'Sonne', 'Licht'][i],
+      forms: [es],
+      examples: [],
+    }));
+    // Eine einzige Wiederholung auf Stufe 1, nichts Neues: die Runde beginnt direkt mit der Auswahl.
+    const states = replay(
+      [{ id: 'e1', cardId: 'w-hola', ts: Date.now() - 30 * 86_400_000, device: 'x', kind: 'review', rating: 3, stage: 0 }],
+      new Set(words.map((w) => w.id)),
+    );
+    for (const w of words.slice(1)) {
+      states.set(w.id, { ...states.get('w-hola')!, card: { ...states.get('w-hola')!.card, due: new Date(Date.now() + 86_400_000) } });
+    }
+    const app = fakeApp({ states, situations: [{ ...situation, items: words }] });
+    render(<Round app={app} onExit={noop} onAgain={noop} />);
+    await screen.findByText('Was bedeutet das?');
+    const options = screen.getAllByRole('button', { name: /^\d/ });
+    const index = options.findIndex((b) => b.textContent?.includes('hallo'));
+    expect(index).toBeGreaterThanOrEqual(0);
+    // Der Tastenhandler hängt in einem Effekt und das Rendern ist asynchron: so lange drücken, bis die Antwort steht.
+    // Doppeltes Drücken ist unschädlich, ChoiceBase wertet nur die erste Wahl.
+    await waitFor(() => {
+      fireEvent.keyDown(window, { key: String(index + 1) });
+      expect(screen.getByText('Richtig.')).toBeTruthy();
+    });
+  });
+
   it('Kann ich schon bei der Einführung entfernt den späteren Abruf und zeichnet genau ein known auf', async () => {
     const app = fakeApp({
       situations: [
@@ -72,8 +103,8 @@ describe('Runde', () => {
         fireEvent.click(screen.getByRole('button', { name: 'Weiter' }));
       } else if (screen.queryByText('Wie sagt man das auf Spanisch?')) {
         seen.push(['worta', 'wortb', 'wortc'].find((w) => screen.queryByText(w)) ?? '?');
-        typeAnswer('x');
-        typeAnswer('x');
+        typeAnswer('x'); // falsch: erst ein Hinweis
+        typeAnswer('x'); // zweiter Versuch, danach erscheint die Lösung mit Weiter
         fireEvent.click(await screen.findByRole('button', { name: 'Weiter' }));
       }
       await new Promise((r) => setTimeout(r, 0));
