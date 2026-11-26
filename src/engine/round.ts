@@ -1,8 +1,9 @@
 import { retrievability, type CardState } from './state';
-import { tokens } from '../content/validate';
-import type { DialogItem, Item, Situation, WordItem } from '../content/types';
+import { seenTokenShare } from './coverage';
+import { CHILE_SITUATION, chileUnlocked, chooseClip } from './clips';
+import type { ChileClip, DialogItem, Item, Situation } from '../content/types';
 
-export type TaskForm = 'intro' | 'choice' | 'listen' | 'type' | 'speak' | 'pressure' | 'dialog' | 'grammar';
+export type TaskForm = 'intro' | 'choice' | 'listen' | 'type' | 'speak' | 'pressure' | 'dialog' | 'grammar' | 'clip';
 
 export type Task = {
   cardId: string;
@@ -40,22 +41,7 @@ export function currentSituation(situations: Situation[], states: Map<string, Ca
 
 /** Anteil der Dialog-Tokens (je Vorkommen), die zu einem Wort-Item mit Lernstand gehören. */
 function seenShare(dialog: DialogItem, situations: Situation[], states: Map<string, CardState>): number {
-  const seen = new Set<string>();
-  for (const sit of situations) {
-    for (const it of sit.items) {
-      if ((it.kind !== 'word' && it.kind !== 'phrase') || !states.has(it.id)) continue;
-      for (const f of (it as WordItem).forms) for (const t of tokens(f)) seen.add(t);
-    }
-  }
-  let total = 0;
-  let hit = 0;
-  for (const line of dialog.lines) {
-    for (const t of tokens(line.es)) {
-      total++;
-      if (seen.has(t)) hit++;
-    }
-  }
-  return total === 0 ? 0 : hit / total;
+  return seenTokenShare(dialog.lines.map((l) => l.es), situations, states);
 }
 
 /** Verteilt die Gruppen gleichmäßig zwischen die Wiederholungen. Die Reihenfolge innerhalb einer Gruppe bleibt. */
@@ -80,6 +66,8 @@ export function buildRound(opts: {
   maxNew?: number;
   /** Zeitpunkt des letzten Anhörens je Dialog-id (aus dialogsHeard). */
   heard?: Map<string, number>;
+  /** Echte Chile-Aufnahmen; ohne Angabe oder ohne Freischaltung gibt es keine Clip-Aufgabe. */
+  clips?: ChileClip[];
 }): { tasks: Task[]; finished: boolean } {
   const { now, states, situations } = opts;
   const maxReviews = opts.maxReviews ?? 20;
@@ -149,7 +137,13 @@ export function buildRound(opts: {
       const oldest = [...eligible].sort((a, b) => heard.get(a.id)! - heard.get(b.id)!)[0];
       if (oldest && now - heard.get(oldest.id)! >= DIALOG_REPEAT_MS) dialog = oldest;
     }
-    if (dialog) {
+    const clip = opts.clips && chileUnlocked(situations, states, now)
+      ? chooseClip(opts.clips, situations, states, heard, now)
+      : undefined;
+    // Höchstens eine Höraufgabe je Runde: bei ungerader Zahl gehörter Aufnahmen der Clip, sonst der Dialog.
+    if (clip && (!dialog || heard.size % 2 === 1)) {
+      tasks.push({ cardId: clip.id, itemId: clip.id, situationId: CHILE_SITUATION, form: 'clip', isNew: false });
+    } else if (dialog) {
       tasks.push({ cardId: dialog.id, itemId: dialog.id, situationId: target.id, form: 'dialog', isNew: false });
     }
   }

@@ -42,3 +42,23 @@ export function situationCoverage(
   }
   return total === 0 ? 0 : hit / total;
 }
+
+/** Anteil der Tokens (je Vorkommen) in den Texten, die zu einem Wort-Item mit Lernstand gehören. Ohne Tokens 0. */
+export function seenTokenShare(texts: string[], situations: Situation[], states: Map<string, CardState>): number {
+  const seen = new Set<string>();
+  for (const sit of situations) {
+    for (const it of sit.items) {
+      if ((it.kind !== 'word' && it.kind !== 'phrase') || !states.has(it.id)) continue;
+      for (const f of (it as WordItem).forms) for (const t of tokens(f)) seen.add(t);
+    }
+  }
+  let total = 0;
+  let hit = 0;
+  for (const text of texts) {
+    for (const t of tokens(text)) {
+      total++;
+      if (seen.has(t)) hit++;
+    }
+  }
+  return total === 0 ? 0 : hit / total;
+}

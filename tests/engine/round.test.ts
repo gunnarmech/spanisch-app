@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
 import { buildRound, currentSituation } from '../../src/engine/round';
-import { replay, retrievability, type CardState, type ReviewEvent } from '../../src/engine/state';
-import type { Item, Situation } from '../../src/content/types';
+import { dialogsHeard, replay, retrievability, type CardState, type ReviewEvent } from '../../src/engine/state';
+import type { ChileClip, Item, Situation } from '../../src/content/types';
 
 const T0 = Date.UTC(2026, 10, 25, 10, 0, 0);
 const DAY = 86_400_000;
@@ -250,5 +250,62 @@ describe('currentSituation', () => {
     expect(currentSituation([s2, s1], new Map())).toBe('s1');
     const states = replay([review(1, 'a', T0)], new Set(['a']));
     expect(currentSituation([s2, s1], states)).toBe('s2');
+  });
+});
+
+describe('Chile-Clips in der Runde', () => {
+  const grundlagen: Situation = {
+    id: '01-grundlagen',
+    order: 1,
+    title: 'G',
+    items: [
+      word('w-hola', 'hola'),
+      word('w-mesa', 'mesa'),
+      word('w-extra', 'extra'),
+      { id: 'd1', kind: 'dialog', title: 'D', lines: [{ speaker: 'A', es: 'hola mesa', de: '' }] },
+    ],
+  };
+  const clips: ChileClip[] = [{ id: 'clip-1', es: 'hola mesa', de: '', gender: 'f', source: 's' }];
+  const ids = new Set(['w-hola', 'w-mesa', 'w-extra']);
+  // w-extra ist zu NOW fällig, damit die Runde nicht fertig ist; die Bekannten sichern Freischaltung und Anteil.
+  const states = replay(
+    [
+      review(3, 'w-extra', T0),
+      { id: 'k1', cardId: 'w-hola', ts: T0, device: 'd', kind: 'known' },
+      { id: 'k2', cardId: 'w-mesa', ts: T0, device: 'd', kind: 'known' },
+    ],
+    ids,
+  );
+  const NOW = T0 + 30 * DAY;
+  const listens = (heard: Map<string, number>, c?: ChileClip[]) =>
+    buildRound({ now: NOW, states, situations: [grundlagen], heard, clips: c, maxNew: 0 }).tasks.filter(
+      (t) => t.form === 'dialog' || t.form === 'clip',
+    );
+
+  test('höchstens eine Höraufgabe je Runde', () => {
+    const even = listens(new Map([['x', 1], ['y', 2]]), clips);
+    expect(even.map((t) => t.form)).toEqual(['dialog']);
+    const odd = listens(new Map([['x', 1]]), clips);
+    expect(odd).toEqual([
+      { cardId: 'clip-1', itemId: 'clip-1', situationId: 'chile-echt', form: 'clip', isNew: false },
+    ]);
+  });
+
+  test('ohne clips unverändert wie bisher', () => {
+    const t = listens(new Map([['x', 1]]));
+    expect(t.map((x) => x.form)).toEqual(['dialog']);
+    expect(listens(new Map([['x', 1]]), [])).toEqual(t);
+  });
+
+  test('ohne Freischaltung kein Clip', () => {
+    const locked = buildRound({ now: NOW, states: new Map(), situations: [grundlagen], clips, heard: new Map([['x', 1]]) });
+    expect(locked.tasks.some((t) => t.form === 'clip')).toBe(false);
+  });
+
+  test('replay ignoriert heard-Ereignis mit Clip-ID', () => {
+    const base: ReviewEvent[] = [review(1, 'w-hola', T0)];
+    const heard: ReviewEvent = { id: 'h1', cardId: 'clip-1', ts: T0 + 5, device: 'd', kind: 'heard' };
+    expect(replay([...base, heard], ids)).toEqual(replay(base, ids));
+    expect(dialogsHeard([heard]).get('clip-1')).toBe(T0 + 5);
   });
 });
